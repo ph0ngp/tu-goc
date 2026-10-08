@@ -1,5 +1,7 @@
 # Từ Gốc
 
+Trang web: <https://tu-goc.hphongp.chatgpt.site>
+
 Từ Gốc là một cuốn sách ngữ pháp tiếng Anh trực tuyến bằng tiếng Việt. Giao diện
 được xây dựng theo hướng tài liệu tối giản: mục lục cố định, bài học Markdown,
 tìm kiếm toàn văn, lựa chọn giao diện màu và một trang luyện tập riêng cho từng
