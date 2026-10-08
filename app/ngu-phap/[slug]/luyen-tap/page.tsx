@@ -1,0 +1,44 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import {
+  bookLessonBySlug,
+  bookLessons,
+} from "../../../book-content.generated";
+import { BookPracticePage } from "../../../book-practice-page";
+import { lessonDescription, socialMetadata } from "../../../site-metadata";
+
+type PracticeRouteProps = {
+  params: Promise<{ slug: string }>;
+};
+
+export async function generateStaticParams() {
+  return bookLessons.map((lesson) => ({ slug: lesson.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: PracticeRouteProps): Promise<Metadata> {
+  const { slug } = await params;
+  const lesson = bookLessonBySlug(slug);
+  if (!lesson) return {};
+  const title = `Luyện tập: ${lesson.title} — Từ Gốc`;
+  const description = `${lessonDescription(lesson)} Trang này tập trung vào hoạt động luyện tập.`;
+  return {
+    title,
+    description,
+    alternates: { canonical: `/ngu-phap/${lesson.slug}/luyen-tap` },
+    ...socialMetadata({
+      title,
+      description,
+      path: `/ngu-phap/${lesson.slug}/luyen-tap`,
+    }),
+  };
+}
+
+export default async function PracticeRoute({ params }: PracticeRouteProps) {
+  const { slug } = await params;
+  const lesson = bookLessonBySlug(slug);
+  if (!lesson) notFound();
+
+  return <BookPracticePage slug={lesson.slug} />;
+}

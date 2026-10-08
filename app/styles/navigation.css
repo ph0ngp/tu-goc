@@ -1,0 +1,90 @@
+.markdown-table-wrap {
+  max-width: 100%;
+  margin: 20px 0 28px;
+  overflow-x: auto;
+  border: 1px solid var(--book-line);
+  border-radius: 4px;
+}
+
+.markdown-table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.markdown-table-wrap th,
+.markdown-table-wrap td {
+  padding: 10px 12px;
+  border-right: 1px solid var(--book-line);
+  border-bottom: 1px solid var(--book-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.markdown-table-wrap th:last-child,
+.markdown-table-wrap td:last-child {
+  border-right: 0;
+}
+
+.markdown-table-wrap tr:last-child td {
+  border-bottom: 0;
+}
+
+.markdown-table-wrap th {
+  background: var(--book-table-head);
+  color: var(--book-ink);
+  font-weight: 680;
+}
+
+.lesson-neighbors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--book-line);
+}
+
+.lesson-neighbors a {
+  display: grid;
+  min-height: 76px;
+  align-content: center;
+  padding: 12px 14px;
+  border: 1px solid var(--book-line);
+  border-radius: 4px;
+  color: var(--book-ink);
+  text-decoration: none;
+}
+
+.lesson-neighbors a:last-child {
+  text-align: right;
+}
+
+.lesson-neighbors a:hover {
+  border-color: var(--book-accent);
+  background: var(--book-hover);
+}
+
+.lesson-neighbors small {
+  color: var(--book-faint);
+  font-size: 11px;
+}
+
+.lesson-neighbors strong {
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.book-footer {
+  margin-top: 55px;
+  padding: 22px 0 38px;
+  border-top: 1px solid var(--book-line);
+  color: var(--book-faint);
+  font-size: 11px;
+}
+
+.sidebar-scrim {
+  display: none;
+}

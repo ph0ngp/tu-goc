@@ -1,0 +1,115 @@
+@media (max-width: 900px) {
+  .book-body,
+  .sidebar-closed .book-body {
+    display: block;
+  }
+
+  .book-sidebar,
+  .sidebar-closed .book-sidebar {
+    position: fixed;
+    z-index: 42;
+    top: var(--toolbar-height);
+    left: 0;
+    display: block;
+    width: min(330px, 86vw);
+    height: calc(100vh - var(--toolbar-height));
+    border-right: 1px solid var(--book-line);
+    box-shadow: var(--book-shadow);
+    transform: translateX(-105%);
+    transition: transform 160ms ease;
+  }
+
+  .sidebar-open .book-sidebar {
+    transform: translateX(0);
+  }
+
+  .sidebar-open .sidebar-scrim {
+    position: fixed;
+    z-index: 41;
+    inset: var(--toolbar-height) 0 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0;
+    background: rgb(0 0 0 / 42%);
+  }
+
+  .book-content {
+    width: min(760px, calc(100% - 40px));
+  }
+}
+
+@media (max-width: 600px) {
+  .book-toolbar {
+    padding: 0 6px;
+  }
+
+  .book-brand strong {
+    font-size: 14px;
+  }
+
+  .book-content {
+    width: calc(100% - 32px);
+    padding-top: 34px;
+  }
+
+  .lesson-markdown h1 {
+    font-size: 34px;
+  }
+
+  .lesson-markdown h2 {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+
+  .lesson-markdown p,
+  .lesson-markdown li {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .lesson-markdown > h1 + p:has(> em:only-child) {
+    font-size: 16px;
+  }
+
+  .lesson-practice-cta,
+  .lesson-practice-cta a {
+    width: 100%;
+  }
+
+  .lesson-practice-cta a {
+    justify-content: space-between;
+  }
+
+  .lesson-neighbors {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-neighbors a:last-child {
+    text-align: left;
+  }
+
+  .book-search-inner {
+    width: calc(100% - 24px);
+  }
+}
+
+@media print {
+  .book-toolbar,
+  .book-sidebar,
+  .book-search,
+  .lesson-practice-cta,
+  .lesson-neighbors,
+  .sidebar-scrim {
+    display: none !important;
+  }
+
+  .book-body {
+    display: block;
+  }
+
+  .book-content {
+    width: 100%;
+    padding: 0;
+  }
+}

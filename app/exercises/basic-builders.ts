@@ -1,0 +1,380 @@
+import type { Exercise } from "../exercise-types.ts";
+
+type ChoiceSeed = [
+  prompt: string,
+  options: string[],
+  answer: string,
+  hint: string,
+  explanation: string,
+];
+
+type ContextSeed = [
+  context: string,
+  prompt: string,
+  options: string[],
+  answer: string,
+  hint: string,
+  explanation: string,
+];
+
+type RepairSeed = [
+  prompt: string,
+  tokens: string[],
+  targetIndex: number,
+  replacements: string[],
+  answer: string,
+  hint: string,
+  explanation: string,
+];
+
+type OrderSeed = [
+  prompt: string,
+  tokens: string[],
+  answer: string[],
+  hint: string,
+  explanation: string,
+];
+
+type TapSeed = [
+  prompt: string,
+  tokens: string[],
+  answerIndexes: number[],
+  hint: string,
+  explanation: string,
+];
+
+type CompactChoiceSeed = [
+  prompt: string,
+  options: string[],
+  answer: string,
+  explanation: string,
+];
+
+type CompactOrderSeed = [
+  prompt: string,
+  tokens: string[],
+  answer: string[],
+  explanation: string,
+];
+
+type CompactRepairSeed = [
+  prompt: string,
+  tokens: string[],
+  targetIndex: number,
+  replacements: string[],
+  answer: string,
+  explanation: string,
+];
+
+type CompactTapSeed = [
+  prompt: string,
+  tokens: string[],
+  answerIndexes: number[],
+  explanation: string,
+];
+
+type CompactGridRow = {
+  cue: string;
+  options: string[];
+  answer: string;
+  completed: string;
+};
+
+type CompactPracticeConfig = {
+  prefix: string;
+  focus: string;
+  choices: CompactChoiceSeed[];
+  orders: CompactOrderSeed[];
+  repairs: CompactRepairSeed[];
+  taps: CompactTapSeed[];
+  matchPrompt: string;
+  pairs: Array<{ left: string; right: string }>;
+  sortPrompt: string;
+  buckets: string[];
+  items: Array<{ text: string; bucket: string }>;
+  gridPrompts: [string, string, string];
+  gridRows: CompactGridRow[];
+};
+
+type A2OrderSeed = [prompt: string, sentence: string, explanation: string];
+type A2RepairSeed = [
+  prompt: string,
+  sentence: string,
+  wrongToken: string,
+  replacements: string[],
+  answer: string,
+  explanation: string,
+];
+type A2TapSeed = [prompt: string, sentence: string, selectedTokens: string[], explanation: string];
+type A2PracticeConfig = Omit<CompactPracticeConfig, "orders" | "repairs" | "taps"> & {
+  orders: A2OrderSeed[];
+  repairs: A2RepairSeed[];
+  taps: A2TapSeed[];
+};
+
+export function sentenceTokens(sentence: string): string[] {
+  return sentence.match(/[\p{L}]+(?:[-'’][\p{L}]+)*|\d+(?:[.:]\d+)?(?:°[\p{L}])?|[.,?!:;—"“”'‘’]/gu) ?? [];
+}
+
+export function a2PracticeSet(config: A2PracticeConfig): Exercise[] {
+  return compactPracticeSet({
+    ...config,
+    orders: config.orders.map(([prompt, sentence, explanation], index) => {
+      const answer = sentenceTokens(sentence);
+      const shift = 2 + (index % Math.max(1, answer.length - 2));
+      return [prompt, [...answer.slice(shift), ...answer.slice(0, shift)], answer, explanation];
+    }),
+    repairs: config.repairs.map(([prompt, sentence, wrongToken, replacements, answer, explanation]) => {
+      const tokens = sentenceTokens(sentence);
+      const targetIndex = tokens.indexOf(wrongToken);
+      if (targetIndex < 0) throw new Error(`Không tìm thấy mảnh cần sửa “${wrongToken}” trong “${sentence}”.`);
+      return [prompt, tokens, targetIndex, replacements, answer, explanation];
+    }),
+    taps: config.taps.map(([prompt, sentence, selectedTokens, explanation]) => {
+      const tokens = sentenceTokens(sentence);
+      const answerIndexes = tokens.flatMap((token, index) => selectedTokens.includes(token) ? [index] : []);
+      if (answerIndexes.length !== selectedTokens.length) {
+        throw new Error(`Các mảnh cần chọn trong “${sentence}” phải xuất hiện đúng một lần.`);
+      }
+      return [prompt, tokens, answerIndexes, explanation];
+    }),
+  });
+}
+
+export function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+export function maskAnswerTerms(text: string, answers: string[]): string {
+  const terms = new Set<string>();
+  for (const answer of answers) {
+    const clean = answer.replaceAll("`", "").trim();
+    if (!clean) continue;
+    terms.add(clean);
+    const tokens = clean.match(/[\p{L}]+(?:['’][\p{L}]+)?/gu) ?? [];
+    if (tokens.length <= 3) {
+      for (const token of tokens) terms.add(token);
+    }
+  }
+
+  let masked = text;
+  for (const term of [...terms].sort((left, right) => right.length - left.length)) {
+    const pattern = new RegExp(`(?<![\\p{L}\\p{N}])${escapeRegExp(term)}(?![\\p{L}\\p{N}])`, "giu");
+    masked = masked.replace(pattern, "___");
+  }
+  return masked
+    .replace(/`([^`\n]*___[^`\n]*)`/g, "$1")
+    .replace(/(?:___\s*){2,}/g, "___")
+    .replace(/(?<=[\p{L}\p{N}])___/gu, " ___")
+    .replace(/___(?=[\p{L}\p{N}])/gu, "___ ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function specificHint(
+  kind: Exercise["kind"],
+  prompt: string,
+  explanation: string,
+  answers: string[],
+  cues: string[] = [],
+): string {
+  const rule = maskAnswerTerms(explanation, answers);
+  if (kind === "choice" || kind === "context") return rule;
+  if (kind === "order") return `Hãy xác định cụm từ nào phải đứng liền nhau, rồi đặt các thành phần còn lại quanh cụm đó. ${rule}`;
+  if (kind === "repair") return `Nhìn hai mảnh ở hai bên vị trí cần sửa. ${rule}`;
+  if (kind === "tap") return `Xét công việc của từng mảnh trong cả câu. ${rule}`;
+  if (kind === "match") {
+    return `Đọc từng vế và tìm đúng quan hệ được nêu sau đây: ${prompt.replace(/[.?]$/, "")}; mỗi vế chỉ dùng một lần.`;
+  }
+  if (kind === "sort") {
+    return `Dùng đúng tiêu chí trong yêu cầu sau và kiểm tra từng mục độc lập trước khi phân nhóm: ${prompt.replace(/[.?]$/, "")}.`;
+  }
+  return `Giải riêng từng hàng; chú ý lần lượt các dấu hiệu: ${cues.join("; ")}.`;
+}
+
+export function matchExplanation(pairs: Array<{ left: string; right: string }>, focus: string): string {
+  return `Các cặp đúng là: ${pairs.map(({ left, right }) => `“${left}” → “${right}”`).join("; ")}. Mỗi cặp cho thấy ${focus}.`;
+}
+
+export function sortExplanation(buckets: string[], items: Array<{ text: string; bucket: string }>): string {
+  return buckets.map((bucket) => {
+    const members = items.filter((item) => item.bucket === bucket).map((item) => `“${item.text}”`).join(", ");
+    return `Nhóm “${bucket}” gồm ${members}`;
+  }).join(". ") + ".";
+}
+
+function inlineExample(value: string): string {
+  return `\`${value.replaceAll("`", "'")}\``;
+}
+
+export function gridExplanation(rows: CompactGridRow[], focus: string): string {
+  return `Các câu hoàn chỉnh lần lượt là: ${rows.map((row) => inlineExample(row.completed)).join("; ")}. Mỗi lựa chọn khớp với ${focus}.`;
+}
+
+/**
+ * Bộ khung A1 dùng chung hình dạng dữ liệu nhưng để số hoạt động do nội dung
+ * của từng bài quyết định. Tình huống, đáp án và lời giải vẫn được khai báo
+ * riêng; hàm này không tự sinh thêm câu chỉ để chạm một con số cố định.
+ */
+export function compactPracticeSet(config: CompactPracticeConfig): Exercise[] {
+  const exercises: Exercise[] = [];
+  let nextId = 1;
+
+  for (const [prompt, options, answer, explanation] of config.choices) {
+    exercises.push({ id: `${config.prefix}${nextId++}`, kind: "choice", prompt, options, answer, hint: specificHint("choice", prompt, explanation, [answer]), explanation });
+  }
+  for (const [prompt, tokens, answer, explanation] of config.orders) {
+    exercises.push({ id: `${config.prefix}${nextId++}`, kind: "order", prompt, tokens, answer, hint: specificHint("order", prompt, explanation, [answer.join(" ")]), explanation });
+  }
+  for (const [prompt, tokens, targetIndex, replacements, answer, explanation] of config.repairs) {
+    exercises.push({ id: `${config.prefix}${nextId++}`, kind: "repair", prompt, tokens, targetIndex, replacements, answer, hint: specificHint("repair", prompt, explanation, [answer]), explanation });
+  }
+  for (const [prompt, tokens, answerIndexes, explanation] of config.taps) {
+    const answers = answerIndexes.map((answerIndex) => tokens[answerIndex]);
+    exercises.push({
+      id: `${config.prefix}${nextId++}`,
+      kind: "tap",
+      prompt,
+      tokens,
+      answerIndexes,
+      selectionMode: answerIndexes.length === 1 ? "single" : "multiple",
+      hint: specificHint("tap", prompt, explanation, answers),
+      explanation,
+    });
+  }
+  exercises.push({
+    id: `${config.prefix}${nextId++}`,
+    kind: "match",
+    prompt: config.matchPrompt,
+    pairs: config.pairs,
+    hint: specificHint("match", config.matchPrompt, "", []),
+    explanation: matchExplanation(config.pairs, config.focus),
+  });
+  exercises.push({
+    id: `${config.prefix}${nextId++}`,
+    kind: "sort",
+    prompt: config.sortPrompt,
+    buckets: config.buckets,
+    items: config.items,
+    hint: specificHint("sort", config.sortPrompt, "", []),
+    explanation: sortExplanation(config.buckets, config.items),
+  });
+  for (let index = 0; index < config.gridPrompts.length; index += 1) {
+    const rows = config.gridRows.slice(index * 3, index * 3 + 3);
+    exercises.push({
+      id: `${config.prefix}${nextId++}`,
+      kind: "grid",
+      prompt: config.gridPrompts[index],
+      rows,
+      hint: specificHint("grid", config.gridPrompts[index], "", rows.map((row) => row.answer), rows.map((row) => row.cue)),
+      explanation: gridExplanation(rows, config.focus),
+    });
+  }
+
+  if (exercises.length < 25 || exercises.length > 40 || config.gridRows.length !== config.gridPrompts.length * 3) {
+    throw new Error(`Bộ luyện tập ${config.prefix} phải có 25–40 hoạt động và ba hàng cho mỗi bảng.`);
+  }
+  return exercises;
+}
+
+type BinaryDrillSeed = [
+  cue: string,
+  answer: string,
+  distractor: string,
+  explanation: string,
+];
+
+export function binaryChoiceDrills(
+  prefix: string,
+  start: number,
+  focus: string,
+  seeds: BinaryDrillSeed[],
+): Exercise[] {
+  const promptBuilders = [
+    (cue: string) => `Cách diễn đạt nào đúng cho ${cue}?`,
+    (cue: string) => `Với ${cue}, phương án nào phù hợp?`,
+    (cue: string) => `Chọn cách nói đúng để diễn đạt ${cue}.`,
+    (cue: string) => `Phương án nào thể hiện đúng ${cue}?`,
+  ];
+  return seeds.map(([cue, answer, distractor, explanation], index) => ({
+    id: `${prefix}${start + index}`,
+    kind: "choice" as const,
+    prompt: promptBuilders[index % promptBuilders.length](cue),
+    options: [answer, distractor],
+    answer,
+    hint: specificHint("choice", promptBuilders[index % promptBuilders.length](cue), explanation, [answer]),
+    explanation,
+  }));
+}
+
+export function choiceExercises(prefix: string, start: number, seeds: ChoiceSeed[]): Exercise[] {
+  return seeds.map(([prompt, options, answer, hint, explanation], index) => ({
+    id: `${prefix}${start + index}`,
+    kind: "choice",
+    prompt,
+    options,
+    answer,
+    hint,
+    explanation,
+  }));
+}
+
+export function contextExercises(prefix: string, start: number, seeds: ContextSeed[]): Exercise[] {
+  return seeds.map(([context, prompt, options, answer, hint, explanation], index) => ({
+    id: `${prefix}${start + index}`,
+    kind: "context",
+    context,
+    prompt,
+    options,
+    answer,
+    hint,
+    explanation,
+  }));
+}
+
+export function repairExercises(prefix: string, start: number, seeds: RepairSeed[]): Exercise[] {
+  return seeds.map(([
+    prompt,
+    tokens,
+    targetIndex,
+    replacements,
+    answer,
+    hint,
+    explanation,
+  ], index) => ({
+    id: `${prefix}${start + index}`,
+    kind: "repair",
+    prompt,
+    tokens,
+    targetIndex,
+    replacements,
+    answer,
+    hint,
+    explanation,
+  }));
+}
+
+export function orderExercises(prefix: string, start: number, seeds: OrderSeed[]): Exercise[] {
+  return seeds.map(([prompt, tokens, answer, hint, explanation], index) => ({
+    id: `${prefix}${start + index}`,
+    kind: "order",
+    prompt,
+    tokens,
+    answer,
+    hint,
+    explanation,
+  }));
+}
+
+export function tapExercises(prefix: string, start: number, seeds: TapSeed[]): Exercise[] {
+  return seeds.map(([prompt, tokens, answerIndexes, hint, explanation], index) => ({
+    id: `${prefix}${start + index}`,
+    kind: "tap",
+    prompt,
+    tokens,
+    answerIndexes,
+    selectionMode: answerIndexes.length === 1 ? "single" : "multiple",
+    hint,
+    explanation,
+  }));
+}
