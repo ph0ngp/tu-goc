@@ -38,6 +38,16 @@ Chủ dự án có thể viết thêm yêu cầu ngay dưới dòng này. Nên g
   vẻ gần nhau, nêu điều kiện cấp phép của cấu trúc, chỉ ra lựa chọn trung tính
   và lựa chọn có đánh dấu, đồng thời cảnh báo các trường hợp đúng ngữ pháp
   nhưng không phù hợp ngữ cảnh; không được trình bày C1 như một bộ mẹo biến đổi.
+- Áp dụng cho toàn bộ repository: repository này công khai trên GitHub, nên
+  tuyệt đối không commit bất kỳ nội dung nào chứa thông tin cá nhân. Điều này
+  bao gồm ảnh hoặc tên thật của người khác, email, số điện thoại, địa chỉ, tên
+  máy tính hoặc tên mạng nội bộ, đường dẫn tuyệt đối chứa tên người dùng, cùng
+  mật khẩu, khóa API và token. Tên nhân vật hư cấu trong ví dụ như Lan, Nam,
+  Mai không thuộc loại này. Ngoại lệ duy nhất là thông tin chủ dự án đã chủ
+  động công khai: tên tác giả ở chân trang và metadata, địa chỉ website và danh
+  tính người commit. Nếu phát hiện thông tin cá nhân đã được commit, không chỉ
+  xóa bằng một commit mới vì lịch sử git vẫn giữ lại; phải dừng lại và báo ngay
+  cho chủ dự án.
 
 ## 1. Người học và mục tiêu sư phạm
 
@@ -307,4 +317,5 @@ Chủ dự án có thể viết thêm yêu cầu ngay dưới dòng này. Nên g
 - [ ] Không có nội dung lý thuyết trùng ngoài Markdown.
 - [ ] Không sửa tệp generated trực tiếp.
 - [ ] Liên kết Markdown đều trỏ tới tệp có thật.
+- [ ] Không commit thông tin cá nhân, ảnh người thật, tên máy hoặc khóa bí mật.
 - [ ] Chạy `npm run check` thành công.
