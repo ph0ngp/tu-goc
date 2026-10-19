@@ -17,7 +17,7 @@ Danh từ đếm được chỉ người hoặc vật mà ta có thể đếm th
 | `an apple` | `three apples` | một quả táo → ba quả táo |
 | `a child` | `four children` | một đứa trẻ → bốn đứa trẻ |
 
-Một danh từ đếm được số ít thường không đứng một mình. Ta cần một từ như `a`, `an`, `the`, `my`, `this` hoặc một từ khác phù hợp: `a chair`, `my chair`, `this chair`. Không nói `I have chair` khi muốn nói “Tôi có một chiếc ghế”.
+Một danh từ đếm được số ít thường không đứng một mình. Ta cần một từ như `a`, `an`, `the`, `my`, `this` hoặc một từ khác phù hợp: `a chair`, `my chair`, `this chair`. Vì vậy ta nói `This is a chair.` — Đây là một chiếc ghế; không nói `This is chair`.
 
 ## Danh từ không đếm được
 
