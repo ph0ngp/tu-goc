@@ -7,6 +7,7 @@ import {
   isRotationOf,
   matchOptionOrder,
 } from "../app/exercises/answer-order.ts";
+import { sentenceTokens } from "../app/exercises/basic-builders.ts";
 
 const entries = Object.entries(exerciseDataByLegacyId);
 const allExercises = entries.flatMap(([, exercises]) => exercises);
@@ -122,6 +123,18 @@ test("never lets the position of an option give away the answer", () => {
       } else if (exercise.kind === "match") {
         assert.ok(!isAlignedMatchOrder(exercise.pairs, matchOptionOrder(exercise)), `${exercise.id}: lựa chọn xếp theo thứ tự hàng`);
       }
+    }
+
+    // Câu hỏi in sẵn các mảnh (bài sắp xếp, bài gõ lại câu) không được in theo vòng xoay của câu đúng.
+    for (const exercise of exercises) {
+      const printed = exercise.prompt.match(/mảnh `([^`]+)`/)?.[1]?.split(" · ");
+      if (!printed || printed.length < 3) continue;
+      const answer = exercise.kind === "order" ? exercise.answer
+        : exercise.kind === "exact-input" ? sentenceTokens(exercise.acceptedAnswers[0]) : null;
+      if (answer) assert.ok(!isRotationOf(printed, answer), `${exercise.id}: câu hỏi in các mảnh theo thứ tự của câu đúng`);
+    }
+    for (const exercise of exercises) {
+      assert.doesNotMatch(exercise.hint, /“[^”]+” trong phương án còn lại/, `${exercise.id}: gợi ý chỉ ra phương án sai`);
     }
 
     // Phương án được xáo khi hiển thị, nên lời giải thích không được chỉ “câu đầu”, “cách trên”...

@@ -125,9 +125,19 @@ export function a2PracticeSet(config: A2PracticeConfig): Exercise[] {
       return [prompt, [...answer.slice(shift), ...answer.slice(0, shift)], answer, explanation];
     }),
     repairs: config.repairs.map(([prompt, sentence, wrongToken, replacements, answer, explanation]) => {
-      const tokens = sentenceTokens(sentence);
-      const targetIndex = tokens.indexOf(wrongToken);
+      // Mảnh cần sửa có thể gồm nhiều từ (`been knowing` → `known`); khi đó gộp chúng thành một ô.
+      // Nếu mảnh xuất hiện nhiều lần, vị trí đầu tiên được đánh dấu.
+      const sentenceParts = sentenceTokens(sentence);
+      const wrongParts = sentenceTokens(wrongToken);
+      const targetIndex = sentenceParts.findIndex((_, index) =>
+        wrongParts.every((part, offset) => sentenceParts[index + offset] === part),
+      );
       if (targetIndex < 0) throw new Error(`Không tìm thấy mảnh cần sửa “${wrongToken}” trong “${sentence}”.`);
+      const tokens = [
+        ...sentenceParts.slice(0, targetIndex),
+        wrongParts.join(" "),
+        ...sentenceParts.slice(targetIndex + wrongParts.length),
+      ];
       return [prompt, tokens, targetIndex, replacements, answer, explanation];
     }),
     taps: config.taps.map(([prompt, sentence, selectedTokens, explanation]) => {

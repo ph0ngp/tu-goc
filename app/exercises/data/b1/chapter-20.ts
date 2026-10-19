@@ -29,7 +29,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     repairs: [
       ["Chọn dạng đúng cho vị trí sai trong `She has been wait outside`.", "She has been wait outside.", "wait", ["waiting", "waited", "waits"], "waiting", "Sau `has been` cần động từ thêm `-ing`."],
       ["Chọn từ chỉ khoảng thời gian đúng trong `We have been driving since two hours`.", "We have been driving since two hours.", "since", ["for", "from", "during"], "for", "`Two hours` là độ dài nên đi với `for`."],
-      ["Chọn cụm phù hợp với động từ trạng thái trong `I have been knowing Mai since school`.", "I have been knowing Mai since school.", "knowing", ["known", "know", "knew"], "known", "`Know` thường dùng hiện tại hoàn thành đơn: `have known`."],
+      ["Chọn cụm phù hợp với động từ trạng thái trong `I have been knowing Mai since school`.", "I have been knowing Mai since school.", "been knowing", ["known", "know", "knew"], "known", "`Know` thường dùng hiện tại hoàn thành đơn: `have known`."],
     ],
     taps: [
       ["Trong `Lan has been reading all afternoon`, chọn toàn bộ cụm động từ mang thì.", "Lan has been reading all afternoon.", ["has", "been", "reading"], "Cụm thì hoàn chỉnh là `has been reading`."],
@@ -68,8 +68,8 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
       ["Sắp xếp câu hỏi về độ dài trời mưa.", "How long has it been raining?", "Câu hỏi độ dài dùng hoàn thành tiếp diễn."],
     ],
     repairs: [
-      ["Chọn dạng đúng khi câu đếm bốn bài báo đã hoàn tất.", "Lan has been writing four articles today.", "writing", ["written", "wrote", "write"], "written", "Số lượng hoàn tất `four articles` cần `has written`."],
-      ["Chọn dạng đúng với trạng thái `believe` kéo dài nhiều năm.", "I have been believing this for years.", "believing", ["believed", "believe", "been believed"], "believed", "`Believe` theo nghĩa trạng thái thường dùng hiện tại hoàn thành đơn."],
+      ["Chọn dạng đúng khi câu đếm bốn bài báo đã hoàn tất.", "Lan has been writing four articles today.", "been writing", ["written", "wrote", "write"], "written", "Số lượng hoàn tất `four articles` cần `has written`."],
+      ["Chọn dạng đúng với trạng thái `believe` kéo dài nhiều năm.", "I have been believing this for years.", "been believing", ["believed", "believe", "believing"], "believed", "`Believe` theo nghĩa trạng thái thường dùng hiện tại hoàn thành đơn."],
       ["Chọn phần bổ sung đúng để nhấn quá trình trong `They have ___ the road all week`.", "They have repaired the road all week.", "repaired", ["been repairing", "repair", "been repaired"], "been repairing", "`All week` cùng trọng tâm quá trình phù hợp với `been repairing`."],
     ],
     taps: [
@@ -111,7 +111,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     repairs: [
       ["Chọn quá khứ phân từ đúng trong `She had went home before noon`.", "She had went home before noon.", "went", ["gone", "go", "going"], "gone", "Sau `had` dùng quá khứ phân từ `gone`."],
       ["Chọn trợ động từ đúng trong `They have finished before we arrived` khi cả câu nhìn từ quá khứ.", "They have finished before we arrived.", "have", ["had", "were", "did"], "had", "Việc hoàn tất xảy ra trước mốc quá khứ `arrived`."],
-      ["Chọn dạng đúng trong câu hỏi `Did he had eaten before the meeting?`.", "Did he had eaten before the meeting?", "Did", ["Had", "Has", "Was"], "Had", "Câu hỏi quá khứ hoàn thành dùng `Had + S + pp`."],
+      ["Chọn dạng đúng trong câu hỏi `Did he had eaten before the meeting?`.", "Did he had eaten before the meeting?", "Did he had", ["Had he", "Did he", "Have he"], "Had he", "Câu hỏi quá khứ hoàn thành dùng `Had + S + pp`."],
     ],
     taps: [
       ["Trong `By the time we arrived, the shop had closed`, chọn cụm chỉ sự việc sớm hơn.", "By the time we arrived, the shop had closed.", ["had", "closed"], "`Had closed` xảy ra trước `arrived`."],
@@ -152,7 +152,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     repairs: [
       ["Chọn thì làm nền đúng trong `It rained when we left the house` nếu mưa đang diễn ra.", "It rained when we left the house.", "rained", ["was raining", "had rained", "rains"], "was raining", "Hoạt động mưa đang diễn ra quanh sự kiện rời nhà."],
       ["Chọn dạng sớm hơn trong `I knew the place because I visited it before`.", "I knew the place because I visited it before.", "visited", ["had visited", "was visiting", "visit"], "had visited", "Chuyến thăm xảy ra trước thời điểm nhận ra địa điểm."],
-      ["Chọn dạng sự kiện xen vào trong `We were eating when the lights were out`.", "We were eating when the lights were out.", "were", ["went", "had", "are"], "went", "Sự kiện ngắn hoàn tất dùng quá khứ đơn `the lights went out`."],
+      ["Chọn dạng sự kiện xen vào trong `We were eating when the lights go out`.", "We were eating when the lights go out.", "go", ["went", "goes", "have gone"], "went", "Sự kiện ngắn hoàn tất dùng quá khứ đơn `the lights went out`."],
     ],
     taps: [
       ["Trong `While I was waiting, the bus arrived`, chọn cụm làm bối cảnh.", "While I was waiting, the bus arrived.", ["was", "waiting"], "`Was waiting` là hoạt động nền đang diễn ra."],

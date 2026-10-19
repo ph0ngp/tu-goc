@@ -86,6 +86,14 @@ export function isPredictableSortOrder(items: Array<{ bucket: string }>, buckets
   return ascending || descending || blocks;
 }
 
+/**
+ * Thứ tự mảnh dùng khi chính câu hỏi phải in các mảnh ra (bài gõ lại câu), để
+ * phần chữ của câu hỏi không để lộ câu đúng như một vòng xoay.
+ */
+export function scrambledPieces(answer: string[], seedText: string): string[] {
+  return scrambledTokens(answer, answer, createRandom(seedText));
+}
+
 function scrambledTokens(tokens: string[], answer: string[], random: () => number): string[] {
   if (answer.length < 3 || !isRotationOf(tokens, answer)) return tokens;
   for (let attempt = 0; attempt < 30; attempt++) {

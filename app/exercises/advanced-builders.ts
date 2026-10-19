@@ -1,4 +1,5 @@
 import type { Exercise } from "../exercise-types.ts";
+import { scrambledPieces } from "./answer-order.ts";
 import { gridExplanation, maskAnswerTerms, matchExplanation, sentenceTokens } from "./basic-builders.ts";
 
 type B1PracticeSeed = [
@@ -394,8 +395,7 @@ function advancedPracticeSet(
     const [, , , sentence, explanation] = b1SeedAt(seeds, parallelCursor, offset + 5);
     parallelCursor += 1;
     const answer = sentenceTokens(sentence);
-    const shift = 2 + ((index + offset) % Math.max(1, answer.length - 2));
-    const tokens = [...answer.slice(shift), ...answer.slice(0, shift)];
+    const tokens = scrambledPieces(answer, `${prefix}${nextId}`);
     const prompt = `Sắp xếp các mảnh \`${tokens.join(" · ")}\` thành một câu đúng về ${focus}.`;
     reserveAnswer(usage, sentence);
     exercises.push({ id: `${prefix}${nextId++}`, kind: "order", prompt, tokens, answer, hint: b1Hint(explanation, [sentence]), explanation: `${explanation} Câu hoàn chỉnh là \`${sentence}\`.` });
@@ -456,9 +456,7 @@ function advancedPracticeSet(
   for (let index = 0; index < mix.exact; index += 1) {
     const [, , , sentence, explanation] = leastUsedParallelSeed(seeds, parallelCursor, offset + 5, usage);
     parallelCursor += 1;
-    const answerTokens = sentenceTokens(sentence);
-    const shift = 2 + ((index + offset) % Math.max(1, answerTokens.length - 2));
-    const words = [...answerTokens.slice(shift), ...answerTokens.slice(0, shift)];
+    const words = scrambledPieces(sentenceTokens(sentence), `${prefix}${nextId}`);
     const prompt = `Dùng đủ các mảnh \`${words.join(" · ")}\` để viết một câu đúng về ${focus}.`;
     reserveAnswer(usage, sentence);
     exercises.push({
@@ -501,8 +499,13 @@ function b2SafeClue(text: string, answers: string[]): string {
 function b2ChoiceHint(cue: string, answer: string, distractor: string): string {
   const difference = b1Difference(answer, distractor);
   const safeCue = b2SafeClue(cue, [answer]);
-  if (difference.distractorChunk) {
-    return `Xem kỹ phần “${difference.distractorChunk}” trong phương án còn lại và hỏi nó có đáp ứng yêu cầu ${safeCue} hay không.`;
+  const shortChunk = (chunk: string) => chunk.split(" ").length <= 4;
+  if (shortChunk(difference.answerChunk) && shortChunk(difference.distractorChunk) && difference.answerChunk && difference.distractorChunk) {
+    // Nêu cả hai phần khác nhau theo thứ tự chữ cái để gợi ý không chỉ ra phương án nào sai.
+    const [first, second] = [difference.answerChunk, difference.distractorChunk].sort((left, right) =>
+      left.localeCompare(right, "en"),
+    );
+    return `Hai phương án chỉ khác nhau ở “${first}” và “${second}”; hỏi phần nào đáp ứng yêu cầu ${safeCue}.`;
   }
   return `Đọc kỹ yêu cầu ${safeCue}, rồi đối chiếu cả nghĩa lẫn hình thức của hai câu.`;
 }
@@ -565,8 +568,7 @@ function b2AdvancedPracticeSet(
     const [, , , sentence, explanation] = seeds[seedIndex];
     parallelCursor += 1;
     const answer = sentenceTokens(sentence);
-    const shift = 2 + ((index + offset) % Math.max(1, answer.length - 2));
-    const tokens = [...answer.slice(shift), ...answer.slice(0, shift)];
+    const tokens = scrambledPieces(answer, `${prefix}${nextId}`);
     exercises.push({
       id: `${prefix}${nextId++}`,
       kind: "order",
@@ -668,9 +670,7 @@ function b2AdvancedPracticeSet(
     const seedIndex = seeds.indexOf(selectedSeed);
     const [, , , sentence, explanation] = selectedSeed;
     parallelCursor += 1;
-    const answerTokens = sentenceTokens(sentence);
-    const shift = 2 + ((index + offset) % Math.max(1, answerTokens.length - 2));
-    const words = [...answerTokens.slice(shift), ...answerTokens.slice(0, shift)];
+    const words = scrambledPieces(sentenceTokens(sentence), `${prefix}${nextId}`);
     reserveAnswer(usage, sentence);
     exercises.push({
       id: `${prefix}${nextId++}`,

@@ -41,7 +41,7 @@ export const b1Chapter23ExerciseData: Record<string, Exercise[]> = {
     ["không dùng đồng thời `although` và `but`", "Although it was late, we continued.", "Although it was late, but we continued.", "It was expensive, but we bought it.", "Một quan hệ tương phản chỉ cần `although` hoặc `but`."],
     ["phân biệt sự thật với điều kiện", "Even though it rained, we went out.", "Even if it rained, we would go out.", "Even though he knew the risk, he agreed.", "`Even though` nói sự thật đã xảy ra."],
     ["nói vẫn đi ngay cả nếu có mưa", "I'll go even if it rains.", "I'll go even though it rained yesterday.", "We'll continue even if the plan changes.", "`Even if` nêu điều kiện có thể xảy ra."],
-    ["rút mệnh đề cùng chủ ngữ thành V-ing", "Although she was tired, Lan continued.", "Despite being tired, Minh continued.", "Despite being nervous, Mai spoke clearly.", "Rút gọn chỉ an toàn khi người mang trạng thái là chủ ngữ mệnh đề chính."],
+    ["rút mệnh đề cùng chủ ngữ thành V-ing", "Despite being tired, Lan continued.", "Despite she was tired, Lan continued.", "Despite being nervous, Mai spoke clearly.", "Sau `despite` không đặt cả một mệnh đề; khi người mang trạng thái cũng là chủ ngữ mệnh đề chính, dùng `despite + V-ing`."],
     ["đặt mệnh đề `although` cuối câu", "Lan passed although she was nervous.", "Lan passed despite she was nervous.", "We enjoyed the trip although the weather was poor.", "`Although` vẫn cần một mệnh đề khi đứng cuối."],
     ["dùng cụm sở hữu sau `in spite of`", "In spite of his limited experience, he succeeded.", "In spite of he had limited experience, he succeeded.", "Despite her fear, she entered the room.", "Sau giới từ dùng cụm danh từ, không dùng trực tiếp mệnh đề."],
   ]),
