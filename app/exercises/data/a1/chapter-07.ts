@@ -81,7 +81,7 @@ export const a1Chapter07ExerciseData: Record<string, Exercise[]> = {
     taps: [
       ["Trong `How many pieces of cake are there?`, chọn danh từ đang được đếm trực tiếp.", ["How", "many", "pieces", "of", "cake", "are", "there", "?"], [2], "Ta đếm số `pieces`, không đếm `cake` trực tiếp."],
       ["Trong `How much are those bags?`, chọn cụm dùng để hỏi giá.", ["How", "much", "are", "those", "bags", "?"], [0, 1], "`How much` đứng một mình để hỏi giá."],
-      ["Trong `Three bowls of rice are on the table`, chọn tất cả từ thuộc cụm đơn vị.", ["Three", "bowls", "of", "rice", "are", "on", "the", "table", "."], [0, 1, 2, 3], "Cả cụm `three bowls of rice` biểu thị lượng."],
+      ["Trong `Three bowls of rice are on the table`, chọn toàn bộ cụm `số + đơn vị + of + danh từ`.", ["Three", "bowls", "of", "rice", "are", "on", "the", "table", "."], [0, 1, 2, 3], "Cả cụm `three bowls of rice` biểu thị lượng: số, đơn vị `bowls`, `of` và danh từ không đếm được."],
     ],
     matchPrompt: "Ghép mỗi câu hỏi với loại thông tin nó yêu cầu.",
     pairs: [{ left: "How many books?", right: "số quyển sách" }, { left: "How much water?", right: "lượng nước" }, { left: "How much is this book?", right: "giá của quyển sách" }, { left: "How many bottles of water?", right: "số chai nước" }],

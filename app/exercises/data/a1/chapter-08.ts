@@ -409,9 +409,9 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     items: [{ text: "Can I open it?", bucket: "Người nói/cả nhóm người nói" }, { text: "Can we sit here?", bucket: "Người nói/cả nhóm người nói" }, { text: "Can I help you?", bucket: "Người nói/cả nhóm người nói" }, { text: "Can you wait?", bucket: "Người nghe" }, { text: "Can you call me?", bucket: "Người nghe" }, { text: "Can you close the door?", bucket: "Người nghe" }],
     gridPrompts: ["Chọn `I`, `we` hoặc `you` theo mục đích giao tiếp.", "Chọn câu đáp tự nhiên cho từng lời nói.", "Chọn câu phù hợp nhất với từng tình huống."],
     gridRows: [
-      { cue: "xin phép cho bản thân", options: ["Can I ...?", "Can you ...?", "I can ..."], answer: "Can I ...?", completed: "Can I leave early?" },
-      { cue: "xin phép cho cả nhóm", options: ["Can we ...?", "Can us ...?", "Do we can ...?"], answer: "Can we ...?", completed: "Can we come in?" },
-      { cue: "nhờ người nghe", options: ["Can you ...?", "Can I ...?", "You can ..."], answer: "Can you ...?", completed: "Can you help me?" },
+      { cue: "Xin phép cho bản thân: ___ leave early?", options: ["Can I", "Can you", "I can"], answer: "Can I", completed: "Can I leave early?" },
+      { cue: "Xin phép cho cả nhóm: ___ come in?", options: ["Can we", "Can us", "Do we can"], answer: "Can we", completed: "Can we come in?" },
+      { cue: "Nhờ người nghe: ___ help me?", options: ["Can you", "Can I", "You can"], answer: "Can you", completed: "Can you help me?" },
       { cue: "Can I sit here?", options: ["Yes, of course.", "Yes, I do.", "Yes, I am."], answer: "Yes, of course.", completed: "Can I sit here? — Yes, of course." },
       { cue: "Can you help me?", options: ["Sure.", "Yes, I am.", "No, I don't help."], answer: "Sure.", completed: "Can you help me? — Sure." },
       { cue: "Can I get you some coffee?", options: ["No, thank you.", "No, I can't coffee.", "No, I don't."], answer: "No, thank you.", completed: "Can I get you some coffee? — No, thank you." },
@@ -430,7 +430,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       ["Câu trả lời nào hợp với `Are they ready?`?", ["Yes, they are.", "Yes, they do.", "Yes, they can."], "Yes, they are.", "Câu hỏi dùng `are` nên câu trả lời ngắn giữ `are`."],
       ["Câu trả lời nào hợp với `Do they live here?`?", ["No, they don't.", "No, they aren't.", "No, they can't."], "No, they don't.", "Câu hỏi dùng `do` nên trả lời bằng `don't`."],
       ["Câu trả lời nào hợp với `Can she drive?`?", ["Yes, she can.", "Yes, she does.", "Yes, she is."], "Yes, she can.", "Câu hỏi dùng `can` nên trả lời bằng `can`."],
-      ["Câu nào hỏi đúng về giờ mở cửa thường lệ?", ["Does the shop open at nine?", "Is the shop open at nine every day?", "Can the shop opens at nine?"], "Does the shop open at nine?", "`Open` là động từ hành động theo lịch nên dùng `does`."],
+      ["Câu nào hỏi đúng về giờ mở cửa thường lệ?", ["Does the shop open at nine?", "Is the shop opens at nine?", "Can the shop opens at nine?"], "Does the shop open at nine?", "`Open` là động từ hành động theo lịch nên dùng `does`."],
       ["Câu nào hỏi trạng thái cửa hàng hiện tại?", ["Is the shop open?", "Does the shop open?", "Can the shop open?"], "Is the shop open?", "`Open` là tính từ sau `be` trong câu này."],
       ["Sau `does`, dạng động từ nào đúng?", ["have", "has", "having"], "have", "Sau `does`, động từ chính ở dạng cơ bản."],
       ["Sau `can`, dạng động từ nào đúng?", ["help", "helps", "to help"], "help", "Sau `can`, dùng động từ cơ bản không có `to`."],
@@ -523,7 +523,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       "explanation": "Open the book. là một yêu cầu trực tiếp.",
       "options": [
         "Open the book.",
-        "Let’s open the book.",
+        "Don’t open the book.",
         "She can open the book."
       ],
       "answer": "Open the book."
@@ -617,7 +617,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     choices: [
       ["Câu nào rủ người nói và người nghe cùng về nhà?", ["Let's go home.", "Go home.", "Can you go home?"], "Let's go home.", "`Let's` bao gồm cả người nói và người nghe."],
       ["Sau `let's`, dạng nào đúng?", ["play", "to play", "plays"], "play", "Sau `let's`, dùng động từ cơ bản."],
-      ["Cách nào đề nghị cả nhóm không chờ?", ["Let's not wait.", "Don't let's wait.", "Let's don't wait."], "Let's not wait.", "Đặt `not` ngay sau `let's`."],
+      ["Cách nào đề nghị cả nhóm không chờ?", ["Let's not wait.", "Let's not to wait.", "Let's no wait."], "Let's not wait.", "Đặt `not` ngay sau `let's`."],
       ["Lời đáp nào đồng ý với một lời rủ?", ["Good idea.", "Yes, I do.", "Yes, I am."], "Good idea.", "`Good idea` là lời đáp tự nhiên cho một đề nghị."],
       ["Lời đáp nào từ chối trực tiếp lời rủ?", ["No, let's not.", "No, we don't.", "No, we aren't."], "No, let's not.", "Giữ lại mẫu `let's not`."],
       ["Câu nào chỉ yêu cầu người nghe mở cửa?", ["Open the door.", "Let's open the door.", "Let's not open the door."], "Open the door.", "Mệnh lệnh hướng tới người nghe; `let's` bao gồm người nói."],
@@ -634,13 +634,13 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     ],
     repairs: [
       ["Chọn cụm động từ đúng sau `let's`.", ["Let’s", "to go", "now", "."], 1, ["go", "to go", "going"], "go", "Sau `let's`, dùng trực tiếp động từ cơ bản `go`."],
-      ["Chọn vị trí phủ định đúng.", ["Let’s", "don’t", "tell", "Lan", "."], 1, ["not", "don't", "doesn't"], "not", "Mẫu đúng là `Let's not tell Lan`."],
+      ["Chọn từ phủ định đúng sau `let's`.", ["Let’s", "no", "tell", "Lan", "."], 1, ["not", "no", "doesn't"], "not", "Mẫu chuẩn là `Let's not tell Lan`."],
       ["Chọn dạng có dấu nháy cho lời rủ.", ["Lets", "have", "a", "break", "."], 0, ["Let's", "Lets", "Lets'"], "Let's", "Lời rủ dùng dạng viết tắt `let's`."],
     ],
     taps: [
       ["Trong `Let's take the bus`, chọn phần cho biết người nói rủ cả nhóm cùng làm.", ["Let’s", "take", "the", "bus", "."], [0], "`Let's` mang ý “người nói và người nghe cùng...”."],
       ["Trong `Let's not talk here`, chọn phần tạo lời đề nghị phủ định.", ["Let’s", "not", "talk", "here", "."], [0, 1], "`Let's not` đề nghị cả nhóm không làm."],
-      ["Trong `Open the book, but let's read together`, chọn lời rủ cùng làm.", ["Open", "the", "book", ",", "but", "let’s", "read", "together", "."], [5, 6, 7], "`Let's read together` bao gồm cả người nói."],
+      ["Trong hai câu `Open your book. Let's read together`, chọn lời rủ cùng làm.", ["Open", "your", "book", ".", "Let’s", "read", "together", "."], [4, 5, 6], "`Open your book` chỉ hướng tới người nghe; `Let's read together` bao gồm cả người nói."],
     ],
     matchPrompt: "Ghép mỗi câu với đúng mục đích giao tiếp.",
     pairs: [{ left: "Let's have lunch.", right: "rủ cùng ăn trưa" }, { left: "Let's not wait.", right: "đề nghị cả nhóm không chờ" }, { left: "Open the door.", right: "yêu cầu người nghe mở cửa" }, { left: "Can you help me?", right: "nhờ người nghe giúp" }],
@@ -651,9 +651,9 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     gridRows: [
       { cue: "chỉ người nghe", options: ["Close the door.", "Let's close the door.", "Let's not close the door."], answer: "Close the door.", completed: "Close the door." },
       { cue: "người nói và người nghe", options: ["Let's close the door.", "Close the door.", "You close the door."], answer: "Let's close the door.", completed: "Let's close the door." },
-      { cue: "cả nhóm không làm", options: ["Let's not close the door.", "Don't let's close the door.", "Not close the door."], answer: "Let's not close the door.", completed: "Let's not close the door." },
+      { cue: "cả nhóm không làm", options: ["Let's not close the door.", "Let's not to close the door.", "Not close the door."], answer: "Let's not close the door.", completed: "Let's not close the door." },
       { cue: "cùng đi", options: ["Let's go.", "Let's not go.", "Let's to go."], answer: "Let's go.", completed: "Let's go." },
-      { cue: "cùng không đi", options: ["Let's not go.", "Let's don't go.", "Don't let's go."], answer: "Let's not go.", completed: "Let's not go." },
+      { cue: "cùng không đi", options: ["Let's not go.", "Let's no go.", "Let's not to go."], answer: "Let's not go.", completed: "Let's not go." },
       { cue: "cùng vui vẻ", options: ["Let's have fun.", "Let's to have fun.", "Let's has fun."], answer: "Let's have fun.", completed: "Let's have fun." },
       { cue: "Let's eat outside.", options: ["Good idea.", "Yes, I do.", "Yes, it is."], answer: "Good idea.", completed: "Let's eat outside. — Good idea." },
       { cue: "Let's not be late.", options: ["Okay.", "No, we don't.", "Yes, we are."], answer: "Okay.", completed: "Let's not be late. — Okay." },
@@ -684,7 +684,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     repairs: [
       ["Chọn từ cần có trước động từ `leave`.", ["They’d", "like", "leave", "now", "."], 2, ["to leave", "leave", "leaving"], "to leave", "Sau `would like`, hành động dùng `to-infinitive`."],
       ["Chọn dạng động từ đúng sau `would`.", ["Would", "she", "likes", "some", "tea", "?"], 2, ["like", "likes", "to liking"], "like", "`Would` đi với dạng cơ bản `like`."],
-      ["Chọn dạng phủ định của `would`.", ["I", "don’t would", "like", "any", "more", "."], 1, ["wouldn't", "don't would", "doesn't would"], "wouldn't", "Dùng trực tiếp `wouldn't like`."],
+      ["Chọn dạng phủ định của `would`.", ["I", "don’t would", "like", "to", "work", "at", "night", "."], 1, ["wouldn't", "don't would", "doesn't would"], "wouldn't", "Dùng trực tiếp `wouldn't like`; không thêm `don't` trước `would`."],
     ],
     taps: [
       ["Trong `I'd like a sandwich and I'd like to sit down`, chọn hai dạng viết tắt của `would`.", ["I’d", "like", "a", "sandwich", "and", "I’d", "like", "to", "sit", "down", "."], [0, 5], "Cả hai `I'd` đều là `I would`."],

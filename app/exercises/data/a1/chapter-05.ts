@@ -16,12 +16,12 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
       ["Cụm nào đúng khi nói một chiếc ghế?", ["a chair", "chair", "an chair"], "a chair", "Danh từ đếm được số ít cần từ đứng trước; `chair` bắt đầu bằng âm phụ âm."],
       ["Cách nào đếm lượng sữa?", ["three bottles of milk", "three milks", "three bottle of milks"], "three bottles of milk", "Chuyển `bottle` sang số nhiều; `milk` giữ nguyên."],
       ["Danh từ nào có dạng số nhiều thông thường trong lựa chọn?", ["books", "money", "sugar"], "books", "`Book` là danh từ đếm được: `book/books`."],
-      ["Câu nào dùng `bread` đúng khi nói bánh mì nói chung?", ["Bread is fresh.", "A bread is fresh.", "Breads are fresh."], "Bread is fresh.", "`Bread` thường không đếm được, không dùng `a` và không thêm `-s` trong nghĩa này."],
+      ["Câu nào dùng `bread` đúng khi nói bánh mì nói chung?", ["Bread is cheap in this shop.", "A bread is cheap in this shop.", "Breads are cheap in this shop."], "Bread is cheap in this shop.", "`Bread` thường không đếm được, không dùng `a` và không thêm `-s` trong nghĩa này."],
       ["Câu nào đúng khi nói thông tin nói chung?", ["This information is useful.", "These informations are useful.", "An information is useful."], "This information is useful.", "`Information` không đếm được và không có số nhiều `informations` trong nghĩa này."],
     ],
     orders: [
       ["Sắp xếp cụm “hai cốc nước”.", ["water", "glasses", "of", "two"], ["two", "glasses", "of", "water"], "Danh từ đếm được `glass` mang số nhiều; `water` giữ nguyên."],
-      ["Sắp xếp câu “Có đường trong bát.”", ["sugar", "There", "in", "is", "the", "bowl", "."], ["There", "is", "sugar", "in", "the", "bowl", "."], "`Sugar` không đếm được nên dùng `there is`; danh từ giữ nguyên."],
+      ["Sắp xếp câu “Đường ở trong bát.”", ["sugar", "The", "in", "is", "the", "bowl", "."], ["The", "sugar", "is", "in", "the", "bowl", "."], "`Sugar` không đếm được nên đi với `is` và không thêm `-s`."],
       ["Sắp xếp cụm “ba mẩu thông tin”.", ["information", "pieces", "three", "of"], ["three", "pieces", "of", "information"], "Đếm `pieces`, không thêm `-s` vào `information`."],
       ["Sắp xếp câu “Những quả táo này tươi.”", ["fresh", "These", "are", "apples", "."], ["These", "apples", "are", "fresh", "."], "`Apples` là danh từ đếm được số nhiều."],
     ],
@@ -163,7 +163,7 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
       "explanation": "Mỗi câu phục vụ đúng mục đích và đúng số lượng.",
       "rows": [
         {
-          "cue": "Giới thiệu một quyển sách mới",
+          "cue": "Cho biết trên bàn có một quyển sách mà người nghe chưa biết",
           "options": [
             "There is a book on the table.",
             "The book is on the table.",
@@ -183,11 +183,11 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
           "completed": "The book is on the table."
         },
         {
-          "cue": "Hỏi có nhiều sách không",
+          "cue": "Hỏi xem có sách không, khi nói về nhiều quyển",
           "options": [
             "Are there books?",
             "Is there books?",
-            "Do there books?"
+            "Are there book?"
           ],
           "answer": "Are there books?",
           "completed": "Are there books?"
@@ -245,7 +245,7 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
           "options": [
             "There isn’t a cat.",
             "There aren’t a cat.",
-            "There doesn’t a cat."
+            "There isn’t cats."
           ],
           "answer": "There isn’t a cat.",
           "completed": "There isn’t a cat."
@@ -255,7 +255,7 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
           "options": [
             "There are no books.",
             "There is no books.",
-            "There do no books."
+            "There are no book."
           ],
           "answer": "There are no books.",
           "completed": "There are no books."
@@ -265,7 +265,7 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
           "options": [
             "There is not an apple.",
             "There are not an apple.",
-            "There does not an apple."
+            "There is not apples."
           ],
           "answer": "There is not an apple.",
           "completed": "There is not an apple."
@@ -275,21 +275,21 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "th11",
       "kind": "match",
-      "prompt": "Giữ lại there và đúng dạng is hoặc are.",
-      "hint": "Is there đi với there is; Are there đi với there are.",
-      "explanation": "Mỗi câu trả lời ngắn giữ đúng số lượng.",
+      "prompt": "Ghép mỗi câu hỏi với câu trả lời phù hợp.",
+      "hint": "Câu hỏi với there cần câu trả lời ngắn giữ there và đúng is/are; câu hỏi Where cần một vị trí.",
+      "explanation": "Is there a cat in the room? → Yes, there is. Are there books on the desk? → No, there aren’t. Where is the cat? hỏi vị trí của con mèo đã biết → It’s under the chair.",
       "pairs": [
         {
-          "left": "Is there a cat?",
+          "left": "Is there a cat in the room?",
           "right": "Yes, there is."
         },
         {
-          "left": "Are there books?",
+          "left": "Are there books on the desk?",
           "right": "No, there aren’t."
         },
         {
-          "left": "Are there two chairs?",
-          "right": "Yes, there are."
+          "left": "Where is the cat?",
+          "right": "It’s under the chair."
         }
       ]
     },
@@ -389,13 +389,13 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
       "kind": "grid",
       "prompt": "Kết hợp câu phủ định, câu hỏi, vị trí và sự tồn tại.",
       "hint": "Tìm be, kiểm tra số lượng rồi xác định câu đang nói vị trí hay sự tồn tại.",
-      "explanation": "Ba câu tổng hợp những cấu trúc quan trọng nhất của chương về động từ be.",
+      "explanation": "Ba câu kết hợp phủ định với be, câu hỏi với be và there are để nói vị trí và sự tồn tại.",
       "rows": [
         {
           "cue": "Cô ấy không ở nhà.",
           "options": [
             "She isn’t at home.",
-            "She doesn’t at home.",
+            "She aren’t at home.",
             "She not is at home."
           ],
           "answer": "She isn’t at home.",
@@ -406,7 +406,7 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
           "options": [
             "Are the books in the box?",
             "Is the books in the box?",
-            "Do the books in the box?"
+            "Are the book in the box?"
           ],
           "answer": "Are the books in the box?",
           "completed": "Are the books in the box?"
@@ -434,7 +434,7 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
       ["Câu khẳng định nào đúng với `tea`?", ["There is some tea.", "There are some tea.", "There is any tea."], "There is some tea.", "Câu khẳng định dùng `some`; `tea` không đếm được nên dùng `is`."],
       ["Cách nào đúng với một danh từ đếm được số ít?", ["There is a book.", "There is some book.", "There are any book."], "There is a book.", "Trong mẫu cơ bản, dùng `a/an` với một danh từ đếm được số ít."],
       ["Câu nào có nghĩa “Không có quả trứng nào”?", ["There aren't any eggs.", "There isn't any eggs.", "There aren't some eggs."], "There aren't any eggs.", "`Eggs` số nhiều dùng `aren't any`."],
-      ["Câu nào không dùng hai lần phủ định?", ["There is no bread.", "There isn't no bread.", "There doesn't no bread."], "There is no bread.", "Có thể dùng `no` hoặc `not ... any`, không dùng cả hai."],
+      ["Câu nào không dùng hai lần phủ định?", ["There is no bread.", "There isn't no bread.", "There is not no bread."], "There is no bread.", "Có thể dùng `no` hoặc `not ... any`, không dùng cả hai."],
       ["Câu hỏi trung lập nào đúng với `water`?", ["Is there any water?", "Are there any water?", "Is there some waters?"], "Is there any water?", "Câu hỏi trung lập dùng `any`; `water` không đếm được nên dùng `is`."],
       ["Câu nào đúng với `rice`?", ["There is some rice.", "There are some rice.", "There is some rices."], "There is some rice.", "`Rice` không đếm được, dùng `is` và không thêm `-s`."],
       ["Trong câu trả lời khẳng định sau câu hỏi với `any`, từ nào thường xuất hiện?", ["some", "any", "no"], "some", "Khi xác nhận có một lượng, ta thường chuyển sang `some`."],
@@ -596,9 +596,9 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "pl9",
       "kind": "tap",
-      "prompt": "Chạm vào cụm chỉ vị trí",
+      "prompt": "Trong `The bag is under the chair`, chọn giới từ chỉ vị trí.",
       "hint": "Từ nào có nghĩa “ở dưới”?",
-      "explanation": "under là giới từ chỉ vị trí phía dưới.",
+      "explanation": "under là giới từ chỉ vị trí phía dưới; the chair là vật làm mốc.",
       "tokens": [
         "The bag",
         "is",
@@ -651,13 +651,13 @@ const a1Chapter05BaseExerciseData: Record<string, Exercise[]> = {
       ["Cụm cố định nào đúng?", ["at night", "in night", "on night"], "at night", "Nói `in the morning` nhưng `at night`."],
       ["Cách nào không dùng giới từ?", ["next Monday", "on next Monday", "in next Monday"], "next Monday", "Không đặt `in/on/at` trước `next` trong cụm này."],
       ["Câu nào nhấn mạnh đang ở bên trong tòa nhà trường?", ["She is in the school.", "She is at school.", "She is on school."], "She is in the school.", "`In the school` nhấn mạnh bên trong tòa nhà; `at school` thường nói địa điểm hoạt động học."],
-      ["Câu nào dùng cùng một giới từ cho thời gian?", ["on Friday morning", "in Friday morning", "at Friday morning"], "on Friday morning", "Khi buổi đi cùng ngày cụ thể, dùng `on`."],
+      ["Cụm nào dùng đúng giới từ để nói “vào sáng thứ Sáu”?", ["on Friday morning", "in Friday morning", "at Friday morning"], "on Friday morning", "Khi buổi trong ngày gắn với một thứ cụ thể, ta dùng giới từ đi với ngày, không dùng giới từ đi với buổi."],
     ],
     orders: [
       ["Sắp xếp câu “Chúng tôi ở nhà vào buổi tối.”", ["evening", "We", "home", "are", "at", "in", "the", "."], ["We", "are", "at", "home", "in", "the", "evening", "."], "`At home` là nơi chốn; `in the evening` là thời gian."],
       ["Sắp xếp câu “Lớp học vào thứ Ba lúc chín giờ.”", ["Tuesday", "class", "at", "The", "nine", "is", "on", "."], ["The", "class", "is", "on", "Tuesday", "at", "nine", "."], "Ngày dùng `on`; giờ dùng `at`."],
       ["Sắp xếp câu “Bức ảnh ở trên tường trong phòng khách.”", ["the", "the", "picture", "living", "on", "is", "wall", "The", "in", "room", "."], ["The", "picture", "is", "on", "the", "wall", "in", "the", "living", "room", "."], "Vật trên bề mặt dùng `on`; không gian bao quanh dùng `in`."],
-      ["Sắp xếp câu “Tôi làm việc ở Hà Nội vào năm 2026.”", ["2026", "work", "Hanoi", "in", "I", "in", "."], ["I", "work", "in", "Hanoi", "in", "2026", "."], "Thành phố và năm đều dùng `in` trong các mẫu này."],
+      ["Sắp xếp câu “Lễ hội diễn ra ở Huế vào tháng Sáu.”", ["June", "is", "Hue", "in", "The", "festival", "in", "."], ["The", "festival", "is", "in", "Hue", "in", "June", "."], "Thành phố và tháng đều dùng `in` trong các mẫu này."],
     ],
     repairs: [
       ["Chọn giới từ đúng trước ngày.", ["We", "study", "in", "Monday", "."], 2, ["in", "on", "at"], "on", "Dùng `on Monday`."],

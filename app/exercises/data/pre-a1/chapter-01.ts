@@ -844,7 +844,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     },
     ...choiceExercises("fr", 7, [
       ["`The dog runs.`, nghĩa là “Con chó chạy”, dùng khung nào?", ["SV", "SVC", "SVO"], "SV", "Sau động từ runs không cần thêm thành phần nào trong ý này.", "The dog là S và runs là V, nên câu dùng khung SV."],
-      ["`The book is new.`, nghĩa là “Quyển sách mới”, dùng khung nào?", ["SV", "SVC", "SVO"], "SVC", "new miêu tả chính quyển sách.", "The book is new. dùng khung SVC."],
+      ["`The book is new.`, nghĩa là “Quyển sách này còn mới”, dùng khung nào?", ["SV", "SVC", "SVO"], "SVC", "new miêu tả chính quyển sách.", "The book is new. dùng khung SVC."],
       ["`They like music.`, nghĩa là “Họ thích âm nhạc”, dùng khung nào?", ["SV", "SVC", "SVO"], "SVO", "music là thứ được thích.", "They like music. dùng khung SVO."],
       ["Trong các chữ SV, SVC và SVO, `S` là gì?", ["chủ ngữ", "động từ", "tân ngữ"], "chủ ngữ", "S là chữ đầu của subject.", "`S` viết tắt cho chủ ngữ (*subject*), tức phần chỉ người hoặc vật được câu nói tới."],
       ["Trong các chữ SV, SVC và SVO, `V` là gì?", ["chủ ngữ", "động từ", "bổ ngữ"], "động từ", "V là chữ đầu của verb.", "`V` viết tắt cho động từ (*verb*), phần cho biết hành động hoặc trạng thái trong câu."],

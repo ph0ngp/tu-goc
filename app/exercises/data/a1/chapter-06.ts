@@ -309,7 +309,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "options": [
         "They",
         "They are",
-        "They does"
+        "They is"
       ],
       "answer": "They"
     },
@@ -540,15 +540,15 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "t8",
       "kind": "choice",
-      "prompt": "Câu nào có nghĩa là “Con mèo thường ngủ”?",
+      "prompt": "Câu nào có nghĩa là “Con mèo ngủ trong hộp”?",
       "hint": "The cat là một con vật, có thể thay bằng it.",
-      "explanation": "The cat sleeps. dùng đúng động từ với chủ ngữ số ít.",
+      "explanation": "The cat sleeps in the box. dùng đúng động từ với chủ ngữ số ít.",
       "options": [
-        "The cat sleep.",
-        "The cat sleeps.",
-        "The cats sleep."
+        "The cat sleep in the box.",
+        "The cat sleeps in the box.",
+        "The cats sleep in the box."
       ],
-      "answer": "The cat sleeps."
+      "answer": "The cat sleeps in the box."
     },
     {
       "id": "t9",
@@ -1155,11 +1155,11 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
         {
           "cue": "___ they live here?",
           "options": [
-            "do",
-            "does",
-            "are"
+            "Do",
+            "Does",
+            "Are"
           ],
-          "answer": "do",
+          "answer": "Do",
           "completed": "Do they live here?"
         }
       ]
@@ -1254,7 +1254,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       ["Câu nào hỏi cách đi làm?", ["How do you go to work?", "What do you go to work?", "When are you go to work?"], "How do you go to work?", "`How` hỏi cách thức; động từ thường dùng `do`."],
       ["Sau `does`, dạng nào đúng?", ["have", "has", "having"], "have", "Sau `does`, động từ ở dạng cơ bản `have`."],
       ["Câu nào hỏi “Bạn thăm ai?”", ["Who do you visit?", "Who visits you?", "Whose do you visit?"], "Who do you visit?", "`You` là chủ ngữ; `who` hỏi tân ngữ nên dùng `do`."],
-      ["Câu nào hỏi “Ai sống ở đây?”", ["Who lives here?", "Who does live here?", "Who do lives here?"], "Who lives here?", "`Who` là chủ ngữ nên không dùng `do/does` trong mẫu cơ bản."],
+      ["Câu nào hỏi “Ai sống ở đây?”", ["Who lives here?", "Who live here?", "Who do lives here?"], "Who lives here?", "`Who` là chủ ngữ nên không dùng `do/does` trong mẫu cơ bản."],
       ["Từ hỏi nào dùng để hỏi về người?", ["who", "where", "when"], "who", "`Who` dùng để hỏi “ai”."],
       ["Câu trả lời nào phù hợp với `Why does she study English?`?", ["Because she needs it.", "At school.", "Every day."], "Because she needs it.", "Câu hỏi `why` cần một lý do."],
     ],
@@ -1286,7 +1286,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       { cue: "___? — Because I'm tired.", options: ["Why", "How", "When"], answer: "Why", completed: "Why do you rest? — Because I'm tired." },
       { cue: "Where ___ they work?", options: ["do", "does", "are"], answer: "do", completed: "Where do they work?" },
       { cue: "What ___ she need?", options: ["does", "do", "is"], answer: "does", completed: "What does she need?" },
-      { cue: "How often ___ your parents travel?", options: ["do", "does", "are"], answer: "do", completed: "How often do your parents travel?" },
+      { cue: "When ___ your parents travel?", options: ["do", "does", "are"], answer: "do", completed: "When do your parents travel?" },
       { cue: "Where does he ___?", options: ["live", "lives", "living"], answer: "live", completed: "Where does he live?" },
       { cue: "What do they ___?", options: ["want", "wants", "wanting"], answer: "want", completed: "What do they want?" },
       { cue: "Who ___ English here?", options: ["teaches", "teach", "does teach"], answer: "teaches", completed: "Who teaches English here?" },
@@ -1316,7 +1316,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     repairs: [
       ["Chọn dạng đúng sau `doesn't`.", ["Mai", "doesn’t", "has", "a", "phone", "."], 2, ["have", "has", "having"], "have", "Sau `doesn't`, dùng động từ cơ bản `have`."],
       ["Chọn trợ động từ đúng cho hệ thống `have got`.", ["Does", "Lan", "got", "a", "bike", "?"], 0, ["Does", "Has", "Is"], "Has", "Câu hỏi là `Has Lan got ...?`."],
-      ["Chọn dạng viết tắt đúng của `we have got`.", ["We’re", "got", "two", "tickets", "."], 0, ["We’re", "We’ve", "We’s"], "We’ve", "`We've` là `we have`."],
+      ["Chọn phần đúng để câu có nghĩa “Chúng tôi có hai vé”.", ["We’re", "got", "two", "tickets", "."], 0, ["We’re", "We’ve", "We has"], "We’ve", "`We've` là `we have`."],
     ],
     taps: [
       ["Trong `She has a car but she doesn't have a bike`, chọn tất cả dạng của động từ `have`.", ["She", "has", "a", "car", "but", "she", "doesn’t", "have", "a", "bike", "."], [1, 7], "`Has` ở câu khẳng định; `have` theo sau `doesn't`."],
@@ -1520,7 +1520,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "id": "f10",
       "kind": "match",
       "prompt": "Ghép từ với nghĩa gần đúng.",
-      "hint": "rarely và seldom gần nghĩa nhau nhưng sắc thái sử dụng hơi khác.",
+      "hint": "Đặt mỗi trạng từ vào đúng mức trên thang từ always đến never.",
       "explanation": "Các trạng từ đã được ghép với mức độ thường xuyên.",
       "pairs": [
         {
@@ -1528,12 +1528,12 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
           "right": "thường xuyên / thường là"
         },
         {
-          "left": "rarely",
-          "right": "hiếm khi — dùng phổ biến"
+          "left": "sometimes",
+          "right": "đôi khi"
         },
         {
-          "left": "seldom",
-          "right": "hiếm khi — trang trọng hơn"
+          "left": "rarely",
+          "right": "hiếm khi"
         },
         {
           "left": "never",
