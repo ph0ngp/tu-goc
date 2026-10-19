@@ -1016,11 +1016,11 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "sc12",
       "kind": "choice",
-      "prompt": "Tuần này tôi có lịch tạm thời làm việc mỗi ngày.",
+      "prompt": "Câu nào nói “Tuần này tôi đang làm việc mỗi ngày” như một giai đoạn tạm thời?",
       "hint": "Cả cụm this week cho biết lịch này chỉ tạm thời.",
       "explanation": "every day có thể xuất hiện trong tiếp diễn khi toàn bộ giai đoạn là tạm thời.",
       "options": [
-        "I work every day this week.",
+        "I working every day this week.",
         "I am working every day this week.",
         "I am work every day this week."
       ],

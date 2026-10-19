@@ -21,7 +21,7 @@ const a1Chapter10BaseExerciseData: Record<string, Exercise[]> = {
     ],
     orders: [
       ["Sắp xếp cụm “một căn phòng nhỏ xinh xắn”.", ["room", "nice", "a", "small"], ["a", "nice", "small", "room"], "Ý kiến `nice` đứng trước kích thước `small`."],
-      ["Sắp xếp câu “Những quả táo đỏ này còn tươi.”", ["fresh", "red", "The", "are", "apples", "."], ["The", "red", "apples", "are", "fresh", "."], "`Red` đứng trước danh từ; `fresh` đứng sau `are`."],
+      ["Sắp xếp câu “Những quả táo đỏ này còn tươi.”", ["fresh", "red", "These", "are", "apples", "."], ["These", "red", "apples", "are", "fresh", "."], "`Red` đứng trước danh từ; `fresh` đứng sau `are`."],
       ["Sắp xếp cụm “một chiếc bàn gỗ cũ”.", ["table", "wooden", "an", "old"], ["an", "old", "wooden", "table"], "Tuổi `old` đứng trước chất liệu `wooden`."],
       ["Sắp xếp câu “Bạn trông vui.”", ["happy", "look", "You", "."], ["You", "look", "happy", "."], "`Look` nối chủ ngữ với tính từ `happy`."],
     ],
@@ -86,7 +86,7 @@ const a1Chapter10BaseExerciseData: Record<string, Exercise[]> = {
     ],
     matchPrompt: "Ghép mỗi tính từ với trạng từ chỉ cách thức tương ứng.",
     pairs: [{ left: "slow", right: "slowly" }, { left: "careful", right: "carefully" }, { left: "happy", right: "happily" }, { left: "good", right: "well" }],
-    sortPrompt: "Phân loại từ in đậm theo công việc tính từ hoặc trạng từ.",
+    sortPrompt: "Phân loại từng mục theo công việc của từ chỉ tính chất trong đó: tính từ hay trạng từ.",
     buckets: ["Tính từ", "Trạng từ"],
     items: [{ text: "a quiet room", bucket: "Tính từ" }, { text: "The room is quiet.", bucket: "Tính từ" }, { text: "a fast car", bucket: "Tính từ" }, { text: "Speak quietly.", bucket: "Trạng từ" }, { text: "Drive carefully.", bucket: "Trạng từ" }, { text: "The car moves fast.", bucket: "Trạng từ" }],
     gridPrompts: ["Chọn tính từ hoặc trạng từ theo từ được miêu tả.", "Chọn dạng đặc biệt đúng.", "Chọn vị trí tự nhiên của trạng từ cách thức."],

@@ -215,14 +215,14 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "b28",
       "kind": "choice",
       "prompt": "Câu nào dùng đúng dạng `be` với cả ba chủ ngữ?",
-      "hint": "Kiểm tra lần lượt I, the child và the children.",
-      "explanation": "I am, the child is và the children are là ba cặp đúng.",
+      "hint": "Kiểm tra lần lượt I, the boy và the boys.",
+      "explanation": "I am, the boy is và the boys are là ba cặp đúng.",
       "options": [
-        "I am ready; the child is here; the children are happy.",
-        "I is ready; the child are here; the children am happy.",
-        "I are ready; the child am here; the children is happy."
+        "I am ready; the boy is here; the boys are happy.",
+        "I is ready; the boy are here; the boys am happy.",
+        "I are ready; the boy am here; the boys is happy."
       ],
-      "answer": "I am ready; the child is here; the children are happy."
+      "answer": "I am ready; the boy is here; the boys are happy."
     },
     {
       "id": "b29",
@@ -280,7 +280,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "pairs": [
         { "left": "Minh is a student.", "right": "Minh là học sinh." },
         { "left": "The bag is heavy.", "right": "Chiếc túi nặng." },
-        { "left": "The children are outside.", "right": "Những đứa trẻ ở bên ngoài." },
+        { "left": "The boys are outside.", "right": "Những cậu bé ở bên ngoài." },
         { "left": "She is from Vietnam.", "right": "Cô ấy đến từ Việt Nam." }
       ]
     },
@@ -318,13 +318,13 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "bm11",
       "kind": "grid",
-      "prompt": "Chọn câu miêu tả đúng số lượng và đặc điểm được nêu.",
+      "prompt": "Chọn câu tiếng Anh diễn đạt đúng số lượng và đặc điểm trong từng câu tiếng Việt.",
       "hint": "Tính từ không đổi; chỉ is/are thay đổi theo chủ ngữ.",
       "explanation": "Mỗi câu dùng đúng be và giữ nguyên tính từ.",
       "rows": [
-        { "cue": "Một con mèo nhỏ", "options": ["The cat is small.", "The cats are small.", "The cat is a student."], "answer": "The cat is small.", "completed": "The cat is small." },
-        { "cue": "Nhiều con mèo nhỏ", "options": ["The cat is small.", "The cats are small.", "The cats are at home."], "answer": "The cats are small.", "completed": "The cats are small." },
-        { "cue": "Hai chiếc hộp nặng", "options": ["The boxes are heavy.", "The box is heavy.", "The boxes are here."], "answer": "The boxes are heavy.", "completed": "The boxes are heavy." }
+        { "cue": "Con mèo này nhỏ.", "options": ["The cat is small.", "The cats are small.", "The cat is a student."], "answer": "The cat is small.", "completed": "The cat is small." },
+        { "cue": "Những con mèo này nhỏ.", "options": ["The cat is small.", "The cats are small.", "The cats are at home."], "answer": "The cats are small.", "completed": "The cats are small." },
+        { "cue": "Những chiếc hộp này nặng.", "options": ["The boxes are heavy.", "The box is heavy.", "The boxes are here."], "answer": "The boxes are heavy.", "completed": "The boxes are heavy." }
       ]
     },
     ...choiceExercises("bm", 12, [
@@ -334,7 +334,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       ["Sắp xếp thành câu “Chúng tôi ở Hà Nội”.", ["in Hanoi", "We", "are", "."], ["We", "are", "in Hanoi", "."], "Cụm nơi chốn đứng sau are.", "We are in Hanoi nghĩa là chúng tôi ở Hà Nội."],
     ]),
     ...tapExercises("bm", 14, [
-      ["Trong câu `The children are outside`, chọn phần chỉ nơi chốn.", ["The children", "are", "outside"], [2], "Tìm phần trả lời ở đâu.", "outside nghĩa là ở bên ngoài."],
+      ["Trong câu `The boys are outside`, chọn phần chỉ nơi chốn.", ["The boys", "are", "outside"], [2], "Tìm phần trả lời ở đâu.", "outside nghĩa là ở bên ngoài."],
     ]),
     {
       "id": "bm15",
@@ -684,7 +684,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "rows": [
         { "cue": "Tôi không phải là Nam.", "options": ["I'm not Nam.", "He's not Nam.", "I'm Nam."], "answer": "I'm not Nam.", "completed": "I'm not Nam." },
         { "cue": "Chiếc xe không mới.", "options": ["The car isn't new.", "The cars aren't new.", "The car is new."], "answer": "The car isn't new.", "completed": "The car isn't new." },
-        { "cue": "Những đứa trẻ không ở đây.", "options": ["The child isn't here.", "The children aren't here.", "The children are here."], "answer": "The children aren't here.", "completed": "The children aren't here." },
+        { "cue": "Các học sinh không ở đây.", "options": ["The student isn't here.", "The students aren't here.", "The students are here."], "answer": "The students aren't here.", "completed": "The students aren't here." },
         { "cue": "Cô ấy không mười tuổi.", "options": ["She isn't ten years old.", "She is ten years old.", "They aren't ten years old."], "answer": "She isn't ten years old.", "completed": "She isn't ten years old." },
         { "cue": "Họ không đến từ Huế.", "options": ["They aren't from Hue.", "They are from Hue.", "He isn't from Hue."], "answer": "They aren't from Hue.", "completed": "They aren't from Hue." }
       ]
@@ -768,7 +768,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     ...choiceExercises("bq", 12, [
       ["Câu trả lời ngắn nào phù hợp với `Is Lan ready?`?", ["Yes, she is.", "Yes, they are.", "Yes, I am."], "Yes, she is.", "Lan có thể được thay bằng she.", "Câu hỏi dùng is nên câu trả lời là Yes, she is."],
       ["Câu trả lời ngắn nào phù hợp với `Is the key on the table?`?", ["No, it isn't.", "No, they aren't.", "No, she isn't."], "No, it isn't.", "The key là một vật nên có thể thay bằng it.", "No, it isn't là câu trả lời phủ định phù hợp."],
-      ["Câu trả lời ngắn nào phù hợp với `Are the children outside?`?", ["Yes, he is.", "Yes, they are.", "Yes, it is."], "Yes, they are.", "The children là chủ ngữ số nhiều nên thay bằng they.", "Yes, they are là câu trả lời khẳng định phù hợp."],
+      ["Câu trả lời ngắn nào phù hợp với `Are the students outside?`?", ["Yes, he is.", "Yes, they are.", "Yes, it is."], "Yes, they are.", "The students là chủ ngữ số nhiều nên thay bằng they.", "Yes, they are là câu trả lời khẳng định phù hợp."],
     ]),
     {
       "id": "bq15",
@@ -915,7 +915,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "rows": [
         { "cue": "___ is she? — She is Mai.", "options": ["Who", "What", "Where", "How old"], "answer": "Who", "completed": "Who is she? — She is Mai." },
         { "cue": "___ is this? — It is a map.", "options": ["Who", "What", "Where", "How old"], "answer": "What", "completed": "What is this? — It is a map." },
-        { "cue": "___ are the children? — They are outside.", "options": ["Who", "What", "Where", "How old"], "answer": "Where", "completed": "Where are the children? — They are outside." },
+        { "cue": "___ are the boys? — They are outside.", "options": ["Who", "What", "Where", "How old"], "answer": "Where", "completed": "Where are the boys? — They are outside." },
         { "cue": "___ is Hoa? — She is nine.", "options": ["Who", "What", "Where", "How old"], "answer": "How old", "completed": "How old is Hoa? — She is nine." }
       ]
     },
@@ -923,7 +923,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       ["Từ nào hoàn thành câu hỏi `___ is that man?` để hỏi người đàn ông kia là ai?", ["Who", "What", "Where", "How old"], "Who", "Câu hỏi cần biết danh tính một người.", "Who is that man? hỏi người đàn ông kia là ai."],
       ["Từ nào hoàn thành câu hỏi `___ are these?` để hỏi những vật này là gì?", ["Who", "What", "Where", "How old"], "What", "Câu hỏi cần biết tên hoặc loại của vật.", "What are these? hỏi những vật này là gì."],
       ["Từ nào hoàn thành câu hỏi `___ is the bus?` để hỏi chiếc xe buýt ở đâu?", ["Who", "What", "Where", "How old"], "Where", "Câu hỏi cần một nơi chốn.", "Where is the bus? hỏi vị trí của chiếc xe buýt."],
-      ["Cụm nào hoàn thành câu hỏi `___ are the children?` để hỏi tuổi?", ["Who", "What", "Where", "How old"], "How old", "Câu hỏi cần biết số tuổi.", "How old are the children? hỏi tuổi của những đứa trẻ."],
+      ["Cụm nào hoàn thành câu hỏi `___ are the boys?` để hỏi tuổi?", ["Who", "What", "Where", "How old"], "How old", "Câu hỏi cần biết số tuổi.", "How old are the boys? hỏi tuổi của những cậu bé."],
     ]),
     ...orderExercises("bw", 8, [
       ["Sắp xếp thành câu hỏi “Cô ấy là ai?”.", ["she", "Who", "is", "?"], ["Who", "is", "she", "?"], "Từ hỏi đứng trước is và chủ ngữ she.", "Who is she? là câu hỏi đúng."],
@@ -996,7 +996,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       ]
     },
     ...tapExercises("bw", 17, [
-      ["Trong câu `Where are the children?`, chọn từ hỏi.", ["Where", "are", "the children", "?"], [0], "Từ hỏi đứng đầu câu.", "Where yêu cầu thông tin về nơi chốn."],
+      ["Trong câu `Where are the students?`, chọn từ hỏi.", ["Where", "are", "the students", "?"], [0], "Từ hỏi đứng đầu câu.", "Where yêu cầu thông tin về nơi chốn."],
       ["Trong câu `How old is Nam?`, chọn dạng của `be`.", ["How old", "is", "Nam", "?"], [1], "Dạng be đứng sau cụm từ hỏi.", "is đi với chủ ngữ số ít Nam."],
       ["Trong câu `What are those?`, chọn chủ ngữ.", ["What", "are", "those", "?"], [2], "Câu hỏi đang hỏi về những vật kia.", "those là chủ ngữ của câu hỏi."],
     ]),
@@ -1054,7 +1054,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "rows": [
         { "cue": "He is Mr Son.", "options": ["Who is he?", "Where is he?", "How old is he?"], "answer": "Who is he?", "completed": "Who is he? — He is Mr Son." },
         { "cue": "They are oranges.", "options": ["What are they?", "Where are they?", "Who are they?"], "answer": "What are they?", "completed": "What are they? — They are oranges." },
-        { "cue": "The children are in the garden.", "options": ["How old are the children?", "Where are the children?", "Who are the children?"], "answer": "Where are the children?", "completed": "Where are the children? — They are in the garden." },
+        { "cue": "The boys are in the garden.", "options": ["How old are the boys?", "Where are the boys?", "Who are the boys?"], "answer": "Where are the boys?", "completed": "Where are the boys? — They are in the garden." },
         { "cue": "She is thirteen years old.", "options": ["Who is she?", "How old is she?", "Where is she?"], "answer": "How old is she?", "completed": "How old is she? — She is thirteen years old." }
       ]
     }
