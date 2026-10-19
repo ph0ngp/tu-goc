@@ -112,8 +112,18 @@ type A2PracticeConfig = Omit<CompactPracticeConfig, "orders" | "repairs" | "taps
   taps: A2TapSeed[];
 };
 
+const sentenceTokenPattern = /[\p{L}]+(?:[-'’][\p{L}]+)*|\d+(?:[.:]\d+)?(?:°[\p{L}])?|[.,?!:;—"“”'‘’]/gu;
+
 export function sentenceTokens(sentence: string): string[] {
-  return sentence.match(/[\p{L}]+(?:[-'’][\p{L}]+)*|\d+(?:[.:]\d+)?(?:°[\p{L}])?|[.,?!:;—"“”'‘’]/gu) ?? [];
+  return sentence.match(sentenceTokenPattern) ?? [];
+}
+
+/** Vị trí của từng mảnh trong câu gốc, để cắt lại một đoạn câu mà giữ nguyên khoảng trắng quanh dấu câu. */
+export function sentenceTokenSpans(sentence: string): Array<{ start: number; end: number }> {
+  return [...sentence.matchAll(sentenceTokenPattern)].map((match) => ({
+    start: match.index,
+    end: match.index + match[0].length,
+  }));
 }
 
 export function a2PracticeSet(config: A2PracticeConfig): Exercise[] {

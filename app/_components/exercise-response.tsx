@@ -1,5 +1,6 @@
 import type { Exercise } from "../exercise-types";
 import { matchOptionOrder } from "../exercises/answer-order";
+import { InlineMarkdown, inlineMarkdownText } from "./inline-markdown";
 
 type ExerciseResponseProps = {
   id: string;
@@ -173,10 +174,10 @@ function GridResponse({ exercise, values, onChange }: ExtractedResponseProps<"gr
         <tbody>
           {exercise.rows.map((row, index) => (
             <tr key={`${row.cue}-${index}`}>
-              <td>{row.cue}</td>
+              <td><InlineMarkdown>{row.cue}</InlineMarkdown></td>
               <td>
                 <SelectAnswer
-                  label={`Trả lời cho ${row.cue}`}
+                  label={`Trả lời cho ${inlineMarkdownText(row.cue)}`}
                   value={values[`grid-${index}`] ?? ""}
                   options={row.options}
                   onChange={(value) => onChange(`grid-${index}`, value)}
@@ -195,9 +196,9 @@ function DropdownResponse({ exercise, values, onChange }: ExtractedResponseProps
     <div className="practice-fields">
       {exercise.slots.map((slot) => (
         <label key={slot.id}>
-          <span>{slot.label}</span>
+          <span><InlineMarkdown>{slot.label}</InlineMarkdown></span>
           <SelectAnswer
-            label={slot.label}
+            label={inlineMarkdownText(slot.label)}
             value={values[`dropdown-${slot.id}`] ?? ""}
             options={slot.options}
             onChange={(value) => onChange(`dropdown-${slot.id}`, value)}

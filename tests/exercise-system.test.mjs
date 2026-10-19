@@ -277,6 +277,7 @@ test("shows one natural instruction instead of stacked generator templates", () 
     /Chọn (?:cả câu diễn đạt đúng|một cách diễn đạt khác vẫn đúng) yêu cầu sau/i,
     /mảnh `[^`]+` (?:thành một câu|để viết một câu|để thể hiện)[^.]*(?:thể hiện|đúng về)/i,
     /\. Chọn câu hoàn chỉnh\.$/,
+    /Chọn riêng mảnh/i,
   ];
   // Một mệnh lệnh không được nối thêm mệnh lệnh thứ hai sau dấu hai chấm hay chấm phẩy.
   const secondInstruction = /[:;]\s*(?:Chọn|Câu nào|Cách diễn đạt|Ghép|Sắp xếp|Hãy)(?![\p{L}])/u;
@@ -361,7 +362,7 @@ test("gives each generated grid, match, and dropdown its own specific hint", () 
   for (const [lessonId, exercises] of generatedLessons) {
     for (const exercise of exercises) {
       if (!["grid", "match", "dropdown"].includes(exercise.kind)) continue;
-      // Bảng của bộ “đào sâu” B1 liệt kê dấu hiệu từng hàng theo thiết kế riêng; ở đây chỉ xét bộ sinh B1–C1.
+      // Bảng dựng bằng compactPracticeSet (một số bài B1 chương 20) vẫn liệt kê dấu hiệu từng hàng; ở đây chỉ xét bộ sinh B1–C1.
       if (exercise.hint.startsWith("Giải riêng từng hàng; chú ý lần lượt các dấu hiệu")) continue;
       const rowText = exercise.kind === "grid" ? exercise.rows.map((row) => row.cue)
         : exercise.kind === "match" ? exercise.pairs.map((pair) => pair.left) : [];
