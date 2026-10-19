@@ -1,4 +1,5 @@
 import type { Exercise } from "../exercise-types";
+import { matchOptionOrder } from "../exercises/answer-order";
 
 type ExerciseResponseProps = {
   id: string;
@@ -114,7 +115,7 @@ function ChoiceResponse({
 }
 
 function MatchResponse({ exercise, values, onChange }: ExtractedResponseProps<"match">) {
-  const options = [...new Set(exercise.pairs.map((pair) => pair.right))].reverse();
+  const options = matchOptionOrder(exercise);
   return (
     <div className="practice-table-wrap">
       <table>

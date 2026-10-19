@@ -48,6 +48,13 @@ Chủ dự án có thể viết thêm yêu cầu ngay dưới dòng này. Nên g
   tính người commit. Nếu phát hiện thông tin cá nhân đã được commit, không chỉ
   xóa bằng một commit mới vì lịch sử git vẫn giữ lại; phải dừng lại và báo ngay
   cho chủ dự án.
+- Áp dụng cho luyện tập: vị trí của một phương án không bao giờ được tiết lộ đáp
+  án. Đáp án đúng không được luôn đứng đầu (hay luôn ở bất kỳ vị trí cố định
+  nào), mảnh của bài sắp xếp không được là câu đúng bị xoay vòng, mục của bài
+  phân loại không được xếp theo thứ tự nhóm, và lựa chọn của bài ghép không được
+  trùng hoặc ngược với thứ tự hàng. Người biên soạn cứ viết dữ liệu tự nhiên;
+  `app/exercises/answer-order.ts` sắp lại thứ tự hiển thị khi nạp bài tập và
+  test sẽ báo lỗi nếu vị trí đáp án lệch khỏi phân bố ngẫu nhiên.
 
 ## 1. Người học và mục tiêu sư phạm
 
@@ -91,6 +98,9 @@ Chủ dự án có thể viết thêm yêu cầu ngay dưới dòng này. Nên g
   sinh tự động. Không sửa trực tiếp.
 - `app/exercises/merge-records.ts` là hàm hợp nhất kỹ thuật dùng trong phạm vi
   file chương; không chứa câu hỏi hoặc nội dung học tập.
+- `app/exercises/answer-order.ts` sắp lại thứ tự hiển thị của phương án, mảnh và
+  mục theo cách xác định (cùng dữ liệu luôn cho cùng thứ tự) khi nạp bài tập.
+  Không đặt câu hỏi hoặc nội dung học tập trong tệp này.
 - Trang luyện tập phải nạp động đúng file dữ liệu của chương đang mở qua
   `app/exercise-loaders.generated.ts`; không được nhập dữ liệu của mọi cấp độ
   vào đường chạy phục vụ một trang.
@@ -307,6 +317,7 @@ Chủ dự án có thể viết thêm yêu cầu ngay dưới dòng này. Nên g
 - [ ] Không có câu hỏi ngoài phạm vi đã học.
 - [ ] Không có bài ghép, phân loại hoặc lựa chọn mơ hồ.
 - [ ] Mọi đáp án và phương án nhiễu đều đã được rà soát thủ công.
+- [ ] Vị trí của phương án, mảnh hoặc mục không để lộ đáp án.
 - [ ] Mỗi hoạt động chỉ có một câu hỏi hoặc mệnh lệnh liền mạch, tự nhiên và
       khớp với giao diện.
 - [ ] Có sự đa dạng và tăng dần độ khó, không lặp cơ học.

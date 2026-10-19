@@ -1,5 +1,6 @@
 import type { Exercise } from "./exercise-types.ts";
 import { loadRawExercisesForLegacyId } from "./exercise-loaders.generated.ts";
+import { arrangeAnswerPositions } from "./exercises/answer-order.ts";
 import { diversifyRepeatedGridAnswers, withQualityMetadata } from "./exercises/quality.ts";
 
 /**
@@ -11,7 +12,10 @@ export async function loadExercisesForLegacyId(
 ): Promise<Exercise[]> {
   if (!legacyLessonId) return [];
   const exercises = await loadRawExercisesForLegacyId(legacyLessonId);
-  return diversifyRepeatedGridAnswers(exercises).map((exercise) =>
-    withQualityMetadata(legacyLessonId, exercise),
+  return arrangeAnswerPositions(
+    legacyLessonId,
+    diversifyRepeatedGridAnswers(exercises).map((exercise) =>
+      withQualityMetadata(legacyLessonId, exercise),
+    ),
   );
 }

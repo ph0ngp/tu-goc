@@ -1,6 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { exerciseDataByLegacyId } from "../app/exercise-data.ts";
+import {
+  isAlignedMatchOrder,
+  isPredictableSortOrder,
+  isRotationOf,
+  matchOptionOrder,
+} from "../app/exercises/answer-order.ts";
 
 const entries = Object.entries(exerciseDataByLegacyId);
 const allExercises = entries.flatMap(([, exercises]) => exercises);
@@ -89,6 +95,46 @@ test("keeps every exercise answer valid and checkable", () => {
         break;
       default:
         assert.fail(`Loại bài tập không được hỗ trợ: ${exercise.kind}`);
+    }
+  }
+});
+
+test("never lets the position of an option give away the answer", () => {
+  for (const [lessonId, exercises] of entries) {
+    const slots = [];
+    for (const exercise of exercises) {
+      if (exercise.kind === "choice" || exercise.kind === "context") {
+        slots.push([exercise.options.indexOf(exercise.answer), exercise.options.length]);
+      } else if (exercise.kind === "repair") {
+        slots.push([exercise.replacements.indexOf(exercise.answer), exercise.replacements.length]);
+      } else if (exercise.kind === "timeline") {
+        slots.push([exercise.options.findIndex((option) => option.id === exercise.answerId), exercise.options.length]);
+      } else if (exercise.kind === "grid") {
+        for (const row of exercise.rows) slots.push([row.options.indexOf(row.answer), row.options.length]);
+      } else if (exercise.kind === "dropdown") {
+        for (const slot of exercise.slots) {
+          slots.push([slot.options.findIndex((option) => slot.acceptedAnswers.includes(option)), slot.options.length]);
+        }
+      } else if (exercise.kind === "order" && exercise.answer.length >= 3) {
+        assert.ok(!isRotationOf(exercise.tokens, exercise.answer), `${exercise.id}: các mảnh đang xoay vòng từ câu đúng`);
+      } else if (exercise.kind === "sort" && exercise.items.length >= 3 && new Set(exercise.items.map((item) => item.bucket)).size > 1) {
+        assert.ok(!isPredictableSortOrder(exercise.items, exercise.buckets), `${exercise.id}: thứ tự mục để lộ nhóm`);
+      } else if (exercise.kind === "match") {
+        assert.ok(!isAlignedMatchOrder(exercise.pairs, matchOptionOrder(exercise)), `${exercise.id}: lựa chọn xếp theo thứ tự hàng`);
+      }
+    }
+
+    const choiceSlots = slots.filter(([, optionCount]) => optionCount >= 2);
+    for (let position = 0; position < 4; position++) {
+      const actual = choiceSlots.filter(([index]) => index === position).length;
+      const expected = choiceSlots.reduce(
+        (total, [, optionCount]) => total + (optionCount > position ? 1 / optionCount : 0),
+        0,
+      );
+      assert.ok(
+        actual <= expected + 3,
+        `${lessonId}: đáp án nằm ở vị trí ${position + 1} trong ${actual}/${choiceSlots.length} lựa chọn, kỳ vọng khoảng ${expected.toFixed(1)}`,
+      );
     }
   }
 });

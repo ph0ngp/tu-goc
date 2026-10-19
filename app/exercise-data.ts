@@ -6,6 +6,7 @@ import { a2ExerciseData } from "./exercises/data/a2/index.ts";
 import { b1ExerciseData } from "./exercises/data/b1/index.ts";
 import { b2ExerciseData } from "./exercises/data/b2/index.ts";
 import { c1ExerciseData } from "./exercises/data/c1/index.ts";
+import { arrangeAnswerPositions } from "./exercises/answer-order.ts";
 import { diversifyRepeatedGridAnswers, withQualityMetadata } from "./exercises/quality.ts";
 
 const rawExerciseData: Record<string, Exercise[]> = {
@@ -20,8 +21,11 @@ const rawExerciseData: Record<string, Exercise[]> = {
 export const exerciseDataByLegacyId = Object.fromEntries(
   Object.entries(rawExerciseData).map(([legacyLessonId, exercises]) => [
     legacyLessonId,
-    diversifyRepeatedGridAnswers(exercises).map((exercise) =>
-      withQualityMetadata(legacyLessonId, exercise),
+    arrangeAnswerPositions(
+      legacyLessonId,
+      diversifyRepeatedGridAnswers(exercises).map((exercise) =>
+        withQualityMetadata(legacyLessonId, exercise),
+      ),
     ),
   ]),
 ) as Record<string, Exercise[]>;
