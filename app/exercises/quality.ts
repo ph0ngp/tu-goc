@@ -1,6 +1,6 @@
 import type { Exercise } from "../exercise-types.ts";
 import { answerUsageKey } from "./advanced-builders.ts";
-import { escapeRegExp, gridExplanation, maskAnswerTerms, matchExplanation, sortExplanation } from "./basic-builders.ts";
+import { escapeRegExp, gridExplanation, hintLeads, maskAnswerTerms, matchExplanation, sortExplanation } from "./basic-builders.ts";
 
 function correctAnswerStrings(exercise: Exercise): string[] {
   if (exercise.kind === "choice" || exercise.kind === "context" || exercise.kind === "repair") {
@@ -16,6 +16,56 @@ function correctAnswerStrings(exercise: Exercise): string[] {
   }
   return [];
 }
+
+/** Các phương án sai hiển thị cạnh đáp án; nhắc tới từ chung của chúng không làm lộ đáp án. */
+function otherOptionStrings(exercise: Exercise): string[] {
+  if (exercise.kind === "choice" || exercise.kind === "context") {
+    return exercise.options.filter((option) => option !== exercise.answer);
+  }
+  if (exercise.kind === "repair") return exercise.replacements.filter((option) => option !== exercise.answer);
+  return [];
+}
+
+function wordPattern(value: string): RegExp {
+  return new RegExp(`(?<![\\p{L}\\p{N}])${escapeRegExp(value)}(?![\\p{L}\\p{N}])`, "iu");
+}
+
+function capitalizeLike(found: string, replacement: string): string {
+  const first = found.charAt(0);
+  return first !== first.toLocaleLowerCase("en") && first === first.toLocaleUpperCase("en")
+    ? replacement.charAt(0).toLocaleUpperCase("en") + replacement.slice(1)
+    : replacement;
+}
+
+/**
+ * Bài ghép bị đảo chiều để câu trả lời lặp lại chuyển sang cột trái. Câu hỏi
+ * “Ghép mỗi X với Y phù hợp” được đảo thành “Ghép mỗi Y với X phù hợp”; câu hỏi
+ * có dạng khác nhận một mệnh lệnh chung khớp với tiêu đề hai cột của bảng.
+ */
+function flippedMatchPrompt(prompt: string): string {
+  const match = prompt.trim().match(/^Ghép (?:mỗi )?(.+?) với (.+?)( phù hợp| tương ứng)?\.$/u);
+  if (!match) return "Với mỗi phần bên trái, chọn phần tương ứng.";
+  const right = match[2].replace(/ của (?:nó|chúng)$/u, "");
+  return `Ghép mỗi ${right} với ${match[1]}${match[3] ?? " tương ứng"}.`;
+}
+
+/**
+ * Bài sửa lỗi được đổi thành câu hỏi chọn câu hoàn chỉnh. Chỉ đổi khi yêu cầu
+ * gốc có thể viết lại thành một câu hỏi tự nhiên; nếu không, giữ nguyên bài sửa.
+ */
+function repairAsChoicePrompt(prompt: string): string | undefined {
+  const text = prompt.trim().replace(/[.?]$/, "");
+  const fixTo = text.match(/^Sửa (?:câu |lỗi )?để (.+)$/u);
+  if (fixTo) return `Câu nào ${fixTo[1]}?`;
+  const add = text.match(/^Bổ sung (.+)$/u);
+  if (add) return `Câu nào đã bổ sung đúng ${add[1]}?`;
+  const pick = text.match(/^Chọn (cụm|từ|dạng) đúng (cho|trong|với) (.+)$/u);
+  if (pick) return `Câu nào dùng ${pick[1]} đúng ${pick[2]} ${pick[3]}?`;
+  const line = text.match(/^Trong (dòng|câu) `[^`]+`, hãy thay .+? để (?:dòng|câu) trở thành đúng(.*)$/u);
+  if (line) return `${line[1].charAt(0).toLocaleUpperCase("vi")}${line[1].slice(1)} nào đúng${line[2]}?`;
+  return undefined;
+}
+
 
 export function diversifyRepeatedGridAnswers(exercises: Exercise[]): Exercise[] {
   const answersFor = (exercise: Exercise): string[] => {
@@ -43,7 +93,7 @@ export function diversifyRepeatedGridAnswers(exercises: Exercise[]): Exercise[] 
     if (!exercise.pairs.some((pair) => (counts.get(answerUsageKey(pair.right)) ?? 0) > 2)) return exercise;
     return {
       ...exercise,
-      prompt: `Ghép mỗi cách diễn đạt với yêu cầu tương ứng; ví dụ đầu tiên là ${exercise.pairs[0].right}.`,
+      prompt: flippedMatchPrompt(exercise.prompt),
       pairs: exercise.pairs.map((pair) => ({ left: pair.right, right: pair.left })),
     };
   });
@@ -51,18 +101,27 @@ export function diversifyRepeatedGridAnswers(exercises: Exercise[]): Exercise[] 
   counts = countAnswers(diversified);
   diversified = diversified.map((exercise) => {
     if (exercise.kind !== "repair" || (counts.get(answerUsageKey(exercise.answer)) ?? 0) <= 2) return exercise;
-    const repaired = [...exercise.tokens];
-    repaired[exercise.targetIndex] = exercise.answer;
-    const correctSentence = joinSentenceTokens(repaired);
-    const originalSentence = joinSentenceTokens(exercise.tokens);
+    const prompt = repairAsChoicePrompt(exercise.prompt);
+    if (!prompt) return exercise;
+    const sentenceWith = (replacement: string) => {
+      const tokens = [...exercise.tokens];
+      tokens[exercise.targetIndex] = replacement;
+      return joinSentenceTokens(tokens);
+    };
+    const correctSentence = sentenceWith(exercise.answer);
+    const options = [...new Set([
+      correctSentence,
+      ...exercise.replacements.map(sentenceWith),
+      joinSentenceTokens(exercise.tokens),
+    ])];
     return {
       id: exercise.id,
       kind: "choice" as const,
       objectiveId: exercise.objectiveId,
-      prompt: `Câu nào đáp ứng đúng yêu cầu sau khi sửa phần chưa phù hợp: ${exercise.prompt.replace(/[.?]$/, "")}?`,
-      options: [correctSentence, originalSentence],
+      prompt,
+      options,
       answer: correctSentence,
-      hint: exercise.hint,
+      hint: exercise.hint.startsWith(hintLeads.repair) ? exercise.hint.slice(hintLeads.repair.length).trim() : exercise.hint,
       explanation: exercise.explanation,
     };
   });
@@ -72,20 +131,23 @@ export function diversifyRepeatedGridAnswers(exercises: Exercise[]): Exercise[] 
     if (exercise.kind !== "grid") return exercise;
     const rows = exercise.rows.map((row) => {
       const key = answerUsageKey(row.answer);
-      if ((counts.get(key) ?? 0) <= 2) return row;
-      const distractor = row.options.find((option) => option !== row.answer);
-      if (!distractor || row.completed === row.answer) return row;
-      const pattern = new RegExp(escapeRegExp(row.answer), "i");
+      if ((counts.get(key) ?? 0) <= 2 || row.completed === row.answer) return row;
+      const pattern = wordPattern(row.answer);
       if (!pattern.test(row.completed)) return row;
-      const wrongCompleted = row.completed.replace(pattern, distractor);
-      if (wrongCompleted === row.completed) return row;
+      // Phương án sai được dựng lại thành câu hoàn chỉnh, giữ chữ hoa đầu câu như câu đúng.
+      const wrongCompleted = [...new Set(
+        row.options
+          .filter((option) => option !== row.answer && /^[\p{L}\p{N}\s'’-]+$/u.test(option))
+          .map((option) => row.completed.replace(pattern, (found) => capitalizeLike(found, option)))
+          .filter((sentence) => sentence !== row.completed),
+      )];
+      if (!wrongCompleted.length) return row;
       counts.set(key, (counts.get(key) ?? 1) - 1);
       const completedKey = answerUsageKey(row.completed);
       counts.set(completedKey, (counts.get(completedKey) ?? 0) + 1);
       return {
         ...row,
-        cue: `${row.cue} Chọn câu hoàn chỉnh.`,
-        options: [row.completed, wrongCompleted],
+        options: [row.completed, ...wrongCompleted],
         answer: row.completed,
       };
     });
@@ -121,74 +183,143 @@ function normalizeEditorialPunctuation(value: string): string {
   return value
     .replace(/(`[^`\n]*[.?!]`)[.,](?=\s|$)/g, "$1")
     .replace(/([.?!])”\./g, "$1”")
-    .replace(/([.?!])””/g, "$1”");
+    .replace(/([.?!])””/g, "$1”")
+    // Một câu được ghép vào cuối mệnh lệnh không được để lại “?.” hay “..”.
+    .replace(/([?!])\.(?=\s|$)/g, "$1")
+    .replace(/(?<!\.)\.\.(?=\s|$)/g, ".");
 }
 
-function promptAwareHint(exercise: Exercise, legacyLessonId: string): string {
-  const prompt = maskAnswerTerms(exercise.prompt, correctAnswerStrings(exercise))
+/**
+ * Gợi ý chủ đề được chọn theo mã bài học, không theo từ khóa trong câu hỏi:
+ * một câu hỏi có chữ “của” hay “nơi chốn” không có nghĩa là bài đang dạy sở
+ * hữu hay giới từ. Câu gợi ý không nêu dạng tiếng Anh cụ thể để khỏi chỉ thẳng
+ * vào đáp án; phần riêng của từng câu đến từ lời giải đã được che đáp án.
+ */
+const lessonTopicHints: Array<[lessonIds: string[], hint: string]> = [
+  [["word-jobs"], "Hỏi từ đang xét dùng để gọi tên, thay cho tên, nói hành động hay trạng thái, hay miêu tả đặc điểm."],
+  [["noun-types"], "Danh từ riêng là tên của một người, một nơi hay một vật cụ thể và luôn viết hoa; danh từ chung gọi tên cả một loại."],
+  [["subjects-and-pronouns"], "Xác định người được nói tới là người nói, người nghe hay người, vật khác, và đó là một hay nhiều."],
+  [["articles-demonstratives"], "Xét từ đứng ngay sau: tên riêng và danh từ số nhiều không đi với mạo từ này; với một người hay vật chưa được chỉ rõ, nghe âm đầu là phụ âm hay nguyên âm."],
+  [["demonstratives"], "Xác định lần lượt hai điều: một hay nhiều vật, rồi vật ở gần hay ở xa người nói."],
+  [["be-forms", "be-meanings", "be-negative", "be-questions", "be-wh-questions"], "Xác định chủ ngữ là chính người nói, một người hay vật, hay nhiều người hoặc vật, rồi chọn dạng của `be` đi với chủ ngữ ấy."],
+  [["possessives", "possessive-s", "possessive-pronouns"], "Xác định ai là người sở hữu, rồi xét từ cần tìm đứng ngay trước một danh từ hay đứng một mình thay cho cả cụm."],
+  [["whose-questions"], "Từ hỏi về chủ sở hữu có thể đứng ngay trước danh từ hoặc đứng một mình khi vật đã rõ; đừng nhầm nó với dạng viết tắt của “ai là”."],
+  [["apostrophes"], "Xác định dấu nháy đơn đang chỉ sở hữu hay đang thay cho chữ bị lược trong dạng viết tắt; số nhiều thông thường không có dấu nháy."],
+  [["nouns-and-number", "irregular-plurals"], "Xác định danh từ cần ở số ít hay số nhiều, rồi nhớ lại danh từ ấy chỉ thêm `-s` hay có dạng số nhiều riêng."],
+  [["countable-uncountable", "quantity-basic", "how-much-many"], "Xác định danh từ đếm được hay không đếm được, số ít hay số nhiều, rồi mới chọn từ đi cùng nó."],
+  [["there-and-place"], "Danh từ đứng sau cho biết có một hay nhiều thứ, và điều đó quyết định dạng của `be`; câu hỏi và câu trả lời ngắn dùng lại đúng dạng ấy."],
+  [["some-any-there"], "Xác định câu là khẳng định, phủ định hay câu hỏi; từ chỉ lượng không quyết định dạng của `be`, danh từ phía sau mới quyết định."],
+  [["prepositions-place", "prepositions-place-time"], "Hình dung vị trí thật: bên trong một không gian, trên một bề mặt hay tại một điểm; với thời gian, xét đó là một khoảng dài, một ngày cụ thể hay một giờ cụ thể."],
+  [["action-vs-be"], "Xem câu đã có động từ chỉ hành động chưa: nếu có, động từ ấy tự làm động từ chính; nếu sau chủ ngữ chỉ là tính từ, danh từ hay nơi chốn thì cần `be`."],
+  [["present-simple-base", "third-person", "present-simple-negative", "present-simple-questions", "present-simple-wh"], "Xác định chủ ngữ có phải một người hay vật số ít không, và câu là khẳng định, phủ định hay câu hỏi, rồi chọn dạng động từ và trợ động từ phù hợp."],
+  [["have-have-got"], "Xác định câu đang dùng mẫu nói sở hữu nào; câu hỏi và câu trả lời ngắn phải giữ đúng trợ động từ của chính mẫu đó, không trộn hai mẫu."],
+  [["objects-and-links"], "Xác định người được nhắc tới đứng trước động từ làm chủ ngữ hay đứng sau động từ làm tân ngữ, rồi chọn dạng đại từ của vị trí ấy."],
+  [["ability-can"], "Sau từ chỉ khả năng, động từ chính ở dạng cơ bản và không đổi theo chủ ngữ; khi hỏi hay trả lời ngắn, chính từ chỉ khả năng ấy được đưa lên đầu hoặc dùng lại."],
+  [["can-requests"], "Xác định câu đang xin phép, nhờ người khác làm gì hay mời, rồi chọn cách đáp lịch sự hợp với ý đó."],
+  [["question-helpers"], "Câu có `be` đưa `be` lên trước chủ ngữ, câu có động từ thường cần trợ động từ, câu có từ chỉ khả năng đưa chính từ ấy lên; câu trả lời ngắn dùng lại đúng từ đã hỏi."],
+  [["instructions-and-can"], "Câu mệnh lệnh bắt đầu thẳng bằng động từ ở dạng cơ bản, không có chủ ngữ; muốn bảo ai đừng làm gì thì đặt dạng phủ định của trợ động từ trước động từ ấy."],
+  [["lets-suggestions"], "Lời rủ cùng làm bao gồm cả người nói lẫn người nghe, và động từ theo sau ở dạng cơ bản; lời đáp phải hợp với việc đồng ý hay từ chối."],
+  [["would-like"], "Phân biệt nói sở thích chung với nói mong muốn cụ thể lúc này, rồi chọn cách mời, nhận hay từ chối lịch sự."],
+  [["continuous-form", "continuous-questions", "continuous-uses"], "Hiện tại tiếp diễn cần đủ hai phần: dạng của `be` hợp với chủ ngữ và động từ thêm `-ing`; câu hỏi đưa dạng `be` ấy lên trước chủ ngữ."],
+  [["simple-vs-continuous", "states-and-plans"], "Xác định động từ chỉ trạng thái như hiểu, cần, thích hay chỉ một hành động đang diễn ra; động từ trạng thái thường dùng hiện tại đơn."],
+  [["adjectives-position"], "Tính từ đứng trước danh từ hoặc sau động từ nối, và không thêm đuôi số nhiều."],
+  [["adverbs-manner"], "Xác định từ cần tìm miêu tả một người hay vật (dùng tính từ) hay miêu tả cách một hành động diễn ra (dùng trạng từ)."],
+  [["sentence-order"], "Nhớ lại trật tự cơ bản của các thành phần trong câu, rồi xét từ hoặc cụm đang hỏi thuộc thành phần nào."],
+  [["connectors-basic"], "Xác định quan hệ giữa hai ý: thêm một ý, đối lập hay đưa ra lựa chọn, rồi chọn từ nối diễn tả đúng quan hệ ấy."],
+  [["a2-past-be"], "Xác định chủ ngữ để chọn dạng quá khứ của `be`, rồi xét câu là khẳng định, phủ định hay câu hỏi."],
+  [["a2-past-regular"], "Động từ có quy tắc thêm `-ed` ở quá khứ đơn và dùng như nhau cho mọi chủ ngữ; chú ý cách viết khi thêm đuôi."],
+  [["a2-past-irregular"], "Động từ bất quy tắc không thêm `-ed` mà có dạng quá khứ riêng, dùng như nhau cho mọi chủ ngữ."],
+  [["a2-past-did"], "Trong câu phủ định và câu hỏi ở quá khứ đơn, trợ động từ đã mang nghĩa quá khứ nên động từ chính trở về dạng cơ bản; câu trả lời ngắn lặp lại trợ động từ ấy."],
+  [["a2-past-time"], "Xác định từ chỉ thời gian là một ngày đã qua, một khoảng tính lùi từ bây giờ, hay một năm, ngày hoặc giờ cụ thể cần giới từ; mỗi mốc chỉ cần một cách đánh dấu."],
+  [["a2-subject-object-questions"], "Xác định từ hỏi đang thay cho người hoặc vật làm hành động (chủ ngữ) hay chịu hành động (tân ngữ); câu hỏi về chủ ngữ không cần trợ động từ."],
+  [["a2-commas-basic"], "Xác định câu có danh sách từ ba mục trở lên, phần mở đầu, hai mệnh đề nối bằng từ nối hay lời gọi tên người nghe; hai mục ngắn nối bằng một từ nối thì không cần dấu phẩy."],
+  [["a2-past-continuous"], "Quá khứ tiếp diễn gồm dạng quá khứ của `be` hợp với chủ ngữ và động từ thêm `-ing`; câu trả lời ngắn dùng lại dạng `be` ấy."],
+  [["a2-past-simple-continuous", "a2-when-while-as"], "Xác định đâu là hoạt động nền đang kéo dài và đâu là sự việc ngắn xen vào tại một thời điểm."],
+  [["a2-used-to"], "Xác định câu đang nói thói quen hay trạng thái cũ, rồi kiểm tra dạng của động từ theo sau và trợ động từ trong câu phủ định, câu hỏi."],
+  [["a2-going-to"], "Mẫu nói dự định cần đủ ba phần: dạng của `be` hợp với chủ ngữ, cụm chỉ dự định và động từ chính; câu trả lời ngắn dùng lại dạng `be`."],
+  [["a2-will-decisions", "a2-will-predictions"], "Xác định câu đang nói một quyết định ngay lúc nói, một lời hứa hay một dự đoán; động từ đi sau từ chỉ tương lai này không đổi theo chủ ngữ."],
+  [["a2-comparatives"], "Xác định tính từ ngắn hay dài và có dạng bất quy tắc hay không, rồi mới tạo dạng so sánh hơn."],
+  [["a2-superlatives"], "Xác định tính từ ngắn hay dài và có dạng bất quy tắc hay không, rồi mới tạo dạng so sánh nhất; nhóm hoặc nơi làm phạm vi so sánh đứng sau giới từ."],
+  [["a2-equality"], "Xác định hai đối tượng bằng nhau hay không bằng nhau, rồi giữ đủ khung của phép so sánh ngang bằng."],
+  [["a2-comparative-modifiers"], "Xác định mức chênh lệch là nhiều hay ít, rồi đặt từ chỉ mức độ ngay trước dạng so sánh hơn; không phải từ chỉ mức độ nào cũng đứng được ở vị trí này."],
+  [["a2-too-enough-so-such"], "Xác định câu nói mức vượt quá hay mức vừa đủ, và từ chỉ mức độ phải đứng trước hay sau tính từ, trạng từ hoặc danh từ."],
+  [["a2-could-past-ability", "a2-polite-could-may", "a2-possibility-modals", "a2-advice-modals", "a2-obligation", "a2-prohibition-no-necessity"], "Xác định câu đang nói khả năng, xin phép, khả năng xảy ra, lời khuyên, sự bắt buộc hay việc không cần thiết, rồi chọn động từ tình thái mang đúng nghĩa ấy; câu trả lời ngắn lặp lại chính động từ đó."],
+  [["a2-articles-countability", "a2-first-mention-the", "a2-definite-article", "a2-generic-reference"], "Xác định danh từ đếm được hay không, số ít hay số nhiều, và người nghe đã biết đúng người hay vật nào chưa, rồi mới chọn mạo từ."],
+  [["a2-few-little"], "Xác định danh từ là đếm được số nhiều hay không đếm được, rồi xét người nói thấy lượng ấy còn đủ dùng hay gần như không có."],
+  [["a2-all-every-each-whole", "a2-both-either-neither"], "Xác định danh từ đi sau là số ít hay số nhiều, có từ hạn định hoặc đại từ đứng sau hay không, và người nói nhìn cả nhóm hay từng thành viên."],
+  [["a2-present-perfect-form", "a2-perfect-experience"], "Hiện tại hoàn thành gồm trợ động từ hợp với chủ ngữ và past participle; với động từ bất quy tắc, past participle là dạng thứ ba trong bảng động từ."],
+  [["a2-perfect-just-already-yet"], "Xác định từ chỉ thời điểm hoàn tất này đứng giữa trợ động từ và past participle, hay thường đứng cuối câu hỏi và câu phủ định."],
+  [["a2-perfect-unfinished-time", "a2-perfect-vs-past"], "Xác định khoảng thời gian trong câu còn kéo dài tới bây giờ hay đã kết thúc, vì điều đó quyết định giữa hiện tại hoàn thành và quá khứ đơn."],
+  [["a2-since-for-how-long"], "Xác định phần thời gian là một mốc bắt đầu hay một độ dài."],
+  [["a2-been-gone"], "Động từ chỉ việc đi có hai past participle dễ nhầm: một dạng nói người đã đi rồi trở về, một dạng nói người đã đi và còn ở nơi đó."],
+  [["a2-relative-subject", "a2-relative-object-whose-where"], "Xác định danh từ được bổ nghĩa là người, vật hay nơi chốn, và từ nối đang làm chủ ngữ, tân ngữ, chỉ sở hữu hay chỉ nơi xảy ra sự việc."],
+  [["a2-zero-conditional", "a2-first-conditional", "a2-future-time-clauses"], "Xác định điều kiện là sự thật luôn đúng hay một khả năng cụ thể trong tương lai; mệnh đề điều kiện hoặc mệnh đề thời gian vẫn dùng hiện tại đơn."],
+  [["a2-reflexive-reciprocal"], "Đại từ phản thân dùng khi chủ ngữ và tân ngữ là cùng một người hay vật, với đuôi số ít hay số nhiều theo chủ ngữ; khi hai bên làm cho nhau, dùng cụm chỉ quan hệ qua lại."],
+  [["a2-indefinite-pronouns"], "Xác định câu khẳng định, phủ định hay câu hỏi trung tính và đang nói về người hay vật; đại từ bất định đi với động từ số ít, còn tính từ đứng sau nó."],
+  [["a2-one-ones", "a2-other-forms"], "Xác định phía sau còn danh từ hay không, danh từ ấy số ít hay số nhiều, và người nói nói về phần còn lại đã xác định hay chỉ một cái khác bất kỳ."],
+  [["a2-verb-patterns", "a2-object-infinitive-purpose-prep-ing"], "Xác định động từ hoặc giới từ đứng trước đòi hỏi dạng nào theo sau."],
+  [["a2-ed-ing-adjectives"], "Tính từ đuôi `-ed` nói cảm xúc của người; tính từ đuôi `-ing` nói tính chất của người, vật hay việc gây ra cảm xúc."],
+];
+
+const topicHintByLesson = new Map(
+  lessonTopicHints.flatMap(([lessonIds, hint]) => lessonIds.map((lessonId) => [lessonId, hint] as const)),
+);
+
+/** Gợi ý chủ đề của một bài học, hoặc `undefined` nếu bài chưa có gợi ý riêng. */
+export function lessonTopicHint(legacyLessonId: string): string | undefined {
+  return topicHintByLesson.get(legacyLessonId);
+}
+
+/** Mọi gợi ý chủ đề, để test kiểm tra mỗi gợi ý chỉ xuất hiện trong bài của nó. */
+export const allLessonTopicHints: readonly string[] = lessonTopicHints.map(([, hint]) => hint);
+
+const kindLeads: Partial<Record<Exercise["kind"], string>> = {
+  choice: "Đối chiếu từng phương án với yêu cầu, cả về hình thức lẫn ý nghĩa.",
+  context: "Đọc kỹ tình huống rồi đối chiếu từng phương án, cả về hình thức lẫn ý nghĩa.",
+  order: "Ghép trước những từ thuộc cùng một cụm, rồi đọc lại cả câu.",
+  repair: "Thử đặt từng phương án vào vị trí cần sửa rồi đọc lại cả câu.",
+  tap: "Xét công việc của từng mảnh trong cả câu.",
+  match: "Xử lý từng vế riêng; mỗi phương án chỉ dùng một lần.",
+  sort: "Dùng một tiêu chí cho mọi mục và xét từng mục riêng.",
+  grid: "Giải riêng từng hàng rồi đọc lại câu hoàn chỉnh của hàng đó.",
+  dropdown: "Giải riêng từng ô rồi đọc lại cả câu.",
+  "exact-input": "Kiểm tra lần lượt chủ ngữ, động từ và trật tự từ của câu cần viết.",
+  timeline: "Xác định hành động xảy ra trước, sau hay đang diễn ra so với mốc thời gian.",
+};
+
+function meaningfulWordCount(text: string): number {
+  const withoutLead = Object.values(hintLeads).reduce(
+    (current, lead) => current.startsWith(lead) ? current.slice(lead.length) : current,
+    text,
+  );
+  return (withoutLead.replaceAll("…", " ").match(/[\p{L}\p{N}]+/gu) ?? []).length;
+}
+
+/**
+ * Dựng gợi ý khi gợi ý gốc phải che đáp án. Phần riêng của câu là chính lời
+ * giải với chỗ đáp án được thay bằng dấu “…”. Khi phần ấy còn quá ít chữ để
+ * dẫn đường, gợi ý thêm phần chủ đề của bài học (hoặc lời dẫn theo dạng hoạt
+ * động) ở trước.
+ */
+function promptAwareHint(exercise: Exercise, legacyLessonId: string, maskedHint: string): string {
+  const specific = maskedHint
+    .replaceAll("hình thức cần tìm", "___")
+    .replace(/(?:___\s*){2,}/g, "___")
+    .replaceAll("___", "…")
+    .replace(/…(?:\s*(?:\.\.\.|…))+/g, "…")
+    .replace(/\s+/g, " ")
+    .trim();
+  const topic = lessonTopicHint(legacyLessonId);
+  const kindLead = kindLeads[exercise.kind] ?? kindLeads.choice!;
+  const hasOwnLead = Object.values(hintLeads).some((hintLead) => specific.startsWith(hintLead));
+  const words = meaningfulWordCount(specific);
+  const holes = specific.split("…").length - 1;
+  if (words >= 7 && holes <= 1) return specific;
+  if (words >= 1) return [topic ?? (hasOwnLead ? "" : kindLead), specific].filter(Boolean).join(" ");
+  const prompt = maskAnswerTerms(exercise.prompt, correctAnswerStrings(exercise), otherOptionStrings(exercise))
     .replaceAll("___", "…")
     .replace(/[.?]$/, "");
-  const lower = prompt.toLocaleLowerCase("vi");
-
-  if (exercise.kind === "order") {
-    return `Ghép trước những từ thuộc cùng một cụm, rồi đọc lại toàn câu theo yêu cầu sau: ${prompt}.`;
-  }
-  if (exercise.kind === "repair") {
-    return `Đọc cả câu với từng phương án thay thế và chỉ chọn dạng đáp ứng trọn yêu cầu sau: ${prompt}.`;
-  }
-  if (exercise.kind === "tap") {
-    return `Xét công việc của từng mảnh trong cả câu và chỉ chọn phần trực tiếp đáp ứng yêu cầu sau: ${prompt}.`;
-  }
-  if (exercise.kind === "match") {
-    return `Xử lý từng vế độc lập theo đúng quan hệ được nêu sau đây: ${prompt}; mỗi vế chỉ được dùng một lần.`;
-  }
-  if (exercise.kind === "sort") {
-    return `Xác định một tiêu chí chung từ yêu cầu sau, rồi kiểm tra từng mục riêng trước khi xếp nhóm: ${prompt}.`;
-  }
-  if (exercise.kind === "grid" || exercise.kind === "dropdown") {
-    return `Giải từng hàng riêng theo yêu cầu sau, rồi kiểm tra lại sự hòa hợp và ý nghĩa của toàn bộ các hàng: ${prompt}.`;
-  }
-
-  if (/possess|whose|apostroph/.test(legacyLessonId) || /sở hữu|của ai|\bcủa\b|whose|mine|yours|hers|ours|theirs|dấu nháy/.test(lower)) {
-    return `Xác định người hoặc vật có quan hệ sở hữu, rồi kiểm tra dạng cần đứng trước danh từ hay thay cho cả cụm theo yêu cầu: ${prompt}.`;
-  }
-  if (/article|countable|uncountable|irregular-plural/.test(legacyLessonId) || /mạo từ|a\/an|đếm được|không đếm được|số nhiều bất quy tắc/.test(lower)) {
-    return `Xác định danh từ đang là số ít, số nhiều hay không đếm được, rồi mới chọn hình thức theo yêu cầu: ${prompt}.`;
-  }
-  if (/demonstrative/.test(legacyLessonId) || /\bthis\b|\bthat\b|\bthese\b|\bthose\b|ở gần|ở xa|một vật|nhiều vật|“[^”]*(?:này|kia)[^”]*”/.test(lower)) {
-    return `Xác định lần lượt hai điều: có một hay nhiều, rồi ở gần hay xa người nói theo yêu cầu: ${prompt}.`;
-  }
-  if (/pronoun|subjects-and-pronouns|objects-and-links/.test(legacyLessonId) || /đại từ|chủ ngữ|tân ngữ|người nói|người nghe|thay cho/.test(lower)) {
-    return `Xác định người hoặc vật đang được nói tới và công việc của vị trí cần chọn theo yêu cầu: ${prompt}.`;
-  }
-  if (/^be-(?:forms|meanings|negative|questions|wh-questions)$/.test(legacyLessonId)) {
-    return `Xác định chủ ngữ là \`I\`, số ít hay số nhiều, rồi chọn đúng dạng của \`be\` theo yêu cầu: ${prompt}.`;
-  }
-  if (/hiện tại|quá khứ|tương lai|thời gian|mốc|thói quen|đang xảy ra|hiện tại hoàn thành|quá khứ hoàn thành|tiếp diễn|when|while|since|for|ago|yesterday|tomorrow|now|every/.test(lower)) {
-    return `Tìm dấu hiệu thời gian và xác định người nói đang nhìn hành động như thói quen, quá trình hay sự việc hoàn tất theo yêu cầu: ${prompt}.`;
-  }
-  if (/câu hỏi|phủ định|khẳng định|trả lời|trợ động từ|do\/does|did|yes|no/.test(lower)) {
-    return `Xác định kiểu câu và trợ động từ hoặc dạng của \`be\` cần giữ lại trước khi xử lý yêu cầu: ${prompt}.`;
-  }
-  if (/giới từ|nơi chốn|vị trí|\bin\b|\bon\b|\bat\b|under|above|between/.test(lower)) {
-    return `Hình dung quan hệ thật giữa vật cần tìm và vật hoặc mốc làm chuẩn trước khi trả lời yêu cầu: ${prompt}.`;
-  }
-  if (/từ nối|lý do|kết quả|tương phản|lựa chọn|although|because|so that|unless|if/.test(lower)) {
-    return `Xác định quan hệ giữa hai ý — thêm, đối lập, nguyên nhân, kết quả hay điều kiện — rồi xử lý yêu cầu: ${prompt}.`;
-  }
-  if (/so sánh|hơn|nhất|bằng nhau|as\.\.\.as|more|most/.test(lower)) {
-    return `Xác định hai đối tượng đang được so sánh và mức so sánh cần diễn đạt trước khi trả lời yêu cầu: ${prompt}.`;
-  }
-  if (/bị động|chủ động|tác nhân|by|with/.test(lower)) {
-    return `Xác định câu cần tập trung vào người thực hiện hay đối tượng chịu tác động trước khi trả lời yêu cầu: ${prompt}.`;
-  }
-  if (/động từ tình thái|modal|can|could|may|might|must|should|would/.test(lower)) {
-    return `Xác định sắc thái khả năng, nghĩa vụ, lời khuyên hoặc mức chắc chắn mà yêu cầu sau cần diễn đạt: ${prompt}.`;
-  }
-  if (/danh từ|động từ|tính từ|trạng từ|từ loại|gọi tên|hành động|miêu tả|đặc điểm/.test(lower)) {
-    return `Hỏi mỗi từ đang gọi tên, nói hành động hay miêu tả đặc điểm theo yêu cầu: ${prompt}.`;
-  }
-  return `Đọc lại toàn bộ yêu cầu sau và loại từng phương án không đáp ứng đủ cả hình thức lẫn ý nghĩa: ${prompt}.`;
+  return `${topic ?? kindLead} Áp dụng vào câu hỏi “${prompt}”.`;
 }
 
 function enrichedExplanation(exercise: Exercise): string {
@@ -205,7 +336,7 @@ function enrichedExplanation(exercise: Exercise): string {
     const selected = exercise.answerIndexes.map((index) => exercise.tokens[index]).join(" · ");
     return `${exercise.explanation} Phần được chọn chính xác là “${selected}”.`;
   }
-  if (exercise.kind === "match") return matchExplanation(exercise.pairs, "quan hệ mà câu hỏi yêu cầu");
+  if (exercise.kind === "match") return matchExplanation(exercise.pairs);
   if (exercise.kind === "sort") return sortExplanation(exercise.buckets, exercise.items);
   return exercise.explanation;
 }
@@ -226,9 +357,9 @@ function answerAppliedExplanation(exercise: Exercise, explanation: string): stri
     const selected = exercise.answerIndexes.map((index) => exercise.tokens[index]).join(" · ");
     return `${explanation} Phần thể hiện đúng đặc điểm cần tìm là “${selected}”.`;
   }
-  if (exercise.kind === "match") return matchExplanation(exercise.pairs, explanation.replace(/[.]$/, ""));
+  if (exercise.kind === "match") return matchExplanation(exercise.pairs, explanation);
   if (exercise.kind === "sort") return sortExplanation(exercise.buckets, exercise.items);
-  if (exercise.kind === "grid") return gridExplanation(exercise.rows, explanation.replace(/[.]$/, ""));
+  if (exercise.kind === "grid") return `${explanation} ${gridExplanation(exercise.rows)}`;
   if (exercise.kind === "dropdown") {
     return `${explanation} Các lựa chọn hoàn chỉnh lần lượt là ${exercise.slots.map((slot) => `“${slot.acceptedAnswers[0]}”`).join("; ")}.`;
   }
@@ -244,15 +375,15 @@ function answerAppliedExplanation(exercise: Exercise, explanation: string): stri
 
 export function withQualityMetadata(legacyLessonId: string, exercise: Exercise): Exercise {
   const answers = correctAnswerStrings(exercise);
-  const normalizedHint = exercise.hint.toLocaleLowerCase("vi").replaceAll("`", "");
+  const plainHint = exercise.hint.replaceAll("`", "");
   const containsFullAnswer = answers.some((answer) => {
-    const clean = answer.replaceAll("`", "").trim().toLocaleLowerCase("vi");
-    return clean.length >= 2 && normalizedHint.includes(clean);
+    const clean = answer.replaceAll("`", "").trim();
+    return clean.length >= 2 && wordPattern(clean).test(plainHint);
   });
-  const rawHint = containsFullAnswer ? maskAnswerTerms(exercise.hint, answers) : exercise.hint;
+  const rawHint = containsFullAnswer ? maskAnswerTerms(exercise.hint, answers, otherOptionStrings(exercise)) : exercise.hint;
   const hint =
     rawHint.includes("___") || rawHint.includes("hình thức cần tìm")
-      ? promptAwareHint(exercise, legacyLessonId)
+      ? promptAwareHint(exercise, legacyLessonId, rawHint)
       : rawHint;
   const enriched = enrichedExplanation(exercise);
   const explanation = hint.trim() === enriched.trim()

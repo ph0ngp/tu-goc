@@ -52,7 +52,7 @@ export function b1DepthPack(
         focusedRows.map((row) => row.answer),
         focusedRows.map((row) => row.cue),
       ),
-      explanation: gridExplanation(focusedRows, focus),
+      explanation: gridExplanation(focusedRows),
     },
     ...orders.map(([prompt, sentence, explanation], index) => {
       const answer = sentenceTokens(sentence);

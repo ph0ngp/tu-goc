@@ -1,6 +1,6 @@
 import type { Exercise } from "../exercise-types.ts";
 import { scrambledPieces } from "./answer-order.ts";
-import { gridExplanation, maskAnswerTerms, matchExplanation, sentenceTokens } from "./basic-builders.ts";
+import { escapeRegExp, gridExplanation, maskAnswerTerms, matchExplanation, sentenceTokens } from "./basic-builders.ts";
 
 type B1PracticeSeed = [
   cue: string,
@@ -196,17 +196,101 @@ function b1SeedIndex(seeds: B1PracticeSeed[], index: number, offset: number): nu
   return (index + offset) % seeds.length;
 }
 
+const cueVerbPattern = /^(hỏi|nói|dùng|đặt|thuật lại|tường thuật|nêu|nhấn|giữ|lược|phân biệt|kiểm tra|mong|ước|xác nhận|ngạc nhiên|gợi ý|trả lời|viết|đưa|phủ định|loại trừ|suy đoán|đồng tình|chuyển|tránh|hướng dẫn|gọi|dự đoán|thể hiện|làm rõ|mô tả|diễn tả|hòa hợp|duy trì|nhận ra|chia|tiếc|thêm|khôi phục|phê bình|để ngỏ|thay|lùi|chọn|nối|rút gọn|bày tỏ|đánh giá|giới thiệu|nhắc lại|lặp|đổi|đếm|đo)(?=\s|$)/iu;
+
+function cueText(cue: string): string {
+  return cue.trim().replace(/[.?]$/, "");
+}
+
+/**
+ * Yêu cầu của hạt nội dung thường bắt đầu bằng động từ (“hỏi ai đã…”), nên
+ * ghép thẳng thành một câu hỏi: “Câu nào hỏi ai đã…?”. Yêu cầu không bắt đầu
+ * bằng động từ được đặt trong ngoặc kép để câu hỏi vẫn là một câu liền mạch.
+ */
+function whichSentence(cue: string, lead = "Câu nào"): string {
+  const normalizedCue = cueText(cue);
+  return cueVerbPattern.test(normalizedCue)
+    ? `${lead} ${normalizedCue}?`
+    : `${lead} phù hợp với yêu cầu “${normalizedCue}”?`;
+}
+
+function forCue(cue: string): string {
+  const normalizedCue = cueText(cue);
+  return cueVerbPattern.test(normalizedCue) ? `để ${normalizedCue}` : `cho đúng yêu cầu “${normalizedCue}”`;
+}
+
 function b1ChoicePrompt(cue: string): string {
-  const normalizedCue = cue.replace(/[.?]$/, "");
-  if (/^(hỏi|nói|dùng|đặt|thuật lại|tường thuật|nêu|nhấn|giữ|lược|phân biệt|kiểm tra|mong|ước|xác nhận|ngạc nhiên|gợi ý|trả lời|viết|đưa|phủ định|loại trừ|suy đoán|đồng tình|chuyển|tránh|hướng dẫn|gọi|dự đoán|thể hiện|làm rõ|mô tả|diễn tả|hòa hợp|duy trì|nhận ra|chia|tiếc|thêm|khôi phục|phê bình|để ngỏ|thay|lùi|chọn|nối|rút gọn|bày tỏ|đánh giá|giới thiệu|nhắc lại)(?=\s|$)/iu.test(cue)) {
-    return `Câu nào ${normalizedCue}?`;
-  }
-  return `Câu nào diễn đạt đúng điều sau: ${normalizedCue}?`;
+  return whichSentence(cue);
 }
 
 function b1ContrastPrompt(cue: string): string {
-  const normalizedCue = cue.replace(/[.?]$/, "");
-  return `So sánh trực tiếp hai phương án: câu nào ${normalizedCue}?`;
+  return whichSentence(cue, "Trong hai câu sau, câu nào");
+}
+
+/**
+ * Các bảng, bài ghép và bài chọn mô tả trong cùng một bài học cần câu hỏi khác
+ * nhau. Mỗi câu dưới đây là một mệnh lệnh trọn vẹn; chỉ số nhóm chọn cách nói,
+ * không chép lại nội dung một hàng vào câu hỏi.
+ */
+const gridPrompts = [
+  "Ở mỗi hàng, chọn phương án đáp ứng đúng yêu cầu của hàng đó.",
+  "Đọc yêu cầu ở từng hàng rồi chọn phương án phù hợp.",
+  "Với mỗi yêu cầu trong bảng, chọn phương án làm đúng điều được nêu.",
+  "Chọn cho từng hàng một phương án thực hiện được yêu cầu ghi ở hàng ấy.",
+  "Ở từng hàng, xác định phương án khớp với yêu cầu nêu bên trái.",
+  "Lần lượt xét từng hàng và chọn phương án đúng với yêu cầu của hàng.",
+  "Hoàn thành bảng bằng cách chọn phương án phù hợp cho mỗi yêu cầu.",
+];
+
+const forwardMatchPrompts = [
+  "Ghép mỗi yêu cầu với câu đáp ứng yêu cầu đó.",
+  "Tìm cho mỗi yêu cầu một câu thực hiện đúng điều được nêu.",
+  "Nối từng yêu cầu với câu tiếng Anh phù hợp.",
+  "Với mỗi yêu cầu, chọn câu làm đúng điều ấy.",
+];
+
+const reverseMatchPrompts = [
+  "Ghép mỗi câu với yêu cầu mà câu đó đáp ứng.",
+  "Với mỗi câu, chọn yêu cầu mà câu ấy thực hiện.",
+  "Nối từng câu tiếng Anh với yêu cầu tương ứng.",
+  "Xác định mỗi câu đang đáp ứng yêu cầu nào.",
+];
+
+const dropdownPrompts = [
+  "Chọn mô tả đúng cho từng câu dưới đây.",
+  "Với mỗi câu, chọn điều mà câu đó thực sự diễn đạt.",
+  "Xác định yêu cầu mà từng câu dưới đây đáp ứng.",
+  "Ở mỗi câu, chọn lời mô tả khớp với cách dùng ngữ pháp trong câu.",
+  "Đọc từng câu rồi chọn mô tả đúng với câu ấy.",
+  "Chọn cho mỗi câu lời giải thích phù hợp với nghĩa và hình thức của nó.",
+  "Xét từng câu và chọn mô tả nói đúng điều câu ấy làm.",
+];
+
+function variantFor(variants: string[], index: number, label: string): string {
+  const variant = variants[index];
+  if (!variant) throw new Error(`Chưa có đủ cách hỏi khác nhau cho ${label} thứ ${index + 1}.`);
+  return variant;
+}
+
+/**
+ * Lấy đúng đoạn trong câu gốc ứng với các mảnh, giữ nguyên khoảng trắng quanh
+ * dấu câu và bỏ dấu kết thúc câu ở cuối đoạn.
+ */
+function chunkText(chunk: string, sentence: string): string {
+  const pattern = chunk.split(" ").map(escapeRegExp).join("\\s*");
+  return (sentence.match(new RegExp(pattern, "u"))?.[0] ?? chunk).replace(/[.?!]+$/, "");
+}
+
+/** Phần làm câu đúng khác câu sai, đủ ngắn để nêu trong gợi ý và không phải cả câu. */
+function keyChunk(answer: string, distractor: string): string | undefined {
+  const { answerChunk } = b1Difference(answer, distractor);
+  if (!answerChunk || answerChunk.split(" ").length > 4) return undefined;
+  const text = chunkText(answerChunk, answer);
+  return text && text !== answer.replace(/[.?!]+$/, "") ? text : undefined;
+}
+
+function codeList(values: string[]): string {
+  return [...new Set(values)].map((value) => `\`${value.replaceAll("`", "'")}\``).join(", ");
 }
 
 function b1Hint(explanation: string, answers: string[]): string {
@@ -277,26 +361,27 @@ function advancedGridRow(
   seedIndex: number,
   usage: AnswerUsage,
 ) {
-  const [cue, answer, distractor, parallelSentence] = seeds[seedIndex];
+  const [cue, answer, distractor, parallelSentence, explanation] = seeds[seedIndex];
   const difference = b1Difference(answer, distractor);
   if (!difference.answerChunk || !difference.distractorChunk) {
     throw new Error(`Không tạo được hàng chọn mảnh cho yêu cầu: ${cue}`);
   }
+  // Câu tiếng Anh nằm trong ngoặc kép vì ô của bảng hiển thị chữ thường, không hiển thị Markdown.
   const candidates = [
     {
-      cue: `Chọn mảnh thay thế trong câu ${distractor.replace(/[.?!]$/, "")} để ${cue.replace(/[.?]$/, "")}.`,
+      cue: `Chọn mảnh thay thế trong câu “${distractor}” ${forCue(cue)}.`,
       options: [difference.answerChunk, difference.distractorChunk],
       answer: difference.answerChunk,
       completed: answer,
     },
     {
-      cue: `Chọn cả câu diễn đạt đúng yêu cầu sau: ${cue.replace(/[.?]$/, "")}.`,
+      cue: whichSentence(cue),
       options: [answer, distractor],
       answer,
       completed: answer,
     },
     {
-      cue: `Chọn một cách diễn đạt khác vẫn đúng yêu cầu sau: ${cue.replace(/[.?]$/, "")}.`,
+      cue: whichSentence(cue),
       options: [parallelSentence, distractor],
       answer: parallelSentence,
       completed: parallelSentence,
@@ -306,7 +391,44 @@ function advancedGridRow(
     answerUseCount(usage, left.answer) - answerUseCount(usage, right.answer),
   )[0];
   reserveAnswer(usage, selected.answer);
-  return selected;
+  return { row: selected, explanation };
+}
+
+type AdvancedGridRow = ReturnType<typeof advancedGridRow>;
+
+/**
+ * Gợi ý của bảng chỉ ra chỗ hai câu khác nhau ở các hàng chọn cả câu, nêu cả
+ * hai phần theo thứ tự chữ cái để không lộ phần nào đúng. Bảng chỉ có hàng chọn
+ * mảnh dùng quy tắc của một hàng mà không nhắc tới đáp án của hàng đó.
+ */
+function advancedGridHint(rows: AdvancedGridRow[]): string {
+  // Không nêu phần nào trùng đáp án của hàng chọn mảnh: phần đó sẽ bị che và nửa còn lại chỉ ra đáp án.
+  const fragmentAnswers = rows
+    .filter(({ row }) => row.answer !== row.completed)
+    .map(({ row }) => new RegExp(`(?<![\\p{L}\\p{N}])${escapeRegExp(row.answer)}(?![\\p{L}\\p{N}])`, "iu"));
+  const contrasts = rows.flatMap(({ row }) => {
+    if (row.answer !== row.completed) return [];
+    const other = row.options.find((option) => option !== row.answer);
+    if (!other) return [];
+    const { answerChunk, distractorChunk } = b1Difference(row.answer, other);
+    if (!answerChunk || !distractorChunk || answerChunk.split(" ").length > 4 || distractorChunk.split(" ").length > 4) return [];
+    if (fragmentAnswers.some((pattern) => pattern.test(answerChunk) || pattern.test(distractorChunk))) return [];
+    const [first, second] = [chunkText(answerChunk, row.answer), chunkText(distractorChunk, other)].sort((left, right) => left.localeCompare(right, "en"));
+    return [`\`${first}\` hay \`${second}\``];
+  });
+  if (contrasts.length === 1) {
+    return `Ở hàng phải chọn cả câu, hai câu chỉ khác nhau ở ${contrasts[0]}; hãy hỏi phần nào làm đúng yêu cầu của hàng.`;
+  }
+  if (contrasts.length > 1) {
+    return `Ở các hàng phải chọn cả câu, hai câu lần lượt chỉ khác nhau ở ${contrasts.join("; ")}; hãy hỏi phần nào làm đúng yêu cầu của từng hàng.`;
+  }
+  const answers = rows.map(({ row }) => row.answer);
+  const rule = rows
+    .map(({ explanation }) => maskAnswerTerms(explanation, answers))
+    .find((text) => !text.includes("___"));
+  return rule
+    ? `Ở mỗi hàng, đọc lại cả câu với phương án đã chọn. ${rule}`
+    : "Ở mỗi hàng, đọc lại cả câu với phương án đã chọn: chỉ một phương án làm câu đáp ứng đúng yêu cầu.";
 }
 
 function advancedDropdownSlot(
@@ -317,17 +439,40 @@ function advancedDropdownSlot(
   seedIndex: number,
   usage: AnswerUsage,
 ) {
-  const [cue, answer, , , explanation] = seeds[seedIndex];
+  const [cue, answer, distractor, , explanation] = seeds[seedIndex];
   const alternateCue = seeds[(seedIndex + 5) % seeds.length][0];
   const alternateExplanation = seeds[(seedIndex + 5) % seeds.length][4];
   const acceptedAnswer = chooseLessUsedAnswer(usage, [cue, explanation]);
   const alternateAnswer = acceptedAnswer === cue ? alternateCue : alternateExplanation;
   reserveAnswer(usage, acceptedAnswer);
   return {
-    id: `${prefix}-slot-${group}-${index}`,
-    label: `Cách diễn đạt sau đáp ứng yêu cầu nào: ${answer}`,
-    options: [acceptedAnswer, alternateAnswer],
-    acceptedAnswers: [acceptedAnswer],
+    slot: {
+      id: `${prefix}-slot-${group}-${index}`,
+      label: answer,
+      options: [acceptedAnswer, alternateAnswer],
+      acceptedAnswers: [acceptedAnswer],
+    },
+    key: keyChunk(answer, distractor),
+    distractor,
+  };
+}
+
+type AdvancedDropdownSlot = ReturnType<typeof advancedDropdownSlot>;
+
+/**
+ * Gợi ý của bài chọn mô tả chỉ ra phần làm nên nghĩa của từng câu. Khi câu khác
+ * cách nói dễ nhầm ở quá nhiều chỗ (thường gặp ở bài về văn phong), gợi ý đặt
+ * một câu cạnh cách nói dễ nhầm đó để người học tự thấy câu đang làm gì.
+ */
+function advancedDropdownActivity(slots: AdvancedDropdownSlot[]) {
+  const keys = slots.flatMap(({ key }) => key ? [key] : []);
+  const unkeyed = slots.find(({ key }) => !key);
+  return {
+    slots: slots.map(({ slot }) => slot),
+    hint: unkeyed
+      ? `Đặt \`${unkeyed.slot.label}\` cạnh cách nói dễ nhầm \`${unkeyed.distractor}\`: chỗ khác nhau cho biết câu đang làm gì; xét các câu còn lại theo cách tương tự.`
+      : `Phần quyết định nghĩa của các câu nằm ở ${codeList(keys)}; hãy chọn mô tả nói đúng công việc của phần ấy trong từng câu.`,
+    explanation: `Mô tả đúng cho từng câu: ${slots.map(({ slot }) => `\`${slot.label}\` → “${slot.acceptedAnswers[0]}”`).join("; ")}.`,
   };
 }
 
@@ -339,16 +484,28 @@ function advancedMatchPairs(
   reverse: boolean,
 ) {
   const rights = new Set<string>();
-  return Array.from({ length: 4 }, (_, index) => {
+  const keys: string[] = [];
+  const clues: string[] = [];
+  const pairs = Array.from({ length: 4 }, (_, index) => {
     const seed = b1SeedAt(seeds, start + index, offset);
-    const [cue, answer, , parallelSentence] = seed;
+    const [cue, answer, distractor, parallelSentence, explanation] = seed;
+    clues.push(explanation);
     const sentence = chooseLessUsedAnswer(usage, [answer, parallelSentence]);
     const right = reverse ? cue : chooseLessUsedAnswer(usage, [answer, parallelSentence], rights);
     const left = reverse ? sentence : cue;
+    const shownSentence = reverse ? left : right;
+    const key = shownSentence === answer ? keyChunk(answer, distractor) : undefined;
+    if (key) keys.push(key);
     rights.add(answerUsageKey(right));
     reserveAnswer(usage, right);
     return { left, right };
   });
+  return {
+    pairs,
+    hint: keys.length
+      ? `Tìm trong mỗi câu phần mang điểm ngữ pháp chính, chẳng hạn ${codeList(keys)}, rồi đối chiếu với từng yêu cầu; mỗi phương án chỉ dùng một lần.`
+      : `Gợi ý cho một cặp: ${clues[0]} Các cặp còn lại làm theo cách tương tự; mỗi phương án chỉ dùng một lần.`,
+  };
 }
 
 function leastUsedParallelSeed(
@@ -396,7 +553,7 @@ function advancedPracticeSet(
     parallelCursor += 1;
     const answer = sentenceTokens(sentence);
     const tokens = scrambledPieces(answer, `${prefix}${nextId}`);
-    const prompt = `Sắp xếp các mảnh \`${tokens.join(" · ")}\` thành một câu đúng về ${focus}.`;
+    const prompt = `Sắp xếp các mảnh \`${tokens.join(" · ")}\` thành một câu hoàn chỉnh.`;
     reserveAnswer(usage, sentence);
     exercises.push({ id: `${prefix}${nextId++}`, kind: "order", prompt, tokens, answer, hint: b1Hint(explanation, [sentence]), explanation: `${explanation} Câu hoàn chỉnh là \`${sentence}\`.` });
   }
@@ -436,28 +593,27 @@ function advancedPracticeSet(
 
   for (let group = 0; group < mix.match; group += 1) {
     const reverse = group % 2 === 1;
-    const pairs = advancedMatchPairs(seeds, group * 4, offset + 2, usage, reverse);
-    const prompt = reverse
-      ? `Ghép mỗi cách diễn đạt với yêu cầu tương ứng về ${focus}, bắt đầu từ ví dụ: ${pairs[0].left}.`
-      : `Ghép mỗi yêu cầu với một cách diễn đạt đúng về ${focus}, bắt đầu từ nội dung: ${pairs[0].left}.`;
-    exercises.push({ id: `${prefix}${nextId++}`, kind: "match", prompt, pairs, hint: `Đối chiếu ý nghĩa với hình thức của ${focus}; mỗi cách diễn đạt chỉ dùng một lần.`, explanation: matchExplanation(pairs, focus) });
+    const { pairs, hint } = advancedMatchPairs(seeds, group * 4, offset + 2, usage, reverse);
+    const prompt = variantFor(reverse ? reverseMatchPrompts : forwardMatchPrompts, Math.floor(group / 2), `bài ghép của ${prefix}`);
+    exercises.push({ id: `${prefix}${nextId++}`, kind: "match", prompt, pairs, hint, explanation: matchExplanation(pairs) });
   }
 
   for (let group = 0; group < mix.grid; group += 1) {
-    const rows = Array.from({ length: 3 }, (_, index) => advancedGridRow(
+    const gridRows = Array.from({ length: 3 }, (_, index) => advancedGridRow(
       seeds,
       b1SeedIndex(seeds, group * 3 + index, offset + 4),
       usage,
     ));
-    const prompt = `Ở từng hàng, chọn mảnh sửa đúng câu về ${focus}; hàng đầu tiên nêu: ${rows[0].cue}`;
-    exercises.push({ id: `${prefix}${nextId++}`, kind: "grid", prompt, rows, hint: `Xử lý riêng từng trường hợp; chú ý ${rows.map((row) => row.cue).join("; ")}.`, explanation: gridExplanation(rows, focus) });
+    const rows = gridRows.map(({ row }) => row);
+    const prompt = variantFor(gridPrompts, group, `bảng của ${prefix}`);
+    exercises.push({ id: `${prefix}${nextId++}`, kind: "grid", prompt, rows, hint: advancedGridHint(gridRows), explanation: gridExplanation(rows) });
   }
 
   for (let index = 0; index < mix.exact; index += 1) {
     const [, , , sentence, explanation] = leastUsedParallelSeed(seeds, parallelCursor, offset + 5, usage);
     parallelCursor += 1;
     const words = scrambledPieces(sentenceTokens(sentence), `${prefix}${nextId}`);
-    const prompt = `Dùng đủ các mảnh \`${words.join(" · ")}\` để viết một câu đúng về ${focus}.`;
+    const prompt = `Dùng đủ các mảnh \`${words.join(" · ")}\` để viết một câu hoàn chỉnh.`;
     reserveAnswer(usage, sentence);
     exercises.push({
       id: `${prefix}${nextId++}`, kind: "exact-input", prompt, acceptedAnswers: [sentence],
@@ -467,20 +623,16 @@ function advancedPracticeSet(
   }
 
   for (let group = 0; group < mix.dropdown; group += 1) {
-    const slots = Array.from({ length: 3 }, (_, index) => advancedDropdownSlot(
+    const activity = advancedDropdownActivity(Array.from({ length: 3 }, (_, index) => advancedDropdownSlot(
       prefix,
       group,
       index,
       seeds,
       b1SeedIndex(seeds, group * 3 + index, offset + 8),
       usage,
-    ));
-    const prompt = `Xác định yêu cầu ngữ pháp mà mỗi cách diễn đạt về ${focus} đang đáp ứng; nhóm ${group + 1} bắt đầu bằng ${slots[0].label}`;
-    exercises.push({
-      id: `${prefix}${nextId++}`, kind: "dropdown", prompt, slots,
-      hint: `Trong nhóm ${group + 1}, đối chiếu từng cách diễn đạt với ý nghĩa và điều kiện sử dụng của ${focus}.`,
-      explanation: `Các mô tả đúng lần lượt là ${slots.map((slot) => `“${slot.acceptedAnswers[0]}”`).join("; ")}.`,
-    });
+    )));
+    const prompt = variantFor(dropdownPrompts, group, `bài chọn mô tả của ${prefix}`);
+    exercises.push({ id: `${prefix}${nextId++}`, kind: "dropdown", prompt, ...activity });
   }
 
   if (exercises.length !== setting.target) throw new Error(`Bộ ${prefix} có ${exercises.length} hoạt động, cần ${setting.target}.`);
@@ -573,7 +725,7 @@ function b2AdvancedPracticeSet(
       id: `${prefix}${nextId++}`,
       kind: "order",
       ...(mode === "c1" ? { objectiveId: `seed-${seedIndex + 1}` } : {}),
-      prompt: `Sắp xếp các mảnh \`${tokens.join(" · ")}\` thành một câu hoàn chỉnh thể hiện đúng ${focus}.`,
+      prompt: `Sắp xếp các mảnh \`${tokens.join(" · ")}\` thành một câu hoàn chỉnh.`,
       tokens,
       answer,
       hint: mode === "c1" ? b1Hint(explanation, [sentence]) : b2SequenceHint(index, focus),
@@ -628,7 +780,7 @@ function b2AdvancedPracticeSet(
 
   for (let group = 0; group < mix.match; group += 1) {
     const reverse = group % 2 === 1;
-    const pairs = advancedMatchPairs(
+    const { pairs, hint } = advancedMatchPairs(
       seeds,
       group * (mode === "c1" ? 5 : 4),
       offset + 2,
@@ -639,29 +791,28 @@ function b2AdvancedPracticeSet(
       id: `${prefix}${nextId++}`,
       kind: "match",
       ...(mode === "c1" ? { objectiveId: `integration-match-${group + 1}` } : {}),
-      prompt: reverse
-        ? `Ghép mỗi cách diễn đạt với yêu cầu tương ứng về ${focus}, bắt đầu từ ví dụ: ${pairs[0].left}.`
-        : `Ghép mỗi yêu cầu với cách diễn đạt tương ứng về ${focus}, bắt đầu từ nội dung: ${pairs[0].left}.`,
+      prompt: variantFor(reverse ? reverseMatchPrompts : forwardMatchPrompts, Math.floor(group / 2), `bài ghép của ${prefix}`),
       pairs,
-      hint: `Đối chiếu trước nội dung ${pairs[0].left} với từng cách diễn đạt, rồi dùng mỗi phương án đúng một lần.`,
-      explanation: matchExplanation(pairs, focus),
+      hint,
+      explanation: matchExplanation(pairs),
     });
   }
 
   for (let group = 0; group < mix.grid; group += 1) {
-    const rows = Array.from({ length: 3 }, (_, index) => advancedGridRow(
+    const gridRows = Array.from({ length: 3 }, (_, index) => advancedGridRow(
       seeds,
       b1SeedIndex(seeds, group * (mode === "c1" ? 5 : 3) + index, offset + 6),
       usage,
     ));
+    const rows = gridRows.map(({ row }) => row);
     exercises.push({
       id: `${prefix}${nextId++}`,
       kind: "grid",
       ...(mode === "c1" ? { objectiveId: `integration-grid-${group + 1}` } : {}),
-      prompt: `Ở từng hàng, chọn mảnh sửa đúng câu về ${focus}; hàng đầu tiên nêu: ${rows[0].cue}`,
+      prompt: variantFor(gridPrompts, group, `bảng của ${prefix}`),
       rows,
-      hint: `Ba hàng có thể kiểm tra các ranh giới khác nhau của ${focus}; hãy giải riêng từng hàng và bắt đầu từ nội dung ${rows[0].cue}`,
-      explanation: gridExplanation(rows, focus),
+      hint: advancedGridHint(gridRows),
+      explanation: gridExplanation(rows),
     });
   }
 
@@ -676,7 +827,7 @@ function b2AdvancedPracticeSet(
       id: `${prefix}${nextId++}`,
       kind: "exact-input",
       ...(mode === "c1" ? { objectiveId: `seed-${seedIndex + 1}` } : {}),
-      prompt: `Viết lại thành một câu hoàn chỉnh bằng toàn bộ các mảnh \`${words.join(" · ")}\` để thể hiện ${focus}.`,
+      prompt: `Viết một câu hoàn chỉnh dùng toàn bộ các mảnh \`${words.join(" · ")}\`.`,
       acceptedAnswers: [sentence],
       normalization: { trim: true, ignoreInitialCapital: true, ignoreFinalPeriod: true },
       hint: mode === "c1" ? b1Hint(explanation, [sentence]) : b2SequenceHint(index + mix.order, focus),
@@ -685,22 +836,20 @@ function b2AdvancedPracticeSet(
   }
 
   for (let group = 0; group < mix.dropdown; group += 1) {
-    const slots = Array.from({ length: 3 }, (_, index) => advancedDropdownSlot(
+    const activity = advancedDropdownActivity(Array.from({ length: 3 }, (_, index) => advancedDropdownSlot(
       prefix,
       group,
       index,
       seeds,
       b1SeedIndex(seeds, group * (mode === "c1" ? 5 : 3) + index, offset + 9),
       usage,
-    ));
+    )));
     exercises.push({
       id: `${prefix}${nextId++}`,
       kind: "dropdown",
       ...(mode === "c1" ? { objectiveId: `integration-dropdown-${group + 1}` } : {}),
-      prompt: `Xác định yêu cầu ngữ pháp mà mỗi cách diễn đạt về ${focus} đang đáp ứng; nhóm ${group + 1} bắt đầu bằng ${slots[0].label}`,
-      slots,
-      hint: `Trong nhóm ${group + 1}, đối chiếu từng cách diễn đạt với ý nghĩa và điều kiện sử dụng của cấu trúc trước khi chọn mô tả.`,
-      explanation: `Các mô tả đúng lần lượt là ${slots.map((slot) => `“${slot.acceptedAnswers[0]}”`).join("; ")}.`,
+      prompt: variantFor(dropdownPrompts, group, `bài chọn mô tả của ${prefix}`),
+      ...activity,
     });
   }
 

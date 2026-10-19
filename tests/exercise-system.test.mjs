@@ -8,6 +8,7 @@ import {
   matchOptionOrder,
 } from "../app/exercises/answer-order.ts";
 import { sentenceTokens } from "../app/exercises/basic-builders.ts";
+import { allLessonTopicHints, lessonTopicHint } from "../app/exercises/quality.ts";
 
 const entries = Object.entries(exerciseDataByLegacyId);
 const allExercises = entries.flatMap(([, exercises]) => exercises);
@@ -253,6 +254,161 @@ test("keeps exercise objectives, hints, prompts, and feedback pedagogically spec
     assert.equal(new Set(exercise.pairs.map((pair) => pair.right)).size, exercise.pairs.length, id);
     assert.ok(exercise.pairs.every((pair) => /\b(?:was|were)\b/.test(pair.left) && /`(?:was|were)`/.test(pair.right)), id);
   }
+});
+
+function displayedInstructions(exercise) {
+  return [
+    ["câu hỏi", exercise.prompt],
+    ...(exercise.kind === "grid" ? exercise.rows.map((row) => ["hàng", row.cue]) : []),
+    ...(exercise.kind === "dropdown" ? exercise.slots.map((slot) => ["ô chọn", slot.label]) : []),
+  ];
+}
+
+test("shows one natural instruction instead of stacked generator templates", () => {
+  const stackedTemplates = [
+    /hàng đầu tiên nêu/i,
+    /bắt đầu từ (?:nội dung|ví dụ)/i,
+    /nhóm \d+ bắt đầu bằng/i,
+    /Cách diễn đạt sau đáp ứng yêu cầu nào/i,
+    /Câu nào diễn đạt đúng điều sau/i,
+    /So sánh trực tiếp hai phương án/i,
+    /sau khi sửa phần chưa phù hợp/i,
+    /ví dụ đầu tiên là/i,
+    /Chọn (?:cả câu diễn đạt đúng|một cách diễn đạt khác vẫn đúng) yêu cầu sau/i,
+    /mảnh `[^`]+` (?:thành một câu|để viết một câu|để thể hiện)[^.]*(?:thể hiện|đúng về)/i,
+    /\. Chọn câu hoàn chỉnh\.$/,
+  ];
+  // Một mệnh lệnh không được nối thêm mệnh lệnh thứ hai sau dấu hai chấm hay chấm phẩy.
+  const secondInstruction = /[:;]\s*(?:Chọn|Câu nào|Cách diễn đạt|Ghép|Sắp xếp|Hãy)(?![\p{L}])/u;
+  for (const exercise of allExercises) {
+    for (const [label, text] of displayedInstructions(exercise)) {
+      for (const template of stackedTemplates) {
+        assert.doesNotMatch(text, template, `${exercise.id}: ${label} còn ghép nhãn mẫu — ${text}`);
+      }
+      assert.doesNotMatch(text, secondInstruction, `${exercise.id}: ${label} chứa hai mệnh lệnh — ${text}`);
+    }
+  }
+});
+
+test("never ends a sentence with doubled punctuation", () => {
+  const doubled = /[?!]\.(?=\s|$)|(?<!\.)\.\.(?=\s|$)/;
+  for (const exercise of allExercises) {
+    for (const [label, text] of [
+      ...displayedInstructions(exercise),
+      ["gợi ý", exercise.hint],
+      ["lời giải", exercise.explanation],
+    ]) {
+      assert.doesNotMatch(text, doubled, `${exercise.id}: ${label} có hai dấu kết thúc liên tiếp — ${text}`);
+    }
+  }
+});
+
+test("chooses topic hints by lesson, not by loose words in the prompt", () => {
+  for (const [lessonId, exercises] of entries) {
+    for (const exercise of exercises) {
+      for (const topic of allLessonTopicHints) {
+        if (exercise.hint.includes(topic)) {
+          assert.equal(lessonTopicHint(lessonId), topic, `${exercise.id}: gợi ý mang chủ đề của bài khác`);
+        }
+      }
+    }
+  }
+
+  const possessionLessons = new Set(["possessives", "possessive-s", "possessive-pronouns", "whose-questions"]);
+  const possessionHint = /Xác định người hoặc vật có quan hệ sở hữu|Xác định ai là người sở hữu/;
+  for (const [lessonId, exercises] of entries) {
+    for (const exercise of exercises) {
+      if (possessionHint.test(exercise.hint)) {
+        assert.ok(possessionLessons.has(lessonId), `${exercise.id}: gợi ý sở hữu xuất hiện ngoài bài về sở hữu`);
+      }
+    }
+  }
+
+  // Các câu từng nhận gợi ý sai chủ đề chỉ vì câu hỏi có chữ “của”, “nơi chốn”, “sớm hơn”...
+  const offTopic = {
+    nt7: /sở hữu/,
+    wj7: /giới từ|mốc làm chuẩn|nơi chốn thật/,
+    a1hm8: /dấu hiệu thời gian|thói quen/,
+    a2jy2: /so sánh/,
+    a2pi1: /sở hữu/,
+    a2cp6: /sở hữu/,
+    a1cax1: /sở hữu/,
+    aa16: /không đếm được/,
+  };
+  for (const [id, pattern] of Object.entries(offTopic)) {
+    const exercise = allExercises.find((item) => item.id === id);
+    assert.ok(exercise, id);
+    assert.doesNotMatch(exercise.hint, pattern, `${id}: gợi ý nói về chủ đề khác — ${exercise.hint}`);
+  }
+});
+
+test("gives each generated grid, match, and dropdown its own specific hint", () => {
+  for (const exercise of allExercises) {
+    if (exercise.kind !== "dropdown") continue;
+    assert.doesNotMatch(exercise.hint, /^Trong nhóm \d+/, `${exercise.id}: gợi ý chung cho mọi bài chọn mô tả`);
+    // Gợi ý phải nhắc tới chính các câu của hoạt động.
+    const quoted = [...exercise.hint.matchAll(/`([^`]+)`/g)].map((match) => match[1]);
+    assert.ok(quoted.length > 0, `${exercise.id}: gợi ý không chỉ vào câu nào`);
+    for (const fragment of quoted) {
+      assert.ok(
+        exercise.slots.some((slot) => slot.label.includes(fragment)) || exercise.hint.includes("cách nói dễ nhầm"),
+        `${exercise.id}: gợi ý nhắc tới “${fragment}” nhưng không câu nào chứa phần đó`,
+      );
+    }
+  }
+
+  const generatedLessons = entries.filter(([lessonId]) => /^(?:b1|b2|c1)-/.test(lessonId));
+  for (const [lessonId, exercises] of generatedLessons) {
+    for (const exercise of exercises) {
+      if (!["grid", "match", "dropdown"].includes(exercise.kind)) continue;
+      // Bảng của bộ “đào sâu” B1 liệt kê dấu hiệu từng hàng theo thiết kế riêng; ở đây chỉ xét bộ sinh B1–C1.
+      if (exercise.hint.startsWith("Giải riêng từng hàng; chú ý lần lượt các dấu hiệu")) continue;
+      const rowText = exercise.kind === "grid" ? exercise.rows.map((row) => row.cue)
+        : exercise.kind === "match" ? exercise.pairs.map((pair) => pair.left) : [];
+      for (const text of rowText) {
+        assert.ok(!exercise.hint.includes(text), `${lessonId}/${exercise.id}: gợi ý chỉ chép lại một hàng`);
+      }
+    }
+  }
+});
+
+test("does not claim that every row of a contrast activity shows the lesson focus", () => {
+  for (const exercise of allExercises) {
+    assert.doesNotMatch(exercise.explanation, /Mỗi lựa chọn khớp với|^Các cặp đúng là: .*\. Mỗi cặp cho thấy/, `${exercise.id}: lời giải gán trọng tâm bài cho mọi hàng`);
+  }
+  for (const id of ["a2fc25", "a2zc25", "a2tc25", "a2utp25", "a2ca24"]) {
+    const exercise = allExercises.find((item) => item.id === id);
+    assert.equal(exercise?.kind, "grid", id);
+    assert.match(exercise.explanation, /^Các câu hoàn chỉnh lần lượt là: /, id);
+  }
+});
+
+test("turns overused answers into natural activities instead of appending instructions", () => {
+  const byId = (id) => allExercises.find((exercise) => exercise.id === id);
+
+  const nounTypes = byId("nt3");
+  for (const row of nounTypes.rows) {
+    assert.doesNotMatch(row.cue, /Chọn/, "nt3: hàng phân loại không được nhận thêm mệnh lệnh");
+    if (row.options.some((option) => option.includes("—"))) {
+      assert.ok(row.options.every((option) => option.startsWith(`${row.cue} — `)), `nt3: ${row.cue}`);
+    }
+  }
+
+  // Câu hoàn chỉnh dựng lại từ phương án sai giữ chữ hoa đầu câu như câu đúng.
+  for (const row of byId("a1hm23").rows) {
+    if (row.answer === row.completed) {
+      assert.ok(row.options.every((option) => /^[A-Z]/.test(option)), `a1hm23: ${row.options.join(" | ")}`);
+    }
+  }
+
+  assert.equal(byId("bq10").prompt, "Ghép mỗi câu trả lời khẳng định với câu hỏi phù hợp.");
+  assert.equal(byId("bq11").prompt, "Ghép mỗi câu trả lời phủ định với câu hỏi phù hợp.");
+  assert.equal(byId("a1aj21").prompt, "Ghép mỗi ví dụ với loại tính từ tương ứng.");
+
+  assert.equal(byId("nt22").kind, "choice");
+  assert.equal(byId("nt22").prompt, "Dòng nào đúng?");
+  assert.equal(byId("a2rr16").prompt, "Câu nào diễn tả hành động qua lại?");
+  assert.ok(byId("a2rr16").options.length >= 3, "a2rr16: giữ đủ các phương án thay thế của bài sửa gốc");
 });
 
 test("gives Chapter 1 varied practice without leaving the taught scope", () => {
