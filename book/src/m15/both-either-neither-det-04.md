@@ -20,12 +20,22 @@ legacyLessonId: a2-both-either-neither
 ## Mẫu có `of`
 
 ```text
-both/either/neither of + the/these/my/us/them ...
+both/either/neither of + the/these/my ... + danh từ số nhiều
+both/either/neither of + us/you/them
 ```
 
 - `Both of the rooms are clean.` — Cả hai phòng đều sạch.
 - `You can take either of these buses.` — Bạn có thể đi một trong hai xe buýt này.
 - `Neither of them is ready.` — Cả hai người họ đều chưa sẵn sàng.
+
+Ba từ này khác nhau ở chỗ có được bỏ `of` hay không:
+
+| Theo sau là | `both` | `either`, `neither` |
+| --- | --- | --- |
+| `the`, `these/those`, `my/your...` + danh từ | có hoặc không có `of` đều đúng: `both the rooms` = `both of the rooms` | phải có `of`: `either of these buses`, `neither of my bags` |
+| đại từ `us`, `you`, `them` | phải có `of`: `both of them` | phải có `of`: `neither of them` |
+
+Như vậy, `Both my sisters live in Hue.` và `Both of my sisters live in Hue.` cùng đúng và cùng nghĩa “Cả hai người chị/em gái của tôi đều sống ở Huế”. Nhưng với `either` và `neither`, không nói `either these buses` hay `neither my bags`; chỉ khi đứng ngay trước danh từ số ít không có `the/my...` thì mới bỏ `of`: `either bus`, `neither bag`.
 
 Trong văn nói, đôi khi dùng động từ số nhiều sau `neither of`, nhưng số ít là lựa chọn chuẩn, rõ ràng ở mức này.
 
@@ -66,7 +76,7 @@ Trong cặp `either ... or` và `neither ... nor`, giữ cấu trúc hai phía s
 
 1. Có đúng **hai** đối tượng không? Nếu nhiều hơn hai, thường cần `all`, `any` hoặc `none` thay vì bộ ba trong bài này.
 2. Ý là cả hai, một trong hai, hay không bên nào? Chọn lần lượt `both`, `either`, `neither`.
-3. Sau từ đó có danh từ hay đại từ xác định không? Nếu có `the`, từ chỉ định, từ sở hữu hoặc đại từ, dùng mẫu có `of`: `both of these books`, `either of my bags`, `neither of them`.
+3. Sau từ đó có `the`, từ chỉ định, từ sở hữu hoặc đại từ không? Với `either` và `neither`, khi ấy phải dùng `of`: `either of my bags`, `neither of them`. Với `both`, `of` bắt buộc trước đại từ (`both of them`), còn trước `the`, từ chỉ định hoặc từ sở hữu thì có hay không đều đúng: `both these books` hoặc `both of these books`.
 
 So sánh cùng một nhóm hai chiếc chìa khóa:
 
@@ -80,5 +90,6 @@ Không thêm `not` vào câu cuối và không dùng động từ số nhiều s
 
 - Dùng ba từ này khi xét đúng hai đối tượng.
 - `both` = cả hai; `either` = một trong hai; `neither` = không bên nào.
-- Dùng `both/either/neither of + từ hạn định/đại từ`.
+- `either/neither` cần `of` trước `the`, từ chỉ định, từ sở hữu và đại từ: `either of my bags`, `neither of them`.
+- `both` cần `of` trước đại từ (`both of them`); trước `the`, từ chỉ định hoặc từ sở hữu thì có thể bỏ `of`: `both (of) my sisters`.
 - Không thêm một phủ định nữa vào câu đã dùng `neither` theo mẫu cơ bản.

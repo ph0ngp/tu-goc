@@ -53,7 +53,7 @@ Phép thử này giúp suy nghĩ, nhưng không phải công thức tuyệt đ�
 Trong mệnh đề không xác định, dùng `who` cho người và `which` cho vật/sự việc:
 
 - `Lan, who called earlier, will come at six.` — Lan, người đã gọi trước đó, sẽ đến lúc sáu giờ.
-- `The museum, which opened in 1990, is being repaired.` — Bảo tàng, mở cửa vào năm 1990, hiện đang được sửa chữa.
+- `The museum, which opened in 1990, is very popular with tourists.` — Bảo tàng ấy, mở cửa từ năm 1990, rất được khách du lịch yêu thích.
 
 Không dùng `Lan, that called...` hay `The museum, that opened...` trong tiếng Anh chuẩn.
 

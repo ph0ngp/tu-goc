@@ -37,7 +37,7 @@ have gone to:  ở đây ─── đi ─── nơi khác / đang trên đư�
 | Mai đang ở bảo tàng/chưa về | `Mai has gone to the museum.` |
 | hỏi trải nghiệm trong đời | `Have you ever been to Thailand?` |
 
-Không nói `Have you ever gone to Thailand?` khi hỏi trải nghiệm thông thường; `been to` là lựa chọn điển hình vì chuyến đi được nhìn như đã hoàn tất.
+Khi hỏi trải nghiệm, `been to` là lựa chọn điển hình ở mọi biến thể tiếng Anh, vì chuyến đi được nhìn như đã hoàn tất. Trong tiếng Anh–Mỹ, `Have you ever gone to Thailand?` cũng khá thường gặp với cùng nghĩa “Bạn đã từng đi Thái Lan chưa?”; trong tiếng Anh–Anh, câu này nghe kém tự nhiên hơn. Khi tự nói hoặc viết, hãy dùng `Have you ever been to...?`.
 
 ## `Been in/at`
 

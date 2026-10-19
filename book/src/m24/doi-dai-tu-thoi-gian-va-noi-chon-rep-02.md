@@ -70,11 +70,12 @@ Kể vào thứ Tư: `Lan said that she had finished the report the day before` 
 
 ## `Come/go` và `bring/take` cũng phụ thuộc điểm nhìn
 
-Động từ chuyển động có thể đổi khi vị trí người kể thay đổi:
+Động từ chuyển động có thể đổi khi vị trí người kể thay đổi. Giả sử Lan nói với Nam: `“I'll come to your office.”` — “Tôi sẽ đến văn phòng của anh.”
 
-- Lan nói với tôi: `“I'll come to your office.”`
-- Tôi kể tại văn phòng: `Lan said she would come to my office.`
-- Một người ở nơi khác kể: `Lan said she would go to my office.`
+- Nam kể lại khi đang ở văn phòng của mình: `Lan said she would come to my office.` — Lan nói cô ấy sẽ đến văn phòng của tôi. Lan sẽ đến đúng chỗ người kể đang ở, nên `come` tự nhiên.
+- Một người khác kể lại ở nơi khác: `Lan said she would go to Nam's office.` — Lan nói cô ấy sẽ đến văn phòng của Nam. Người kể không ở văn phòng ấy, nên `go` thường tự nhiên hơn; tuy vậy `come` vẫn dùng được nếu người kể đặt điểm nhìn ở phía Nam.
+
+Chú ý cả từ sở hữu: `your office` của Lan nói với Nam trở thành `my office` khi Nam kể, nhưng thành `Nam's office` (hoặc `his office`) khi người khác kể. Nếu người khác kể mà vẫn nói `my office`, câu sẽ chỉ văn phòng của chính người kể.
 
 Tương tự, `bring` hướng vật về vị trí tham chiếu; `take` hướng vật đi khỏi đó. Không có quy tắc bắt buộc đổi trong mọi câu; chọn theo vị trí được nhìn tới.
 

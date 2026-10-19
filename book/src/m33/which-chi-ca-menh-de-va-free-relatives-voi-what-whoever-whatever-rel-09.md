@@ -87,7 +87,7 @@ Free relative giữ trật tự câu kể bên trong:
 - đúng: `I don't know what she wants.`;
 - không dùng: `I don't know what does she want.`
 
-Khi `whoever/whatever` tự làm chủ ngữ, động từ thường dùng dạng số ít nếu ý nói một người hoặc một điều chưa xác định: `Whoever wants to join is welcome` — “Bất kỳ ai muốn tham gia đều được chào đón.” Nếu mệnh đề rõ ràng chỉ nhiều người/vật, sự hòa hợp có thể theo ý nghĩa, nhưng nên viết lại khi hình thức gây vướng.
+Khi `whoever` làm chủ ngữ, động từ luôn ở số ít, dù trên thực tế có thể có nhiều người: `Whoever wants to join is welcome` — “Bất kỳ ai muốn tham gia đều được chào đón.” Cả `wants` trong mệnh đề nhỏ lẫn `is` của câu lớn đều ở số ít; không viết `Whoever want to join are welcome` dù có hai mươi người muốn tham gia. `Whatever` đứng một mình cũng đi với số ít: `Whatever happens, stay calm`. Chỉ khi `whatever` đứng trước một danh từ số nhiều thì danh từ ấy mới quyết định số nhiều: `Whatever books you need are on the shelf.` — Bất kỳ cuốn sách nào bạn cần cũng đều ở trên giá.
 
 ## Quy trình nhận diện
 

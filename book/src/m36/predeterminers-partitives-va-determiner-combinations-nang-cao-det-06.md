@@ -48,7 +48,7 @@ Trật tự giữa số thứ tự, số đếm và tính từ phải phản án
 
 ## `All three` và `all the three`
 
-`All three students passed` là cách trung tính để nói cả ba học sinh đều đỗ. `All the three students` xuất hiện trong một số biến thể, đặc biệt khi nhóm đã được xác định, nhưng thường kém tự nhiên hơn `all three students` hoặc `all of the three students`.
+`All three students passed` là cách trung tính để nói cả ba học sinh đều đỗ. `All the three students` và `all of the three students` có xuất hiện, đặc biệt khi nhóm đã được xác định, nhưng thường kém tự nhiên hơn `all three students` hoặc `all three of the students` (cả ba học sinh trong nhóm đã biết).
 
 Không nên áp một lệnh cấm tuyệt đối, nhưng trong văn viết quốc tế rõ ràng, ưu tiên:
 

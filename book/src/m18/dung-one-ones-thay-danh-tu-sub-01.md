@@ -24,7 +24,7 @@ Người nghe biết `one` là `bag` và `ones` là `shoes` từ ngữ cảnh.
 | `which + one/ones` | `Which one do you want?` |
 | `another one` | `Can I have another one?` |
 
-Sau `my/your/his...`, thường dùng đại từ sở hữu thay vì `one`: `Mine is blue`, tự nhiên hơn `my one is blue` trong tiếng Anh chuẩn thông dụng.
+Khi chỉ có `my/your/his...` mà không có tính từ, thường dùng đại từ sở hữu thay vì `one`: `Mine is blue` (Cái của tôi màu xanh) là cách nói chuẩn; `my one is blue` chỉ gặp trong văn nói thân mật, nhất là tiếng Anh–Anh.
 
 ## Khi không dùng `one/ones`
 
@@ -33,7 +33,7 @@ Không dùng để thay danh từ không đếm được:
 - `I prefer the fresh bread.` — Tôi thích bánh mì tươi hơn.
 - Không dùng `the fresh one` nếu `one` phải thay `bread` như một chất không đếm được, trừ khi ngữ cảnh đang nói một ổ/loại bánh đếm được.
 
-Không cần `one/ones` sau số đếm: `I have two books and Lan has three`, không nhất thiết `three ones`.
+Sau số đếm, nếu không có tính từ thì bỏ hẳn danh từ, không dùng `ones`: `I have two books and Lan has three.` — Tôi có hai quyển sách và Lan có ba quyển. Không nói `three ones`. Khi có tính từ thì `ones` lại cần để giữ tính từ: `Lan has three new ones.` — Lan có ba quyển mới.
 
 ## Có thể lược sau từ chỉ định
 
@@ -54,7 +54,7 @@ Số ít và số nhiều phải khớp:
 
 Tính từ vẫn đứng trước `one/ones`, giống như trước danh từ: `a smaller table` trở thành `a smaller one`; `comfortable chairs` trở thành `comfortable ones`.
 
-## `One` mang nghĩa “một người”
+## `One` mang nghĩa “người ta”
 
 `One` còn có cách dùng trang trọng mang nghĩa “người ta”, nhưng không thuộc bài này. Ở đây, `one/ones` chỉ thay danh từ đếm được đã rõ.
 
@@ -63,9 +63,9 @@ Tính từ vẫn đứng trước `one/ones`, giống như trước danh từ: `
 `Mine`, `yours`, `his`, `hers`, `ours`, `theirs` đã thay cả cụm sở hữu nên không thêm `one`:
 
 - `My bag is black. Yours is blue.` — Túi của tôi màu đen. Túi của bạn màu xanh.
-- Không dùng `yours one` hoặc `my one` trong mẫu chuẩn thông thường.
+- Không nói `yours one`. `My one` không kèm tính từ chỉ gặp trong văn nói thân mật; trong mẫu chuẩn, dùng `mine`.
 
-Nếu cần giữ tính từ, dùng `my blue bag` hoặc `the blue one`, tùy điều muốn nhấn.
+Khi có tính từ, `one` đứng sau từ sở hữu hoàn toàn bình thường, vì tính từ cần một danh từ hoặc `one` để bám vào: `I have two bags. My blue one is at home.` — Tôi có hai chiếc túi. Chiếc màu xanh của tôi đang ở nhà. Không nói `my blue` để thay cho `my blue bag`.
 
 ## Ba điều kiện để dùng `one/ones`
 
@@ -83,5 +83,5 @@ Ví dụ, sau câu `I need a chair`, có thể nói `I want the wooden one` — 
 
 - `one` thay danh từ đếm được số ít; `ones` thay danh từ đếm được số nhiều.
 - Dùng để tránh lặp khi danh từ đã rõ từ ngữ cảnh.
-- Không dùng cơ học với danh từ không đếm được hoặc sau số đếm.
+- Không dùng với danh từ không đếm được; sau số đếm chỉ dùng `ones` khi có tính từ (`three new ones`).
 - `this/that/these/those` có thể tự đứng nên `one/ones` đôi khi không cần.

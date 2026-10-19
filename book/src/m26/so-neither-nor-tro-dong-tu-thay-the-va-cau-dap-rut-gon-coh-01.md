@@ -12,7 +12,7 @@ legacyLessonId: b1-so-neither-short-responses
 - `Lan is tired.` — `So am I.` — Lan mệt. Tôi cũng vậy.
 - `I like jazz.` — `So does Minh.` — Tôi thích nhạc jazz. Minh cũng vậy.
 - `They went home.` — `So did we.` — Họ đã về nhà. Chúng tôi cũng vậy.
-- `Mai can swim.` — `So can her brother.` — Mai biết bơi. Em/trai cô ấy cũng biết.
+- `Mai can swim.` — `So can her brother.` — Mai biết bơi. Anh/em trai cô ấy cũng biết.
 
 Trật tự là `so + auxiliary + subject`, giống đảo ngữ. Chọn trợ động từ theo câu đầu.
 

@@ -77,7 +77,8 @@ Nếu cả hai cùng số ít, dùng số ít: `Neither Lan nor Nam is available
 
 ## Tiêu đề, tên tổ chức và từ có hình thức đặc biệt
 
-- `The News is on at six.` nếu `The News` là tên chương trình.
+- `The news is good today.` — Tin tức hôm nay là tin tốt. `News` luôn dùng động từ số ít, dù tận cùng bằng `-s` và dù đó là tên một chương trình.
+- `Great Expectations is a long novel.` — *Great Expectations* là một cuốn tiểu thuyết dài. Tên tác phẩm có hình thức số nhiều vẫn dùng động từ số ít khi nói về cả tác phẩm.
 - `Economics is difficult for many students.` — Economics là môn học số ít về ngữ pháp.
 - `The Netherlands is known for its canals.` — Tên quốc gia dùng số ít.
 - `The police are investigating.` — `Police` dùng động từ số nhiều trong nghĩa lực lượng/các cảnh sát.

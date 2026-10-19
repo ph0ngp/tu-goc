@@ -41,7 +41,7 @@ ai.
 | --- | --- | --- |
 | `Who is she?` | `She is Mai.` | Cô ấy là ai? — Cô ấy là Mai. |
 | `Who are they?` | `They are Lan and Nam.` | Họ là ai? — Họ là Lan và Nam. |
-| `Who is that?` | `That is Mr Long.` | Người kia là ai? — Đó là thầy Long. |
+| `Who is that?` | `That is Mr Long.` | Người kia là ai? — Đó là ông Long. |
 
 Trong câu cuối, `that` chỉ một người đã được nhìn thấy trong tình huống.
 

@@ -74,14 +74,14 @@ Từ `because` không đồng nghĩa với `so`. Chúng chỉ có thể diễn t
 
 - từ với từ: `small but comfortable`
 - cụm với cụm: `in the morning or in the evening`
-- mệnh đề với mệnh đề: `I called Lan, but she didn't answer.`
+- mệnh đề với mệnh đề: `Lan likes tea, but Nam likes coffee.`
 
 Khi hai động từ có cùng chủ ngữ, ta thường chỉ viết chủ ngữ một lần:
 
-- `Lan opened the door and walked in.` — Lan mở cửa và bước vào.
+- `Nam washes the dishes and cleans the kitchen.` — Nam rửa bát và dọn bếp.
 - `Nam is tired but doesn't want to rest.` — Nam mệt nhưng không muốn nghỉ.
 
-Khi người thực hiện thay đổi, phải nêu chủ ngữ mới để câu không bị hiểu sai: `Lan opened the door, and Nam walked in`, nghĩa là “Lan mở cửa, và Nam bước vào”. Không thể bỏ `Nam`, vì khi đó câu sẽ chuyển thành Lan vừa mở cửa vừa bước vào.
+Khi người thực hiện thay đổi, phải nêu chủ ngữ mới để câu không bị hiểu sai: `Nam washes the dishes, and Lan cleans the kitchen`, nghĩa là “Nam rửa bát, còn Lan dọn bếp”. Không thể bỏ `Lan`, vì khi đó câu sẽ chuyển thành Nam vừa rửa bát vừa dọn bếp.
 
 Việc bỏ phần lặp chỉ phù hợp khi hai phía thật sự dùng chung thành phần đó. Với lựa chọn, ta cũng có thể nói `We can walk or take the bus` — “Chúng ta có thể đi bộ hoặc đi xe buýt”, vì cả `walk` và `take the bus` đều đi với `we can`.
 

@@ -59,7 +59,7 @@ Các dạng số nhiều bất quy tắc không kết thúc bằng `-s` nhận `
 - `the men's shoes` — giày của những người đàn ông
 - `the women's room` — phòng dành cho nữ giới
 
-Với `sheep`, cần dựa vào ngữ cảnh để biết một hay nhiều. Nếu muốn tránh mơ hồ, có thể nói `the food for the sheep`, nghĩa là “thức ăn cho những con cừu”.
+Với `sheep`, số ít và số nhiều có cùng một dạng, nên `the sheep's food` có thể là “thức ăn của con cừu” hoặc “thức ăn của những con cừu”. Chữ `the` không giúp phân biệt. Muốn rõ, hãy dùng một từ cho biết số lượng, chẳng hạn `this` hoặc `these`: `the food for this sheep` — thức ăn cho con cừu này; `the food for these sheep` — thức ăn cho những con cừu này.
 
 ## Học theo cụm, không đoán bằng quy tắc thường
 

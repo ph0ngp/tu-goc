@@ -55,7 +55,7 @@ Dùng `could` khi mong có khả năng làm điều gì hoặc mong hoàn cảnh
 
 - `I wish the neighbours would turn the music down.` — Tôi ước hàng xóm chịu vặn nhỏ nhạc.
 - `I wish it would stop raining.` — Tôi ước trời ngừng mưa.
-- `She wishes her brother would listen to her.` — Cô ấy ước em/trai mình chịu nghe lời.
+- `She wishes her brother would listen to her.` — Cô ấy ước anh/em trai mình chịu nghe lời.
 
 `Would` thường có sắc thái sốt ruột, phàn nàn hoặc mong sự việc thay đổi. Không thường dùng `I wish I would...` khi người nói đơn giản tiếc về trạng thái hoặc khả năng của chính mình; dùng `I wish I knew...` hoặc `I wish I could...` tự nhiên hơn.
 

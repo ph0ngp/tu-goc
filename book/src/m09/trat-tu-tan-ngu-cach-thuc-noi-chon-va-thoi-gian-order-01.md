@@ -27,10 +27,12 @@ Khung không phải là danh sách bắt buộc phải điền kín. `The baby s
 
 ## Tân ngữ đứng gần động từ
 
-`She reads books` nghĩa là “Cô ấy đọc sách”. Không tách `reads` và `books` bằng trạng từ cách thức trong mẫu trung tính.
+`She reads books` nghĩa là “Cô ấy đọc sách”. Không chen trạng từ cách thức vào giữa động từ và tân ngữ ngắn như `books`.
 
-- tự nhiên: `She reads books slowly.`
-- không ưu tiên ở A1: `She reads slowly books.`
+- đúng: `She reads books slowly.` — Cô ấy đọc sách chậm rãi.
+- sai: `She reads slowly books.`
+
+Đây không phải chuyện văn phong hay trình độ: ở mọi cấp độ, `slowly` không đứng giữa `reads` và `books`.
 
 Một số động từ không cần tân ngữ: `The baby sleeps quietly`.
 
@@ -74,8 +76,8 @@ Trong `Lan reads a book`, `a book` là tân ngữ vì cho biết Lan đọc cái
 
 Vì vậy, đừng tự thêm một tân ngữ chỉ để lấp vị trí `O` trong công thức. Trước tiên hãy hỏi động từ có cần nêu người hoặc vật nhận hành động hay không. Dù có tân ngữ hay không, các phần cách thức, nơi chốn và thời gian vẫn có thể được thêm theo nhu cầu:
 
-- `The children played happily in the garden yesterday.` — Hôm qua bọn trẻ chơi vui vẻ trong vườn.
-- `Nam read the story slowly at school this morning.` — Sáng nay Nam đọc câu chuyện chậm rãi ở trường.
+- `The children play happily in the garden every afternoon.` — Chiều nào bọn trẻ cũng chơi vui vẻ trong vườn.
+- `Nam does his homework carefully at home every evening.` — Tối nào Nam cũng làm bài tập cẩn thận ở nhà.
 
 ## Trạng từ tần suất có vị trí riêng
 

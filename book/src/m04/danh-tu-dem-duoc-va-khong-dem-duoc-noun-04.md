@@ -31,7 +31,7 @@ Các danh từ này thường:
 
 ```text
 Water is important.       → Nước quan trọng.
-There is rice.            → Có cơm/gạo.
+The milk is in the fridge. → Sữa ở trong tủ lạnh.
 The information is useful. → Thông tin đó hữu ích.
 ```
 

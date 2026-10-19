@@ -59,13 +59,15 @@ Ngoài trật tự, cần điều chỉnh điểm nhìn:
 
 `Mai asked Nam, “Will you meet me here tomorrow?”`
 
-Nam kể lại ngày hôm sau ở nơi khác:
+Một tuần sau, Nam kể lại ở nơi khác:
 
-`Mai asked me if I would meet her there the next day.`
+`Mai asked me if I would meet her there the next day.` — Mai hỏi tôi có gặp cô ấy ở đó vào hôm sau không.
 
 - `you → me`, `me → her`;
 - `will → would`;
 - `here → there`, `tomorrow → the next day`.
+
+Nếu Nam kể lại ngay hôm sau, ngày hẹn chính là hôm nay của Nam. Khi đó, tự nhiên hơn là nói `Mai asked me if I would meet her there today.`, vì `the next day` chỉ cần khi `tomorrow` trong lời gốc không còn là “ngày mai” hay “hôm nay” của người kể.
 
 Không phải mọi từ đều bắt buộc đổi nếu thời gian, nơi chốn hoặc sự thật vẫn giữ nguyên.
 

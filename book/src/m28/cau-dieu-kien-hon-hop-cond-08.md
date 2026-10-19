@@ -84,7 +84,7 @@ Giống các câu điều kiện khác:
 5. Nếu kết quả hiện tại: dùng `would/could/might + V`.
 6. Nếu kết quả quá khứ: dùng `would/could/might have + past participle`.
 
-> Không phải câu có hai thời gian là điều kiện hỗn hợp. `If I finished early yesterday, I went home` chỉ kể một quan hệ thực trong quá khứ; nó không phản thực.
+> Không phải câu điều kiện nào nhắc tới quá khứ cũng phản thực. `If Lan finished early yesterday, she probably went home.` — Nếu hôm qua Lan xong việc sớm thì chắc cô ấy đã về nhà. Người nói không biết Lan có xong sớm hay không, nên đây là một khả năng có thật trong quá khứ và cả hai vế dùng quá khứ đơn. Câu không phản thực, cũng không phải điều kiện hỗn hợp.
 
 ## Ghi nhớ
 

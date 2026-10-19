@@ -42,7 +42,9 @@ Thời gian được hiểu từ ngữ cảnh hoặc cụm thời gian; bản th
 
 ## Câu hỏi
 
-Trong câu hỏi trực tiếp về khả năng, `Do you think ...?` thường tự nhiên hơn việc đưa `may/might` lên đầu: `Do you think it might rain?` — “Bạn có nghĩ trời có thể mưa không?” `Might it rain?` đúng nhưng trang trọng hơn.
+Khi hỏi trực tiếp một việc có thể xảy ra hay không, cách tự nhiên nhất là dùng `Do you think ...?`: `Do you think it might rain?` — “Bạn có nghĩ trời có thể mưa không?”
+
+Không đưa `may` lên đầu câu để hỏi về khả năng. Câu hỏi bắt đầu bằng `May ...?` được hiểu là xin phép, như `May I come in?` ở [bài trước](could-may-trong-yeu-cau-va-xin-phep-lich-su-mod-04.md), nên `May it rain?` không dùng với nghĩa “Trời có thể mưa không?”. `Might it rain?` đúng ngữ pháp nhưng trang trọng và hiếm gặp. `Could` thì đưa lên đầu được: `Could this be the right key?` — Liệu đây có phải chiếc chìa khóa đúng không?
 
 ## Phân biệt “có thể xảy ra” với “có khả năng làm”
 

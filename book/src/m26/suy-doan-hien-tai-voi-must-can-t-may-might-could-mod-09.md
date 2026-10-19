@@ -34,7 +34,9 @@ Sau modal dùng động từ dạng cơ bản: `must be`, `could know`, không d
 - `This answer can't be right.` — Câu trả lời này không thể đúng.
 - `They can't know our new address.` — Họ không thể biết địa chỉ mới của chúng ta.
 
-Trong suy đoán phủ định mạnh, dùng `can't`, không dùng `mustn't`. `Mustn't` thường có nghĩa “không được phép”: `You mustn't park here` — “Bạn không được đỗ xe ở đây.”
+Trong suy đoán phủ định mạnh, `can't` là lựa chọn chung cho mọi biến thể tiếng Anh. Trong tiếng Anh–Mỹ, `must not` cũng là cách chuẩn để suy luận rằng điều gì không đúng: `He must not be home; his car is gone.` — Chắc anh ấy không có nhà; xe của anh ấy không còn ở đây. Sắc thái hơi khác nhau: `can't` loại trừ hẳn khả năng (“không thể”), còn `must not` là kết luận rút ra từ dấu hiệu (“chắc là không”).
+
+Tuy vậy, thông thường không dùng `mustn't` cho suy luận: dạng rút gọn này gần như luôn mang nghĩa “không được phép”, như `You mustn't park here` — “Bạn không được đỗ xe ở đây.” Muốn suy luận phủ định bằng `must`, viết đầy đủ `must not`.
 
 ## `May`, `might`, `could`: khả năng có thể đúng
 
@@ -80,5 +82,5 @@ Ngữ cảnh và loại động từ phía sau giúp nhận ra nghĩa.
 - `Must` = kết luận dương rất mạnh; `can't` = kết luận phủ định rất mạnh.
 - `May/might/could` = một khả năng có thể đúng.
 - `May not/might not` là “có thể không”, không mạnh bằng `can't`.
-- Không dùng `mustn't` cho suy luận “không thể”; nó thường nói cấm.
+- `Can't` là lựa chọn chung cho kết luận phủ định; `must not` (viết đầy đủ) cũng chuẩn trong tiếng Anh–Mỹ. Thông thường không dùng `mustn't` cho suy luận, vì nó nói điều bị cấm.
 - Dùng `modal + be + V-ing` để suy đoán hoạt động đang diễn ra.

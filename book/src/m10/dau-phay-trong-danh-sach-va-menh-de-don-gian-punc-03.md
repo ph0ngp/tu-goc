@@ -23,7 +23,7 @@ Không dùng dấu phẩy cho hai mục đơn giản: `tea and coffee`, không p
 Khi một cụm thời gian dài hoặc một mệnh đề phụ đứng đầu câu, dấu phẩy giúp người đọc thấy phần mở đầu đã kết thúc.
 
 - `Last Saturday, we visited our grandparents.` — Thứ Bảy tuần trước, chúng tôi đã thăm ông bà.
-- `Because it was raining, we stayed at home.` — Vì trời mưa, chúng tôi đã ở nhà.
+- `Because it was cold, we stayed at home.` — Vì trời lạnh, chúng tôi đã ở nhà.
 - `When I arrived, the shop was closed.` — Khi tôi đến, cửa hàng đã đóng cửa.
 
 Nếu phần thời gian rất ngắn, dấu phẩy thường không bắt buộc: `Yesterday we stayed home` và `Yesterday, we stayed home` đều có thể gặp. Trong bài viết học tập, dùng dấu phẩy sau phần mở đầu dài sẽ rõ hơn.
@@ -55,4 +55,6 @@ Dấu phẩy cho thấy tên là lời gọi, không phải một phần của t
 - Dùng dấu phẩy để tách các mục trong danh sách từ ba mục trở lên.
 - Dùng dấu phẩy sau phần mở đầu dài hoặc mệnh đề phụ đứng đầu câu.
 - Dấu phẩy trước `but/so` thường tách hai mệnh đề hoàn chỉnh.
-- Không đặt dấu phẩy tùy tiện giữa chủ ngữ và động từ hoặc giữa hai từ đơn giản.
+- Không đặt dấu phẩy khi `and/but` chỉ nối hai từ hoặc hai cụm ngắn: `tea and coffee`, `small but comfortable`.
+- Dùng dấu phẩy để tách tên người đang được gọi trực tiếp: `Lan, are you ready?`
+- Không nối hai câu hoàn chỉnh chỉ bằng dấu phẩy; thêm từ nối hoặc tách thành hai câu.

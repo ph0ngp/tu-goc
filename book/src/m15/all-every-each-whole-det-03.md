@@ -26,9 +26,16 @@ every + danh từ đếm được số ít + động từ số ít
 ```
 
 - `Every student has a ticket.` — Mọi học sinh đều có vé.
-- `The bus comes every ten minutes.` — Xe buýt đến mười phút một chuyến.
+- `Every room is clean.` — Phòng nào cũng sạch.
 
 `Every` nhìn toàn bộ nhóm qua từng thành viên nhưng dùng danh từ và động từ số ít.
+
+Có một mẫu riêng để nói việc lặp lại đều đặn: `every + số + danh từ số nhiều`. Ở đây, cả cụm số và danh từ được xem như **một** khoảng cách thời gian hoặc khoảng cách lặp lại:
+
+- `The bus comes every ten minutes.` — Xe buýt đến mười phút một chuyến.
+- `I water the plants every two days.` — Tôi tưới cây hai ngày một lần.
+
+Ngoài mẫu có số này, `every` đi với danh từ số ít: `every day`, không nói `every days`.
 
 ## `Each`: từng người hoặc vật
 

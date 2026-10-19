@@ -31,7 +31,7 @@ legacyLessonId: prepositions-place-time
 
 ```text
 The class is at nine o'clock. → Lớp học lúc chín giờ.
-We study on Monday.           → Chúng tôi học vào thứ Hai.
+The test is on Monday.        → Bài kiểm tra vào thứ Hai.
 My birthday is in July.       → Sinh nhật của tôi vào tháng Bảy.
 ```
 
@@ -48,7 +48,7 @@ Không dùng `in/on/at` ngay trước `this`, `last`, `next` hoặc `every` tron
 | `last year` | `in last year` |
 | `every day` | `on every day` |
 
-`I work every day` nghĩa là “Tôi làm việc mỗi ngày”. `We are at home this evening` nghĩa là “Tối nay chúng tôi ở nhà”.
+`We are at school every day` nghĩa là “Ngày nào chúng tôi cũng ở trường”. `We are at home this evening` nghĩa là “Tối nay chúng tôi ở nhà”.
 
 ## Cùng một từ, hai công việc
 
@@ -57,7 +57,7 @@ Ngữ cảnh cho biết giới từ đang nói nơi chốn hay thời gian.
 - `The keys are on the table.` — `on` nói vị trí trên mặt bàn.
 - `The lesson is on Tuesday.` — `on` nói ngày diễn ra bài học.
 - `She is at school.` — `at` nói địa điểm.
-- `The lesson starts at eight.` — `at` nói thời điểm.
+- `The film is at eight.` — `at` nói thời điểm bộ phim bắt đầu.
 
 ## Đây là các quy tắc cơ bản, không phải mọi trường hợp
 

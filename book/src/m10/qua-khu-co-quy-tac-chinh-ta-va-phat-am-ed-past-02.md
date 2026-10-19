@@ -28,9 +28,11 @@ Khác với hiện tại đơn, ta không thêm riêng `-s` cho `he/she/it` khi 
 | phần lớn động từ | thêm `-ed` | `work → worked`, `visit → visited` |
 | tận cùng bằng `e` | chỉ thêm `-d` | `live → lived`, `dance → danced` |
 | phụ âm + `y` | đổi `y` thành `i`, thêm `-ed` | `study → studied`, `try → tried` |
-| một âm tiết, tận cùng nguyên âm ngắn + phụ âm | gấp đôi phụ âm cuối, thêm `-ed` | `stop → stopped`, `plan → planned` |
+| một âm tiết, tận cùng bằng **một chữ nguyên âm + một chữ phụ âm** | gấp đôi phụ âm cuối, thêm `-ed` | `stop → stopped`, `plan → planned` |
 
-Với nguyên âm + `y`, giữ `y`: `play → played`, `enjoy → enjoyed`. Không phải động từ nào tận cùng bằng một phụ âm cũng gấp đôi: `open → opened`, `visit → visited`. Ở A2, hãy học từng từ thông dụng cùng dạng quá khứ của nó khi không chắc.
+Quy tắc gấp đôi dựa vào **chữ viết**, không dựa vào âm đọc. Chỉ gấp đôi khi từ kết thúc bằng đúng **một** chữ phụ âm, và ngay trước nó là đúng **một** chữ nguyên âm (`a, e, i, o, u`) đứng một mình, như `st-o-p` hay `pl-a-n`. Vì vậy `look → looked` không gấp đôi, vì trước `k` có hai chữ nguyên âm `oo`; `rain → rained` cũng thế (`ai`). `help → helped` không gấp đôi, vì từ kết thúc bằng hai chữ phụ âm `lp`. Ba chữ `w`, `x`, `y` ở cuối không bao giờ gấp đôi: `snow → snowed`, `fix → fixed`, `play → played`.
+
+Với nguyên âm + `y`, giữ `y`: `play → played`, `enjoy → enjoyed`. Quy tắc gấp đôi trong bảng chỉ dành cho động từ một âm tiết. Nhiều động từ dài hơn không gấp đôi dù cũng kết thúc bằng nguyên âm + phụ âm: `open → opened`, `visit → visited`; một số ít từ khác lại gấp đôi, như `prefer → preferred` (thích hơn). Ở A2, hãy học từng từ thông dụng cùng dạng quá khứ của nó khi không chắc.
 
 ## `-ed` có ba cách phát âm
 

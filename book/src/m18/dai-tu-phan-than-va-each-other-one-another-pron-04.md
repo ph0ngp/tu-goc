@@ -20,7 +20,7 @@ legacyLessonId: a2-reflexive-reciprocal
 
 - `I cut myself.` — Tôi tự làm mình bị đứt tay.
 - `Lan looked at herself in the mirror.` — Lan nhìn chính mình trong gương.
-- `The children taught themselves to play.` — Bọn trẻ tự học chơi.
+- `The children taught themselves to swim.` — Bọn trẻ tự học bơi.
 
 Không dùng đại từ tân ngữ thông thường nếu hành động quay lại chủ ngữ: `Lan looked at her` thường là Lan nhìn một người phụ nữ khác.
 
@@ -55,7 +55,7 @@ Trong tiếng Anh hiện đại, hai cụm thường dùng thay nhau. Một số
 - `I introduced myself` đúng vì người giới thiệu và người được giới thiệu là cùng một người.
 - `I myself checked the answer` dùng `myself` để nhấn chính tôi đã kiểm tra.
 
-Không thay mọi `me/him/her` bằng `myself/himself/herself`. Trong `Lan called her`, `her` là một người nữ khác; trong `Lan called herself`, Lan tự gọi cho chính mình.
+Không thay mọi `me/him/her` bằng `myself/himself/herself`. Trong `Lan introduced her` (Lan giới thiệu cô ấy), `her` là một người nữ khác; trong `Lan introduced herself` (Lan tự giới thiệu mình), người được giới thiệu chính là Lan.
 
 ## Sở hữu với `each other`
 

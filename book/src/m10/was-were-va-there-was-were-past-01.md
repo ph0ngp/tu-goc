@@ -66,4 +66,4 @@ Phủ định: `There wasn't any milk` nghĩa là “Đã không có chút sữa
 - `I/he/she/it` và chủ ngữ số ít đi với `was`; `you/we/they` và chủ ngữ số nhiều đi với `were`.
 - Phủ định dùng `wasn't/weren't`; câu hỏi đưa `was/were` lên trước chủ ngữ.
 - `there was` giới thiệu một thứ; `there were` giới thiệu nhiều thứ trong quá khứ.
-- Không dùng `did` với `was/were`.
+- `Was/were` chỉ dùng khi câu cần `be`; với một hành động, dùng dạng quá khứ của chính động từ đó: `They worked`, không nói `They were worked`.

@@ -34,7 +34,7 @@ Khi ngữ cảnh cho biết kết quả không xảy ra, `could have` thường 
 - `We could have won, but we made two mistakes.` — Chúng tôi đã có thể thắng nhưng đã mắc hai lỗi.
 - `You could have called me.` — Bạn đã có thể gọi cho tôi; ngụ ý bạn đã không gọi.
 
-`Might have` cũng có thể diễn tả kết quả phản thực, nhất là trong mệnh đề điều kiện: `With more time, we might have found the answer` — “Nếu có thêm thời gian, có lẽ chúng tôi đã tìm ra đáp án.”
+`Might have` cũng có thể diễn tả kết quả phản thực. Khi đó nó nằm ở phần kết quả, còn điều kiện được nêu bằng mệnh đề `if` hoặc một cụm mang nghĩa điều kiện như `with more time`: `With more time, we might have found the answer` — “Nếu có thêm thời gian, có lẽ chúng tôi đã tìm ra đáp án.”
 
 ## Sắc thái phê bình hoặc trách nhẹ
 

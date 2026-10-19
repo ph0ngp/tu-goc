@@ -104,7 +104,7 @@ Are the cats hungry?
 Yes, they are. / No, they aren't.
 ```
 
-Ba dòng lần lượt có nghĩa: “Những con mèo đói”; “Những con mèo có đói không?”;
+Ba dòng lần lượt có nghĩa: “Những con mèo đang đói”; “Những con mèo có đói không?”;
 “Có, chúng đói” hoặc “Không, chúng không đói”.
 
 ## Ghi nhớ

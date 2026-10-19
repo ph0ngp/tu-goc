@@ -56,6 +56,11 @@ such + (a/an) + tính từ + danh từ
 
 Dùng `a/an` với danh từ đếm được số ít: `such a good idea`. Không dùng `a/an` với số nhiều hoặc không đếm được.
 
+Giống `so ... that`, `such ... that` cũng nối mức độ với kết quả; điểm khác chỉ là sau `such` có cụm danh từ:
+
+- `It was such a funny film that we watched it twice.` — Bộ phim buồn cười đến mức chúng tôi xem nó hai lần.
+- `They are such friendly people that everyone likes them.` — Họ thân thiện đến mức ai cũng quý họ.
+
 ## So sánh cấu trúc
 
 | Có tính từ, không có danh từ ngay sau | Có cụm danh từ |
