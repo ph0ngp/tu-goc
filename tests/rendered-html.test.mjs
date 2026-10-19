@@ -108,6 +108,19 @@ test("server-renders practice at its own bookmarkable URL", async () => {
   assert.doesNotMatch(visibleText, /Ghép tên tiếng Việt với tên tiếng AnhBốn tên gọi/);
 });
 
+test("renders inline code in grid rows and keeps their labels plain", async () => {
+  const lesson = bookLessonForLegacyId("b1-question-tags");
+  assert.ok(lesson);
+  const response = await render(`/ngu-phap/${lesson.slug}/luyen-tap`);
+  assert.equal(response.status, 200);
+
+  // Dữ liệu hydrate trong <script> vẫn giữ Markdown gốc; chỉ xét phần HTML hiển thị.
+  const markup = (await response.text()).replace(/<script[\s\S]*?<\/script>/g, "");
+  assert.match(markup, /<td>Câu chính có <code>hardly<\/code>, mang nghĩa gần phủ định\.<\/td>/);
+  assert.match(markup, /aria-label="Trả lời cho Câu chính có hardly, mang nghĩa gần phủ định\."/);
+  assert.doesNotMatch(markup, /`hardly`/);
+});
+
 test("pre-renders every lesson and uses static document navigation", async () => {
   const [nextConfig, chrome, toc, tabs, page, lessonPage, neighbors, markdownDocument, notFoundPage, prerenderManifest] = await Promise.all([
     readFile(new URL("../next.config.ts", import.meta.url), "utf8"),
