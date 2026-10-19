@@ -155,7 +155,18 @@ export function escapeRegExp(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-export function maskAnswerTerms(text: string, answers: string[]): string {
+/**
+ * Che đáp án trong gợi ý. Với đáp án ngắn, từng từ của đáp án cũng bị che,
+ * trừ những từ cũng có trong phương án sai: nhắc tới chúng không chỉ ra đáp án
+ * (gợi ý “Sau `can`, dùng động từ cơ bản” không lộ câu `I can swim.` khi phương
+ * án sai cũng có `can`).
+ */
+export function maskAnswerTerms(text: string, answers: string[], otherOptions: string[] = []): string {
+  const sharedWords = new Set(
+    otherOptions.flatMap((option) =>
+      (option.replaceAll("`", "").match(/[\p{L}]+(?:['’][\p{L}]+)?/gu) ?? []).map((word) => word.toLocaleLowerCase("en")),
+    ),
+  );
   const terms = new Set<string>();
   for (const answer of answers) {
     const clean = answer.replaceAll("`", "").trim();
@@ -163,7 +174,9 @@ export function maskAnswerTerms(text: string, answers: string[]): string {
     terms.add(clean);
     const tokens = clean.match(/[\p{L}]+(?:['’][\p{L}]+)?/gu) ?? [];
     if (tokens.length <= 3) {
-      for (const token of tokens) terms.add(token);
+      for (const token of tokens) {
+        if (!sharedWords.has(token.toLocaleLowerCase("en"))) terms.add(token);
+      }
     }
   }
 
@@ -181,29 +194,44 @@ export function maskAnswerTerms(text: string, answers: string[]): string {
     .trim();
 }
 
+/** Câu dẫn theo dạng hoạt động đứng trước quy tắc trong gợi ý tự sinh. */
+export const hintLeads = {
+  order: "Hãy xác định cụm từ nào phải đứng liền nhau, rồi đặt các thành phần còn lại quanh cụm đó.",
+  repair: "Nhìn hai mảnh ở hai bên vị trí cần sửa.",
+  tap: "Xét công việc của từng mảnh trong cả câu.",
+  grid: "Giải riêng từng hàng; chú ý lần lượt các dấu hiệu",
+} as const;
+
 export function specificHint(
   kind: Exercise["kind"],
   prompt: string,
   explanation: string,
   answers: string[],
   cues: string[] = [],
+  otherOptions: string[] = [],
 ): string {
-  const rule = maskAnswerTerms(explanation, answers);
+  const rule = maskAnswerTerms(explanation, answers, otherOptions);
   if (kind === "choice" || kind === "context") return rule;
-  if (kind === "order") return `Hãy xác định cụm từ nào phải đứng liền nhau, rồi đặt các thành phần còn lại quanh cụm đó. ${rule}`;
-  if (kind === "repair") return `Nhìn hai mảnh ở hai bên vị trí cần sửa. ${rule}`;
-  if (kind === "tap") return `Xét công việc của từng mảnh trong cả câu. ${rule}`;
+  if (kind === "order") return `${hintLeads.order} ${rule}`;
+  if (kind === "repair") return `${hintLeads.repair} ${rule}`;
+  if (kind === "tap") return `${hintLeads.tap} ${rule}`;
   if (kind === "match") {
     return `Đọc từng vế và tìm đúng quan hệ được nêu sau đây: ${prompt.replace(/[.?]$/, "")}; mỗi vế chỉ dùng một lần.`;
   }
   if (kind === "sort") {
     return `Dùng đúng tiêu chí trong yêu cầu sau và kiểm tra từng mục độc lập trước khi phân nhóm: ${prompt.replace(/[.?]$/, "")}.`;
   }
-  return `Giải riêng từng hàng; chú ý lần lượt các dấu hiệu: ${cues.join("; ")}.`;
+  return `${hintLeads.grid} ${cues.map((cue) => `“${cue}”`).join(", ")}.`;
 }
 
-export function matchExplanation(pairs: Array<{ left: string; right: string }>, focus: string): string {
-  return `Các cặp đúng là: ${pairs.map(({ left, right }) => `“${left}” → “${right}”`).join("; ")}. Mỗi cặp cho thấy ${focus}.`;
+/**
+ * Lời giải của bài ghép nêu từng cặp; `note` là lời giải thích riêng của hoạt
+ * động nếu có. Không tự thêm “mỗi cặp cho thấy <trọng tâm bài>”, vì bài ghép
+ * thường đặt cấu trúc của bài cạnh một cấu trúc khác để đối chiếu.
+ */
+export function matchExplanation(pairs: Array<{ left: string; right: string }>, note = ""): string {
+  const listed = `Các cặp đúng là: ${pairs.map(({ left, right }) => `“${left}” → “${right}”`).join("; ")}.`;
+  return note ? `${listed} ${note}` : listed;
 }
 
 export function sortExplanation(buckets: string[], items: Array<{ text: string; bucket: string }>): string {
@@ -217,8 +245,14 @@ function inlineExample(value: string): string {
   return `\`${value.replaceAll("`", "'")}\``;
 }
 
-export function gridExplanation(rows: CompactGridRow[], focus: string): string {
-  return `Các câu hoàn chỉnh lần lượt là: ${rows.map((row) => inlineExample(row.completed)).join("; ")}. Mỗi lựa chọn khớp với ${focus}.`;
+/**
+ * Lời giải của bảng nêu từng câu hoàn chỉnh. Không thêm câu kiểu “mỗi lựa chọn
+ * khớp với <trọng tâm bài>”: nhiều bảng đối chiếu hai nhóm (loại 0 với loại 1,
+ * hiện tại hoàn thành với quá khứ đơn), nên câu ấy sai với một nửa số hàng.
+ */
+export function gridExplanation(rows: CompactGridRow[]): string {
+  const completed = rows.map((row) => inlineExample(row.completed)).join("; ");
+  return `Các câu hoàn chỉnh lần lượt là: ${completed}${/[.?!]`$/.test(completed) ? "" : "."}`;
 }
 
 /**
@@ -231,13 +265,13 @@ export function compactPracticeSet(config: CompactPracticeConfig): Exercise[] {
   let nextId = 1;
 
   for (const [prompt, options, answer, explanation] of config.choices) {
-    exercises.push({ id: `${config.prefix}${nextId++}`, kind: "choice", prompt, options, answer, hint: specificHint("choice", prompt, explanation, [answer]), explanation });
+    exercises.push({ id: `${config.prefix}${nextId++}`, kind: "choice", prompt, options, answer, hint: specificHint("choice", prompt, explanation, [answer], [], options.filter((option) => option !== answer)), explanation });
   }
   for (const [prompt, tokens, answer, explanation] of config.orders) {
     exercises.push({ id: `${config.prefix}${nextId++}`, kind: "order", prompt, tokens, answer, hint: specificHint("order", prompt, explanation, [answer.join(" ")]), explanation });
   }
   for (const [prompt, tokens, targetIndex, replacements, answer, explanation] of config.repairs) {
-    exercises.push({ id: `${config.prefix}${nextId++}`, kind: "repair", prompt, tokens, targetIndex, replacements, answer, hint: specificHint("repair", prompt, explanation, [answer]), explanation });
+    exercises.push({ id: `${config.prefix}${nextId++}`, kind: "repair", prompt, tokens, targetIndex, replacements, answer, hint: specificHint("repair", prompt, explanation, [answer], [], replacements.filter((option) => option !== answer)), explanation });
   }
   for (const [prompt, tokens, answerIndexes, explanation] of config.taps) {
     const answers = answerIndexes.map((answerIndex) => tokens[answerIndex]);
@@ -258,7 +292,7 @@ export function compactPracticeSet(config: CompactPracticeConfig): Exercise[] {
     prompt: config.matchPrompt,
     pairs: config.pairs,
     hint: specificHint("match", config.matchPrompt, "", []),
-    explanation: matchExplanation(config.pairs, config.focus),
+    explanation: matchExplanation(config.pairs),
   });
   exercises.push({
     id: `${config.prefix}${nextId++}`,
@@ -277,7 +311,7 @@ export function compactPracticeSet(config: CompactPracticeConfig): Exercise[] {
       prompt: config.gridPrompts[index],
       rows,
       hint: specificHint("grid", config.gridPrompts[index], "", rows.map((row) => row.answer), rows.map((row) => row.cue)),
-      explanation: gridExplanation(rows, config.focus),
+      explanation: gridExplanation(rows),
     });
   }
 
@@ -312,7 +346,7 @@ export function binaryChoiceDrills(
     prompt: promptBuilders[index % promptBuilders.length](cue),
     options: [answer, distractor],
     answer,
-    hint: specificHint("choice", promptBuilders[index % promptBuilders.length](cue), explanation, [answer]),
+    hint: specificHint("choice", promptBuilders[index % promptBuilders.length](cue), explanation, [answer], [], [distractor]),
     explanation,
   }));
 }
