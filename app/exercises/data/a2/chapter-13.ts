@@ -107,7 +107,7 @@ const a2Chapter13BaseExerciseData: Record<string, Exercise[]> = {
       ["Câu nào nói giờ bộ phim bắt đầu theo chương trình?", ["The film starts at eight.", "The film is start at eight.", "The film will starting at eight."], "The film starts at eight.", "Chủ ngữ số ít dùng `starts`."],
       ["Lịch học đã công bố phù hợp với câu nào?", ["Classes begin next Monday.", "Classes are begin next Monday.", "Classes began every Monday."], "Classes begin next Monday.", "Lịch chính thức có thể dùng hiện tại đơn."],
       ["Câu nào nói hành động đang xảy ra chứ không phải lịch?", ["The bus is leaving now.", "The bus leaves at noon.", "The shop opens at nine tomorrow."], "The bus is leaving now.", "`Now` cùng tiếp diễn diễn tả việc đang xảy ra."],
-      ["Câu hỏi nào đúng về giờ bảo tàng mở cửa?", ["What time does the museum open?", "What time is the museum open tomorrow?", "What time does the museum opens?"], "What time does the museum open?", "Câu hỏi hiện tại đơn dùng `does + open`."],
+      ["Câu hỏi nào đúng về giờ bảo tàng mở cửa?", ["What time does the museum open?", "What time the museum opens?", "What time does the museum opens?"], "What time does the museum open?", "Câu hỏi hiện tại đơn dùng `does + open`."],
       ["Câu phủ định nào đúng cho lịch xe buýt?", ["The bus doesn't run on Sundays.", "The bus isn't run on Sundays.", "The bus doesn't runs on Sundays."], "The bus doesn't run on Sundays.", "Sau `doesn't` dùng dạng cơ bản `run`."],
       ["Vì sao có thể dùng hiện tại đơn cho ngày mai?", ["Sự việc thuộc một lịch trình cố định.", "Mọi câu tương lai đều dùng hiện tại đơn.", "Có từ `tomorrow` nên động từ không cần chia."], "Sự việc thuộc một lịch trình cố định.", "Ý nghĩa lịch trình, không chỉ mốc thời gian, quyết định cách dùng."],
       ["Câu nào nói lịch thi chính thức?", ["The exam takes place on 12 June.", "The exam is take place on 12 June.", "The exam take place on 12 June."], "The exam takes place on 12 June.", "Sự kiện theo lịch dùng hiện tại đơn; chủ ngữ số ít dùng `takes`."],
@@ -145,7 +145,7 @@ const a2Chapter13BaseExerciseData: Record<string, Exercise[]> = {
       { cue: "việc đang xảy ra", options: ["The train is leaving now.", "The train leaves at six.", "The train arrives tomorrow."], answer: "The train is leaving now.", completed: "The train is leaving now." },
       { cue: "hỏi giờ buổi học kết thúc", options: ["When does the class end?", "When does the class ends?", "When is the class end?"], answer: "When does the class end?", completed: "When does the class end?" },
       { cue: "phủ định với lịch tàu", options: ["This train doesn't stop here.", "This train isn't stop here.", "This train doesn't stops here."], answer: "This train doesn't stop here.", completed: "This train doesn't stop here." },
-      { cue: "trả lời về giờ mở cửa", options: ["It opens at eight.", "It open at eight.", "It is open at eight every morning."], answer: "It opens at eight.", completed: "It opens at eight." },
+      { cue: "trả lời về giờ mở cửa", options: ["It opens at eight.", "It open at eight.", "It is opens at eight."], answer: "It opens at eight.", completed: "It opens at eight." },
     ],
   }),
   "a2-will-decisions": a2PracticeSet({
@@ -182,7 +182,7 @@ const a2Chapter13BaseExerciseData: Record<string, Exercise[]> = {
     pairs: [{ left: "chuông cửa vừa reo", right: "I'll get the door." }, { left: "bạn không mang đủ tiền", right: "I'll lend you some." }, { left: "hứa giữ bí mật", right: "I won't tell anyone." }, { left: "đề nghị mang hộ túi", right: "Shall I carry your bag?" }],
     sortPrompt: "Phân loại câu theo chức năng của `will` trong bài.",
     buckets: ["Quyết định tức thời", "Đề nghị hoặc lời hứa"],
-    items: [{ text: "I'm thirsty. I'll make some tea.", bucket: "Quyết định tức thời" }, { text: "Someone is knocking. I'll see who it is.", bucket: "Quyết định tức thời" }, { text: "The room is dark. I'll turn on the light.", bucket: "Quyết định tức thời" }, { text: "I'll help you with your homework.", bucket: "Đề nghị hoặc lời hứa" }, { text: "I won't be late again.", bucket: "Đề nghị hoặc lời hứa" }, { text: "Will you pass me the salt?", bucket: "Đề nghị hoặc lời hứa" }],
+    items: [{ text: "I'm thirsty. I'll make some tea.", bucket: "Quyết định tức thời" }, { text: "Someone is knocking. I'll see who it is.", bucket: "Quyết định tức thời" }, { text: "The room is dark. I'll turn on the light.", bucket: "Quyết định tức thời" }, { text: "I'll help you with your homework.", bucket: "Đề nghị hoặc lời hứa" }, { text: "I won't be late again.", bucket: "Đề nghị hoặc lời hứa" }, { text: "I'll give you a lift to the station.", bucket: "Đề nghị hoặc lời hứa" }],
     gridPrompts: ["Chọn đúng cấu trúc với `will`.", "Chọn phản ứng tức thời, lời đề nghị hoặc lời hứa.", "Phân biệt quyết định lúc nói với ý định có từ trước."],
     gridRows: [
       { cue: "She ___ call you later.", options: ["will", "will to", "does"], answer: "will", completed: "She will call you later." },
@@ -192,7 +192,7 @@ const a2Chapter13BaseExerciseData: Record<string, Exercise[]> = {
       { cue: "hứa gọi vào tối nay", options: ["I'll call you tonight.", "I call you last night.", "I'll calling you tonight."], answer: "I'll call you tonight.", completed: "I'll call you tonight." },
       { cue: "yêu cầu người nghe đóng cửa", options: ["Will you close the door?", "Do you will close the door?", "Will you closing the door?"], answer: "Will you close the door?", completed: "Will you close the door?" },
       { cue: "quyết định vừa đưa ra", options: ["I'll have the soup.", "I'm going to have the soup; I decided yesterday.", "I have soup every day."], answer: "I'll have the soup.", completed: "I'll have the soup." },
-      { cue: "ý định đã có từ tuần trước", options: ["I'm going to apply for the course.", "I'll apply; I've just decided.", "I applied next week."], answer: "I'm going to apply for the course.", completed: "I'm going to apply for the course." },
+      { cue: "ý định đã có từ tuần trước", options: ["I'm going to apply for the course.", "I'll apply for the course.", "I applied next week."], answer: "I'm going to apply for the course.", completed: "I'm going to apply for the course." },
       { cue: "phản ứng ngay khi trời nóng", options: ["I'll open the window.", "I open it every winter.", "I was opening it tomorrow."], answer: "I'll open the window.", completed: "I'll open the window." },
     ],
   }),
@@ -247,14 +247,14 @@ const a2Chapter13BaseExerciseData: Record<string, Exercise[]> = {
   "a2-future-forms": a2PracticeSet({
     prefix: "a2ff", focus: "chọn hình thức tương lai theo ý nghĩa và mức độ sắp xếp",
     choices: [
-      ["Đã quyết định từ tuần trước sẽ học lái xe; chọn câu phù hợp.", ["I'm going to learn to drive.", "I'll learn to drive; I've just decided.", "The course learns at six."], "I'm going to learn to drive.", "Ý định có trước lúc nói dùng `going to`."],
+      ["Đã quyết định từ tuần trước sẽ học lái xe; chọn câu phù hợp.", ["I'm going to learn to drive.", "I'll learn to drive.", "The driving course starts at six."], "I'm going to learn to drive.", "Ý định có trước lúc nói dùng `going to`."],
       ["Chuông reo và bạn quyết định ra mở; chọn câu phù hợp.", ["I'll get the door.", "I'm going to get the door last week.", "I get the door every day."], "I'll get the door.", "Quyết định tức thời dùng `will`."],
       ["Đã hẹn gặp Hoa lúc bảy giờ; chọn câu phù hợp.", ["I'm meeting Hoa at seven.", "I meet Hoa every seven.", "I'll meet someone one day."], "I'm meeting Hoa at seven.", "Sắp xếp cá nhân cụ thể dùng hiện tại tiếp diễn."],
       ["Tàu theo lịch rời ga lúc 6:15; chọn câu phù hợp.", ["The train leaves at 6:15.", "The train is leave at 6:15.", "The train will leaving at 6:15."], "The train leaves at 6:15.", "Lịch trình cố định dùng hiện tại đơn."],
       ["Nhìn mây đen và dự đoán sắp mưa; chọn câu phù hợp.", ["It's going to rain.", "I think it will rain in 2050.", "It rains at six."], "It's going to rain.", "Dấu hiệu hiện tại rõ dùng `going to`."],
       ["Nêu ý kiến về cuộc sống tương lai; chọn câu phù hợp.", ["I think people will live longer.", "People are going to live longer because I see one person.", "People live longer tomorrow."], "I think people will live longer.", "Dự đoán quan điểm dùng `will`."],
-      ["Câu nào có thể là kế hoạch đã sắp xếp, không chỉ ý định?", ["We're staying at a booked hotel on Friday.", "We're going to travel more someday.", "We'll travel; I've just decided."], "We're staying at a booked hotel on Friday.", "Chi tiết khách sạn đã đặt và ngày cụ thể cho thấy sắp xếp."],
-      ["Câu nào nói lịch chương trình?", ["The talk begins at ten tomorrow.", "I'm beginning a personal meeting at ten.", "I'll begin; I've just decided."], "The talk begins at ten tomorrow.", "Chương trình công bố dùng hiện tại đơn."],
+      ["Câu nào có thể là kế hoạch đã sắp xếp, không chỉ ý định?", ["We're flying to Hue on Friday.", "We're going to travel more someday.", "Maybe we'll travel more."], "We're flying to Hue on Friday.", "Hiện tại tiếp diễn kèm một ngày cụ thể cho thấy chuyến đi đã được sắp xếp; `going to … someday` chỉ nêu ý định chung."],
+      ["Câu nào nói lịch chương trình?", ["The talk begins at ten tomorrow.", "I'm meeting Lan at ten tomorrow.", "I'll begin at ten, I promise."], "The talk begins at ten tomorrow.", "Chương trình công bố dùng hiện tại đơn."],
       ["Câu nào là lời hứa?", ["I'll return the book tomorrow.", "The library closes tomorrow.", "I'm going to own books."], "I'll return the book tomorrow.", "`Will` có thể dùng cho lời hứa."],
       ["Khi hai hình thức đều có thể dùng, điều gì quyết định lựa chọn?", ["cách người nói nhìn tình huống", "chỉ riêng từ `tomorrow`", "độ dài của chủ ngữ"], "cách người nói nhìn tình huống", "Ý định, sắp xếp, lịch hay quyết định tức thời tạo khác biệt."],
     ],
@@ -266,7 +266,7 @@ const a2Chapter13BaseExerciseData: Record<string, Exercise[]> = {
     ],
     repairs: [
       ["Sửa hình thức để nói lịch tàu cố định.", "The train leave every day at six.", "leave", ["leaves", "leave", "left"], "leaves", "Lịch lặp cố định dùng hiện tại đơn."],
-      ["Sửa cụm động từ để nói quyết định vừa đưa ra.", "I answer the ringing phone now.", "answer", ["will answer", "answer", "answered"], "will answer", "Quyết định ngay lúc điện thoại reo dùng `will answer`."],
+      ["Sửa cụm động từ để nói quyết định vừa đưa ra.", "The phone is ringing. I answer it.", "answer", ["will answer", "answer", "answered"], "will answer", "Quyết định được đưa ra ngay lúc điện thoại reo nên dùng `will`."],
       ["Sửa hình thức để nói dự đoán từ dấu hiệu.", "Look at the child! He will fall.", "will", ["is going to", "will", "does"], "is going to", "Dấu hiệu đang thấy phù hợp với `is going to`."],
     ],
     taps: [

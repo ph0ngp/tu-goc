@@ -20,7 +20,7 @@ const a2Chapter19BaseExerciseData: Record<string, Exercise[]> = {
     ],
     orders: [
       ["Sắp xếp câu cô ấy tự cắt vào tay.", "She cut herself while cooking.", "`Herself` quy chiếu về `she`."],
-      ["Sắp xếp câu chúng tôi tự sơn căn phòng.", "We painted the room ourselves.", "`Ourselves` nhấn mạnh tự làm."],
+      ["Sắp xếp câu “Lan tự làm mình bị đau trong bếp.”", "Lan hurt herself in the kitchen.", "Người làm và người bị đau đều là Lan, nên dùng `herself`."],
       ["Sắp xếp câu hai người giúp đỡ lẫn nhau.", "They helped each other.", "Hành động qua lại dùng `each other`."],
       ["Sắp xếp câu con mèo nhìn chính nó trong gương.", "The cat saw itself in the mirror.", "`The cat` quy chiếu bằng `itself`."],
     ],
@@ -111,7 +111,7 @@ const a2Chapter19BaseExerciseData: Record<string, Exercise[]> = {
       ["Câu nào đúng với `a/an`?", ["I'd like a small one.", "I'd like an small one.", "I'd like a small ones."], "I'd like a small one.", "`One` vẫn là danh từ đếm được số ít."],
       ["Câu nào chỉ nhiều vật sạch thuộc một nhóm đã xác định?", ["Take the clean ones.", "Take clean one.", "Take the clean one."], "Take the clean ones.", "`The + adjective + ones` chỉ nhóm số nhiều đã xác định."],
       ["Câu nào nêu trực tiếp danh từ `bag` nên không cần `one`?", ["I bought a new bag.", "I bought a new one bag.", "I bought new one bag."], "I bought a new bag.", "Khi nêu danh từ `bag`, không cần từ thay thế."],
-      ["Câu nào dùng `one` chung chung nghĩa là “người ta” thuộc bài này không?", ["Không; bài này chỉ học `one/ones` thay danh từ.", "Có; đó là trọng tâm chính.", "Có; `one` luôn là đại từ nhân xưng."], "Không; bài này chỉ học `one/ones` thay danh từ.", "Giữ đúng phạm vi A2."],
+      ["Trong `I need a pen. Do you have one?` từ `one` thay cho cụm nào?", ["a pen", "the pen", "pens"], "a pen", "`One` thay cho một danh từ đếm được số ít chưa xác định: người nói cần một chiếc bút bất kỳ."],
       ["Câu nào so sánh điện thoại này với đúng một chiếc điện thoại còn lại?", ["This phone is cheaper than the other one.", "This phone is cheaper than the other it.", "This phone is cheaper than the other ones."], "This phone is cheaper than the other one.", "`The other one` thay chiếc điện thoại còn lại."],
     ],
     orders: [
@@ -122,13 +122,13 @@ const a2Chapter19BaseExerciseData: Record<string, Exercise[]> = {
     ],
     repairs: [
       ["Sửa từ thay danh từ số nhiều.", "The dirty one are wet.", "one", ["ones", "one", "them"], "ones", "Động từ `are` cho biết từ thay danh từ phải ở số nhiều `ones`."],
-      ["Sửa số của từ thay danh từ.", "These cups are nicer than the old one.", "one", ["ones", "one", "them"], "ones", "`Cups` đang được so với một nhóm số nhiều."],
+      ["Sửa số của từ thay danh từ.", "The new cups are nice, but the old one are better.", "one", ["ones", "one", "them"], "ones", "`Are` cho biết đang nói về nhiều chiếc cốc cũ, nên dùng `ones`."],
       ["Sửa động từ theo `ones`.", "The blue ones is mine.", "is", ["are", "is", "has"], "are", "`Ones` là số nhiều."],
     ],
     taps: [
       ["Chọn từ thay danh từ số ít.", "This chair is softer than that one.", ["one"], "`One` thay `chair`."],
       ["Chọn từ thay danh từ số nhiều.", "The new batteries last longer than the old ones.", ["ones"], "`Ones` thay `batteries`."],
-      ["Chọn phần giúp xác định nhóm được thay.", "I need the ones with metal handles.", ["metal", "handles"], "Cụm `with metal handles` xác định nhóm."],
+      ["Chọn toàn bộ cụm giúp xác định nhóm được thay.", "I need the ones with metal handles.", ["with", "metal", "handles"], "Cụm `with metal handles` cho biết đang nói về nhóm nào."],
     ],
     matchPrompt: "Ghép số lượng với từ thay danh từ.",
     pairs: [{ left: "một chiếc áo", right: "one" }, { left: "nhiều chiếc áo", right: "ones" }, { left: "chiếc đã xác định", right: "the one" }, { left: "những chiếc đã xác định", right: "the ones" }],
@@ -138,7 +138,7 @@ const a2Chapter19BaseExerciseData: Record<string, Exercise[]> = {
     gridPrompts: ["Chọn `one` hoặc `ones`.", "Chọn từ hạn định phù hợp.", "Tránh dùng `one/ones` với danh từ không đếm được."],
     gridRows: [
       { cue: "a clean ___", options: ["one", "ones", "them"], answer: "one", completed: "a clean one" },
-      { cue: "the clean ___", options: ["ones", "one"], answer: "ones", completed: "the clean ones" },
+      { cue: "The clean ___ are on the shelf.", options: ["ones", "one"], answer: "ones", completed: "The clean ones are on the shelf." },
       { cue: "Which ___ are broken?", options: ["ones", "one", "it"], answer: "ones", completed: "Which ones are broken?" },
       { cue: "một chiếc bất kỳ", options: ["a small one", "the small one", "small ones"], answer: "a small one", completed: "a small one" },
       { cue: "chiếc cụ thể ở góc", options: ["the one in the corner", "a one in the corner", "ones in the corner"], answer: "the one in the corner", completed: "the one in the corner" },
@@ -174,7 +174,7 @@ const a2Chapter19BaseExerciseData: Record<string, Exercise[]> = {
       ["Sửa đại từ không có danh từ sau.", "Some answers are easy; other are hard.", "other", ["others", "other", "another"], "others", "Dùng đại từ số nhiều `others`."],
     ],
     taps: [
-      ["Chọn từ nghĩa là thêm một.", "Let's try another route.", ["another"], "`Another` đứng trước `route`."],
+      ["Chọn từ có nghĩa là “một … khác”.", "Let's try another route.", ["another"], "Từ này đứng trước danh từ số ít `route` và mang nghĩa “một con đường khác”, không phải “thêm một con đường”."],
       ["Chọn đại từ chỉ những người/vật khác.", "Some buses are full, but others have seats.", ["others"], "Không có danh từ sau `others`."],
       ["Chọn cụm chỉ vật còn lại trong cặp.", "One glove is here; the other is missing.", ["the", "other"], "`The other` chỉ chiếc găng còn lại."],
     ],
@@ -208,7 +208,7 @@ const a2Chapter19BaseExerciseData: Record<string, Exercise[]> = {
       ["Có phải `-ed` luôn chỉ người và `-ing` luôn chỉ vật?", ["Không; trọng tâm là chủ thể nhận cảm xúc hay gây cảm xúc.", "Có, không có ngoại lệ.", "Không; hai đuôi luôn cùng nghĩa."], "Không; trọng tâm là chủ thể nhận cảm xúc hay gây cảm xúc.", "Một người có thể gây cảm giác nên dùng dạng `-ing`; người hoặc con vật nhận cảm xúc thường dùng dạng `-ed`."],
       ["Câu nào nói giáo viên là người gây hứng thú cho người khác?", ["The teacher is interesting.", "The teacher is interested.", "The teacher interest is."], "The teacher is interesting.", "Một người có thể là tác nhân gây cảm xúc."],
       ["Câu nào nói tôi có sự quan tâm đến lịch sử?", ["I'm interested in history.", "I'm interesting in history.", "I'm interest in history."], "I'm interested in history.", "Cụm là `interested in`."],
-      ["Câu nào dùng giới từ thường gặp với `frightened`?", ["frightened of/by", "frightened at to", "frightening of khi nói cảm xúc"], "frightened of/by", "Giới từ phụ thuộc tính từ và ngữ cảnh."],
+      ["Câu nào dùng giới từ thường đi với `interested`?", ["Mai is interested in music.", "Mai is interested on music.", "Mai is interesting in music."], "Mai is interested in music.", "Người cảm thấy hứng thú dùng dạng `-ed`; giới từ đi sau tính từ này cần được học cùng tính từ như một cụm cố định."],
     ],
     orders: [
       ["Sắp xếp câu bài học rất thú vị.", "The lesson was very interesting.", "Tác nhân gây hứng thú dùng `interesting`."],
@@ -251,10 +251,10 @@ const a2Chapter19DepthExtensions: Partial<Record<string, Exercise[]>> = {
     {
       id: "a2depth-rr-1", kind: "grid", prompt: "Chọn đại từ phản thân hoặc `each other` theo hướng của hành động.",
       hint: "Hành động quay lại chính chủ ngữ dùng phản thân; đi qua lại giữa các thành viên dùng `each other`.",
-      explanation: "Cùng một động từ có thể đổi nghĩa theo hướng của quan hệ.",
+      explanation: "Phản thân dùng khi hành động quay lại chính chủ ngữ hoặc để nhấn mạnh tự làm; `each other` dùng khi hai người làm cho nhau.",
       rows: [
-        { cue: "Lan saw ___ in the mirror.", options: ["herself", "her", "each other"], answer: "herself", completed: "Lan saw herself in the mirror." },
-        { cue: "Lan and Mai help ___.", options: ["each other", "themselves", "herself"], answer: "each other", completed: "Lan and Mai help each other." },
+        { cue: "I saw ___ in the mirror.", options: ["myself", "me", "each other"], answer: "myself", completed: "I saw myself in the mirror." },
+        { cue: "Lan helps Mai, and Mai helps Lan. They help ___.", options: ["each other", "themselves", "herself"], answer: "each other", completed: "Lan helps Mai, and Mai helps Lan. They help each other." },
         { cue: "We made the meal ___.", options: ["ourselves", "us", "each other"], answer: "ourselves", completed: "We made the meal ourselves." },
       ],
     },
@@ -349,9 +349,9 @@ const a2Chapter19DepthExtensions: Partial<Record<string, Exercise[]>> = {
       explanation: "Từ hạn định và việc có danh từ theo sau cùng quyết định cách hiểu của từng dạng.",
       pairs: [
         { left: "another answer", right: "một câu trả lời khác bất kỳ" },
-        { left: "any other answer", right: "bất kỳ câu trả lời nào khác" },
-        { left: "the other answers", right: "những câu trả lời còn lại đã xác định" },
-        { left: "the others", right: "phần còn lại đã rõ, không lặp danh từ" },
+        { left: "other answers", right: "những câu trả lời khác nói chung" },
+        { left: "the other answers", right: "những câu trả lời còn lại đã xác định, có danh từ theo sau" },
+        { left: "the others", right: "những cái còn lại đã xác định, không có danh từ theo sau" },
       ],
     },
   ],
@@ -362,8 +362,8 @@ const a2Chapter19DepthExtensions: Partial<Record<string, Exercise[]>> = {
       explanation: "Một người cũng có thể gây cảm giác và một con vật cũng có thể nhận cảm giác.",
       rows: [
         { cue: "The students felt ___.", options: ["bored", "boring", "bore"], answer: "bored", completed: "The students felt bored." },
-        { cue: "The speaker was ___.", options: ["boring", "bored", "bore"], answer: "boring", completed: "The speaker was boring." },
-        { cue: "The dog looked ___.", options: ["frightened", "frightening", "frighten"], answer: "frightened", completed: "The dog looked frightened." },
+        { cue: "Everyone fell asleep because the speaker was so ___.", options: ["boring", "bored", "bore"], answer: "boring", completed: "Everyone fell asleep because the speaker was so boring." },
+        { cue: "The dog hid under the bed during the storm because it was ___.", options: ["frightened", "frightening", "frighten"], answer: "frightened", completed: "The dog hid under the bed during the storm because it was frightened." },
       ],
     },
     {
