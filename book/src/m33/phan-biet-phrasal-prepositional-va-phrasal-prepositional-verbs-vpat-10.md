@@ -32,7 +32,9 @@ Các ví dụ tách được khác:
 - `pick up the parcel` / `pick the parcel up` / `pick it up` — nhặt hoặc lấy bưu kiện;
 - `write down the address` / `write the address down` / `write it down` — ghi lại địa chỉ.
 
-Không phải mọi phrasal verb đều tách được. `The plane took off` không có tân ngữ; `come across an old photo` thường không tách thành `come an old photo across`.
+Không phải mọi phrasal verb đều có tân ngữ để tách: trong `The plane took off.` (Máy bay đã cất cánh.), `off` là particle nhưng không có danh từ nào đặt vào giữa được.
+
+Cũng cần cẩn thận với nhãn trong từ điển. Nhiều từ điển gọi chung mọi động từ nhiều từ là “phrasal verb”, nhưng theo các phép thử của bài này, `come across an old photo` (tình cờ thấy một tấm ảnh cũ) là động từ có giới từ: đại từ đứng sau `across` (`come across it`, không nói `come it across`), vì `across` là giới từ dẫn tân ngữ của nó, không phải particle.
 
 ## Động từ có giới từ: động từ + giới từ
 

@@ -48,8 +48,8 @@ chủ ngữ + be + tính từ
 | Ví dụ | Nghĩa tiếng Việt |
 | --- | --- |
 | `She is happy.` | Cô ấy vui. |
-| `The book is new.` | Quyển sách mới. |
-| `The cats are small.` | Những con mèo nhỏ. |
+| `The book is new.` | Quyển sách này còn mới. |
+| `The cats are small.` | Những con mèo này nhỏ. |
 | `We are tired.` | Chúng tôi mệt. |
 
 Tính từ không đổi theo số lượng. Ta dùng `The cat is small.` cho một con mèo

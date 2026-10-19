@@ -61,12 +61,12 @@ Mệnh đề thời gian có thể đứng đầu hoặc cuối:
 
 ## Chọn từ nối bằng dòng thời gian
 
-Hãy đặt hai hành động lên một dòng thời gian trước khi chọn từ:
+Hãy đặt hai hành động lên một dòng thời gian trước khi chọn từ. Trong các ví dụ dưới, A luôn là việc nằm trong mệnh đề thời gian (phần đi sau `after`, `before`...), còn B là việc của mệnh đề chính:
 
-- A xảy ra, rồi B: `After I finish work, I'll call you` — “Sau khi làm xong, tôi sẽ gọi cho bạn”.
-- B phải xảy ra trước A: `I'll check the door before I leave` — “Tôi sẽ kiểm tra cửa trước khi rời đi”.
-- A xảy ra ngay khi B xuất hiện: `I'll call you as soon as I arrive` — “Tôi sẽ gọi ngay khi đến”.
-- Một trạng thái kéo dài đến B: `I'll stay here until Lan returns` — “Tôi sẽ ở đây cho đến khi Lan quay lại”.
+- A xảy ra trước, rồi mới đến B: `After I finish work, I'll call you` — “Sau khi làm xong, tôi sẽ gọi cho bạn”.
+- B xảy ra trước A: `I'll check the door before I leave` — “Tôi sẽ kiểm tra cửa trước khi rời đi”.
+- B xảy ra ngay sau khi A xảy ra: `I'll call you as soon as I arrive` — “Tôi sẽ gọi ngay khi đến”.
+- B kéo dài cho đến khi A xảy ra: `I'll stay here until Lan returns` — “Tôi sẽ ở đây cho đến khi Lan quay lại”.
 
 Sau khi chọn đúng quan hệ thời gian, mới chia động từ: mệnh đề thời gian dùng hiện tại đơn, mệnh đề chính có thể dùng `will`. Không đổi quy tắc chỉ vì mệnh đề thời gian đứng đầu hay cuối.
 

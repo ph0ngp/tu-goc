@@ -57,7 +57,7 @@ Ba câu đều hướng tới hiện tại/tương lai gần, nhưng mức thúc
 - `It's time you stopped worrying.` — Đã đến lúc bạn ngừng lo lắng.
 - `It's time we weren't so dependent on paper.` — Đã đến lúc chúng ta không còn phụ thuộc vào giấy tờ như vậy.
 
-Với `be`, có thể gặp `were` trong cách dùng giả định trang trọng: `It's time he were more careful`, nhưng `was` phổ biến hơn trong lời nói với chủ ngữ số ít. Câu này vẫn hướng tới việc thay đổi từ bây giờ.
+Với `be` và chủ ngữ số ít, dùng `was`: `It's time he was more careful.` — Đã đến lúc anh ấy cẩn thận hơn. Khác với `If I were...` hay `I wish I were...`, sau `it's time` dạng `were` (`It's time he were...`) rất hiếm và nhiều sách ngữ pháp không xem là mẫu chuẩn của cấu trúc này, nên không nên dùng. Câu vẫn hướng tới việc thay đổi từ bây giờ.
 
 ## Không dùng `would` sau `it's time` trong mẫu này
 

@@ -31,7 +31,7 @@ Chủ ngữ số ít vẫn dùng động từ thêm `-s/-es`: `The bus arrives`,
 - `What time does the flight leave?` — Chuyến bay khởi hành lúc mấy giờ?
 - `Does the class start at nine? — No, it doesn't.` — Lớp bắt đầu lúc chín giờ phải không? — Không.
 
-Không dùng dạng quá khứ sau `does`: `What time does it start?`, không phải `does it starts?`.
+Đuôi `-s` đã nằm trong `does`, nên động từ chính sau `does` trở về dạng cơ bản: `What time does it start?` (Mấy giờ nó bắt đầu?), không phải `does it starts?`.
 
 ## Lịch trình khác kế hoạch cá nhân
 

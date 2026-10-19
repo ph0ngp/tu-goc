@@ -55,9 +55,11 @@ Thông thường, `forgot to buy` có nghĩa việc mua đã không xảy ra.
 ## `Forget doing`: không còn nhớ một việc đã xảy ra
 
 - `I'll never forget visiting Ha Long Bay.` — Tôi sẽ không bao giờ quên chuyến thăm Vịnh Hạ Long.
-- `He forgot having met me before.` — Anh ấy quên rằng trước đây đã gặp tôi.
+- `I'll never forget meeting my teacher for the first time.` — Tôi sẽ không bao giờ quên lần đầu gặp cô giáo của mình.
 
-`Forget doing` ít dùng hơn `remember doing` trong câu khẳng định thông thường. Nó hay xuất hiện với `never forget` hoặc khi nói ký ức về một việc thực sự đã xảy ra. Dạng `forget having done` làm rõ hành động đã hoàn tất trước.
+`Forget doing` ít dùng hơn `remember doing` trong câu khẳng định thông thường. Nó hay xuất hiện với `never forget`, khi nói về một ký ức đáng nhớ đã thực sự xảy ra.
+
+Khi muốn kể rằng ai đó **không còn nhớ** một việc đã xảy ra, tiếng Anh thường dùng mệnh đề `that` với quá khứ hoàn thành: `He forgot that he had met me before.` — Anh ấy quên rằng trước đây đã gặp tôi. Câu `He forgot having met me before.` đúng ngữ pháp nhưng nghe gượng trong giao tiếp thường ngày.
 
 ## Dòng thời gian quyết định dạng
 

@@ -24,7 +24,7 @@ Mệnh đề `when` có thể đứng đầu hoặc cuối. Khi đứng đầu, 
 - `While I was studying, my brother was watching TV.` — Trong khi tôi đang học, em trai tôi đang xem TV.
 - `Lan called while we were eating.` — Lan gọi trong lúc chúng tôi đang ăn.
 
-`While` hướng sự chú ý vào khoảng thời gian của hoạt động. Vì vậy, quá khứ tiếp diễn rất thường xuất hiện sau `while`, nhưng đây không phải một công thức tuyệt đối: `While in Hue, we visited the old city` nghĩa là “Trong thời gian ở Huế, chúng tôi đã thăm khu phố cổ”.
+`While` hướng sự chú ý vào khoảng thời gian của hoạt động. Vì vậy, quá khứ tiếp diễn rất thường xuất hiện sau `while`, nhưng đây không phải một công thức tuyệt đối. Khi mệnh đề `while` nói một khoảng thời gian dài hoặc một trạng thái, quá khứ đơn cũng tự nhiên: `While I lived in Hue, I learned to cook.` — Trong thời gian sống ở Huế, tôi đã học nấu ăn.
 
 ## `As`: khi/trong lúc hai việc cùng phát triển
 

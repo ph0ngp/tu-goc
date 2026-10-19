@@ -22,7 +22,7 @@ Dạng này tương ứng với `if + past perfect`, thường dùng cho điều
 - `Had the data been checked, the error might have been found.` — Nếu dữ liệu được kiểm tra, lỗi có thể đã được phát hiện.
 - `Had she not intervened, the dispute would have continued.` — Nếu cô ấy không can thiệp, tranh chấp đã tiếp tục.
 
-Phủ định đứng sau chủ ngữ trong mẫu phổ biến: `Had she not...`. Dạng rút gọn `Hadn't she...` có thể xuất hiện nhưng thường kém trang trọng hơn và đôi khi giống câu hỏi.
+Trong đảo ngữ điều kiện, `not` đứng sau chủ ngữ và không viết tắt: `Had she not...`. Không dùng dạng rút gọn `Hadn't she...` để mở một mệnh đề điều kiện; chuỗi này chỉ đọc được như câu hỏi phủ định (“Chẳng phải cô ấy đã... sao?”), không còn nghĩa “nếu”. Cách đặt `not` này cũng dùng cho `were` và `should`, như `Were it not for...` ở mục dưới.
 
 ## `Were + subject ...`
 
@@ -87,7 +87,7 @@ Khi mệnh đề đảo ngữ đứng đầu, dùng dấu phẩy trước mệnh
 
 `Should you have any questions, please let me know.`
 
-Về lý thuyết, mệnh đề có thể đứng sau, nhưng dạng đảo ngữ thường được chọn để mở câu trang trọng: `Please let me know should you have any questions` nghe ít tự nhiên hơn trong tiếng Anh hiện đại.
+Mệnh đề đảo ngữ cũng có thể đứng sau mệnh đề chính. Vị trí này rất quen thuộc ở cuối thư từ công việc, nhất là với `should`: `Please do not hesitate to contact us should you have any questions.` — Xin đừng ngần ngại liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi nào. Khi mệnh đề đảo ngữ đứng sau, thường không cần dấu phẩy.
 
 ## Chọn theo ngữ cảnh
 
@@ -110,6 +110,7 @@ Về lý thuyết, mệnh đề có thể đứng sau, nhưng dạng đảo ng�
 - Chỉ ba mẫu chính được học ở đây: `Had + subject...`, `Were + subject...`, `Should + subject...`.
 - `Had` tương ứng past perfect; `were` dùng cho giả định; `should` dùng cho khả năng tương lai trang trọng.
 - Bỏ `if` nhưng không thay tùy tiện mệnh đề kết quả.
+- Phủ định đặt `not` sau chủ ngữ và không viết tắt: `Had she not...`, không mở câu điều kiện bằng `Hadn't she...`.
 - `Were it not for` và `Had it not been for` diễn tả “nếu không có/vì”.
 - Không đảo động từ thường theo mẫu câu hỏi.
 - Dạng đảo ngữ có đánh dấu trang trọng; dạng có `if` vẫn là lựa chọn trung tính.

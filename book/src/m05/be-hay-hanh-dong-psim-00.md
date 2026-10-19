@@ -63,7 +63,7 @@ Hãy bắt đầu từ ý cần nói, không bắt đầu từ việc dịch ch�
 2. Phần còn lại gọi tên, miêu tả hoặc cho biết vị trí của chủ ngữ? Dùng `be`.
 3. Phần còn lại đã có một hành động hoặc trạng thái được diễn tả bằng động từ như `work`, `live`, `want` hay `know`? Dùng chính động từ đó.
 
-Ví dụ, `Mai is a doctor` gọi tên nghề nghiệp của Mai, còn `Mai works at a hospital` nói Mai làm việc ở đâu. Tiếng Việt có thể hiểu cả hai câu rất tự nhiên mà không luôn hiện rõ từ “là”, nhưng cấu trúc tiếng Anh của chúng khác nhau.
+Ví dụ, `Mai and Nam are doctors` (Mai và Nam là bác sĩ) gọi tên nghề nghiệp của hai người, còn `Mai and Nam work at a hospital` (Mai và Nam làm việc ở một bệnh viện) nói họ làm việc ở đâu. Tiếng Việt có thể hiểu cả hai câu rất tự nhiên mà không luôn hiện rõ từ “là”, nhưng cấu trúc tiếng Anh của chúng khác nhau.
 
 ## Ghi nhớ
 

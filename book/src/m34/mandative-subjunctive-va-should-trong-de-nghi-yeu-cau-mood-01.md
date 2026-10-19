@@ -37,7 +37,12 @@ Không thêm `-s` sau `he/she/it`: dùng `that he attend`, không dùng `that he
 - `The doctor recommended that he rest for a week.` — Bác sĩ khuyên anh ấy nghỉ một tuần.
 - `The rules require that each application include two references.` — Quy định yêu cầu mỗi đơn phải kèm hai thư giới thiệu.
 
-Không phải mọi nghĩa của một động từ đều kích hoạt cấu trúc. `I suggest that Lan is at home` có thể dùng `suggest` theo nghĩa “cho thấy”, tức là bằng chứng khiến ta nghĩ Lan ở nhà; đây không phải lời đề nghị Lan làm gì. Nghĩa của động từ trong ngữ cảnh mới quyết định.
+Không phải mọi nghĩa của một động từ đều kích hoạt cấu trúc. So sánh hai câu chỉ khác nhau ở nghĩa của `suggest`:
+
+- `The evidence suggests that Lan is at home.` — Bằng chứng cho thấy Lan đang ở nhà.
+- `We suggest that Lan stay at home.` — Chúng tôi đề nghị Lan ở nhà.
+
+Ở câu thứ nhất, `suggest` nghĩa là “cho thấy”: câu nêu một nhận định về sự thật, không đề nghị Lan làm gì, nên dùng `is` bình thường. Ở câu thứ hai, `suggest` là lời đề nghị, nên mệnh đề sau dùng `stay`, không có `-s`. Nghĩa của động từ trong ngữ cảnh mới quyết định.
 
 ### Tính từ chỉ sự cần thiết hoặc quan trọng
 
@@ -86,9 +91,9 @@ Với động từ nhiều nghĩa như `suggest`, quá khứ chỉ định thư�
 
 - `recommend doing`: `I recommend booking early` — Tôi khuyên nên đặt chỗ sớm.
 - `recommend that + subjunctive`: `I recommend that you book early` — Tôi khuyên bạn đặt chỗ sớm.
-- không dùng `recommend you to book` trong mẫu chuẩn này.
+- `recommend + object + to-infinitive`: `I recommend you to book early` cũng đúng, nhưng chủ yếu gặp trong tiếng Anh–Anh với văn phong khá trang trọng; nhiều người nói tiếng Anh–Mỹ thấy mẫu này không tự nhiên. Vì vậy hai mẫu trên là lựa chọn an toàn hơn khi viết cho người đọc ở nhiều nơi.
 
-Trong khi đó, `advise` cho phép `object + to-infinitive`: `I advised you to book early`. Valency của từng động từ vẫn phải được tôn trọng.
+Với `advise`, mẫu `object + to-infinitive` là bình thường ở mọi biến thể: `I advised you to book early` — Tôi đã khuyên bạn đặt chỗ sớm. Valency của từng động từ vẫn phải được tôn trọng.
 
 ## Cách lựa chọn
 
@@ -105,4 +110,4 @@ Trong khi đó, `advise` cho phép `object + to-infinitive`: `I advised you to b
 - Phủ định là `not + base verb`; bị động là `be + past participle`.
 - Mandative `should` là biến thể chuẩn, đặc biệt phổ biến trong tiếng Anh Anh.
 - Không phải cứ sau `suggest` là dùng subjunctive; phải phân biệt nghĩa “đề nghị” với nghĩa “cho thấy”.
-- Tôn trọng mẫu riêng của từng động từ: `recommend doing/that...`, nhưng `advise someone to do`.
+- Tôn trọng mẫu riêng của từng động từ: `recommend doing/that...` là lựa chọn an toàn (`recommend someone to do` chủ yếu gặp trong tiếng Anh–Anh), còn `advise someone to do` dùng rộng rãi.

@@ -47,7 +47,8 @@ Không phải cứ có phần bổ nghĩa là bắt buộc dùng `the`; câu v�
 | --- | --- |
 | `Music helps me relax.` | âm nhạc nói chung |
 | `The music is too loud.` | phần nhạc đang nghe trong tình huống này |
-| `Children are playing outside.` | trẻ em nói chung/một số trẻ không xác định |
+| `Children like games.` | trẻ em nói chung |
+| `Children are playing outside.` | một số trẻ chưa xác định; câu nói việc đang diễn ra, nên không thể hiểu là trẻ em nói chung |
 | `The children are playing outside.` | nhóm trẻ mà hai bên đều biết |
 
 ## `The` không cho biết số lượng

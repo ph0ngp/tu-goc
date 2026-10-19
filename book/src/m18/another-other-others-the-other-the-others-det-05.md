@@ -76,7 +76,7 @@ Nếu bỏ danh từ số nhiều vì người nghe đã biết đang nói đế
 
 `Another + số + danh từ số nhiều` có thể nghĩa “thêm”: `another two days` — “thêm hai ngày”; `another ten minutes` — “thêm mười phút”. Đây là mẫu đặc biệt, không làm thay đổi quy tắc thông thường `another + số ít`.
 
-## Hai câu hỏi để chọn đúng dạng
+## Ba câu hỏi để chọn đúng dạng
 
 1. Sau chỗ trống còn có danh từ không? Nếu có, thường chọn `another/other/the other`; nếu không, có thể cần `another one/others/the other/the others`.
 2. Đối tượng là bất kỳ cái khác hay phần còn lại đã xác định? Nếu là phần còn lại của nhóm đã rõ, cần `the`.

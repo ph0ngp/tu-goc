@@ -15,7 +15,12 @@ Không phải câu điều kiện nào cũng có mệnh đề bắt đầu bằn
 - `I took a taxi. Otherwise, I would have been late.` — Tôi đã đi taxi. Nếu không thì tôi đã muộn.
 - `Keep the receipt, otherwise you may not get a refund.` — Hãy giữ hóa đơn, nếu không bạn có thể không được hoàn tiền.
 
-Phần trước `otherwise` cung cấp điều kiện được hiểu ngầm. Dấu chấm, dấu chấm phẩy hoặc liên từ phù hợp phải tách hai mệnh đề; không nối hai câu độc lập chỉ bằng dấu phẩy.
+Phần trước `otherwise` cung cấp điều kiện được hiểu ngầm. Về dấu câu, có hai thói quen:
+
+- Trong văn viết trang trọng, cẩn thận, hai mệnh đề thường được tách bằng dấu chấm hoặc dấu chấm phẩy, như hai câu đầu.
+- Sau một mệnh lệnh ngắn, dấu phẩy trước `otherwise` rất phổ biến và được chấp nhận rộng rãi, như câu `Keep the receipt, otherwise...` ở trên.
+
+Một số sách hướng dẫn văn phong khắt khe vẫn coi dấu phẩy ấy là lỗi nối hai câu chỉ bằng dấu phẩy, vì `otherwise` là trạng từ chứ không phải liên từ. Vì vậy, trong bài viết học thuật hoặc văn bản chính thức, dấu chấm phẩy là lựa chọn an toàn nhất.
 
 ## `But for + noun`: nếu không nhờ/nếu không có
 

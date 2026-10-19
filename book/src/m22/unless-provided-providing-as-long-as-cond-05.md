@@ -30,9 +30,9 @@ Sau `unless`, không thêm một phủ định nữa trong nghĩa thông thườ
 `Unless` phù hợp khi nêu **ngoại lệ duy nhất** khiến kết quả không xảy ra hoặc điều kiện tối thiểu để kết quả xảy ra. Nó không tự nhiên trong mọi câu hỏi lựa chọn hay khi phủ định chính là thông tin cần cân nhắc:
 
 - tự nhiên: `I'll walk unless it rains.` — Tôi sẽ đi bộ, trừ khi trời mưa.
-- tự nhiên hơn với `if`: `I don't know if Lan isn't coming.` — Tôi không biết liệu Lan có không đến hay không. Đây là mệnh đề “liệu”, không phải điều kiện ngoại lệ.
+- chỉ tự nhiên với `if ... not`: `I'll be surprised if Lan doesn't come.` — Tôi sẽ ngạc nhiên nếu Lan không đến. Ở đây, việc Lan không đến chính là điều gây ra sự ngạc nhiên, không phải một ngoại lệ ngăn kết quả; vì vậy không nói `I'll be surprised unless Lan comes`.
 
-Ngoài ra, `unless` không thay được `if` khi `if` mang nghĩa “liệu”.
+Ngoài ra, `unless` không thay được `if` khi `if` mang nghĩa “liệu”: `I don't know if Lan is coming.` — Tôi không biết liệu Lan có đến không. Câu này không nêu điều kiện nào, nên không có gì để chuyển thành `unless`.
 
 ## `Provided/Providing (that)`: với điều kiện là
 

@@ -48,7 +48,8 @@ Các động từ thường gặp: `buy`, `make`, `cook`, `get`, `find`, `book`,
 Nếu “vật” là một đại từ như `it/them`, trật tự với giới từ thường tự nhiên hơn:
 
 - `Give it to me.` — Hãy đưa nó cho tôi.
-- không dùng trong văn phong thông thường: `Give me it.`
+
+`Give me it.` cũng có thể nghe thấy trong văn nói thân mật, nhất là ở Anh, với cùng nghĩa. Câu này không sai, nhưng `Give it to me.` là lựa chọn an toàn và trung tính hơn trong văn phong thông thường.
 
 Khi muốn nhấn mạnh người nhận, trật tự `to/for` cũng hữu ích: `I sent the invitation to Lan, not to Minh.`
 

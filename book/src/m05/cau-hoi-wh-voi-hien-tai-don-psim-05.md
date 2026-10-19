@@ -53,7 +53,7 @@ Trong `Who do you help?`, `you` là chủ ngữ và `who` hỏi người nhận 
 - `Who helps you?` — Ai giúp bạn?
 - `Who lives here?` — Ai sống ở đây?
 
-Động từ sau `who` hỏi chủ ngữ thường mang dạng ngôi thứ ba số ít (`helps`, `lives`) vì người trả lời chưa được xác định. Ở A1, hãy phân biệt bằng câu hỏi: **đã có một chủ ngữ khác sau `do/does` chưa?**
+Động từ sau `who` hỏi chủ ngữ mang dạng ngôi thứ ba số ít (`helps`, `lives`), vì tiếng Anh coi `who` là một chủ ngữ số ít, giống `he` hoặc `she`. Điều này vẫn đúng khi câu trả lời có thể là nhiều người: `Who lives here?` vẫn dùng `lives`, dù người sống ở đó có thể là cả một gia đình. Ở A1, hãy phân biệt bằng câu hỏi: **đã có một chủ ngữ khác sau `do/does` chưa?**
 
 ## Câu hỏi với `be` vẫn theo hệ thống riêng
 

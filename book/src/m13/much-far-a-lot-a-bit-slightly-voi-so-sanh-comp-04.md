@@ -72,7 +72,7 @@ Trước hết, tạo đúng dạng so sánh: `faster`, `more useful`, `less cro
 | nhanh hơn nhiều | `much/far/a lot + comparative` | `A is much faster than B.` — A nhanh hơn B nhiều. |
 | nhanh hơn một chút | `a bit/slightly + comparative` | `A is slightly faster than B.` — A nhanh hơn B một chút. |
 
-Một lỗi dễ gặp là dùng `more` hai lần: không nói `much more faster` vì `faster` đã là dạng so sánh. Với tính từ dài, `much more comfortable` lại đúng: `more comfortable` tạo so sánh, còn `much` cho biết mức chênh lớn. Hãy tìm phần tạo so sánh trước rồi mới thêm đúng một từ chỉ mức chênh ở phía trước.
+Một lỗi dễ gặp là đánh dấu so sánh hai lần, tức dùng cả `more` lẫn đuôi `-er`: không nói `much more faster` vì `faster` đã là dạng so sánh; chỉ nói `much faster`. Với tính từ dài, `much more comfortable` lại đúng: `more comfortable` tạo so sánh, còn `much` cho biết mức chênh lớn. Hãy tìm phần tạo so sánh trước rồi mới thêm đúng một từ chỉ mức chênh ở phía trước.
 
 ## Ghi nhớ
 

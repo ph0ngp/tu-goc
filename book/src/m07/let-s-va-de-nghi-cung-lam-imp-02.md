@@ -28,7 +28,7 @@ Sau `let's` dùng động từ cơ bản, không có `to` và không thêm `-s`.
 - `Let's not be late.` — Chúng ta đừng đến muộn.
 - `Let's not tell him.` — Chúng ta đừng nói với anh ấy.
 
-Không nói `Don't let's...` trong mẫu chuẩn cơ bản của bài này.
+`Let's not...` là mẫu chuẩn, dùng được ở mọi nơi. Trong văn nói thân mật, bạn có thể nghe thêm `Don't let's wait.` (hay gặp trong tiếng Anh–Anh) hoặc `Let's don't wait.` (hay gặp trong tiếng Anh–Mỹ), cùng nghĩa “Chúng ta đừng chờ nữa”. Hai dạng này không sai, nhưng khi tự nói hoặc viết, hãy dùng `Let's not...`.
 
 ## Cách đáp lại
 

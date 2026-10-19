@@ -38,7 +38,7 @@ so as not to + V
 - `I wrote it down in order not to forget.` — Tôi viết lại để không quên.
 - `They left quietly so as not to disturb anyone.` — Họ rời đi nhẹ nhàng để không làm phiền ai.
 
-`Not to` cũng có thể dùng: `I whispered not to wake the child`. Tuy nhiên, `in order not to` thường rõ nghĩa mục đích hơn và tránh nhầm `not` đang phủ định phần nào.
+Thông thường, không dùng `not to` đứng một mình để nói mục đích phủ định. `I whispered so as not to wake the child.` — Tôi nói thì thầm để không đánh thức đứa trẻ — rõ nghĩa mục đích; còn `I whispered not to wake the child` nghe lạ và có thể bị hiểu thành lời dặn “đừng đánh thức đứa trẻ”. `Not to` một mình chỉ tự nhiên khi đối lập hai mục đích: `I came here to work, not to play.` — Tôi đến đây để làm việc, không phải để chơi.
 
 Không dùng `to not` làm mẫu cơ bản trong khóa học này; đặt `not` trước `to` là lựa chọn an toàn trong văn phong trung tính.
 

@@ -56,9 +56,9 @@ Khi một người hoặc vật đã rõ, đại từ tân ngữ có thể thay 
 
 Đại từ phải khớp với người/vật được thay: `the boys` → `them`; `the book` → `it`; `Lan and me` khi cả cụm làm tân ngữ → `us` nếu người nói nằm trong nhóm.
 
-## Ba công việc của `her`
+## `Her` và `hers`
 
-`Her` có thể là đại từ tân ngữ hoặc từ chỉ sở hữu. Vị trí giúp phân biệt.
+`Her` có hai công việc: đại từ tân ngữ hoặc từ chỉ sở hữu. Vị trí giúp phân biệt. Cạnh đó còn có `hers`, một từ khác hẳn, dùng khi phần sở hữu đứng một mình.
 
 | Câu/cụm | Công việc | Nghĩa |
 | --- | --- | --- |

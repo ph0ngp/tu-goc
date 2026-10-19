@@ -65,7 +65,7 @@ Không nên tìm tiền ngữ cho mọi `it`; cần xác định cấu trúc tr�
 
 ## Phạm vi của từ chỉ lượng và đại từ
 
-`Every student submitted a paper. They were published online` có thể khiến `they` được hiểu là các bài báo, không phải học sinh, vì danh từ số nhiều gần nhất là `papers` về mặt ý nghĩa dù mỗi câu dùng `a paper`.
+`Every student submitted a paper. They were published online.` muốn nói các bài viết được đăng trực tuyến, nhưng câu trước không có danh từ số nhiều nào chỉ các bài: `every student` và `a paper` đều có hình thức số ít. Người đọc phải tự dựng ra tập hợp “các bài của mọi học sinh”, trong khi `they` sau `every student` lại rất hay được dùng để chỉ chính các học sinh, như trong `Every student submitted a paper. They were nervous.` — Học sinh nào cũng nộp một bài. Các em đều hồi hộp. Vì vậy câu gốc dễ bị đọc chậm lại, thậm chí bị hiểu thành các học sinh được “đăng” trực tuyến.
 
 Viết rõ:
 

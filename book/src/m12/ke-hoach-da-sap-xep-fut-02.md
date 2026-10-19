@@ -36,7 +36,7 @@ Ranh giới giữa ý định và sắp xếp có thể phụ thuộc vào cách
 
 Ta vẫn xử lý `be` như mọi câu tiếp diễn:
 
-- `We aren't meeting Lan tomorrow.` — Ngày mai chúng tôi không gặp Lan theo lịch nữa.
+- `We aren't meeting Lan tomorrow.` — Ngày mai chúng tôi không có hẹn gặp Lan.
 - `Is she coming tonight?` — Tối nay cô ấy có đến không?
 - `What are you doing this weekend?` — Cuối tuần này bạn có kế hoạch làm gì?
 - `Are they staying at a hotel? — Yes, they are.` — Họ sẽ ở khách sạn phải không? — Đúng vậy.

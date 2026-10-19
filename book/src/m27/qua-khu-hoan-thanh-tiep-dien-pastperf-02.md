@@ -28,7 +28,7 @@ Sau `been` luôn là dạng `V-ing`. Không dùng `had been worked` để diễn
 Mốc sau có thể được nêu bằng một sự kiện, một giờ hoặc một điểm trong câu chuyện:
 
 - `By noon, I had been studying for four hours.` — Đến trưa, tôi đã học được bốn giờ.
-- `She had been living there since 2018 when she moved to Hue.` — Cô ấy đã sống ở đó từ năm 2018 cho tới khi chuyển đến Huế.
+- `When she moved to Hue in 2023, she had been living in Hanoi since 2018.` — Khi chuyển đến Huế vào năm 2023, cô ấy đã sống ở Hà Nội từ năm 2018.
 - `How long had they been travelling before they stopped?` — Trước khi dừng lại, họ đã đi được bao lâu?
 
 `For` đứng trước độ dài như `for four hours`; `since` đứng trước mốc bắt đầu như `since 2018`. Thì này không tự nói hoạt động có tiếp tục sau mốc quá khứ hay không. Ngữ cảnh mới cho biết điều đó.

@@ -54,10 +54,12 @@ Không dùng `much` trực tiếp trước danh từ số nhiều: không nói `
 
 ## Câu khẳng định: thường ưu tiên `a lot of`
 
-`There are many reasons` và `We have much work` có thể đúng, nhưng trong hội thoại thông thường, `a lot of` thường tự nhiên hơn, đặc biệt với danh từ không đếm được.
+`Many` và `much` vẫn đúng trong câu khẳng định, nhưng trong hội thoại thông thường, `a lot of` thường tự nhiên hơn, đặc biệt với danh từ không đếm được.
 
-- tự nhiên: `We have a lot of work.` — Chúng tôi có nhiều việc.
-- trang trọng/nhấn mạnh hơn: `We have much work to do.`
+- tự nhiên trong hội thoại: `We have a lot of work.` — Chúng tôi có nhiều việc.
+- trang trọng hơn, thường gặp trong văn viết: `We have much work to do.` — Chúng tôi còn nhiều việc phải làm.
+
+Hai câu nói cùng một lượng việc. `Much` không làm câu mạnh hơn `a lot of`; nó chỉ khiến câu khẳng định nghe trang trọng hơn.
 
 `Many` vẫn thường gặp trong câu khẳng định, nhất là với `very`, `so`, `too`: `very many people`, `too many cars`. Ở A1, hãy dùng chắc bảng lựa chọn cơ bản dưới đây.
 

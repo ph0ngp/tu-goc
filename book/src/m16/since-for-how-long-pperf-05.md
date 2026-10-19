@@ -85,7 +85,8 @@ Hai câu trả lời có thể cùng đúng nếu tháng Năm cách hiện tại
 | `for Monday` | `since Monday` | thứ Hai là mốc bắt đầu |
 | `since two hours` | `for two hours` | hai giờ là độ dài |
 | `for 2021` | `since 2021` | năm 2021 là mốc bắt đầu |
-| `since I started school` | giữ nguyên | cả mệnh đề xác định sự kiện bắt đầu |
+
+Ngược lại, `since I started school` (từ khi tôi bắt đầu đi học) đã đúng: cả mệnh đề sau `since` kể sự kiện bắt đầu, nên không cần đổi sang `for`.
 
 Muốn tự kiểm tra, hãy hỏi: “Thông tin này trả lời **từ khi nào** hay **được bao lâu**?” “Từ khi nào” dẫn đến `since`; “được bao lâu” dẫn đến `for`.
 

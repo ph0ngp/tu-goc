@@ -17,8 +17,10 @@ Dạng cần dùng phụ thuộc vào **chủ ngữ**. Vì vậy, mỗi lần t�
 
 ## Tiếng Anh cần một động từ trong câu với be
 
-Tiếng Việt có thể nói “Tôi vui” hoặc “Lan ở nhà” mà không cần một động từ nằm
-giữa chủ ngữ và phần thông tin phía sau. Tiếng Anh lại cần một dạng của `be`:
+Tiếng Việt có thể nói “Tôi vui” hoặc “Trời lạnh” mà không cần thêm từ nào
+giữa chủ ngữ và phần miêu tả phía sau. Tiếng Anh thì luôn cần một dạng của
+`be`, dù khi dịch sang tiếng Việt, nó có lúc không hiện ra chữ nào, có lúc
+thành “ở”, có lúc thành “là”:
 
 | Câu tiếng Anh | Nghĩa tiếng Việt |
 | --- | --- |
@@ -89,8 +91,8 @@ chủ ngữ chỉ một hay nhiều rồi thay thử bằng `he`, `she`, `it` ho
 | Chủ ngữ | Có thể thay bằng | Dạng be | Ví dụ |
 | --- | --- | --- | --- |
 | `Lan` | `she` | `is` | `Lan is here.` — Lan ở đây. |
-| `the book` | `it` | `is` | `The book is new.` — Quyển sách mới. |
-| `the cats` | `they` | `are` | `The cats are small.` — Những con mèo nhỏ. |
+| `the book` | `it` | `is` | `The book is new.` — Quyển sách này còn mới. |
+| `the cats` | `they` | `are` | `The cats are small.` — Những con mèo này nhỏ. |
 | `Lan and Nam` | `they` | `are` | `Lan and Nam are here.` — Lan và Nam ở đây. |
 
 Hai tên hoặc hai cụm được nối bằng `and`, nghĩa là “và”, thường tạo thành chủ

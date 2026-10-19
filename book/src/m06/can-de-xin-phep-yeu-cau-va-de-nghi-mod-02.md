@@ -48,7 +48,7 @@ Khác biệt với xin phép nằm ở mục đích: `Can I use your pen?` xin d
 - `Can I get you some water?` — Tôi lấy cho bạn ít nước nhé?
 - `Can I get you a chair?` — Tôi lấy ghế cho bạn nhé?
 
-Mặc dù đây là câu hỏi, ta thường dùng `some` khi đang mời hoặc đề nghị một lượng cụ thể. Đây là cách dùng giao tiếp bổ sung cho quy tắc `any` trong câu hỏi trung lập đã học trước đó.
+Mặc dù đây là câu hỏi, ta thường dùng `some` khi mời hoặc đề nghị, vì người nói chờ đợi câu trả lời “có”. `Some` ở đây không nói một lượng cụ thể; `some water` chỉ là “ít nước”, bao nhiêu cũng được. Đây là cách dùng giao tiếp bổ sung cho quy tắc `any` trong câu hỏi trung lập đã học trước đó.
 
 Người nghe có thể đáp `Yes, please` (Vâng, làm ơn) hoặc `No, thank you` (Không, cảm ơn).
 

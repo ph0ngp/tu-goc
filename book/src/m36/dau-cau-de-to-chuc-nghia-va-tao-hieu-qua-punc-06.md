@@ -89,9 +89,14 @@ Dấu phẩy giúp đóng trạng ngữ đầu câu. Với cụm ngắn, dấu c
 
 Trong câu dài, mơ hồ thường tinh tế hơn:
 
-`The manager said the assistant who had prepared the report was responsible.`
+`The manager discussed the report with the assistant who had prepared it on Monday.` — Người quản lý đã trao đổi về báo cáo với người trợ lý đã soạn nó vào thứ Hai.
 
-Cần ngữ cảnh để biết `was responsible` thuộc lời người quản lý hay lời người kể, và mệnh đề quan hệ xác định ai. Dấu câu không luôn sửa được cấu trúc mơ hồ; đôi khi phải viết lại thành hai câu hoặc thêm `that`/dấu ngoặc kép.
+`On Monday` có thể gắn với `had prepared` (báo cáo được soạn vào thứ Hai) hoặc với `discussed` (cuộc trao đổi diễn ra vào thứ Hai). Dấu phẩy không gỡ được sự mơ hồ này, nên phải viết lại theo nghĩa muốn nói:
+
+- cuộc trao đổi vào thứ Hai: `On Monday, the manager discussed the report with the assistant who had prepared it.`
+- báo cáo được soạn vào thứ Hai: `The assistant prepared the report on Monday, and the manager later discussed it with her.`
+
+Không phải mơ hồ nào cũng sửa được bằng dấu câu; đôi khi phải chuyển vị trí một thành phần hoặc tách mệnh đề.
 
 ## Nhịp và hiệu quả tu từ
 

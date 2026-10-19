@@ -52,7 +52,7 @@ Hòa hợp thường theo danh từ sau `of` hoặc theo ý lượng:
 - `Half of the work has been completed.` — Một nửa công việc đã hoàn thành.
 - `Half of the applications have been reviewed.` — Một nửa số đơn đã được xem xét.
 
-`None` có thể đi với số ít hoặc số nhiều tùy nghĩa và văn phong: `None of the information is useful`; `None of the students are/is ready`. Số nhiều rất phổ biến khi nói nhiều người/vật; số ít trang trọng hơn khi nhấn “not one”.
+`None` có thể đi với số ít hoặc số nhiều tùy nghĩa và văn phong: `None of the information is useful` (Không thông tin nào hữu ích); `None of the students are/is ready` (Chưa học sinh nào sẵn sàng). Với danh từ không đếm được như `information`, chỉ dùng số ít. Với danh từ số nhiều, số nhiều rất phổ biến khi nói nhiều người/vật; số ít trang trọng hơn khi nhấn “not one” (không một ai/cái nào).
 
 ## Số đo, tiền, thời gian và khoảng cách
 
@@ -71,22 +71,23 @@ Khi hai phần khác số, proximity agreement rất phổ biến:
 - `Either the manager or the assistants are attending.` — Hoặc người quản lý, hoặc các trợ lý sẽ tham dự.
 - `Either the assistants or the manager is attending.` — Hoặc các trợ lý, hoặc người quản lý sẽ tham dự.
 
-Tuy nhiên, đổi động từ theo thứ tự có thể làm văn bản thiếu ổn định. Trong văn viết cẩn thận, có thể đặt thành phần số nhiều gần động từ hoặc viết lại: `Either the manager is attending, or the assistants are`.
+Tuy nhiên, đổi động từ theo thứ tự có thể làm văn bản thiếu ổn định. Trong văn viết cẩn thận, có thể đặt thành phần số nhiều gần động từ hoặc viết lại: `Either the manager is attending, or the assistants are.` — Hoặc người quản lý sẽ tham dự, hoặc các trợ lý sẽ tham dự.
 
-Nếu cả hai cùng số ít, dùng số ít: `Neither Lan nor Nam is available`. Nếu hai chủ thể cùng tạo một nhóm thực tế, `Lan and Nam are...` là cấu trúc khác.
+Nếu cả hai cùng số ít, dùng số ít: `Neither Lan nor Nam is available` (Cả Lan lẫn Nam đều không rảnh). Nếu hai chủ thể cùng tạo một nhóm thực tế, `Lan and Nam are...` là cấu trúc khác.
 
 ## Tiêu đề, tên tổ chức và từ có hình thức đặc biệt
 
-- `The News is on at six.` nếu `The News` là tên chương trình.
-- `Economics is difficult for many students.` — Economics là môn học số ít về ngữ pháp.
-- `The Netherlands is known for its canals.` — Tên quốc gia dùng số ít.
-- `The police are investigating.` — `Police` dùng động từ số nhiều trong nghĩa lực lượng/các cảnh sát.
+- `The news is good today.` — Tin tức hôm nay là tin tốt. `News` luôn dùng động từ số ít, dù tận cùng bằng `-s` và dù đó là tên một chương trình.
+- `Great Expectations is a long novel.` — *Great Expectations* là một cuốn tiểu thuyết dài. Tên tác phẩm có hình thức số nhiều vẫn dùng động từ số ít khi nói về cả tác phẩm.
+- `Economics is difficult for many students.` — Kinh tế học là môn khó với nhiều sinh viên. Tên môn học như `economics` có đuôi `-s` nhưng dùng động từ số ít.
+- `The Netherlands is known for its canals.` — Hà Lan nổi tiếng với các kênh đào. Tên quốc gia này có hình thức số nhiều nhưng dùng động từ số ít.
+- `The police are investigating.` — Cảnh sát đang điều tra. Ngược lại, `police` không có `-s` nhưng luôn dùng động từ số nhiều khi chỉ lực lượng cảnh sát.
 
 Không thể quyết định chỉ bằng chữ `-s`. Cần biết cách danh từ được quy ước trong nghĩa đó.
 
 ## `There is/are` và proximity
 
-Trong văn viết cẩn thận: `There are two problems`. Với danh sách hỗn hợp, người nói thường hòa hợp theo danh từ đầu: `There is a problem and two possible solutions`. Nếu câu nghe vướng, đổi thứ tự hoặc tách câu thay vì tranh cãi một quy tắc tuyệt đối.
+Trong văn viết cẩn thận: `There are two problems` (Có hai vấn đề). Với danh sách hỗn hợp, người nói thường hòa hợp theo danh từ đầu: `There is a problem and two possible solutions` (Có một vấn đề và hai giải pháp khả dĩ). Nếu câu nghe vướng, đổi thứ tự hoặc tách câu thay vì tranh cãi một quy tắc tuyệt đối.
 
 ## Quy trình xử lý
 
