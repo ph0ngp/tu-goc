@@ -299,7 +299,7 @@ const a2Chapter16BaseExerciseData: Record<string, Exercise[]> = {
       ["Câu nào nghĩa là một trong hai ngày đều được?", ["Either day is fine.", "Both day is fine.", "Neither days are fine."], "Either day is fine.", "`Either + singular noun + singular verb`."],
       ["Câu nào nghĩa là không ngày nào trong hai ngày phù hợp?", ["Neither day is suitable.", "Both day is suitable.", "Neither days are suitable."], "Neither day is suitable.", "`Neither` phủ định cả hai lựa chọn."],
       ["Cụm nào đúng trước đại từ?", ["both of them", "both them", "both of they"], "both of them", "Dùng `both of + object pronoun`."],
-      ["Cụm nào đúng với từ hạn định sở hữu?", ["both my sisters", "both of my sisters", "cả hai cách trên"], "cả hai cách trên", "Có thể nói `both my sisters` hoặc `both of my sisters`."],
+      ["Trước từ hạn định sở hữu `my`, có thể dùng cụm nào?", ["chỉ `both my sisters`", "chỉ `both of my sisters`", "cả hai cụm đều đúng"], "cả hai cụm đều đúng", "Có thể nói `both my sisters` hoặc `both of my sisters`."],
       ["Động từ nào đi với `Neither answer`?", ["is", "are", "have"], "is", "Trong mẫu A2, `neither + singular noun` dùng động từ số ít."],
       ["Câu nào đúng với `either of`?", ["Either of these keys may work.", "Either of these keys may works.", "Either these keys are work."], "Either of these keys may work.", "Sau `either of` là nhóm số nhiều; modal giữ `work` dạng cơ bản."],
       ["Câu nào nói tôi thích cả trà lẫn cà phê?", ["I like both tea and coffee.", "I like either tea and coffee.", "I like neither tea and coffee."], "I like both tea and coffee.", "Khung là `both ... and ...`."],

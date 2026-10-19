@@ -223,7 +223,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
       ["Câu hỏi Wh- nào đúng?", ["Where will they be staying?", "Where they will be staying?"], "Where will they be staying?", "Đưa `will` lên trước chủ ngữ trong câu hỏi."],
       ["Với động từ trạng thái `know`, câu nào tự nhiên?", ["By then, I will know the answer.", "By then, I will be knowing the answer."], "By then, I will know the answer.", "`Know` thường không dùng ở dạng tiếp diễn."],
       ["Câu nào trình bày cuộc gặp như một phần của lịch trình dự kiến ngày mai?", ["The manager will be meeting the new staff tomorrow.", "The manager met the new staff yesterday."], "The manager will be meeting the new staff tomorrow.", "Dạng tiếp diễn có thể nhìn sự việc như phần của tiến trình đã dự kiến."],
-      ["`Will you carry this bag?` khác `Will you be carrying a bag?` ở điểm nào?", ["Câu đầu có thể là yêu cầu; câu sau chủ yếu hỏi kế hoạch", "Hai câu luôn hoàn toàn giống nhau"], "Câu đầu có thể là yêu cầu; câu sau chủ yếu hỏi kế hoạch", "Dạng tiếp diễn làm câu hỏi ít giống một yêu cầu trực tiếp hơn."],
+      ["`Will you carry this bag?` khác `Will you be carrying a bag?` ở điểm nào?", ["`Will you carry this bag?` có thể là yêu cầu; `Will you be carrying a bag?` chủ yếu hỏi kế hoạch", "Hai câu luôn hoàn toàn giống nhau"], "`Will you carry this bag?` có thể là yêu cầu; `Will you be carrying a bag?` chủ yếu hỏi kế hoạch", "Dạng tiếp diễn làm câu hỏi ít giống một yêu cầu trực tiếp hơn."],
     ],
     orders: [
       ["Sắp xếp câu nói giờ này ngày mai họ sẽ đang bay.", "This time tomorrow, they will be flying to Seoul.", "Mốc tương lai đứng trước `will be flying`."],

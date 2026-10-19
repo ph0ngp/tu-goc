@@ -124,6 +124,19 @@ test("never lets the position of an option give away the answer", () => {
       }
     }
 
+    // Phương án được xáo khi hiển thị, nên lời giải thích không được chỉ “câu đầu”, “cách trên”...
+    const positional = /(câu|phương án|lựa chọn|đáp án|cách|cụm)\s+(đầu tiên|đầu|thứ nhất|thứ hai|thứ ba|trên|dưới)(?![\p{L}])/iu;
+    for (const exercise of exercises) {
+      if (!["choice", "context", "grid", "dropdown", "repair", "timeline"].includes(exercise.kind)) continue;
+      const options = exercise.kind === "choice" || exercise.kind === "context" ? exercise.options
+        : exercise.kind === "grid" ? exercise.rows.flatMap((row) => row.options)
+          : exercise.kind === "dropdown" ? exercise.slots.flatMap((slot) => slot.options)
+            : exercise.kind === "repair" ? exercise.replacements : [];
+      for (const text of [exercise.hint, exercise.explanation, ...options]) {
+        assert.ok(!positional.test(text.replace(/`[^`]*`/g, "")), `${exercise.id}: chỉ phương án theo vị trí — ${text}`);
+      }
+    }
+
     const choiceSlots = slots.filter(([, optionCount]) => optionCount >= 2);
     for (let position = 0; position < 4; position++) {
       const actual = choiceSlots.filter(([index]) => index === position).length;

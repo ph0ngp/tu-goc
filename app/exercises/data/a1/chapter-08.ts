@@ -748,7 +748,7 @@ const a1Chapter08TopUps: Partial<Record<string, Exercise[]>> = {
       ["chỉ dẫn rẽ trái", "Turn left.", "Turns left.", "Động từ đầu câu không thêm `-s`."],
       ["hướng dẫn thêm nước", "Add water.", "Adding water.", "Mỗi bước hướng dẫn bắt đầu bằng động từ cơ bản."],
       ["cấm chạm vào vật", "Don't touch it.", "Not touch it.", "Dùng `don't + động từ cơ bản`."],
-      ["phân biệt câu kể và mệnh lệnh", "Close the door.", "You close the door every day.", "Câu đầu là mệnh lệnh vì chủ ngữ `you` được hiểu ngầm."],
+      ["một mệnh lệnh, không phải câu kể về thói quen", "Close the door.", "You close the door every day.", "Mệnh lệnh bắt đầu ngay bằng động từ cơ bản vì chủ ngữ `you` được hiểu ngầm; câu kể về thói quen thì nêu rõ chủ ngữ."],
       ["dấu câu cho cảnh báo mạnh", "Look out!", "Look out?", "Dấu chấm than phù hợp với cảnh báo mạnh."],
       ["mệnh lệnh nhiều bước đầu tiên", "Wash the rice.", "Washes the rice.", "Động từ hướng dẫn ở dạng cơ bản."],
       ["mệnh lệnh nhiều bước phủ định", "Don't open the lid.", "Doesn't open the lid.", "Câu mệnh lệnh phủ định không dùng `doesn't`."],
