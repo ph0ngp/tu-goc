@@ -198,7 +198,7 @@ function b1SeedIndex(seeds: B1PracticeSeed[], index: number, offset: number): nu
 
 function b1ChoicePrompt(cue: string): string {
   const normalizedCue = cue.replace(/[.?]$/, "");
-  if (/^(hỏi|nói|dùng|đặt|thuật lại|tường thuật|nêu|nhấn|giữ|lược|phân biệt|kiểm tra|mong|ước|xác nhận|ngạc nhiên|gợi ý|trả lời|viết|đưa|phủ định|loại trừ|suy đoán|đồng tình|chuyển|tránh|hướng dẫn|gọi|dự đoán|thể hiện)\b/i.test(cue)) {
+  if (/^(hỏi|nói|dùng|đặt|thuật lại|tường thuật|nêu|nhấn|giữ|lược|phân biệt|kiểm tra|mong|ước|xác nhận|ngạc nhiên|gợi ý|trả lời|viết|đưa|phủ định|loại trừ|suy đoán|đồng tình|chuyển|tránh|hướng dẫn|gọi|dự đoán|thể hiện|làm rõ|mô tả|diễn tả|hòa hợp|duy trì|nhận ra|chia|tiếc|thêm|khôi phục|phê bình|để ngỏ|thay|lùi|chọn|nối|rút gọn|bày tỏ|đánh giá|giới thiệu|nhắc lại)(?=\s|$)/iu.test(cue)) {
     return `Câu nào ${normalizedCue}?`;
   }
   return `Câu nào diễn đạt đúng điều sau: ${normalizedCue}?`;

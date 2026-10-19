@@ -36,7 +36,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
       ["Trong `Have they been waiting long?`, chọn trợ động từ đứng trước chủ ngữ.", "Have they been waiting long?", ["Have"], "`Have` được đảo lên đầu để tạo câu hỏi."],
     ],
     matchPrompt: "Ghép dấu hiệu thời gian với loại thông tin nó cung cấp.",
-    pairs: [{ left: "since 2021", right: "mốc bắt đầu" }, { left: "for two hours", right: "độ dài" }, { left: "lately", right: "khoảng gần hiện tại" }, { left: "all morning", right: "khoảng hoạt động kéo dài" }],
+    pairs: [{ left: "since 2021", right: "mốc bắt đầu" }, { left: "for two hours", right: "độ dài" }, { left: "lately", right: "khoảng gần hiện tại" }, { left: "all morning", right: "suốt trọn một buổi" }],
     sortPrompt: "Phân loại câu theo hoạt động còn tiếp tục hoặc hoạt động vừa dừng để lại dấu hiệu.", buckets: ["Còn tiếp tục", "Vừa dừng, còn dấu hiệu"],
     items: [{ text: "I've been living here since May.", bucket: "Còn tiếp tục" }, { text: "She's been studying for three hours.", bucket: "Còn tiếp tục" }, { text: "Your shoes are muddy. Have you been walking in the rain?", bucket: "Vừa dừng, còn dấu hiệu" }, { text: "The kitchen smells wonderful. Dad has been cooking.", bucket: "Vừa dừng, còn dấu hiệu" }],
     gridPrompts: ["Chọn `have` hoặc `has` cho từng chủ ngữ.", "Chọn `since` hoặc `for` theo cụm thời gian.", "Chọn dạng hoàn thành phù hợp với loại động từ."],
@@ -110,7 +110,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     ],
     repairs: [
       ["Chọn quá khứ phân từ đúng trong `She had went home before noon`.", "She had went home before noon.", "went", ["gone", "go", "going"], "gone", "Sau `had` dùng quá khứ phân từ `gone`."],
-      ["Chọn trợ động từ đúng trong `They have finished before we arrived` khi cả câu nhìn từ quá khứ.", "They have finished before we arrived.", "have", ["had", "were", "did"], "had", "Việc hoàn tất xảy ra trước mốc quá khứ `arrived`."],
+      ["Chọn trợ động từ đúng trong `They have finished before we arrived` khi cả câu nhìn từ quá khứ.", "They have finished before we arrived.", "have", ["had", "are", "did"], "had", "Việc hoàn tất xảy ra trước mốc quá khứ `arrived`."],
       ["Chọn dạng đúng trong câu hỏi `Did he had eaten before the meeting?`.", "Did he had eaten before the meeting?", "Did he had", ["Had he", "Did he", "Have he"], "Had he", "Câu hỏi quá khứ hoàn thành dùng `Had + S + pp`."],
     ],
     taps: [
@@ -178,7 +178,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
       ["Động từ trạng thái nào thường không đi với `would` để nói thói quen cũ?", ["know", "visit", "play"], "know", "`Know` là trạng thái nên ưu tiên quá khứ đơn hoặc `used to`."],
       ["Phủ định chuẩn của `used to` là gì?", ["didn't use to", "didn't used to", "wasn't use to"], "didn't use to", "Sau `didn't`, dùng dạng cơ bản `use`."],
       ["Câu hỏi nào đúng?", ["Did you use to live here?", "Did you used to live here?"], "Did you use to live here?", "Sau `did`, dùng `use to`."],
-      ["Câu nào cần bối cảnh quá khứ để `would` rõ nghĩa thói quen?", ["When we were children, we would swim here.", "We would live here as a permanent state."], "When we were children, we would swim here.", "Mốc `when we were children` xác lập thói quen cũ."],
+      ["Câu nào dùng `would` đúng để nói thói quen trong quá khứ?", ["When we were children, we would swim here.", "When we were children, we would live in Hue."], "When we were children, we would swim here.", "`Would` chỉ dùng cho hành động lặp lại trong một bối cảnh quá khứ đã rõ; trạng thái như sống ở đâu dùng `used to`."],
       ["Câu nào dùng quá khứ đơn cho thói quen và vẫn đúng?", ["We walked to school every day.", "We had walk to school every day."], "We walked to school every day.", "Quá khứ đơn dùng được cho thói quen trong giai đoạn đã kết thúc."],
       ["`Used to` thường gợi ý điều gì?", ["Hiện tại đã khác", "Hành động chắc chắn đang diễn ra", "Sự việc chỉ xảy ra ngày mai"], "Hiện tại đã khác", "Cấu trúc thường đặt thói quen hoặc trạng thái trong quá khứ đối lập hiện tại."],
       ["Câu nào dùng `have` như hoạt động lặp lại nên đi với `would` được?", ["On Sundays, we would have lunch outside.", "We would have a house by the sea."], "On Sundays, we would have lunch outside.", "`Have lunch` là hoạt động, khác `have` nghĩa sở hữu."],
@@ -203,7 +203,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     pairs: [{ left: "quá khứ đơn", right: "sự kiện riêng hoặc thói quen đã kết thúc" }, { left: "used to", right: "hành động hoặc trạng thái cũ" }, { left: "would", right: "hành động lặp lại sau bối cảnh quá khứ" }, { left: "be used to", right: "đã quen với điều gì" }],
     sortPrompt: "Phân loại ví dụ theo hành động lặp lại hoặc trạng thái cũ.", buckets: ["Hành động lặp lại", "Trạng thái cũ"],
     items: [{ text: "play outside every evening", bucket: "Hành động lặp lại" }, { text: "visit our aunt each summer", bucket: "Hành động lặp lại" }, { text: "know all the neighbours", bucket: "Trạng thái cũ" }, { text: "have a small shop", bucket: "Trạng thái cũ" }],
-    gridPrompts: ["Chọn dạng phù hợp với một lần, thói quen hoặc trạng thái.", "Chọn hình thức `used to` đúng.", "Chọn câu dùng `would` tự nhiên."],
+    gridPrompts: ["Chọn dạng phù hợp với một lần, thói quen hoặc trạng thái.", "Chọn hình thức `used to` đúng.", "Chọn câu tự nhiên; `would` chỉ hợp với hành động lặp lại."],
     gridRows: [
       { cue: "Một lần hôm qua", options: ["I visited Lan yesterday.", "I used to visit Lan yesterday."], answer: "I visited Lan yesterday.", completed: "I visited Lan yesterday." }, { cue: "Trạng thái cũ", options: ["I used to be shy.", "I would be shy."], answer: "I used to be shy.", completed: "I used to be shy." }, { cue: "Thói quen cũ", options: ["We played outside every day.", "We play outside every day."], answer: "We played outside every day.", completed: "We played outside every day." },
       { cue: "Phủ định", options: ["didn't use to", "didn't used to"], answer: "didn't use to", completed: "didn't use to" }, { cue: "Câu hỏi", options: ["Did she use to...?", "Did she used to...?"], answer: "Did she use to...?", completed: "Did she use to...?" }, { cue: "Khẳng định", options: ["used to live", "use to lived"], answer: "used to live", completed: "used to live" },
