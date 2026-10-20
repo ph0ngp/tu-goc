@@ -181,7 +181,8 @@ function quotedStatement(value: string): string {
 
 function normalizeEditorialPunctuation(value: string): string {
   return value
-    .replace(/(`[^`\n]*[.?!]`)[.,](?=\s|$)/g, "$1")
+    // Câu trong code đã có dấu kết câu thì bỏ dấu câu lặp phía sau, trừ dấu phẩy ngăn hai mục code trong danh sách.
+    .replace(/(`[^`\n]*[.?!]`)(?:\.|,(?!\s+`))(?=\s|$)/g, "$1")
     .replace(/([.?!])”\./g, "$1”")
     .replace(/([.?!])””/g, "$1”")
     // Một câu được ghép vào cuối mệnh lệnh không được để lại “?.” hay “..”.

@@ -278,7 +278,10 @@ function variantFor(variants: string[], index: number, label: string): string {
  */
 function chunkText(chunk: string, sentence: string): string {
   const pattern = chunk.split(" ").map(escapeRegExp).join("\\s*");
-  return (sentence.match(new RegExp(pattern, "u"))?.[0] ?? chunk).replace(/[.?!]+$/, "");
+  const text = sentence.match(new RegExp(pattern, "u"))?.[0] ?? chunk;
+  // Bỏ dấu kết câu ở cuối phần khác nhau, trừ khi chính dấu câu là chỗ khác nhau.
+  const trimmed = text.replace(/[.?!]+$/, "");
+  return /[\p{L}\p{N}]/u.test(trimmed) ? trimmed : text;
 }
 
 /** Phần làm câu đúng khác câu sai, đủ ngắn để nêu trong gợi ý và không phải cả câu. */
@@ -414,6 +417,7 @@ function advancedGridHint(rows: AdvancedGridRow[]): string {
     if (!answerChunk || !distractorChunk || answerChunk.split(" ").length > 4 || distractorChunk.split(" ").length > 4) return [];
     if (fragmentAnswers.some((pattern) => pattern.test(answerChunk) || pattern.test(distractorChunk))) return [];
     const [first, second] = [chunkText(answerChunk, row.answer), chunkText(distractorChunk, other)].sort((left, right) => left.localeCompare(right, "en"));
+    if (!first.trim() || !second.trim() || first === second) return [];
     return [`\`${first}\` hay \`${second}\``];
   });
   if (contrasts.length === 1) {

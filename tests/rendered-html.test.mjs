@@ -128,7 +128,7 @@ test("renders inline code in grid rows and keeps their labels plain", async () =
   assert.doesNotMatch(markup, /`hardly`/);
 });
 
-test("keeps Markdown backticks out of answer options, table cells and labels", async () => {
+test("keeps Markdown backticks out of prompts, hints, answer options, table cells and labels", async () => {
   const worker = await loadWorker();
   const practiceMarkup = async (slug) => {
     const response = await renderWith(worker, `/ngu-phap/${slug}/luyen-tap`);
@@ -160,10 +160,20 @@ test("keeps Markdown backticks out of answer options, table cells and labels", a
   const englishForms = await lessonMarkup("b1-relative-whose-where-when");
   assert.match(englishForms, /<td><code>This is the café where we first met\.<\/code><\/td>/);
 
+  // Mục phân loại có lời tiếng Việt hiện như văn xuôi; hình thức tiếng Anh trần vẫn là code.
+  const sort = await lessonMarkup("a2-definite-article");
+  assert.match(sort, /<td><span><code>books<\/code> nói chung<\/span><\/td>/);
+  assert.match(sort, /<td><code>the only exit<\/code><\/td>/);
+  assert.match(sort, /aria-label="Phân loại books nói chung"/);
+
+  // Khi hai câu chỉ khác nhau ở dấu câu, gợi ý vẫn nêu đúng dấu câu đó thay vì một khối code rỗng.
+  const punctuation = await lessonMarkup("b1-punctuation-direct-relative-apposition");
+  assert.match(punctuation, /<code>\?<\/code> hay <code>\?,<\/code>/);
+
   for (const lesson of bookLessons) {
     const markup = await practiceMarkup(lesson.slug);
     const shown = [
-      ...[...markup.matchAll(/<(option|td|label)\b[^>]*>([\s\S]*?)<\/\1>/g)]
+      ...[...markup.matchAll(/<(option|td|label|p|h2)\b[^>]*>([\s\S]*?)<\/\1>/g)]
         .map(([, , content]) => content.replace(/<[^>]+>/g, "")),
       ...[...markup.matchAll(/aria-label="([^"]*)"/g)].map(([, label]) => label),
     ];

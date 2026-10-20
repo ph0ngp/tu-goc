@@ -182,7 +182,7 @@ const a2Chapter17BaseExerciseData: Record<string, Exercise[]> = {
     pairs: [{ left: "so far", right: "cho đến giờ — hiện tại hoàn thành" }, { left: "this year", right: "trong năm nay, khi năm chưa kết thúc — hiện tại hoàn thành" }, { left: "yesterday", right: "hôm qua — quá khứ đơn" }, { left: "at nine this morning", right: "lúc chín giờ sáng nay, giờ đã qua — quá khứ đơn" }],
     sortPrompt: "Phân loại mốc theo khoảng mở và khoảng đã đóng.",
     buckets: ["Còn nối với hiện tại", "Đã kết thúc"],
-    items: [{ text: "so far", bucket: "Còn nối với hiện tại" }, { text: "up to now", bucket: "Còn nối với hiện tại" }, { text: "this month (tháng còn tiếp diễn)", bucket: "Còn nối với hiện tại" }, { text: "last month", bucket: "Đã kết thúc" }, { text: "in 2021", bucket: "Đã kết thúc" }, { text: "two days ago", bucket: "Đã kết thúc" }],
+    items: [{ text: "so far", bucket: "Còn nối với hiện tại" }, { text: "up to now", bucket: "Còn nối với hiện tại" }, { text: "`this month` (tháng còn tiếp diễn)", bucket: "Còn nối với hiện tại" }, { text: "last month", bucket: "Đã kết thúc" }, { text: "in 2021", bucket: "Đã kết thúc" }, { text: "two days ago", bucket: "Đã kết thúc" }],
     gridPrompts: ["Chọn thì theo khoảng thời gian.", "Chọn hình thức đúng với khoảng còn mở.", "Chọn quá khứ đơn cho mốc đã đóng."],
     gridRows: [
       { cue: "so far", options: ["We have made good progress.", "We made good progress yesterday.", "We have make progress."], answer: "We have made good progress.", completed: "We have made good progress so far." },

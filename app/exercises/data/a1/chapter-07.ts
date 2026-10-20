@@ -87,7 +87,7 @@ export const a1Chapter07ExerciseData: Record<string, Exercise[]> = {
     pairs: [{ left: "How many books?", right: "số quyển sách" }, { left: "How much water?", right: "lượng nước" }, { left: "How much is this book?", right: "giá của quyển sách" }, { left: "How many bottles of water?", right: "số chai nước" }],
     sortPrompt: "Phân loại các câu hỏi theo `how many` hoặc `how much`.",
     buckets: ["how many", "how much"],
-    items: [{ text: "___ students?", bucket: "how many" }, { text: "___ bottles?", bucket: "how many" }, { text: "___ pieces of cake?", bucket: "how many" }, { text: "___ water?", bucket: "how much" }, { text: "___ money?", bucket: "how much" }, { text: "___ is this? (giá)", bucket: "how much" }],
+    items: [{ text: "___ students?", bucket: "how many" }, { text: "___ bottles?", bucket: "how many" }, { text: "___ pieces of cake?", bucket: "how many" }, { text: "___ water?", bucket: "how much" }, { text: "___ money?", bucket: "how much" }, { text: "`___ is this?` (giá)", bucket: "how much" }],
     gridPrompts: ["Chọn `how many` hoặc `how much` cho từng danh từ.", "Chọn dạng đơn vị đúng cho từng lượng.", "Chọn câu hỏi hoàn chỉnh đúng cho từng tình huống."],
     gridRows: [
       { cue: "___ apples", options: ["how many", "how much", "how a lot"], answer: "how many", completed: "How many apples?" },

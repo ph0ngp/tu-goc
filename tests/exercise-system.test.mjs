@@ -46,7 +46,7 @@ test("keeps every exercise answer valid and checkable", () => {
     assert.doesNotMatch(exercise.explanation, /[.?!]”\./, `${exercise.id}: lời giải có hai dấu kết thúc liên tiếp`);
     for (const [label, value] of [["câu hỏi", exercise.prompt], ["gợi ý", exercise.hint], ["lời giải", exercise.explanation]]) {
       assert.doesNotMatch(value, /””/, `${exercise.id}: ${label} có hai dấu ngoặc kép đóng liền nhau`);
-      assert.doesNotMatch(value, /`[^`]*[.?!]`[.,]/, `${exercise.id}: ${label} lặp dấu câu ngay sau nội dung mã`);
+      assert.doesNotMatch(value, /`[^`]*[.?!]`(?:\.|,(?!\s+`))/, `${exercise.id}: ${label} lặp dấu câu ngay sau nội dung mã`);
     }
     if (exercise.kind === "context") {
       assert.ok(exercise.context.trim(), `${exercise.id}: bài có ngữ cảnh phải chứa ngữ cảnh thật`);

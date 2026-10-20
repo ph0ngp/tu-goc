@@ -144,6 +144,7 @@ function MatchResponse({ exercise, values, onChange }: ExtractedResponseProps<"m
 }
 
 function SortResponse({ exercise, values, onChange }: ExtractedResponseProps<"sort">) {
+  const prose = proseFlags(exercise.items.map((item) => item.text));
   return (
     <div className="practice-table-wrap">
       <table>
@@ -151,10 +152,10 @@ function SortResponse({ exercise, values, onChange }: ExtractedResponseProps<"so
         <tbody>
           {exercise.items.map((item, index) => (
             <tr key={`${item.text}-${index}`}>
-              <td><code>{item.text}</code></td>
+              <td><AnswerText prose={prose[index]}>{item.text}</AnswerText></td>
               <td>
                 <SelectAnswer
-                  label={`Phân loại ${item.text}`}
+                  label={`Phân loại ${inlineMarkdownText(item.text)}`}
                   value={values[`sort-${index}`] ?? ""}
                   options={exercise.buckets}
                   onChange={(value) => onChange(`sort-${index}`, value)}

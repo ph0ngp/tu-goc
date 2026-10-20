@@ -1079,19 +1079,19 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       ],
       "items": [
         {
-          "text": "know · biết",
+          "text": "`know` · biết",
           "bucket": "Trạng thái"
         },
         {
-          "text": "want · muốn",
+          "text": "`want` · muốn",
           "bucket": "Trạng thái"
         },
         {
-          "text": "run · chạy",
+          "text": "`run` · chạy",
           "bucket": "Hành động"
         },
         {
-          "text": "read · đọc",
+          "text": "`read` · đọc",
           "bucket": "Hành động"
         }
       ]

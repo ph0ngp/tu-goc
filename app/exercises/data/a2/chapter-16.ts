@@ -134,7 +134,7 @@ const a2Chapter16BaseExerciseData: Record<string, Exercise[]> = {
     pairs: [{ left: "ngữ cảnh chung", right: "Close the window." }, { left: "đối tượng duy nhất", right: "the moon" }, { left: "cụm phía sau xác định", right: "the bag on the chair" }, { left: "so sánh nhất", right: "the best answer" }],
     sortPrompt: "Phân loại cụm theo có `the` và không có mạo từ.",
     buckets: ["Dùng the vì xác định", "Không dùng the trong ví dụ"],
-    items: [{ text: "the manager we met", bucket: "Dùng the vì xác định" }, { text: "the water in this bottle", bucket: "Dùng the vì xác định" }, { text: "the only exit", bucket: "Dùng the vì xác định" }, { text: "Mai", bucket: "Không dùng the trong ví dụ" }, { text: "Vietnam", bucket: "Không dùng the trong ví dụ" }, { text: "books nói chung", bucket: "Không dùng the trong ví dụ" }],
+    items: [{ text: "the manager we met", bucket: "Dùng the vì xác định" }, { text: "the water in this bottle", bucket: "Dùng the vì xác định" }, { text: "the only exit", bucket: "Dùng the vì xác định" }, { text: "Mai", bucket: "Không dùng the trong ví dụ" }, { text: "Vietnam", bucket: "Không dùng the trong ví dụ" }, { text: "`books` nói chung", bucket: "Không dùng the trong ví dụ" }],
     gridPrompts: ["Chọn `the` theo ngữ cảnh đã biết.", "Chọn `the` với duy nhất hoặc so sánh nhất.", "Chọn `the` khi phần sau xác định danh từ."],
     gridRows: [
       { cue: "Cả hai đang trong phòng và cửa đang mở.", options: ["Close the door.", "Close a door.", "Close door."], answer: "Close the door.", completed: "Close the door." },
