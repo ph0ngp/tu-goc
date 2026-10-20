@@ -12,3 +12,8 @@ export function InlineMarkdown({ children }: { children: string }) {
 export function inlineMarkdownText(markdown: string): string {
   return markdown.replaceAll("`", "");
 }
+
+/** Chữ thuần cho nơi không chứa được thẻ như <option>: hình thức tiếng Anh nằm trong ngoặc kép. */
+export function inlineMarkdownQuotedText(markdown: string): string {
+  return markdown.replace(/`([^`]+)`/g, "“$1”").replaceAll("`", "");
+}

@@ -1,6 +1,6 @@
 import type { Exercise } from "../exercise-types";
 import { matchOptionOrder } from "../exercises/answer-order";
-import { InlineMarkdown, inlineMarkdownText } from "./inline-markdown";
+import { InlineMarkdown, inlineMarkdownQuotedText, inlineMarkdownText } from "./inline-markdown";
 
 type ExerciseResponseProps = {
   id: string;
@@ -96,6 +96,7 @@ function ChoiceResponse({
   value: string;
   onChange: (value: string) => void;
 }) {
+  const prose = proseFlags(options);
   return (
     <fieldset className="practice-options">
       <legend className="sr-only">Chọn một đáp án</legend>
@@ -108,7 +109,7 @@ function ChoiceResponse({
             checked={value === option}
             onChange={() => onChange(option)}
           />
-          <code>{option}</code>
+          <AnswerText prose={prose[index]}>{option}</AnswerText>
         </label>
       ))}
     </fieldset>
@@ -117,6 +118,7 @@ function ChoiceResponse({
 
 function MatchResponse({ exercise, values, onChange }: ExtractedResponseProps<"match">) {
   const options = matchOptionOrder(exercise);
+  const prose = proseFlags(exercise.pairs.map((pair) => pair.left));
   return (
     <div className="practice-table-wrap">
       <table>
@@ -124,10 +126,10 @@ function MatchResponse({ exercise, values, onChange }: ExtractedResponseProps<"m
         <tbody>
           {exercise.pairs.map((pair, index) => (
             <tr key={`${pair.left}-${index}`}>
-              <td><code>{pair.left}</code></td>
+              <td><AnswerText prose={prose[index]}>{pair.left}</AnswerText></td>
               <td>
                 <SelectAnswer
-                  label={`Ghép với ${pair.left}`}
+                  label={`Ghép với ${inlineMarkdownText(pair.left)}`}
                   value={values[`match-${index}`] ?? ""}
                   options={options}
                   onChange={(value) => onChange(`match-${index}`, value)}
@@ -356,10 +358,25 @@ function SelectAnswer({
     <select aria-label={label} value={value} onChange={(event) => onChange(event.target.value)}>
       <option value="">Chọn…</option>
       {options.map((option, index) => (
-        <option key={`${option}-${index}`} value={option}>{option}</option>
+        <option key={`${option}-${index}`} value={option}>{inlineMarkdownQuotedText(option)}</option>
       ))}
     </select>
   );
+}
+
+// Chữ có dấu của tiếng Việt. Dấu sắc, huyền trên nguyên âm còn gặp trong từ mượn
+// như `café`, nên chỉ nhóm có chữ ở dòng thứ hai mới chắc chắn là lời tiếng Việt.
+const vietnameseLetter = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/i;
+const vietnameseOnlyLetter = /[ạảãâầấậẩẫăằắặẳẵẹẻẽêềếệểễịỉĩọỏõôồốộổỗơờớợởỡụủũưừứựửữỳỵỷỹđ]/i;
+
+/** Mục nào trong một nhóm là lời tiếng Việt; mục còn lại là hình thức tiếng Anh trần. */
+function proseFlags(texts: string[]): boolean[] {
+  const vietnameseGroup = texts.some((text) => text.includes("`") || vietnameseOnlyLetter.test(text));
+  return texts.map((text) => text.includes("`") || (vietnameseGroup && vietnameseLetter.test(text)));
+}
+
+function AnswerText({ prose, children }: { prose: boolean; children: string }) {
+  return prose ? <span><InlineMarkdown>{children}</InlineMarkdown></span> : <code>{children}</code>;
 }
 
 type ExtractedResponseProps<K extends Exercise["kind"]> = {
