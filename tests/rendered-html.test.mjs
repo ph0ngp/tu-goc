@@ -8,11 +8,18 @@ import {
 
 const projectRoot = new URL("../", import.meta.url);
 
-async function render(pathname = "/") {
+async function loadWorker() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
+  return worker;
+}
 
+async function render(pathname = "/") {
+  return renderWith(await loadWorker(), pathname);
+}
+
+function renderWith(worker, pathname) {
   return worker.fetch(
     new Request(`http://localhost${pathname}`, {
       headers: { accept: "text/html" },
@@ -106,6 +113,63 @@ test("server-renders practice at its own bookmarkable URL", async () => {
   assert.doesNotMatch(html, /class="lesson-markdown"/);
   assert.doesNotMatch(html, /practice-prompt|practice-context/);
   assert.doesNotMatch(visibleText, /Ghép tên tiếng Việt với tên tiếng AnhBốn tên gọi/);
+});
+
+test("renders inline code in grid rows and keeps their labels plain", async () => {
+  const lesson = bookLessonForLegacyId("b1-question-tags");
+  assert.ok(lesson);
+  const response = await render(`/ngu-phap/${lesson.slug}/luyen-tap`);
+  assert.equal(response.status, 200);
+
+  // Dữ liệu hydrate trong <script> vẫn giữ Markdown gốc; chỉ xét phần HTML hiển thị.
+  const markup = (await response.text()).replace(/<script[\s\S]*?<\/script>/g, "");
+  assert.match(markup, /<td>Câu chính có <code>hardly<\/code>, mang nghĩa gần phủ định\.<\/td>/);
+  assert.match(markup, /aria-label="Trả lời cho Câu chính có hardly, mang nghĩa gần phủ định\."/);
+  assert.doesNotMatch(markup, /`hardly`/);
+});
+
+test("keeps Markdown backticks out of answer options, table cells and labels", async () => {
+  const worker = await loadWorker();
+  const practiceMarkup = async (slug) => {
+    const response = await renderWith(worker, `/ngu-phap/${slug}/luyen-tap`);
+    assert.equal(response.status, 200, slug);
+    // Dữ liệu hydrate trong <script> vẫn giữ Markdown gốc; chỉ xét phần HTML hiển thị.
+    return (await response.text()).replace(/<script[\s\S]*?<\/script>/g, "");
+  };
+  const lessonMarkup = (legacyId) => {
+    const lesson = bookLessonForLegacyId(legacyId);
+    assert.ok(lesson, legacyId);
+    return practiceMarkup(lesson.slug);
+  };
+
+  // <option> không chứa được <code>: hiện ngoặc kép, còn value vẫn là dữ liệu gốc để chấm.
+  const dropdown = await lessonMarkup("b1-subject-object-questions-deep");
+  assert.match(
+    dropdown,
+    /<option value="`What` làm chủ ngữ nên động từ quá khứ đứng ngay sau, không thêm `did`\.">“What” làm chủ ngữ nên động từ quá khứ đứng ngay sau, không thêm “did”\.<\/option>/,
+  );
+
+  const match = await lessonMarkup("b1-question-tags");
+  assert.match(match, /<td><span>xác nhận một câu có <code>never<\/code><\/span><\/td>/);
+  assert.match(match, /aria-label="Ghép với xác nhận một câu có never"/);
+
+  const choice = await lessonMarkup("sentence-order");
+  assert.match(choice, /<span>trước <code>read<\/code><\/span><\/label>/);
+
+  // Câu tiếng Anh có `café` vẫn là hình thức tiếng Anh, không bị coi là lời tiếng Việt.
+  const englishForms = await lessonMarkup("b1-relative-whose-where-when");
+  assert.match(englishForms, /<td><code>This is the café where we first met\.<\/code><\/td>/);
+
+  for (const lesson of bookLessons) {
+    const markup = await practiceMarkup(lesson.slug);
+    const shown = [
+      ...[...markup.matchAll(/<(option|td|label)\b[^>]*>([\s\S]*?)<\/\1>/g)]
+        .map(([, , content]) => content.replace(/<[^>]+>/g, "")),
+      ...[...markup.matchAll(/aria-label="([^"]*)"/g)].map(([, label]) => label),
+    ];
+    const withBacktick = shown.find((text) => text.includes("`"));
+    assert.equal(withBacktick, undefined, `${lesson.slug}: ${withBacktick}`);
+  }
 });
 
 test("pre-renders every lesson and uses static document navigation", async () => {
