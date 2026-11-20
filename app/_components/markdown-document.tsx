@@ -1,5 +1,6 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { HOME_HREF, lessonHref } from "../../lib/site.mjs";
 import { bookChapters } from "../book-content.generated";
 
 function sourceHref(href: string | undefined, sourcePath: string) {
@@ -16,8 +17,8 @@ function sourceHref(href: string | undefined, sourcePath: string) {
 
   const resolved = baseParts.join("/");
   const chapter = bookChapters.find((candidate) => candidate.sourcePath === resolved);
-  if (chapter?.slug === "introduction" || resolved === "index.md") return "/";
-  return chapter?.slug ? `/ngu-phap/${chapter.slug}` : href;
+  if (chapter?.slug === "introduction" || resolved === "index.md") return HOME_HREF;
+  return chapter?.slug ? lessonHref(chapter.slug) : href;
 }
 
 export function MarkdownDocument({

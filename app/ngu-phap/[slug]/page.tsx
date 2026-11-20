@@ -5,7 +5,8 @@ import {
   bookLessons,
 } from "../../book-content.generated";
 import { BookLessonPage } from "../../book-lesson-page";
-import { lessonDescription, socialMetadata } from "../../site-metadata";
+import { lessonHref } from "../../../lib/site.mjs";
+import { lessonDescription, pageMetadata } from "../../site-metadata";
 
 type CanonicalLessonRouteProps = {
   params: Promise<{ slug: string }>;
@@ -26,11 +27,10 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: { canonical: `/ngu-phap/${lesson.slug}` },
-    ...socialMetadata({
+    ...pageMetadata({
       title,
       description,
-      path: `/ngu-phap/${lesson.slug}`,
+      href: lessonHref(lesson.slug),
     }),
   };
 }

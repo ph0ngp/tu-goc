@@ -1,3 +1,4 @@
+import { HOME_HREF, lessonHref } from "../lib/site.mjs";
 import { bookSummary } from "./book-summary.generated";
 
 function sidebarChapterTitle(title: string) {
@@ -11,12 +12,12 @@ export function BookTableOfContents({
   activeLessonSlug?: string;
   onNavigate?: () => void;
 }) {
-  const activeHref = activeLessonSlug ? `/ngu-phap/${activeLessonSlug}` : "/";
+  const activeHref = activeLessonSlug ? lessonHref(activeLessonSlug) : HOME_HREF;
 
   return (
     <nav className="book-toc" aria-label="Mục lục toàn bộ sách">
       <a
-        className={activeHref === "/" ? "toc-introduction active" : "toc-introduction"}
+        className={activeHref === HOME_HREF ? "toc-introduction active" : "toc-introduction"}
         href={bookSummary.introduction.href}
         onClick={onNavigate}
       >

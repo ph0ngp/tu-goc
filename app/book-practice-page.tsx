@@ -5,7 +5,7 @@ import { BookChrome } from "./book-chrome";
 import { bookLessonBySlug, bookLessons } from "./book-content.generated";
 import { LessonNavigation } from "./lesson-navigation";
 import { PracticeDocument } from "./practice-document";
-import { SITE_URL } from "./site-metadata";
+import { absoluteUrl, lessonHref, practiceHref } from "../lib/site.mjs";
 
 export async function BookPracticePage({ slug }: { slug: string }) {
   const lesson = bookLessonBySlug(slug);
@@ -29,11 +29,11 @@ export async function BookPracticePage({ slug }: { slug: string }) {
             inLanguage: "vi",
             educationalLevel: lesson.level,
             learningResourceType: "practice",
-            url: `${SITE_URL}/ngu-phap/${lesson.slug}/luyen-tap`,
+            url: absoluteUrl(practiceHref(lesson.slug)),
             isPartOf: {
               "@type": "LearningResource",
               name: lesson.title,
-              url: `${SITE_URL}/ngu-phap/${lesson.slug}`,
+              url: absoluteUrl(lessonHref(lesson.slug)),
             },
           }}
         />

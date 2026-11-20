@@ -2,6 +2,7 @@ import { readdir, readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { compactSearchText, normalizeSearchText } from "../lib/search-normalization.mjs";
+import { absoluteUrl, HOME_HREF, lessonHref, practiceHref } from "../lib/site.mjs";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourceRoot = path.join(projectRoot, "book", "src");
@@ -9,7 +10,7 @@ const outputPath = path.join(projectRoot, "app", "book-content.generated.ts");
 const summaryOutputPath = path.join(projectRoot, "app", "book-summary.generated.ts");
 const searchOutputPath = path.join(projectRoot, "app", "book-search-index.generated.ts");
 const exerciseLoaderOutputPath = path.join(projectRoot, "app", "exercise-loaders.generated.ts");
-const legacyRedirectOutputPath = path.join(projectRoot, "worker", "legacy-redirects.generated.ts");
+const sitemapOutputPath = path.join(projectRoot, "public", "sitemap.xml");
 
 async function markdownFiles(directory) {
   const entries = (await readdir(directory, { withFileTypes: true }))
@@ -96,12 +97,12 @@ let currentModule;
 let introduction;
 
 function hrefFor(sourcePath) {
-  if (sourcePath === "index.md") return "/";
+  if (sourcePath === "index.md") return HOME_HREF;
   const chapter = chapterByPath.get(sourcePath);
   if (!chapter?.slug) {
     throw new Error(`SUMMARY.md trỏ tới bài không tồn tại hoặc thiếu slug: ${sourcePath}`);
   }
-  return `/ngu-phap/${chapter.slug}`;
+  return lessonHref(chapter.slug);
 }
 
 for (const rawLine of summarySource.split("\n")) {
@@ -286,15 +287,16 @@ const exerciseLoaderOutput = `/* Tệp được tạo từ book/src/SUMMARY.md. 
 
 await writeFile(exerciseLoaderOutputPath, exerciseLoaderOutput, "utf8");
 
-const legacyRedirects = Object.fromEntries(
-  bookLessons
-    .filter((lesson) => lesson.legacyLessonId)
-    .map((lesson) => [lesson.legacyLessonId, lesson.slug]),
-);
+const sitemapUrls = [
+  HOME_HREF,
+  ...bookLessons.flatMap((lesson) => [lessonHref(lesson.slug), practiceHref(lesson.slug)]),
+];
 await writeFile(
-  legacyRedirectOutputPath,
-  `/* Tệp được tạo từ frontmatter Markdown. Không sửa trực tiếp. */\n` +
-    `export const legacyRedirects: Readonly<Record<string, string>> = ${JSON.stringify(legacyRedirects, null, 2)};\n`,
+  sitemapOutputPath,
+  `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    sitemapUrls.map((href) => `  <url><loc>${absoluteUrl(href)}</loc></url>\n`).join("") +
+    `</urlset>\n`,
   "utf8",
 );
 
@@ -305,7 +307,7 @@ const searchIndex = chapters
     const context = contextByPath.get(chapter.sourcePath) ?? { context: "", level: "" };
     return {
       id: chapter.slug,
-      href: `/ngu-phap/${chapter.slug}`,
+      href: lessonHref(chapter.slug),
       title: chapter.title,
       context: context.context,
       level: context.level,

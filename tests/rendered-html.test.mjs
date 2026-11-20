@@ -1,53 +1,50 @@
 import assert from "node:assert/strict";
-import { access, readFile } from "node:fs/promises";
+import { access, readdir, readFile } from "node:fs/promises";
+import path from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 import {
   bookLessonForLegacyId,
   bookLessons,
 } from "../app/book-content.generated.ts";
+import { BASE_PATH, HOME_HREF, lessonHref, practiceHref, SITE_URL } from "../lib/site.mjs";
 
 const projectRoot = new URL("../", import.meta.url);
+const siteRoot = fileURLToPath(new URL("../dist/client/", import.meta.url));
 
-async function loadWorker() {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
-  return worker;
+/**
+ * Đọc trang đúng như GitHub Pages phục vụ: `href` (có BASE_PATH) trỏ tới
+ * `<thư-mục>/index.html`; không có tệp thì trả 404.html với mã 404.
+ */
+async function render(href = HOME_HREF) {
+  assert.ok(href.startsWith(`${BASE_PATH}/`) && href.endsWith("/"), href);
+  const filePath = path.join(siteRoot, href.slice(BASE_PATH.length), "index.html");
+  try {
+    return new Response(await readFile(filePath, "utf8"), { status: 200 });
+  } catch {
+    return new Response(await readFile(path.join(siteRoot, "404.html"), "utf8"), { status: 404 });
+  }
 }
 
-async function render(pathname = "/") {
-  return renderWith(await loadWorker(), pathname);
-}
-
-function renderWith(worker, pathname) {
-  return worker.fetch(
-    new Request(`http://localhost${pathname}`, {
-      headers: { accept: "text/html" },
+async function listFiles(directory) {
+  const entries = await readdir(directory, { withFileTypes: true });
+  const nested = await Promise.all(
+    entries.map((entry) => {
+      const entryPath = path.join(directory, entry.name);
+      return entry.isDirectory() ? listFiles(entryPath) : [entryPath];
     }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
   );
+  return nested.flat();
 }
 
 test("server-renders one documentation-style grammar book", async () => {
   const response = await render();
   assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-security-policy") ?? "", /default-src 'self'/);
-  assert.equal(response.headers.get("x-content-type-options"), "nosniff");
-  assert.equal(response.headers.get("referrer-policy"), "strict-origin-when-cross-origin");
-  assert.match(response.headers.get("permissions-policy") ?? "", /camera=\(\)/);
   const html = await response.text();
   const visibleText = html.replace(/<[^>]+>/g, "").replace(/<!-- -->/g, "");
 
   assert.match(html, /<title>Từ Gốc — Ngữ pháp tiếng Anh cho mọi người<\/title>/i);
-  assert.match(html, /src="\/tu-goc-logo-v3\.png"/);
+  assert.match(html, /src="\/tu-goc\/tu-goc-logo-v3\.png"/);
   assert.match(html, /class="book-toc"/);
   assert.match(html, /aria-label="Đóng hoặc mở mục lục"/);
   assert.match(html, /aria-label="Chọn giao diện màu"/);
@@ -69,7 +66,7 @@ test("server-renders one documentation-style grammar book", async () => {
 test("server-renders a bookmarkable Markdown lesson with the full book index", async () => {
   const lesson = bookLessonForLegacyId("nouns-and-number");
   assert.ok(lesson);
-  const response = await render(`/ngu-phap/${lesson.slug}`);
+  const response = await render(lessonHref(lesson.slug));
   assert.equal(response.status, 200);
 
   const html = await response.text();
@@ -83,9 +80,10 @@ test("server-renders a bookmarkable Markdown lesson with the full book index", a
   assert.match(html, />Bài học</);
   assert.match(html, />Luyện tập</);
   assert.match(html, /class="lesson-practice-cta"/);
-  assert.match(html, new RegExp(`href="/ngu-phap/${lesson.slug}/luyen-tap"`));
-  assert.match(html, /property="og:image" content="https:\/\/tu-goc\.hphongp\.chatgpt\.site\/og\.png"/);
-  assert.match(html, /name="twitter:image" content="https:\/\/tu-goc\.hphongp\.chatgpt\.site\/og\.png"/);
+  assert.ok(html.includes(`href="${practiceHref(lesson.slug)}"`));
+  assert.ok(html.includes(`<link rel="canonical" href="${SITE_URL}/ngu-phap/${lesson.slug}/"/>`));
+  assert.ok(html.includes(`property="og:image" content="${SITE_URL}/og.png"`));
+  assert.ok(html.includes(`name="twitter:image" content="${SITE_URL}/og.png"`));
   assert.equal((html.match(/<h1(?:\s|>)/g) ?? []).length, 1);
   assert.ok(html.indexOf("<h1") < html.indexOf("<h2"), "Tiêu đề chính phải xuất hiện trước mọi tiêu đề phụ trong HTML");
   const sidebar = html.match(/<nav class="book-toc"[\s\S]*?<\/nav>/)?.[0] ?? "";
@@ -98,7 +96,7 @@ test("server-renders a bookmarkable Markdown lesson with the full book index", a
 test("server-renders practice at its own bookmarkable URL", async () => {
   const lesson = bookLessonForLegacyId("language-units");
   assert.ok(lesson);
-  const response = await render(`/ngu-phap/${lesson.slug}/luyen-tap`);
+  const response = await render(practiceHref(lesson.slug));
   assert.equal(response.status, 200);
 
   const html = await response.text();
@@ -107,8 +105,8 @@ test("server-renders practice at its own bookmarkable URL", async () => {
   assert.match(html, /class="practice-list"/);
   assert.match(visibleText, /Câu 25/);
   assert.match(visibleText, /Ghép mỗi tên tiếng Việt với tên tiếng Anh tương ứng/);
-  assert.match(html, new RegExp(`href="/ngu-phap/${lesson.slug}"`));
-  assert.match(html, /property="og:image" content="https:\/\/tu-goc\.hphongp\.chatgpt\.site\/og\.png"/);
+  assert.ok(html.includes(`href="${lessonHref(lesson.slug)}"`));
+  assert.ok(html.includes(`property="og:image" content="${SITE_URL}/og.png"`));
   assert.equal((html.match(/<h1(?:\s|>)/g) ?? []).length, 1);
   assert.doesNotMatch(html, /class="lesson-markdown"/);
   assert.doesNotMatch(html, /practice-prompt|practice-context/);
@@ -118,7 +116,7 @@ test("server-renders practice at its own bookmarkable URL", async () => {
 test("renders inline code in grid rows and keeps their labels plain", async () => {
   const lesson = bookLessonForLegacyId("b1-question-tags");
   assert.ok(lesson);
-  const response = await render(`/ngu-phap/${lesson.slug}/luyen-tap`);
+  const response = await render(practiceHref(lesson.slug));
   assert.equal(response.status, 200);
 
   // Dữ liệu hydrate trong <script> vẫn giữ Markdown gốc; chỉ xét phần HTML hiển thị.
@@ -129,9 +127,8 @@ test("renders inline code in grid rows and keeps their labels plain", async () =
 });
 
 test("keeps Markdown backticks out of prompts, hints, answer options, table cells and labels", async () => {
-  const worker = await loadWorker();
   const practiceMarkup = async (slug) => {
-    const response = await renderWith(worker, `/ngu-phap/${slug}/luyen-tap`);
+    const response = await render(practiceHref(slug));
     assert.equal(response.status, 200, slug);
     // Dữ liệu hydrate trong <script> vẫn giữ Markdown gốc; chỉ xét phần HTML hiển thị.
     return (await response.text()).replace(/<script[\s\S]*?<\/script>/g, "");
@@ -183,7 +180,7 @@ test("keeps Markdown backticks out of prompts, hints, answer options, table cell
 });
 
 test("pre-renders every lesson and uses static document navigation", async () => {
-  const [nextConfig, chrome, toc, tabs, page, lessonPage, neighbors, markdownDocument, notFoundPage, prerenderManifest] = await Promise.all([
+  const [nextConfig, chrome, toc, tabs, page, lessonPage, neighbors, markdownDocument, notFoundPage] = await Promise.all([
     readFile(new URL("../next.config.ts", import.meta.url), "utf8"),
     readFile(new URL("../app/book-chrome.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/book-toc.tsx", import.meta.url), "utf8"),
@@ -193,31 +190,51 @@ test("pre-renders every lesson and uses static document navigation", async () =>
     readFile(new URL("../app/_components/lesson-neighbors.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/_components/markdown-document.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/not-found.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../dist/server/vinext-prerender.json", import.meta.url), "utf8"),
   ]);
-  const manifest = JSON.parse(prerenderManifest);
-  const renderedPaths = new Set(
-    manifest.routes
-      .filter((route) => route.status === "rendered")
-      .map((route) => route.path ?? route.route),
-  );
 
   assert.match(nextConfig, /output:\s*["']export["']/);
+  assert.match(nextConfig, /trailingSlash:\s*true/);
   assert.match(chrome, /closeMobileSidebar/);
   assert.match(toc, /onNavigate/);
   const navigationSources = [chrome, toc, tabs, page, lessonPage, neighbors, markdownDocument, notFoundPage].join("\n");
   assert.doesNotMatch(navigationSources, /next\/link|\bprefetch\b|bookNavigating/);
   assert.match(toc, /<a href=\{lesson\.href\}/);
-  assert.match(tabs, /<a[\s\S]+\/luyen-tap/);
-  assert.match(neighbors, /<a href=\{`\/ngu-phap\/\$\{next\.slug\}`\}/);
+  assert.match(tabs, /<a[\s\S]+href=\{practiceHref\(slug\)\}/);
+  assert.match(neighbors, /<a href=\{lessonHref\(next\.slug\)\}/);
 
   for (const lesson of bookLessons) {
-    assert.ok(renderedPaths.has(`/ngu-phap/${lesson.slug}`), lesson.slug);
-    assert.ok(
-      renderedPaths.has(`/ngu-phap/${lesson.slug}/luyen-tap`),
-      `${lesson.slug}/luyen-tap`,
-    );
+    await access(path.join(siteRoot, "ngu-phap", lesson.slug, "index.html"));
+    await access(path.join(siteRoot, "ngu-phap", lesson.slug, "luyen-tap", "index.html"));
   }
+});
+
+test("points every internal link and asset at a file in the static export", async () => {
+  const files = (await listFiles(siteRoot)).map((file) => path.relative(siteRoot, file).split(path.sep).join("/"));
+  const published = new Set(files);
+  const pages = files.filter((file) => file.endsWith(".html"));
+  assert.ok(pages.length > bookLessons.length * 2, "thiếu trang HTML trong bản xuất");
+  assert.ok(!files.some((file) => file.endsWith(".rsc")), "tệp .rsc không cần cho điều hướng tĩnh");
+
+  const missing = new Set();
+  for (const page of pages) {
+    const html = await readFile(path.join(siteRoot, page), "utf8");
+    for (const [, target] of html.matchAll(/(?:href|src)="(\/[^"#?]*)"/g)) {
+      assert.ok(target.startsWith(`${BASE_PATH}/`), `${page}: ${target} thiếu ${BASE_PATH}`);
+      const file = target.slice(BASE_PATH.length + 1);
+      const resolved = file === "" || file.endsWith("/") ? `${file}index.html` : file;
+      if (!published.has(resolved)) missing.add(`${page} → ${target}`);
+    }
+  }
+  assert.deepEqual([...missing].slice(0, 10), []);
+});
+
+test("keeps first loads light", async () => {
+  const html = await (await render()).text();
+  assert.doesNotMatch(html, /as="font"/, "không tải trước phông chữ; unicode-range chỉ tải phần chữ cần dùng");
+  assert.doesNotMatch(html, /_vinext_fonts|fonts\.googleapis/);
+  assert.match(html, /<script type="speculationrules">/);
+  const logo = await readFile(new URL("../public/tu-goc-logo-v3.png", import.meta.url));
+  assert.ok(logo.length < 16_000, `logo ${logo.length} byte`);
 });
 
 test("moves between lessons in the exact Markdown book order", async () => {
@@ -226,7 +243,7 @@ test("moves between lessons in the exact Markdown book order", async () => {
   const currentIndex = bookLessons.findIndex((lesson) => lesson.slug === current.slug);
   const expectedNext = bookLessons[currentIndex + 1];
 
-  const response = await render(`/ngu-phap/${current.slug}`);
+  const response = await render(lessonHref(current.slug));
   const html = await response.text();
   const visibleText = html.replace(/<[^>]+>/g, "").replace(/<!-- -->/g, "");
   assert.match(
@@ -236,14 +253,14 @@ test("moves between lessons in the exact Markdown book order", async () => {
 });
 
 test("removes the public reference, search, and glossary routes", async () => {
-  for (const pathname of ["/tra-cuu", "/tim-kiem", "/thuat-ngu"]) {
-    const response = await render(pathname);
+  for (const pathname of ["/tra-cuu/", "/tim-kiem/", "/thuat-ngu/"]) {
+    const response = await render(`${BASE_PATH}${pathname}`);
     assert.equal(response.status, 404, pathname);
   }
 });
 
 test("renders a useful 404 page without indexing it", async () => {
-  const response = await render("/ngu-phap/khong-ton-tai");
+  const response = await render(lessonHref("khong-ton-tai"));
   assert.equal(response.status, 404);
   const html = await response.text();
   assert.match(html, /Không tìm thấy trang/);
@@ -251,29 +268,13 @@ test("renders a useful 404 page without indexing it", async () => {
   assert.match(html, /<meta[^>]+content="noindex"[^>]+name="robots"/);
 });
 
-test("redirects legacy lesson URLs without generating duplicate pages", async () => {
-  const lesson = bookLessonForLegacyId("language-units");
-  assert.ok(lesson);
-
-  const response = await render("/bai-hoc/language-units");
-  assert.equal(response.status, 308);
-  assert.equal(
-    response.headers.get("location"),
-    `http://localhost/ngu-phap/${lesson.slug}`,
-  );
-
-  const missing = await render("/bai-hoc/not-a-real-lesson");
-  assert.equal(missing.status, 404);
-});
-
 test("keeps a Rust-by-Example-style Markdown source architecture", async () => {
-  const [page, layout, lessonPage, practicePage, worker, markdownDocument, exerciseData, practiceDocument, lessonNavigation, bookTheme, bookToc, bookChrome, summary, firstChapter, packageJson] =
+  const [page, layout, lessonPage, practicePage, markdownDocument, exerciseData, practiceDocument, lessonNavigation, bookTheme, bookToc, bookChrome, summary, firstChapter, packageJson] =
     await Promise.all([
       readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
       readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
       readFile(new URL("../app/book-lesson-page.tsx", import.meta.url), "utf8"),
       readFile(new URL("../app/book-practice-page.tsx", import.meta.url), "utf8"),
-      readFile(new URL("../worker/index.ts", import.meta.url), "utf8"),
       readFile(new URL("../app/_components/markdown-document.tsx", import.meta.url), "utf8"),
       readFile(new URL("../app/exercise-data.ts", import.meta.url), "utf8"),
       readFile(new URL("../app/practice-document.tsx", import.meta.url), "utf8"),
@@ -304,7 +305,7 @@ test("keeps a Rust-by-Example-style Markdown source architecture", async () => {
   assert.match(practicePage, /<PracticeDocument/);
   assert.match(practicePage, /loadExercisesForLegacyId/);
   assert.doesNotMatch(practicePage, /exercise-data/);
-  assert.match(lessonNavigation, /\/luyen-tap/);
+  assert.match(lessonNavigation, /practiceHref\(slug\)/);
   assert.match(practiceDocument, /className="practice-list"/);
   assert.match(practiceDocument, /exercises\.map/);
   assert.doesNotMatch(practiceDocument, /exercise\.instruction|practice-prompt|practice-context/);
@@ -344,8 +345,6 @@ test("keeps a Rust-by-Example-style Markdown source architecture", async () => {
   assert.match(firstChapter, /\[danh từ, đại từ, động từ và tính từ\]/);
   assert.match(firstChapter, /\[Chủ ngữ và vị ngữ\]\(chu-ngu-va-vi-ngu-sent-01\.md\)/);
 
-  assert.match(worker, /legacyRedirects\[legacyId\]/);
-  assert.match(worker, /Response\.redirect/);
   assert.match(layout, /import "\.\/book-theme\.css"/);
   assert.doesNotMatch(layout, /Starter Project|codex-preview/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
@@ -364,6 +363,8 @@ test("keeps a Rust-by-Example-style Markdown source architecture", async () => {
     "app/globals.css",
     "app/lesson-tabs.tsx",
     "app/bai-hoc/[slug]/page.tsx",
+    "worker/index.ts",
+    ".openai/hosting.json",
   ]) {
     await assert.rejects(access(new URL(removed, projectRoot)));
   }
