@@ -37,7 +37,6 @@ yarn-error.log*
 # typescript
 next-env.d.ts
 /dist/
-/.wrangler/
 /outputs/
 /work/
 
@@ -46,4 +45,4 @@ next-env.d.ts
 /app/book-summary.generated.ts
 /app/book-search-index.generated.ts
 /app/book-search-index-*.generated.ts
-/worker/legacy-redirects.generated.ts
+/public/sitemap.xml

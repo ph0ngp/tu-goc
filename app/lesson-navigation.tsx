@@ -1,3 +1,5 @@
+import { lessonHref, practiceHref } from "../lib/site.mjs";
+
 export function LessonNavigation({
   slug,
   active,
@@ -9,14 +11,14 @@ export function LessonNavigation({
     <nav className="lesson-tabs" aria-label="Nội dung bài">
       <a
         className={active === "lesson" ? "active" : undefined}
-        href={`/ngu-phap/${slug}`}
+        href={lessonHref(slug)}
         aria-current={active === "lesson" ? "page" : undefined}
       >
         Bài học
       </a>
       <a
         className={active === "practice" ? "active" : undefined}
-        href={`/ngu-phap/${slug}/luyen-tap`}
+        href={practiceHref(slug)}
         aria-current={active === "practice" ? "page" : undefined}
       >
         Luyện tập

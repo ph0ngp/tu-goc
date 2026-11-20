@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { HOME_HREF } from "../lib/site.mjs";
 import { BookFooter } from "./_components/book-footer";
 import { BookChrome } from "./book-chrome";
 
@@ -18,7 +19,7 @@ export default function NotFound() {
             chỉ khác.
           </p>
           <p>
-            <a href="/">Về trang giới thiệu và mở mục lục</a>
+            <a href={HOME_HREF}>Về trang giới thiệu và mở mục lục</a>
           </p>
         </article>
         <BookFooter />

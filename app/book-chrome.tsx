@@ -4,6 +4,7 @@ import { useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode 
 import { BookTableOfContents } from "./book-toc";
 import type { BookSearchEntry } from "./book-search-index.generated";
 import { searchTerms } from "../lib/search-normalization.mjs";
+import { fileHref, HOME_HREF } from "../lib/site.mjs";
 
 type BookTheme = "light" | "rust" | "coal" | "navy" | "ayu";
 
@@ -150,9 +151,9 @@ export function BookChrome({
           <span aria-hidden="true">☰</span>
         </button>
 
-        <a className="book-brand" href="/" aria-label="Về trang giới thiệu">
+        <a className="book-brand" href={HOME_HREF} aria-label="Về trang giới thiệu">
           <img
-            src="/tu-goc-logo-v3.png"
+            src={fileHref("tu-goc-logo-v3.png")}
             alt=""
             width={34}
             height={34}

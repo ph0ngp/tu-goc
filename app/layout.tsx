@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./book-theme.css";
-import { SITE_TITLE, SITE_URL, socialMetadata } from "./site-metadata";
+import { absoluteUrl, BASE_PATH, fileHref, HOME_HREF, SITE_URL } from "../lib/site.mjs";
+import { pageMetadata, SITE_TITLE } from "./site-metadata";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const favicon = absoluteUrl(fileHref("favicon-v3.png"));
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// Chrome và Edge tải trước rồi dựng sẵn trang trong sách khi người đọc rê chuột
+// hoặc chạm vào liên kết, nên trang mới hiện gần như tức thì. Điều hướng vẫn là
+// mở tài liệu HTML tĩnh; trình duyệt không hỗ trợ sẽ bỏ qua khối này.
+const speculationRules = JSON.stringify({
+  prerender: [{ where: { href_matches: `${BASE_PATH}/*` }, eagerness: "moderate" }],
 });
 
 export const metadata: Metadata = {
@@ -19,17 +18,14 @@ export const metadata: Metadata = {
   description:
     "Lộ trình ngữ pháp tiếng Anh bắt đầu từ cấu trúc câu cơ bản và đi dần đến các chủ đề nâng cao.",
   icons: {
-    icon: "/favicon-v3.png",
-    shortcut: "/favicon-v3.png",
+    icon: favicon,
+    shortcut: favicon,
   },
-  alternates: {
-    canonical: "/",
-  },
-  ...socialMetadata({
+  ...pageMetadata({
     title: SITE_TITLE,
     description:
       "Cuốn sách ngữ pháp tiếng Anh từ nền tảng đến C1, được sắp xếp theo trình tự rõ ràng.",
-    path: "/",
+    href: HOME_HREF,
     type: "website",
   }),
 };
@@ -41,10 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
         {children}
+        <script type="speculationrules" dangerouslySetInnerHTML={{ __html: speculationRules }} />
       </body>
     </html>
   );

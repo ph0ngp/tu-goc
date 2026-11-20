@@ -3,7 +3,8 @@ import { MarkdownDocument } from "./_components/markdown-document";
 import { StructuredData } from "./_components/structured-data";
 import { BookChrome } from "./book-chrome";
 import { bookIntroduction } from "./book-content.generated";
-import { SITE_NAME, SITE_URL } from "./site-metadata";
+import { absoluteUrl, HOME_HREF } from "../lib/site.mjs";
+import { SITE_NAME } from "./site-metadata";
 
 export function BookHomePage() {
   return (
@@ -16,7 +17,7 @@ export function BookHomePage() {
             name: SITE_NAME,
             description: "Sách ngữ pháp tiếng Anh bằng tiếng Việt, từ nền tảng đến C1.",
             inLanguage: "vi",
-            url: SITE_URL,
+            url: absoluteUrl(HOME_HREF),
             author: { "@type": "Person", name: "Phan Hải Phong" },
           }}
         />

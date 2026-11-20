@@ -288,6 +288,14 @@ Chủ dự án có thể viết thêm yêu cầu ngay dưới dòng này. Nên g
 - JavaScript phía client chỉ dành cho tương tác thật sự cần thiết như đóng mở
   mục lục, chọn theme, tìm kiếm và làm bài tập. Không thêm trạng thái, hiệu ứng
   tải hoặc listener toàn trang chỉ để mô phỏng điều hướng.
+- Website được xuất bản tĩnh lên GitHub Pages trong thư mục con `BASE_PATH`.
+  Mọi liên kết nội bộ, đường dẫn tệp trong `public/` và URL tuyệt đối phải tạo
+  bằng các hàm trong `lib/site.mjs`; không viết cứng `/`, `/ngu-phap/...` hay
+  tên miền. Mỗi trang là `<đường-dẫn>/index.html` và liên kết kết thúc bằng `/`.
+- Giữ trang nhẹ: điều hướng nhanh nhờ khối speculation rules trong
+  `app/layout.tsx` (trình duyệt tự dựng sẵn trang khi người đọc rê chuột), phông
+  chữ tự lưu trữ trong `app/fonts/` chỉ gồm các phần chữ thật sự dùng và không
+  tải trước. Không thêm phông chữ, ảnh lớn hoặc thư viện chỉ để trang trí.
 - Giữ cấu trúc tiêu đề tuần tự và chỉ có một `h1` chính cho mỗi tài liệu.
 - Bảng phải có tiêu đề cột rõ ràng và cuộn ngang được trên màn hình nhỏ.
 - Nút, input, radio, select và vùng phản hồi phải có nhãn có thể đọc bằng công

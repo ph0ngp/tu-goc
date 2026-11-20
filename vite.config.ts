@@ -1,36 +1,32 @@
 import vinext from "vinext";
-import { defineConfig } from "vite";
-import { sites } from "./build/sites-vite-plugin";
+import { defineConfig, type Plugin } from "vite";
+import { BASE_PATH } from "./lib/site.mjs";
 
-// macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
-const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
-
-const localBindingConfig = {
-  main: "./worker/index.ts",
-  compatibility_flags: ["nodejs_compat"],
-};
-
-export default defineConfig(async () => {
-  // Keep Wrangler and Miniflare state project-local. These are non-secret tool
-  // settings; application environment belongs in ignored `.env*` files.
-  process.env.WRANGLER_WRITE_LOGS ??= "false";
-  process.env.WRANGLER_LOG_PATH ??= ".wrangler/logs";
-  process.env.MINIFLARE_REGISTRY_PATH ??= ".wrangler/registry";
-
-  // Wrangler snapshots its log path while the Cloudflare plugin is imported.
-  const { cloudflare } = await import("@cloudflare/vite-plugin");
-
+// Khi chạy `vinext dev`, bộ xử lý RSC đọc lại `originalUrl` (vẫn còn BASE_PATH)
+// nên không thấy trang. Plugin này bỏ tiền tố khỏi `originalUrl` của các trang;
+// `url` giữ nguyên để module và tệp tĩnh của Vite vẫn đi qua `base`.
+function devPagesUnderBasePath(): Plugin {
+  const pagePrefix = new RegExp(`^${BASE_PATH}(?=/(?:$|\\?|ngu-phap/))`);
   return {
-    server: isCodexSeatbeltSandbox
-      ? { watch: { useFsEvents: false, usePolling: true } }
-      : {},
-    plugins: [
-      vinext(),
-      sites(),
-      cloudflare({
-        viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
-        config: localBindingConfig,
-      }),
-    ],
+    name: "tu-goc:dev-pages-under-base-path",
+    apply: "serve",
+    configureServer(server) {
+      server.middlewares.use((request, _response, next) => {
+        const original = (request as { originalUrl?: string }).originalUrl ?? request.url;
+        if (original && pagePrefix.test(original)) {
+          (request as { originalUrl?: string }).originalUrl = original.replace(pagePrefix, "");
+        }
+        next();
+      });
+    },
   };
+}
+
+// GitHub Pages phục vụ website trong thư mục con `BASE_PATH`. Không dùng
+// `basePath` của Next vì bước prerender của vinext gọi route không kèm tiền tố
+// đó; thay vào đó chỉ đặt `base` cho tệp tĩnh, còn liên kết trang đi qua
+// lib/site.mjs.
+export default defineConfig({
+  base: `${BASE_PATH}/`,
+  plugins: [devPagesUnderBasePath(), vinext()],
 });

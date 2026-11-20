@@ -8,10 +8,10 @@
   "scripts": {
     "book:sync": "node scripts/build-book-content.mjs",
     "predev": "npm run book:sync",
-    "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",
+    "dev": "vinext dev",
     "prebuild": "npm run book:sync",
-    "build": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
-    "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
+    "build": "vinext build && find dist/client -name '*.rsc' -delete",
+    "start": "vinext start",
     "typecheck": "npm run book:sync && tsc --noEmit --incremental false",
     "test": "npm run typecheck && npm run build && node --experimental-strip-types --test tests/*.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
@@ -25,7 +25,6 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.37.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
@@ -36,8 +35,7 @@
     "react-server-dom-webpack": "19.2.6",
     "typescript": "5.9.3",
     "vinext": "0.0.50",
-    "vite": "8.0.13",
-    "wrangler": "4.92.0"
+    "vite": "8.0.13"
   },
   "type": "module"
 }
