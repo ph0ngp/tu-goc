@@ -8,8 +8,9 @@ legacyLessonId: sentence-signals
 Khi viết, ta cần cho người đọc biết một câu bắt đầu và kết thúc ở đâu. Trong Chương 1, ta học ba dấu hiệu cơ bản:
 
 1. chữ hoa ở đầu câu;
-2. dấu chấm `.` ở cuối câu kể;
-3. dấu hỏi `?` ở cuối câu hỏi trực tiếp.
+2. dấu chấm `.` ở cuối câu kể; tiếng Anh–Anh gọi dấu này là *full stop*, tiếng
+   Anh–Mỹ gọi là *period*;
+3. dấu hỏi `?` (*question mark*) ở cuối câu hỏi trực tiếp (*direct question*).
 
 ---
 
@@ -33,6 +34,10 @@ Tên riêng của người và địa danh bắt đầu bằng chữ hoa:
 - `Lan`, `Nam`;
 - `Hanoi` — Hà Nội;
 - `Vietnam` — Việt Nam.
+
+Trong câu viết thông thường, chỉ chữ cái đầu của tên riêng viết hoa: viết
+`Nam`, `Hanoi`, không viết `NAM`, `HANOI`. Kiểu viết hoa toàn bộ chỉ gặp ở
+những chỗ đặc biệt như biển hiệu hoặc tiêu đề, không dùng trong câu bình thường.
 
 Đại từ `I`, nghĩa là “tôi”, **luôn viết hoa**, kể cả khi không đứng đầu câu.
 
@@ -93,16 +98,16 @@ Dấu hỏi đã tự kết thúc câu, vì vậy không viết thêm dấu ch�
 
 Hãy đọc lại câu theo bốn câu hỏi:
 
-- [ ] Từ đầu câu đã viết hoa chưa?
-- [ ] Tên riêng và đại từ `I` đã viết hoa chưa?
-- [ ] Câu kể đã có dấu chấm, hoặc câu hỏi đã có dấu hỏi chưa?
-- [ ] Dấu câu đã đứng sát từ cuối cùng chưa?
+1. Từ đầu câu đã viết hoa chưa?
+2. Tên riêng và đại từ `I` đã viết hoa chưa?
+3. Câu kể đã có dấu chấm, hoặc câu hỏi đã có dấu hỏi chưa?
+4. Dấu câu đã đứng sát từ cuối cùng chưa?
 
 ## Ghi nhớ
 
 | Dấu hiệu | Công việc |
 | --- | --- |
-| chữ hoa | báo câu bắt đầu; dùng cho tên riêng và `I` |
+| chữ hoa | báo câu bắt đầu; dùng cho chữ cái đầu của tên riêng và cho `I` |
 | `.` | kết thúc câu kể |
 | `?` | kết thúc câu hỏi trực tiếp |
 

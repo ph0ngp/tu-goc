@@ -39,7 +39,7 @@ Ta vẫn xử lý `be` như mọi câu tiếp diễn:
 - `We aren't meeting Lan tomorrow.` — Ngày mai chúng tôi không có hẹn gặp Lan.
 - `Is she coming tonight?` — Tối nay cô ấy có đến không?
 - `What are you doing this weekend?` — Cuối tuần này bạn có kế hoạch làm gì?
-- `Are they staying at a hotel? — Yes, they are.` — Họ sẽ ở khách sạn phải không? — Đúng vậy.
+- `Are they staying at a hotel next week? — Yes, they are.` — Tuần sau họ sẽ ở khách sạn phải không? — Đúng vậy.
 
 ## Phân biệt với thói quen hiện tại
 
@@ -55,7 +55,7 @@ Hình thức `am/is/are + V-ing` tự nó vẫn là hiện tại tiếp diễn. 
 - `Lan is meeting the manager now.` — Lan đang gặp quản lý bây giờ.
 - `Lan is meeting the manager tomorrow.` — Ngày mai Lan có lịch gặp quản lý.
 
-Nếu không có cụm thời gian, cuộc trò chuyện vẫn có thể làm mốc rõ: `What are you doing after work? — I'm meeting Mai.` Trong ngữ cảnh này, cả hai người đều hiểu cuộc gặp nằm sau giờ làm. Khi viết một câu đứng riêng, thêm `tomorrow`, `at six` hoặc `this weekend` thường giúp tránh mơ hồ.
+Nếu không có cụm thời gian, cuộc trò chuyện vẫn có thể làm mốc rõ: `What are you doing after work? — I'm meeting Mai.` — Tan làm bạn định làm gì? — Tôi có hẹn gặp Mai. Trong ngữ cảnh này, cả hai người đều hiểu cuộc gặp nằm sau giờ làm. Khi viết một câu đứng riêng, thêm `tomorrow`, `at six` hoặc `this weekend` thường giúp tránh mơ hồ.
 
 ## Ghi nhớ
 

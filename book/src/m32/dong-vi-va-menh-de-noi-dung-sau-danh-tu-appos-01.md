@@ -13,7 +13,7 @@ status: published
 - `Nam, my oldest friend, called yesterday.` — Nam, người bạn lâu năm nhất của tôi, gọi hôm qua.
 - `The poet Nguyen Du wrote Truyen Kieu.` — Nhà thơ Nguyễn Du viết Truyện Kiều.
 
-Hai cụm `my brother` và `Nam` cùng chỉ một người. Đồng vị bổ sung thường nằm giữa dấu phẩy; đồng vị hạn định như `the poet Nguyen Du` không có dấu phẩy vì tên xác định “nhà thơ nào”.
+Hai cụm `my brother` và `Nam` cùng chỉ một người. Đồng vị bổ sung (*non-restrictive apposition*) thường nằm giữa dấu phẩy; đồng vị hạn định (*restrictive apposition*) như `the poet Nguyen Du` không có dấu phẩy vì tên xác định “nhà thơ nào”.
 
 ## Dấu phẩy thay đổi phạm vi
 
@@ -61,14 +61,16 @@ Không phải mọi danh từ nhận mọi loại mệnh đề. Cần kiểm tra
 
 ## Phong cách và mật độ thông tin
 
-Content clauses giúp văn viết nén thông tin nhưng chuỗi dài có thể khó đọc:
+Mệnh đề nội dung giúp văn viết nén thông tin nhưng chuỗi dài có thể khó đọc:
 
-`The claim that the report that the committee published was inaccurate caused concern` có nhiều lớp `that`. Có thể viết lại thành hai câu để làm rõ claim nào và report nào.
+`The claim that the report that the committee published was inaccurate caused concern` — Lời khẳng định rằng bản báo cáo mà ủy ban công bố không chính xác đã gây lo ngại — có nhiều lớp `that`. Có thể tách thành hai câu để làm rõ lời khẳng định nào và báo cáo nào, nhưng phải giữ đủ ý, kể cả vị ngữ chính `caused concern`:
+
+`The committee published a report. The claim that it was inaccurate caused concern.` — Ủy ban công bố một bản báo cáo. Lời khẳng định rằng báo cáo ấy không chính xác đã gây lo ngại.
 
 ## Quy trình nhận diện
 
 1. Xác định phần sau cùng gọi tên đối tượng hay cung cấp nội dung.
-2. Nếu hai noun phrases cùng chỉ một đối tượng, đó là apposition; chọn dấu phẩy theo hạn định/bổ sung.
+2. Nếu hai cụm danh từ cùng chỉ một đối tượng, đó là đồng vị; chọn dấu phẩy theo hạn định/bổ sung.
 3. Nếu mệnh đề nói nội dung của danh từ trừu tượng, dùng mệnh đề nội dung.
 4. Phân biệt với mệnh đề quan hệ bằng việc tìm vị trí còn thiếu.
 5. Viết lại nếu quá nhiều lớp bổ nghĩa khiến quan hệ mơ hồ.
@@ -77,6 +79,6 @@ Content clauses giúp văn viết nén thông tin nhưng chuỗi dài có thể 
 
 - Đồng vị đặt hai cụm danh từ cùng chỉ một đối tượng.
 - Dấu phẩy phân biệt đồng vị bổ sung với đồng vị cần để xác định.
-- Content clause cho biết nội dung của `fact`, `idea`, `claim`, `news` và các danh từ tương tự.
+- Mệnh đề nội dung cho biết nội dung của `fact`, `idea`, `claim`, `news` và các danh từ tương tự.
 - Mệnh đề nội dung đầy đủ thành phần; mệnh đề quan hệ có một vai trò gắn với danh từ trước.
 - Chọn `that`, `whether`, `of + V-ing` theo nghĩa và mẫu của danh từ.

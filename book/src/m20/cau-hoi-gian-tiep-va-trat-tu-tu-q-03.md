@@ -30,12 +30,12 @@ Phần mở đầu quyết định mức độ lịch sự và việc toàn bộ
 Phần mở đầu + từ hỏi + chủ ngữ + động từ
 ```
 
-| Câu hỏi trực tiếp | Câu hỏi gián tiếp |
-| --- | --- |
-| `Where does Lan live?` | `Do you know where Lan lives?` |
-| `Why did they leave?` | `Can you tell me why they left?` |
-| `When will the shop open?` | `Do you know when the shop will open?` |
-| `What is Minh doing?` | `I wonder what Minh is doing.` |
+| Câu hỏi trực tiếp | Câu hỏi gián tiếp | Nghĩa của câu gián tiếp |
+| --- | --- | --- |
+| `Where does Lan live?` | `Do you know where Lan lives?` | Bạn có biết Lan sống ở đâu không? |
+| `Why did they leave?` | `Can you tell me why they left?` | Bạn có thể cho tôi biết vì sao họ rời đi không? |
+| `When will the shop open?` | `Do you know when the shop will open?` | Bạn có biết khi nào cửa hàng mở cửa không? |
+| `What is Minh doing?` | `I wonder what Minh is doing.` | Tôi tự hỏi Minh đang làm gì. |
 
 Không dùng `Do you know where does Lan live?` vì `does Lan live` là trật tự của câu hỏi trực tiếp. Khi đã đặt bên trong câu lớn, bỏ `do/does/did` và chia lại động từ: `where Lan lives`, `why they left`.
 
@@ -43,8 +43,8 @@ Không dùng `Do you know where does Lan live?` vì `does Lan live` là trật t
 
 Đưa chủ ngữ lên trước `be` trong phần bên trong:
 
-- `Where is the meeting?` → `Could you tell me where the meeting is?`
-- `How old is this building?` → `Do you know how old this building is?`
+- `Where is the meeting?` → `Could you tell me where the meeting is?` — Bạn có thể cho tôi biết cuộc họp ở đâu không?
+- `How old is this building?` → `Do you know how old this building is?` — Bạn có biết tòa nhà này đã bao nhiêu năm tuổi không?
 
 Không dùng `where is the meeting` sau phần mở đầu trong mẫu gián tiếp này.
 
@@ -52,9 +52,9 @@ Không dùng `where is the meeting` sau phần mở đầu trong mẫu gián ti�
 
 Modal hoặc trợ động từ vẫn còn, nhưng đứng sau chủ ngữ:
 
-- `What can we do?` → `I wonder what we can do.`
-- `When will she arrive?` → `Do you know when she will arrive?`
-- `Why has the train stopped?` → `Can you tell me why the train has stopped?`
+- `What can we do?` → `I wonder what we can do.` — Tôi tự hỏi chúng ta có thể làm gì.
+- `When will she arrive?` → `Do you know when she will arrive?` — Bạn có biết khi nào cô ấy đến không?
+- `Why has the train stopped?` → `Can you tell me why the train has stopped?` — Bạn có thể cho tôi biết vì sao tàu dừng lại không?
 
 Ta không xóa trợ động từ mang ý nghĩa thì hoặc modal; chỉ sửa trật tự.
 
@@ -85,8 +85,8 @@ Nội dung `where...` hoặc `when...` không tự quyết định dấu câu; l
 
 Khi câu trực tiếp không có từ hỏi, dùng `if` hoặc `whether`:
 
-- `Is the shop open?` → `Do you know if the shop is open?`
-- `Will Lan come?` → `I wonder whether Lan will come.`
+- `Is the shop open?` → `Do you know if the shop is open?` — Bạn có biết cửa hàng có mở cửa không?
+- `Will Lan come?` → `I wonder whether Lan will come.` — Tôi không biết liệu Lan có đến không.
 
 Các khác biệt chi tiết giữa `if` và `whether` nằm trong bài [Mệnh đề if/whether](menh-de-if-whether-nclause-02.md).
 

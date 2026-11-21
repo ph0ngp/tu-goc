@@ -24,7 +24,7 @@ Mệnh đề `if` nói điều kiện; mệnh đề chính nói kết quả tư�
 
 Dù đang nói tương lai, mệnh đề `if` dùng hiện tại đơn:
 
-- đúng: `If she comes, I'll tell her.`
+- đúng: `If she comes, I'll tell her.` — Nếu cô ấy đến, tôi sẽ nói với cô ấy.
 - không dùng trong mẫu này: `If she will come, I'll tell her.`
 
 `Will` nằm ở mệnh đề kết quả. Những cách dùng đặc biệt của `will` sau `if` không thuộc A2.
@@ -46,10 +46,10 @@ Mệnh đề chính có thể dùng modal hoặc mệnh lệnh nếu nghĩa phù
 
 ## Loại 0 hay loại 1
 
-| Ý nghĩa | Câu |
-| --- | --- |
-| quy luật chung | `If water freezes, it expands.` |
-| khả năng tương lai cụ thể | `If the road freezes tonight, we'll stay home.` |
+| Ý nghĩa | Câu | Nghĩa |
+| --- | --- | --- |
+| quy luật chung | `If water freezes, it expands.` | Nếu nước đóng băng, nó nở ra. |
+| khả năng tương lai cụ thể | `If the road freezes tonight, we'll stay home.` | Nếu tối nay đường đóng băng, chúng ta sẽ ở nhà. |
 
 Không chọn chỉ bằng từ `if`; hãy hỏi câu đang nói quy luật hay một tình huống tương lai.
 
@@ -59,10 +59,10 @@ Không chọn chỉ bằng từ `if`; hãy hỏi câu đang nói quy luật hay 
 
 So sánh:
 
-- `When Lan arrives, we'll start` thường cho thấy người nói chờ Lan đến và xem việc đó sẽ xảy ra.
-- `If Lan arrives, we'll start` để ngỏ khả năng Lan có đến hay không.
+- `When Lan arrives, we'll start` — “Khi Lan đến, chúng ta sẽ bắt đầu” — thường cho thấy người nói chờ Lan đến và xem việc đó sẽ xảy ra.
+- `If Lan arrives, we'll start` — “Nếu Lan đến, chúng ta sẽ bắt đầu” — để ngỏ khả năng Lan có đến hay không.
 
-Cả hai mệnh đề thời gian/điều kiện tương lai đều dùng hiện tại đơn sau `when/if`, nhưng nghĩa không giống nhau. Khi viết, hãy xác định đây là một mốc được mong đợi hay một điều kiện chưa chắc.
+Cách dùng hiện tại đơn sau `when` để nói tương lai sẽ được học kỹ ở bài [Tương lai sau when, before, after, until, as soon as](tuong-lai-sau-when-before-after-until-as-soon-as-timecl-02.md). Ở đây chỉ cần thấy khác biệt về nghĩa: `if` để ngỏ khả năng, còn `when` coi việc đó là một mốc được mong đợi. Khi viết, hãy xác định mình đang nói điều nào.
 
 ## Lắp câu theo nghĩa, không dịch từng vế
 
@@ -72,7 +72,7 @@ Làm theo ba bước:
 2. Xác định kết quả sẽ áp dụng nếu điều kiện thành sự thật: `we will go hiking` — chúng ta sẽ đi bộ đường dài.
 3. Ghép thành `If the weather is good, we will go hiking` — “Nếu thời tiết đẹp, chúng ta sẽ đi bộ đường dài”.
 
-Lỗi phổ biến là đặt `will` ở cả hai vế: `If the weather will be good, ...`. Trong mẫu loại 1 cơ bản, `if` đã đánh dấu điều kiện tương lai nên vế đó dùng hiện tại đơn. Một lỗi khác là dùng dấu phẩy bất kể trật tự: dùng dấu phẩy khi vế `if` đứng đầu, nhưng thường không dùng trong `We will go hiking if the weather is good`.
+Lỗi phổ biến là đặt `will` ở cả hai vế: `If the weather will be good, ...`. Trong mẫu loại 1 cơ bản, `if` đã đánh dấu điều kiện tương lai nên vế đó dùng hiện tại đơn. Về dấu câu, dấu phẩy tách hai vế khi vế `if` đứng đầu; khi vế `if` đứng cuối, như trong `We will go hiking if the weather is good`, thường không cần dấu phẩy.
 
 ## Ghi nhớ
 

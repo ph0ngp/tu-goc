@@ -53,11 +53,11 @@ Khi danh từ đã rõ, các từ có thể đứng độc lập:
 - `either A or B` — hoặc A hoặc B: `We can go either today or tomorrow.` — Chúng ta có thể đi hôm nay hoặc ngày mai.
 - `neither A nor B` — không A cũng không B: `Neither Lan nor Mai was there.` — Cả Lan lẫn Mai đều không có ở đó.
 
-Giữ hai phần sau cặp liên kết cùng loại: hai danh từ, hai động từ hoặc hai cụm tương đương.
+Giữ hai phần sau cặp liên kết cùng loại: hai danh từ, hai động từ hoặc hai cụm tương đương, như `either by bus or by train` (hoặc đi xe buýt hoặc đi tàu) hay `neither called nor wrote` (chẳng gọi điện cũng chẳng viết thư). Sự song song giúp người đọc thấy rõ đúng hai phương án đang được đặt cạnh nhau.
 
 ## Phủ định
 
-`Neither` đã mang nghĩa phủ định nên không thêm `not`: `Neither answer is right` (Không đáp án nào đúng), không dùng `Neither answer isn't right` trong mẫu cơ bản.
+`Neither` đã mang nghĩa phủ định nên không thêm `not`: `Neither answer is right` (Cả hai đáp án đều không đúng), không dùng `Neither answer isn't right` trong mẫu cơ bản.
 
 `I don't like either option` nghĩa là “Tôi không thích phương án nào trong hai”. Trong câu phủ định, `either` có thể mang nghĩa “cả hai đều không”.
 
@@ -66,11 +66,9 @@ Giữ hai phần sau cặp liên kết cùng loại: hai danh từ, hai động 
 Nếu đang xét ba hoặc nhiều lựa chọn, hệ thống từ thay đổi:
 
 - hai lựa chọn: `both`, `either`, `neither`;
-- ba hoặc nhiều: `all`, `any`, `none` tùy ý nghĩa.
+- ba hoặc nhiều: `all` (tất cả), `any` (bất kỳ … nào), `none` (không … nào) tùy ý nghĩa.
 
-Ví dụ, với hai chiếc áo, `Either shirt is fine` nghĩa là chiếc nào trong hai cũng được. Với năm chiếc áo, `Any shirt is fine` tự nhiên hơn.
-
-Trong cặp `either ... or` và `neither ... nor`, giữ cấu trúc hai phía song song: `either by bus or by train` (hoặc đi xe buýt hoặc đi tàu), `neither called nor wrote` (chẳng gọi điện cũng chẳng viết thư). Sự song song giúp người đọc thấy rõ đúng hai phương án đang được đặt cạnh nhau.
+Ví dụ, với hai chiếc áo, `Either shirt is fine` nghĩa là chiếc nào trong hai cũng được. Với năm chiếc áo, nói `Any shirt is fine.` — Chiếc nào cũng được.
 
 ## Ba câu hỏi để tránh nhầm
 

@@ -69,7 +69,7 @@ Với kế hoạch hoặc dấu hiệu hiện có, có thể dùng `be going to 
 
 - `The building is going to be demolished.` — Tòa nhà sắp bị phá bỏ.
 
-Hai lần `be` trong `is going to be repaired` đều cần thiết: `is` thuộc `be going to`; `be` thứ hai tạo bị động.
+Hai lần `be` trong `is going to be demolished` đều cần thiết: `is` thuộc `be going to`; `be` thứ hai tạo bị động.
 
 ## Câu hỏi và phủ định
 
@@ -90,6 +90,20 @@ Không thay đổi quá khứ phân từ khi tạo phủ định hoặc câu h�
 4. Kiểm tra hòa hợp và giữ cụm thời gian.
 
 `They are repairing the road today` → `The road is being repaired today`.
+
+## Chọn thì bị động khi hai dạng trông gần nhau
+
+Chọn thì trước, đúng như khi viết câu chủ động, rồi mới tạo dạng `be` tương ứng. Hai cặp sau chỉ khác nhau ở thì:
+
+- `The room was cleaned when we arrived.` — Chúng tôi đến rồi phòng mới được dọn.
+- `The room was being cleaned when we arrived.` — Lúc chúng tôi đến, phòng đang được dọn.
+
+Quá khứ đơn bị động kể một việc hoàn tất xảy ra sau mốc `when we arrived`; quá khứ tiếp diễn bị động cho thấy việc dọn đang diễn ra đúng lúc ấy.
+
+- `The work was finished yesterday.` — Công việc đã được làm xong hôm qua.
+- `The work has been finished.` — Công việc đã được làm xong rồi.
+
+Có mốc quá khứ đã qua như `yesterday` thì dùng quá khứ đơn bị động; muốn nói kết quả ở hiện tại mà không nêu thời điểm thì dùng hiện tại hoàn thành bị động. Không dùng `has been finished yesterday`.
 
 ## Ghi nhớ
 

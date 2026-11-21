@@ -20,7 +20,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "b2",
       "kind": "sort",
       "prompt": "Phân loại các chủ ngữ theo dạng `be` cần dùng.",
-      "hint": "Xét I riêng; sau đó phân biệt nhóm số ít và nhóm dùng are.",
+      "hint": "Xét `I` riêng trước. Với các đại từ còn lại, nhớ bảng trong bài: `you` không đổi dạng `be` theo số người nghe.",
       "explanation": "Mỗi chủ ngữ đã được đặt vào đúng nhóm am, is hoặc are.",
       "buckets": ["am", "is", "are"],
       "items": [
@@ -100,7 +100,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "b17",
       "kind": "sort",
       "prompt": "Phân loại các chủ ngữ số ít và số nhiều theo dạng `be`.",
-      "hint": "I không xuất hiện trong hoạt động này; chỉ cần chọn is hoặc are.",
+      "hint": "Thử thay mỗi chủ ngữ bằng một đại từ như `it`, `she` hoặc `they` rồi chọn theo bảng của bài.",
       "explanation": "Các chủ ngữ số ít dùng is; các chủ ngữ số nhiều dùng are.",
       "buckets": ["dùng is", "dùng are"],
       "items": [
@@ -115,38 +115,36 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "b18",
       "kind": "match",
-      "prompt": "Ghép mỗi dạng đầy đủ với dạng rút gọn tương ứng.",
-      "hint": "Dấu nháy thay cho những chữ bị lược.",
-      "explanation": "Bảy dạng rút gọn giữ nguyên chủ ngữ và nghĩa của be.",
+      "prompt": "Ghép mỗi câu đầy đủ với câu dùng đại từ và dạng viết tắt có cùng nghĩa.",
+      "hint": "Trước hết thay chủ ngữ bằng một đại từ, rồi nối đại từ ấy với dạng `be` phù hợp.",
+      "explanation": "Chủ ngữ được thay bằng đại từ phù hợp rồi nối với `be` bằng dấu nháy đơn; nghĩa của câu không đổi.",
       "pairs": [
-        { "left": "I am", "right": "I'm" },
-        { "left": "you are", "right": "you're" },
-        { "left": "he is", "right": "he's" },
-        { "left": "she is", "right": "she's" },
-        { "left": "it is", "right": "it's" },
-        { "left": "we are", "right": "we're" },
-        { "left": "they are", "right": "they're" }
+        { "left": "Lan is here.", "right": "She's here." },
+        { "left": "Mr Long is here.", "right": "He's here." },
+        { "left": "The bag is here.", "right": "It's here." },
+        { "left": "The cats are here.", "right": "They're here." },
+        { "left": "Nam and I are here.", "right": "We're here." }
       ]
     },
     {
       "id": "b19",
       "kind": "grid",
-      "prompt": "Chọn dạng rút gọn có cùng nghĩa với từng cụm đầy đủ.",
-      "hint": "Giữ nguyên chủ ngữ và xác định am, is hoặc are.",
-      "explanation": "Bốn cụm đã được rút gọn đúng.",
+      "prompt": "Chọn dạng đầy đủ của từng dạng viết tắt.",
+      "hint": "Phần đứng sau dấu nháy đơn là phần còn lại của `am`, `is` hoặc `are`.",
+      "explanation": "Dấu nháy đơn thay cho chữ bị lược: `'m` là `am`, `'s` là `is`, `'re` là `are`.",
       "rows": [
-        { "cue": "I am", "options": ["I'm", "it's", "we're"], "answer": "I'm", "completed": "I am = I'm" },
-        { "cue": "she is", "options": ["she's", "we're", "I'm"], "answer": "she's", "completed": "she is = she's" },
-        { "cue": "we are", "options": ["it's", "we're", "you're"], "answer": "we're", "completed": "we are = we're" },
-        { "cue": "they are", "options": ["they're", "he's", "I'm"], "answer": "they're", "completed": "they are = they're" }
+        { "cue": "I'm", "options": ["I am", "I is", "I are"], "answer": "I am", "completed": "I'm = I am" },
+        { "cue": "she's", "options": ["she am", "she is", "she are"], "answer": "she is", "completed": "she's = she is" },
+        { "cue": "we're", "options": ["we is", "we am", "we are"], "answer": "we are", "completed": "we're = we are" },
+        { "cue": "they're", "options": ["they are", "they is", "they am"], "answer": "they are", "completed": "they're = they are" }
       ]
     },
     {
       "id": "b20",
       "kind": "tap",
-      "prompt": "Chọn tất cả dạng được rút gọn từ cụm có `are`.",
-      "hint": "Tìm dạng rút gọn của you are, we are và they are.",
-      "explanation": "you're, we're và they're lần lượt được rút gọn từ you are, we are và they are.",
+      "prompt": "Chọn tất cả dạng được viết tắt từ cụm có `are`.",
+      "hint": "Tìm dạng viết tắt của you are, we are và they are.",
+      "explanation": "you're, we're và they're lần lượt được viết tắt từ you are, we are và they are.",
       "tokens": ["I'm", "you're", "she's", "we're", "they're"],
       "answerIndexes": [1, 3, 4],
       "selectionMode": "multiple"
@@ -154,11 +152,11 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "b21",
       "kind": "choice",
-      "prompt": "Dạng rút gọn nào thay được `It is` trong `It is small`?",
-      "hint": "it is rút gọn thành it's.",
-      "explanation": "It's small có cùng nghĩa với It is small.",
-      "options": ["I'm", "it's", "they're"],
-      "answer": "it's"
+      "prompt": "Hai câu `I am ready.` và `I'm ready.` khác nhau ở điểm nào?",
+      "hint": "Nghĩ xem dấu nháy đơn thay cho điều gì: một ý mới hay chỉ vài chữ bị lược?",
+      "explanation": "`I'm` chỉ là cách viết gọn của `I am`; cả hai câu đều nghĩa là “Tôi sẵn sàng”.",
+      "options": ["Chỉ khác cách viết; nghĩa giống nhau", "Câu có I'm nói về một người khác", "Câu có I'm nói về nhiều người"],
+      "answer": "Chỉ khác cách viết; nghĩa giống nhau"
     },
     ...repairExercises("b", 22, [
       ["Trong câu đang cho, hãy thay `is` để dạng `be` khớp với `we`.", ["We", "is", "at home", "."], 1, ["am", "is", "are"], "are", "We đi với are.", "We are at home là câu đúng."],
@@ -214,15 +212,15 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "b28",
       "kind": "choice",
-      "prompt": "Câu nào dùng đúng dạng `be` với cả ba chủ ngữ?",
+      "prompt": "Nhóm ba câu nào dùng đúng dạng `be` với cả ba chủ ngữ?",
       "hint": "Kiểm tra lần lượt I, the boy và the boys.",
       "explanation": "I am, the boy is và the boys are là ba cặp đúng.",
       "options": [
-        "I am ready; the boy is here; the boys are happy.",
-        "I is ready; the boy are here; the boys am happy.",
-        "I are ready; the boy am here; the boys is happy."
+        "I am ready. The boy is here. The boys are happy.",
+        "I is ready. The boy are here. The boys am happy.",
+        "I are ready. The boy am here. The boys is happy."
       ],
-      "answer": "I am ready; the boy is here; the boys are happy."
+      "answer": "I am ready. The boy is here. The boys are happy."
     },
     {
       "id": "b29",
@@ -240,17 +238,17 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "b30",
       "kind": "sort",
-      "prompt": "Phân loại các cụm thành dạng đầy đủ hoặc dạng rút gọn.",
-      "hint": "Dạng rút gọn có dấu nháy đơn.",
-      "explanation": "Các cụm đã được phân loại theo hình thức viết, không theo nghĩa.",
-      "buckets": ["Dạng đầy đủ", "Dạng rút gọn"],
+      "prompt": "Phân loại các câu thành câu có đủ dạng `be` và câu còn thiếu `be`.",
+      "hint": "Tìm từ nối chủ ngữ với phần tên gọi, miêu tả hoặc nơi chốn phía sau.",
+      "explanation": "Tiếng Việt có thể nói “Chúng tôi mệt” hay “Con mèo ở đây” mà không cần từ nối, nhưng câu tiếng Anh theo mẫu này phải có `am`, `is` hoặc `are`.",
+      "buckets": ["Có đủ be", "Còn thiếu be"],
       "items": [
-        { "text": "I am", "bucket": "Dạng đầy đủ" },
-        { "text": "I'm", "bucket": "Dạng rút gọn" },
-        { "text": "she is", "bucket": "Dạng đầy đủ" },
-        { "text": "she's", "bucket": "Dạng rút gọn" },
-        { "text": "they are", "bucket": "Dạng đầy đủ" },
-        { "text": "they're", "bucket": "Dạng rút gọn" }
+        { "text": "We are tired.", "bucket": "Có đủ be" },
+        { "text": "We tired.", "bucket": "Còn thiếu be" },
+        { "text": "The cat is here.", "bucket": "Có đủ be" },
+        { "text": "The cat here.", "bucket": "Còn thiếu be" },
+        { "text": "She is a teacher.", "bucket": "Có đủ be" },
+        { "text": "She a teacher.", "bucket": "Còn thiếu be" }
       ]
     }
   ],
@@ -291,13 +289,13 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "hint": "Hỏi: là ai/cái gì, như thế nào hay ở đâu?",
       "explanation": "Mỗi phần sau be đã được xác định đúng chức năng.",
       "rows": [
-        { "cue": "Hoa is an artist.", "options": ["Tên gọi hoặc loại", "Đặc điểm", "Nơi chốn"], "answer": "Tên gọi hoặc loại", "completed": "an artist — nghề nghiệp" },
+        { "cue": "Hoa is an artist.", "options": ["Tên gọi hoặc loại", "Đặc điểm", "Nơi chốn"], "answer": "Tên gọi hoặc loại", "completed": "an artist — tên gọi hoặc loại (nghề nghiệp)" },
         { "cue": "The soup is hot.", "options": ["Tên gọi hoặc loại", "Đặc điểm", "Nơi chốn"], "answer": "Đặc điểm", "completed": "hot — đặc điểm" },
         { "cue": "The dog is in the garden.", "options": ["Tên gọi hoặc loại", "Đặc điểm", "Nơi chốn"], "answer": "Nơi chốn", "completed": "in the garden — nơi chốn" }
       ]
     },
     ...choiceExercises("bm", 4, [
-      ["Câu nào cho biết Anna làm nghề bác sĩ?", ["Anna is a doctor.", "Anna is happy.", "Anna is at home."], "Anna is a doctor.", "Tìm câu có cụm nghề nghiệp a doctor.", "Anna is a doctor nghĩa là Anna là bác sĩ."],
+      ["Câu nào cho biết Anna làm nghề bác sĩ?", ["Anna is a doctor.", "Anna is happy.", "Anna is at home."], "Anna is a doctor.", "Thông tin cần tìm là nghề nghiệp: phần sau `be` phải là một danh từ chỉ nghề.", "Anna is a doctor nghĩa là Anna là bác sĩ."],
       ["Cụm nào có thể đứng sau `She is` để nói “Cô ấy là một nghệ sĩ”?", ["a teacher", "an artist", "two artists"], "an artist", "Artist là nghề nghiệp số ít bắt đầu bằng âm nguyên âm.", "She is an artist là câu đúng."],
     ]),
     ...orderExercises("bm", 6, [
@@ -307,7 +305,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       ["Trong câu `He is a pilot`, chọn cụm cho biết nghề nghiệp.", ["He", "is", "a pilot"], [2], "Tìm phần đứng sau be cho biết anh ấy là gì.", "a pilot là cụm nghề nghiệp."],
     ]),
     ...choiceExercises("bm", 8, [
-      ["Câu nào miêu tả chiếc áo là sạch?", ["The shirt is clean.", "The shirt is on the chair.", "The shirt is a uniform."], "The shirt is clean.", "Clean là tính từ chỉ đặc điểm.", "The shirt is clean nghĩa là chiếc áo sạch."],
+      ["Câu nào cho biết chiếc áo sạch?", ["The shirt is clean.", "The shirt is on the chair.", "The shirt is a uniform."], "The shirt is clean.", "Câu cần miêu tả chiếc áo như thế nào, không nói nó ở đâu hay nó là cái gì.", "The shirt is clean nghĩa là chiếc áo sạch."],
     ]),
     ...orderExercises("bm", 9, [
       ["Sắp xếp thành câu “Những bông hoa đẹp”.", ["beautiful", "The flowers", "are", "."], ["The flowers", "are", "beautiful", "."], "Tính từ beautiful đứng sau are.", "The flowers are beautiful nghĩa là những bông hoa đẹp."],
@@ -322,13 +320,13 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "hint": "Tính từ không đổi; chỉ is/are thay đổi theo chủ ngữ.",
       "explanation": "Mỗi câu dùng đúng be và giữ nguyên tính từ.",
       "rows": [
-        { "cue": "Con mèo này nhỏ.", "options": ["The cat is small.", "The cats are small.", "The cat is a student."], "answer": "The cat is small.", "completed": "The cat is small." },
-        { "cue": "Những con mèo này nhỏ.", "options": ["The cat is small.", "The cats are small.", "The cats are at home."], "answer": "The cats are small.", "completed": "The cats are small." },
-        { "cue": "Những chiếc hộp này nặng.", "options": ["The boxes are heavy.", "The box is heavy.", "The boxes are here."], "answer": "The boxes are heavy.", "completed": "The boxes are heavy." }
+        { "cue": "Con mèo ấy nhỏ.", "options": ["The cat is small.", "The cats are small.", "The cat is a student."], "answer": "The cat is small.", "completed": "The cat is small." },
+        { "cue": "Những con mèo ấy nhỏ.", "options": ["The cat is small.", "The cats are small.", "The cats are at home."], "answer": "The cats are small.", "completed": "The cats are small." },
+        { "cue": "Những chiếc hộp ấy nặng.", "options": ["The boxes are heavy.", "The box is heavy.", "The boxes are here."], "answer": "The boxes are heavy.", "completed": "The boxes are heavy." }
       ]
     },
     ...choiceExercises("bm", 12, [
-      ["Câu nào cho biết những chiếc chìa khóa ở trên bàn?", ["The keys are new.", "The keys are on the table.", "The keys are objects."], "The keys are on the table.", "On the table là cụm chỉ nơi chốn.", "The keys are on the table nghĩa là những chiếc chìa khóa ở trên bàn."],
+      ["Câu nào cho biết những chiếc chìa khóa ở trên bàn?", ["The keys are new.", "The keys are on the table.", "The keys are objects."], "The keys are on the table.", "Câu cần trả lời câu hỏi “ở đâu?”, không phải “như thế nào?” hay “là gì?”.", "The keys are on the table nghĩa là những chiếc chìa khóa ở trên bàn."],
     ]),
     ...orderExercises("bm", 13, [
       ["Sắp xếp thành câu “Chúng tôi ở Hà Nội”.", ["in Hanoi", "We", "are", "."], ["We", "are", "in Hanoi", "."], "Cụm nơi chốn đứng sau are.", "We are in Hanoi nghĩa là chúng tôi ở Hà Nội."],
@@ -366,30 +364,30 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     },
     ...repairExercises("bm", 17, [
       ["Trong câu đang cho, hãy thay cụm nghề nghiệp để nói “Mia là một giáo viên”.", ["Mia", "is", "an artist", "."], 2, ["a teacher", "an artist", "at school"], "a teacher", "Một nghề nghiệp đếm được số ít cần a/an.", "Mia is a teacher là câu đúng."],
-      ["Trong câu đang cho, hãy thay phần sau `are` để miêu tả những con mèo là nhỏ.", ["The cats", "are", "at home", "."], 2, ["small", "hungry", "outside"], "small", "Câu cần tính từ small, nghĩa là nhỏ.", "The cats are small là câu đúng."],
+      ["Trong câu đang cho, hãy thay phần sau `are` để nói những con mèo nhỏ.", ["The cats", "are", "at home", "."], 2, ["small", "hungry", "outside"], "small", "Phần cần thay vào là một tính từ miêu tả kích thước, không phải nơi chốn.", "The cats are small là câu đúng."],
       ["Trong câu đang cho, hãy thay phần cuối để nói “Chúng tôi ở Hà Nội”.", ["We", "are", "ready", "."], 2, ["in Hanoi", "from Hanoi", "tired"], "in Hanoi", "Câu cần một cụm chỉ vị trí.", "We are in Hanoi nghĩa là chúng tôi ở Hà Nội."],
     ]),
     ...choiceExercises("bm", 20, [
-      ["Câu nào nói đầy đủ “Tôi mười tuổi”?", ["I am ten years old.", "I am from Hanoi.", "It is ten o'clock."], "I am ten years old.", "Years old cho biết tuổi.", "I am ten years old nghĩa là tôi mười tuổi."],
+      ["Câu nào nói đầy đủ “Tôi mười tuổi”?", ["I am ten years old.", "I am from Hanoi.", "It is ten o'clock."], "I am ten years old.", "Câu về tuổi cần số tuổi và cụm nghĩa là “tuổi” ở cuối.", "I am ten years old nghĩa là tôi mười tuổi."],
     ]),
     ...orderExercises("bm", 21, [
       ["Sắp xếp thành câu “Lan mười một tuổi”.", ["eleven years old", "Lan", "is", "."], ["Lan", "is", "eleven years old", "."], "Tuổi đứng sau dạng be.", "Lan is eleven years old nghĩa là Lan mười một tuổi."],
     ]),
     ...choiceExercises("bm", 22, [
-      ["Câu nào cho biết cô ấy đến từ Việt Nam?", ["She is in Vietnam.", "She is from Vietnam.", "She is happy."], "She is from Vietnam.", "From giới thiệu nguồn gốc.", "She is from Vietnam nghĩa là cô ấy đến từ Việt Nam."],
+      ["Câu nào cho biết cô ấy đến từ Việt Nam?", ["She is in Vietnam.", "She is from Vietnam.", "She is happy."], "She is from Vietnam.", "Phân biệt “đến từ” một nơi với “đang ở” một nơi.", "She is from Vietnam nghĩa là cô ấy đến từ Việt Nam."],
     ]),
     ...orderExercises("bm", 23, [
       ["Sắp xếp thành câu “Họ đến từ Huế”.", ["from Hue", "They", "are", "."], ["They", "are", "from Hue", "."], "From + nơi xuất thân đứng sau be.", "They are from Hue nghĩa là họ đến từ Huế."],
     ]),
     ...choiceExercises("bm", 24, [
-      ["Câu nào nói “Hôm nay là thứ Hai”?", ["It is Monday.", "It is Tuesday.", "It is three o'clock."], "It is Monday.", "Tiếng Anh thường dùng It is khi nói ngày.", "It is Monday nghĩa là hôm nay là thứ Hai."],
-      ["Câu nào nói “Bây giờ là ba giờ”?", ["It is three o'clock.", "I am three years old.", "It is four o'clock."], "It is three o'clock.", "O'clock cho biết giờ đúng; câu cần nói ba giờ chứ không nói tuổi hoặc bốn giờ.", "It is three o'clock nghĩa là bây giờ là ba giờ."],
+      ["Câu nào nói “Hôm nay là thứ Hai”?", ["It is Monday.", "Is Monday.", "It Monday."], "It is Monday.", "Khi nói ngày, câu tiếng Anh vẫn cần đủ chủ ngữ và một dạng `be`.", "`It is Monday.` có đủ chủ ngữ `it` và động từ `is`; khi nói ngày, tiếng Anh không bỏ phần nào trong hai phần ấy."],
+      ["Câu nào nói “Bây giờ là ba giờ”?", ["It is three o'clock.", "Is three o'clock.", "It are three o'clock."], "It is three o'clock.", "Nói giờ cũng cần chủ ngữ giống như khi nói ngày; kiểm tra cả dạng `be` đi với chủ ngữ ấy.", "`It is three o'clock.` dùng chủ ngữ `it` và `is` đi với `it`; câu nghĩa là “Bây giờ là ba giờ”."],
     ]),
     {
       "id": "bm26",
       "kind": "sort",
       "prompt": "Phân loại các câu theo tuổi, nguồn gốc, ngày hoặc giờ.",
-      "hint": "Tìm years old, from, tên ngày hoặc o'clock.",
+      "hint": "Đọc phần đứng sau `be` trong mỗi câu và hỏi: nó trả lời “bao nhiêu tuổi?”, “từ đâu đến?”, “thứ mấy?” hay “mấy giờ?”.",
       "explanation": "Bốn cách dùng mở rộng của be đã được phân biệt.",
       "buckets": ["Tuổi", "Nguồn gốc", "Ngày", "Giờ"],
       "items": [
@@ -471,13 +469,14 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "bn3",
       "kind": "match",
-      "prompt": "Ghép mỗi dạng phủ định đầy đủ với dạng rút gọn tương ứng.",
-      "hint": "Nhìn dạng be trong mỗi cụm.",
-      "explanation": "Các dạng ngắn chỉ thay cách nói và viết, không đổi nghĩa.",
+      "prompt": "Ghép mỗi câu phủ định đầy đủ với câu dùng đại từ và dạng viết tắt có cùng nghĩa.",
+      "hint": "Thay chủ ngữ bằng một đại từ trước, rồi viết tắt phần `be` + `not`.",
+      "explanation": "`is not` viết tắt thành `isn't`, `are not` viết tắt thành `aren't`; chủ ngữ được thay bằng đại từ phù hợp nên nghĩa không đổi.",
       "pairs": [
-        { "left": "is not", "right": "isn't" },
-        { "left": "are not", "right": "aren't" },
-        { "left": "I am not", "right": "I'm not" }
+        { "left": "Mai is not here.", "right": "She isn't here." },
+        { "left": "The bag is not here.", "right": "It isn't here." },
+        { "left": "Lan and Nam are not here.", "right": "They aren't here." },
+        { "left": "Nam and I are not here.", "right": "We aren't here." }
       ]
     },
     {
@@ -494,7 +493,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "bn5",
       "kind": "sort",
       "prompt": "Phân loại các câu thành khẳng định hoặc phủ định.",
-      "hint": "Câu phủ định có not hoặc một dạng rút gọn chứa not.",
+      "hint": "Câu phủ định có not hoặc một dạng viết tắt chứa not.",
       "explanation": "Ba câu khẳng định và ba câu phủ định đã được tách đúng.",
       "buckets": ["Khẳng định", "Phủ định"],
       "items": [
@@ -510,7 +509,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "bn6",
       "kind": "grid",
       "prompt": "Chọn cụm phủ định phù hợp với từng chủ ngữ.",
-      "hint": "I–am not; chủ ngữ số ít–is not; chủ ngữ số nhiều–are not.",
+      "hint": "Chọn dạng `be` theo chủ ngữ như trong câu khẳng định, rồi thêm `not` ngay sau.",
       "explanation": "Mỗi chủ ngữ đã đi với đúng dạng be rồi thêm not.",
       "rows": [
         { "cue": "I", "options": ["am not", "is not", "are not"], "answer": "am not", "completed": "I am not" },
@@ -520,40 +519,37 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       ]
     },
     ...repairExercises("bn", 7, [
-      ["Trong câu đang cho, hãy thay cụm ở giữa để đặt `not` đúng sau `is`.", ["The bag", "not is", "heavy", "."], 1, ["is", "is not", "not is"], "is not", "not đứng ngay sau is.", "The bag is not heavy là câu đúng."],
+      ["Trong câu đang cho, hãy sửa cụm ở giữa cho đúng trật tự của câu phủ định.", ["The bag", "not is", "heavy", "."], 1, ["is", "is not", "not is"], "is not", "Nhớ lại công thức phủ định của bài và so sánh thứ tự của hai từ ở giữa câu.", "The bag is not heavy là câu đúng."],
     ]),
     ...choiceExercises("bn", 8, [
-      ["Dạng rút gọn nào thay cho `is not`?", ["isn't", "aren't", "I'm not"], "isn't", "Dạng cần chọn bắt đầu từ is.", "isn't là dạng rút gọn của is not."],
-      ["Dạng rút gọn nào thay cho `are not`?", ["isn't", "aren't", "I'm not"], "aren't", "Dạng cần chọn bắt đầu từ are.", "aren't là dạng rút gọn của are not."],
-      ["Câu nào là dạng rút gọn của `I am not ready`?", ["I'm not ready.", "He isn't ready.", "We aren't ready."], "I'm not ready.", "I am rút thành I'm rồi giữ not riêng.", "I'm not ready có cùng nghĩa với I am not ready."],
+      ["Cụm phủ định nào hoàn thành `The bag ___ heavy.`?", ["isn't", "aren't", "am not"], "isn't", "Chủ ngữ chỉ một vật hay nhiều vật? Chọn dạng `be` trước, rồi mới thêm `not`.", "`The bag` là một vật, thay được bằng `it`, nên dùng `is not`, viết tắt là `isn't`: `The bag isn't heavy.`"],
+      ["Cụm phủ định nào hoàn thành `You ___ late.`?", ["isn't", "aren't", "am not"], "aren't", "Nhớ lại `you` đi với dạng `be` nào, kể cả khi chỉ có một người nghe.", "`You` luôn đi với `are`, nên phủ định là `are not`, viết tắt là `aren't`: `You aren't late.`"],
+      ["Câu nào là dạng viết tắt của `I am not ready`?", ["I'm not ready.", "I isn't ready.", "I aren't ready."], "I'm not ready.", "Chủ ngữ `I` chỉ đi với một dạng của `be`, kể cả trong câu phủ định.", "`I am not` viết tắt thành `I'm not`; `I` không đi với `is` hay `are`."],
     ]),
     {
       "id": "bn11",
-      "kind": "match",
-      "prompt": "Ghép hai cách phủ định có cùng nghĩa.",
-      "hint": "Một cách rút gọn be + not; cách kia rút gọn chủ ngữ + be.",
-      "explanation": "Ba cặp chỉ khác hình thức rút gọn.",
-      "pairs": [
-        { "left": "She isn't busy.", "right": "She's not busy." },
-        { "left": "He isn't tired.", "right": "He's not tired." },
-        { "left": "They aren't here.", "right": "They're not here." }
-      ]
+      "kind": "choice",
+      "prompt": "Câu nào có cùng nghĩa với `They aren't here.`?",
+      "hint": "Câu cần tìm vẫn phủ định và vẫn có đủ dạng `be`; nó chỉ viết tắt ở một chỗ khác.",
+      "explanation": "`They're not here.` nối chủ ngữ với `are` rồi giữ `not` riêng, nên có cùng nghĩa với `They aren't here.`; `They're here.` mất nghĩa phủ định, còn `They not here.` thiếu `be`.",
+      "options": ["They're not here.", "They're here.", "They not here."],
+      "answer": "They're not here."
     },
     {
       "id": "bn12",
       "kind": "grid",
-      "prompt": "Chọn câu rút gọn giữ nguyên nghĩa của từng câu đầy đủ.",
-      "hint": "is not → isn't; are not → aren't; I am not → I'm not.",
-      "explanation": "Bốn câu đã được rút gọn mà không đổi nghĩa.",
+      "prompt": "Chọn câu viết tắt giữ nguyên nghĩa của từng câu đầy đủ.",
+      "hint": "Giữ nguyên chủ ngữ và nghĩa phủ định; chỉ nối `be` với `not`, hoặc nối chủ ngữ với `be`.",
+      "explanation": "Bốn câu đã được viết tắt mà không đổi chủ ngữ, dạng `be` hay nghĩa phủ định.",
       "rows": [
-        { "cue": "I am not hungry.", "options": ["I'm not hungry.", "She isn't hungry.", "We aren't hungry."], "answer": "I'm not hungry.", "completed": "I'm not hungry." },
-        { "cue": "He is not at home.", "options": ["He isn't at home.", "They aren't at home.", "He's at home."], "answer": "He isn't at home.", "completed": "He isn't at home." },
-        { "cue": "We are not late.", "options": ["We're late.", "We aren't late.", "She isn't late."], "answer": "We aren't late.", "completed": "We aren't late." },
+        { "cue": "I am not hungry.", "options": ["I'm not hungry.", "I'm hungry.", "I isn't hungry."], "answer": "I'm not hungry.", "completed": "I'm not hungry." },
+        { "cue": "He is not at home.", "options": ["He isn't at home.", "He aren't at home.", "He's at home."], "answer": "He isn't at home.", "completed": "He isn't at home." },
+        { "cue": "We are not late.", "options": ["We're late.", "We aren't late.", "We isn't late."], "answer": "We aren't late.", "completed": "We aren't late." },
         { "cue": "The boxes are not heavy.", "options": ["The box isn't heavy.", "The boxes aren't heavy.", "The boxes are heavy."], "answer": "The boxes aren't heavy.", "completed": "The boxes aren't heavy." }
       ]
     },
     ...orderExercises("bn", 13, [
-      ["Sắp xếp thành câu “Tôi chưa sẵn sàng” bằng dạng rút gọn.", ["ready", "I'm", "not", "."], ["I'm", "not", "ready", "."], "I'm = I am; not đứng sau am.", "I'm not ready nghĩa là tôi chưa sẵn sàng."],
+      ["Sắp xếp thành câu “Tôi chưa sẵn sàng” bằng dạng viết tắt.", ["ready", "I'm", "not", "."], ["I'm", "not", "ready", "."], "I'm = I am; not đứng sau am.", "I'm not ready nghĩa là tôi chưa sẵn sàng."],
     ]),
     {
       "id": "bn14",
@@ -566,10 +562,10 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "selectionMode": "multiple"
     },
     ...choiceExercises("bn", 15, [
-      ["Câu nào nói “Anh ấy không phải là giáo viên”?", ["He is a teacher.", "He is not a teacher.", "They are not teachers."], "He is not a teacher.", "Cần he + is not + a teacher.", "He is not a teacher phủ định nghề nghiệp."],
-      ["Câu nào nói “Chiếc áo không khô”?", ["The shirt is dry.", "The shirt isn't dry.", "The shirts aren't dry."], "The shirt isn't dry.", "The shirt là số ít nên dùng isn't.", "The shirt isn't dry phủ định đặc điểm dry."],
-      ["Câu nào nói “Chúng tôi không ở trường”?", ["We are at school.", "We aren't at school.", "She isn't at school."], "We aren't at school.", "We là số nhiều và dùng aren't.", "We aren't at school phủ định nơi chốn."],
-      ["Câu nào nói “Cô ấy không đến từ Huế”?", ["She is from Hue.", "She isn't from Hue.", "They aren't from Hue."], "She isn't from Hue.", "She đi với isn't.", "She isn't from Hue phủ định nguồn gốc."],
+      ["Câu nào nói “Anh ấy không phải là giáo viên”?", ["He is a teacher.", "He is not a teacher.", "They are not teachers."], "He is not a teacher.", "Câu cần đúng người được nói tới, đúng nghề và có từ phủ định.", "He is not a teacher phủ định nghề nghiệp."],
+      ["Câu nào nói “Chiếc áo không khô”?", ["The shirt is dry.", "The shirt isn't dry.", "The shirts aren't dry."], "The shirt isn't dry.", "Đếm số chiếc áo trong câu tiếng Việt rồi chọn dạng phủ định phù hợp.", "The shirt isn't dry phủ định đặc điểm dry."],
+      ["Câu nào nói “Chúng tôi không ở trường”?", ["We are at school.", "We aren't at school.", "She isn't at school."], "We aren't at school.", "Xác định chủ ngữ của câu tiếng Việt và nhớ đại từ ấy đi với dạng `be` nào.", "We aren't at school phủ định nơi chốn."],
+      ["Câu nào nói “Cô ấy không đến từ Huế”?", ["She is from Hue.", "She isn't from Hue.", "They aren't from Hue."], "She isn't from Hue.", "Câu tiếng Việt nói về một người nữ và có từ “không”.", "She isn't from Hue phủ định nguồn gốc."],
     ]),
     ...repairExercises("bn", 19, [
       ["Trong câu đang cho, hãy thay cụm phủ định để khớp với chủ ngữ số nhiều `these boxes`.", ["These boxes", "isn't", "heavy", "."], 1, ["am not", "isn't", "aren't"], "aren't", "These boxes là số nhiều.", "These boxes aren't heavy là câu đúng."],
@@ -593,7 +589,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "bn22",
       "kind": "sort",
       "prompt": "Phân loại các chủ ngữ theo cụm phủ định cần dùng.",
-      "hint": "I dùng am not; số ít dùng isn't; số nhiều và you dùng aren't.",
+      "hint": "Thay mỗi chủ ngữ bằng một đại từ nếu cần, chọn dạng `be` trước rồi mới thêm `not`.",
       "explanation": "Mỗi chủ ngữ đã được xếp theo đúng dạng phủ định.",
       "buckets": ["am not", "isn't", "aren't"],
       "items": [
@@ -609,7 +605,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "bn23",
       "kind": "choice",
       "prompt": "Cặp câu nào có cùng nghĩa phủ định?",
-      "hint": "So sánh dạng đầy đủ với dạng rút gọn.",
+      "hint": "So sánh dạng đầy đủ với dạng viết tắt.",
       "explanation": "The bus is not here và The bus isn't here có cùng nghĩa.",
       "options": [
         "The bus is not here. = The bus isn't here.",
@@ -621,8 +617,8 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "bn24",
       "kind": "tap",
-      "prompt": "Chọn tất cả dạng rút gọn mang nghĩa phủ định.",
-      "hint": "Tìm các dạng chứa not được rút gọn.",
+      "prompt": "Chọn tất cả dạng viết tắt mang nghĩa phủ định.",
+      "hint": "Tìm các dạng chứa not được viết tắt.",
       "explanation": "isn't, aren't và I'm not đều là hình thức phủ định.",
       "tokens": ["isn't", "she's", "aren't", "they're", "I'm not"],
       "answerIndexes": [0, 2, 4],
@@ -632,16 +628,16 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "bn25",
       "kind": "choice",
       "prompt": "Câu nào phủ định đúng với chủ ngữ `I`?",
-      "hint": "I đi với am not; dạng rút gọn là I'm not.",
-      "explanation": "I'm not busy là câu phủ định đúng với I.",
-      "options": ["I'm not busy.", "He isn't busy.", "We aren't busy."],
+      "hint": "Kiểm tra hai điều: câu có thật sự phủ định không, và dạng `be` có khớp với `I` không.",
+      "explanation": "`I'm not busy.` vừa có `not` vừa dùng `am` đi với `I`; `I'm busy.` không phủ định, còn `I` không đi với `isn't`.",
+      "options": ["I'm not busy.", "I'm busy.", "I isn't busy."],
       "answer": "I'm not busy."
     },
     {
       "id": "bn26",
       "kind": "grid",
       "prompt": "Chuyển từng câu khẳng định sang câu phủ định có cùng chủ ngữ và thông tin.",
-      "hint": "Chọn câu chỉ thêm not hoặc dùng dạng rút gọn tương ứng.",
+      "hint": "Chọn câu chỉ thêm not hoặc dùng dạng viết tắt tương ứng.",
       "explanation": "Bốn câu đã được phủ định mà không đổi chủ ngữ hay nội dung chính.",
       "rows": [
         { "cue": "I am hungry.", "options": ["I'm not hungry.", "I'm not tired.", "We aren't hungry."], "answer": "I'm not hungry.", "completed": "I'm not hungry." },
@@ -680,12 +676,12 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "kind": "grid",
       "prompt": "Chọn câu phủ định chính xác để hoàn thành lượt tổng hợp.",
       "hint": "Kiểm tra chủ ngữ, dạng be, vị trí not và ý nghĩa.",
-      "explanation": "Năm câu sử dụng đúng dạng đầy đủ hoặc rút gọn của phủ định với be.",
+      "explanation": "Năm câu sử dụng đúng dạng đầy đủ hoặc viết tắt của phủ định với be.",
       "rows": [
         { "cue": "Tôi không phải là Nam.", "options": ["I'm not Nam.", "He's not Nam.", "I'm Nam."], "answer": "I'm not Nam.", "completed": "I'm not Nam." },
         { "cue": "Chiếc xe không mới.", "options": ["The car isn't new.", "The cars aren't new.", "The car is new."], "answer": "The car isn't new.", "completed": "The car isn't new." },
         { "cue": "Các học sinh không ở đây.", "options": ["The student isn't here.", "The students aren't here.", "The students are here."], "answer": "The students aren't here.", "completed": "The students aren't here." },
-        { "cue": "Cô ấy không mười tuổi.", "options": ["She isn't ten years old.", "She is ten years old.", "They aren't ten years old."], "answer": "She isn't ten years old.", "completed": "She isn't ten years old." },
+        { "cue": "Cô ấy không phải mười tuổi.", "options": ["She isn't ten years old.", "She is ten years old.", "They aren't ten years old."], "answer": "She isn't ten years old.", "completed": "She isn't ten years old." },
         { "cue": "Họ không đến từ Huế.", "options": ["They aren't from Hue.", "They are from Hue.", "He isn't from Hue."], "answer": "They aren't from Hue.", "completed": "They aren't from Hue." }
       ]
     }
@@ -716,14 +712,14 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     ...choiceExercises("bq", 3, [
       ["Câu hỏi nào có nghĩa “Quyển sách có mới không?”", ["Is the book new?", "Are the books new?", "Is the book here?"], "Is the book new?", "The book là chủ ngữ số ít nên câu hỏi bắt đầu bằng Is.", "Is the book new? hỏi về đặc điểm new của một quyển sách."],
       ["Câu hỏi nào có nghĩa “Những quyển sách có mới không?”", ["Is the book new?", "Are the books new?", "Are the books here?"], "Are the books new?", "The books là chủ ngữ số nhiều nên câu hỏi bắt đầu bằng Are.", "Are the books new? hỏi về đặc điểm new của nhiều quyển sách."],
-      ["Câu hỏi nào có nghĩa “Những chiếc hộp này có nặng không?”", ["Is this box heavy?", "Are these boxes heavy?", "Are these boxes new?"], "Are these boxes heavy?", "Câu cần giữ cả số nhiều these boxes và đặc điểm heavy.", "Are these boxes heavy? có đúng chủ ngữ số nhiều và đúng nghĩa cần hỏi."],
+      ["Câu hỏi nào có nghĩa “Những chiếc hộp này có nặng không?”", ["Is this box heavy?", "Are these boxes heavy?", "Are these boxes new?"], "Are these boxes heavy?", "Kiểm tra cả số lượng của chủ ngữ lẫn đặc điểm được hỏi.", "Are these boxes heavy? có đúng chủ ngữ số nhiều và đúng nghĩa cần hỏi."],
     ]),
     ...tapExercises("bq", 6, [
       ["Trong câu `Is the room quiet?`, chọn dạng của `be`.", ["Is", "the room", "quiet", "?"], [0], "Dạng be đã được đưa lên trước chủ ngữ.", "Is là dạng be đi với the room."],
       ["Trong câu `Are Mai and An at school?`, chọn toàn bộ chủ ngữ.", ["Are", "Mai", "and", "An", "at school", "?"], [1, 2, 3], "Câu hỏi đang nói về cả Mai và An.", "Mai and An là chủ ngữ số nhiều."],
     ]),
     ...repairExercises("bq", 8, [
-      ["Chọn cụm mở đầu để biến câu đang cho thành câu hỏi.", ["The bus is", "here", "?"], 0, ["The bus is", "Is the bus", "Are the buses"], "Is the bus", "Đưa is lên trước chủ ngữ the bus.", "Is the bus here? là câu hỏi đúng."],
+      ["Chọn cụm mở đầu để biến câu đang cho thành câu hỏi.", ["The bus is", "here", "?"], 0, ["The bus is", "Is the bus", "Are the buses"], "Is the bus", "Câu hỏi Yes/No đổi chỗ những phần nào so với câu khẳng định?", "Is the bus here? là câu hỏi đúng."],
     ]),
     {
       "id": "bq9",
@@ -813,7 +809,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "bq23",
       "kind": "sort",
       "prompt": "Phân loại các cách trả lời theo việc chúng có thể đứng độc lập làm câu trả lời ngắn khẳng định hay không.",
-      "hint": "Ở cuối câu trả lời khẳng định, không rút gọn chủ ngữ với be.",
+      "hint": "Ở cuối câu trả lời khẳng định, không viết tắt chủ ngữ với be.",
       "explanation": "Yes, he is; Yes, they are; Yes, I am là các câu trả lời ngắn chuẩn.",
       "buckets": ["Dùng được", "Không dùng theo mẫu này"],
       "items": [
@@ -841,20 +837,20 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "bq25",
       "kind": "grid",
-      "prompt": "Chọn câu hỏi phù hợp với từng thông tin cần xác nhận.",
+      "prompt": "Chọn câu hỏi Yes/No phù hợp với từng điều bạn muốn hỏi.",
       "hint": "Đặt be trước chủ ngữ và giữ nguyên phần thông tin phía sau.",
       "explanation": "Nghề nghiệp, đặc điểm và nơi chốn đều dùng cùng trật tự be + chủ ngữ.",
       "rows": [
-        { "cue": "Xác nhận Minh là bác sĩ", "options": ["Is Minh a doctor?", "Is Minh happy?", "Is Minh at home?"], "answer": "Is Minh a doctor?", "completed": "Is Minh a doctor?" },
-        { "cue": "Xác nhận chiếc túi nặng", "options": ["Is the bag heavy?", "Is the bag here?", "Is the bag a box?"], "answer": "Is the bag heavy?", "completed": "Is the bag heavy?" },
-        { "cue": "Xác nhận những chiếc chìa khóa ở trên bàn", "options": ["Are the keys new?", "Are the keys on the table?", "Is the key on the table?"], "answer": "Are the keys on the table?", "completed": "Are the keys on the table?" }
+        { "cue": "Minh có phải là bác sĩ không?", "options": ["Is Minh a doctor?", "Is Minh happy?", "Is Minh at home?"], "answer": "Is Minh a doctor?", "completed": "Is Minh a doctor?" },
+        { "cue": "Chiếc túi có nặng không?", "options": ["Is the bag heavy?", "Is the bag here?", "Is the bag a box?"], "answer": "Is the bag heavy?", "completed": "Is the bag heavy?" },
+        { "cue": "Những chiếc chìa khóa có ở trên bàn không?", "options": ["Are the keys new?", "Are the keys on the table?", "Is the key on the table?"], "answer": "Are the keys on the table?", "completed": "Are the keys on the table?" }
       ]
     },
     ...orderExercises("bq", 26, [
       ["Sắp xếp thành câu trả lời “Không, họ không ở đó”.", ["they", "No", "aren't", ",", "."], ["No", ",", "they", "aren't", "."], "Câu trả lời phủ định bắt đầu bằng No rồi đến chủ ngữ và be phủ định.", "No, they aren't là câu trả lời phủ định ngắn."],
     ]),
     ...choiceExercises("bq", 27, [
-      ["Công thức nào đúng cho câu hỏi xác nhận với `be`?", ["be + chủ ngữ + phần còn lại + ?", "chủ ngữ + be + phần còn lại + ?", "chủ ngữ + not + phần còn lại + ?"], "be + chủ ngữ + phần còn lại + ?", "So sánh She is ready và Is she ready?", "Câu hỏi đưa be lên trước chủ ngữ."],
+      ["Công thức nào đúng cho câu hỏi Yes/No với `be`?", ["be + chủ ngữ + phần còn lại + ?", "chủ ngữ + be + phần còn lại + ?", "chủ ngữ + not + phần còn lại + ?"], "be + chủ ngữ + phần còn lại + ?", "So sánh She is ready và Is she ready?", "Câu hỏi đưa be lên trước chủ ngữ."],
     ]),
     {
       "id": "bq28",
@@ -1001,7 +997,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       ["Trong câu `What are those?`, chọn chủ ngữ.", ["What", "are", "those", "?"], [2], "Câu hỏi đang hỏi về những vật kia.", "those là chủ ngữ của câu hỏi."],
     ]),
     ...choiceExercises("bw", 20, [
-      ["Câu nào hỏi “Bạn đến từ đâu?”", ["Where are you?", "Where are you from?", "Who are you?"], "Where are you from?", "Cụm from hỏi về nơi xuất thân.", "Where are you from? hỏi nguồn gốc của người nghe."],
+      ["Câu nào hỏi “Bạn đến từ đâu?”", ["Where are you?", "Where are you from?", "Who are you?"], "Where are you from?", "Hỏi nguồn gốc khác hỏi vị trí hiện tại ở chỗ nào?", "Where are you from? hỏi nguồn gốc của người nghe."],
     ]),
     ...orderExercises("bw", 21, [
       ["Sắp xếp thành câu hỏi “Họ đến từ đâu?”.", ["from", "they", "Where", "are", "?"], ["Where", "are", "they", "from", "?"], "Where đứng đầu; from ở cuối cụm hỏi nguồn gốc.", "Where are they from? là câu hỏi đúng."],
@@ -1033,7 +1029,7 @@ export const preA1Chapter03ExerciseData: Record<string, Exercise[]> = {
       "id": "bw29",
       "kind": "sort",
       "prompt": "Phân loại câu hỏi theo việc chúng cần câu trả lời có/không hay cần một thông tin cụ thể.",
-      "hint": "Câu bắt đầu bằng be hỏi xác nhận; câu bắt đầu bằng từ hỏi yêu cầu thông tin.",
+      "hint": "Nhìn từ đứng đầu mỗi câu hỏi: đó là một dạng của `be` hay một từ để hỏi?",
       "explanation": "Câu hỏi có who, what, where hoặc how old cần nội dung cụ thể thay vì chỉ Yes hoặc No.",
       "buckets": ["Cần Yes hoặc No", "Cần thông tin cụ thể"],
       "items": [

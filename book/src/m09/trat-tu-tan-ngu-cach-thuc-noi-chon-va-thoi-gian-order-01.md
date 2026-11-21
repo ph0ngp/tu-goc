@@ -34,15 +34,17 @@ Khung không phải là danh sách bắt buộc phải điền kín. `The baby s
 
 Đây không phải chuyện văn phong hay trình độ: ở mọi cấp độ, `slowly` không đứng giữa `reads` và `books`.
 
-Một số động từ không cần tân ngữ: `The baby sleeps quietly`.
+Một số động từ không cần tân ngữ: `The baby sleeps quietly` — “Em bé ngủ yên lặng”.
 
 ## Cách thức thường trước nơi chốn và thời gian
 
-```text
-They speak English clearly at work every day.
-     tân ngữ   cách thức nơi chốn thời gian
-→ Họ nói tiếng Anh rõ ràng ở nơi làm việc mỗi ngày.
-```
+Trong `They speak English clearly at work every day.` — “Họ nói tiếng Anh rõ ràng ở nơi làm việc mỗi ngày”, các phần sau động từ `speak` xếp theo thứ tự:
+
+| Tân ngữ | Cách thức | Nơi chốn | Thời gian |
+| --- | --- | --- | --- |
+| `English` | `clearly` | `at work` | `every day` |
+
+Thêm hai ví dụ cùng trật tự:
 
 | Câu | Nghĩa |
 | --- | --- |

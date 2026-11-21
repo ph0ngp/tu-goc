@@ -41,7 +41,7 @@ Booster chỉ nên mạnh bằng bằng chứng. `Obviously` có thể khiến n
 
 | Loại lập trường | Ví dụ |
 | --- | --- |
-| độ chắc chắn | `Probably, the change will be temporary.` |
+| độ chắc chắn | `Probably, the change will be temporary.` — Có lẽ thay đổi chỉ là tạm thời. |
 | đánh giá | `Fortunately, nobody was injured.` — May mắn là không ai bị thương. |
 | thái độ người nói | `Frankly, the plan is unrealistic.` — Nói thẳng, kế hoạch không thực tế. |
 | góc nhìn | `Financially, the proposal makes sense.` — Xét về tài chính, đề xuất hợp lý. |

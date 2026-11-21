@@ -45,7 +45,7 @@ to be + past participle
 - `The building is expected to be completed in June.` — Tòa nhà được dự kiến hoàn thành vào tháng Sáu.
 - `These instructions are easy to understand.` — Những hướng dẫn này dễ hiểu.
 
-Trong ba câu đầu, `to be + pp` mang nghĩa bị động rõ. Câu `easy to understand` có hình thức chủ động sau tính từ nhưng chủ ngữ được hiểu là đối tượng của `understand`; đây là một mẫu thông dụng cần học như cả cụm, không đổi máy móc thành `easy to be understood`.
+Trong ba câu đầu, `to be + pp` mang nghĩa bị động rõ. `Be expected to` là một cụm cố định nghĩa “được dự kiến sẽ”; ở đây chỉ cần nhận ra phần `to be completed` sau nó. Mẫu tường thuật bị động này được học kỹ ở B2. Câu `easy to understand` có hình thức chủ động sau tính từ nhưng chủ ngữ được hiểu là đối tượng của `understand`; đây là một mẫu thông dụng cần học như cả cụm, không đổi máy móc thành `easy to be understood`.
 
 ## Sau động từ và tính từ
 
@@ -61,13 +61,13 @@ Chủ ngữ của câu là người/vật nhận hành động, không phải ng
 
 ## Chuyển từ chủ động
 
-- Chủ động: `You must submit the form today.`
-- Bị động: `The form must be submitted today.`
+- Chủ động: `You must submit the form today.` — Bạn phải nộp biểu mẫu hôm nay.
+- Bị động: `The form must be submitted today.` — Biểu mẫu phải được nộp hôm nay.
 
 Giữ modal `must`, thêm `be`, đổi `submit` thành `submitted`.
 
-- Chủ động: `They need to repair the roof.`
-- Bị động: `The roof needs to be repaired.`
+- Chủ động: `They need to repair the roof.` — Họ cần sửa mái nhà.
+- Bị động: `The roof needs to be repaired.` — Mái nhà cần được sửa.
 
 Giữ `needs to`, thêm `be`, đổi động từ chính sang quá khứ phân từ.
 

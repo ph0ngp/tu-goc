@@ -65,14 +65,11 @@ Câu hỏi loại 2 tạo một tình huống tưởng tượng để người n
 
 `Would` thường nằm ở mệnh đề kết quả. Một số cách dùng đặc biệt của `would` trong mệnh đề điều kiện có nghĩa riêng, nhưng chưa thuộc phạm vi bài này.
 
-## Loại 1 hay loại 2 là lựa chọn về góc nhìn
+## Loại 2 cho một tình huống tương lai
 
-Cùng một tình huống tương lai có thể được nhìn theo hai cách:
+Như câu `If it snowed tomorrow, the roads would close` ở trên, loại 2 cũng nói được về tương lai: `If it rained tomorrow, we'd stay home.` — Nếu ngày mai trời mưa, chúng tôi sẽ ở nhà. Câu vẫn giữ trọn mẫu loại 2: quá khứ đơn sau `if`, `would + V` ở kết quả; không trộn hiện tại đơn sau `if` với `would`.
 
-- `If it rains tomorrow, we'll stay home.` — Người nói xem mưa là khả năng thực tế.
-- `If it rained tomorrow, we'd stay home.` — Người nói tưởng tượng khả năng xa hơn hoặc ít mong đợi hơn.
-
-Loại 2 không có nghĩa “không thể xảy ra” trong mọi câu. Nó cho thấy người nói đặt tình huống xa thực tế hơn loại 1.
+Loại 2 không có nghĩa “không thể xảy ra” trong mọi câu; nó cho thấy người nói đặt tình huống xa thực tế. Khi nào chọn loại 1 và khi nào chọn loại 2 cho cùng một tình huống được so sánh kỹ ở bài [Phân biệt điều kiện loại 0, 1 và 2](phan-biet-dieu-kien-loai-0-1-va-2-cond-04.md).
 
 ## Ghi nhớ
 

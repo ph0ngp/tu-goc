@@ -19,11 +19,11 @@ Bài này không khuyên đưa mọi dạng nói vào bài luận. Mục tiêu l
 
 Cấu trúc đầu giúp người nghe xác định chủ đề trước khi xử lý thông điệp. Đại từ `it/he/their` giữ vai trò ngữ pháp bên trong câu chính.
 
-Đây còn được gọi là **cấu trúc tách sang trái** (*left dislocation*). Khác với cách đưa chủ đề lên đầu (*topicalisation*) trong `That café, I really like`, cấu trúc tách sang trái có một đại từ nối lại: `That café, I really like it`.
+Đây còn được gọi là **cấu trúc tách sang trái** (*left dislocation*). Khác với chủ đề hóa (*topicalisation*) trong `That café, I really like`, cấu trúc tách sang trái có một đại từ nối lại: `That café, I really like it`.
 
 ## Cấu trúc đuôi: bổ sung hoặc làm rõ sau câu
 
-**Cấu trúc đuôi** (*tail*) đứng sau mệnh đề và thường nhắc lại đối tượng bằng một cụm danh từ:
+**Cấu trúc đuôi** (*tail*), còn gọi là **cấu trúc tách sang phải** (*right dislocation*), đứng sau mệnh đề và thường nhắc lại đối tượng bằng một cụm danh từ:
 
 - `She's very patient, your new manager.` — Quản lý mới của bạn ấy, cô ấy rất kiên nhẫn.
 - `They're expensive, those apartments by the river.` — Mấy căn hộ ven sông ấy, chúng đắt lắm.

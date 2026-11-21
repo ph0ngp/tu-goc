@@ -33,7 +33,7 @@ Các dạng quá khứ có thể nói về mong muốn hiện tại trong một 
 
 Sau phần mở đầu, mệnh đề gián tiếp giữ trật tự câu kể: `where the station is`, không dùng `where is the station`. Lịch sự không xóa quy tắc trật tự.
 
-Các cách mở đầu khác gồm `Do you happen to know...?`, `I wonder if...`, `Would it be possible to...?`.
+Các cách mở đầu khác gồm `Do you happen to know...?` — Không biết bạn có tình cờ biết…?, `I wonder if...` — Tôi tự hỏi liệu…, và `Would it be possible to...?` — Liệu có thể… được không?
 
 ## Động từ tình thái làm giảm độ chắc chắn
 
@@ -74,7 +74,7 @@ Không phải cứ muốn lịch sự là đổi toàn câu sang quá khứ. Cá
 - `I wanted to ask whether...` — Tôi muốn hỏi liệu…
 - `Would it be possible to...?` — Liệu có thể… được không?
 
-`I wondered if you can help me now` có thể lệch điểm nhìn; trong mẫu lịch sự, `was wondering` thường đi với `could` để giữ khoảng cách nhất quán.
+Câu `I wondered if you can help me now` nghe lệch vì trộn `wondered` (đã lùi) với `can` (chưa lùi). Hãy giữ khoảng cách nhất quán: `I wondered if you could help me` hoặc `I was wondering if you could help me` — Tôi muốn hỏi liệu bạn có thể giúp tôi không. Cả hai đều là khung lịch sự chuẩn; `was wondering` mềm hơn một chút và rất phổ biến trong lời nói.
 
 ## Quy trình chọn cách nói
 

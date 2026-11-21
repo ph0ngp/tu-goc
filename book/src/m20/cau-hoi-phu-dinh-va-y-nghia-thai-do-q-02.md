@@ -33,7 +33,7 @@ Người nói thường mong đợi một câu trả lời nhất định:
 
 - `Don't you work with Mai?` — Chẳng phải bạn làm việc cùng Mai sao?
 - `Isn't this your bag?` — Đây chẳng phải túi của bạn sao?
-- `Haven't we met before?` — Chúng ta chưa từng gặp nhau trước đây sao?
+- `Haven't we met before?` — Chẳng phải chúng ta từng gặp nhau rồi sao?
 
 Các câu này không trung tính như `Do you work with Mai?` hoặc `Is this your bag?`. Chúng cho thấy người hỏi đã có lý do để tin câu trả lời là “có”.
 

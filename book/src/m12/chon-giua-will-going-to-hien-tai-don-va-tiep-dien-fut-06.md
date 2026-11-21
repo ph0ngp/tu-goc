@@ -58,7 +58,7 @@ Câu đầu nói việc những người tham gia đã sắp xếp. Câu sau đ�
 ## Hai cách dự đoán
 
 - `I think our team will win.` — Tôi nghĩ đội chúng ta sẽ thắng; đây là quan điểm.
-- `Our team is playing much better. They're going to win.` — Đội đang chơi tốt hơn hẳn. Họ sắp thắng; có dấu hiệu hiện tại.
+- `Our team is ten points ahead. They're going to win.` — Đội mình đang dẫn mười điểm. Họ sắp thắng; có dấu hiệu hiện tại.
 
 Không phải cứ có bằng chứng là `will` trở thành sai trong mọi ngữ cảnh. Người nói vẫn có thể dùng `will` để đưa ra nhận định. Ở A2, hãy dùng `going to` khi muốn làm rõ rằng dự đoán dựa trực tiếp vào dấu hiệu đang thấy, và dùng `will` khi câu được trình bày như ý kiến hoặc niềm tin.
 
@@ -82,5 +82,5 @@ Không phải cứ có bằng chứng là `will` trở thành sai trong mọi ng
 
 - `will`, `going to`, hiện tại tiếp diễn và hiện tại đơn không hoàn toàn thay thế nhau.
 - Chọn theo ý nghĩa: quyết định, ý định, sắp xếp, lịch trình hoặc dự đoán.
-- Cùng một sự kiện có thể được nhìn từ hai góc và dùng hai dạng khác nhau.
+- Cùng một sự kiện có thể được nhìn từ nhiều góc và dùng các dạng khác nhau.
 - Không chọn chỉ vì thấy `tomorrow`; hãy đọc cả tình huống.

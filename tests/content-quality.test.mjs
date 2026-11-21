@@ -136,7 +136,7 @@ test("keeps Chapter 3 complete, cumulative, and divided into clear be lessons", 
 
   assert.match(yesNoQuestions, /\*yes\/no question\*/);
   assert.match(yesNoQuestions, /Yes, chủ ngữ \+ be/);
-  assert.match(yesNoQuestions, /Không rút gọn câu trả lời khẳng định/);
+  assert.match(yesNoQuestions, /Không viết tắt câu trả lời khẳng định/);
   assert.doesNotMatch(yesNoQuestions, /^## Dùng (?:who|what|where|how old)/gim);
 
   assert.match(whQuestions, /\| `who` \| ai/);
@@ -268,7 +268,7 @@ test("keeps every A2 theory lesson complete, published, and pedagogically bounde
   const expandedDecisionLessons = new Map([
     ["a2-equality", /## Cách chọn giữa/],
     ["a2-comparative-modifiers", /## Chọn từ chỉ mức chênh/],
-    ["a2-possibility-modals", /## Phân biệt modal với/],
+    ["a2-possibility-modals", /## Phân biệt động từ tình thái với/],
     ["a2-advice-modals", /## Quy trình chọn cấu trúc/],
     ["a2-obligation", /## Cùng một tình huống, khác trọng tâm/],
     ["a2-prohibition-no-necessity", /## Quy trình chọn trong tình huống thật/],

@@ -69,12 +69,12 @@ Khác biệt thường nằm ở **góc nhìn**, không phải ở sự thật n
 
 ## `When` và `while` không tự chọn thì
 
-`When` nghĩa là “khi”; `while` nghĩa là “trong khi”. Chúng nối câu nhưng không phải công thức chia thì.
+`When` nghĩa là “khi”; `while` nghĩa là “trong khi”. Chúng nối câu nhưng không phải công thức chia thì. Hai câu dưới đây có cùng từ nối; chỉ thì của động từ sau `Lan` thay đổi:
 
 - `When I arrived, Lan opened the door.` — Khi tôi đến, Lan mở cửa. Hai sự việc được kể nối tiếp.
 - `When I arrived, Lan was opening the door.` — Khi tôi đến, Lan đang mở cửa. Tôi đến giữa quá trình mở cửa.
 
-Đừng thấy `when` thì tự chọn quá khứ đơn hoặc thấy `while` thì tự chọn quá khứ tiếp diễn. Hãy xác định công việc của từng hành động.
+Đừng thấy `when` thì tự chọn quá khứ đơn hoặc thấy `while` thì tự chọn quá khứ tiếp diễn. Hãy xác định công việc của từng hành động. Nghĩa và cách dùng riêng của `when`, `while`, `as` trong câu chuyện được học ở bài [when, while, as trong câu chuyện](when-while-as-trong-cau-chuyen-timecl-01.md).
 
 ## Cách chọn từng bước
 

@@ -19,7 +19,7 @@ Nói `yesterday morning/afternoon/evening`, nhưng `last night` tự nhiên hơn
 
 ## `Last` + khoảng thời gian
 
-`Last` trong các cụm này nghĩa là “vừa qua/trước”: `last night` (tối qua), `last week` (tuần trước), `last month` (tháng trước), `last year` (năm ngoái), `last Monday` (thứ Hai tuần trước).
+`Last` trong các cụm này nghĩa là “vừa qua/trước”: `last night` (tối qua), `last week` (tuần trước), `last month` (tháng trước), `last year` (năm ngoái), `last Monday` (thứ Hai vừa rồi).
 
 `They moved house last year` nghĩa là “Năm ngoái họ đã chuyển nhà”. Không đặt `the` hoặc `in` trước những cụm này: dùng `last week`, không dùng `in last week`.
 

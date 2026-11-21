@@ -16,7 +16,10 @@ export function normalizeExactInput(
     .replace(/[\u201C\u201D]/g, '"')
     .replace(/\u00a0/g, " ")
     .replace(/\s+/g, " ")
-    .replace(/\s+([,.;:?!])/g, "$1")
+    .replace(/\s+([,.;:?!)])/g, "$1")
+    .replace(/\(\s+/g, "(")
+    // Gạch ngang dài viết liền hay cách hai bên đều là kiểu trình bày được chấp nhận.
+    .replace(/\s*—\s*/g, "—")
     .replace(/"\s+/g, '"')
     .replace(/\s+"/g, '"');
 

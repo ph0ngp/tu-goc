@@ -37,7 +37,7 @@ in spite of + noun/pronoun/V-ing
 - `Despite the rain, we went for a walk.` — Bất chấp trời mưa, chúng tôi vẫn đi dạo.
 - `In spite of his age, he runs every day.` — Dù tuổi cao, ông ấy chạy mỗi ngày.
 - `Despite feeling tired, Lan finished the report.` — Dù cảm thấy mệt, Lan vẫn hoàn thành báo cáo.
-- `In spite of working late, they missed the deadline.` — Dù làm muộn, họ vẫn lỡ hạn.
+- `In spite of working late, they missed the deadline.` — Dù đã làm việc đến khuya, họ vẫn trễ hạn chót.
 
 `Despite` không có `of`. Không dùng `despite of the rain`. `In spite of` luôn có `of`.
 

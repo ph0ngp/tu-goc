@@ -5,7 +5,7 @@ legacyLessonId: a2-past-regular
 ---
 # Quá khứ có quy tắc: chính tả và phát âm -ed
 
-Để nói một hành động đã kết thúc trong quá khứ, nhiều động từ thêm `-ed`. Những động từ tạo quá khứ theo quy tắc này được gọi là **động từ có quy tắc** (*regular verbs*).
+Để nói một hành động đã xảy ra và kết thúc trong quá khứ, tiếng Anh dùng thì **quá khứ đơn** (*past simple*). Với nhiều động từ, dạng quá khứ đơn được tạo bằng cách thêm `-ed`. Những động từ tạo quá khứ theo quy tắc này được gọi là **động từ có quy tắc** (*regular verbs*).
 
 ## Dạng cơ bản và dạng quá khứ
 
@@ -37,6 +37,8 @@ Với nguyên âm + `y`, giữ `y`: `play → played`, `enjoy → enjoyed`. Quy 
 ## `-ed` có ba cách phát âm
 
 Đuôi viết giống nhau nhưng âm đọc phụ thuộc vào **âm cuối** của động từ, không phụ thuộc vào chữ cái cuối nhìn thấy.
+
+Để dùng bảng dưới đây, cần biết hai loại âm. Âm **vô thanh** (*voiceless*) phát ra khi dây thanh trong cổ không rung, như `/p/`, `/k/`, `/s/`. Âm **hữu thanh** (*voiced*) làm dây thanh rung, như `/b/`, `/g/`, `/z/`; mọi nguyên âm đều hữu thanh. Đặt nhẹ ngón tay lên cổ rồi đọc kéo dài `/s/`, sau đó đọc `/z/`: với `/z/`, bạn sẽ thấy cổ rung.
 
 | Âm đọc | Khi nào | Ví dụ |
 | --- | --- | --- |

@@ -34,6 +34,13 @@ Quá khứ hoàn thành đánh dấu sự việc xảy ra trước; quá khứ �
 
 Trong câu cuối, mất chìa khóa xảy ra trước và giải thích cho việc không mở được cửa sau đó.
 
+Khi chỉ đổi thì của một vế, thứ tự hai việc cũng đổi theo:
+
+- `When I arrived, Lan had left.` — Tôi đến thì Lan đã đi mất rồi: Lan đi trước.
+- `When I arrived, Lan left.` — Tôi đến rồi Lan mới đi: Lan đi sau, có thể chính vì tôi đến.
+
+Câu thứ hai không sai, nhưng nó kể một chuyện khác. Muốn nói việc rời đi đã xong trước lúc mình đến, cần quá khứ hoàn thành.
+
 ## Trạng thái kéo dài đến một mốc quá khứ
 
 Quá khứ hoàn thành cũng nói một trạng thái đã tồn tại đến một thời điểm trong quá khứ:

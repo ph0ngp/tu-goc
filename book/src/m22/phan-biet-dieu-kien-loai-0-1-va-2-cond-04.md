@@ -34,11 +34,11 @@ Sau `if`, dùng hiện tại đơn dù ý nghĩa thuộc tương lai. Mệnh đ�
 
 ## Loại 2: giả định xa thực tế hơn
 
+Như đã học ở bài [Câu điều kiện loại 2](cau-dieu-kien-loai-2-cond-03.md), quá khứ đơn sau `if` tạo khoảng cách với thực tế hiện tại hoặc tương lai, không đưa câu về quá khứ:
+
 - `If I had a garden, I would grow vegetables.` — Nếu có vườn, tôi sẽ trồng rau. Thực tế hiện tại có thể là không có vườn.
 - `If the sun disappeared, life would be impossible.` — Nếu mặt trời biến mất, sự sống sẽ không thể tồn tại.
 - `If it rained tomorrow, we might cancel the picnic.` — Nếu ngày mai có mưa, có lẽ chúng tôi sẽ hủy chuyến đi. Người nói xem khả năng này xa hơn.
-
-Hình thức quá khứ trong mệnh đề `if` tạo khoảng cách với thực tế, không nhất thiết chuyển toàn bộ câu về quá khứ.
 
 ## Cùng một chủ đề, ba ý khác nhau
 

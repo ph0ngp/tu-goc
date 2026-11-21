@@ -5,7 +5,7 @@ legacyLessonId: irregular-plurals
 ---
 # Danh từ số nhiều bất quy tắc thông dụng
 
-Phần lớn danh từ đếm được tạo số nhiều bằng `-s` hoặc `-es`. Tuy nhiên, một số danh từ rất thông dụng đổi theo cách riêng. Ta gọi chúng là **danh từ số nhiều bất quy tắc**. Các dạng này cần được nhớ theo từng cặp.
+Phần lớn danh từ đếm được tạo số nhiều bằng `-s` hoặc `-es`. Tuy nhiên, một số danh từ rất thông dụng đổi theo cách riêng. Ta gọi chúng là **danh từ số nhiều bất quy tắc** (*irregular plural nouns*). Các dạng này cần được nhớ theo từng cặp.
 
 ## Một số dạng đổi nguyên âm hoặc đổi hẳn
 
@@ -48,7 +48,6 @@ Khi danh từ là số nhiều, các từ đi cùng cũng phải thể hiện s�
 ```text
 This child is happy.      → Đứa trẻ này vui.
 These children are happy. → Những đứa trẻ này vui.
-
 ```
 
 ## Dùng trong sở hữu cách

@@ -47,8 +47,8 @@ Không nói `others students`; dùng `other students`.
 
 | Dạng | Ý nghĩa | Ví dụ |
 | --- | --- | --- |
-| `the other` | người/vật còn lại trong hai; hoặc một cái xác định khác | `One shoe is here; the other is under the bed.` |
-| `the others` | những người/vật còn lại trong nhóm | `Two guests left; the others stayed.` |
+| `the other` | người/vật còn lại trong hai; hoặc một cái xác định khác | `One shoe is here; the other is under the bed.` — Một chiếc giày ở đây; chiếc còn lại ở dưới gầm giường. |
+| `the others` | những người/vật còn lại trong nhóm | `Two guests left; the others stayed.` — Hai vị khách đã về; những người còn lại ở lại. |
 
 `The other shoe` nghĩa là “chiếc giày còn lại”; `the others` không cần danh từ vì nhóm đã rõ.
 

@@ -27,21 +27,25 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "cf2",
       "kind": "match",
-      "prompt": "Quan sát ba quy tắc.",
-      "hint": "make bỏ e; run gấp đôi n.",
-      "explanation": "Ba động từ đại diện cho ba cách tạo V-ing.",
+      "prompt": "Ghép mỗi động từ với cách tạo dạng `-ing` của nó.",
+      "hint": "Nhìn các chữ cuối của từng động từ: `e` câm, `ie`, hay một chữ nguyên âm rồi một chữ phụ âm.",
+      "explanation": "`Write` thành `writing`, `sit` thành `sitting`, `play` thành `playing`, `lie` thành `lying`.",
       "pairs": [
         {
+          "left": "write",
+          "right": "bỏ `e` câm"
+        },
+        {
+          "left": "sit",
+          "right": "gấp đôi phụ âm cuối"
+        },
+        {
           "left": "play",
-          "right": "playing"
+          "right": "chỉ thêm `-ing`"
         },
         {
-          "left": "make",
-          "right": "making"
-        },
-        {
-          "left": "run",
-          "right": "running"
+          "left": "lie",
+          "right": "đổi `ie` thành `y`"
         }
       ]
     },
@@ -49,7 +53,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       "id": "cf3",
       "kind": "choice",
       "prompt": "Họ đang chơi.",
-      "hint": "Cần are + V-ing.",
+      "hint": "Cần đủ dạng `be` hợp với `they` và động từ thêm `-ing`.",
       "explanation": "Hiện tại tiếp diễn luôn có be và V-ing.",
       "options": [
         "They playing.",
@@ -80,24 +84,29 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "cf5",
       "kind": "tap",
-      "prompt": "Chạm vào dạng V-ing đúng của run.",
-      "hint": "Từ ngắn này gấp đôi n.",
-      "explanation": "run → running.",
+      "prompt": "Chạm vào tất cả động từ phải gấp đôi phụ âm cuối khi thêm `-ing`.",
+      "hint": "Với mỗi từ, đếm số chữ nguyên âm đứng ngay trước chữ phụ âm cuối.",
+      "explanation": "`Run`, `stop` và `shop` kết thúc bằng một chữ nguyên âm rồi một chữ phụ âm, nên viết `running`, `stopping`, `shopping`. `Read`, `cook` và `rain` có hai chữ nguyên âm trước chữ phụ âm cuối, nên chỉ thêm `-ing`: `reading`, `cooking`, `raining`.",
       "tokens": [
-        "running",
-        "playing",
-        "reading"
+        "run",
+        "read",
+        "cook",
+        "stop",
+        "shop",
+        "rain"
       ],
       "answerIndexes": [
-        0
+        0,
+        3,
+        4
       ],
-      "selectionMode": "single"
+      "selectionMode": "multiple"
     },
     {
       "id": "cf6",
       "kind": "repair",
       "prompt": "Thêm mảnh be còn thiếu.",
-      "hint": "They đi với are; hành động dùng playing.",
+      "hint": "Chọn dạng `be` hợp với `they`, rồi giữ động từ thêm `-ing`.",
       "explanation": "They are playing. có đủ be + V-ing.",
       "tokens": [
         "They",
@@ -129,15 +138,15 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "cf8",
       "kind": "choice",
-      "prompt": "make → ?",
-      "hint": "Bỏ e câm trước khi thêm -ing.",
-      "explanation": "make → making.",
+      "prompt": "Động từ nào bỏ `e` câm trước khi thêm `-ing`?",
+      "hint": "Chữ `e` câm là chữ `e` ở cuối từ nhưng không được đọc thành một âm riêng.",
+      "explanation": "`Dance` kết thúc bằng `e` câm nên thành `dancing`. `See` có `ee` được đọc thành âm của từ nên giữ nguyên: `seeing`; `play` chỉ thêm `-ing`: `playing`.",
       "options": [
-        "making",
-        "playing",
-        "running"
+        "dance",
+        "see",
+        "play"
       ],
-      "answer": "making"
+      "answer": "dance"
     },
     {
       "id": "cf9",
@@ -181,39 +190,39 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "cf10",
       "kind": "grid",
-      "prompt": "Áp dụng quy tắc bỏ e hoặc gấp đôi phụ âm.",
-      "hint": "Bỏ e câm; với sit, gấp đôi t.",
-      "explanation": "Ba động từ mới đã được đổi sang dạng -ing đúng.",
+      "prompt": "Chọn cách tạo dạng `-ing` cho từng động từ.",
+      "hint": "Nhìn hai chữ cuối của mỗi động từ trước khi chọn quy tắc.",
+      "explanation": "`Eat` có hai chữ nguyên âm `ea` trước `t`; `get` có một chữ nguyên âm `e` rồi một chữ phụ âm `t`; `close` kết thúc bằng `e` câm.",
       "rows": [
         {
-          "cue": "write →",
+          "cue": "eat",
           "options": [
-            "writing",
-            "write",
-            "writes"
+            "chỉ thêm `-ing`",
+            "gấp đôi phụ âm cuối",
+            "bỏ `e` câm"
           ],
-          "answer": "writing",
-          "completed": "writing"
+          "answer": "chỉ thêm `-ing`",
+          "completed": "eat → eating"
         },
         {
-          "cue": "sit →",
+          "cue": "get",
           "options": [
-            "sitting",
-            "sit",
-            "sits"
+            "chỉ thêm `-ing`",
+            "gấp đôi phụ âm cuối",
+            "bỏ `e` câm"
           ],
-          "answer": "sitting",
-          "completed": "sitting"
+          "answer": "gấp đôi phụ âm cuối",
+          "completed": "get → getting"
         },
         {
-          "cue": "dance →",
+          "cue": "close",
           "options": [
-            "dancing",
-            "dance",
-            "dances"
+            "chỉ thêm `-ing`",
+            "gấp đôi phụ âm cuối",
+            "bỏ `e` câm"
           ],
-          "answer": "dancing",
-          "completed": "dancing"
+          "answer": "bỏ `e` câm",
+          "completed": "close → closing"
         }
       ]
     },
@@ -275,7 +284,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       "id": "cq2",
       "kind": "order",
       "prompt": "Họ có đang học không?",
-      "hint": "Đưa Are lên trước they.",
+      "hint": "Câu hỏi tiếp diễn đưa dạng `be` lên trước chủ ngữ.",
       "explanation": "Are + they + studying?",
       "tokens": [
         "studying",
@@ -293,7 +302,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "cq3",
       "kind": "match",
-      "prompt": "Dùng lại đúng dạng be.",
+      "prompt": "Ghép mỗi câu hỏi với câu trả lời ngắn đúng.",
       "hint": "Hãy đổi chủ ngữ theo người trả lời rồi chọn dạng be phù hợp.",
       "explanation": "Câu trả lời ngắn dùng be; với Am I...?, người đối thoại trả lời you are.",
       "pairs": [
@@ -368,7 +377,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       "id": "cq7",
       "kind": "context",
       "prompt": "Chọn câu trả lời ngắn.",
-      "hint": "Câu hỏi dùng are.",
+      "hint": "Câu trả lời ngắn lặp lại đúng từ đứng đầu câu hỏi, không lặp động từ chính.",
       "explanation": "Câu trả lời ngắn lặp lại are.",
       "context": "Are they studying?",
       "options": [
@@ -506,8 +515,8 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "cq13",
       "kind": "grid",
-      "prompt": "Đặt not sau đúng dạng be; có thể dùng dạng đầy đủ hoặc rút gọn.",
-      "hint": "I dùng am not/I’m not; they dùng are not.",
+      "prompt": "Đặt not sau đúng dạng be; có thể dùng dạng đầy đủ hoặc dạng viết tắt.",
+      "hint": "Chọn dạng `be` hợp với từng chủ ngữ, đặt `not` ngay sau nó và giữ nguyên động từ `-ing`.",
       "explanation": "Các câu phủ định giữ nguyên động từ thêm -ing.",
       "rows": [
         {
@@ -546,7 +555,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       "id": "cq14",
       "kind": "choice",
       "prompt": "Câu nào có nghĩa “Ai đang nói?”",
-      "hint": "Khi who chính là chủ ngữ, dùng Who + is + V-ing.",
+      "hint": "Ở đây `who` thay cho người thực hiện hành động, tức là chủ ngữ, nên sau `be` không cần thêm một chủ ngữ khác.",
       "explanation": "Who is talking? hỏi trực tiếp người đang thực hiện hành động.",
       "options": [
         "Who is talking?",
@@ -587,7 +596,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       "id": "cu2",
       "kind": "choice",
       "prompt": "Bạn nhìn thấy Nam đang mở cửa sổ ngay trước mặt; câu nào diễn tả đúng việc ấy?",
-      "hint": "Hành động đang xảy ra trước mắt cần be + V-ing.",
+      "hint": "Hành động đang xảy ra ngay lúc nói cần be + V-ing.",
       "explanation": "Nam is opening the window now. diễn tả hành động đang xảy ra đúng lúc nói.",
       "options": [
         "Nam opens the window every morning.",
@@ -599,21 +608,21 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "cu3",
       "kind": "match",
-      "prompt": "Dấu hiệu không quyết định một mình, nhưng giúp hiểu ngữ cảnh.",
-      "hint": "this month là một khoảng thời gian chưa dài.",
-      "explanation": "Ngữ cảnh giúp ta chọn cách nhìn phù hợp.",
+      "prompt": "Ghép mỗi dấu hiệu với cách dùng mà nó thường gợi ý.",
+      "hint": "Hỏi mỗi dấu hiệu nói về đúng lúc này, một khoảng thời gian có giới hạn, hay một điều đang biến đổi.",
+      "explanation": "Dấu hiệu chỉ giúp hiểu ngữ cảnh; ý nghĩa của cả câu mới quyết định cách dùng.",
       "pairs": [
         {
           "left": "right now",
-          "right": "ngay lúc này"
+          "right": "ngay lúc nói"
         },
         {
           "left": "this month",
           "right": "tạm thời quanh hiện tại"
         },
         {
-          "left": "is changing",
-          "right": "một sự thay đổi"
+          "left": "getting warmer",
+          "right": "đang thay đổi dần"
         }
       ]
     },
@@ -695,7 +704,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       "explanation": "Ba cách dùng tiếp diễn đã được phân biệt theo ngữ cảnh.",
       "rows": [
         {
-          "cue": "Nam đang nói chuyện điện thoại trước mắt.",
+          "cue": "Ngay lúc này, Nam đang nói chuyện điện thoại.",
           "options": [
             "Nam talks on the phone every day.",
             "Nam is talking on the phone now.",
@@ -795,21 +804,21 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "cu13",
       "kind": "match",
-      "prompt": "Dấu hiệu giúp hiểu ngữ cảnh nhưng không tự quyết định thì.",
-      "hint": "Đọc nghĩa của cả cụm thời gian.",
-      "explanation": "Ba dấu hiệu đã được gắn với ngữ cảnh phù hợp.",
+      "prompt": "Ghép mỗi câu với cách dùng hiện tại tiếp diễn mà câu thể hiện.",
+      "hint": "Đọc cả câu: việc đang diễn ra khi người nói lên tiếng, chỉ kéo dài ít ngày, hay đang chuyển dần sang trạng thái khác?",
+      "explanation": "Cả ba câu đều dùng `be + V-ing`; điều khác nhau là cách người nói nhìn khoảng thời gian của sự việc.",
       "pairs": [
         {
-          "left": "Look!",
-          "right": "điều đang xảy ra trước mắt"
+          "left": "Shh! The baby is sleeping.",
+          "right": "việc đang xảy ra ngay lúc nói"
         },
         {
-          "left": "at the moment",
-          "right": "ngay lúc này"
+          "left": "My cousin is staying with us for a few days.",
+          "right": "tình huống tạm thời trong vài ngày"
         },
         {
-          "left": "this month",
-          "right": "giai đoạn quanh hiện tại"
+          "left": "My son is getting taller.",
+          "right": "một sự thay đổi đang tiến triển"
         }
       ]
     }
@@ -860,7 +869,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "sc3",
       "kind": "match",
-      "prompt": "Mỗi câu diễn tả thời gian theo một cách khác nhau.",
+      "prompt": "Ghép mỗi cách nhìn sự việc với câu phù hợp.",
       "hint": "Nhìn dạng động từ và cụm thời gian.",
       "explanation": "Hiện tại đơn và tiếp diễn không thay nhau tùy ý.",
       "pairs": [
@@ -939,7 +948,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       "id": "sc8",
       "kind": "choice",
       "prompt": "Ngay lúc này tôi đang đọc.",
-      "hint": "Cần am + reading.",
+      "hint": "Việc đang diễn ra ngay lúc này cần đủ dạng `be` hợp với `I` và động từ thêm `-ing`.",
       "explanation": "I am reading now. là hiện tại tiếp diễn.",
       "options": [
         "I read now.",
@@ -951,7 +960,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "sc9",
       "kind": "grid",
-      "prompt": "Thói quen dùng hiện tại đơn; việc đang diễn ra dùng tiếp diễn.",
+      "prompt": "Chọn câu đúng cho từng tình huống: thói quen, việc đang diễn ra hay tình huống tạm thời.",
       "hint": "Không chọn bằng một từ riêng lẻ; hãy xác định cách người nói nhìn hành động.",
       "explanation": "Hiện tại đơn và tiếp diễn đã được chọn đúng theo ý nghĩa.",
       "rows": [
@@ -1004,7 +1013,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       "id": "sc11",
       "kind": "choice",
       "prompt": "Bạn hỏi về thói quen đọc mỗi ngày.",
-      "hint": "Thói quen hiện tại đơn dùng Do.",
+      "hint": "Câu hỏi về thói quen thuộc hiện tại đơn; hãy nhớ cách thì này tạo câu hỏi với động từ thường.",
       "explanation": "Do you read every day? hỏi về việc lặp lại.",
       "options": [
         "Do you read every day?",
@@ -1029,7 +1038,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "sc13",
       "kind": "grid",
-      "prompt": "Kiểm tra câu kể, phủ định và câu hỏi.",
+      "prompt": "Chọn câu đúng cho từng ý, chú ý cả thì lẫn dạng câu kể, phủ định hay câu hỏi.",
       "hint": "Xác định điều câu muốn nói rồi chọn đúng cấu trúc.",
       "explanation": "Ba dạng câu cho thấy hai thì là hai hệ thống hoàn chỉnh.",
       "rows": [
@@ -1037,8 +1046,8 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
           "cue": "Thói quen: cô ấy đọc mỗi tối",
           "options": [
             "She reads every evening.",
-            "She is reading every evening now.",
-            "She read every evening."
+            "She is read every evening.",
+            "She reading every evening."
           ],
           "answer": "She reads every evening.",
           "completed": "She reads every evening."
@@ -1054,7 +1063,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
           "completed": "She isn’t reading now."
         },
         {
-          "cue": "Hỏi việc đang xảy ra",
+          "cue": "Câu hỏi: lúc này cô ấy có đang đọc không?",
           "options": [
             "Is she reading now?",
             "Does she reading now?",
@@ -1150,7 +1159,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
       "id": "sp8",
       "kind": "choice",
       "prompt": "Cô ấy muốn trà.",
-      "hint": "want là động từ trạng thái; she dùng wants.",
+      "hint": "`Want` là động từ trạng thái; nhớ chia động từ theo chủ ngữ `she`.",
       "explanation": "She wants tea. là câu tự nhiên.",
       "options": [
         "She is wanting tea.",
@@ -1162,25 +1171,25 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "sv6",
       "kind": "match",
-      "prompt": "Nhận ra các nhóm ý nghĩa.",
-      "hint": "Đọc nghĩa tiếng Việt.",
-      "explanation": "Bốn động từ đều diễn tả trạng thái trong nghĩa đang học.",
+      "prompt": "Ghép mỗi câu với nghĩa của động từ trong câu.",
+      "hint": "Đọc phần đứng sau động từ để biết trong câu ấy động từ đang nói một trạng thái hay một hoạt động.",
+      "explanation": "`Have` và `see` đều có nghĩa trạng thái lẫn nghĩa hoạt động; chỉ khi mang nghĩa hoạt động, chúng mới dùng được ở dạng tiếp diễn.",
       "pairs": [
         {
-          "left": "know",
-          "right": "biết — suy nghĩ"
+          "left": "We have a small garden.",
+          "right": "sở hữu — trạng thái"
         },
         {
-          "left": "like",
-          "right": "thích — cảm xúc"
+          "left": "We're having lunch.",
+          "right": "ăn — hoạt động"
         },
         {
-          "left": "need",
-          "right": "cần — nhu cầu"
+          "left": "I see a bird in the tree.",
+          "right": "nhìn thấy — trạng thái"
         },
         {
-          "left": "own",
-          "right": "sở hữu — quan hệ"
+          "left": "The doctor is seeing a child.",
+          "right": "khám bệnh — hoạt động"
         }
       ]
     },
@@ -1214,7 +1223,7 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "sv9",
       "kind": "grid",
-      "prompt": "Trạng thái dùng dạng đơn; hành động đang diễn ra có thể dùng tiếp diễn.",
+      "prompt": "Chọn câu đúng cho từng ý, dựa vào nghĩa trạng thái hay hoạt động của động từ.",
       "hint": "Xác định động từ đang nêu trạng thái hay một hoạt động.",
       "explanation": "Mỗi câu được chọn theo nghĩa thực tế của động từ.",
       "rows": [
@@ -1334,98 +1343,113 @@ const a1Chapter09BaseExerciseData: Record<string, Exercise[]> = {
 const a1Chapter09TopUps: Partial<Record<string, Exercise[]>> = {
   "continuous-form": [
     ...binaryChoiceDrills("a1cfx", 1, "be + V-ing", [
-      ["`I` đang đọc", "I am reading.", "I is reading.", "`I` đi với `am`."],
-      ["em bé đang ngủ", "The baby is sleeping.", "The baby are sleeping.", "Chủ ngữ số ít dùng `is`."],
-      ["chúng tôi đang chờ", "We are waiting.", "We is waiting.", "`We` đi với `are`."],
-      ["dạng `-ing` của `work`", "working", "work", "Phần lớn động từ chỉ thêm `-ing`."],
-      ["dạng `-ing` của `make`", "making", "makes", "Bỏ `e` câm rồi thêm `-ing`."],
-      ["dạng `-ing` của `write`", "writing", "writes", "Bỏ `e` câm."],
-      ["dạng `-ing` của `run`", "running", "runs", "Động từ ngắn gấp đôi phụ âm cuối."],
-      ["dạng `-ing` của `swim`", "swimming", "swims", "Gấp đôi `m` trước `-ing`."],
-      ["dạng `-ing` của `play`", "playing", "plays", "Không gấp đôi `y`; chỉ thêm `-ing`."],
-      ["dạng `-ing` của `fix`", "fixing", "fixes", "Không gấp đôi `x`."],
-      ["dạng `-ing` của `lie`", "lying", "lies", "Đổi `ie` thành `y` rồi thêm `-ing`."],
-      ["dạng `-ing` của `see`", "seeing", "sees", "`See` giữ hai chữ `e` rồi thêm `-ing`."],
-      ["dạng viết tắt của `she is cooking`", "She's cooking.", "She cooking.", "`She's` chứa `is`; cấu trúc vẫn đủ `be + V-ing`."],
-      ["cấu trúc đủ hai phần", "They are studying.", "They studying.", "Hiện tại tiếp diễn cần cả `are` và `studying`."],
+      ["ý “Tôi đang đọc”", "I am reading.", "I is reading.", "`I` đi với `am`."],
+      ["ý “Em bé đang ngủ”", "The baby is sleeping.", "The baby are sleeping.", "`The baby` là một em bé, tức chủ ngữ số ít, nên dùng `is`."],
+      ["ý “Chúng tôi đang chờ”", "We are waiting.", "We is waiting.", "`We` đi với `are`."],
+      ["ý “Những đứa trẻ đang chạy”", "The children are running.", "The children is running.", "`Children` là danh từ số nhiều, nên dùng `are`; `run` gấp đôi `n` thành `running`."],
+      ["dạng viết tắt của câu `She is cooking`", "She's cooking.", "She's cook.", "`She's` chính là `she is`; sau nó vẫn cần động từ thêm `-ing`."],
+      ["ý “Họ đang học”", "They are studying.", "They studying.", "Hiện tại tiếp diễn cần cả `are` và `studying`."],
     ]),
+    ...([
+      ["wait", "waiting", "Đếm số chữ nguyên âm đứng trước chữ `t` ở cuối từ.", "`Wait` có hai chữ nguyên âm `ai` trước chữ phụ âm cuối, nên không gấp đôi `t`: `waiting`."],
+      ["make", "making", "Chữ `e` ở cuối `make` có được đọc thành một âm riêng không?", "`Make` kết thúc bằng `e` câm, nên bỏ `e` rồi thêm `-ing`: `making`."],
+      ["swim", "swimming", "`Swim` là từ một âm tiết, kết thúc bằng một chữ nguyên âm rồi một chữ phụ âm.", "`Swim` có một chữ nguyên âm `i` rồi một chữ phụ âm `m`, nên gấp đôi `m`: `swimming`."],
+      ["die", "dying", "Nhớ quy tắc riêng cho động từ kết thúc bằng `ie`.", "Động từ kết thúc bằng `ie` đổi `ie` thành `y` rồi thêm `-ing`: `dying`."],
+      ["fix", "fixing", "Chữ cuối của `fix` thuộc nhóm phụ âm không được gấp đôi.", "Không gấp đôi `x`; chỉ thêm `-ing`: `fixing`."],
+      ["see", "seeing", "Hai chữ `ee` ở cuối `see` có phải là `e` câm không?", "`Ee` trong `see` được đọc thành âm của từ, không phải `e` câm, nên giữ nguyên rồi thêm `-ing`: `seeing`."],
+      ["sleep", "sleeping", "Trước chữ `p` ở cuối `sleep` có mấy chữ nguyên âm?", "`Sleep` có hai chữ nguyên âm `ee` trước `p`, nên chỉ thêm `-ing`: `sleeping`."],
+      ["put", "putting", "Nhìn hai chữ cuối `u` và `t` của `put`.", "`Put` có một chữ nguyên âm `u` rồi một chữ phụ âm `t`, nên gấp đôi `t`: `putting`."],
+    ] as const).map(([verb, form, hint, explanation], index): Exercise => ({
+      id: `a1cfi${index + 1}`,
+      kind: "exact-input",
+      prompt: `Viết dạng \`-ing\` của \`${verb}\`.`,
+      acceptedAnswers: [form],
+      normalization: { trim: true, ignoreInitialCapital: true, ignoreFinalPeriod: true },
+      hint,
+      explanation,
+    })),
   ],
   "continuous-questions": [
     ...binaryChoiceDrills("a1cqx", 1, "phủ định và câu hỏi hiện tại tiếp diễn", [
-      ["phủ định `I am working`", "I'm not working.", "I don't working.", "Đặt `not` sau `am`; dạng tự nhiên là `I'm not`."],
-      ["phủ định `she is sleeping`", "She isn't sleeping.", "She doesn't sleeping.", "`Is` nhận `not` trực tiếp."],
-      ["phủ định `they are waiting`", "They aren't waiting.", "They don't waiting.", "`Are` nhận `not` trực tiếp."],
-      ["câu hỏi về người nghe đang đọc", "Are you reading?", "Do you reading?", "Đưa `are` lên trước chủ ngữ."],
-      ["câu hỏi về Lan đang học", "Is Lan studying?", "Does Lan studying?", "Đưa `is` lên trước Lan."],
-      ["câu trả lời khẳng định cho `Are you waiting?`", "Yes, I am.", "Yes, I'm.", "Không rút gọn câu trả lời khẳng định thành `I'm`."],
-      ["câu trả lời phủ định cho `Is he working?`", "No, he isn't.", "No, he doesn't.", "Câu hỏi dùng `is` nên trả lời bằng `isn't`."],
-      ["hỏi người nghe đang đọc gì", "What are you reading?", "What do you reading?", "Từ hỏi đứng trước `are`."],
-      ["hỏi tại sao cô ấy đang rời đi", "Why is she leaving?", "Why does she leaving?", "Dùng `why + is + she + leaving`."],
-      ["hỏi ai đang gọi", "Who is calling?", "Who does calling?", "`Who` là chủ ngữ; dùng `is + V-ing`."],
-      ["dạng phủ định rút gọn tự nhiên của `I am late`", "I'm not late.", "I'm late.", "Tiếng Anh chuẩn thông dụng dùng `I'm not` cho dạng phủ định rút gọn."],
+      ["câu phủ định của `I am working`", "I'm not working.", "I don't working.", "Đặt `not` sau `am`; dạng viết tắt tự nhiên là `I'm not`."],
+      ["câu phủ định của `She is sleeping`", "She isn't sleeping.", "She doesn't sleeping.", "`Is` nhận `not` trực tiếp."],
+      ["câu phủ định của `They are waiting`", "They aren't waiting.", "They don't waiting.", "`Are` nhận `not` trực tiếp."],
+      ["lời hỏi xem người nghe có đang đọc không", "Are you reading?", "Do you reading?", "Đưa `are` lên trước chủ ngữ."],
+      ["lời hỏi xem Lan có đang học không", "Is Lan studying?", "Does Lan studying?", "Đưa `is` lên trước Lan."],
+      ["câu trả lời khẳng định cho câu hỏi “Are you waiting?”", "Yes, I am.", "Yes, I'm.", "Trong câu trả lời ngắn khẳng định, `am` đứng cuối câu nên không được viết tắt."],
+      ["câu trả lời phủ định cho câu hỏi “Is he working?”", "No, he isn't.", "No, he doesn't.", "Câu hỏi dùng `is` nên trả lời bằng `isn't`."],
+      ["lời hỏi người nghe đang đọc gì", "What are you reading?", "What do you reading?", "Từ hỏi đứng trước `are`."],
+      ["lời hỏi vì sao cô ấy đang rời đi", "Why is she leaving?", "Why does she leaving?", "Từ hỏi đứng đầu câu, tiếp theo là dạng `be` hợp với `she`, rồi đến chủ ngữ và động từ `-ing`."],
+      ["lời hỏi ai đang gọi điện", "Who is calling?", "Who does calling?", "`Who` là chủ ngữ; dùng `is + V-ing`."],
+      ["dạng phủ định viết tắt của `I am waiting`", "I'm not waiting.", "I aren't waiting.", "`I` chỉ đi với `am`, nên dạng phủ định viết tắt phải được tạo từ `am not`; `aren't` chỉ dùng cho `you/we/they`."],
     ]),
   ],
   "continuous-uses": [
     ...binaryChoiceDrills("a1ucx", 1, "ba cách dùng hiện tại tiếp diễn", [
-      ["hành động đúng lúc nói", "Look! The dog is running.", "Look! The dog runs every day.", "Lời gọi chú ý và hành động đang thấy phù hợp tiếp diễn."],
-      ["việc đang xảy ra ngay bây giờ", "I'm talking to you now.", "I talk to you every day now.", "`Now` cùng tình huống đang diễn ra dùng tiếp diễn."],
-      ["quá trình đọc trong tuần này", "I'm reading a long book this week.", "I read a long book every week.", "Dự án chưa kết thúc trong giai đoạn hiện tại dùng tiếp diễn."],
-      ["nơi ở tạm thời trong tháng", "Lan is staying with her aunt this month.", "Lan stays with her aunt every month.", "`This month` được nhìn như tình huống tạm thời."],
-      ["một tình huống làm việc tạm thời", "We are working at home for a few days.", "We work at home every Friday.", "Tình huống vài ngày là tạm thời; `every Friday` lại diễn tả thói quen."],
-      ["thời tiết đang ấm dần", "The weather is getting warmer.", "The weather gets warmer every spring.", "Sự thay đổi đang tiến triển dùng tiếp diễn; câu còn lại nói điều lặp lại."],
-      ["tiếng Anh đang tiến bộ", "Your English is improving.", "Your English improves every year.", "Một quá trình đang diễn ra dùng tiếp diễn; câu còn lại nói xu hướng lặp theo năm."],
-      ["thị trấn đang phát triển", "The town is growing.", "The town grows every year.", "`Is growing` nhìn sự phát triển như quá trình đang diễn ra."],
-      ["giá cả đang tăng", "Prices are going up.", "Prices goes up now.", "Chủ ngữ số nhiều dùng `are going`."],
-      ["nơi ở ổn định", "I live in Hanoi.", "I am live in Hanoi.", "Nếu trình bày như nơi ở ổn định, dùng hiện tại đơn; không chèn `am` trước `live`."],
-      ["giờ mở cửa theo lịch", "The museum opens at ten.", "The museum is opening at ten every day.", "Lịch thường lệ dùng hiện tại đơn."],
-      ["hành động cửa hàng đang mở lúc này", "The shop is opening now.", "The shop opens at nine every day.", "Hành động đang xảy ra dùng tiếp diễn; câu còn lại nói lịch thường lệ."],
+      ["ý “Nhìn kìa! Con chó đang chạy”", "Look! The dog is running.", "Look! The dog runs every day.", "Lời gọi chú ý và hành động đang thấy phù hợp tiếp diễn."],
+      ["ý “Bây giờ tôi đang nói chuyện với bạn”", "I'm talking to you now.", "I talk to you every day now.", "`Now` cùng tình huống đang diễn ra dùng tiếp diễn."],
+      ["ý “Tuần này tôi đang đọc một quyển sách dài”", "I'm reading a long book this week.", "I read a long book every week.", "Dự án chưa kết thúc trong giai đoạn hiện tại dùng tiếp diễn."],
+      ["ý “Tháng này Lan đang ở cùng dì”", "Lan is staying with her aunt this month.", "Lan stays with her aunt every month.", "`This month` được nhìn như tình huống tạm thời."],
+      ["ý “Chúng tôi đang làm việc ở nhà trong vài ngày”", "We are working at home for a few days.", "We work at home every Friday.", "Tình huống vài ngày là tạm thời; `every Friday` lại diễn tả thói quen."],
+      ["ý “Thời tiết đang ấm dần lên”", "The weather is getting warmer.", "The weather gets warmer every spring.", "Sự thay đổi đang tiến triển dùng tiếp diễn; câu còn lại nói điều lặp lại."],
+      ["ý “Tiếng Anh của bạn đang tiến bộ”", "Your English is improving.", "Your English improves every year.", "Một quá trình đang diễn ra dùng tiếp diễn; câu còn lại nói xu hướng lặp theo năm."],
+      ["ý “Thị trấn đang phát triển”", "The town is growing.", "The town grows every year.", "`Is growing` nhìn sự phát triển như quá trình đang diễn ra."],
+      ["ý “Giá cả đang tăng”", "Prices are going up.", "Prices goes up now.", "`Prices` là chủ ngữ số nhiều, và việc giá tăng đang diễn ra cần đủ `be + V-ing`."],
+      ["lời nói rằng Hà Nội là nơi ở ổn định của tôi", "I live in Hanoi.", "I am live in Hanoi.", "Nếu trình bày như nơi ở ổn định, dùng hiện tại đơn; không chèn `am` trước `live`."],
+      ["giờ mở cửa thường lệ của bảo tàng", "The museum opens at ten.", "The museum is opening at ten every day.", "Lịch thường lệ dùng hiện tại đơn."],
+      ["việc cửa hàng đang mở cửa ngay lúc này", "The shop is opening now.", "The shop opens at nine every day.", "Hành động đang xảy ra dùng tiếp diễn; câu còn lại nói lịch thường lệ."],
     ]),
   ],
   "simple-vs-continuous": [
     ...binaryChoiceDrills("a1scx", 1, "hiện tại đơn và hiện tại tiếp diễn", [
-      ["Lan đọc mỗi tối", "Lan reads every evening.", "Lan is reading now.", "`Every evening` diễn tả thói quen; câu còn lại nói việc đang diễn ra."],
-      ["Lan đang đọc ngay lúc này", "Lan is reading now.", "Lan reads every evening.", "`Now` chỉ hành động đang xảy ra; câu còn lại nói thói quen."],
-      ["nơi ở ổn định với bố mẹ", "I live with my parents.", "I am live with my parents.", "Tình trạng ổn định dùng hiện tại đơn; không dùng `am + live`."],
-      ["nơi ở tạm thời trong tháng", "I'm living with my aunt this month.", "I live with my aunt every summer.", "`This month` cho thấy tình huống tạm thời; câu còn lại nói việc lặp lại."],
-      ["lịch tàu hằng ngày", "The train leaves at six every day.", "The train is leaving now.", "Lịch thường lệ dùng hiện tại đơn; câu còn lại nói việc đang xảy ra."],
-      ["tàu đang rời ga", "The train is leaving now.", "The train leaves at six every day.", "`Now` chỉ quá trình hiện tại; câu còn lại nói lịch thường lệ."],
+      ["ý “Lan đọc mỗi tối”", "Lan reads every evening.", "Lan is reading now.", "`Every evening` diễn tả thói quen; câu còn lại nói việc đang diễn ra."],
+      ["ý “Lan đang đọc ngay lúc này”", "Lan is reading now.", "Lan reads every evening.", "`Now` chỉ hành động đang xảy ra; câu còn lại nói thói quen."],
+      ["ý “Tôi sống cùng bố mẹ”", "I live with my parents.", "I am live with my parents.", "Tình trạng ổn định dùng hiện tại đơn; không dùng `am + live`."],
+      ["ý “Tháng này tôi đang sống cùng dì”", "I'm living with my aunt this month.", "I live with my aunt every summer.", "`This month` cho thấy tình huống tạm thời; câu còn lại nói việc lặp lại."],
+      ["lịch chạy hằng ngày của tàu", "The train leaves at six every day.", "The train is leaving now.", "Lịch thường lệ dùng hiện tại đơn; câu còn lại nói việc đang xảy ra."],
+      ["ý “Tàu đang rời ga”", "The train is leaving now.", "The train leaves at six every day.", "`Now` chỉ quá trình hiện tại; câu còn lại nói lịch thường lệ."],
       ["thói quen làm việc ở nhà", "I usually work at home.", "I am work at home.", "`Usually` cùng thói quen dùng hiện tại đơn; không dùng `am + work`."],
-      ["một tình huống làm việc tạm thời trong tuần này", "I'm working at home this week.", "I work at home every week.", "`This week` diễn tả tình huống tạm thời; câu còn lại nói việc lặp lại."],
-      ["phủ định thói quen", "She doesn't work here.", "She isn't work here.", "Hiện tại đơn với động từ thường dùng `doesn't`."],
-      ["phủ định việc đang xảy ra", "She isn't working now.", "She doesn't working now.", "Hiện tại tiếp diễn phủ định bằng `isn't + V-ing`."],
-      ["câu hỏi về thói quen", "Does she work here?", "Is she work here?", "Hiện tại đơn dùng `does`."],
-      ["câu hỏi về việc đang diễn ra", "Is she working now?", "Does she working now?", "Hiện tại tiếp diễn đảo `is`."],
+      ["việc làm ở nhà chỉ trong tuần này", "I'm working at home this week.", "I work at home every week.", "`This week` diễn tả tình huống tạm thời; câu còn lại nói việc lặp lại."],
+      ["ý “Cô ấy không làm việc ở đây”", "She doesn't work here.", "She isn't work here.", "Hiện tại đơn với động từ thường dùng `doesn't`."],
+      ["ý “Bây giờ cô ấy không làm việc”", "She isn't working now.", "She doesn't working now.", "Hiện tại tiếp diễn phủ định bằng `isn't + V-ing`."],
+      ["lời hỏi xem cô ấy có làm việc ở đây không", "Does she work here?", "Is she work here?", "Hiện tại đơn dùng `does`."],
+      ["lời hỏi xem lúc này cô ấy có đang làm việc không", "Is she working now?", "Does she working now?", "Hiện tại tiếp diễn đảo `is`."],
     ]),
   ],
   "states-and-plans": [
     ...binaryChoiceDrills("a1svx", 1, "động từ trạng thái", [
-      ["trạng thái hiểu câu hỏi", "I understand the question.", "I'm understanding the question.", "`Understand` thường dùng hiện tại đơn khi nói trạng thái hiểu."],
-      ["trạng thái hiểu ngay bây giờ", "I understand now.", "I'm understanding now.", "`Understand` là trạng thái dù có `now`."],
-      ["sở thích trà", "She likes tea.", "She's liking tea.", "`Like` mang nghĩa sở thích thường dùng hiện tại đơn."],
-      ["mong muốn nước", "He wants water.", "He's wanting water.", "`Want` mang nghĩa trạng thái."],
-      ["nhu cầu giúp đỡ", "We need help.", "We're needing help.", "`Need` thường dùng hiện tại đơn."],
-      ["sở hữu một ngôi nhà", "They have a house.", "They're having a house.", "`Have` mang nghĩa sở hữu là trạng thái."],
-      ["đồ vật thuộc về Lan", "The bag belongs to Lan.", "The bag is belonging to Lan.", "`Belong` thường không dùng tiếp diễn."],
-      ["cảm nhận âm thanh", "I hear music.", "I'm hearing music right now.", "`Hear` chỉ cảm nhận tự nhiên thường dùng hiện tại đơn."],
-      ["ý kiến", "I think you're right.", "I'm thinking you're right.", "`Think` mang nghĩa “cho rằng” thường dùng hiện tại đơn."],
-      ["quá trình suy nghĩ", "I'm thinking about the problem.", "I think about the problem every day.", "`Think about` như hoạt động đang diễn ra có thể dùng tiếp diễn; câu còn lại nói thói quen."],
-      ["hoạt động ăn trưa", "I'm having lunch.", "I have lunch at noon every day.", "`Have` mang nghĩa hoạt động ăn dùng được ở tiếp diễn; câu còn lại nói thói quen."],
-      ["trạng thái món súp có vị ngon", "The soup tastes good.", "The soup is taste good.", "`Taste` là động từ nối chỉ đặc tính; không dùng `is + taste` ở đây."],
-      ["hành động đầu bếp nếm súp", "The cook is tasting the soup.", "The cook tastes the soup every day.", "Khi `taste` là hành động đang diễn ra, tiếp diễn phù hợp."],
-      ["hành động bác sĩ đang khám một bệnh nhân", "The doctor is seeing a patient now.", "The doctor sees patients every day.", "Câu có `now` nói một hoạt động đang diễn ra; câu còn lại nói công việc thường lệ."],
+      ["ý “Tôi hiểu câu hỏi”", "I understand the question.", "I'm understanding the question.", "`Understand` nói trạng thái hiểu, nên thường dùng hiện tại đơn."],
+      ["ý “Bây giờ tôi nhớ tên bạn rồi”", "I remember your name now.", "I'm remembering your name now.", "`Remember` ở đây nói trạng thái nhớ, nên dùng hiện tại đơn dù có `now`."],
+      ["ý “Cô ấy thích trà”", "She likes tea.", "She's liking tea.", "`Like` mang nghĩa sở thích thường dùng hiện tại đơn."],
+      ["ý “Anh ấy muốn uống nước”", "He wants water.", "He's wanting water.", "`Want` mang nghĩa trạng thái."],
+      ["ý “Chúng tôi cần giúp đỡ”", "We need help.", "We're needing help.", "`Need` thường dùng hiện tại đơn."],
+      ["ý “Gia đình tôi có hai chiếc xe máy”", "My family has two motorbikes.", "My family is having two motorbikes.", "`Have` mang nghĩa sở hữu là trạng thái."],
+      ["ý “Cái túi thuộc về Lan”", "The bag belongs to Lan.", "The bag is belonging to Lan.", "`Belong` thường không dùng tiếp diễn."],
+      ["ý “Tôi nghe thấy tiếng nhạc”", "I hear music.", "I'm hearing music right now.", "`Hear` chỉ cảm nhận tự nhiên thường dùng hiện tại đơn."],
+      ["ý “Tôi cho rằng bạn đúng”", "I think you're right.", "I'm thinking you're right.", "`Think` mang nghĩa “cho rằng” thường dùng hiện tại đơn."],
+      ["ý “Tôi đang suy nghĩ về vấn đề đó”", "I'm thinking about the problem.", "I think about the problem every day.", "`Think about` như hoạt động đang diễn ra có thể dùng tiếp diễn; câu còn lại nói thói quen."],
+      ["ý “Tôi đang ăn trưa”", "I'm having lunch.", "I have lunch at noon every day.", "`Have` mang nghĩa hoạt động ăn dùng được ở tiếp diễn; câu còn lại nói thói quen."],
+      ["ý “Món súp có vị ngon”", "The soup tastes good.", "The soup is tasting good.", "`Taste` ở đây nói vị của món súp, là một trạng thái, nên dùng hiện tại đơn."],
+      ["ý “Đầu bếp đang nếm súp”", "The cook is tasting the soup.", "The cook tastes the soup every day.", "Khi `taste` là hành động đang diễn ra, tiếp diễn phù hợp."],
+      ["ý “Bây giờ bác sĩ đang khám cho một bệnh nhân”", "The doctor is seeing a patient now.", "The doctor sees patients every day.", "Câu có `now` nói một hoạt động đang diễn ra; câu còn lại nói công việc thường lệ."],
     ]),
   ],
 };
 
 const a1Chapter09DepthExtensions: Partial<Record<string, Exercise[]>> = {
   "continuous-form": [{
-    id: "a1depth-cf-1", kind: "grid", prompt: "Chọn dạng `-ing` đúng của ba động từ có cách biến đổi khác nhau.",
-    hint: "Kiểm tra lần lượt quy tắc đổi `ie`, gấp đôi phụ âm cuối và bỏ `e` câm.",
-    explanation: "`Die` đổi thành `dying`, `sit` thành `sitting`, còn `come` thành `coming`.",
-    rows: [
-      { cue: "die", options: ["dying", "dies", "die"], answer: "dying", completed: "die → dying" },
-      { cue: "sit", options: ["sitting", "sits", "sit"], answer: "sitting", completed: "sit → sitting" },
-      { cue: "come", options: ["coming", "comes", "come"], answer: "coming", completed: "come → coming" },
+    id: "a1depth-cf-1", kind: "sort", prompt: "Phân loại động từ theo cách tạo dạng `-ing`.",
+    hint: "Với mỗi động từ, nhìn lần lượt: chữ cuối có phải `e` câm hay `ie` không, rồi đếm số chữ nguyên âm trước chữ phụ âm cuối.",
+    explanation: "Chỉ thêm `-ing`: `look → looking`, `snow → snowing` (không gấp đôi `w`). Bỏ `e` câm: `come → coming`, `drive → driving`. Gấp đôi phụ âm cuối: `plan → planning`, `cut → cutting`. Đổi `ie` thành `y`: `tie → tying`.",
+    buckets: ["Chỉ thêm -ing", "Bỏ e câm", "Gấp đôi phụ âm cuối", "Đổi ie thành y"],
+    items: [
+      { text: "look", bucket: "Chỉ thêm -ing" },
+      { text: "snow", bucket: "Chỉ thêm -ing" },
+      { text: "come", bucket: "Bỏ e câm" },
+      { text: "drive", bucket: "Bỏ e câm" },
+      { text: "plan", bucket: "Gấp đôi phụ âm cuối" },
+      { text: "cut", bucket: "Gấp đôi phụ âm cuối" },
+      { text: "tie", bucket: "Đổi ie thành y" },
     ],
   }],
   "continuous-questions": [{
@@ -1441,7 +1465,7 @@ const a1Chapter09DepthExtensions: Partial<Record<string, Exercise[]>> = {
   "continuous-uses": [
     {
       id: "a1depth-cu-1", kind: "sort", prompt: "Phân loại các câu mới theo ba cách dùng của hiện tại tiếp diễn.",
-      hint: "Tìm xem hành động đang xảy ra trước mắt, kéo dài tạm thời quanh hiện tại hay biểu thị sự thay đổi.",
+      hint: "Tìm xem hành động đang xảy ra ngay lúc nói, kéo dài tạm thời quanh hiện tại hay biểu thị sự thay đổi.",
       explanation: "Mỗi nhóm thể hiện một cách nhìn thời gian khác nhau của hiện tại tiếp diễn.",
       buckets: ["Ngay lúc nói", "Tạm thời quanh hiện tại", "Đang thay đổi"],
       items: [
@@ -1458,8 +1482,8 @@ const a1Chapter09DepthExtensions: Partial<Record<string, Exercise[]>> = {
       hint: "Đọc toàn bộ tình huống để xác định cách người nói nhìn sự việc.",
       explanation: "Ý nghĩa của tình huống, không phải một từ thời gian riêng lẻ, quyết định cách dùng.",
       rows: [
-        { cue: "Ngay trước mắt, nước đang sôi.", options: ["The water is boiling.", "Water boils at 100°C.", "The water boil now."], answer: "The water is boiling.", completed: "The water is boiling." },
-        { cue: "Tuần này lớp học tạm ở phòng khác.", options: ["We are studying in another room this week.", "We study there every week.", "We are study there this week."], answer: "We are studying in another room this week.", completed: "We are studying in another room this week." },
+        { cue: "Bạn nhìn vào nồi: nước đang sôi.", options: ["The water is boiling.", "Water boils at 100°C.", "The water boil now."], answer: "The water is boiling.", completed: "The water is boiling." },
+        { cue: "Tuần này lớp học tạm ở phòng khác.", options: ["We are studying in another room this week.", "We study in another room every week.", "We are study in another room this week."], answer: "We are studying in another room this week.", completed: "We are studying in another room this week." },
         { cue: "Khu phố đang trở nên đông hơn.", options: ["The neighbourhood is getting busier.", "The neighbourhood gets busy every morning.", "The neighbourhood getting busier."], answer: "The neighbourhood is getting busier.", completed: "The neighbourhood is getting busier." },
       ],
     },
@@ -1471,7 +1495,7 @@ const a1Chapter09DepthExtensions: Partial<Record<string, Exercise[]>> = {
       explanation: "Hiện tại đơn nói điều thường lệ hoặc ổn định; tiếp diễn nói quá trình tạm thời hay đang xảy ra.",
       rows: [
         { cue: "Mai thường bán sách.", options: ["Mai sells books.", "Mai is selling books now.", "Mai selling books."], answer: "Mai sells books.", completed: "Mai sells books." },
-        { cue: "Hôm nay Mai đang giúp ở quầy cà phê.", options: ["Mai is helping at the café today.", "Mai helps there every day.", "Mai is help there today."], answer: "Mai is helping at the café today.", completed: "Mai is helping at the café today." },
+        { cue: "Hôm nay Mai đang giúp ở quầy cà phê.", options: ["Mai is helping at the café today.", "Mai helps at the café every day.", "Mai is help at the café today."], answer: "Mai is helping at the café today.", completed: "Mai is helping at the café today." },
         { cue: "Ngay lúc này khách đang chờ.", options: ["The customers are waiting now.", "The customers wait every morning.", "The customers waiting now."], answer: "The customers are waiting now.", completed: "The customers are waiting now." },
       ],
     },
@@ -1483,7 +1507,7 @@ const a1Chapter09DepthExtensions: Partial<Record<string, Exercise[]>> = {
       items: [
         { text: "My uncle drives a bus.", bucket: "Hiện tại đơn" },
         { text: "The library closes at six.", bucket: "Hiện tại đơn" },
-        { text: "We need more chairs now.", bucket: "Hiện tại đơn" },
+        { text: "My sister teaches English.", bucket: "Hiện tại đơn" },
         { text: "My uncle is driving now.", bucket: "Hiện tại tiếp diễn" },
         { text: "The students are using the library this week.", bucket: "Hiện tại tiếp diễn" },
         { text: "The sky is getting darker.", bucket: "Hiện tại tiếp diễn" },

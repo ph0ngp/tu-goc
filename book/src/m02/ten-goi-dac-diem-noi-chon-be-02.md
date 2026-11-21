@@ -3,9 +3,9 @@ slug: ten-goi-dac-diem-noi-chon-be-02
 status: published
 legacyLessonId: be-meanings
 ---
-# Tên gọi · đặc điểm · nơi chốn
+# Be với tên gọi, đặc điểm, nơi chốn, tuổi và thời gian
 
-`Be` không có một nghĩa tiếng Việt cố định trong mọi câu. Dạng `am`, `is` hoặc
+Động từ `be` không có một nghĩa tiếng Việt cố định trong mọi câu. Dạng `am`, `is` hoặc
 `are` nối chủ ngữ với thông tin mới; cách dịch phụ thuộc vào loại thông tin
 đứng phía sau.
 
@@ -14,6 +14,9 @@ Ba công việc cơ bản nhất của `be` là:
 - cho biết chủ ngữ là ai hoặc là gì;
 - miêu tả chủ ngữ như thế nào;
 - cho biết chủ ngữ ở đâu.
+
+Sau ba công việc ấy, bài còn giới thiệu cách dùng `be` để nói tuổi, nguồn gốc,
+ngày và giờ.
 
 ## Dùng be trước tên gọi hoặc loại của chủ ngữ
 
@@ -48,8 +51,8 @@ chủ ngữ + be + tính từ
 | Ví dụ | Nghĩa tiếng Việt |
 | --- | --- |
 | `She is happy.` | Cô ấy vui. |
-| `The book is new.` | Quyển sách này còn mới. |
-| `The cats are small.` | Những con mèo này nhỏ. |
+| `The book is new.` | Quyển sách ấy còn mới. |
+| `The cats are small.` | Những con mèo ấy nhỏ. |
 | `We are tired.` | Chúng tôi mệt. |
 
 Tính từ không đổi theo số lượng. Ta dùng `The cat is small.` cho một con mèo
@@ -70,7 +73,7 @@ chủ ngữ + be + nơi chốn
 | `The books are on the table.` | Những quyển sách ở trên bàn. |
 | `They are in Hanoi.` | Họ ở Hà Nội. |
 
-`Here` nghĩa là “ở đây”, `at home` là “ở nhà”, `on the table` là “ở trên bàn”
+Từ `here` nghĩa là “ở đây”, `at home` là “ở nhà”, `on the table` là “ở trên bàn”
 và `in Hanoi` là “ở Hà Nội”. Toàn bộ cụm nơi chốn đứng sau `be`.
 
 ## Be còn dùng với tuổi, nguồn gốc, ngày và giờ

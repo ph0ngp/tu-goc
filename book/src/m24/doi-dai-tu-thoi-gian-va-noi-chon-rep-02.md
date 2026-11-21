@@ -36,9 +36,9 @@ Nếu một người khác kể, `you` có thể thành `him`: `Lan said that sh
 
 Ví dụ:
 
-- `“I saw Lan yesterday,” Nam said.` → `Nam said that he had seen Lan the day before.`
-- `“We'll meet here tomorrow,” they said.` → `They said that they would meet there the next day.`
-- `“I like this room,” Mai said.` → `Mai said that she liked that room.`
+- `“I saw Lan yesterday,” Nam said.` → `Nam said that he had seen Lan the day before.` — Nam nói anh ấy đã gặp Lan hôm trước.
+- `“We'll meet here tomorrow,” they said.` → `They said that they would meet there the next day.` — Họ nói họ sẽ gặp nhau ở đó vào ngày hôm sau.
+- `“I like this room,” Mai said.` → `Mai said that she liked that room.` — Mai nói cô ấy thích căn phòng đó.
 
 ## Chỉ đổi khi điểm nhìn thực sự thay đổi
 

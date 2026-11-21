@@ -12,7 +12,7 @@ status: published
 Nếu người nói không tạo khoảng cách với khả năng ấy, dùng thì phù hợp với thời gian thông thường:
 
 - `It looks as if it is going to rain.` — Trông như thể trời sắp mưa.
-- `She sounds as though she knows the answer.` — Cô ấy nghe như thể biết đáp án.
+- `She sounds as though she knows the answer.` — Nghe cách cô ấy nói thì như thể cô ấy biết đáp án.
 - `It looked as if someone had broken the window.` — Lúc đó trông như thể ai đó đã làm vỡ cửa sổ.
 
 Các câu không khẳng định chắc chắn, nhưng người nói coi lời giải thích là khả dĩ.
@@ -25,6 +25,8 @@ Khi người nói biết hoặc tin điều so sánh không đúng ở hiện t�
 - `Lan spends money as though she were rich.` — Lan tiêu tiền như thể giàu; người nói cho rằng cô ấy không giàu.
 
 `Knew` và `were` không nói quá khứ. Chúng tạo khoảng cách với sự thật hiện tại. Với `be`, `were` cho mọi ngôi là dạng giả định trang trọng; `was` cũng gặp trong lời nói.
+
+Dạng quá khứ là một lựa chọn, không phải điều bắt buộc. Trong lời nói hằng ngày, nhiều người vẫn dùng hiện tại dù không tin điều được so sánh: `He acts as if he owns the place.` — Anh ta cư xử như thể mình là chủ nơi này. Khi ấy, chỉ ngữ cảnh và giọng điệu cho biết người nói không tin; còn `knew`, `were` dùng chính hình thức động từ để báo khoảng cách ấy.
 
 ## Quá khứ hoàn thành cho điều trái với quá khứ
 

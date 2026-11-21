@@ -116,7 +116,7 @@ Khi cần dùng `a` hoặc `an`, hãy làm theo thứ tự:
 2. Nghe âm đầu của từ đứng ngay sau: âm phụ âm dùng `a`, âm nguyên âm dùng
    `an`.
 
-Ví dụ:
+Ví dụ, với `one` nghĩa là “một”:
 
 ```text
 one + book       → a book

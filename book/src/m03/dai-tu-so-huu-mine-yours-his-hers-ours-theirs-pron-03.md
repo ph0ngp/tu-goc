@@ -9,16 +9,16 @@ Ta có thể nói `This is my book`, nghĩa là “Đây là sách của tôi”
 
 ## Hai nhóm từ sở hữu
 
-Từ chỉ sở hữu đã học luôn đứng trước danh từ. Đại từ sở hữu trong bài này đứng độc lập và thay cho cả cụm danh từ.
+Từ chỉ sở hữu đã học luôn đứng trước danh từ. **Đại từ sở hữu** (*possessive pronoun*) trong bài này đứng độc lập và thay cho cả cụm danh từ.
 
-| Người có liên hệ | Trước danh từ | Đứng độc lập | Ví dụ |
-| --- | --- | --- | --- |
-| tôi | `my` | `mine` | `my pen` → `The pen is mine.` |
-| bạn/các bạn | `your` | `yours` | `your seat` → `The seat is yours.` |
-| anh ấy | `his` | `his` | `his coat` → `The coat is his.` |
-| cô ấy | `her` | `hers` | `her bag` → `The bag is hers.` |
-| chúng tôi/chúng ta | `our` | `ours` | `our room` → `The room is ours.` |
-| họ/chúng | `their` | `theirs` | `their keys` → `The keys are theirs.` |
+| Người có liên hệ | Trước danh từ | Đứng độc lập | Ví dụ | Nghĩa |
+| --- | --- | --- | --- | --- |
+| tôi | `my` | `mine` | `my pen` → `The pen is mine.` | bút của tôi → Cây bút là của tôi. |
+| bạn/các bạn | `your` | `yours` | `your seat` → `The seat is yours.` | chỗ ngồi của bạn → Chỗ ngồi là của bạn. |
+| anh ấy | `his` | `his` | `his coat` → `The coat is his.` | áo khoác của anh ấy → Chiếc áo khoác là của anh ấy. |
+| cô ấy | `her` | `hers` | `her bag` → `The bag is hers.` | túi của cô ấy → Chiếc túi là của cô ấy. |
+| chúng tôi/chúng ta | `our` | `ours` | `our room` → `The room is ours.` | phòng của chúng tôi → Căn phòng là của chúng tôi. |
+| họ/chúng | `their` | `theirs` | `their keys` → `The keys are theirs.` | chìa khóa của họ → Những chiếc chìa khóa là của họ. |
 
 Không có đại từ sở hữu độc lập thông dụng tương ứng với `its` ở mức này. Khi nói về đồ vật hoặc con vật, ta thường giữ danh từ: `The dog is in its bed`, nghĩa là “Con chó ở trong ổ của nó”.
 
@@ -49,9 +49,8 @@ Một mẫu rất thường gặp là `chủ ngữ + be + đại từ sở hữu
 
 Đại từ sở hữu giúp câu tự nhiên hơn khi danh từ đã được nhắc đến.
 
-> `My bag is black. Your bag is red.` đúng nhưng lặp từ `bag`.
->
-> `My bag is black. Yours is red.` tự nhiên hơn và vẫn có nghĩa “Túi của tôi màu đen. Túi của bạn màu đỏ.”
+- `My bag is black. Your bag is red.` — Túi của tôi màu đen. Túi của bạn màu đỏ. Câu này đúng nhưng lặp từ `bag`.
+- `My bag is black. Yours is red.` — vẫn có nghĩa như trên nhưng tự nhiên hơn, vì `yours` thay cho `your bag`.
 
 Trong `Yours is red`, `yours` làm chủ ngữ và có nghĩa “túi của bạn”. Vì đang thay cho một chiếc túi số ít, ta dùng `is`. Nếu thay cho nhiều vật, dùng `are`: `Ours are new`, nghĩa là “Những cái của chúng tôi mới”.
 

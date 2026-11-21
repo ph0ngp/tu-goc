@@ -23,10 +23,10 @@ the two highly experienced research assistants from Hue
 - `two`: số lượng;
 - `highly experienced`: cụm tính từ;
 - `research`: danh từ bổ nghĩa;
-- `assistants`: danh từ trung tâm;
+- `assistants`: từ trung tâm;
 - `from Hue`: cụm giới từ bổ nghĩa sau.
 
-Danh từ trung tâm quyết định số nhiều và hòa hợp: `assistants are`, không phải `research are`.
+Từ trung tâm quyết định số nhiều và hòa hợp: `assistants are`, không phải `research are`.
 
 ## Bổ nghĩa trước danh từ
 
@@ -36,7 +36,9 @@ Phần trước có thể gồm số lượng, đánh giá, kích thước, tu�
 - `a small Vietnamese software company` — một công ty phần mềm Việt Nam nhỏ;
 - `an expensive stainless-steel kitchen sink` — một bồn rửa bếp bằng thép không gỉ đắt tiền.
 
-Thứ tự tính từ có xu hướng, nhưng không nên nhồi quá nhiều từ. Dấu gạch nối giúp nhóm từ cùng bổ nghĩa trước danh từ: `a well-designed course`. Sau `be`, thường không dùng gạch nối: `The course is well designed`.
+Từ hạn định luôn đứng đầu, rồi đến số lượng, sau đó mới đến tính từ: `the two new students` — hai học sinh mới, không nói `the new two students`. Trạng từ chỉ mức độ như `highly`, `extremely` đứng ngay trước tính từ mà nó bổ nghĩa: `two highly experienced engineers` — hai kỹ sư giàu kinh nghiệm.
+
+Thứ tự tính từ có xu hướng, nhưng không nên nhồi quá nhiều từ. Dấu gạch nối giúp nhóm từ cùng bổ nghĩa trước danh từ: `a well-designed course` — một khóa học được thiết kế tốt. Trạng từ đuôi `-ly` như `highly` thì không cần gạch nối. Sau `be`, thường không dùng gạch nối: `The course is well designed`.
 
 ## Bổ nghĩa sau bằng cụm giới từ
 
@@ -45,7 +47,7 @@ Thứ tự tính từ có xu hướng, nhưng không nên nhồi quá nhiều t�
 - `the decision to close the factory` — quyết định đóng nhà máy;
 - `students with part-time jobs` — sinh viên có việc bán thời gian.
 
-Giới từ thể hiện quan hệ cụ thể; không thể thay tự do `of`, `for`, `in`, `with`. Nhiều quan hệ phụ thuộc danh từ: `a solution to the problem`, `the reason for the delay`.
+Giới từ thể hiện quan hệ cụ thể; không thể thay tự do `of`, `for`, `in`, `with`. Nhiều quan hệ phụ thuộc danh từ: `a solution to the problem` (giải pháp cho vấn đề), `the answer to the question` (câu trả lời cho câu hỏi), `the key to success` (bí quyết thành công), `the reason for the delay` (lý do của sự chậm trễ).
 
 ## Bổ nghĩa sau bằng mệnh đề
 
@@ -54,14 +56,14 @@ Giới từ thể hiện quan hệ cụ thể; không thể thay tự do `of`, `
 - `the first person to arrive` — người đầu tiên tới;
 - `the claim that the data was false` — khẳng định rằng dữ liệu là sai.
 
-Các phần này không cùng loại: mệnh đề quan hệ xác định người/vật; mệnh đề phân từ rút gọn một quan hệ; infinitive thường nêu nhiệm vụ, khả năng hoặc vị trí trong thứ tự; `that-clause` sau danh từ như `claim` cung cấp nội dung.
+Các phần này không cùng loại: mệnh đề quan hệ xác định người/vật; mệnh đề phân từ rút gọn một quan hệ; infinitive thường nêu nhiệm vụ, khả năng hoặc vị trí trong thứ tự; `that-clause` sau danh từ như `claim` cung cấp nội dung. Ở bài này chỉ cần nhận ra vị trí của chúng; cách tạo và dùng từng dạng được học kỹ ở [Mệnh đề quan hệ rút gọn](../m32/menh-de-quan-he-rut-gon-rel-07.md) và [Đồng vị và mệnh đề nội dung sau danh từ](../m32/dong-vi-va-menh-de-noi-dung-sau-danh-tu-appos-01.md).
 
 ## Vị trí thay đổi nghĩa
 
 So sánh:
 
-- `the first report submitted by Lan` có thể là báo cáo đầu tiên trong số các báo cáo được Lan nộp;
-- `the report first submitted by Lan` nhấn việc Lan là người nộp trước/ban đầu tùy ngữ cảnh.
+- `the first report submitted by Lan` — báo cáo đầu tiên trong số các báo cáo Lan đã nộp; `first` bổ nghĩa cho `report`;
+- `the report first submitted by Lan` — bản báo cáo do Lan nộp lần đầu (về sau có thể đã được sửa hoặc nộp lại); `first` bổ nghĩa cho `submitted`, không cho `report`.
 
 Hoặc:
 
@@ -97,7 +99,7 @@ Dấu phẩy thay đổi phạm vi tham chiếu, không chỉ tạo chỗ nghỉ
 ## Ghi nhớ
 
 - Cụm danh từ phức có phần bổ nghĩa đứng trước, từ trung tâm và phần bổ nghĩa đứng sau.
-- Head noun quyết định số và hòa hợp.
+- Từ trung tâm quyết định số và hòa hợp.
 - Phần bổ nghĩa đứng trước thường phân loại hoặc miêu tả; phần bổ nghĩa đứng sau thường làm rõ quan hệ hoặc giới hạn tham chiếu.
 - Vị trí và dấu phẩy có thể đổi nghĩa.
 - Khi chuỗi dài mơ hồ, dùng `of`, mệnh đề hoặc tách câu để làm rõ.

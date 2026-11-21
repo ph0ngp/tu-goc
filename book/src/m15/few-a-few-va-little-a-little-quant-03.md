@@ -24,12 +24,19 @@ Hai cụm này thường mang ý trung tính hoặc tích cực: số lượng k
 - `We have a little time before the bus leaves.` — Chúng ta còn một ít thời gian trước khi xe buýt chạy.
 - `Add a little sugar.` — Hãy thêm một ít đường.
 
-## `Few` và `little`: hầu như không đủ
+## `Few` và `little`: rất ít, gần như không có
 
-Không có `a`, hai từ thường mang ý hạn chế hoặc tiêu cực:
+Không có `a`, hai từ nhấn **sự ít ỏi**: ít hơn người ta có thể chờ đợi, gần như không có. Thường đó là điều đáng tiếc hoặc là vấn đề:
 
 - `Few people understood the question.` — Rất ít người hiểu câu hỏi.
 - `We have little time, so let's hurry.` — Chúng ta hầu như không còn thời gian, nên hãy nhanh lên.
+
+Nhưng sự ít ỏi cũng có thể là điều tốt, khi thứ được nói đến là thứ không ai muốn có nhiều:
+
+- `There were few mistakes in your test.` — Bài kiểm tra của bạn hầu như không có lỗi.
+- `There is little traffic today.` — Hôm nay đường gần như vắng xe.
+
+Vì vậy, `few/little` không tự mang nghĩa “xấu”; chúng chỉ nhấn rằng lượng ấy **rất nhỏ**. Ngữ cảnh cho biết đó là tin xấu hay tin tốt.
 
 So sánh:
 
@@ -48,7 +55,9 @@ So sánh:
 
 ## Câu hỏi và phủ định
 
-Trong câu hỏi thông thường, `many/much` thường tự nhiên hơn: `How many friends do you have?`, `How much time is there?`. `Few/little` thể hiện đánh giá của người nói, không chỉ đo số lượng.
+Trong câu hỏi thông thường, `many/much` thường tự nhiên hơn: `How many friends do you have?` (Bạn có bao nhiêu người bạn?), `How much time is there?` (Còn bao nhiêu thời gian?). `Few/little` thể hiện đánh giá của người nói, không chỉ đo số lượng.
+
+Trong hội thoại hằng ngày, câu phủ định với `not many/not much` thường nghe nhẹ nhàng, tự nhiên hơn `few/little`: `We don't have much time.` — Chúng ta không có nhiều thời gian. Câu `We have little time.` (Chúng ta còn rất ít thời gian) đúng nhưng nghe nhấn mạnh và hơi trang trọng hơn.
 
 ## Cùng một lượng, thái độ có thể khác
 
@@ -59,22 +68,22 @@ Giả sử còn mười phút trước khi xe chạy. Người nói có thể n�
 
 Hai câu không nhất thiết mô tả hai con số khác nhau; chúng có thể thể hiện hai cách đánh giá cùng một lượng. Tương tự, `a few seats are available` nghe như vẫn có ghế, còn `few seats are available` cảnh báo gần hết ghế.
 
-Vì vậy, ngoài tính đếm được, hãy xác định người nói muốn tạo cảm giác **vẫn có một ít** hay **ít đến mức đáng lo**.
+Vì vậy, ngoài tính đếm được, hãy xác định người nói muốn tạo cảm giác **vẫn có một ít** hay **rất ít, gần như không có**.
 
 ## Chọn đúng bằng hai quyết định
 
-Quyết định thứ nhất hoàn toàn thuộc về danh từ: danh từ số nhiều đếm được đi với `few/a few`; danh từ không đếm được đi với `little/a little`. Quyết định thứ hai thuộc về thông điệp: có `a` khi lượng nhỏ vẫn có ích, bỏ `a` khi muốn nhấn gần như không đủ.
+Quyết định thứ nhất hoàn toàn thuộc về danh từ: danh từ số nhiều đếm được đi với `few/a few`; danh từ không đếm được đi với `little/a little`. Quyết định thứ hai thuộc về thông điệp: có `a` khi lượng nhỏ vẫn có ích, bỏ `a` khi muốn nhấn sự ít ỏi, gần như không có.
 
-| Danh từ | Vẫn có một ít | Ít đến mức đáng lo |
+| Danh từ | Vẫn có một ít | Rất ít (nhấn sự ít ỏi) |
 | --- | --- | --- |
 | `chairs` — ghế, số nhiều đếm được | `We have a few chairs.` — Chúng ta vẫn có vài chiếc ghế. | `We have few chairs.` — Chúng ta có quá ít ghế. |
 | `time` — thời gian, không đếm được | `We have a little time.` — Chúng ta vẫn còn một chút thời gian. | `We have little time.` — Chúng ta còn rất ít thời gian. |
 
-Không dùng `a few time` vì `time` trong nghĩa này không đếm được; không dùng `a little chairs` vì `chairs` là số nhiều đếm được. Nếu chỉ muốn đo lượng mà không thể hiện thái độ “đủ hay thiếu”, `some`, `many` hoặc `much` có thể phù hợp hơn tùy câu.
+Không dùng `a few time` vì `time` trong nghĩa này không đếm được; không dùng `a little chairs` vì `chairs` là số nhiều đếm được. Nếu chỉ muốn đo lượng mà không thể hiện thái độ “vẫn có” hay “gần như không có”, `some`, `many` hoặc `much` có thể phù hợp hơn tùy câu.
 
 ## Ghi nhớ
 
 - `few/a few` đi với số nhiều đếm được; `little/a little` đi với không đếm được.
-- Có `a`: có một ít; không có `a`: rất ít, thường không đủ.
+- Có `a`: có một ít; không có `a`: rất ít, gần như không có (thường là không đủ, nhưng cũng có thể là tin tốt như `few mistakes`).
 - `quite a few` có nghĩa “khá nhiều”.
 - Chọn từ theo cả tính đếm được và thái độ muốn thể hiện.

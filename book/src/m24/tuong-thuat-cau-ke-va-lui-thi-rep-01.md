@@ -43,6 +43,8 @@ Ví dụ:
 - `“I have lost my key,” Nam said.` → `Nam said that he had lost his key.` — Nam nói anh đã làm mất chìa khóa.
 - `“I will call,” Lan said.` → `Lan said that she would call.` — Lan nói cô sẽ gọi.
 
+Quá khứ đơn trong lời gốc thường có thể giữ nguyên nếu mốc thời gian đã rõ: `“I saw Lan on Monday,” he said.` → `He said he saw Lan on Monday.` — Anh ấy nói anh ấy đã gặp Lan hôm thứ Hai. Lùi thành `had seen` cũng đúng, và rõ hơn khi câu không có mốc thời gian nào.
+
 ## Vì sao lùi thì?
 
 Động từ `said` đặt người kể tại một mốc quá khứ. Dạng lùi thì cho thấy nội dung được nhìn từ mốc đó:
@@ -56,8 +58,8 @@ Lùi thì không nhất thiết có nghĩa nội dung đã trở thành sai. Nó
 
 ## Quá khứ hoàn thành thường không lùi thêm
 
-- Trực tiếp: `“I had already eaten,” she said.`
-- Tường thuật: `She said that she had already eaten.`
+- Trực tiếp: `“I had already eaten,” she said.` — “Tôi đã ăn rồi,” cô ấy nói.
+- Tường thuật: `She said that she had already eaten.` — Cô ấy nói cô ấy đã ăn rồi.
 
 Tiếng Anh không có một dạng thông dụng khác để lùi quá khứ hoàn thành thêm một bước. `Would`, `could`, `should`, `might` cũng thường giữ nguyên.
 
@@ -65,13 +67,13 @@ Tiếng Anh không có một dạng thông dụng khác để lùi quá khứ ho
 
 Giữ phủ định trong nội dung rồi lùi trợ động từ nếu cần:
 
-- `“I don't understand,” he said.` → `He said that he didn't understand.`
-- `“We can't stay,” they said.` → `They said that they couldn't stay.`
-- `“I won't be late,” Lan said.` → `Lan said that she wouldn't be late.`
+- `“I don't understand,” he said.` → `He said that he didn't understand.` — Anh ấy nói anh ấy không hiểu.
+- `“We can't stay,” they said.` → `They said that they couldn't stay.` — Họ nói họ không ở lại được.
+- `“I won't be late,” Lan said.` → `Lan said that she wouldn't be late.` — Lan nói cô ấy sẽ không đến muộn.
 
 ## Không biến câu tường thuật thành câu hỏi
 
-`He said that he was busy` dùng trật tự câu kể. Không đảo `was he busy` và không đặt dấu hỏi. Việc câu trực tiếp có cảm xúc hay ngữ điệu không thay đổi loại cấu trúc cơ bản khi nó là một câu kể.
+`He said that he was busy` dùng trật tự câu kể. Không đảo `was he busy` và không đặt dấu hỏi. Dù lời gốc được nói với cảm xúc hay ngữ điệu nào, nếu đó là một câu kể thì khi tường thuật vẫn dùng cấu trúc câu kể.
 
 ## Lùi thì không phải phép thay từng từ mù quáng
 

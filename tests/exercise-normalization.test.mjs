@@ -25,3 +25,14 @@ test("does not erase punctuation that changes the grammatical answer", () => {
     normalizeExactInput("The plan failed; we changed direction.", normalization),
   );
 });
+
+test("treats spacing around dashes and brackets as presentation only", () => {
+  assert.equal(
+    normalizeExactInput("The answer — if we can find it — will change the plan.", normalization),
+    normalizeExactInput("The answer—if we can find it—will change the plan.", normalization),
+  );
+  assert.equal(
+    normalizeExactInput("It was repeated in 2025 ( using a larger sample ).", normalization),
+    normalizeExactInput("It was repeated in 2025 (using a larger sample).", normalization),
+  );
+});

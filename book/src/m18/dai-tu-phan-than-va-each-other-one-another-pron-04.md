@@ -5,7 +5,7 @@ legacyLessonId: a2-reflexive-reciprocal
 ---
 # Đại từ phản thân và each other/one another
 
-Đại từ phản thân nói hành động quay lại chính chủ ngữ. `Each other/one another` nói hai hay nhiều người thực hiện hành động lẫn nhau. Hai ý này không giống nhau.
+**Đại từ phản thân** (*reflexive pronoun*) như `myself`, `herself` nói hành động quay lại chính chủ ngữ. `Each other/one another` nói hai hay nhiều người thực hiện hành động lẫn nhau. Hai ý này không giống nhau.
 
 ## Các đại từ phản thân
 
@@ -23,6 +23,8 @@ legacyLessonId: a2-reflexive-reciprocal
 - `The children taught themselves to swim.` — Bọn trẻ tự học bơi.
 
 Không dùng đại từ tân ngữ thông thường nếu hành động quay lại chủ ngữ: `Lan looked at her` thường là Lan nhìn một người phụ nữ khác.
+
+Một số động từ hay đi với đại từ phản thân và mang nghĩa riêng. Thường gặp nhất là `enjoy` + đại từ phản thân, nghĩa là “chơi vui, tận hưởng”: `We enjoyed ourselves at the party.` — Chúng tôi đã chơi rất vui ở bữa tiệc. Câu này không có nghĩa “chúng tôi thích chính mình”; đại từ phản thân vẫn phải khớp với chủ ngữ: `I enjoyed myself`, `Lan enjoyed herself`.
 
 ## Nghĩa “tự mình” để nhấn mạnh
 

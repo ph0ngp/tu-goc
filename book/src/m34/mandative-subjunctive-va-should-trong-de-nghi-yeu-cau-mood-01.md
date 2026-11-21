@@ -44,6 +44,11 @@ Không phải mọi nghĩa của một động từ đều kích hoạt cấu tr
 
 Ở câu thứ nhất, `suggest` nghĩa là “cho thấy”: câu nêu một nhận định về sự thật, không đề nghị Lan làm gì, nên dùng `is` bình thường. Ở câu thứ hai, `suggest` là lời đề nghị, nên mệnh đề sau dùng `stay`, không có `-s`. Nghĩa của động từ trong ngữ cảnh mới quyết định.
 
+`Insist` cũng có hai nghĩa như vậy:
+
+- `He insisted that he was at home.` — Anh ấy khăng khăng rằng mình đã ở nhà. Đây là lời quả quyết về một sự thật, nên động từ chia theo thì bình thường.
+- `He insisted that she be at home.` — Anh ấy đòi cô ấy phải ở nhà. Đây là một yêu cầu, nên dùng động từ dạng cơ bản.
+
 ### Tính từ chỉ sự cần thiết hoặc quan trọng
 
 `essential`, `important`, `necessary`, `vital`, `desirable`, `advisable`:
@@ -81,11 +86,11 @@ Bị động dùng `be + past participle`:
 
 Trong những câu này, `should` không đơn thuần là lời khuyên nhẹ như `You should rest`. Nó là dấu hiệu của mệnh đề mandative sau từ chỉ yêu cầu hoặc sự cần thiết. Dạng không `should` rất phổ biến trong tiếng Anh Mỹ và ngày càng thông dụng rộng rãi; cả hai đều là tiếng Anh chuẩn.
 
-## Dạng chỉ định và khác biệt khu vực
+## Thức trần thuật và khác biệt khu vực
 
-Trong tiếng Anh Anh, ta cũng có thể gặp hiện tại chỉ định trong một số mệnh đề mandative, chẳng hạn `It is important that everyone knows the rules` — “Điều quan trọng là mọi người đều biết quy tắc.” Câu này có thể vừa mô tả trạng thái cần có, vừa mang ý yêu cầu. Không nên đánh dấu mọi dạng chỉ định là sai; cần xét biến thể khu vực và ý nghĩa.
+**Thức trần thuật** (*indicative*) là dạng chia động từ bình thường theo thì và chủ ngữ, như `is`, `knows`, `was`. Trong tiếng Anh Anh, ta cũng có thể gặp hiện tại của thức trần thuật trong một số mệnh đề mandative, chẳng hạn `It is important that everyone knows the rules` — “Điều quan trọng là mọi người đều biết quy tắc.” Câu này có thể vừa mô tả trạng thái cần có, vừa mang ý yêu cầu. Không nên đánh dấu mọi dạng trần thuật là sai; cần xét biến thể khu vực và ý nghĩa.
 
-Với động từ nhiều nghĩa như `suggest`, quá khứ chỉ định thường báo một cách hiểu khác: `The evidence suggested that the plan was revised` nghĩa là “Bằng chứng cho thấy kế hoạch đã được sửa”, không phải “bằng chứng đề nghị sửa kế hoạch”. Khi muốn viết một yêu cầu trang trọng không mơ hồ, `base verb` hoặc mandative `should` là lựa chọn rõ.
+Với động từ nhiều nghĩa như `suggest`, quá khứ của thức trần thuật thường báo một cách hiểu khác: `The evidence suggested that the plan was revised` nghĩa là “Bằng chứng cho thấy kế hoạch đã được sửa”, không phải “bằng chứng đề nghị sửa kế hoạch”. Khi muốn viết một yêu cầu trang trọng không mơ hồ, `base verb` hoặc mandative `should` là lựa chọn rõ.
 
 ## Không nhầm với cấu trúc động từ khác
 
@@ -109,5 +114,5 @@ Với `advise`, mẫu `object + to-infinitive` là bình thường ở mọi bi�
 - Cấu trúc xuất hiện sau từ chỉ đề nghị, yêu cầu, sự cần thiết hoặc tầm quan trọng.
 - Phủ định là `not + base verb`; bị động là `be + past participle`.
 - Mandative `should` là biến thể chuẩn, đặc biệt phổ biến trong tiếng Anh Anh.
-- Không phải cứ sau `suggest` là dùng subjunctive; phải phân biệt nghĩa “đề nghị” với nghĩa “cho thấy”.
+- Không phải cứ sau `suggest` hay `insist` là dùng subjunctive; phải phân biệt nghĩa “đề nghị, đòi hỏi” với nghĩa “cho thấy, quả quyết”.
 - Tôn trọng mẫu riêng của từng động từ: `recommend doing/that...` là lựa chọn an toàn (`recommend someone to do` chủ yếu gặp trong tiếng Anh–Anh), còn `advise someone to do` dùng rộng rãi.

@@ -5,7 +5,7 @@ legacyLessonId: possessive-s
 ---
 # Sở hữu cách với 's
 
-Ta đã biết `my bag`, nghĩa là “túi của tôi”. Khi muốn nêu thẳng tên người hoặc con vật có liên hệ, tiếng Anh thường thêm `'s` sau tên đó: `Lan's bag`, nghĩa là “túi của Lan”.
+Ta đã biết `my bag`, nghĩa là “túi của tôi”. Khi muốn nêu thẳng tên người hoặc con vật có liên hệ, tiếng Anh thường thêm `'s` sau tên đó: `Lan's bag`, nghĩa là “túi của Lan”. Cách nói này gọi là **sở hữu cách** (*possessive 's*).
 
 ## Trật tự ngược với tiếng Việt
 
@@ -50,8 +50,8 @@ Khi hai tên cùng chỉ một thứ chung, chỉ tên cuối nhận `'s`: `Lan 
 
 `Nam's book` nêu thẳng tên Nam. `His book` nghĩa là “sách của anh ấy” và dùng khi người nghe đã biết `his` nói về ai. Không dùng cả hai cách trước cùng một danh từ.
 
-- `Nam's book is new.` — Sách của Nam mới.
-- `His book is new.` — Sách của anh ấy mới.
+- `Nam's book is new.` — Sách của Nam còn mới.
+- `His book is new.` — Sách của anh ấy còn mới.
 - Không nói `his Nam's book`.
 
 ## Đừng nhầm với số nhiều và dạng viết tắt

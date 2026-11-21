@@ -55,11 +55,11 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       ["Từ nào là tên riêng của một thành phố?", ["Hanoi", "city", "school"], "Hanoi", "Hanoi là tên tiếng Anh của thành phố Hà Nội.", "Hanoi là danh từ riêng."],
       ["Trong một câu viết bình thường, cách nào viết đúng tên nước Việt Nam bằng tiếng Anh?", ["vietnam", "Vietnam", "vietNam"], "Vietnam", "Tên riêng bắt đầu bằng chữ hoa và các chữ còn lại viết thường trong cách viết thông thường.", "Vietnam là cách viết thông thường của tên riêng này."],
       ["Từ nào là danh từ đếm được trong nghĩa đang xét?", ["book", "happy", "read"], "book", "Ta có thể đếm từng quyển sách.", "book là danh từ đếm được; happy là tính từ và read là động từ."],
-      ["Khái niệm số ít nói đến số lượng nào?", ["đúng một", "từ hai trở lên", "không có số lượng"], "đúng một", "Singular nghĩa là số ít.", "Số ít dùng khi nói về đúng một người hoặc vật."],
+      ["Khái niệm số ít nói đến số lượng nào?", ["đúng một", "từ hai trở lên", "không có số lượng"], "đúng một", "So sánh “một quyển sách” với “hai quyển sách”: chữ “ít” trong “số ít” ứng với trường hợp nào?", "Số ít dùng khi nói về đúng một người hoặc vật."],
       ["Nhận xét nào đúng về danh từ riêng?", ["Danh từ riêng gọi đúng tên", "Danh từ riêng luôn gọi một loại", "Danh từ riêng luôn viết thường"], "Danh từ riêng gọi đúng tên", "Hãy nghĩ đến Lan hoặc Hanoi.", "Danh từ riêng gọi đúng tên một người, nơi hoặc tổ chức cụ thể."],
-      ["Khi đứng giữa câu, danh từ chung `book` thường được viết thế nào?", ["book", "Book", "BOOK"], "book", "Danh từ chung không tự nhiên mang chữ hoa chỉ vì nó là danh từ.", "book thường viết thường khi không đứng đầu câu và không thuộc tên riêng."],
-      ["`Lan` thuộc nhóm nào?", ["danh từ riêng", "danh từ chung", "động từ"], "danh từ riêng", "Lan gọi đúng tên một người.", "Lan là danh từ riêng."],
-      ["`cat`, nghĩa là “con mèo”, thuộc nhóm nào?", ["danh từ chung", "danh từ riêng", "tính từ"], "danh từ chung", "cat gọi tên một loại con vật.", "cat là danh từ chung."],
+      ["Khi đứng giữa câu, danh từ chung có nghĩa “quyển sách” thường được viết thế nào?", ["book", "Book", "BOOK"], "book", "Danh từ chung không tự nhiên mang chữ hoa chỉ vì nó là danh từ.", "book thường viết thường khi không đứng đầu câu và không thuộc tên riêng."],
+      ["Vì sao `Lan` là danh từ riêng?", ["Vì nó gọi đúng tên một người cụ thể", "Vì nó gọi tên cả một loại người", "Vì nó nói một hành động"], "Vì nó gọi đúng tên một người cụ thể", "Hỏi: từ này dùng chung cho nhiều người, hay là tên của một người?", "`Lan` là tên của một người cụ thể, nên là danh từ riêng và luôn viết hoa."],
+      ["Vì sao `city`, nghĩa là “thành phố”, là danh từ chung, còn `Hanoi` là danh từ riêng?", ["city gọi một loại nơi; Hanoi gọi đúng tên một thành phố", "city gọi đúng tên một nơi; Hanoi gọi một loại thành phố", "city là tính từ; Hanoi là danh từ"], "city gọi một loại nơi; Hanoi gọi đúng tên một thành phố", "Hỏi: từ nào dùng được cho mọi thành phố, từ nào chỉ dùng cho một thành phố?", "`city` dùng cho mọi thành phố nên là danh từ chung; `Hanoi` là tên của đúng một thành phố nên là danh từ riêng."],
       ["`teacher`, nghĩa là “giáo viên”, được hiểu thế nào trong bài này?", ["danh từ chung đếm được", "danh từ riêng", "đại từ"], "danh từ chung đếm được", "Ta có thể đếm từng giáo viên.", "teacher vừa là danh từ chung vừa là danh từ đếm được trong nghĩa đang xét."],
       ["`Hanoi` được hiểu thế nào?", ["tên riêng của một nơi", "tên chung của mọi thành phố", "động từ chỉ hành động"], "tên riêng của một nơi", "Hanoi gọi đúng tên thành phố Hà Nội.", "Hanoi là danh từ riêng chỉ nơi chốn."],
       ["Trong các mẫu cơ bản của bài, cách gọi tên một người tên Lan là gì?", ["Lan", "a Lan", "an Lan"], "Lan", "Tên riêng được dùng trực tiếp trong phạm vi bài.", "Ta dùng Lan, không đặt a/an trước tên riêng trong mẫu cơ bản này."],
@@ -84,7 +84,7 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       "id": "ad1",
       "kind": "sort",
       "prompt": "Đặt mỗi từ vào nhóm dùng `a` hoặc `an`.",
-      "hint": "apple và orange bắt đầu bằng âm nguyên âm.",
+      "hint": "Đọc to từng từ: âm đầu tiên nghe như nguyên âm hay phụ âm?",
       "explanation": "a book/a cat; an apple/an orange.",
       "buckets": [
         "a",
@@ -275,14 +275,14 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "aa11",
       "kind": "match",
-      "prompt": "Ghép mỗi cụm tiếng Anh với nghĩa tiếng Việt tương ứng.",
-      "hint": "Nhìn danh từ và tính từ đi sau a/an.",
-      "explanation": "Bốn cụm đã được ghép với đúng người hoặc vật được nói tới.",
+      "prompt": "Ghép mỗi cụm với lý do chọn `a` hoặc `an` của cụm đó.",
+      "hint": "Với mỗi cụm, tìm từ đứng ngay sau mạo từ rồi đọc to âm đầu của từ ấy.",
+      "explanation": "Âm đầu của từ đứng ngay sau mạo từ quyết định chọn `a` hay `an`, kể cả khi chữ cái đầu dễ gây nhầm.",
       "pairs": [
-        { "left": "a teacher", "right": "một giáo viên" },
-        { "left": "an egg", "right": "một quả trứng" },
-        { "left": "a red apple", "right": "một quả táo đỏ" },
-        { "left": "an old book", "right": "một quyển sách cũ" }
+        { "left": "a university", "right": "chữ cái đầu là u nhưng âm đầu giống âm phụ âm" },
+        { "left": "an hour", "right": "chữ h ở đầu không được đọc" },
+        { "left": "an old book", "right": "tính từ đứng ngay sau mạo từ bắt đầu bằng âm nguyên âm" },
+        { "left": "a red apple", "right": "danh từ bắt đầu bằng âm nguyên âm nhưng từ đứng ngay sau mạo từ thì không" }
       ]
     },
     ...choiceExercises("aa", 12, [
@@ -294,7 +294,7 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       ["Trong bảng Một/Nhiều của bài, cách nào biểu thị “những quyển sách”?", ["books", "a books", "an books"], "books", "a/an chỉ đi với một danh từ đếm được số ít.", "books là dạng nhiều; không đặt a/an trực tiếp trước nó."],
       ["Khi nào ta dùng a hoặc an trong phạm vi bài này?", ["Trước một danh từ chung đếm được số ít", "Trước mọi tên riêng", "Trước mọi danh từ số nhiều"], "Trước một danh từ chung đếm được số ít", "a/an thường mang ý một.", "a/an đứng trước một danh từ chung đếm được số ít trong phạm vi bài."],
       ["Nếu có tính từ, từ nào quyết định chọn a hay an?", ["Từ đứng ngay sau mạo từ", "Danh từ cuối cụm trong mọi trường hợp", "Tên người nói"], "Từ đứng ngay sau mạo từ", "So sánh a red apple và an old book.", "Âm đầu của từ đứng ngay sau mạo từ quyết định lựa chọn."],
-      ["Nhận xét nào đúng?", ["Chọn a/an theo âm đầu, không chỉ theo chữ cái đầu", "Mọi từ viết bằng u đều dùng an", "Mọi từ viết bằng h đều dùng a"], "Chọn a/an theo âm đầu, không chỉ theo chữ cái đầu", "Hãy nhớ a university và an hour.", "Quy tắc dựa vào âm đọc thực sự của từ đứng sau."],
+      ["Nhận xét nào đúng?", ["Chọn a/an theo âm đầu, không chỉ theo chữ cái đầu", "Mọi từ bắt đầu bằng chữ u đều dùng an", "Mọi từ bắt đầu bằng chữ h đều dùng a"], "Chọn a/an theo âm đầu, không chỉ theo chữ cái đầu", "Hãy nhớ a university và an hour.", "Quy tắc dựa vào âm đọc thực sự của từ đứng sau."],
     ]),
     {
       "id": "aa21",
@@ -317,10 +317,10 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
     ...orderExercises("aa", 25, [
       ["Sắp xếp thành cụm có nghĩa “một chiếc túi màu xanh”.", ["bag", "a", "blue"], ["a", "blue", "bag"], "Mạo từ đứng trước tính từ và danh từ.", "a blue bag là cụm đúng."],
       ["Sắp xếp thành cụm có nghĩa “một câu chuyện thú vị”.", ["story", "interesting", "an"], ["an", "interesting", "story"], "interesting đứng ngay sau an.", "an interesting story là cụm đúng."],
-      ["Sắp xếp thành cụm có nghĩa “một trường đại học”.", ["university", "a"], ["a", "university"], "university bắt đầu bằng âm gần giống y trong you.", "a university là cụm đúng."],
+      ["Sắp xếp thành cụm có nghĩa “một trường đại học cũ”.", ["university", "old", "an"], ["an", "old", "university"], "Tính từ đứng giữa mạo từ và danh từ.", "`an old university`: `old` đứng ngay sau mạo từ và bắt đầu bằng âm nguyên âm nên dùng `an`; tính từ đứng trước danh từ."],
     ]),
     ...tapExercises("aa", 28, [
-      ["Trong cụm `a young doctor`, chọn mạo từ.", ["a", "young", "doctor"], [0], "Mạo từ đứng đầu cụm.", "`A` là mạo từ đứng trước toàn bộ cụm tính từ + danh từ `young doctor`."],
+      ["Trong cụm `a young doctor`, chọn mạo từ.", ["a", "young", "doctor"], [0], "Mạo từ đứng đầu cụm.", "Từ `a` là mạo từ đứng trước toàn bộ cụm tính từ + danh từ `young doctor`."],
       ["Trong cụm `an empty room`, chọn từ có âm đầu quyết định mạo từ.", ["an", "empty", "room"], [1], "Tìm từ đứng ngay sau an.", "empty đứng ngay sau mạo từ nên âm đầu của empty quyết định dùng an."],
       ["Chọn tất cả các cụm dùng a/an đúng.", ["a cat", "an umbrella", "a orange", "an doctor"], [0, 1], "So sánh âm đầu của cat, umbrella, orange và doctor.", "a cat và an umbrella dùng đúng mạo từ."],
     ])
@@ -329,22 +329,24 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "n1",
       "kind": "match",
-      "prompt": "Ghép mỗi danh từ số ít với dạng số nhiều tương ứng.",
-      "hint": "Ba danh từ này đều chỉ cần thêm -s.",
-      "explanation": "cat, book và apple đều chuyển sang số nhiều bằng cách thêm -s.",
+      "prompt": "Ghép mỗi danh từ với cách tạo dạng số nhiều của nó.",
+      "hint": "Nhìn chữ cuối của từ; nếu từ kết thúc bằng y, nhìn thêm chữ đứng ngay trước y.",
+      "explanation": "Cách viết số nhiều phụ thuộc vào phần cuối của danh từ số ít: desks, classes, quizzes, families, keys.",
       "pairs": [
-        { "left": "cat", "right": "cats" },
-        { "left": "book", "right": "books" },
-        { "left": "apple", "right": "apples" }
+        { "left": "desk", "right": "thêm -s" },
+        { "left": "class", "right": "thêm -es" },
+        { "left": "quiz", "right": "gấp đôi z rồi thêm -es" },
+        { "left": "family", "right": "đổi y thành -ies" },
+        { "left": "key", "right": "giữ y rồi thêm -s" }
       ]
     },
     {
       "id": "n2",
       "kind": "choice",
       "prompt": "Cách nói nào có nghĩa là “hai giáo viên”?",
-      "hint": "Chọn đúng số lượng two và dạng số nhiều teachers.",
-      "explanation": "two teachers có số lượng two và danh từ số nhiều teachers.",
-      "options": ["one teacher", "two teachers", "three teachers"],
+      "hint": "Số lượng từ hai trở lên cần danh từ ở dạng nào?",
+      "explanation": "`two teachers`: từ hai trở lên dùng danh từ số nhiều; `two teacher` thiếu dạng số nhiều, còn `a` không đứng trước danh từ số nhiều.",
+      "options": ["two teacher", "two teachers", "a teachers"],
       "answer": "two teachers"
     },
     {
@@ -399,8 +401,8 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "n6",
       "kind": "repair",
-      "prompt": "Chọn đuôi cần thêm vào `cat` để tạo dạng số nhiều `cats`.",
-      "hint": "cat thuộc nhóm danh từ thông thường chỉ cần thêm s.",
+      "prompt": "Chọn đuôi cần thêm vào `cat` để tạo dạng số nhiều.",
+      "hint": "Nhìn chữ cuối của `cat`: nó có thuộc nhóm s, ss, sh, ch, x, z hay kết thúc bằng y không?",
       "explanation": "Thêm -s vào cat để tạo cats.",
       "tokens": ["cat", "+", "-es"],
       "targetIndex": 2,
@@ -411,19 +413,19 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       "id": "n7",
       "kind": "choice",
       "prompt": "Trên bàn có ba quyển sách; cụm nào diễn tả đúng số lượng ấy?",
-      "hint": "Tìm cụm vừa có three vừa có books.",
-      "explanation": "three books diễn tả đúng ba quyển sách.",
-      "options": ["two books", "three books", "four books"],
+      "hint": "Ba quyển là số nhiều: kiểm tra cả dấu hiệu số nhiều ở cuối danh từ.",
+      "explanation": "`three books` dùng số nhiều thêm `-s`; `three book` thiếu dấu hiệu số nhiều, còn `book's` có dấu nháy đơn nên không phải dạng số nhiều thông thường.",
+      "options": ["three book", "three books", "three book's"],
       "answer": "three books"
     },
     {
       "id": "n8",
       "kind": "choice",
       "prompt": "Dòng nào chuyển `apple` từ dạng một quả sang dạng nhiều quả?",
-      "hint": "Dạng nhiều của apple cần có -s.",
-      "explanation": "one apple → apples cho thấy đúng sự thay đổi của apple từ số ít sang số nhiều.",
-      "options": ["one apple → apples", "one cat → cats", "one book → books"],
-      "answer": "one apple → apples"
+      "hint": "Kiểm tra dòng nào đổi cả số lượng lẫn dạng của danh từ, và nhớ từ nào không đứng trước danh từ số nhiều.",
+      "explanation": "`one apple → two apples`: khi số lượng từ hai trở lên, danh từ chuyển sang số nhiều; `two apple` thiếu `-s`, còn `a` không đứng trước danh từ số nhiều.",
+      "options": ["one apple → two apples", "one apple → two apple", "one apple → a apples"],
+      "answer": "one apple → two apples"
     },
     {
       "id": "n9",
@@ -476,37 +478,32 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
     },
     {
       "id": "n11",
-      "kind": "match",
-      "prompt": "Ghép mỗi từ tận cùng bằng s, ss, sh, ch, x hoặc z với dạng số nhiều của nó.",
-      "hint": "Nhóm này dùng -es; quiz còn gấp đôi chữ z.",
-      "explanation": "Sáu dạng số nhiều đều theo nhóm thêm -es đã học.",
-      "pairs": [
-        { "left": "bus", "right": "buses" },
-        { "left": "class", "right": "classes" },
-        { "left": "dish", "right": "dishes" },
-        { "left": "watch", "right": "watches" },
-        { "left": "box", "right": "boxes" },
-        { "left": "quiz", "right": "quizzes" }
-      ]
+      "kind": "tap",
+      "prompt": "Chọn tất cả danh từ thêm `-es` khi chuyển sang số nhiều.",
+      "hint": "Nhìn phần cuối của từng từ số ít: có phải s, ss, sh, ch, x hoặc z không?",
+      "explanation": "class, box và watch kết thúc bằng ss, x và ch nên thành classes, boxes, watches; desk, toy và cup chỉ thêm -s.",
+      "tokens": ["class", "desk", "box", "toy", "watch", "cup"],
+      "answerIndexes": [0, 2, 4],
+      "selectionMode": "multiple"
     },
     {
       "id": "n12",
       "kind": "grid",
-      "prompt": "Chọn dạng số nhiều tương ứng với từng danh từ số ít.",
-      "hint": "Mỗi lựa chọn đều là một từ có thật; hãy ghép đúng từ gốc với dạng của nó.",
-      "explanation": "bus, brush, watch và quiz lần lượt thành buses, brushes, watches và quizzes.",
+      "prompt": "Chọn dạng đúng của danh từ để hoàn thành từng cụm.",
+      "hint": "Xác định cụm cần số ít hay số nhiều trước, rồi nhớ rằng dấu nháy đơn không tạo số nhiều.",
+      "explanation": "Sau `two` và `three`, danh từ ở số nhiều với đuôi `-es`; sau `a`, danh từ ở số ít; dấu nháy đơn không tạo số nhiều.",
       "rows": [
-        { "cue": "bus", "options": ["buses", "brushes", "boxes"], "answer": "buses", "completed": "bus → buses" },
-        { "cue": "brush", "options": ["dishes", "brushes", "classes"], "answer": "brushes", "completed": "brush → brushes" },
-        { "cue": "watch", "options": ["watches", "quizzes", "buses"], "answer": "watches", "completed": "watch → watches" },
-        { "cue": "quiz", "options": ["boxes", "classes", "quizzes"], "answer": "quizzes", "completed": "quiz → quizzes" }
+        { "cue": "two ___ (bus)", "options": ["bus", "buses", "bus's"], "answer": "buses", "completed": "two buses" },
+        { "cue": "a ___ (brush)", "options": ["brush", "brushes", "brush's"], "answer": "brush", "completed": "a brush" },
+        { "cue": "three ___ (watch)", "options": ["watch", "watches", "watch's"], "answer": "watches", "completed": "three watches" },
+        { "cue": "two ___ (quiz)", "options": ["quiz", "quizzes", "quiz's"], "answer": "quizzes", "completed": "two quizzes" }
       ]
     },
     ...choiceExercises("n", 13, [
       ["Điều gì xảy ra khi chuyển `quiz` sang số nhiều?", ["Giữ nguyên quiz", "Thêm -s", "Gấp đôi z rồi thêm -es"], "Gấp đôi z rồi thêm -es", "Ghi nhớ cặp quiz → quizzes.", "quiz chuyển thành quizzes bằng cách gấp đôi z rồi thêm -es."],
       ["Vì sao `baby` chuyển thành `babies`?", ["Trước y là chữ phụ âm", "Trước y là chữ nguyên âm", "Từ kết thúc bằng x"], "Trước y là chữ phụ âm", "Nhìn chữ b đứng ngay trước y.", "b là chữ phụ âm nên baby bỏ y rồi thêm -ies."],
       ["Cặp `city → cities` minh họa quy tắc nào?", ["Phụ âm + y đổi thành -ies", "Nguyên âm + y giữ y rồi thêm -s", "Tận cùng ch thêm -es"], "Phụ âm + y đổi thành -ies", "Chữ t đứng ngay trước y.", "city có phụ âm t trước y nên chuyển thành cities."],
-      ["Cụm nào diễn tả đúng năm chiếc hộp?", ["four boxes", "five boxes", "six boxes"], "five boxes", "Chọn đúng số lượng five và dạng số nhiều boxes.", "five boxes nghĩa là năm chiếc hộp."],
+      ["Cụm nào diễn tả đúng “hai chiếc hộp”?", ["two boxes", "two box", "a box"], "two boxes", "Số lượng và dạng danh từ phải khớp nhau; với `box`, nhớ nhóm đuôi số nhiều của nó.", "`two boxes`: từ hai trở lên dùng số nhiều, và `box` thêm `-es`; `two box` thiếu dạng số nhiều, còn `a box` chỉ nói một chiếc hộp."],
     ]),
     {
       "id": "n17",
@@ -526,23 +523,20 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
     },
     {
       "id": "n18",
-      "kind": "match",
-      "prompt": "Ghép mỗi danh từ tận cùng bằng y với dạng số nhiều phù hợp.",
-      "hint": "Phụ âm + y đổi thành -ies; nguyên âm + y giữ y rồi thêm -s.",
-      "explanation": "Ba cặp cho thấy hai quy tắc khác nhau với chữ y.",
-      "pairs": [
-        { "left": "family", "right": "families" },
-        { "left": "boy", "right": "boys" },
-        { "left": "key", "right": "keys" }
-      ]
+      "kind": "choice",
+      "prompt": "Danh từ nào đổi `y` thành `-ies` khi chuyển sang số nhiều?",
+      "hint": "Nhìn chữ đứng ngay trước y trong từng từ: chữ nguyên âm hay chữ phụ âm?",
+      "explanation": "`party` có chữ phụ âm `t` trước `y` nên thành `parties`; `day` và `boy` có chữ nguyên âm trước `y` nên chỉ thêm `-s`: `days`, `boys`.",
+      "options": ["day", "party", "boy"],
+      "answer": "party"
     },
     ...repairExercises("n", 19, [
-      ["Chọn đuôi cần thêm vào `bus` để tạo `buses`.", ["bus", "+", "-s"], 2, ["-s", "-es", "-ies"], "-es", "bus kết thúc bằng s.", "bus thêm -es để tạo buses."],
-      ["Chọn cách biến đổi phần cuối của `city` để tạo `cities`.", ["city", "→", "giữ y rồi thêm -s"], 2, ["thêm -es", "giữ y rồi thêm -s", "bỏ y rồi thêm -ies"], "bỏ y rồi thêm -ies", "Trước y là phụ âm t.", "city bỏ y rồi thêm -ies để tạo cities."],
+      ["Chọn đuôi cần thêm vào `bus` để tạo dạng số nhiều.", ["bus", "+", "-s"], 2, ["-s", "-es", "-ies"], "-es", "bus kết thúc bằng s.", "bus thêm -es để tạo buses."],
+      ["Chọn cách biến đổi phần cuối của `city` để tạo dạng số nhiều.", ["city", "→", "giữ y rồi thêm -s"], 2, ["thêm -es", "giữ y rồi thêm -s", "bỏ y rồi thêm -ies"], "bỏ y rồi thêm -ies", "Trước y là phụ âm t.", "city bỏ y rồi thêm -ies để tạo cities."],
     ]),
     ...orderExercises("n", 21, [
-      ["Sắp xếp thành cụm có nghĩa “ba chiếc hộp”.", ["boxes", "three"], ["three", "boxes"], "Số lượng đứng trước danh từ số nhiều.", "three boxes là cụm đúng."],
-      ["Sắp xếp thành cụm có nghĩa “hai em bé”.", ["babies", "two"], ["two", "babies"], "Dùng dạng số nhiều babies sau two.", "two babies là cụm đúng."],
+      ["Sắp xếp thành cụm có nghĩa “ba chiếc hộp nhỏ”.", ["small", "boxes", "three"], ["three", "small", "boxes"], "Từ chỉ số lượng đứng đầu cụm; tính từ đứng ngay trước danh từ.", "`three small boxes`: số lượng đứng đầu, tính từ `small` đứng trước danh từ số nhiều `boxes`."],
+      ["Sắp xếp thành cụm có nghĩa “hai em bé vui vẻ”.", ["happy", "two", "babies"], ["two", "happy", "babies"], "Cụm bắt đầu bằng số lượng và kết thúc bằng danh từ số nhiều.", "`two happy babies`: số lượng đứng đầu, tính từ `happy` đứng giữa, danh từ số nhiều `babies` đứng cuối."],
     ]),
     {
       "id": "n23",
@@ -578,25 +572,24 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       "id": "n28",
       "kind": "grid",
       "prompt": "Chọn cụm khớp với từng số lượng và danh từ được yêu cầu.",
-      "hint": "Tất cả lựa chọn đều là cụm có thật; hãy chọn đúng cả số lượng lẫn danh từ.",
-      "explanation": "Mỗi đáp án dùng đúng số lượng và đúng dạng danh từ.",
+      "hint": "Từ hai trở lên cần danh từ số nhiều; kiểm tra cả cách viết đuôi số nhiều.",
+      "explanation": "Mỗi cụm dùng danh từ số nhiều viết đúng sau số lượng từ hai trở lên.",
       "rows": [
-        { "cue": "hai chiếc xe buýt", "options": ["two buses", "two boxes", "three buses"], "answer": "two buses", "completed": "two buses" },
-        { "cue": "ba thành phố", "options": ["two cities", "three cities", "three families"], "answer": "three cities", "completed": "three cities" },
-        { "cue": "bốn chìa khóa", "options": ["four toys", "five keys", "four keys"], "answer": "four keys", "completed": "four keys" }
+        { "cue": "hai chiếc xe buýt", "options": ["two bus", "two buses", "a buses"], "answer": "two buses", "completed": "two buses" },
+        { "cue": "ba thành phố", "options": ["three city", "three cities", "three city's"], "answer": "three cities", "completed": "three cities" },
+        { "cue": "bốn chìa khóa", "options": ["four key", "four keys", "four key's"], "answer": "four keys", "completed": "four keys" }
       ]
     },
     {
       "id": "n29",
       "kind": "match",
-      "prompt": "Ghép mỗi cụm chỉ số lượng với nghĩa tiếng Việt tương ứng.",
-      "hint": "Đọc cả số lượng và danh từ.",
-      "explanation": "Bốn cụm đã được ghép đúng theo số lượng và vật được nói tới.",
+      "prompt": "Ghép mỗi cụm chưa đúng với lý do nó chưa đúng.",
+      "hint": "Với mỗi cụm, xét lần lượt từ đứng trước danh từ, số lượng và âm đầu của `box`.",
+      "explanation": "Viết đúng lại, ba cụm trở thành `a box`, `three boxes` và `a box`.",
       "pairs": [
-        { "left": "one bus", "right": "một chiếc xe buýt" },
-        { "left": "three cities", "right": "ba thành phố" },
-        { "left": "four keys", "right": "bốn chìa khóa" },
-        { "left": "five quizzes", "right": "năm bài kiểm tra ngắn" }
+        { "left": "a boxes", "right": "a chỉ đi với một danh từ số ít" },
+        { "left": "three box", "right": "từ hai trở lên cần danh từ số nhiều" },
+        { "left": "an box", "right": "box bắt đầu bằng âm phụ âm" }
       ]
     },
     ...choiceExercises("n", 30, [
@@ -608,12 +601,12 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       "kind": "grid",
       "prompt": "Chọn cụm đúng với từng nghĩa để hoàn thành lượt ôn tập tổng hợp.",
       "hint": "Kiểm tra số lượng, dạng số nhiều và quy tắc chính tả.",
-      "explanation": "Bốn đáp án kết hợp đúng toàn bộ các quy tắc số nhiều đã học.",
+      "explanation": "Bốn cụm đều dùng số nhiều sau số lượng từ hai trở lên, với đúng cách viết đuôi `-s`, `-es` hoặc `-ies`.",
       "rows": [
-        { "cue": "hai quyển sách", "options": ["one book", "two books", "three books"], "answer": "two books", "completed": "two books" },
-        { "cue": "ba chiếc đĩa", "options": ["three dishes", "three watches", "four dishes"], "answer": "three dishes", "completed": "three dishes" },
-        { "cue": "bốn gia đình", "options": ["four cities", "five families", "four families"], "answer": "four families", "completed": "four families" },
-        { "cue": "sáu bài kiểm tra ngắn", "options": ["six boxes", "five quizzes", "six quizzes"], "answer": "six quizzes", "completed": "six quizzes" }
+        { "cue": "hai quyển sách", "options": ["two book", "two books", "two book's"], "answer": "two books", "completed": "two books" },
+        { "cue": "ba chiếc đĩa", "options": ["three dish", "three dishes", "a dishes"], "answer": "three dishes", "completed": "three dishes" },
+        { "cue": "bốn gia đình", "options": ["four family", "four families", "four family's"], "answer": "four families", "completed": "four families" },
+        { "cue": "sáu bài kiểm tra ngắn", "options": ["six quiz", "six quizzes", "a quizzes"], "answer": "six quizzes", "completed": "six quizzes" }
       ]
     }
   ],
@@ -622,7 +615,7 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       "id": "ad2",
       "kind": "match",
       "prompt": "Ghép mỗi tình huống với từ chỉ định phù hợp.",
-      "hint": "this/these là gần.",
+      "hint": "Mỗi tình huống có hai thông tin: số lượng và khoảng cách.",
       "explanation": "Số lượng quyết định this/that hay these/those; khoảng cách quyết định nhóm gần hay nhóm xa.",
       "pairs": [
         {
@@ -660,7 +653,7 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       "id": "ad5",
       "kind": "tap",
       "prompt": "Chọn từ chỉ nhiều vật ở gần.",
-      "hint": "Gần dùng this/these; nhiều dùng these/those.",
+      "hint": "Nhớ lại bảng hai chiều của bài: tìm ô thuộc hàng “nhiều” và cột “gần”.",
       "explanation": "these chỉ nhiều vật ở gần.",
       "tokens": [
         "this",
@@ -690,7 +683,7 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       "id": "dm5",
       "kind": "choice",
       "prompt": "Từ nào hoàn thành cụm có nghĩa “con mèo kia”: `___ cat`?",
-      "hint": "Một vật dùng this/that; ở xa dùng that.",
+      "hint": "Con mèo là một hay nhiều, và chữ “kia” cho biết gần hay xa?",
       "explanation": "that cat nghĩa là con mèo kia.",
       "options": [
         "this",
@@ -703,7 +696,7 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       "id": "dm6",
       "kind": "sort",
       "prompt": "Phân loại các từ chỉ định theo số lượng một hoặc nhiều.",
-      "hint": "this/that là một; these/those là nhiều.",
+      "hint": "Nhóm theo số lượng: từ nào đi với `book`, từ nào đi với `books`?",
       "explanation": "Bốn từ đã được chia đúng theo số lượng.",
       "buckets": [
         "Một",
@@ -771,7 +764,7 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       "id": "dm8",
       "kind": "choice",
       "prompt": "Bạn đang chỉ nhiều quyển sách màu đỏ ở gần; cụm nào diễn tả đúng?",
-      "hint": "Nhiều vật ở gần dùng these; danh từ books ở số nhiều.",
+      "hint": "Xét hai điều: có một hay nhiều quyển sách, và chúng ở gần hay xa; danh từ cũng phải khớp số lượng.",
       "explanation": "these red books nghĩa là những quyển sách đỏ này.",
       "options": [
         "these red books",
@@ -820,12 +813,12 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       ]
     },
     ...choiceExercises("dm", 10, [
-      ["Bạn đang chỉ một quả táo ở gần; cụm nào phù hợp?", ["this apple", "that apple", "these apples"], "this apple", "Một vật ở gần dùng this.", "this apple nghĩa là quả táo này."],
-      ["Bạn đang chỉ một chiếc hộp ở xa; cụm nào phù hợp?", ["this box", "that box", "those boxes"], "that box", "Một vật ở xa dùng that.", "that box nghĩa là chiếc hộp kia."],
-      ["Bạn đang chỉ nhiều con mèo ở gần; cụm nào phù hợp?", ["this cat", "these cats", "those cats"], "these cats", "Nhiều vật ở gần dùng these.", "these cats nghĩa là những con mèo này."],
-      ["Bạn đang chỉ nhiều giáo viên ở xa; cụm nào phù hợp?", ["that teacher", "these teachers", "those teachers"], "those teachers", "Nhiều người ở xa dùng those.", "those teachers nghĩa là những giáo viên kia."],
-      ["Cụm `this city` cho biết hai thông tin nào?", ["một và gần", "một và xa", "nhiều và gần"], "một và gần", "this luôn kết hợp ý một và gần.", "this city nói đến một thành phố được xem là gần người nói."],
-      ["Cụm `those toys` cho biết hai thông tin nào?", ["một và xa", "nhiều và gần", "nhiều và xa"], "nhiều và xa", "those luôn kết hợp ý nhiều và xa.", "those toys nói đến nhiều đồ chơi ở xa người nói."],
+      ["Bạn đang chỉ một quả táo ở gần; cụm nào phù hợp?", ["this apple", "that apple", "these apples"], "this apple", "Hỏi lần lượt: có mấy quả táo, và quả táo ở gần hay xa bạn?", "this apple nghĩa là quả táo này."],
+      ["Bạn đang chỉ một chiếc hộp ở xa; cụm nào phù hợp?", ["this box", "that box", "those boxes"], "that box", "Hỏi lần lượt: có mấy chiếc hộp, và chiếc hộp ở gần hay xa bạn?", "that box nghĩa là chiếc hộp kia."],
+      ["Bạn đang chỉ nhiều con mèo ở gần; cụm nào phù hợp?", ["this cat", "these cats", "those cats"], "these cats", "Đếm số con mèo trước, rồi xét khoảng cách; dạng danh từ cũng phải khớp số lượng.", "these cats nghĩa là những con mèo này."],
+      ["Bạn đang chỉ nhiều giáo viên ở xa; cụm nào phù hợp?", ["that teacher", "these teachers", "those teachers"], "those teachers", "Xét số người trước, rồi xét khoảng cách; nhớ kiểm tra cả dạng của danh từ.", "those teachers nghĩa là những giáo viên kia."],
+      ["Cụm `this city` cho biết hai thông tin nào?", ["một và gần", "một và xa", "nhiều và gần"], "một và gần", "Đặt `this` vào bảng hai chiều của bài: nó nằm ở hàng nào và cột nào?", "this city nói đến một thành phố được xem là gần người nói."],
+      ["Cụm `those toys` cho biết hai thông tin nào?", ["một và xa", "nhiều và gần", "nhiều và xa"], "nhiều và xa", "Tìm vị trí của `those` trong bảng hai chiều: hàng số lượng nào, cột khoảng cách nào?", "those toys nói đến nhiều đồ chơi ở xa người nói."],
     ]),
     {
       "id": "dm16",
@@ -860,15 +853,15 @@ export const preA1Chapter02ExerciseData: Record<string, Exercise[]> = {
       ["Cụm nào khớp cả từ chỉ định và dạng số nhiều?", ["those boxes", "those box", "that boxes"], "those boxes", "those cần danh từ số nhiều.", "those boxes khớp số lượng ở cả hai phần."],
     ]),
     ...repairExercises("dm", 21, [
-      ["Một quyển sách ở gần cần từ chỉ định nào?", ["that", "book"], 0, ["this", "that", "these"], "this", "Một vật ở gần dùng this.", "this book nghĩa là quyển sách này."],
+      ["Một quyển sách ở gần cần từ chỉ định nào?", ["that", "book"], 0, ["this", "that", "these"], "this", "Đếm số quyển sách, rồi xét quyển sách ở gần hay xa người nói.", "this book nghĩa là quyển sách này."],
       ["Sau `those`, hãy chọn dạng đúng của `cat`.", ["those", "cat"], 1, ["cat", "cats", "a cat"], "cats", "those báo hiệu nhiều.", "those cats nghĩa là những con mèo kia."],
-      ["Nhiều chiếc hộp ở gần cần từ chỉ định nào?", ["this", "boxes"], 0, ["this", "these", "those"], "these", "Nhiều và gần dùng these.", "these boxes nghĩa là những chiếc hộp này."],
-      ["Một quả táo ở xa cần từ chỉ định nào?", ["these", "apple"], 0, ["this", "that", "those"], "that", "Một và xa dùng that.", "that apple nghĩa là quả táo kia."],
+      ["Nhiều chiếc hộp ở gần cần từ chỉ định nào?", ["this", "boxes"], 0, ["this", "these", "those"], "these", "Xét số lượng của `boxes` trước, rồi xét khoảng cách.", "these boxes nghĩa là những chiếc hộp này."],
+      ["Một quả táo ở xa cần từ chỉ định nào?", ["these", "apple"], 0, ["this", "that", "those"], "that", "Xét số lượng của `apple`, rồi xét quả táo ở gần hay xa.", "that apple nghĩa là quả táo kia."],
     ]),
     ...orderExercises("dm", 25, [
       ["Sắp xếp thành cụm có nghĩa “những quả táo đỏ này”.", ["apples", "these", "red"], ["these", "red", "apples"], "Từ chỉ định đứng trước tính từ và danh từ.", "these red apples là cụm đúng."],
-      ["Sắp xếp thành cụm có nghĩa “quyển sách cũ kia”.", ["book", "old", "that"], ["that", "old", "book"], "Một vật ở xa dùng that.", "that old book là cụm đúng."],
-      ["Sắp xếp thành cụm có nghĩa “những chiếc hộp nhỏ kia”.", ["small", "boxes", "those"], ["those", "small", "boxes"], "Nhiều vật ở xa dùng those.", "those small boxes là cụm đúng."],
+      ["Sắp xếp thành cụm có nghĩa “quyển sách cũ kia”.", ["book", "old", "that"], ["that", "old", "book"], "Từ chỉ định mở đầu cụm; tính từ nằm giữa nó và danh từ.", "that old book là cụm đúng."],
+      ["Sắp xếp thành cụm có nghĩa “những chiếc hộp nhỏ kia”.", ["small", "boxes", "those"], ["those", "small", "boxes"], "Đặt từ chỉ định trước, rồi đến từ miêu tả kích thước, cuối cùng là danh từ số nhiều.", "those small boxes là cụm đúng."],
     ]),
     ...tapExercises("dm", 28, [
       ["Trong cụm `those red boxes`, chọn từ chỉ định.", ["those", "red", "boxes"], [0], "Từ chỉ định đứng đầu cụm.", "those là từ chỉ định báo nhiều và xa."],

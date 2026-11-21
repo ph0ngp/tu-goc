@@ -17,6 +17,8 @@ type OrderExercise = ExerciseBase & {
   kind: "order";
   tokens: string[];
   answer: string[];
+  /** Những cách xếp khác cũng đúng, dùng chính các mảnh ấy. */
+  alternatives?: string[][];
 };
 
 type MatchExercise = ExerciseBase & {

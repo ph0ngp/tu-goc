@@ -25,7 +25,7 @@ Sau `had` dùng quá khứ phân từ. `Had studied` và `had gone` đúng; `had
 - `I wish I had called.` ngụ ý tôi **đã không gọi**.
 - `I wish I hadn't called.` ngụ ý tôi **đã gọi** và hối tiếc.
 
-Hình thức sau `wish` đi ngược sự thật. Đây là “khoảng cách thời gian” và “khoảng cách thực tế”: quá khứ hoàn thành đẩy mong muốn lùi ra khỏi một quá khứ đã xảy ra.
+Hình thức sau `wish` đi ngược sự thật. Quá khứ hoàn thành sau `wish` vừa cho biết điều đáng tiếc nằm ở quá khứ, vừa cho biết điều được ước trái với sự thật đã xảy ra.
 
 ## `Wish` và `if only`
 

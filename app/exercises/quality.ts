@@ -1,12 +1,12 @@
 import type { Exercise } from "../exercise-types.ts";
 import { answerUsageKey } from "./advanced-builders.ts";
-import { escapeRegExp, gridExplanation, hintLeads, maskAnswerTerms, matchExplanation, sortExplanation } from "./basic-builders.ts";
+import { escapeRegExp, gridExplanation, hintLeads, joinSentenceTokens, maskAnswerTerms, matchExplanation, sortExplanation } from "./basic-builders.ts";
 
 function correctAnswerStrings(exercise: Exercise): string[] {
   if (exercise.kind === "choice" || exercise.kind === "context" || exercise.kind === "repair") {
     return [exercise.answer];
   }
-  if (exercise.kind === "order") return [exercise.answer.join(" ")];
+  if (exercise.kind === "order") return [exercise.answer, ...(exercise.alternatives ?? [])].map(joinSentenceTokens);
   if (exercise.kind === "tap") return exercise.answerIndexes.map((index) => exercise.tokens[index]);
   if (exercise.kind === "grid") return exercise.rows.map((row) => row.answer);
   if (exercise.kind === "dropdown") return exercise.slots.flatMap((slot) => slot.acceptedAnswers);
@@ -91,11 +91,18 @@ export function diversifyRepeatedGridAnswers(exercises: Exercise[]): Exercise[] 
   let diversified = exercises.map((exercise) => {
     if (exercise.kind !== "match") return exercise;
     if (!exercise.pairs.some((pair) => (counts.get(answerUsageKey(pair.right)) ?? 0) > 2)) return exercise;
-    return {
-      ...exercise,
-      prompt: flippedMatchPrompt(exercise.prompt),
-      pairs: exercise.pairs.map((pair) => ({ left: pair.right, right: pair.left })),
-    };
+    const prompt = flippedMatchPrompt(exercise.prompt);
+    const pairs = exercise.pairs.map((pair) => ({ left: pair.right, right: pair.left }));
+    // Lời giải và gợi ý dựng theo chiều cũ được dựng lại theo chiều mới.
+    const oldList = matchExplanation(exercise.pairs);
+    const explanation = exercise.explanation.startsWith(oldList)
+      ? matchExplanation(pairs, exercise.explanation.slice(oldList.length).trim())
+      : exercise.explanation;
+    const oldPrompt = exercise.prompt.trim().replace(/[.?]$/, "");
+    const hint = exercise.hint.includes(oldPrompt)
+      ? exercise.hint.replace(oldPrompt, prompt.replace(/[.?]$/, ""))
+      : exercise.hint;
+    return { ...exercise, prompt, pairs, hint, explanation };
   });
 
   counts = countAnswers(diversified);
@@ -170,10 +177,6 @@ function objectiveCategory(exercise: Exercise): string {
   return "form-choice";
 }
 
-function joinSentenceTokens(tokens: string[]): string {
-  return tokens.join(" ").replace(/\s+([.,?!:;])/g, "$1");
-}
-
 function quotedStatement(value: string): string {
   const safeValue = value.replaceAll("`", "'");
   return `\`${safeValue}\`${/[.?!]$/.test(value.trim()) ? "" : "."}`;
@@ -203,61 +206,78 @@ const lessonTopicHints: Array<[lessonIds: string[], hint: string]> = [
   [["articles-demonstratives"], "Xét từ đứng ngay sau: tên riêng và danh từ số nhiều không đi với mạo từ này; với một người hay vật chưa được chỉ rõ, nghe âm đầu là phụ âm hay nguyên âm."],
   [["demonstratives"], "Xác định lần lượt hai điều: một hay nhiều vật, rồi vật ở gần hay ở xa người nói."],
   [["be-forms", "be-meanings", "be-negative", "be-questions", "be-wh-questions"], "Xác định chủ ngữ là chính người nói, một người hay vật, hay nhiều người hoặc vật, rồi chọn dạng của `be` đi với chủ ngữ ấy."],
-  [["possessives", "possessive-s", "possessive-pronouns"], "Xác định ai là người sở hữu, rồi xét từ cần tìm đứng ngay trước một danh từ hay đứng một mình thay cho cả cụm."],
+  [["possessives"], "Xác định ai là người sở hữu: người nói, người nghe hay người, vật khác, một hay nhiều; từ sở hữu luôn đứng ngay trước danh từ."],
+  [["possessive-s"], "Xác định ai là người sở hữu, người hay vật ấy là một hay nhiều, và danh từ đã tận cùng bằng `s` chưa, rồi mới đặt dấu nháy đơn."],
+  [["possessive-pronouns"], "Xác định ai là người sở hữu, rồi xét từ cần tìm đứng ngay trước một danh từ hay đứng một mình thay cho cả cụm."],
   [["whose-questions"], "Từ hỏi về chủ sở hữu có thể đứng ngay trước danh từ hoặc đứng một mình khi vật đã rõ; đừng nhầm nó với dạng viết tắt của “ai là”."],
   [["apostrophes"], "Xác định dấu nháy đơn đang chỉ sở hữu hay đang thay cho chữ bị lược trong dạng viết tắt; số nhiều thông thường không có dấu nháy."],
   [["nouns-and-number", "irregular-plurals"], "Xác định danh từ cần ở số ít hay số nhiều, rồi nhớ lại danh từ ấy chỉ thêm `-s` hay có dạng số nhiều riêng."],
   [["countable-uncountable", "quantity-basic", "how-much-many"], "Xác định danh từ đếm được hay không đếm được, số ít hay số nhiều, rồi mới chọn từ đi cùng nó."],
   [["there-and-place"], "Danh từ đứng sau cho biết có một hay nhiều thứ, và điều đó quyết định dạng của `be`; câu hỏi và câu trả lời ngắn dùng lại đúng dạng ấy."],
   [["some-any-there"], "Xác định câu là khẳng định, phủ định hay câu hỏi; từ chỉ lượng không quyết định dạng của `be`, danh từ phía sau mới quyết định."],
-  [["prepositions-place", "prepositions-place-time"], "Hình dung vị trí thật: bên trong một không gian, trên một bề mặt hay tại một điểm; với thời gian, xét đó là một khoảng dài, một ngày cụ thể hay một giờ cụ thể."],
-  [["action-vs-be"], "Xem câu đã có động từ chỉ hành động chưa: nếu có, động từ ấy tự làm động từ chính; nếu sau chủ ngữ chỉ là tính từ, danh từ hay nơi chốn thì cần `be`."],
-  [["present-simple-base", "third-person", "present-simple-negative", "present-simple-questions", "present-simple-wh"], "Xác định chủ ngữ có phải một người hay vật số ít không, và câu là khẳng định, phủ định hay câu hỏi, rồi chọn dạng động từ và trợ động từ phù hợp."],
-  [["have-have-got"], "Xác định câu đang dùng mẫu nói sở hữu nào; câu hỏi và câu trả lời ngắn phải giữ đúng trợ động từ của chính mẫu đó, không trộn hai mẫu."],
+  [["prepositions-place"], "Hình dung vị trí thật: vật ở bên trong một không gian, nằm trên và chạm một bề mặt, hay ở ngay bên dưới vật làm mốc."],
+  [["prepositions-place-time"], "Hình dung vị trí thật: bên trong một không gian, trên một bề mặt hay tại một điểm; với thời gian, xét đó là một khoảng dài, một ngày cụ thể hay một giờ cụ thể."],
+  [["action-vs-be"], "Xem câu đã có một động từ thường chưa: nếu có, động từ ấy tự làm động từ chính; nếu sau chủ ngữ chỉ là tính từ, danh từ hay nơi chốn thì cần `be`."],
+  [["present-simple-base"], "Với chủ ngữ là người nói, người nghe hay nhiều người, vật, động từ giữ dạng cơ bản; không chèn `be` trước động từ thường."],
+  [["third-person"], "Xác định chủ ngữ có phải một người hay vật số ít không, rồi nhìn chữ cuối của động từ để chọn cách thêm đuôi."],
+  [["present-simple-negative", "present-simple-questions"], "Xác định chủ ngữ có phải một người hay vật số ít không, và câu là khẳng định, phủ định hay câu hỏi, rồi chọn dạng động từ và trợ động từ phù hợp."],
+  [["present-simple-wh"], "Xác định thông tin cần hỏi để chọn từ hỏi, rồi chọn trợ động từ theo chủ ngữ; nếu từ hỏi chính là chủ ngữ thì không cần trợ động từ."],
+  [["have-have-got"], "Xác định câu dùng mẫu có trợ động từ đi với `have` hay mẫu `have got`, rồi giữ đúng hình thức của chính mẫu ấy trong cả câu, kể cả câu hỏi và câu trả lời ngắn."],
   [["objects-and-links"], "Xác định người được nhắc tới đứng trước động từ làm chủ ngữ hay đứng sau động từ làm tân ngữ, rồi chọn dạng đại từ của vị trí ấy."],
   [["ability-can"], "Sau từ chỉ khả năng, động từ chính ở dạng cơ bản và không đổi theo chủ ngữ; khi hỏi hay trả lời ngắn, chính từ chỉ khả năng ấy được đưa lên đầu hoặc dùng lại."],
-  [["can-requests"], "Xác định câu đang xin phép, nhờ người khác làm gì hay mời, rồi chọn cách đáp lịch sự hợp với ý đó."],
+  [["can-requests"], "Xác định ai sẽ làm việc được nói tới, người nói hay người nghe, để biết câu đang xin phép, nhờ hay đề nghị giúp; nếu là lời đáp, chọn cách đáp lịch sự hợp với ý đó."],
   [["question-helpers"], "Câu có `be` đưa `be` lên trước chủ ngữ, câu có động từ thường cần trợ động từ, câu có từ chỉ khả năng đưa chính từ ấy lên; câu trả lời ngắn dùng lại đúng từ đã hỏi."],
   [["instructions-and-can"], "Câu mệnh lệnh bắt đầu thẳng bằng động từ ở dạng cơ bản, không có chủ ngữ; muốn bảo ai đừng làm gì thì đặt dạng phủ định của trợ động từ trước động từ ấy."],
   [["lets-suggestions"], "Lời rủ cùng làm bao gồm cả người nói lẫn người nghe, và động từ theo sau ở dạng cơ bản; lời đáp phải hợp với việc đồng ý hay từ chối."],
-  [["would-like"], "Phân biệt nói sở thích chung với nói mong muốn cụ thể lúc này, rồi chọn cách mời, nhận hay từ chối lịch sự."],
-  [["continuous-form", "continuous-questions", "continuous-uses"], "Hiện tại tiếp diễn cần đủ hai phần: dạng của `be` hợp với chủ ngữ và động từ thêm `-ing`; câu hỏi đưa dạng `be` ấy lên trước chủ ngữ."],
-  [["simple-vs-continuous", "states-and-plans"], "Xác định động từ chỉ trạng thái như hiểu, cần, thích hay chỉ một hành động đang diễn ra; động từ trạng thái thường dùng hiện tại đơn."],
+  [["would-like"], "Phân biệt nói sở thích chung với nói mong muốn cụ thể lúc này; nếu là lời mời hay lời đáp, chọn cách mời, nhận hay từ chối lịch sự."],
+  [["continuous-form"], "Hiện tại tiếp diễn cần đủ hai phần: dạng của `be` hợp với chủ ngữ và động từ thêm `-ing`."],
+  [["continuous-questions", "continuous-uses"], "Hiện tại tiếp diễn cần đủ hai phần: dạng của `be` hợp với chủ ngữ và động từ thêm `-ing`; câu hỏi đưa dạng `be` ấy lên trước chủ ngữ."],
+  [["simple-vs-continuous"], "Xác định câu nói thói quen, sự thật hay tình trạng ổn định, hay nói một việc đang diễn ra, tạm thời hoặc đang thay đổi; từ chỉ thời gian chỉ là dấu hiệu hỗ trợ."],
+  [["states-and-plans"], "Xác định động từ chỉ trạng thái như hiểu, cần, thích hay chỉ một hành động đang diễn ra; động từ trạng thái thường dùng hiện tại đơn."],
   [["adjectives-position"], "Tính từ đứng trước danh từ hoặc sau động từ nối, và không thêm đuôi số nhiều."],
   [["adverbs-manner"], "Xác định từ cần tìm miêu tả một người hay vật (dùng tính từ) hay miêu tả cách một hành động diễn ra (dùng trạng từ)."],
   [["sentence-order"], "Nhớ lại trật tự cơ bản của các thành phần trong câu, rồi xét từ hoặc cụm đang hỏi thuộc thành phần nào."],
-  [["connectors-basic"], "Xác định quan hệ giữa hai ý: thêm một ý, đối lập hay đưa ra lựa chọn, rồi chọn từ nối diễn tả đúng quan hệ ấy."],
+  [["connectors-basic"], "Xác định quan hệ giữa hai ý: thêm một ý, đối lập, đưa ra lựa chọn, nêu lý do hay nêu kết quả, rồi chọn từ nối diễn tả đúng quan hệ ấy."],
   [["a2-past-be"], "Xác định chủ ngữ để chọn dạng quá khứ của `be`, rồi xét câu là khẳng định, phủ định hay câu hỏi."],
   [["a2-past-regular"], "Động từ có quy tắc thêm `-ed` ở quá khứ đơn và dùng như nhau cho mọi chủ ngữ; chú ý cách viết khi thêm đuôi."],
   [["a2-past-irregular"], "Động từ bất quy tắc không thêm `-ed` mà có dạng quá khứ riêng, dùng như nhau cho mọi chủ ngữ."],
-  [["a2-past-did"], "Trong câu phủ định và câu hỏi ở quá khứ đơn, trợ động từ đã mang nghĩa quá khứ nên động từ chính trở về dạng cơ bản; câu trả lời ngắn lặp lại trợ động từ ấy."],
+  [["a2-past-did"], "Câu phủ định và câu hỏi với động từ hành động cần trợ động từ quá khứ, nên động từ chính trở về dạng cơ bản; câu có `be` không cần trợ động từ ấy mà đưa dạng quá khứ của `be` lên trước chủ ngữ."],
   [["a2-past-time"], "Xác định từ chỉ thời gian là một ngày đã qua, một khoảng tính lùi từ bây giờ, hay một năm, ngày hoặc giờ cụ thể cần giới từ; mỗi mốc chỉ cần một cách đánh dấu."],
   [["a2-subject-object-questions"], "Xác định từ hỏi đang thay cho người hoặc vật làm hành động (chủ ngữ) hay chịu hành động (tân ngữ); câu hỏi về chủ ngữ không cần trợ động từ."],
   [["a2-commas-basic"], "Xác định câu có danh sách từ ba mục trở lên, phần mở đầu, hai mệnh đề nối bằng từ nối hay lời gọi tên người nghe; hai mục ngắn nối bằng một từ nối thì không cần dấu phẩy."],
   [["a2-past-continuous"], "Quá khứ tiếp diễn gồm dạng quá khứ của `be` hợp với chủ ngữ và động từ thêm `-ing`; câu trả lời ngắn dùng lại dạng `be` ấy."],
   [["a2-past-simple-continuous", "a2-when-while-as"], "Xác định đâu là hoạt động nền đang kéo dài và đâu là sự việc ngắn xen vào tại một thời điểm."],
   [["a2-used-to"], "Xác định câu đang nói thói quen hay trạng thái cũ, rồi kiểm tra dạng của động từ theo sau và trợ động từ trong câu phủ định, câu hỏi."],
-  [["a2-going-to"], "Mẫu nói dự định cần đủ ba phần: dạng của `be` hợp với chủ ngữ, cụm chỉ dự định và động từ chính; câu trả lời ngắn dùng lại dạng `be`."],
+  [["a2-going-to"], "Mẫu này nói ý định hoặc dự đoán dựa vào dấu hiệu, và cần đủ ba phần: dạng của `be` hợp với chủ ngữ, cụm chỉ tương lai và động từ chính ở dạng cơ bản."],
   [["a2-will-decisions", "a2-will-predictions"], "Xác định câu đang nói một quyết định ngay lúc nói, một lời hứa hay một dự đoán; động từ đi sau từ chỉ tương lai này không đổi theo chủ ngữ."],
   [["a2-comparatives"], "Xác định tính từ ngắn hay dài và có dạng bất quy tắc hay không, rồi mới tạo dạng so sánh hơn."],
   [["a2-superlatives"], "Xác định tính từ ngắn hay dài và có dạng bất quy tắc hay không, rồi mới tạo dạng so sánh nhất; nhóm hoặc nơi làm phạm vi so sánh đứng sau giới từ."],
-  [["a2-equality"], "Xác định hai đối tượng bằng nhau hay không bằng nhau, rồi giữ đủ khung của phép so sánh ngang bằng."],
+  [["a2-equality"], "Xác định hai đối tượng bằng nhau hay không bằng nhau và đang so sánh tính chất hay số lượng (đếm được hay không), rồi giữ đủ khung của phép so sánh ngang bằng."],
   [["a2-comparative-modifiers"], "Xác định mức chênh lệch là nhiều hay ít, rồi đặt từ chỉ mức độ ngay trước dạng so sánh hơn; không phải từ chỉ mức độ nào cũng đứng được ở vị trí này."],
-  [["a2-too-enough-so-such"], "Xác định câu nói mức vượt quá hay mức vừa đủ, và từ chỉ mức độ phải đứng trước hay sau tính từ, trạng từ hoặc danh từ."],
-  [["a2-could-past-ability", "a2-polite-could-may", "a2-possibility-modals", "a2-advice-modals", "a2-obligation", "a2-prohibition-no-necessity"], "Xác định câu đang nói khả năng, xin phép, khả năng xảy ra, lời khuyên, sự bắt buộc hay việc không cần thiết, rồi chọn động từ tình thái mang đúng nghĩa ấy; câu trả lời ngắn lặp lại chính động từ đó."],
+  [["a2-too-enough-so-such"], "Xác định câu nói mức quá cao, mức vừa đủ hay chỉ nhấn mạnh mức độ, rồi xem phía sau là tính từ, trạng từ hay cụm danh từ để đặt từ chỉ mức độ đúng chỗ."],
+  [["a2-could-past-ability"], "Xác định câu nói về khả năng chung trong quá khứ hay một lần làm được một việc cụ thể, và câu là khẳng định, phủ định hay câu hỏi."],
+  [["a2-polite-could-may"], "Xác định người nói đang xin phép cho chính mình, nhờ người khác làm gì hay đáp lại một lời đề nghị, rồi kiểm tra trật tự từ của câu hỏi."],
+  [["a2-possibility-modals"], "Xác định người nói chắc chắn đến mức nào rằng sự việc sẽ xảy ra hay đang đúng, và câu đang khẳng định hay phủ định khả năng ấy."],
+  [["a2-advice-modals"], "Xác định câu đang khuyên nên làm, khuyên không nên làm hay hỏi xin lời khuyên, và lời khuyên ấy gắn với vấn đề nào trong tình huống."],
+  [["a2-obligation"], "Xác định sự bắt buộc đến từ người nói hay từ quy định, hoàn cảnh bên ngoài, và câu nói về hiện tại hay quá khứ; chú ý phần nào phải chia theo chủ ngữ."],
+  [["a2-prohibition-no-necessity"], "Hỏi “người ấy có được làm việc đó không?”: nếu không được làm thì đó là lời cấm; nếu được làm nhưng không bắt buộc thì đó là việc không cần làm."],
   [["a2-articles-countability", "a2-first-mention-the", "a2-definite-article", "a2-generic-reference"], "Xác định danh từ đếm được hay không, số ít hay số nhiều, và người nghe đã biết đúng người hay vật nào chưa, rồi mới chọn mạo từ."],
   [["a2-few-little"], "Xác định danh từ là đếm được số nhiều hay không đếm được, rồi xét người nói thấy lượng ấy còn đủ dùng hay gần như không có."],
   [["a2-all-every-each-whole", "a2-both-either-neither"], "Xác định danh từ đi sau là số ít hay số nhiều, có từ hạn định hoặc đại từ đứng sau hay không, và người nói nhìn cả nhóm hay từng thành viên."],
-  [["a2-present-perfect-form", "a2-perfect-experience"], "Hiện tại hoàn thành gồm trợ động từ hợp với chủ ngữ và past participle; với động từ bất quy tắc, past participle là dạng thứ ba trong bảng động từ."],
-  [["a2-perfect-just-already-yet"], "Xác định từ chỉ thời điểm hoàn tất này đứng giữa trợ động từ và past participle, hay thường đứng cuối câu hỏi và câu phủ định."],
+  [["a2-present-perfect-form"], "Hiện tại hoàn thành gồm trợ động từ hợp với chủ ngữ và quá khứ phân từ; với động từ bất quy tắc, quá khứ phân từ là dạng thứ ba trong bảng động từ."],
+  [["a2-perfect-experience"], "Xác định câu đang hỏi về trải nghiệm vào bất kỳ lúc nào tính đến nay, nói chưa từng có trải nghiệm ấy, hay kể một lần cụ thể có mốc quá khứ đã kết thúc."],
+  [["a2-perfect-just-already-yet"], "Xác định từ chỉ thời điểm hoàn tất này đứng giữa trợ động từ và quá khứ phân từ, hay thường đứng cuối câu hỏi và câu phủ định."],
   [["a2-perfect-unfinished-time", "a2-perfect-vs-past"], "Xác định khoảng thời gian trong câu còn kéo dài tới bây giờ hay đã kết thúc, vì điều đó quyết định giữa hiện tại hoàn thành và quá khứ đơn."],
   [["a2-since-for-how-long"], "Xác định phần thời gian là một mốc bắt đầu hay một độ dài."],
-  [["a2-been-gone"], "Động từ chỉ việc đi có hai past participle dễ nhầm: một dạng nói người đã đi rồi trở về, một dạng nói người đã đi và còn ở nơi đó."],
-  [["a2-relative-subject", "a2-relative-object-whose-where"], "Xác định danh từ được bổ nghĩa là người, vật hay nơi chốn, và từ nối đang làm chủ ngữ, tân ngữ, chỉ sở hữu hay chỉ nơi xảy ra sự việc."],
-  [["a2-zero-conditional", "a2-first-conditional", "a2-future-time-clauses"], "Xác định điều kiện là sự thật luôn đúng hay một khả năng cụ thể trong tương lai; mệnh đề điều kiện hoặc mệnh đề thời gian vẫn dùng hiện tại đơn."],
+  [["a2-been-gone"], "Xác định người được nói tới đã đi rồi trở về hay đã đi và vẫn còn ở nơi đó; hai quá khứ phân từ dễ nhầm ở đây thuộc về hai động từ khác nhau."],
+  [["a2-relative-subject"], "Xác định danh từ được bổ nghĩa là người hay vật, và động từ trong mệnh đề quan hệ chia theo danh từ ấy; đại từ quan hệ ở đây làm chủ ngữ nên không thêm một chủ ngữ khác."],
+  [["a2-relative-object-whose-where"], "Xác định danh từ được bổ nghĩa là người, vật hay nơi chốn, và từ nối đang làm chủ ngữ, tân ngữ, chỉ sở hữu hay chỉ nơi xảy ra sự việc."],
+  [["a2-zero-conditional", "a2-first-conditional"], "Xác định điều kiện là sự thật luôn đúng hay một khả năng cụ thể trong tương lai; mệnh đề điều kiện vẫn dùng hiện tại đơn."],
+  [["a2-future-time-clauses"], "Tách câu thành mệnh đề chỉ thời điểm (khi, trước khi, sau khi, cho đến khi, ngay khi) và mệnh đề chính: mệnh đề chỉ thời điểm dùng hiện tại đơn dù nói về tương lai."],
   [["a2-reflexive-reciprocal"], "Đại từ phản thân dùng khi chủ ngữ và tân ngữ là cùng một người hay vật, với đuôi số ít hay số nhiều theo chủ ngữ; khi hai bên làm cho nhau, dùng cụm chỉ quan hệ qua lại."],
   [["a2-indefinite-pronouns"], "Xác định câu khẳng định, phủ định hay câu hỏi trung tính và đang nói về người hay vật; đại từ bất định đi với động từ số ít, còn tính từ đứng sau nó."],
-  [["a2-one-ones", "a2-other-forms"], "Xác định phía sau còn danh từ hay không, danh từ ấy số ít hay số nhiều, và người nói nói về phần còn lại đã xác định hay chỉ một cái khác bất kỳ."],
+  [["a2-one-ones"], "Xác định danh từ được thay là đếm được hay không, số ít hay số nhiều, và có tính từ hoặc từ hạn định nào phải giữ lại trước từ thay thế."],
+  [["a2-other-forms"], "Xác định phía sau còn danh từ hay không, danh từ ấy số ít hay số nhiều, và người nói nói về phần còn lại đã xác định hay chỉ một cái khác bất kỳ."],
   [["a2-verb-patterns", "a2-object-infinitive-purpose-prep-ing"], "Xác định động từ hoặc giới từ đứng trước đòi hỏi dạng nào theo sau."],
   [["a2-ed-ing-adjectives"], "Tính từ đuôi `-ed` nói cảm xúc của người; tính từ đuôi `-ing` nói tính chất của người, vật hay việc gây ra cảm xúc."],
 ];
@@ -323,7 +343,37 @@ function promptAwareHint(exercise: Exercise, legacyLessonId: string, maskedHint:
   return `${topic ?? kindLead} Áp dụng vào câu hỏi “${prompt}”.`;
 }
 
+/** Lời giải đã tự nêu mọi phần của đáp án chưa (mọi cặp, mọi mục, mọi câu hoàn chỉnh). */
+function namesEveryPart(explanation: string, parts: string[]): boolean {
+  const plain = explanation.replaceAll("`", "").replace(/[’]/g, "'").toLocaleLowerCase("vi");
+  return parts.every((part) => plain.includes(part.replaceAll("`", "").replace(/[’]/g, "'").replace(/[.?!]+$/, "").toLocaleLowerCase("vi")));
+}
+
+/**
+ * Phản hồi của bài ghép, phân loại và bảng phải nêu cụ thể các cặp, nhóm hoặc
+ * câu hoàn chỉnh. Lời giải riêng của hoạt động được giữ lại; danh sách được nối
+ * thêm khi lời giải chưa tự nêu đủ.
+ */
+function listedExplanation(exercise: Exercise): string | undefined {
+  const own = exercise.explanation.trim();
+  if (exercise.kind === "match") {
+    if (own.startsWith("Các cặp đúng là") || namesEveryPart(own, exercise.pairs.flatMap((pair) => [pair.left, pair.right]))) return own;
+    return matchExplanation(exercise.pairs, own);
+  }
+  if (exercise.kind === "sort") {
+    if (own.startsWith("Nhóm “") || namesEveryPart(own, exercise.items.map((item) => item.text))) return own;
+    return `${own} ${sortExplanation(exercise.buckets, exercise.items)}`;
+  }
+  if (exercise.kind === "grid") {
+    if (own.includes("Các câu hoàn chỉnh lần lượt là") || namesEveryPart(own, exercise.rows.map((row) => row.completed))) return own;
+    return `${own} ${gridExplanation(exercise.rows)}`;
+  }
+  return undefined;
+}
+
 function enrichedExplanation(exercise: Exercise): string {
+  const listed = listedExplanation(exercise);
+  if (listed !== undefined) return listed;
   if (exercise.explanation.trim().split(/\s+/).length >= 5) return exercise.explanation;
   if (exercise.kind === "order") {
     return `${exercise.explanation} Câu hoàn chỉnh là “${joinSentenceTokens(exercise.answer)}”.`;
@@ -374,6 +424,14 @@ function answerAppliedExplanation(exercise: Exercise, explanation: string): stri
   return explanation;
 }
 
+/** Bài sắp xếp có nhiều cách xếp đúng thì lời giải nêu cả những cách ấy. */
+function withAlternativeOrders(exercise: Exercise, explanation: string): string {
+  if (exercise.kind !== "order" || !exercise.alternatives?.length) return explanation;
+  const variants = exercise.alternatives.map(joinSentenceTokens).filter((variant) => !explanation.includes(variant));
+  if (!variants.length) return explanation;
+  return `${explanation} Cách xếp ${variants.map((variant) => `\`${variant}\``).join(", ")} cũng đúng.`;
+}
+
 export function withQualityMetadata(legacyLessonId: string, exercise: Exercise): Exercise {
   const answers = correctAnswerStrings(exercise);
   const plainHint = exercise.hint.replaceAll("`", "");
@@ -386,7 +444,7 @@ export function withQualityMetadata(legacyLessonId: string, exercise: Exercise):
     rawHint.includes("___") || rawHint.includes("hình thức cần tìm")
       ? promptAwareHint(exercise, legacyLessonId, rawHint)
       : rawHint;
-  const enriched = enrichedExplanation(exercise);
+  const enriched = withAlternativeOrders(exercise, enrichedExplanation(exercise));
   const explanation = hint.trim() === enriched.trim()
     ? answerAppliedExplanation(exercise, enriched)
     : enriched;

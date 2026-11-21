@@ -33,6 +33,7 @@ type OrderSeed = [
   answer: string[],
   hint: string,
   explanation: string,
+  alternatives?: string[][],
 ];
 
 type TapSeed = [
@@ -55,6 +56,8 @@ type CompactOrderSeed = [
   tokens: string[],
   answer: string[],
   explanation: string,
+  /** Những cách xếp khác cũng đúng (chẳng hạn trạng ngữ thời gian đứng đầu hoặc cuối câu). */
+  alternatives?: string[][],
 ];
 
 type CompactRepairSeed = [
@@ -96,7 +99,7 @@ type CompactPracticeConfig = {
   gridRows: CompactGridRow[];
 };
 
-type A2OrderSeed = [prompt: string, sentence: string, explanation: string];
+type A2OrderSeed = [prompt: string, sentence: string, explanation: string, alternatives?: string[]];
 type A2RepairSeed = [
   prompt: string,
   sentence: string,
@@ -112,7 +115,7 @@ type A2PracticeConfig = Omit<CompactPracticeConfig, "orders" | "repairs" | "taps
   taps: A2TapSeed[];
 };
 
-const sentenceTokenPattern = /[\p{L}]+(?:[-'’][\p{L}]+)*|\d+(?:[.:]\d+)?(?:°[\p{L}])?|[.,?!:;—"“”'‘’]/gu;
+const sentenceTokenPattern = /[\p{L}]+(?:[-'’][\p{L}]+)*|\d+(?:[.:]\d+)?(?:°[\p{L}])?|[.,?!:;—"“”'‘’()]/gu;
 
 export function sentenceTokens(sentence: string): string[] {
   return sentence.match(sentenceTokenPattern) ?? [];
@@ -126,13 +129,62 @@ export function sentenceTokenSpans(sentence: string): Array<{ start: number; end
   }));
 }
 
+/** Đoạn câu gồm các mảnh từ `from` tới trước `to`, cắt từ câu gốc để không có khoảng trắng trước dấu câu. */
+export function sentenceSlice(sentence: string, from: number, to: number): string {
+  const spans = sentenceTokenSpans(sentence);
+  if (from >= to || !spans[from] || !spans[to - 1]) return "";
+  return sentence.slice(spans[from].start, spans[to - 1].end);
+}
+
+/** Ghép lại các mảnh thành câu: không có khoảng trắng trước dấu câu, sau dấu mở ngoặc hay trước dấu đóng ngoặc. */
+export function joinSentenceTokens(tokens: string[]): string {
+  return tokens.join(" ").replace(/\s+([.,?!:;)])/g, "$1").replace(/\(\s+/g, "(");
+}
+
+/**
+ * Chỗ khác nhau giữa câu đúng và câu dễ nhầm, tính theo mảnh. Phần giống nhau ở
+ * đầu và cuối hai câu được bỏ qua; nếu một câu chỉ thêm mảnh so với câu kia, lấy
+ * thêm một mảnh kề bên để cả hai phần đều có chữ.
+ */
+export function b1Difference(answer: string, distractor: string) {
+  const answerTokens = sentenceTokens(answer);
+  const distractorTokens = sentenceTokens(distractor);
+  let start = 0;
+  while (start < answerTokens.length && start < distractorTokens.length && answerTokens[start] === distractorTokens[start]) start += 1;
+  let answerEnd = answerTokens.length;
+  let distractorEnd = distractorTokens.length;
+  while (answerEnd > start && distractorEnd > start && answerTokens[answerEnd - 1] === distractorTokens[distractorEnd - 1]) {
+    answerEnd -= 1;
+    distractorEnd -= 1;
+  }
+  if (answerEnd === start || distractorEnd === start) {
+    if (start > 0) start -= 1;
+    else {
+      answerEnd = Math.min(answerTokens.length, answerEnd + 1);
+      distractorEnd = Math.min(distractorTokens.length, distractorEnd + 1);
+    }
+  }
+  return {
+    answerTokens,
+    distractorTokens,
+    start,
+    answerEnd,
+    distractorEnd,
+    answerChunk: answerTokens.slice(start, answerEnd).join(" "),
+    distractorChunk: distractorTokens.slice(start, distractorEnd).join(" "),
+    /** Hai phần khác nhau, cắt từ câu gốc nên dấu câu giữ đúng khoảng trắng. */
+    answerText: sentenceSlice(answer, start, answerEnd),
+    distractorText: sentenceSlice(distractor, start, distractorEnd),
+  };
+}
+
 export function a2PracticeSet(config: A2PracticeConfig): Exercise[] {
   return compactPracticeSet({
     ...config,
-    orders: config.orders.map(([prompt, sentence, explanation], index) => {
+    orders: config.orders.map(([prompt, sentence, explanation, alternatives], index) => {
       const answer = sentenceTokens(sentence);
       const shift = 2 + (index % Math.max(1, answer.length - 2));
-      return [prompt, [...answer.slice(shift), ...answer.slice(0, shift)], answer, explanation];
+      return [prompt, [...answer.slice(shift), ...answer.slice(0, shift)], answer, explanation, alternatives?.map(sentenceTokens)];
     }),
     repairs: config.repairs.map(([prompt, sentence, wrongToken, replacements, answer, explanation]) => {
       // Mảnh cần sửa có thể gồm nhiều từ (`been knowing` → `known`); khi đó gộp chúng thành một ô.
@@ -204,6 +256,127 @@ export function maskAnswerTerms(text: string, answers: string[], otherOptions: s
     .trim();
 }
 
+/** Tên tiếng Việt của dấu câu, để gợi ý không gọi thẳng tên dấu câu là đáp án. */
+const punctuationNames: Record<string, string[]> = {
+  ",": ["dấu phẩy"],
+  ".": ["dấu chấm"],
+  "?": ["dấu chấm hỏi", "dấu hỏi"],
+  "!": ["dấu chấm than"],
+  ";": ["dấu chấm phẩy"],
+  ":": ["dấu hai chấm"],
+  "—": ["gạch ngang dài", "dấu gạch ngang dài", "dấu gạch ngang"],
+};
+
+/** Phần làm đáp án khác từng phương án sai, và phần tương ứng của phương án sai (tối đa bốn mảnh). */
+function decidingParts(answer: string, others: string[]): { answerParts: string[]; otherParts: string[] } {
+  const answerParts = new Set<string>();
+  const otherParts = new Set<string>();
+  const clean = (value: string) => value.replaceAll("`", "").trim();
+  for (const other of others) {
+    if (!other || clean(other) === clean(answer)) continue;
+    const difference = b1Difference(clean(answer), clean(other));
+    const keep = (text: string, target: Set<string>) => {
+      if (!text || text.split(/\s+/).length > 4) return;
+      const trimmed = /[\p{L}\p{N}]/u.test(text) ? text.replace(/[.?!]+$/, "") : text;
+      if (trimmed) target.add(trimmed);
+    };
+    keep(difference.answerText, answerParts);
+    keep(difference.distractorText, otherParts);
+    // Trong một phần khác nhau dài, những từ chỉ có ở một bên (`had known` trong `had known the answer`
+    // so với `knew the answer yesterday`) là chỗ quyết định thật sự; lời giải hay gọi tên riêng chúng.
+    const ownRuns = (chunk: string[], otherSentence: string) => {
+      const otherWords = new Set(sentenceTokens(otherSentence).map((token) => token.toLocaleLowerCase("en")));
+      const runs: string[][] = [[]];
+      for (const token of chunk) {
+        if (/[\p{L}\p{N}]/u.test(token) && !otherWords.has(token.toLocaleLowerCase("en"))) runs.at(-1)!.push(token);
+        else if (runs.at(-1)!.length) runs.push([]);
+      }
+      return runs.filter((run) => run.length && run.length < chunk.length);
+    };
+    for (const run of ownRuns(difference.answerTokens.slice(difference.start, difference.answerEnd), clean(other))) {
+      keep(joinSentenceTokens(run), answerParts);
+    }
+    for (const run of ownRuns(difference.distractorTokens.slice(difference.start, difference.distractorEnd), clean(answer))) {
+      keep(joinSentenceTokens(run), otherParts);
+    }
+    // Một bên chỉ thêm mảnh so với bên kia (`listened to` / `listened`): phần thêm vào mới là chỗ quyết định.
+    const answerChunk = difference.answerChunk.split(" ");
+    const otherChunk = difference.distractorChunk.split(" ");
+    const [longer, shorter, target] = answerChunk.length > otherChunk.length
+      ? [answerChunk, otherChunk, answerParts]
+      : [otherChunk, answerChunk, otherParts];
+    if (shorter.length && longer.length > shorter.length) {
+      const extra = longer.slice(0, shorter.length).join(" ") === shorter.join(" ")
+        ? longer.slice(shorter.length)
+        : longer.slice(-shorter.length).join(" ") === shorter.join(" ")
+          ? longer.slice(0, longer.length - shorter.length)
+          : [];
+      if (extra.length && extra.length <= 4) keep(joinSentenceTokens(extra), target);
+    }
+  }
+  for (const part of answerParts) otherParts.delete(part);
+  return { answerParts: [...answerParts], otherParts: [...otherParts] };
+}
+
+/** Thay `pattern` bằng chỗ trống, chỉ trong các đoạn mã (`...`) nếu `codeOnly`. */
+function replaceInText(text: string, pattern: RegExp, codeOnly: boolean): string {
+  if (!codeOnly) return text.replace(pattern, "___");
+  return text.split(/(`[^`\n]*`)/).map((segment) =>
+    segment.startsWith("`") && segment.endsWith("`") && segment.length > 1 ? segment.replace(pattern, "___") : segment,
+  ).join("");
+}
+
+/**
+ * Che phần quyết định đáp án trong gợi ý: chỗ câu đúng khác các phương án sai,
+ * kể cả tên tiếng Việt của dấu câu khi chính dấu câu là chỗ khác nhau. Phần của
+ * phương án sai chỉ bị che khi gợi ý gạt nó đi (“không dùng X”, “thay vì X”),
+ * vì khi chỉ có hai phương án, gạt một phương án đi là chỉ ra đáp án. Từ rất
+ * ngắn như `do`, `to`, `an` cũng là chữ tiếng Việt, nên chỉ bị che trong đoạn mã.
+ */
+export function maskDecidingParts(text: string, answer: string, others: string[]): string {
+  const { answerParts, otherParts } = decidingParts(answer, others);
+  let masked = text;
+  const wordPatternFor = (part: string) =>
+    new RegExp(`(?<![\\p{L}\\p{N}])${escapeRegExp(part)}(?![\\p{L}\\p{N}])`, "giu");
+  for (const part of [...answerParts].sort((left, right) => right.length - left.length)) {
+    if (!/[\p{L}\p{N}]/u.test(part)) {
+      masked = masked.replaceAll(`\`${part}\``, "___");
+      for (const name of punctuationNames[part] ?? []) {
+        masked = masked.replace(new RegExp(`(?<![\\p{L}])${escapeRegExp(name)}(?![\\p{L}])`, "giu"), "___");
+      }
+      continue;
+    }
+    masked = replaceInText(masked, wordPatternFor(part), part.length <= 3);
+  }
+  for (const part of [...otherParts].sort((left, right) => right.length - left.length)) {
+    const isWord = /[\p{L}\p{N}]/u.test(part);
+    const partPattern = isWord ? wordPatternFor(part) : new RegExp(escapeRegExp(part), "g");
+    // Sau lời gạt đi (“không dùng”, “thay vì”…) là một đoạn mã hoặc chính phần ấy viết trần.
+    const rejected = new RegExp(
+      `((?:không|thay vì|chứ)(?:\\s+[\\p{L}]+){0,2}\\s+)(\`[^\`\\n]*\`|${isWord ? escapeRegExp(part) : "(?!)"})(?![\\p{L}\\p{N}])`,
+      "giu",
+    );
+    masked = masked.replace(rejected, (_, lead: string, target: string) => {
+      if (!target.startsWith("`")) return `${lead}___`;
+      return `${lead}${target.replace(partPattern, "___")}`;
+    });
+    for (const name of isWord ? [] : punctuationNames[part] ?? []) {
+      masked = masked.replace(
+        new RegExp(`((?:không|thay vì|chứ)(?:\\s+[\\p{L}]+){0,2}\\s+)${escapeRegExp(name)}(?![\\p{L}])`, "giu"),
+        "$1___",
+      );
+    }
+  }
+  if (masked === text) return text;
+  return masked
+    .replace(/`([^`\n]*___[^`\n]*)`/g, "$1")
+    .replace(/(?:___\s*){2,}/g, "___")
+    .replace(/(?<=[\p{L}\p{N}])___/gu, " ___")
+    .replace(/___(?=[\p{L}\p{N}])/gu, "___ ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 /** Câu dẫn theo dạng hoạt động đứng trước quy tắc trong gợi ý tự sinh. */
 export const hintLeads = {
   order: "Hãy xác định cụm từ nào phải đứng liền nhau, rồi đặt các thành phần còn lại quanh cụm đó.",
@@ -220,7 +393,10 @@ export function specificHint(
   cues: string[] = [],
   otherOptions: string[] = [],
 ): string {
-  const rule = maskAnswerTerms(explanation, answers, otherOptions);
+  const masked = maskAnswerTerms(explanation, answers, otherOptions);
+  const rule = (kind === "choice" || kind === "context" || kind === "repair") && answers.length === 1
+    ? maskDecidingParts(masked, answers[0], otherOptions)
+    : masked;
   if (kind === "choice" || kind === "context") return rule;
   if (kind === "order") return `${hintLeads.order} ${rule}`;
   if (kind === "repair") return `${hintLeads.repair} ${rule}`;
@@ -277,8 +453,13 @@ export function compactPracticeSet(config: CompactPracticeConfig): Exercise[] {
   for (const [prompt, options, answer, explanation] of config.choices) {
     exercises.push({ id: `${config.prefix}${nextId++}`, kind: "choice", prompt, options, answer, hint: specificHint("choice", prompt, explanation, [answer], [], options.filter((option) => option !== answer)), explanation });
   }
-  for (const [prompt, tokens, answer, explanation] of config.orders) {
-    exercises.push({ id: `${config.prefix}${nextId++}`, kind: "order", prompt, tokens, answer, hint: specificHint("order", prompt, explanation, [answer.join(" ")]), explanation });
+  for (const [prompt, tokens, answer, explanation, alternatives] of config.orders) {
+    exercises.push({
+      id: `${config.prefix}${nextId++}`, kind: "order", prompt, tokens, answer,
+      ...(alternatives?.length ? { alternatives } : {}),
+      hint: specificHint("order", prompt, explanation, [answer, ...(alternatives ?? [])].map(joinSentenceTokens)),
+      explanation,
+    });
   }
   for (const [prompt, tokens, targetIndex, replacements, answer, explanation] of config.repairs) {
     exercises.push({ id: `${config.prefix}${nextId++}`, kind: "repair", prompt, tokens, targetIndex, replacements, answer, hint: specificHint("repair", prompt, explanation, [answer], [], replacements.filter((option) => option !== answer)), explanation });
@@ -409,12 +590,13 @@ export function repairExercises(prefix: string, start: number, seeds: RepairSeed
 }
 
 export function orderExercises(prefix: string, start: number, seeds: OrderSeed[]): Exercise[] {
-  return seeds.map(([prompt, tokens, answer, hint, explanation], index) => ({
+  return seeds.map(([prompt, tokens, answer, hint, explanation, alternatives], index) => ({
     id: `${prefix}${start + index}`,
     kind: "order",
     prompt,
     tokens,
     answer,
+    ...(alternatives?.length ? { alternatives } : {}),
     hint,
     explanation,
   }));

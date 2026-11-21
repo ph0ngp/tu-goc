@@ -5,7 +5,7 @@ legacyLessonId: adverbs-manner
 ---
 # Trạng từ chỉ cách thức; tính từ so với trạng từ
 
-Tính từ miêu tả người hoặc vật; trạng từ chỉ cách thức miêu tả một hành động diễn ra như thế nào. So sánh `a careful driver` (một người lái xe cẩn thận) với `She drives carefully` (Cô ấy lái xe một cách cẩn thận).
+Tính từ miêu tả người hoặc vật; trạng từ chỉ cách thức (*adverb of manner*) miêu tả một hành động diễn ra như thế nào. So sánh `a careful driver` (một người lái xe cẩn thận) với `She drives carefully` (Cô ấy lái xe một cách cẩn thận).
 
 ## Tạo trạng từ bằng `-ly`
 
@@ -13,10 +13,10 @@ Nhiều trạng từ chỉ cách thức được tạo bằng cách thêm `-ly` 
 
 | Tính từ | Trạng từ | Ví dụ |
 | --- | --- | --- |
-| `slow` — chậm | `slowly` — một cách chậm rãi | `He walks slowly.` |
-| `careful` — cẩn thận | `carefully` — một cách cẩn thận | `She writes carefully.` |
-| `quiet` — yên lặng | `quietly` — một cách yên lặng | `They talk quietly.` |
-| `happy` — vui | `happily` — một cách vui vẻ | `The children play happily.` |
+| `slow` — chậm | `slowly` — một cách chậm rãi | `He walks slowly.` — Anh ấy đi chậm rãi. |
+| `careful` — cẩn thận | `carefully` — một cách cẩn thận | `She writes carefully.` — Cô ấy viết cẩn thận. |
+| `quiet` — yên lặng | `quietly` — một cách yên lặng | `They talk quietly.` — Họ nói chuyện khẽ khàng. |
+| `happy` — vui | `happily` — một cách vui vẻ | `The children play happily.` — Bọn trẻ chơi vui vẻ. |
 
 Tính từ kết thúc bằng phụ âm + `y` thường đổi `y` thành `i` trước `-ly`: `happy → happily`, `easy → easily`.
 
@@ -27,10 +27,12 @@ Trạng từ thường đứng sau động từ nếu động từ không có t�
 ```text
 The baby sleeps quietly.
 She speaks English clearly.
-                    ↑ sau tân ngữ
+                   ↑ sau tân ngữ
 ```
 
-Không đặt trạng từ giữa động từ và tân ngữ trong mẫu trung tính: ưu tiên `She reads the story slowly`, không phải `She reads slowly the story`.
+Câu thứ nhất nghĩa là “Em bé ngủ yên lặng”: `sleeps` không có tân ngữ nên `quietly` đứng ngay sau động từ. Câu thứ hai nghĩa là “Cô ấy nói tiếng Anh rõ ràng”: `clearly` đứng sau tân ngữ `English`.
+
+Không đặt trạng từ giữa động từ và tân ngữ trong mẫu trung tính: ưu tiên `She reads the story slowly` — “Cô ấy đọc câu chuyện chậm rãi”, không phải `She reads slowly the story`.
 
 ## `Good` và `well`
 
@@ -39,7 +41,7 @@ Không đặt trạng từ giữa động từ và tân ngữ trong mẫu trung 
 - `She is a good singer.` — Cô ấy là một ca sĩ giỏi.
 - `She sings well.` — Cô ấy hát hay.
 
-Sau động từ nối `be`, `look`, `sound`, dùng tính từ: `The song sounds good`. `Well` cũng có thể là tính từ mang nghĩa “khỏe”: `I'm not well`, nghĩa là “Tôi không khỏe”.
+Sau động từ nối `be`, `look`, `sound`, dùng tính từ: `The song sounds good` — “Bài hát nghe hay”. `Well` cũng có thể là tính từ mang nghĩa “khỏe”: `I'm not well`, nghĩa là “Tôi không khỏe”.
 
 ## Một số từ không thêm `-ly`
 

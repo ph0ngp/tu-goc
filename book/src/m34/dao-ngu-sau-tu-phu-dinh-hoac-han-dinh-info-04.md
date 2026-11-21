@@ -78,7 +78,7 @@ So sánh:
 - `No students understood the question.` — Không học sinh nào hiểu câu hỏi. `No students` là chủ ngữ, nên không đảo.
 - `At no point did the students understand the question.` — Không lúc nào học sinh hiểu câu hỏi. Cụm trạng ngữ phủ định được đưa lên đầu, nên đảo.
 
-Tương tự, `Nobody called` không trở thành `Nobody did call` chỉ vì `nobody` mang nghĩa phủ định.
+Tương tự, trong `Nobody called` (Không ai gọi), `nobody` là chủ ngữ nên không có gì để đảo. Đặt trợ động từ lên trước (`Did nobody call?`) sẽ biến câu thành câu hỏi “Không ai gọi à?”, không còn là câu kể nhấn mạnh.
 
 ## Thành phần phủ định ở cuối hoặc giữa câu
 

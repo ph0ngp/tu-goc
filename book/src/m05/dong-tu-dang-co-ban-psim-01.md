@@ -5,11 +5,11 @@ legacyLessonId: present-simple-base
 ---
 # Động từ dạng cơ bản
 
-**Hiện tại đơn** dùng khi ta nhìn một việc như thói quen, sự lặp lại, sự thật hoặc tình trạng tương đối ổn định. Bài này tập trung vào câu khẳng định với `I`, `you`, `we` và `they`.
+**Hiện tại đơn** (*present simple*) dùng khi ta nhìn một việc như thói quen, sự lặp lại, sự thật hoặc tình trạng tương đối ổn định. Bài này tập trung vào câu khẳng định với `I`, `you`, `we` và `they`.
 
 ## Dạng cơ bản là gì?
 
-Dạng cơ bản là hình thức thường thấy trong từ điển, chẳng hạn `work` (làm việc), `read` (đọc), `live` (sống), `like` (thích). Với `I/you/we/they`, đặt dạng này ngay sau chủ ngữ.
+Dạng cơ bản (*base form*) là hình thức thường thấy trong từ điển, chẳng hạn `work` (làm việc), `read` (đọc), `live` (sống), `like` (thích). Với `I/you/we/they`, đặt dạng này ngay sau chủ ngữ.
 
 ```text
 I/You/We/They + base verb + ...
@@ -21,6 +21,8 @@ I/You/We/They + base verb + ...
 | `you` | `You speak English.` | Bạn/các bạn nói tiếng Anh. |
 | `we` | `We live in Da Nang.` | Chúng tôi sống ở Đà Nẵng. |
 | `they` | `They like music.` | Họ thích âm nhạc. |
+
+Khi đọc tiếng Anh, bạn sẽ gặp cả những dạng như `works` hay `studies`. Đó là dạng chỉ dùng với `he`, `she`, `it` hoặc một người, một vật số ít, và sẽ được học ở [bài tiếp theo](dong-tu-them-s-hoac-es-psim-02.md). Với `I`, `you`, `we`, `they` và chủ ngữ số nhiều như `my parents` (bố mẹ tôi), luôn dùng dạng cơ bản, không thêm gì vào động từ: `I work`, `My parents work`.
 
 ## Thói quen và việc lặp lại
 
@@ -55,11 +57,11 @@ Các động từ như `live`, `work`, `like`, `know`, `want` thường nói tì
 
 Sau động từ có thể là tân ngữ, nơi chốn và thời gian.
 
-```text
-We read books at home every evening.
-   động từ  tân ngữ  nơi chốn    thời gian
-→ Chúng tôi đọc sách ở nhà vào mỗi tối.
-```
+| Chủ ngữ | Động từ | Tân ngữ | Nơi chốn | Thời gian |
+| --- | --- | --- | --- | --- |
+| `We` | `read` | `books` | `at home` | `every evening` |
+
+Cả câu `We read books at home every evening.` nghĩa là “Chúng tôi đọc sách ở nhà vào mỗi tối”.
 
 Không phải động từ nào cũng cần tân ngữ: `They sleep` đã hoàn chỉnh. `Read` có thể đứng một mình hoặc có tân ngữ: `I read` / `I read books`.
 

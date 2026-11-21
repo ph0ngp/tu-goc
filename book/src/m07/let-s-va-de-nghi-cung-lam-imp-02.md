@@ -60,7 +60,7 @@ Sau `let's` dùng động từ cơ bản, không có `to` và không thêm `-s`.
 
 ## Phân biệt câu kể về `we` với lời rủ
 
-`We watch a film` là câu kể: nó nói chúng ta xem phim như một thói quen hoặc sự việc thường có. `Let's watch a film` là lời đề nghị được đưa ra ở lúc nói. Hai câu cùng nhắc đến người nói và người nghe nhưng làm hai công việc khác nhau.
+`We watch a film every Saturday` (Chúng ta xem phim vào mỗi thứ Bảy) là câu kể: nó nói việc xem phim như một thói quen hoặc sự việc thường có. `Let's watch a film` là lời đề nghị được đưa ra ở lúc nói. Hai câu cùng nhắc đến người nói và người nghe nhưng làm hai công việc khác nhau.
 
 - `We have lunch at twelve.` — Chúng ta ăn trưa lúc mười hai giờ. (thông tin/lịch thường lệ)
 - `Let's have lunch now.` — Bây giờ chúng ta ăn trưa nhé. (lời rủ)

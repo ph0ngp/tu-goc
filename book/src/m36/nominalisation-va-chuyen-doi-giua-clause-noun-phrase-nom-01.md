@@ -28,11 +28,11 @@ Không có một đuôi duy nhất. Chính tả, tính đếm được và giớ
 
 Trong mệnh đề, vai trò được đánh dấu bằng chủ ngữ và tân ngữ:
 
-`The committee rejected the proposal.`
+`The committee rejected the proposal.` — Ủy ban bác bỏ đề xuất.
 
-Khi nominalise:
+Khi danh hóa:
 
-`the committee's rejection of the proposal`
+`the committee's rejection of the proposal` — việc ủy ban bác bỏ đề xuất
 
 - tác nhân `the committee` trở thành sở hữu cách hoặc cụm `by`;
 - đối tượng `the proposal` thường đi sau `of`.
@@ -41,11 +41,11 @@ Với bị động hoặc khi cần nêu tác nhân:
 
 `the rejection of the proposal by the committee` — việc đề xuất bị ủy ban bác bỏ.
 
-Trật tự `of/by` không thay được cho mọi danh từ. `The destruction of the city by the army` rõ, nhưng chuỗi nhiều cụm giới từ có thể nặng; đôi khi mệnh đề hữu hạn tốt hơn.
+Trật tự `of/by` không thay được cho mọi danh từ. `The destruction of the city by the army` (việc quân đội phá hủy thành phố) rõ, nhưng chuỗi nhiều cụm giới từ có thể nặng; đôi khi mệnh đề hữu hạn tốt hơn.
 
 ## Nén quan hệ nguyên nhân và thời gian
 
-`Because the market declined, the company reduced production` có thể thành:
+`Because the market declined, the company reduced production` — Vì thị trường suy giảm, công ty giảm sản lượng — có thể thành:
 
 `The decline in the market led to a reduction in production` — Sự suy giảm của thị trường dẫn đến việc giảm sản lượng.
 
@@ -55,15 +55,15 @@ Câu nominalised trình bày hai quá trình như các “thực thể” và l�
 
 Một mệnh đề có thể được đóng gói rồi làm chủ đề câu sau:
 
-`The company closed two factories. This closure resulted in 300 job losses.`
+`The company closed two factories. These closures resulted in 300 job losses.` — Công ty đóng cửa hai nhà máy. Việc đóng cửa hai nhà máy này khiến 300 người mất việc.
 
-`This closure` tóm tắt sự việc trước và cho phép thêm hậu quả. Đây là công cụ liên kết văn bản mạnh, miễn là danh từ tóm tắt đúng sự việc và không làm người đọc hiểu sai.
+`These closures` tóm tắt sự việc trước và cho phép thêm hậu quả. Đây là công cụ liên kết văn bản mạnh, miễn là danh từ tóm tắt đúng sự việc và không làm người đọc hiểu sai.
 
 ## Danh từ chỉ quá trình, sự kiện và kết quả
 
 Một danh từ có thể chỉ quá trình, một sự kiện cụ thể hoặc kết quả:
 
-- `construction` trong `Construction took two years` là quá trình xây dựng;
+- `construction` trong `Construction took two years` (Việc xây dựng mất hai năm) là quá trình xây dựng;
 - `a construction` có thể chỉ một công trình/cấu trúc trong một số nghĩa;
 - `translation` có thể là quá trình dịch hoặc bản dịch hoàn chỉnh.
 
@@ -82,13 +82,13 @@ Giới từ không luôn giống động từ nguồn: `discuss the issue` nhưn
 
 ## Khi danh hóa làm mất tác nhân
 
-`Mistakes were made during the implementation` và `The implementation of the policy led to mistakes` có thể tránh nêu ai chịu trách nhiệm. Đây có thể là lựa chọn hợp lý khi tác nhân không biết/không quan trọng, hoặc là cách né trách nhiệm.
+`Mistakes were made during the implementation` (Đã có sai sót trong quá trình thực thi) và `The implementation of the policy led to mistakes` (Việc thực thi chính sách dẫn đến sai sót) có thể tránh nêu ai chịu trách nhiệm. Đây có thể là lựa chọn hợp lý khi tác nhân không biết/không quan trọng, hoặc là cách né trách nhiệm.
 
 Muốn rõ hơn, viết `The project team made several mistakes while implementing the policy` — “Nhóm dự án phạm vài sai lầm khi thực thi chính sách.” Phân tích văn phong phải xem cái gì được đưa vào và cái gì bị xóa khỏi câu.
 
 ## Khi danh hóa bị dùng quá nhiều
 
-`The implementation of the reduction of expenditure was the responsibility of management` khó xử lý vì nhiều danh từ trừu tượng xếp chồng.
+`The implementation of the reduction of expenditure was the responsibility of management` (Việc thực hiện sự cắt giảm chi tiêu là trách nhiệm của ban quản lý) khó xử lý vì nhiều danh từ trừu tượng xếp chồng.
 
 Mở ra thành mệnh đề:
 
@@ -99,7 +99,7 @@ Không phải câu ngắn hơn luôn tốt hơn, nhưng động từ hữu hạn
 ## Chuyển đổi có kiểm soát
 
 1. Xác định hành động/đặc điểm cần biến thành chủ đề hay đối tượng.
-2. Chọn danh từ đúng nghĩa, kiểm tra đếm được và complementation.
+2. Chọn danh từ đúng nghĩa, kiểm tra đếm được và kiểu bổ ngữ.
 3. Quyết định có cần nêu tác nhân bằng sở hữu cách hoặc `by` không.
 4. Kiểm tra các quan hệ thời gian/nguyên nhân có bị nén mất không.
 5. Đọc số danh từ trừu tượng liên tiếp; mở lại thành mệnh đề nếu câu quá đặc.
@@ -109,6 +109,6 @@ Không phải câu ngắn hơn luôn tốt hơn, nhưng động từ hữu hạn
 - Nominalisation biến hành động, quá trình hoặc đặc điểm thành danh từ/cụm danh từ.
 - Người tham gia có thể chuyển thành sở hữu cách, `of` hoặc `by`; quan hệ phải rõ.
 - Danh từ nguồn có thể đổi tính đếm được và nghĩa giữa quá trình, sự kiện, kết quả.
-- Giới từ/complementation của danh từ phải được học riêng.
+- Giới từ và kiểu bổ ngữ của danh từ phải được học riêng.
 - Nominalisation giúp nén và liên kết thông tin nhưng có thể che tác nhân.
 - Kết hợp danh từ và mệnh đề linh hoạt; không coi văn phong nhiều danh từ là mặc nhiên “học thuật hơn”.

@@ -30,7 +30,7 @@ Hiện tại hoàn thành tiếp diễn: have/has + been + V-ing
 So sánh:
 
 - `I have painted the door.` — Cánh cửa đã được sơn; kết quả là trọng tâm.
-- `I have been painting the door.` — Tôi đã làm việc sơn cửa; có thể việc đó chưa xong.
+- `I have been painting the door.` — Nãy giờ tôi sơn cửa; có thể vẫn chưa xong.
 
 Dạng tiếp diễn **không tự động có nghĩa chưa xong**. `I've been talking to Lan` có thể được nói sau khi cuộc trò chuyện vừa kết thúc. Nó chỉ khiến người nghe nhìn vào hoạt động hơn là một kết quả đếm được.
 

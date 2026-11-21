@@ -7,6 +7,8 @@ legacyLessonId: question-helpers
 
 Đến đây, ta đã học ba hệ thống câu hỏi: câu với `be`, câu hiện tại đơn dùng `do/does`, và câu với `can`. Muốn chọn đúng, hãy tìm động từ hoặc ý nghĩa chính trước khi đổi trật tự.
 
+Trong bài này, “trợ động từ” (*auxiliary verb*) được dùng để gọi chung từ đứng trước chủ ngữ để tạo câu hỏi: `be`, `do/does` hoặc `can`. Cần nhớ rằng `do/does` và `can` đứng cạnh một động từ chính khác, còn trong `Is Lan at home?`, `is` vẫn là động từ chính của câu.
+
 ## Câu có `be`: đưa `be` lên trước chủ ngữ
 
 Khi câu kể dùng `am/is/are` làm động từ chính, không thêm `do/does`.

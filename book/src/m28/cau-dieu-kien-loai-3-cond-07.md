@@ -37,7 +37,7 @@ Loại 3 thường cho phép suy ra điều trái với câu:
 - `could have` nêu khả năng hoặc năng lực đã có;
 - `might have` nêu kết quả có thể xảy ra nhưng không chắc.
 
-`If we had had a map, we would have found the village` mạnh hơn `...might have found the village`. Cả hai đều đúng nếu phù hợp với mức chắc chắn người nói muốn thể hiện.
+`If we had had a map, we would have found the village` — “Nếu khi ấy có bản đồ, chúng tôi đã tìm ra ngôi làng” — mạnh hơn `...might have found the village` — “...có lẽ chúng tôi đã tìm ra ngôi làng”. Cả hai đều đúng nếu phù hợp với mức chắc chắn người nói muốn thể hiện.
 
 ## Thứ tự mệnh đề và dấu phẩy
 
@@ -46,9 +46,9 @@ Loại 3 thường cho phép suy ra điều trái với câu:
 
 Khi mệnh đề `if` đứng đầu, đặt dấu phẩy sau nó. Khi mệnh đề chính đứng đầu, thường không cần dấu phẩy. Thứ tự không đổi quan hệ thời gian.
 
-## Phủ định và dạng rút gọn
+## Phủ định và dạng viết tắt
 
-- `If I'd known, I'd have stayed.` có hai dạng rút gọn `'d`: cái đầu là `had`, cái sau là `would`.
+- `If I'd known, I'd have stayed.` — Nếu tôi biết trước thì tôi đã ở lại. Câu có hai dạng viết tắt `'d`: cái đầu là `had`, cái sau là `would`.
 - `If they hadn't stopped, they would have got lost.` — Nếu họ đã không dừng lại, họ đã bị lạc.
 - `We wouldn't have missed the flight if the taxi hadn't broken down.` — Chúng tôi đã không lỡ chuyến bay nếu taxi không hỏng.
 

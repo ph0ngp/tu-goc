@@ -23,7 +23,7 @@ legacyLessonId: have-have-got
 
 ## Phủ định và câu hỏi với `do/does`
 
-Trong hệ thống hiện tại đơn thông dụng, dùng `don't/doesn't have` và `Do/Does ... have?`
+Trong hệ thống `do/does + have`, tức cách chia hiện tại đơn thông dụng, dùng `don't/doesn't have` và `Do/Does ... have?`
 
 ```text
 She has a car.
@@ -33,10 +33,10 @@ Does she have a car?
 
 Sau `does/doesn't`, dùng `have`, không dùng `has`.
 
-| Câu hỏi | Trả lời ngắn |
-| --- | --- |
-| `Do you have a passport?` | `Yes, I do.` / `No, I don't.` |
-| `Does Nam have a sister?` | `Yes, he does.` / `No, he doesn't.` |
+| Câu hỏi | Nghĩa | Trả lời ngắn |
+| --- | --- | --- |
+| `Do you have a passport?` | Bạn có hộ chiếu không? | `Yes, I do.` / `No, I don't.` |
+| `Does Nam have a sister?` | Nam có chị/em gái không? | `Yes, he does.` / `No, he doesn't.` |
 
 ## `Have got` và `has got`
 
@@ -63,19 +63,19 @@ Câu trả lời ngắn: `Yes, I have` / `No, I haven't`; `Yes, she has` / `No, 
 
 ## Không trộn hai hệ thống
 
-| Hệ thống `have` | Hệ thống `have got` |
-| --- | --- |
-| `Does she have a car?` | `Has she got a car?` |
-| `She doesn't have a car.` | `She hasn't got a car.` |
+| Hệ thống `do/does + have` | Hệ thống `have got` | Nghĩa |
+| --- | --- | --- |
+| `Does she have a car?` | `Has she got a car?` | Cô ấy có ô tô không? |
+| `She doesn't have a car.` | `She hasn't got a car.` | Cô ấy không có ô tô. |
 
 Không nói `Does she has got...?` hoặc `She doesn't has got...`.
 
 ## `Have got` không thay cho mọi cách dùng của `have`
 
-Khi `have` diễn tả hoạt động như `have breakfast` (ăn sáng), `have lunch` (ăn trưa), `have a shower` (tắm), ta thường dùng hệ thống `do/does`, không dùng `have got` cùng nghĩa đó.
+Khi `have` diễn tả hoạt động như `have breakfast` (ăn sáng), `have lunch` (ăn trưa), `have a shower` (tắm), ta thường dùng hệ thống `do/does + have`, không dùng `have got` cùng nghĩa đó.
 
 - `I have breakfast at seven.` — Tôi ăn sáng lúc bảy giờ.
-- `Do you have lunch at home?` — Bạn ăn trưa ở nhà không?
+- `Do you have lunch at home?` — Bạn có ăn trưa ở nhà không?
 
 ## Ghi nhớ
 
@@ -83,4 +83,4 @@ Khi `have` diễn tả hoạt động như `have breakfast` (ăn sáng), `have l
 - Với hiện tại đơn, dùng `don't/doesn't have` và `Do/Does ... have?`.
 - `have got/has got` thường nói sở hữu, quan hệ hoặc đặc điểm hiện tại.
 - Hỏi với `have got` bằng `Have/Has + chủ ngữ + got?`.
-- Không trộn cấu trúc `do/does` với cấu trúc `have got`.
+- Không trộn hệ thống `do/does + have` với hệ thống `have got`.

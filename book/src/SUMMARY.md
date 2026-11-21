@@ -21,7 +21,7 @@
 
 - Chương 3. Động từ be
     - [Ba dạng của be](m02/ba-dang-cua-be-be-01.md)
-    - [Tên gọi · đặc điểm · nơi chốn](m02/ten-goi-dac-diem-noi-chon-be-02.md)
+    - [Be với tên gọi, đặc điểm, nơi chốn, tuổi và thời gian](m02/ten-goi-dac-diem-noi-chon-be-02.md)
     - [Phủ định với be](m02/phu-dinh-voi-be-be-03.md)
     - [Câu hỏi với be](m02/cau-hoi-voi-be-be-04.md)
     - [who, what, where, how old với be](m02/who-what-where-how-old-voi-be-be-05.md)
@@ -143,7 +143,7 @@
     - [Câu điều kiện loại 0](m17/cau-dieu-kien-loai-0-cond-01.md)
     - [Câu điều kiện loại 1](m17/cau-dieu-kien-loai-1-cond-02.md)
     - [Tương lai sau when, before, after, until, as soon as](m17/tuong-lai-sau-when-before-after-until-as-soon-as-timecl-02.md)
-    - [Động từ thông dụng theo sau bởi to-infinitive hoặc -ing](m17/dong-tu-thong-dung-theo-sau-boi-to-infinitive-hoac-ing-vpat-01.md)
+    - [Động từ thông dụng đi với to-infinitive hoặc -ing](m17/dong-tu-thong-dung-theo-sau-boi-to-infinitive-hoac-ing-vpat-01.md)
     - [Động từ + tân ngữ + to-infinitive, mục đích và giới từ + V-ing](m17/verb-object-to-infinitive-chi-muc-dich-va-preposition-ing-vpat-02.md)
 
 - Chương 19. Miêu tả và tham chiếu mở rộng

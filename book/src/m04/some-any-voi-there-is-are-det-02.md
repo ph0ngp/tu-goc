@@ -36,6 +36,8 @@ Dùng `any` trong câu hỏi khi chưa biết câu trả lời là có hay khôn
 - `Is there any water?` — Có chút nước nào không?
 - `Are there any shops near here?` — Gần đây có cửa hàng nào không?
 
+Những câu hỏi này gọi là câu hỏi trung lập: người hỏi chưa nghiêng về câu trả lời nào. Đôi khi người nói vẫn dùng `some` trong câu hỏi, khi họ đã nghĩ câu trả lời là “có” và chỉ muốn kiểm tra lại. Chẳng hạn, nhìn thấy hộp sữa trong tủ lạnh, người nói có thể hỏi `Is there some milk in the fridge?` — Trong tủ lạnh có sữa đúng không? Câu đó không sai, nhưng mang ý khác. Trong bài này, khi chỉ hỏi có hay không, hãy dùng `any`.
+
 Câu trả lời có thể chuyển sang `some` nếu khẳng định:
 
 ```text

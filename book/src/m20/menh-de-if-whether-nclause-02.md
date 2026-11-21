@@ -18,11 +18,11 @@ Khi nội dung chưa biết có câu trả lời “có hay không”, ta có th
 
 Mệnh đề dùng trật tự câu kể:
 
-| Câu hỏi trực tiếp | Mệnh đề `if/whether` |
-| --- | --- |
-| `Is Lan ready?` | `I wonder if Lan is ready.` |
-| `Did they arrive?` | `Do you know whether they arrived?` |
-| `Can Minh drive?` | `I'm not sure if Minh can drive.` |
+| Câu hỏi trực tiếp | Mệnh đề `if/whether` | Nghĩa của câu có mệnh đề |
+| --- | --- | --- |
+| `Is Lan ready?` | `I wonder if Lan is ready.` | Tôi tự hỏi liệu Lan đã sẵn sàng chưa. |
+| `Did they arrive?` | `Do you know whether they arrived?` | Bạn có biết họ đã đến hay chưa? |
+| `Can Minh drive?` | `I'm not sure if Minh can drive.` | Tôi không chắc Minh có biết lái xe không. |
 
 Không dùng `if is Lan ready` hoặc `whether did they arrive`. Bỏ `do/does/did`; giữ modal hoặc trợ động từ mang thì ở sau chủ ngữ.
 

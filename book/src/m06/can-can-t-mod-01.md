@@ -5,7 +5,7 @@ legacyLessonId: ability-can
 ---
 # can · can't
 
-`Can` là động từ khuyết thiếu. Ở bài này, nó diễn tả khả năng: một người biết làm hoặc có thể làm điều gì. `Can` không đổi theo chủ ngữ và động từ sau nó luôn ở dạng cơ bản.
+`Can` là một **động từ tình thái** (*modal verb*): loại động từ đứng trước động từ chính để thêm một ý như khả năng hay sự cho phép. Ở bài này, nó diễn tả khả năng: một người biết làm hoặc có thể làm điều gì. `Can` không đổi theo chủ ngữ và động từ sau nó luôn ở dạng cơ bản.
 
 ## Câu khẳng định
 
@@ -59,13 +59,13 @@ Không dùng `do/does` cùng `can`: không nói `Do you can swim?`.
 
 Trong `Who can help me?`, `who` là chủ ngữ nên đứng ngay trước `can`.
 
-## Khả năng hiện tại, không phải mọi thời điểm
+## Khả năng ở hiện tại và khả năng nói chung
 
 `Can` trong bài nói khả năng hiện tại hoặc khả năng nói chung: `Birds can fly`, nghĩa là “Chim có thể bay”. Không phải mọi con chim đều bay được, nhưng đây là một đặc điểm chung. Khả năng trong quá khứ và các cách diễn đạt khác sẽ được học ở trình độ sau.
 
 ## Kỹ năng và khả năng do hoàn cảnh
 
-Tiếng Việt đều có thể dùng “có thể”, nhưng ngữ cảnh giúp ta hiểu hai ý hơi khác nhau:
+Trong tiếng Việt, cả hai ý đều có thể dịch là “có thể”, nhưng ngữ cảnh giúp ta hiểu chúng hơi khác nhau:
 
 - `Mai can swim.` thường nói Mai biết bơi, tức là có kỹ năng.
 - `Mai can come today.` nói hôm nay Mai có điều kiện để đến.

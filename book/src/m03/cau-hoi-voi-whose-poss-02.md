@@ -12,14 +12,14 @@ legacyLessonId: whose-questions
 Khi muốn nêu rõ vật đang hỏi, đặt `whose` trước danh từ.
 
 ```text
-Whose + noun + be + ...?
+Whose + danh từ + be + ...?
 ```
 
 - `Whose book is this?` — Đây là sách của ai?
 - `Whose shoes are these?` — Đây là giày của ai?
 - `Whose bag is on the chair?` — Túi của ai ở trên ghế?
 
-Danh từ sau `whose` có thể là số ít hoặc số nhiều. `Be` khớp với chủ ngữ của câu: `Whose book is ...?`, nhưng `Whose books are ...?`.
+Danh từ sau `whose` có thể là số ít hoặc số nhiều. Trong câu hỏi với `this`, `that`, `these`, `those`, `be` khớp với chủ ngữ đứng sau nó, và danh từ sau `whose` cũng phải cùng số với chủ ngữ ấy: `Whose book is this?`, nhưng `Whose books are these?`.
 
 ## `Whose` có thể đứng một mình
 
@@ -32,16 +32,17 @@ Trong hai câu này, `this` đi với `is`; `these` đi với `are`. `Whose` kh�
 
 ## Trả lời bằng nhiều cách
 
-Ta có thể trả lời bằng tên người với sở hữu cách, bằng từ chỉ sở hữu trước danh từ, hoặc bằng đại từ sở hữu đứng độc lập.
+Ta có thể trả lời bằng tên người với sở hữu cách, bằng từ chỉ sở hữu trước danh từ, hoặc bằng một dạng sở hữu đứng độc lập.
 
 | Câu hỏi | Câu trả lời | Nghĩa |
 | --- | --- | --- |
 | `Whose pen is this?` | `It's Lan's pen.` | Đó là bút của Lan. |
+| `Whose pen is this?` | `It's Lan's.` | Nó là của Lan. |
 | `Whose pen is this?` | `It's her pen.` | Đó là bút của cô ấy. |
 | `Whose pen is this?` | `It's hers.` | Nó là của cô ấy. |
 | `Whose books are these?` | `They're ours.` | Chúng là của chúng tôi. |
 
-Khi dùng đại từ sở hữu, không lặp lại danh từ: nói `It's mine`, không nói `It's mine book`.
+Giống `hers`, cụm sở hữu cách như `Lan's` có thể đứng một mình khi vật đã rõ. Trong `It's Lan's.`, người nghe tự hiểu `Lan's` là `Lan's pen`, nên không cần nhắc lại `pen`. Khi dùng đại từ sở hữu, cũng không lặp lại danh từ: nói `It's mine`, không nói `It's mine book`.
 
 ## Phân biệt `whose` và `who's`
 

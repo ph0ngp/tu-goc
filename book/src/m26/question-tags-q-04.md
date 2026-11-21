@@ -19,12 +19,12 @@ Câu khẳng định, trợ động từ phủ định + đại từ?
 Câu phủ định, trợ động từ khẳng định + đại từ?
 ```
 
-| Câu chính | Đuôi |
-| --- | --- |
-| `He is tired,` | `isn't he?` |
-| `They were waiting,` | `weren't they?` |
-| `Lan can swim,` | `can't she?` |
-| `You haven't finished,` | `have you?` |
+| Câu chính | Đuôi | Nghĩa của cả câu |
+| --- | --- | --- |
+| `He is tired,` | `isn't he?` | Anh ấy mệt, phải không? |
+| `They were waiting,` | `weren't they?` | Lúc đó họ đang đợi, phải không? |
+| `Lan can swim,` | `can't she?` | Lan biết bơi, phải không? |
+| `You haven't finished,` | `have you?` | Bạn chưa xong, phải không? |
 
 Đuôi dùng cùng trợ động từ hoặc modal của câu chính.
 
@@ -36,7 +36,7 @@ Với hiện tại đơn hoặc quá khứ đơn của động từ thường, d
 - `Mai likes coffee, doesn't she?` — Mai thích cà phê, phải không?
 - `They left early, didn't they?` — Họ đã về sớm, phải không?
 
-Không lặp động từ chính trong đuôi: không dùng `likesn't she`.
+Không dùng `be` hay động từ chính trong đuôi: không dùng `Mai likes coffee, isn't she?` mà dùng `doesn't she?`.
 
 ## Chọn đại từ cho chủ ngữ
 
@@ -55,15 +55,16 @@ Với `there is/are`, giữ `there`: `There's a problem, isn't there?` — “C�
 
 `I'm next, aren't I?` — Tôi là người tiếp theo, phải không?
 
-Đuôi khẳng định sau `I'm not` là `am I?`: `I'm not late, am I?`
+Đuôi khẳng định sau `I'm not` là `am I?`: `I'm not late, am I?` — Tôi không muộn, phải không?
 
 ## Từ mang nghĩa phủ định
 
-Các từ `never`, `nobody`, `nothing`, `hardly` làm câu có nghĩa phủ định, nên đuôi thường khẳng định:
+Các từ `never` (không bao giờ), `nobody` (không ai), `nothing` (không có gì), `hardly` (hầu như không) làm câu có nghĩa phủ định, nên đuôi thường khẳng định:
 
 - `Lan never complains, does she?` — Lan không bao giờ phàn nàn, đúng không?
 - `Nobody called, did they?` — Không ai gọi, phải không?
 - `Nothing happened, did it?` — Không có gì xảy ra, phải không?
+- `He hardly speaks, does he?` — Anh ấy hầu như không nói, phải không?
 
 Với `nobody/somebody/everybody`, đại từ đuôi thường là `they` trong tiếng Anh hiện đại.
 

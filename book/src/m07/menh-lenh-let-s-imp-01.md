@@ -5,7 +5,7 @@ legacyLessonId: instructions-and-can
 ---
 # Mệnh lệnh khẳng định và phủ định
 
-Câu mệnh lệnh dùng để hướng dẫn, yêu cầu, cảnh báo hoặc ra lệnh cho người nghe. Chủ ngữ `you` được hiểu ngầm, nên câu thường bắt đầu ngay bằng động từ cơ bản.
+**Câu mệnh lệnh** (*imperative*) dùng để hướng dẫn, yêu cầu, cảnh báo hoặc ra lệnh cho người nghe. Chủ ngữ `you` được hiểu ngầm, nên câu thường bắt đầu ngay bằng động từ cơ bản.
 
 ## Mệnh lệnh khẳng định
 

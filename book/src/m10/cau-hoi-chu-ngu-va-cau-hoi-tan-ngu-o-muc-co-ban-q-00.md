@@ -18,6 +18,8 @@ Who called Lan?
 
 `Who called Lan?` là **câu hỏi chủ ngữ** (*subject question*). Với quá khứ đơn, không thêm `did`; động từ vẫn ở dạng quá khứ.
 
+Trong lời nói, đôi khi người ta thêm `did` vào câu hỏi chủ ngữ và đọc nhấn mạnh, chẳng hạn khi phản bác điều người khác vừa nói. Đó là một cách dùng đặc biệt; câu hỏi chủ ngữ bình thường không có `did`.
+
 - `Who opened the window?` — Ai đã mở cửa sổ?
 - `What happened yesterday?` — Hôm qua chuyện gì đã xảy ra?
 - `Which bus arrived first?` — Xe buýt nào đã đến trước?
@@ -53,7 +55,7 @@ Trong câu hỏi chủ ngữ, `who/what` chính là chủ ngữ nên không còn
 Sự khác biệt cũng tồn tại ở hiện tại:
 
 - `Who lives here?` — Ai sống ở đây? (`who` là chủ ngữ; động từ dùng dạng số ít `lives`.)
-- `Who do you visit?` — Bạn thăm ai? (`you` là chủ ngữ; `who` là tân ngữ.)
+- `Who do you visit on Sundays?` — Chủ nhật bạn thường đi thăm ai? (`you` là chủ ngữ; `who` là tân ngữ.)
 
 Ở mức này, hãy tập trung vào `who`, `what` và `which + danh từ`. Các cấu trúc trang trọng với `whom` chưa cần dùng.
 

@@ -42,6 +42,13 @@ Không bỏ giới từ: `listen the instructions` và `wait the bus` không đ�
 - `talk to/with someone` — nói chuyện với ai;
 - `talk about something` — nói về điều gì.
 
+So sánh:
+
+- `I agree with you.` — Tôi đồng ý với bạn.
+- `The manager agreed to our request.` — Quản lý đã chấp thuận yêu cầu của chúng tôi.
+- `She applied for a job in a bank.` — Cô ấy nộp đơn xin một công việc ở ngân hàng.
+- `She applied to three companies.` — Cô ấy nộp đơn vào ba công ty.
+
 Không học `agree = with` hay `apply = for` như một cặp duy nhất; cần học cả ý nghĩa và tân ngữ theo sau.
 
 ## Sau giới từ dùng danh từ hoặc `V-ing`
@@ -78,9 +85,9 @@ It depends on the weather.
 
 Một cụm hoàn chỉnh cho biết cả giới từ, loại tân ngữ và ngữ cảnh. Khi động từ có nhiều mẫu, ghi mỗi mẫu cùng một câu riêng.
 
-## Không nhầm với phrasal verb
+## Liên hệ với bài sau
 
-Một số động từ + giới từ hoạt động như một cụm cố định, nhưng không phải tất cả đều là phrasal verbs theo nghĩa hẹp. Điều quan trọng ở B1 là dùng đúng giới từ và đúng vị trí. Bài sau tập trung vào đặc điểm tách được/không tách được của phrasal verbs.
+Bài sau học [cụm động từ (*phrasal verb*)](phrasal-verbs-tach-duoc-khong-tach-duoc-va-vi-tri-dai-tu-phrv-01.md) như `turn off`, nơi vị trí tân ngữ có thể thay đổi. Với các cụm trong bài này như `listen to`, `wait for`, tân ngữ luôn đứng sau giới từ.
 
 ## Ghi nhớ
 

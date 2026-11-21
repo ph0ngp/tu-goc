@@ -19,15 +19,17 @@ the teacher's bag → túi của giáo viên
 
 Với danh từ số nhiều đã kết thúc bằng `s`, chỉ thêm dấu nháy đơn: `the students' books`, nghĩa là “sách của các học sinh”. Với số nhiều bất quy tắc không kết thúc bằng `s`, thêm `'s`: `the children's room`, nghĩa là “phòng của trẻ em”.
 
-| Dạng người/vật có liên hệ | Cách viết | Ví dụ |
-| --- | --- | --- |
-| số ít | thêm `'s` | `the girl's bike` |
-| số nhiều đã có `s` | thêm `'` | `the girls' bikes` |
-| số nhiều bất quy tắc không có `s` | thêm `'s` | `the women's bags` |
+| Dạng người/vật có liên hệ | Cách viết | Ví dụ | Nghĩa |
+| --- | --- | --- | --- |
+| số ít | thêm `'s` | `the girl's bike` | xe đạp của cô bé (một cô bé) |
+| số nhiều đã có `s` | thêm `'` | `the girls' bikes` | những chiếc xe đạp của các cô bé |
+| số nhiều bất quy tắc không có `s` | thêm `'s` | `the women's bags` | túi của những người phụ nữ |
+
+Hai dòng đầu chỉ khác nhau ở vị trí dấu nháy, nhưng nghĩa đã đổi: `girl's` nói về một cô bé, còn `girls'` nói về nhiều cô bé.
 
 ## Dấu nháy đơn trong dạng viết tắt
 
-Dấu nháy đơn còn thay cho chữ cái bị lược bỏ khi hai từ được viết gọn thành một.
+Dấu nháy đơn còn thay cho chữ cái bị lược bỏ khi hai từ được viết gọn thành một. Cách viết gọn này là **dạng viết tắt** (*contraction*) đã gặp ở bài [Ba dạng của be](../m02/ba-dang-cua-be-be-01.md) (`I'm`, `she's`) và bài [Phủ định với be](../m02/phu-dinh-voi-be-be-03.md) (`isn't`).
 
 | Dạng đầy đủ | Dạng viết tắt | Nghĩa |
 | --- | --- | --- |
@@ -42,6 +44,8 @@ Dấu nháy đơn còn thay cho chữ cái bị lược bỏ khi hai từ đư�
 Ở đây, ta chỉ dùng các dạng viết tắt của `be` đã học. Những dạng viết tắt khác sẽ được giải thích khi cấu trúc tương ứng xuất hiện ở các bài sau.
 
 Không phải mọi từ kết thúc bằng `'s` đều là sở hữu. `She's here` mở rộng thành `She is here`, nghĩa là “Cô ấy ở đây”; vì vậy `'s` ở đây thuộc dạng viết tắt.
+
+Tên người cũng có thể viết tắt với `is` theo cách này. `Lan's here` là `Lan is here`, nghĩa là “Lan ở đây”; còn `Lan's bag` là “túi của Lan”. Chữ `Lan's` trong hai cụm trông giống hệt nhau, nên hãy thử mở rộng thành `is`: nếu câu vẫn đúng và đủ nghĩa (`Lan is here`), đó là dạng viết tắt; nếu ngay sau là danh từ chỉ thứ có liên hệ (`Lan's bag`), đó là sở hữu.
 
 ## Ba cặp rất dễ nhầm
 

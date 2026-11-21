@@ -22,7 +22,7 @@ Ví dụ:
 Tôi đọc sách.
 ```
 
-`Books`, nghĩa là “sách”, cho biết thứ được đọc nên là tân ngữ.
+Từ `books`, nghĩa là “sách”, cho biết thứ được đọc nên là tân ngữ.
 
 ---
 
@@ -85,7 +85,7 @@ Không nên cứ thấy một từ đứng sau động từ là gọi nó là t�
 | `books` | danh từ | `They read books.` — Họ đọc sách. |
 | `the red ball` | cụm từ | `We find the red ball.` — Chúng tôi tìm thấy quả bóng đỏ. |
 
-Ở phần sau, bạn sẽ học những đại từ dùng làm tân ngữ như `me`, `him`, `her` và `them`. Chương 1 chưa yêu cầu dùng các dạng ấy.
+Ở phần sau, bạn sẽ học những đại từ dùng làm tân ngữ như `me` (tôi), `him` (anh ấy), `her` (cô ấy) và `them` (họ, chúng). Chương 1 chưa yêu cầu dùng các dạng ấy.
 
 ---
 

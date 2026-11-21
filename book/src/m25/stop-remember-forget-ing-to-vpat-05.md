@@ -52,7 +52,7 @@ Người nói đang tìm ký ức về một sự kiện, không nhắc một nh
 
 Thông thường, `forgot to buy` có nghĩa việc mua đã không xảy ra.
 
-## `Forget doing`: không còn nhớ một việc đã xảy ra
+## `Forget doing`: ký ức về một việc đã xảy ra
 
 - `I'll never forget visiting Ha Long Bay.` — Tôi sẽ không bao giờ quên chuyến thăm Vịnh Hạ Long.
 - `I'll never forget meeting my teacher for the first time.` — Tôi sẽ không bao giờ quên lần đầu gặp cô giáo của mình.
@@ -70,7 +70,7 @@ Khi muốn kể rằng ai đó **không còn nhớ** một việc đã xảy ra,
 | `stop doing` | chính hoạt động đó kết thúc |
 | `stop to do` | việc khác dừng để thực hiện mục đích mới |
 
-## Câu hỏi tự kiểm tra
+## Cách chọn dạng
 
 1. Với `stop`, hoạt động sau chỗ trống bị chấm dứt hay là mục đích mới?
 2. Với `remember/forget`, đó là nhiệm vụ cần làm hay ký ức về việc đã xảy ra?
@@ -81,4 +81,4 @@ Khi muốn kể rằng ai đó **không còn nhớ** một việc đã xảy ra,
 - `Stop doing` = ngừng hoạt động đó; `stop to do` = dừng việc khác để làm việc này.
 - `Remember to do` = nhớ nhiệm vụ; `remember doing` = nhớ lại sự kiện.
 - `Forget to do` thường có nghĩa nhiệm vụ không được thực hiện.
-- `Forget doing` nói không còn ký ức về một việc đã xảy ra và ít phổ biến hơn trong câu khẳng định thông thường.
+- `Forget doing` chủ yếu gặp trong `never forget doing`: sẽ luôn nhớ một trải nghiệm đã có. Muốn nói ai không còn nhớ một việc, thường dùng `forgot that + quá khứ hoàn thành`.

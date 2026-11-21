@@ -5,7 +5,7 @@ legacyLessonId: third-person
 ---
 # Động từ thêm -s hoặc -es
 
-Trong câu khẳng định hiện tại đơn, động từ đổi dạng khi chủ ngữ là `he`, `she`, `it` hoặc một tên/danh từ số ít tương đương. Đây thường được gọi là ngôi thứ ba số ít.
+Trong câu khẳng định hiện tại đơn, động từ đổi dạng khi chủ ngữ là `he`, `she`, `it` hoặc một tên/danh từ số ít tương đương. Nhóm chủ ngữ này thường được gọi là **ngôi thứ ba số ít** (*third person singular*).
 
 ## Nhận ra nhóm chủ ngữ
 
@@ -46,12 +46,12 @@ play → plays     live → lives
 Nếu trước `y` là một **phụ âm**, đổi `y` thành `i` rồi thêm `-es`.
 
 ```text
-study → studies
-try   → tries
-carry → carries
+study → studies   (học)
+try   → tries     (thử)
+carry → carries   (mang)
 ```
 
-Nếu trước `y` là một **nguyên âm**, chỉ thêm `-s`: `play → plays`, `enjoy → enjoys`, `buy → buys`.
+Nếu trước `y` là một **nguyên âm**, chỉ thêm `-s`: `play → plays` (chơi), `enjoy → enjoys` (thích thú, tận hưởng), `buy → buys` (mua).
 
 ## Hai dạng cần nhớ riêng
 
@@ -75,12 +75,12 @@ Các dạng `works`, `watches`, `studies` và `has` trong bài này dùng cho **
 
 Không chọn dạng động từ theo từ đứng sát nó nhất. Hãy tìm toàn bộ chủ ngữ và xác định chủ ngữ nói về một hay nhiều người/vật.
 
-| Chủ ngữ | Câu đúng | Lý do |
-| --- | --- | --- |
-| `My brother` | `My brother works here.` | một người |
-| `The girl with two dogs` | `The girl with two dogs lives here.` | từ chính là `girl`, vẫn là một người |
-| `My brother and my sister` | `My brother and my sister work here.` | hai người nối bằng `and` |
-| `The children` | `The children play outside.` | danh từ số nhiều |
+| Chủ ngữ | Câu đúng | Nghĩa | Lý do |
+| --- | --- | --- | --- |
+| `My brother` | `My brother works here.` | Anh/em trai tôi làm việc ở đây. | một người |
+| `The girl with two dogs` | `The girl with two dogs lives here.` | Cô bé có hai con chó sống ở đây. | từ chính là `girl`, vẫn là một người |
+| `My brother and my sister` | `My brother and my sister work here.` | Anh/em trai và chị/em gái tôi làm việc ở đây. | hai người nối bằng `and` |
+| `The children` | `The children play outside.` | Bọn trẻ chơi ở bên ngoài. | danh từ số nhiều |
 
 Trong `The girl with two dogs lives here`, từ `dogs` đứng gần động từ nhưng không phải chủ ngữ chính. Vì đang nói về `the girl`, ta vẫn dùng `lives`.
 

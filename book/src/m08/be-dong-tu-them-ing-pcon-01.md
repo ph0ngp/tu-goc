@@ -5,7 +5,7 @@ legacyLessonId: continuous-form
 ---
 # be + động từ thêm -ing
 
-Hiện tại tiếp diễn nhìn một hành động như đang diễn ra quanh hiện tại. Cấu trúc luôn cần hai phần: một dạng của `be` và động từ thêm `-ing`.
+Thì hiện tại tiếp diễn (*present continuous*) nhìn một hành động như đang diễn ra quanh hiện tại. Cấu trúc luôn cần hai phần: một dạng của `be` và động từ thêm `-ing`.
 
 ## Cấu trúc khẳng định
 
@@ -28,33 +28,39 @@ read → reading    work → working
 play → playing    help → helping
 ```
 
+Cách viết dạng `-ing` dựa vào **chữ viết** ở cuối động từ, không dựa vào âm đọc. Vì vậy, hãy nhìn kỹ các chữ cuối của từ, như khi học [số nhiều của danh từ](../m01/danh-tu-va-so-nhieu-noun-02.md): `a`, `e`, `i`, `o`, `u` là chữ nguyên âm, các chữ còn lại là chữ phụ âm.
+
 ## Bỏ `e` câm ở cuối
 
-Nhiều động từ kết thúc bằng `e` bỏ `e` rồi thêm `-ing`.
+Chữ `e` câm là chữ `e` ở cuối từ nhưng không được đọc thành một âm riêng. Trong `make` (làm) hay `write` (viết), ta không đọc âm “e” ở cuối. Nhiều động từ kết thúc bằng `e` câm bỏ `e` rồi thêm `-ing`.
 
-| Dạng cơ bản | Dạng `-ing` |
-| --- | --- |
-| `make` | `making` |
-| `write` | `writing` |
-| `come` | `coming` |
-| `dance` | `dancing` |
+| Dạng cơ bản | Nghĩa | Dạng `-ing` |
+| --- | --- | --- |
+| `make` | làm | `making` |
+| `write` | viết | `writing` |
+| `come` | đến | `coming` |
+| `dance` | nhảy múa | `dancing` |
 
-`See` là ngoại lệ quen thuộc: `seeing`, vì hai chữ `e` thuộc phần âm của từ.
+Quy tắc này chỉ dành cho `e` câm. `See` (nhìn thấy) kết thúc bằng hai chữ `ee` được đọc thành âm của từ, không phải `e` câm, nên ta giữ nguyên rồi thêm `-ing`: `seeing`.
 
 ## Gấp đôi phụ âm cuối trong một số động từ ngắn
 
-Với nhiều động từ một âm tiết kết thúc theo mẫu phụ âm–nguyên âm–phụ âm, gấp đôi phụ âm cuối rồi thêm `-ing`.
+Với nhiều động từ một âm tiết (*one syllable*), tức là đọc thành một tiếng như `run` hay `sit`, nếu từ kết thúc bằng **một chữ nguyên âm rồi một chữ phụ âm**, ta gấp đôi chữ phụ âm cuối rồi thêm `-ing`.
 
-```text
-run → running    sit → sitting
-swim → swimming  get → getting
-```
+| Dạng cơ bản | Nghĩa | Hai chữ cuối | Dạng `-ing` |
+| --- | --- | --- | --- |
+| `run` | chạy | `u` + `n` | `running` |
+| `sit` | ngồi | `i` + `t` | `sitting` |
+| `swim` | bơi | `i` + `m` | `swimming` |
+| `get` | nhận, lấy | `e` + `t` | `getting` |
 
-Không gấp đôi `w`, `x` hoặc `y`: `snowing`, `fixing`, `playing`. Các từ dài hơn còn có quy tắc dựa vào trọng âm; ở A1, hãy nhớ các dạng thông dụng theo ví dụ chuẩn.
+Quy tắc này đếm **chữ**, không đếm âm. Nếu chỉ nghe, `read`, `sleep` và `wait` cũng là những từ một tiếng kết thúc bằng một âm phụ âm. Nhưng khi nhìn chữ viết, trước chữ phụ âm cuối có **hai chữ nguyên âm** (`ea`, `ee`, `ai`), nên không gấp đôi: `reading`, `sleeping`, `waiting`. Động từ kết thúc bằng hai chữ phụ âm như `work` hay `help` cũng chỉ thêm `-ing`: `working`, `helping`.
+
+Không gấp đôi `w`, `x` hoặc `y`: `snow` (tuyết rơi) thành `snowing`, `fix` (sửa) thành `fixing`, `play` thành `playing`. Các từ dài hơn còn có quy tắc dựa vào trọng âm; ở A1, hãy nhớ các dạng thông dụng theo ví dụ chuẩn.
 
 ## Động từ kết thúc bằng `ie`
 
-Đổi `ie` thành `y` rồi thêm `-ing`: `lie → lying`, `die → dying`. Đây là nhóm nhỏ nhưng rất dễ viết sai thành `lieing`.
+Đổi `ie` thành `y` rồi thêm `-ing`: `lie` (nằm) thành `lying`, `die` (chết) thành `dying`. Đây là nhóm nhỏ nhưng rất dễ viết sai thành `lieing`.
 
 ## Dạng viết tắt của `be`
 
@@ -87,7 +93,7 @@ Dạng `-ing` một mình có thể xuất hiện trong những cấu trúc khá
 ## Ghi nhớ
 
 - Hiện tại tiếp diễn có cấu trúc `chủ ngữ + am/is/are + V-ing`.
-- Phần lớn động từ thêm `-ing`; nhiều từ bỏ `e` câm.
-- Một số động từ ngắn gấp đôi phụ âm cuối: `run → running`.
+- Phần lớn động từ thêm `-ing`; nhiều từ bỏ `e` câm, nhưng `see` giữ `ee`: `seeing`.
+- Động từ một âm tiết kết thúc bằng một chữ nguyên âm rồi một chữ phụ âm thường gấp đôi phụ âm cuối: `run → running`; có hai chữ nguyên âm như `read`, `wait` thì không gấp đôi.
 - `ie` đổi thành `y`: `lie → lying`.
 - Luôn kiểm tra cả dạng của `be` và chính tả của động từ `-ing`.

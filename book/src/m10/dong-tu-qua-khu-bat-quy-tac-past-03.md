@@ -21,8 +21,14 @@ Một số động từ không tạo quá khứ bằng `-ed`. Chúng được g�
 | `get` | `got` | `We got home late.` — Chúng tôi đã về đến nhà muộn. |
 | `buy` | `bought` | `Mai bought a book.` — Mai đã mua một quyển sách. |
 | `write` | `wrote` | `He wrote an email.` — Anh ấy đã viết một email. |
+| `do` | `did` | `I did my homework.` — Tôi đã làm bài tập về nhà. |
+| `give` | `gave` | `Lan gave me a pen.` — Lan đã đưa cho tôi một cây bút. |
+| `know` | `knew` | `We knew the answer.` — Chúng tôi đã biết câu trả lời. |
+| `say` | `said` | `He said goodbye.` — Anh ấy đã nói lời tạm biệt. |
 
-Một số động từ giữ nguyên hình thức: `put → put`, `cut → cut`, `read → read`. Với `read`, cách viết không đổi nhưng dạng quá khứ được phát âm là `/red/`: `I read the message yesterday` nghĩa là “Hôm qua tôi đã đọc tin nhắn”.
+Trong bảng này, `did` là động từ chính, nghĩa là “đã làm”. Bài sau sẽ cho thấy `did` còn giúp tạo câu phủ định và câu hỏi.
+
+Một số động từ giữ nguyên hình thức: `put → put` (đặt), `cut → cut` (cắt), `read → read` (đọc). Với `read`, cách viết không đổi nhưng dạng quá khứ được phát âm là `/red/`: `I read the message yesterday` nghĩa là “Hôm qua tôi đã đọc tin nhắn”.
 
 ## Cách dùng trong câu khẳng định
 
@@ -42,11 +48,11 @@ Không thêm `-s` và không đặt `was/were` trước động từ hành độ
 
 Một vài nhóm có nét giống nhau:
 
-- đổi nguyên âm: `sing → sang`, `drink → drank`, `begin → began`;
-- có `-ought/-aught`: `buy → bought`, `think → thought`, `teach → taught`;
-- giữ nguyên: `put → put`, `cut → cut`, `hit → hit`.
+- đổi nguyên âm: `sing → sang` (hát), `drink → drank` (uống), `begin → began` (bắt đầu);
+- có `-ought/-aught`: `buy → bought` (mua), `think → thought` (nghĩ), `teach → taught` (dạy);
+- giữ nguyên: `put → put`, `cut → cut`, `hit → hit` (đánh, va vào).
 
-Những nhóm này giúp nhớ, nhưng không phải công thức để tự tạo mọi động từ. Chẳng hạn `bring → brought` nhưng `sing → sang`. Khi gặp từ mới, hãy tra đúng dạng quá khứ thay vì đoán.
+Những nhóm này giúp nhớ, nhưng không phải công thức để tự tạo mọi động từ. Chẳng hạn `bring` (mang đến) và `sing` (hát) đều tận cùng bằng `-ing`, nhưng `bring → brought` còn `sing → sang`. Hai từ trông giống nhau vẫn có thể đổi theo hai cách khác nhau, nên khi gặp từ mới, hãy tra đúng dạng quá khứ thay vì đoán.
 
 ## Phân biệt với quá khứ phân từ
 

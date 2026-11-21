@@ -14,15 +14,16 @@ legacyLessonId: a2-one-ones
 
 Người nghe biết `one` là `bag` và `ones` là `shoes` từ ngữ cảnh.
 
+`One` cũng có thể đứng một mình để thay cho `a/an + danh từ` đã nhắc tới: `I need a pen. Do you have one?` — Tôi cần một cây bút. Bạn có (một cây) không? Ở đây `one` nghĩa là “một cây bút bất kỳ”, không phải một cây bút cụ thể.
+
 ## Các từ thường đứng trước
 
-| Mẫu | Ví dụ |
-| --- | --- |
-| `the + tính từ + one/ones` | `the cheaper one`, `the black ones` |
-| `this/that + one` | `this one`, `that one` |
-| `these/those + ones` | `these ones`, `those ones` |
-| `which + one/ones` | `Which one do you want?` |
-| `another one` | `Can I have another one?` |
+| Mẫu | Ví dụ | Nghĩa |
+| --- | --- | --- |
+| `the + tính từ + one/ones` | `the cheaper one`, `the black ones` | chiếc rẻ hơn, những chiếc màu đen |
+| `this/that + one` | `this one`, `that one` | chiếc này, chiếc kia |
+| `these/those + ones` | `these ones`, `those ones` | những chiếc này, những chiếc kia |
+| `which + one/ones` | `Which one do you want?` | Bạn muốn chiếc nào? |
 
 Khi chỉ có `my/your/his...` mà không có tính từ, thường dùng đại từ sở hữu thay vì `one`: `Mine is blue` (Cái của tôi màu xanh) là cách nói chuẩn; `my one is blue` chỉ gặp trong văn nói thân mật, nhất là tiếng Anh–Anh.
 
@@ -43,7 +44,7 @@ Sau số đếm, nếu không có tính từ thì bỏ hẳn danh từ, không d
 
 `One/ones` không tự mang nghĩa “đồ vật”. Người nghe cần tìm danh từ từ câu trước hoặc tình huống:
 
-> `Which jacket do you want? — The blue one.`
+`Which jacket do you want? — The blue one.` — “Bạn muốn chiếc áo khoác nào? — Chiếc màu xanh.”
 
 Ở đây `one` thay `jacket`. Nếu chỉ nói `I want the blue one` mà trước đó không có vật nào rõ, người nghe có thể không biết “cái màu xanh” là gì.
 

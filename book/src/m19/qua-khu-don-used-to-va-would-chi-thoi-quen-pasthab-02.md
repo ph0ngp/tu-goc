@@ -33,17 +33,9 @@ S + used to + động từ dạng cơ bản
 
 ## Phủ định và câu hỏi với `used to`
 
-Trong cách viết phổ biến, dùng `did` và đưa động từ về `use`:
+Cách tạo phủ định và câu hỏi đã học ở bài [used to cho trạng thái và thói quen quá khứ](../m11/used-to-cho-trang-thai-va-thoi-quen-qua-khu-pasthab-01.md): `did` mang dấu hiệu quá khứ nên động từ trở về `use` — `didn't use to`, `Did ... use to?`.
 
-```text
-Phủ định: S + didn't use to + V
-Câu hỏi:  Did + S + use to + V?
-```
-
-- `I didn't use to like coffee.` — Trước đây tôi không thích cà phê.
-- `Did you use to live here?` — Trước đây bạn từng sống ở đây phải không?
-
-Trong văn bản đã biên tập, `didn't use to` và `Did ... use to?` là các dạng nên ưu tiên cho người học.
+Bạn có thể gặp cách viết `didn't used to` hoặc `Did ... used to?` trong văn bản thực tế; nhiều từ điển ghi nhận cách viết này. Tuy vậy, trong văn viết chuẩn nên dùng `didn't use to` và `Did ... use to?`, và phần luyện tập của bài theo cách viết chuẩn đó.
 
 ## `Would`: hành động lặp lại trong một bối cảnh quá khứ
 
@@ -83,11 +75,11 @@ Ví dụ:
 
 ## Đừng nhầm với `be used to`
 
-`Used to + V` trong bài này nói thói quen hoặc trạng thái quá khứ. `Be used to + danh từ/V-ing` có nghĩa “quen với” và là một cấu trúc khác: `I am used to the noise` nghĩa là “Tôi đã quen với tiếng ồn”. Không thay hai cấu trúc cho nhau.
+Như đã lưu ý ở [bài `used to` trước](../m11/used-to-cho-trang-thai-va-thoi-quen-qua-khu-pasthab-01.md), `be used to + danh từ/V-ing` nghĩa là “quen với”, không nói thói quen cũ: `I am used to the noise` — “Tôi đã quen với tiếng ồn”. Vì có `am`, câu này nói tình trạng hiện tại, còn `used to + V` luôn nói về quá khứ.
 
 ## Ghi nhớ
 
 - Quá khứ đơn dùng rộng nhất: sự kiện, trạng thái và thói quen trong quá khứ.
 - `Used to + V` nói thói quen hoặc trạng thái cũ, thường gợi ý hiện tại đã khác.
 - `Would + V` nói hành động lặp lại khi bối cảnh quá khứ đã rõ; thường không dùng cho trạng thái.
-- Phủ định và câu hỏi thường dùng `didn't use to` và `Did ... use to?`.
+- Trong văn viết chuẩn, phủ định và câu hỏi dùng `didn't use to` và `Did ... use to?`.

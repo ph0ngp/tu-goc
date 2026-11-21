@@ -41,7 +41,7 @@ Sau các giới từ như `in`, `on`, `at`, `for`, `about`, `without`, dùng dan
 - `I'm interested in learning Spanish.` — Tôi quan tâm đến việc học tiếng Tây Ban Nha.
 - `He's good at cooking.` — Anh ấy nấu ăn giỏi.
 
-Trong `look forward to meeting you`, `to` là giới từ của cụm `look forward to`, nên theo sau là `meeting`, không phải động từ cơ bản.
+Trong `look forward to meeting you` — “mong được gặp bạn”, `to` là giới từ của cụm `look forward to`, nên theo sau là `meeting`, không phải động từ cơ bản.
 
 ## Ba câu hỏi để chọn cấu trúc
 

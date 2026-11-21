@@ -5,7 +5,7 @@ legacyLessonId: c1-valency-complementation
 ---
 # Hóa trị và sự thay đổi nghĩa do kiểu bổ ngữ
 
-Một động từ không chỉ mang nghĩa; nó còn mở ra một số “vị trí” mà câu cần hoặc cho phép. Khả năng đó được gọi là **hóa trị** (*valency*). Cách một từ cho phép các kiểu bổ ngữ theo sau được gọi là **hệ thống bổ ngữ** (*complementation*). Cũng như một chiếc khung quyết định cần bao nhiêu mảnh, động từ quyết định có cần tân ngữ, bổ ngữ hay mệnh đề theo sau hay không.
+Một động từ không chỉ mang nghĩa; nó còn mở ra một số “vị trí” mà câu cần hoặc cho phép. Khả năng đó được gọi là **hóa trị** (*valency*). Cách một từ cho phép các kiểu bổ ngữ theo sau được gọi là **hệ thống bổ ngữ** (*complementation*).
 
 So sánh `sleep`, `put` và `give`:
 
@@ -39,7 +39,7 @@ Cùng một hình thức cụm giới từ nhưng quan hệ với động từ k
 
 ## Cùng động từ, khác khung, khác nghĩa
 
-Nhiều động từ đổi nghĩa hoặc góc nhìn khi đổi complementation:
+Nhiều động từ đổi nghĩa hoặc góc nhìn khi đổi kiểu bổ ngữ:
 
 | Cấu trúc | Nghĩa |
 | --- | --- |
@@ -49,41 +49,25 @@ Nhiều động từ đổi nghĩa hoặc góc nhìn khi đổi complementation:
 | `Lan turned the handle.` | Lan xoay tay cầm. |
 | `We found the key.` | Chúng tôi tìm thấy chìa khóa. |
 | `We found the task difficult.` | Chúng tôi thấy nhiệm vụ khó. |
+| `The engine is running.` | Động cơ đang chạy. |
+| `She runs a small café.` | Cô ấy điều hành một quán cà phê nhỏ. |
 
-Ở câu cuối, `difficult` không miêu tả cách “tìm”; nó là đánh giá về `the task`.
+Ở câu `found the task difficult`, `difficult` không miêu tả cách “tìm”; nó là đánh giá về `the task`. Với `run`, chính việc có tân ngữ chỉ một tổ chức làm động từ chuyển sang nghĩa “điều hành”.
+
+Khung không tân ngữ của `open` cũng khác câu bị động. `The door opened` trình bày sự thay đổi như tự xảy ra; `The door was opened` — Cánh cửa đã được mở — vẫn ngụ ý có người làm việc đó, dù không nêu tên.
 
 ## Khung của từng động từ phải được học riêng
 
-Hai động từ gần nghĩa có thể dùng khung khác:
+Hai động từ gần nghĩa có thể dùng khung khác nhau. Điều này đã học ở B1: `She told me the problem` — Cô ấy nói cho tôi biết vấn đề — nhưng `She explained the problem to me`, không dùng `explain me the problem` (xem [Động từ hai tân ngữ và lựa chọn to/for](../m25/dong-tu-hai-tan-ngu-va-lua-chon-to-for-vpat-07.md)); `suggest` nhận `V-ing` hoặc `that-clause` chứ không nhận `object + to-infinitive` (xem [Động từ + tân ngữ + to so với động từ nguyên mẫu sau let/make/help](../m25/verb-object-to-so-voi-bare-infinitive-sau-let-make-help-vpat-03.md)). Ở C1, hãy coi những điều này là thuộc tính hóa trị của từng động từ, không phải ngoại lệ rời rạc.
 
-- `She explained the problem to me.` — Cô ấy giải thích vấn đề cho tôi.
-- `She told me the problem.` — Cô ấy nói cho tôi vấn đề.
+Với động từ cho phép cả hai khung như `give` hay `send`, lựa chọn còn phụ thuộc trật tự thông tin: phần dài hoặc mới thường đứng cuối câu.
 
-Không dùng `explain me the problem` trong tiếng Anh chuẩn. Tương tự:
+- `She gave the key to the new receptionist.` — Cô ấy đưa chìa khóa cho cô lễ tân mới. Người nhận dài, mới nên đứng cuối.
+- `She gave me the key.` — Cô ấy đưa tôi chìa khóa. Người nhận ngắn, đã rõ nên đứng trước vật.
 
-- `They suggested changing the date.` hoặc `They suggested that we change the date.`;
-- không dùng `They suggested us to change the date` theo nghĩa trên;
-- `They allowed us to change the date.` — Họ cho phép chúng tôi đổi ngày.
+## Động từ nhận tân ngữ và bổ ngữ cho tân ngữ (*complex-transitive*)
 
-Việc một động từ cho phép `V-ing`, `that-clause` hay `object + to-infinitive` là thuộc tính của chính động từ đó.
-
-## Luân phiên hai tân ngữ
-
-Một số động từ cho phép hai khung gần nghĩa:
-
-```text
-She gave me the key. — Cô ấy đưa tôi chiếc chìa khóa.
-She gave the key to me. — Cô ấy đưa chiếc chìa khóa cho tôi.
-```
-
-Nhưng không phải động từ nào có người nhận cũng cho phép cả hai. Ta nói `She described the problem to me`, không nói `She described me the problem`. Ngoài ra, hai khung có thể khác về tiêu điểm: tân ngữ cuối thường mang thông tin mới hoặc được nhấn hơn.
-
-- `She gave the key to the new receptionist.` đặt người nhận dài và mới ở cuối.
-- `She gave me the key` dùng người nhận ngắn, đã rõ trước vật được đưa.
-
-## Complex-transitive: tân ngữ và trạng thái kết quả
-
-Các câu sau có chung khung `verb + object + object complement`:
+Các câu sau có chung khung động từ + tân ngữ + **bổ ngữ cho tân ngữ** (*object complement*):
 
 - `They elected Lan chairperson.` — Họ bầu Lan làm chủ tịch.
 - `The news made everyone anxious.` — Tin đó khiến mọi người lo lắng.
@@ -94,9 +78,12 @@ Bổ ngữ sau nói tên gọi, trạng thái hoặc kết quả của tân ng�
 
 ## Bị động cho thấy một số quan hệ, nhưng không phải phép thử tuyệt đối
 
-Tân ngữ thường có thể trở thành chủ ngữ bị động: `They elected Lan chairperson` → `Lan was elected chairperson`. Tuy nhiên, khả năng bị động còn phụ thuộc nghĩa và cách dùng của động từ. Không nên kết luận một thành phần không phải tân ngữ chỉ vì câu bị động nghe không tự nhiên.
+Tân ngữ thường có thể trở thành chủ ngữ bị động: `They elected Lan chairperson` → `Lan was elected chairperson` — Lan được bầu làm chủ tịch. Tuy nhiên, phép thử này hỏng theo cả hai chiều:
 
-Valency là mô tả cách từ được dùng trong một nghĩa cụ thể, không phải một công thức biến đổi luôn hoạt động.
+- `The bag weighs two kilos.` — Chiếc túi nặng hai ký. `Two kilos` là phần động từ đòi hỏi, nhưng không có câu bị động `Two kilos are weighed by the bag`, vì số đo không phải vật chịu tác động.
+- `Someone has slept in this bed.` → `This bed has been slept in.` — Chiếc giường này đã có người ngủ. Cụm `in this bed` vốn có thể bỏ đi, vậy mà vẫn lên làm chủ ngữ bị động được.
+
+Vì vậy, không kết luận một thành phần không phải tân ngữ chỉ vì câu bị động nghe không tự nhiên, và cũng không kết luận nó là tân ngữ chỉ vì bị động được.
 
 ## Cách phân tích một động từ mới
 
@@ -108,9 +95,10 @@ Valency là mô tả cách từ được dùng trong một nghĩa cụ thể, kh
 
 ## Ghi nhớ
 
-- Valency là khả năng của động từ trong việc cấp phép hoặc đòi hỏi các thành phần đi kèm.
+- Hóa trị là khả năng của động từ trong việc cấp phép hoặc đòi hỏi các thành phần đi kèm.
 - Bổ ngữ hoàn thành khung của động từ; trạng ngữ chỉ thêm hoàn cảnh và thường có thể bỏ.
 - Cùng một động từ có thể đổi nghĩa khi đổi khung.
 - Các động từ gần nghĩa không nhất thiết nhận cùng loại bổ ngữ.
-- Khung hai tân ngữ và khung `to/for` không thay nhau được với mọi động từ.
+- Khung hai tân ngữ và khung `to` không thay nhau được với mọi động từ; khi cả hai dùng được, phần dài hoặc mới thường đứng cuối.
+- Bị động là phép thử hữu ích nhưng không tuyệt đối.
 - Học động từ cùng cấu trúc và ví dụ, không học riêng một bản dịch tiếng Việt.

@@ -5,7 +5,7 @@ status: published
 ---
 # have/get something done
 
-`Have/get something done` là một **cấu trúc nhờ hoặc thu xếp** (*causative structure*). Cấu trúc này thường nói một người thu xếp để người khác làm một dịch vụ hoặc công việc cho mình. Chủ ngữ không trực tiếp thực hiện hành động lên đồ vật. `I had my hair cut` nghĩa là “Tôi đi cắt tóc/nhờ người cắt tóc”, không phải tôi tự cắt.
+`Have/get something done` là một **cấu trúc nhờ hoặc thu xếp** (*causative structure*). Cấu trúc này thường nói một người thu xếp để người khác làm một dịch vụ hoặc công việc cho mình. Trong nghĩa này, chủ ngữ thường không trực tiếp thực hiện hành động lên đồ vật. `I had my hair cut` nghĩa là “Tôi đi cắt tóc/nhờ người cắt tóc”, không phải tôi tự cắt.
 
 ## Cấu trúc
 
@@ -28,6 +28,13 @@ Hai động từ thường gần nghĩa trong cấu trúc dịch vụ:
 - `We got the roof repaired.` — Chúng tôi đã thu xếp sửa được mái nhà.
 
 Cả hai nghĩa là chúng tôi thu xếp sửa mái. `Get` thường thân mật hơn và đôi khi gợi việc phải cố gắng mới thu xếp xong; `have` trung tính hơn. Khác biệt không phải lúc nào cũng rõ.
+
+Riêng `get something done` còn có một nghĩa rất thường gặp: **làm xong** một việc, và người làm có thể chính là chủ ngữ:
+
+- `I need to get this report finished by Friday.` — Tôi cần làm xong báo cáo này trước thứ Sáu.
+- `Let's get the dishes done.` — Mình rửa xong chỗ bát đĩa đi.
+
+Ở đây không có ai được thuê. Ngữ cảnh cho biết câu nói thuê người làm hay tự hoàn thành việc.
 
 ## Các thì và câu hỏi
 
@@ -84,7 +91,7 @@ Không đặt `by a technician` vào giữa: `I had my phone repaired by a techn
 
 ## Quy trình lựa chọn
 
-1. Hỏi chủ ngữ có trực tiếp làm hành động không.
+1. Hỏi chủ ngữ có trực tiếp làm hành động không; với `get something done`, xét cả nghĩa “tự làm xong”.
 2. Nếu chủ ngữ thu xếp dịch vụ, dùng `have/get + object + past participle`.
 3. Nếu nêu người làm, chọn `have + person + V` hoặc `get + person + to V`.
 4. Nếu là biến cố không mong muốn, vẫn dùng `have + object + past participle` nhưng phải để ngữ cảnh làm rõ.
@@ -93,7 +100,7 @@ Không đặt `by a technician` vào giữa: `I had my phone repaired by a techn
 ## Ghi nhớ
 
 - `Have/get something done` nói thu xếp dịch vụ hoặc sự việc xảy đến với tài sản/chủ ngữ.
-- Chủ ngữ không trực tiếp thực hiện hành động lên tân ngữ.
+- Khi nói thu xếp dịch vụ, chủ ngữ thường không trực tiếp thực hiện hành động lên tân ngữ; `get something done` còn có thể nghĩa là tự làm xong việc.
 - `Get` thường thân mật hơn; `have` trung tính hơn.
 - Nêu người làm: `have someone do`, nhưng `get someone to do`.
 - Phân biệt cấu trúc nhờ hoặc thu xếp với câu chủ động và bị động thường.

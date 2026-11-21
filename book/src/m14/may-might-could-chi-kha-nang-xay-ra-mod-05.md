@@ -38,7 +38,7 @@ Nếu người nói khá chắc, có thể dùng `will probably`: `She'll probab
 - `We might travel next month.` — Có thể tháng sau chúng tôi sẽ đi du lịch. (khả năng tương lai)
 - `This key could be the right one.` — Có thể chiếc chìa khóa này là chiếc đúng. (khả năng hiện tại)
 
-Thời gian được hiểu từ ngữ cảnh hoặc cụm thời gian; bản thân modal không đổi hình thức.
+Thời gian được hiểu từ ngữ cảnh hoặc cụm thời gian; bản thân động từ tình thái không đổi hình thức.
 
 ## Câu hỏi
 
@@ -55,22 +55,34 @@ Không đưa `may` lên đầu câu để hỏi về khả năng. Câu hỏi b�
 
 Với `may/might`, câu khẳng định không khẳng định sự việc sẽ xảy ra. `It might rain` khác `It will rain`: câu đầu để mở cả khả năng mưa và không mưa; câu sau trình bày mưa như một dự đoán chắc hơn của người nói.
 
-Nếu muốn nói “có lẽ không”, đặt `not` sau modal: `She may not come`. Câu này không có nghĩa là cô ấy bị cấm đến; nghĩa cấm của `may not` chỉ xuất hiện trong những ngữ cảnh xin phép trang trọng khác.
+Nếu muốn nói “có lẽ không”, đặt `not` sau động từ tình thái: `She may not come` — Có thể cô ấy sẽ không đến. Câu này không có nghĩa là cô ấy bị cấm đến; nghĩa cấm của `may not` chỉ xuất hiện trong những ngữ cảnh xin phép trang trọng khác.
 
-## Phân biệt modal với `maybe` và `perhaps`
+## Không dùng `can` cho một khả năng cụ thể
 
-`May`, `might` và `could` đứng trong cụm động từ; `maybe` và `perhaps` là từ bổ nghĩa cho cả câu. Vì vậy, chúng không chiếm cùng một vị trí:
+Tiếng Việt dùng “có thể” cho cả khả năng làm được lẫn khả năng xảy ra, nên người học hay nói `It can rain later`. Khi đoán một sự việc **cụ thể** có xảy ra hay không, tiếng Anh dùng `may`, `might` hoặc `could`, không dùng `can`:
+
+- `It might rain later.` — Lát nữa trời có thể mưa.
+- `The shop may be closed now.` — Giờ này cửa hàng có thể đã đóng cửa.
+
+`Can` chỉ nói một điều **có lúc xảy ra, nói chung**, không đoán về một lần cụ thể: `It can be cold in Da Lat at night.` — Đà Lạt ban đêm có lúc lạnh. Câu này nói đặc điểm chung của Đà Lạt, không nói riêng đêm nay. Muốn đoán về đêm nay, dùng `It might be cold tonight.` — Đêm nay trời có thể lạnh.
+
+`Can` vẫn giữ các nghĩa đã học: khả năng của người (`I can swim`) và xin phép thân mật (`Can I come in?`).
+
+## Phân biệt động từ tình thái với `maybe` và `perhaps`
+
+`May`, `might` và `could` đứng trong cụm động từ; `maybe` và `perhaps` (đều nghĩa là “có lẽ”) là từ bổ nghĩa cho cả câu. Vì vậy, chúng không chiếm cùng một vị trí:
 
 - `Lan may be at home.` — Có thể Lan đang ở nhà.
 - `Maybe Lan is at home.` — Có lẽ Lan đang ở nhà.
 
-Hai câu gần nghĩa. Không nói `Lan maybe be at home` vì `maybe` không phải modal đứng trước động từ. Cũng không nên chồng `maybe` và `may` thành `Maybe Lan may be at home` nếu chỉ muốn diễn đạt một khả năng đơn giản; cách kết hợp ấy có thể xuất hiện để dè dặt rất mạnh nhưng thường thừa trong tình huống A2.
+Hai câu gần nghĩa. Không nói `Lan maybe be at home` vì `maybe` không phải động từ tình thái đứng trước động từ. Cũng không nên chồng `maybe` và `may` thành `Maybe Lan may be at home` nếu chỉ muốn diễn đạt một khả năng đơn giản; cách kết hợp ấy có thể xuất hiện để dè dặt rất mạnh nhưng thường thừa trong tình huống A2.
 
-Khi lựa chọn, hãy làm theo ba bước: xác định đây là khả năng chứ không phải sự thật chắc chắn; đặt `may/might/could` trước động từ cơ bản; rồi dùng ngữ cảnh hoặc cụm thời gian để cho biết khả năng thuộc hiện tại hay tương lai. Không chọn modal bằng một bảng phần trăm cứng nhắc.
+Khi lựa chọn, hãy làm theo ba bước: xác định đây là khả năng chứ không phải sự thật chắc chắn; đặt `may/might/could` trước động từ cơ bản; rồi dùng ngữ cảnh hoặc cụm thời gian để cho biết khả năng thuộc hiện tại hay tương lai. Không chọn động từ tình thái bằng một bảng phần trăm cứng nhắc.
 
 ## Ghi nhớ
 
 - `may/might/could + động từ cơ bản` nói một khả năng chưa chắc chắn.
 - Ba từ thường gần nghĩa; đừng gán cho chúng các tỷ lệ chắc chắn cứng nhắc.
 - `may not/might not` nghĩa là “có thể không”.
-- Thời gian hiện tại hay tương lai đến từ ngữ cảnh, không phải sự biến đổi của modal.
+- Khi đoán một sự việc cụ thể, dùng `may/might/could`, không dùng `can`; `can` chỉ nói điều có lúc xảy ra nói chung.
+- Thời gian hiện tại hay tương lai đến từ ngữ cảnh, không phải sự biến đổi của động từ tình thái.

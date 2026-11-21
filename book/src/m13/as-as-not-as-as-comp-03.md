@@ -58,7 +58,7 @@ Một số mẫu thông dụng:
 
 Nếu `The bus isn't as fast as the train`, ta có thể nhìn cùng tình huống từ phía tàu và nói `The train is faster than the bus`. Hai câu cùng cho biết tàu nhanh hơn, nhưng câu đầu nhấn xe buýt không đạt tốc độ của tàu.
 
-Với câu ngang bằng, trật tự hai bên có thể đổi khi quan hệ thật sự bằng nhau: `Lan is as tall as Mai` và `Mai is as tall as Lan`. Tuy nhiên, trong ngữ cảnh, người nói thường đặt đối tượng đang được bàn đến ở trước.
+Với câu ngang bằng, trật tự hai bên có thể đổi khi quan hệ thật sự bằng nhau: `Lan is as tall as Mai` (Lan cao bằng Mai) và `Mai is as tall as Lan` (Mai cao bằng Lan). Tuy nhiên, trong ngữ cảnh, người nói thường đặt đối tượng đang được bàn đến ở trước.
 
 Đừng bỏ từ `as` thứ hai. `As tall as` là một khung hoàn chỉnh; `Lan is as tall Mai` thiếu phần nối đối tượng so sánh.
 
@@ -70,7 +70,7 @@ Trước khi viết, hãy xác định người nói muốn nói **bằng nhau**
 2. Nếu bên thứ nhất thấp hơn, có thể dùng `not as ... as`: `The red box isn't as heavy as the blue box` — “Hộp đỏ không nặng bằng hộp xanh”.
 3. Nếu muốn đặt bên cao hơn ở đầu câu, đổi sang so sánh hơn: `The blue box is heavier than the red box` — “Hộp xanh nặng hơn hộp đỏ”.
 
-Hai câu ở bước 2 và 3 mô tả cùng một sự thật nhưng chọn điểm nhìn khác nhau. Không ghép hai khung thành `more heavier` hoặc `as heavier as`: khi đã chọn khung `as ... as`, từ ở giữa phải giữ dạng gốc.
+Hai câu ở bước 2 và 3 mô tả cùng một sự thật nhưng chọn điểm nhìn khác nhau. Không ghép khung `as ... as` với so sánh hơn thành `as heavier as`: khi đã chọn khung `as ... as`, từ ở giữa phải giữ dạng gốc. Và như ở [bài so sánh hơn](so-sanh-hon-dang-ngan-dai-va-bat-quy-tac-comp-01.md), cũng không nói `more heavier`.
 
 ## Ghi nhớ
 

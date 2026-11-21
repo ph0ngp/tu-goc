@@ -32,7 +32,7 @@ Không dùng dấu chấm phẩy giữa mệnh đề phụ và mệnh đề chí
 
 ## Dấu chấm phẩy với trạng từ liên kết
 
-Các từ như `however`, `therefore`, `nevertheless`, `consequently`, `moreover` không tự nối hai câu chỉ bằng dấu phẩy:
+Các từ như `however` (tuy nhiên), `therefore` (vì vậy), `nevertheless` (dù vậy), `consequently` (do đó), `moreover` (hơn nữa) không tự nối hai câu chỉ bằng dấu phẩy:
 
 - `The road was flooded; therefore, we turned back.` — Con đường bị ngập; vì vậy, chúng tôi quay lại.
 - `The task was difficult; however, the team finished it.` — Nhiệm vụ khó; tuy nhiên, cả nhóm đã hoàn thành.
@@ -43,7 +43,7 @@ Có thể dùng dấu chấm thay dấu chấm phẩy. Sau **trạng từ liên 
 
 Khi mỗi mục đã chứa dấu phẩy, dấu chấm phẩy giúp nhìn ranh giới:
 
-`The speakers came from Hanoi, Vietnam; Seoul, South Korea; and Tokyo, Japan.`
+`The speakers came from Hanoi, Vietnam; Seoul, South Korea; and Tokyo, Japan.` — Các diễn giả đến từ Hà Nội, Việt Nam; Seoul, Hàn Quốc; và Tokyo, Nhật Bản.
 
 Nếu danh sách đơn giản, dấu phẩy là đủ; dấu chấm phẩy không làm câu “trang trọng hơn” một cách tự động.
 
@@ -51,13 +51,15 @@ Nếu danh sách đơn giản, dấu phẩy là đủ; dấu chấm phẩy khôn
 
 Dấu gạch ngang dài (—) có thể:
 
-- tạo một ngắt mạnh: `The answer—if we can find it—will change the plan.`
-- đưa ra phần kết gây nhấn: `Only one person knew the truth—Lan.`
-- báo một sự chuyển hướng: `I was going to call—but then the power went out.`
+- tạo một ngắt mạnh: `The answer—if we can find it—will change the plan.` — Câu trả lời, nếu ta tìm được, sẽ làm thay đổi kế hoạch;
+- đưa ra phần kết gây nhấn: `Only one person knew the truth—Lan.` — Chỉ một người biết sự thật, đó là Lan;
+- báo một sự chuyển hướng: `I was going to call—but then the power went out.` — Tôi đã định gọi, nhưng rồi mất điện.
 
 Một cặp dấu gạch ngang dài có thể thay ngoặc hoặc dấu phẩy để phần chen nổi bật hơn. Một dấu gạch ngang đơn thường tạo điểm ngoặt hoặc phần bổ sung mạnh.
 
 ## Gạch ngang dài so với dấu hai chấm và ngoặc
+
+Ba câu sau cùng nghĩa “Cô ấy cần một thứ: thời gian”; chúng chỉ khác dấu câu:
 
 - `She needed one thing: time.` — dấu hai chấm trình bày lời giải thích hoặc kết luận có cấu trúc.
 - `She needed one thing—time.` — dấu gạch ngang dài tạo nhấn mạnh mạnh, gần giọng nói.

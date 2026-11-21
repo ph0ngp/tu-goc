@@ -13,7 +13,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
       ["Mốc bắt đầu `Monday` cần từ nào trong `We have been working ___ Monday`?", ["since", "for", "during"], "since", "`Since` đứng trước mốc bắt đầu cụ thể."],
       ["Khoảng thời gian `three weeks` cần từ nào?", ["for", "since", "from"], "for", "`For` đứng trước độ dài thời gian."],
       ["Tay Nam dính sơn; câu nào giải thích dấu hiệu hiện tại tự nhiên nhất?", ["Nam has been painting.", "Nam painted the wall last month.", "Nam paints houses for a living."], "Nam has been painting.", "Hoạt động vừa diễn ra giải thích vết sơn ở hiện tại."],
-      ["Với trạng thái `know`, câu nào đúng?", ["I have known her for years.", "I have been knowing her for years."], "I have known her for years.", "`Know` thường không dùng ở dạng tiếp diễn trong nghĩa trạng thái."],
+      ["Với trạng thái `know`, câu nào đúng?", ["I have known her for years.", "I have been knowing her for years."], "I have known her for years.", "`Know` ở đây là động từ trạng thái (quen biết), và trạng thái kéo dài từ quá khứ đến nay thường dùng hiện tại hoàn thành đơn."],
       ["Câu hỏi nào đúng về độ dài hoạt động?", ["How long have you been waiting?", "How long you have been waiting?", "How long have been you waiting?"], "How long have you been waiting?", "Câu hỏi đưa `have` lên trước chủ ngữ rồi giữ `been + V-ing`."],
       ["Phủ định nào đúng với chủ ngữ `she`?", ["She hasn't been sleeping well.", "She doesn't been sleeping well.", "She hasn't be sleeping well."], "She hasn't been sleeping well.", "Phủ định đặt `not` sau `has` và giữ `been`."],
       ["Câu nào chỉ xu hướng gần đây thay vì một thói quen lâu dài?", ["I've been working from home lately.", "I work from home every Monday."], "I've been working from home lately.", "`Lately` cùng dạng hoàn thành tiếp diễn hướng tới khoảng gần hiện tại."],
@@ -39,11 +39,11 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     pairs: [{ left: "since 2021", right: "mốc bắt đầu" }, { left: "for two hours", right: "độ dài" }, { left: "lately", right: "khoảng gần hiện tại" }, { left: "all morning", right: "suốt trọn một buổi" }],
     sortPrompt: "Phân loại câu theo hoạt động còn tiếp tục hoặc hoạt động vừa dừng để lại dấu hiệu.", buckets: ["Còn tiếp tục", "Vừa dừng, còn dấu hiệu"],
     items: [{ text: "I've been living here since May.", bucket: "Còn tiếp tục" }, { text: "She's been studying for three hours.", bucket: "Còn tiếp tục" }, { text: "Your shoes are muddy. Have you been walking in the rain?", bucket: "Vừa dừng, còn dấu hiệu" }, { text: "The kitchen smells wonderful. Dad has been cooking.", bucket: "Vừa dừng, còn dấu hiệu" }],
-    gridPrompts: ["Chọn `have` hoặc `has` cho từng chủ ngữ.", "Chọn `since` hoặc `for` theo cụm thời gian.", "Chọn dạng hoàn thành phù hợp với loại động từ."],
+    gridPrompts: ["Chọn `have` hoặc `has` cho từng chủ ngữ.", "Chọn `since` hoặc `for` theo cụm thời gian.", "Ở mỗi hàng, chọn dạng động từ đúng cho câu."],
     gridRows: [
       { cue: "I ___ been working.", options: ["have", "has"], answer: "have", completed: "I have been working." }, { cue: "Lan ___ been waiting.", options: ["has", "have"], answer: "has", completed: "Lan has been waiting." }, { cue: "The children ___ been playing.", options: ["have", "has"], answer: "have", completed: "The children have been playing." },
       { cue: "___ last Friday", options: ["since", "for"], answer: "since", completed: "since last Friday" }, { cue: "___ six months", options: ["for", "since"], answer: "for", completed: "for six months" }, { cue: "___ breakfast", options: ["since", "for"], answer: "since", completed: "since breakfast" },
-      { cue: "I ___ her for years.", options: ["have known", "have been knowing"], answer: "have known", completed: "I have known her for years." }, { cue: "They ___ the garden all day.", options: ["have been digging", "have dug three holes"], answer: "have been digging", completed: "They have been digging the garden all day." }, { cue: "She ___ five reports today.", options: ["has written", "has been writing five reports"], answer: "has written", completed: "She has written five reports today." },
+      { cue: "I ___ her for years.", options: ["have known", "have been knowing"], answer: "have known", completed: "I have known her for years." }, { cue: "They ___ the garden since nine o'clock.", options: ["have been digging", "are digging"], answer: "have been digging", completed: "They have been digging the garden since nine o'clock." }, { cue: "She ___ glasses since she was ten.", options: ["has needed", "has been needing"], answer: "has needed", completed: "She has needed glasses since she was ten." },
     ],
   }),
   "b1-perfect-simple-vs-continuous": a2PracticeSet({
@@ -82,8 +82,8 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     items: [{ text: "five times", bucket: "Kết quả/số lượng" }, { text: "three reports", bucket: "Kết quả/số lượng" }, { text: "all afternoon", bucket: "Quá trình/độ dài" }, { text: "since breakfast", bucket: "Quá trình/độ dài" }],
     gridPrompts: ["Chọn dạng theo kết quả hoặc quá trình.", "Chọn dạng phù hợp với động từ trạng thái.", "Chọn câu hỏi theo thông tin cần biết."],
     gridRows: [
-      { cue: "The room is clean. I ___ it.", options: ["have cleaned", "have been cleaning"], answer: "have cleaned", completed: "The room is clean. I have cleaned it." }, { cue: "My clothes are dusty. I ___ the attic.", options: ["have been cleaning", "have cleaned twice"], answer: "have been cleaning", completed: "My clothes are dusty. I have been cleaning the attic." }, { cue: "She ___ six customers today.", options: ["has helped", "has been helping six customers"], answer: "has helped", completed: "She has helped six customers today." },
-      { cue: "I ___ him since school.", options: ["have known", "have been knowing"], answer: "have known", completed: "I have known him since school." }, { cue: "We ___ this house for a decade.", options: ["have owned", "have been owning"], answer: "have owned", completed: "We have owned this house for a decade." }, { cue: "She ___ about the offer all morning.", options: ["has been thinking", "has thought three offers"], answer: "has been thinking", completed: "She has been thinking about the offer all morning." },
+      { cue: "The room is clean. I ___ it.", options: ["have cleaned", "have been cleaning"], answer: "have cleaned", completed: "The room is clean. I have cleaned it." }, { cue: "My clothes are dusty. I ___ the attic all morning.", options: ["have been cleaning", "have cleaned"], answer: "have been cleaning", completed: "My clothes are dusty. I have been cleaning the attic all morning." }, { cue: "She ___ six customers today.", options: ["has helped", "has been helping"], answer: "has helped", completed: "She has helped six customers today." },
+      { cue: "I ___ him since school.", options: ["have known", "have been knowing"], answer: "have known", completed: "I have known him since school." }, { cue: "We ___ this house for a decade.", options: ["have owned", "have been owning"], answer: "have owned", completed: "We have owned this house for a decade." }, { cue: "We ___ a bigger car since the twins were born.", options: ["have needed", "have been needing"], answer: "have needed", completed: "We have needed a bigger car since the twins were born." },
       { cue: "___ books have you finished?", options: ["How many", "How long"], answer: "How many", completed: "How many books have you finished?" }, { cue: "___ have they been waiting?", options: ["How long", "How many"], answer: "How long", completed: "How long have they been waiting?" }, { cue: "___ times has it happened?", options: ["How many", "How long"], answer: "How many", completed: "How many times has it happened?" },
     ],
   }),
@@ -95,7 +95,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
       ["Cụm nào hoàn thành `By noon, they ___ the work`?", ["had finished", "have finished", "were finish"], "had finished", "`By noon` đặt mốc quá khứ mà việc đã hoàn tất trước đó."],
       ["Câu nào cho thấy việc mất chìa khóa xảy ra trước lúc tôi không thể vào nhà?", ["I couldn't enter because I had lost the key.", "I couldn't enter because I was losing the key."], "I couldn't enter because I had lost the key.", "Mất chìa khóa xảy ra trước việc không thể vào."],
       ["Khi chuỗi hành động đã kể đúng thứ tự, câu nào tự nhiên mà không cần quá khứ hoàn thành?", ["I closed the shop, went home and cooked dinner.", "I had closed the shop, had gone home and had cooked dinner."], "I closed the shop, went home and cooked dinner.", "Chuỗi sự kiện chính nối tiếp thường dùng quá khứ đơn."],
-      ["Câu hỏi quá khứ hoàn thành nào đúng?", ["Had the guests left before midnight?", "Did the guests had left before midnight?"], "Had the guests left before midnight?", "Đưa `had` lên trước chủ ngữ; không thêm `did`."],
+      ["Câu hỏi quá khứ hoàn thành nào đúng?", ["Had the guests left before midnight?", "Did the guests had left before midnight?"], "Had the guests left before midnight?", "Câu hỏi quá khứ hoàn thành chỉ đảo trợ động từ vốn có của thì lên trước chủ ngữ; không mượn thêm một trợ động từ khác."],
       ["Phủ định nào đúng?", ["He hadn't seen snow before that trip.", "He didn't had seen snow before that trip."], "He hadn't seen snow before that trip.", "Phủ định dùng `had not + past participle`."],
       ["Câu nào nhìn từ hiện tại thay vì một mốc quá khứ?", ["I have lost my key.", "I had lost my key before I reached home."], "I have lost my key.", "Hiện tại hoàn thành nối sự việc mất chìa khóa với hiện tại."],
       ["Sau `after`, hai quá khứ đơn có thể đúng khi nào?", ["Khi từ nối đã làm thứ tự rõ và không cần nhấn mạnh việc sớm hơn", "Không bao giờ", "Chỉ khi hai việc đồng thời"], "Khi từ nối đã làm thứ tự rõ và không cần nhấn mạnh việc sớm hơn", "`After` có thể tự làm rõ trình tự nên quá khứ đơn vẫn đúng."],
@@ -137,10 +137,10 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
       ["Hai hoạt động nền đồng thời được diễn tả tự nhiên bằng câu nào?", ["While I was cooking, Nam was setting the table.", "While I cooked, Nam had set the table."], "While I was cooking, Nam was setting the table.", "Hai quá trình cùng diễn ra có thể đều dùng quá khứ tiếp diễn."],
       ["Chuỗi nào kể ba bước chính rõ nhất?", ["Lan opened the door, looked outside and called Minh.", "Lan was opening the door, had looked outside and calls Minh."], "Lan opened the door, looked outside and called Minh.", "Chuỗi sự kiện chính nối tiếp dùng quá khứ đơn nhất quán."],
       ["Khi đã thiết lập việc xảy ra sớm hơn, có cần giữ quá khứ hoàn thành mãi không?", ["Không; có thể quay lại quá khứ đơn cho trục kể chính", "Có; mọi câu sau đều phải có `had`"], "Không; có thể quay lại quá khứ đơn cho trục kể chính", "Quá khứ hoàn thành chủ yếu đánh dấu bước lùi thời gian."],
-      ["Câu nào dùng `when` cho sự kiện ngắn xen vào hoạt động nền?", ["We were sleeping when the alarm rang.", "We slept when the alarm was ringing."], "We were sleeping when the alarm rang.", "`Were sleeping` là nền; `rang` là sự kiện ngắn."],
+      ["Câu nào dùng `when` cho sự kiện ngắn xen vào hoạt động nền?", ["We were sleeping when the alarm rang.", "We slept when the alarm was ringing."], "We were sleeping when the alarm rang.", "Hoạt động nền đang diễn ra dùng quá khứ tiếp diễn; sự kiện ngắn xen vào dùng quá khứ đơn."],
       ["Trong kể chuyện, độ dài hành động có tự quyết định thì không?", ["Không; vai trò bối cảnh hay sự kiện chính quan trọng hơn", "Có; mọi hành động dài đều phải tiếp diễn"], "Không; vai trò bối cảnh hay sự kiện chính quan trọng hơn", "Người kể chọn góc nhìn, không chỉ đo độ dài thực tế."],
       ["Câu nào mở bối cảnh thời tiết tự nhiên?", ["It was getting dark and the wind was blowing.", "It had got dark and the wind blew once."], "It was getting dark and the wind was blowing.", "Hai dạng tiếp diễn dựng khung cảnh đang phát triển."],
-      ["Câu nào dùng quá khứ hoàn thành không cần thiết hơn?", ["I had stood up, had opened the door and had walked out.", "I stood up, opened the door and walked out."], "I had stood up, had opened the door and had walked out.", "Chuỗi chính đúng thứ tự không cần đánh dấu mọi bước bằng quá khứ hoàn thành."],
+      ["Câu nào lạm dụng quá khứ hoàn thành?", ["I had stood up, had opened the door and had walked out.", "I stood up, opened the door and walked out."], "I had stood up, had opened the door and had walked out.", "Chuỗi chính đúng thứ tự không cần đánh dấu mọi bước bằng quá khứ hoàn thành."],
       ["Câu nào cho thấy phòng đã trống vì mọi người về trước?", ["The room was empty because everyone had gone home.", "The room was empty because everyone was going home."], "The room was empty because everyone had gone home.", "Nguyên nhân `had gone` xảy ra trước trạng thái quá khứ `was empty`."],
     ],
     orders: [
@@ -176,8 +176,8 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
       ["Câu nào nói trạng thái cũ nay đã khác?", ["Mai used to have long hair.", "Mai would have long hair."], "Mai used to have long hair.", "`Used to` dùng được với trạng thái sở hữu cũ."],
       ["Câu nào dùng `would` tự nhiên cho hành động lặp lại?", ["Every summer, Grandfather would tell us stories.", "Grandfather would know French in 1990."], "Every summer, Grandfather would tell us stories.", "`Would` phù hợp với hành động lặp lại khi bối cảnh đã rõ."],
       ["Động từ trạng thái nào thường không đi với `would` để nói thói quen cũ?", ["know", "visit", "play"], "know", "`Know` là trạng thái nên ưu tiên quá khứ đơn hoặc `used to`."],
-      ["Phủ định chuẩn của `used to` là gì?", ["didn't use to", "didn't used to", "wasn't use to"], "didn't use to", "Sau `didn't`, dùng dạng cơ bản `use`."],
-      ["Câu hỏi nào đúng?", ["Did you use to live here?", "Did you used to live here?"], "Did you use to live here?", "Sau `did`, dùng `use to`."],
+      ["Phủ định chuẩn của `used to` là gì?", ["didn't use to", "didn't used to", "wasn't use to"], "didn't use to", "Phủ định của `used to` mượn trợ động từ `did`, và trong văn viết chuẩn, động từ đứng sau `didn't` trở về dạng cơ bản. Một cách viết khác trong các phương án có gặp trong văn bản thực tế nhưng không được khuyên dùng."],
+      ["Câu hỏi nào viết theo dạng được khuyên dùng trong văn viết chuẩn?", ["Did you use to live here?", "Did you used to live here?"], "Did you use to live here?", "Trong văn viết chuẩn, `did` đã mang dấu hiệu quá khứ nên động từ đứng sau chủ ngữ trở về dạng cơ bản. Cách viết còn lại có gặp trong văn bản thực tế nhưng không được khuyên dùng."],
       ["Câu nào dùng `would` đúng để nói thói quen trong quá khứ?", ["When we were children, we would swim here.", "When we were children, we would live in Hue."], "When we were children, we would swim here.", "`Would` chỉ dùng cho hành động lặp lại trong một bối cảnh quá khứ đã rõ; trạng thái như sống ở đâu dùng `used to`."],
       ["Câu nào dùng quá khứ đơn cho thói quen và vẫn đúng?", ["We walked to school every day.", "We had walk to school every day."], "We walked to school every day.", "Quá khứ đơn dùng được cho thói quen trong giai đoạn đã kết thúc."],
       ["`Used to` thường gợi ý điều gì?", ["Hiện tại đã khác", "Hành động chắc chắn đang diễn ra", "Sự việc chỉ xảy ra ngày mai"], "Hiện tại đã khác", "Cấu trúc thường đặt thói quen hoặc trạng thái trong quá khứ đối lập hiện tại."],
@@ -191,9 +191,9 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
       ["Sắp xếp câu phủ định về sở thích cũ.", "I did not use to like coffee.", "`Did not use to` phủ định trạng thái cũ."],
     ],
     repairs: [
-      ["Chọn dạng đúng sau `didn't` trong `She didn't used to drive`.", "She didn't used to drive.", "used", ["use", "using", "uses"], "use", "Sau `didn't`, động từ trở về dạng cơ bản."],
+      ["Chọn dạng chuẩn trong văn viết sau `didn't` trong `She didn't used to drive`.", "She didn't used to drive.", "used", ["use", "using", "uses"], "use", "Trong văn viết chuẩn, sau `didn't` động từ trở về dạng cơ bản. Cách viết `didn't used to` có gặp trong thực tế nhưng không được khuyên dùng."],
       ["Chọn cấu trúc phù hợp với trạng thái cũ trong `We would know everyone in the village`.", "We would know everyone in the village.", "would", ["used to", "were", "have"], "used to", "`Know` là trạng thái, nên `used to know` phù hợp hơn."],
-      ["Chọn dạng nói một lần cụ thể trong `I call Lan last night`.", "I call Lan last night.", "call", ["called", "would call", "used"], "called", "Mốc một lần `last night` cần quá khứ đơn `called`."],
+      ["Chọn dạng nói một lần cụ thể trong `I call Lan last night`.", "I call Lan last night.", "call", ["called", "would call", "used to call"], "called", "Mốc một lần `last night` cần quá khứ đơn `called`."],
     ],
     taps: [
       ["Trong `When we were young, Dad would cook on Sundays`, chọn dấu hiệu thiết lập bối cảnh quá khứ.", "When we were young, Dad would cook on Sundays.", ["When", "we", "were", "young"], "Mệnh đề đầu đặt thói quen `would cook` vào quá khứ."],
@@ -203,10 +203,10 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     pairs: [{ left: "quá khứ đơn", right: "sự kiện riêng hoặc thói quen đã kết thúc" }, { left: "used to", right: "hành động hoặc trạng thái cũ" }, { left: "would", right: "hành động lặp lại sau bối cảnh quá khứ" }, { left: "be used to", right: "đã quen với điều gì" }],
     sortPrompt: "Phân loại ví dụ theo hành động lặp lại hoặc trạng thái cũ.", buckets: ["Hành động lặp lại", "Trạng thái cũ"],
     items: [{ text: "play outside every evening", bucket: "Hành động lặp lại" }, { text: "visit our aunt each summer", bucket: "Hành động lặp lại" }, { text: "know all the neighbours", bucket: "Trạng thái cũ" }, { text: "have a small shop", bucket: "Trạng thái cũ" }],
-    gridPrompts: ["Chọn dạng phù hợp với một lần, thói quen hoặc trạng thái.", "Chọn hình thức `used to` đúng.", "Chọn câu tự nhiên; `would` chỉ hợp với hành động lặp lại."],
+    gridPrompts: ["Chọn dạng phù hợp với một lần, thói quen hoặc trạng thái.", "Chọn hình thức `used to` chuẩn trong văn viết.", "Ở mỗi hàng, chọn câu tự nhiên với nội dung được nêu."],
     gridRows: [
       { cue: "Một lần hôm qua", options: ["I visited Lan yesterday.", "I used to visit Lan yesterday."], answer: "I visited Lan yesterday.", completed: "I visited Lan yesterday." }, { cue: "Trạng thái cũ", options: ["I used to be shy.", "I would be shy."], answer: "I used to be shy.", completed: "I used to be shy." }, { cue: "Thói quen cũ", options: ["We played outside every day.", "We play outside every day."], answer: "We played outside every day.", completed: "We played outside every day." },
-      { cue: "Phủ định", options: ["didn't use to", "didn't used to"], answer: "didn't use to", completed: "didn't use to" }, { cue: "Câu hỏi", options: ["Did she use to...?", "Did she used to...?"], answer: "Did she use to...?", completed: "Did she use to...?" }, { cue: "Khẳng định", options: ["used to live", "use to lived"], answer: "used to live", completed: "used to live" },
+      { cue: "Phủ định", options: ["didn't use to", "didn't used to"], answer: "didn't use to", completed: "didn't use to" }, { cue: "Câu hỏi", options: ["Did she use to...?", "Did she used to...?"], answer: "Did she use to...?", completed: "Did she use to...?" }, { cue: "Khẳng định", options: ["used to live", "use to live"], answer: "used to live", completed: "used to live" },
       { cue: "Bối cảnh đã rõ", options: ["Every evening, she would read to us.", "She would own two houses."], answer: "Every evening, she would read to us.", completed: "Every evening, she would read to us." }, { cue: "Hành động lặp lại", options: ["On Sundays, we would bake bread.", "We would know the answer for years."], answer: "On Sundays, we would bake bread.", completed: "On Sundays, we would bake bread." }, { cue: "Trạng thái", options: ["He used to believe that story.", "He would believe that story."], answer: "He used to believe that story.", completed: "He used to believe that story." },
     ],
   }),
@@ -215,7 +215,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     choices: [
       ["Câu nào nói hoạt động đang diễn ra lúc 8 giờ tối mai?", ["At 8 tomorrow, I will be studying.", "At 8 tomorrow, I will study."], "At 8 tomorrow, I will be studying.", "`Will be + V-ing` đặt hoạt động vào giữa quá trình tương lai."],
       ["Cấu trúc tương lai tiếp diễn đúng là gì?", ["will be + V-ing", "will being + V", "be will + V-ing"], "will be + V-ing", "Sau `will` dùng `be`, rồi động từ thêm `-ing`."],
-      ["Câu nào hỏi kế hoạch dùng xe một cách nhẹ nhàng?", ["Will you be using the car tonight?", "Will you use the car for me now!"], "Will you be using the car tonight?", "Tương lai tiếp diễn có thể hỏi kế hoạch mà chưa trực tiếp yêu cầu."],
+      ["Câu nào chỉ hỏi tối nay người nghe có định dùng xe không, chưa nhờ cho mượn xe?", ["Will you be using the car tonight?", "Will you lend me the car tonight?"], "Will you be using the car tonight?", "Tương lai tiếp diễn hỏi việc đã nằm trong kế hoạch của người nghe; câu còn lại là một lời nhờ trực tiếp."],
       ["Sau `when` chỉ mốc tương lai, câu nào đúng?", ["When you arrive, I'll be waiting.", "When you will arrive, I'll be waiting."], "When you arrive, I'll be waiting.", "Mệnh đề thời gian tương lai dùng hiện tại đơn."],
       ["Câu nào nhấn kết quả hoàn thành báo cáo?", ["I'll finish the report tonight.", "I'll be working on the report tonight."], "I'll finish the report tonight.", "`Will finish` nhìn vào kết quả; tiếp diễn nhìn vào quá trình."],
       ["Câu nào nhìn vào quá trình làm báo cáo tối nay?", ["I'll be working on the report tonight.", "I'll finish the report tonight."], "I'll be working on the report tonight.", "Dạng tiếp diễn đặt người nói trong hoạt động tương lai."],
@@ -244,7 +244,7 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
     pairs: [{ left: "I'll finish at six.", right: "kết quả hoàn tất" }, { left: "I'll be working at six.", right: "quá trình tại mốc tương lai" }, { left: "Will you be using the printer?", right: "hỏi kế hoạch nhẹ nhàng" }, { left: "The train will be stopping at Oxford.", right: "tiến trình/lịch dự kiến" }],
     sortPrompt: "Phân loại dấu hiệu theo việc chúng tạo mốc hay mô tả quá trình tương lai.", buckets: ["Mốc tương lai", "Quá trình tương lai"],
     items: [{ text: "at this time tomorrow", bucket: "Mốc tương lai" }, { text: "when you arrive", bucket: "Mốc tương lai" }, { text: "will be waiting", bucket: "Quá trình tương lai" }, { text: "will be travelling", bucket: "Quá trình tương lai" }],
-    gridPrompts: ["Chọn cấu trúc tương lai tiếp diễn.", "Chọn hiện tại đơn trong mệnh đề thời gian.", "Phân biệt kết quả và quá trình."],
+    gridPrompts: ["Chọn cấu trúc tương lai tiếp diễn.", "Chọn dạng động từ đúng cho mệnh đề thời gian ở mỗi hàng.", "Phân biệt kết quả và quá trình."],
     gridRows: [
       { cue: "At nine, she ___ working.", options: ["will be", "will being"], answer: "will be", completed: "At nine, she will be working." }, { cue: "They ___ flying all night.", options: ["will be", "are will"], answer: "will be", completed: "They will be flying all night." }, { cue: "___ you be staying here?", options: ["Will", "Do will"], answer: "Will", completed: "Will you be staying here?" },
       { cue: "When he ___, we'll be eating.", options: ["arrives", "will arrive"], answer: "arrives", completed: "When he arrives, we'll be eating." }, { cue: "While you ___ away, I'll water the plants.", options: ["are", "will be"], answer: "are", completed: "While you are away, I'll water the plants." }, { cue: "Before she ___, we'll be waiting outside.", options: ["comes", "will come"], answer: "comes", completed: "Before she comes, we'll be waiting outside." },
@@ -254,6 +254,38 @@ const b1Chapter20BaseExerciseData: Record<string, Exercise[]> = {
 };
 
 const b1Chapter20DepthExerciseData: Partial<Record<string, Exercise[]>> = {
+  "b1-present-perfect-continuous": b1DepthPack("b1ppx", "hiện tại hoàn thành tiếp diễn và các thì gần nó", [
+    { cue: "Việc chờ bắt đầu từ chín giờ và vẫn đang tiếp tục.", options: ["We have been waiting since nine.", "We are waiting since nine."], answer: "We have been waiting since nine.", completed: "We have been waiting since nine." },
+    { cue: "Chỉ nói việc đang diễn ra ngay lúc nói, không nhìn về điểm bắt đầu.", options: ["Minh is cooking dinner right now.", "Minh has been cooking dinner right now."], answer: "Minh is cooking dinner right now.", completed: "Minh is cooking dinner right now." },
+    { cue: "Giải thích vì sao mắt cô ấy đỏ: cô ấy vừa khóc.", options: ["Her eyes are red because she has been crying.", "Her eyes are red because she cries."], answer: "Her eyes are red because she has been crying.", completed: "Her eyes are red because she has been crying." },
+  ], [
+    ["Sắp xếp câu hỏi xem người nghe đã học tiếng Anh được bao lâu.", "How long have you been learning English?", "Câu hỏi về độ dài đặt `have` trước chủ ngữ rồi giữ `been + V-ing`."],
+    ["Sắp xếp câu giải thích vì sao Nam đang mệt.", "Nam is tired because he has been running.", "Hoạt động vừa diễn ra giải thích trạng thái mệt ở hiện tại."],
+  ]),
+  "b1-past-perfect": b1DepthPack("b1pax", "thứ tự hai sự việc quá khứ", [
+    { cue: "Lan đã đi trước, rồi tôi mới đến.", options: ["When I arrived, Lan had left.", "When I arrived, Lan left."], answer: "When I arrived, Lan had left.", completed: "When I arrived, Lan had left." },
+    { cue: "Khách đến rồi chúng tôi mới dọn bữa tối.", options: ["When the guests came, we served dinner.", "When the guests came, we had served dinner."], answer: "When the guests came, we served dinner.", completed: "When the guests came, we served dinner." },
+    { cue: "Nhìn từ hiện tại: bộ phim vừa kết thúc và mọi người đang ra về.", options: ["The film has just finished.", "The film had just finished."], answer: "The film has just finished.", completed: "The film has just finished." },
+  ], [
+    ["Sắp xếp câu nói tôi đến thì Lan đã đi mất rồi.", "Lan had already left when I arrived.", "`Had already left` cho thấy việc Lan đi đã xong trước lúc tôi đến.", ["I arrived when Lan had already left."]],
+    ["Sắp xếp câu giải thích vì sao Mai không đói ở bữa tiệc.", "Mai wasn't hungry because she had eaten at home.", "Việc ăn ở nhà xảy ra trước trạng thái không đói ở bữa tiệc."],
+  ]),
+  "b1-past-habits": b1DepthPack("b1phx", "quá khứ đơn, used to và would", [
+    { cue: "Một lần cụ thể vào tuần trước.", options: ["We went to the beach last week.", "We used to go to the beach last week."], answer: "We went to the beach last week.", completed: "We went to the beach last week." },
+    { cue: "Trạng thái cũ, nay đã khác: trước đây ngôi nhà này là một cửa hàng.", options: ["This house used to be a shop.", "This house would be a shop."], answer: "This house used to be a shop.", completed: "This house used to be a shop." },
+    { cue: "Hiện nay đã quen với việc dậy sớm.", options: ["I am used to getting up early.", "I used to get up early."], answer: "I am used to getting up early.", completed: "I am used to getting up early." },
+  ], [
+    ["Sắp xếp câu nói trước đây ở góc phố từng có một tiệm sách.", "There used to be a bookshop on the corner.", "`There used to be` nói một thứ từng tồn tại nhưng nay có thể không còn."],
+    ["Sắp xếp câu kể thói quen lặp lại của ông trong những buổi tối mùa hè.", "On summer evenings, Grandfather would tell us stories.", "Bối cảnh lặp lại đứng trước, rồi `would + V` kể hành động lặp lại."],
+  ]),
+  "b1-future-continuous": b1DepthPack("b1fcx", "tương lai tiếp diễn", [
+    { cue: "Chỉ hỏi kế hoạch của người nghe, chưa nhờ việc gì.", options: ["Will you be going to the bank today?", "Will you go to the bank for me today?"], answer: "Will you be going to the bank today?", completed: "Will you be going to the bank today?" },
+    { cue: "Hoạt động đang diễn ra tại một mốc tương lai cụ thể.", options: ["At midnight, we will be driving home.", "At midnight, we will drive home."], answer: "At midnight, we will be driving home.", completed: "At midnight, we will be driving home." },
+    { cue: "Mệnh đề thời gian nói về tương lai sau `when`.", options: ["When the film ends, we'll be waiting outside.", "When the film will end, we'll be waiting outside."], answer: "When the film ends, we'll be waiting outside.", completed: "When the film ends, we'll be waiting outside." },
+  ], [
+    ["Sắp xếp câu nói giờ này tuần sau Lan sẽ đang nằm trên bãi biển.", "This time next week, Lan will be lying on the beach.", "Mốc tương lai đứng trước `will be + V-ing`."],
+    ["Sắp xếp câu hỏi xem tối nay người nghe có định ở nhà không.", "Will you be staying at home tonight?", "`Will you be + V-ing?` hỏi kế hoạch mà không gây áp lực."],
+  ]),
   "b1-perfect-simple-vs-continuous": b1DepthPack("b1pvx", "kết quả và quá trình", [
     { cue: "Căn bếp đã sạch hoàn toàn.", options: ["I've cleaned the kitchen.", "I've been cleaning the kitchen."], answer: "I've cleaned the kitchen.", completed: "I've cleaned the kitchen." },
     { cue: "Người nói chỉ giải thích vì sao quần áo đang bẩn.", options: ["I've been cleaning the kitchen.", "I've cleaned the whole kitchen."], answer: "I've been cleaning the kitchen.", completed: "I've been cleaning the kitchen." },

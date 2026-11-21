@@ -233,6 +233,18 @@
   padding: 5px 2px;
 }
 
+.practice-repair-target {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.practice-repair-target del {
+  text-decoration-thickness: 2px;
+  color: var(--book-muted);
+}
+
 .practice-hint {
   margin-top: 17px;
   color: var(--book-muted);

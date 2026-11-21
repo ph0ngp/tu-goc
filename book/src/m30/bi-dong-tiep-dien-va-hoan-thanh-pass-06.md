@@ -62,9 +62,9 @@ Chọn dạng theo cách nhìn thời gian, không phải theo riêng ý “bị
 ## Phủ định và câu hỏi
 
 - `The files haven't been copied yet.` — Các tệp vẫn chưa được sao chép.
-- `The machine wasn't being used at the time.` — Lúc đó máy không được sử dụng.
+- `The machine wasn't being used at the time.` — Lúc đó không ai đang dùng máy.
 - `Has the problem been fixed?` — Vấn đề đã được khắc phục chưa?
-- `Why was the meeting being recorded?` — Vì sao cuộc họp lúc đó được ghi âm?
+- `Why was the meeting being recorded?` — Vì sao lúc đó cuộc họp đang được ghi âm?
 
 `Not` đứng sau trợ động từ đầu tiên. Trong câu hỏi, đưa trợ động từ đầu tiên lên trước chủ ngữ; phần `being/been + past participle` giữ nguyên.
 

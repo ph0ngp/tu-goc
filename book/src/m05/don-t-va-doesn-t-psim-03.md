@@ -5,7 +5,7 @@ legacyLessonId: present-simple-negative
 ---
 # don't và doesn't
 
-Muốn phủ định một động từ thường ở hiện tại đơn, dùng trợ động từ `do/does` cùng `not`. Dạng viết tắt `don't` và `doesn't` được dùng rất thường xuyên.
+Muốn phủ định một động từ thường ở hiện tại đơn, dùng **trợ động từ** (*auxiliary verb*) `do/does` cùng `not`. Dạng viết tắt `don't` và `doesn't` được dùng rất thường xuyên.
 
 ## Chọn `don't` hay `doesn't`
 
@@ -14,7 +14,7 @@ Muốn phủ định một động từ thường ở hiện tại đơn, dùng 
 | `I`, `you`, `we`, `they` và số nhiều | `do not` / `don't` | `We don't eat meat.` — Chúng tôi không ăn thịt. |
 | `he`, `she`, `it` và số ít | `does not` / `doesn't` | `Lan doesn't eat meat.` — Lan không ăn thịt. |
 
-`Do/does` ở đây là **trợ động từ**: nó giúp tạo cấu trúc phủ định và không được dịch thành hành động “làm”.
+`Do/does` ở đây là trợ động từ: nó giúp tạo cấu trúc phủ định và không được dịch thành hành động “làm”.
 
 ```text
 Subject + don't/doesn't + base verb + ...
@@ -24,12 +24,12 @@ Subject + don't/doesn't + base verb + ...
 
 Trong `She works`, đuôi `-s` báo chủ ngữ ngôi thứ ba số ít. Khi có `doesn't`, dấu hiệu này đã nằm trong `does`, nên động từ chính không còn `-s`.
 
-| Khẳng định | Phủ định |
-| --- | --- |
-| `He plays football.` | `He doesn't play football.` |
-| `Mai watches TV.` | `Mai doesn't watch TV.` |
-| `The shop closes at six.` | `The shop doesn't close at six.` |
-| `She has a car.` | `She doesn't have a car.` |
+| Khẳng định | Phủ định | Nghĩa |
+| --- | --- | --- |
+| `He plays football.` | `He doesn't play football.` | Anh ấy (không) chơi bóng đá. |
+| `Mai watches TV.` | `Mai doesn't watch TV.` | Mai (không) xem TV. |
+| `The shop closes at six.` | `The shop doesn't close at six.` | Cửa hàng (không) đóng cửa lúc sáu giờ. |
+| `She has a car.` | `She doesn't have a car.` | Cô ấy (không) có ô tô. |
 
 Không nói `doesn't plays`, `doesn't watches` hoặc `doesn't has`.
 
@@ -40,7 +40,7 @@ Không nói `doesn't plays`, `doesn't watches` hoặc `doesn't has`.
 - `I do not agree.` — Tôi không đồng ý. (có thể mang sắc thái nhấn mạnh)
 - `I don't agree.` — Tôi không đồng ý.
 
-Ý nghĩa ngữ pháp cơ bản giống nhau.
+Ý nghĩa ngữ pháp cơ bản giống nhau. Dù viết đầy đủ hay viết tắt, động từ chính sau đó vẫn ở dạng cơ bản: `She does not work here` (Cô ấy không làm việc ở đây), không phải `works`.
 
 ## Phân biệt với phủ định của `be`
 
@@ -52,10 +52,6 @@ Không nói `doesn't plays`, `doesn't watches` hoặc `doesn't has`.
 | `They aren't at home.` — Họ không ở nhà. | `They don't live here.` — Họ không sống ở đây. |
 
 Không nói `She doesn't be tired` hoặc `They don't are at home`.
-
-## Dạng đầy đủ vẫn theo cùng quy tắc
-
-`Do not` và `does not` có thể được dùng thay cho dạng viết tắt mà không đổi dạng của động từ chính: `She does not work here`. Dù viết đầy đủ hay viết tắt, từ sau vẫn là `work`, không phải `works`.
 
 ## Đổi từ câu khẳng định sang phủ định từng bước
 

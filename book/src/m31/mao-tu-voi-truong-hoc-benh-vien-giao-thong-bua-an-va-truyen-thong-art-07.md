@@ -16,7 +16,7 @@ Một số danh từ địa điểm và hoạt động không dùng mạo từ k
 - `It's late; go to bed.` — Muộn rồi, đi ngủ đi.
 - `I left my phone on the bed.` — Tôi để điện thoại trên chiếc giường.
 
-`At school`, `in prison`, `in bed`, `at church` thường nói chức năng/trạng thái. Thêm `the` khi người/vật chỉ ở địa điểm ấy vì mục đích khác hoặc khi tòa nhà đã xác định.
+`At school` (đang đi học), `in prison` (đang ngồi tù), `in bed` (đang nằm trên giường, thường là để ngủ), `at church` (đang đi lễ ở nhà thờ) thường nói chức năng/trạng thái. Thêm `the` khi người/vật chỉ ở địa điểm ấy vì mục đích khác hoặc khi tòa nhà đã xác định.
 
 ## `Hospital`: khác biệt Anh–Anh và Anh–Mỹ
 
@@ -44,7 +44,7 @@ Không nói `by the bus` để chỉ phương thức đi lại thông thường.
 
 ## Bữa ăn
 
-Tên bữa ăn thường không có mạo từ khi nói hoạt động thường lệ:
+Tên bữa ăn thường không có mạo từ khi chỉ gọi tên bữa ăn như một hoạt động hay một thời điểm trong ngày, dù đó là thói quen hay chỉ một lần:
 
 - `Breakfast is at seven.` — Bữa sáng vào lúc bảy giờ.
 - `We had lunch together.` — Chúng tôi ăn trưa cùng nhau.

@@ -71,7 +71,7 @@ const b1Chapter29DepthExerciseData: Partial<Record<string, Exercise[]>> = {
     },
     {
       id: "b1snrx2", kind: "choice", prompt: "Có người hỏi `Will it rain during the picnic?`; bạn mong điều đó không xảy ra, câu đáp nào phù hợp?", options: ["I hope not.", "I don't hope so.", "I hope no."], answer: "I hope not.",
-      hint: "Sau `hope`, dạng phủ định rút gọn thường dùng `not`.",
+      hint: "Câu đáp rút gọn sau `hope` khác với sau `think`: phần phủ định không chuyển lên trước `hope`.",
       explanation: "`I hope not` thay cho “I hope it will not rain”. Với `hope`, dạng phủ định rút gọn tự nhiên là `hope not`.",
     },
     {

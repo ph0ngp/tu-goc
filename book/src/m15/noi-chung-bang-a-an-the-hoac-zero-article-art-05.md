@@ -25,6 +25,8 @@ Một danh từ đếm được số ít với `a/an` có thể đại diện ch
 
 Cách này thường xuất hiện trong định nghĩa hoặc phát biểu chung. Không dùng danh từ số ít trần: không nói `Dog needs exercise`.
 
+`A/an` chỉ dùng được khi điều nói ra đúng với **từng** thành viên: con chó nào cũng cần vận động, nên `A dog needs exercise` đúng. Khi nói về cả loài như **một nhóm** — số lượng, mức phổ biến, nguy cơ tuyệt chủng — thì không dùng `a/an`, vì không thể nói một con hổ riêng lẻ “sắp tuyệt chủng”. Khi ấy, dùng số nhiều: `Tigers are in danger.` — Loài hổ đang gặp nguy hiểm.
+
 ## `The` để nói cả một loài hoặc phát minh
 
 Trong văn phong trang trọng hơn, `the + danh từ số ít` có thể chỉ cả một loài, một loại nhạc cụ hoặc phát minh:
@@ -47,17 +49,15 @@ Sau `be`, một nghề nghiệp đếm được số ít cần `a/an`: `Lan is a
 
 ## Một danh từ có thể chuyển từ chung sang cụ thể
 
-So sánh một đoạn ngắn:
+So sánh một câu ngắn: `I like coffee, but the coffee in this cup is too bitter.` — Tôi thích cà phê, nhưng cà phê trong cốc này đắng quá.
 
-> `I like coffee, but the coffee in this cup is too bitter.`
-
-Lần đầu, `coffee` là cà phê nói chung nên không có mạo từ. Lần sau, cụm `in this cup` xác định một lượng cà phê cụ thể nên dùng `the`. Tương tự, `Teachers help students` nói nghề giáo viên nói chung, còn `The teachers at my school are friendly` nói một nhóm đã được giới hạn.
+Lần đầu, `coffee` là cà phê nói chung nên không có mạo từ. Lần sau, cụm `in this cup` xác định một lượng cà phê cụ thể nên dùng `the`. Tương tự, `Teachers help students` (Giáo viên giúp đỡ học sinh) nói nghề giáo viên nói chung, còn `The teachers at my school are friendly` (Các thầy cô ở trường tôi thân thiện) nói một nhóm đã được giới hạn.
 
 Vì vậy, không thể gắn vĩnh viễn một danh từ với “có `the`” hoặc “không có `the`”. Cần đọc toàn bộ cụm danh từ và xem người nói đang khái quát cả loại hay chỉ đúng một nhóm/lượng có thể nhận ra.
 
 ## Ghi nhớ
 
 - Nói chung thường dùng danh từ số nhiều hoặc không đếm được không có mạo từ.
-- `A/an + số ít` có thể nói một thành viên điển hình của cả loại.
+- `A/an + số ít` có thể nói một thành viên điển hình của cả loại, khi điều nói ra đúng với từng thành viên; nói về cả loài như một nhóm thì dùng số nhiều.
 - `The + số ít` đôi khi đại diện cả loài/phát minh trong văn phong nhất định.
 - Phân biệt rõ đối tượng nói chung với nhóm hoặc lượng cụ thể đã xác định.

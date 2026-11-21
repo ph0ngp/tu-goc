@@ -32,12 +32,12 @@ Câu đầu không nói Lan đang đọc ngay lúc này. Câu sau không nói vi
 
 ## Lịch và việc đang xảy ra
 
-| Câu | Cách nhìn |
-| --- | --- |
-| `The train leaves at six every day.` | lịch trình thường lệ |
-| `The train is leaving now.` | đang rời ga lúc này |
-| `The shop opens at nine.` | giờ mở cửa thường lệ |
-| `The shop is opening now.` | hành động mở cửa đang xảy ra |
+| Câu | Nghĩa | Cách nhìn |
+| --- | --- | --- |
+| `The train leaves at six every day.` | Tàu chạy lúc sáu giờ mỗi ngày. | lịch trình thường lệ |
+| `The train is leaving now.` | Tàu đang rời ga. | đang rời ga lúc này |
+| `The shop opens at nine.` | Cửa hàng mở cửa lúc chín giờ. | giờ mở cửa thường lệ |
+| `The shop is opening now.` | Cửa hàng đang mở cửa ngay lúc này. | hành động mở cửa đang xảy ra |
 
 ## Từ thời gian không phải công thức tuyệt đối
 
@@ -49,19 +49,20 @@ Câu đầu không nói Lan đang đọc ngay lúc này. Câu sau không nói vi
 
 ## Hình thức câu hỏi và phủ định
 
-| | Hiện tại đơn | Hiện tại tiếp diễn |
+| Dạng câu | Hiện tại đơn | Hiện tại tiếp diễn |
 | --- | --- | --- |
-| phủ định | `She doesn't work here.` | `She isn't working now.` |
-| câu hỏi | `Does she work here?` | `Is she working now?` |
+| phủ định | `She doesn't work here.` — Cô ấy không làm việc ở đây. | `She isn't working now.` — Bây giờ cô ấy không làm việc. |
+| câu hỏi | `Does she work here?` — Cô ấy có làm việc ở đây không? | `Is she working now?` — Bây giờ cô ấy có đang làm việc không? |
 
 Không trộn hai hệ thống thành `Does she working?` hoặc `Is she work?`.
 
 ## Quy trình chọn thì
 
 1. Xác định câu nói thói quen/sự thật/ổn định hay quá trình đang diễn ra/tạm thời/thay đổi.
-2. Kiểm tra động từ có phải động từ trạng thái thường không dùng tiếp diễn hay không.
-3. Chọn cấu trúc của thì.
-4. Kiểm tra chủ ngữ, câu khẳng định/phủ định/câu hỏi và chính tả động từ.
+2. Chọn cấu trúc của thì.
+3. Kiểm tra chủ ngữ, câu khẳng định/phủ định/câu hỏi và chính tả động từ.
+
+Bài tiếp theo, [Động từ trạng thái](dong-tu-trang-thai-aspect-02.md), sẽ thêm một bước kiểm tra cho một nhóm động từ như “biết” hay “cần”, vốn thường không dùng tiếp diễn.
 
 ## So sánh những cặp dễ nhầm
 

@@ -15,7 +15,7 @@ Dùng `Can I ...?` để hỏi mình có được phép làm điều gì không.
 - `Can I use your phone?` — Tôi dùng điện thoại của bạn được không?
 - `Can we sit here?` — Chúng tôi ngồi đây được không?
 
-Câu trả lời tự nhiên có thể là `Yes, you can`, `Of course` (Tất nhiên), `Sure` (Được chứ), hoặc `Sorry, you can't` kèm lý do. `Can I ...?` thông dụng trong những tình huống hằng ngày.
+Câu trả lời tự nhiên có thể là `Yes, you can` (Được, bạn cứ tự nhiên), `Of course` (Tất nhiên), `Sure` (Được chứ), hoặc `Sorry, you can't` (Xin lỗi, không được) kèm lý do. `Can I ...?` thông dụng trong những tình huống hằng ngày.
 
 ## Yêu cầu: `Can you ...?`
 
@@ -29,7 +29,7 @@ Can you + base verb + ...?
 - `Can you help me?` — Bạn giúp tôi được không?
 - `Can you repeat that?` — Bạn có thể nhắc lại điều đó không?
 
-Về hình thức, `Can you swim?` có thể hỏi khả năng, còn `Can you pass me the salt?` thường là một lời nhờ. Tình huống và hành động được hỏi giúp xác định ý nghĩa.
+Về hình thức, `Can you swim?` (Bạn có biết bơi không?) có thể hỏi khả năng, còn `Can you pass me the salt?` (Bạn đưa giúp tôi lọ muối được không?) thường là một lời nhờ. Tình huống và hành động được hỏi giúp xác định ý nghĩa.
 
 ## Đề nghị giúp: `Can I/we ...?`
 
@@ -39,7 +39,7 @@ Về hình thức, `Can you swim?` có thể hỏi khả năng, còn `Can you pa
 - `Can I carry your bag?` — Tôi xách túi giúp bạn nhé?
 - `Can we take you home?` — Chúng tôi đưa bạn về nhà nhé?
 
-Khác biệt với xin phép nằm ở mục đích: `Can I use your pen?` xin dùng đồ của người khác; `Can I carry your bag?` đề nghị giúp người khác.
+Khác biệt với xin phép nằm ở mục đích: `Can I use your pen?` (Tôi dùng bút của bạn được không?) xin dùng đồ của người khác; `Can I carry your bag?` đề nghị giúp người khác.
 
 ## Đề nghị một vật hoặc dịch vụ
 
@@ -50,7 +50,7 @@ Khác biệt với xin phép nằm ở mục đích: `Can I use your pen?` xin d
 
 Mặc dù đây là câu hỏi, ta thường dùng `some` khi mời hoặc đề nghị, vì người nói chờ đợi câu trả lời “có”. `Some` ở đây không nói một lượng cụ thể; `some water` chỉ là “ít nước”, bao nhiêu cũng được. Đây là cách dùng giao tiếp bổ sung cho quy tắc `any` trong câu hỏi trung lập đã học trước đó.
 
-Người nghe có thể đáp `Yes, please` (Vâng, làm ơn) hoặc `No, thank you` (Không, cảm ơn).
+Người nghe có thể đáp `Yes, please` (Vâng, cho tôi xin) hoặc `No, thank you` (Không, cảm ơn).
 
 ## Lịch sự nhờ giọng điệu và từ ngữ
 

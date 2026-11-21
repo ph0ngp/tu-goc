@@ -5,7 +5,7 @@ legacyLessonId: b1-passive-principle
 ---
 # Nguyên lý be + past participle
 
-Câu chủ động đặt người/vật thực hiện hành động làm chủ ngữ. Câu bị động (*passive voice*) đặt người/vật chịu tác động hoặc kết quả của hành động làm chủ ngữ.
+Câu chủ động (*active voice*) đặt người/vật thực hiện hành động làm chủ ngữ. Câu bị động (*passive voice*) đặt người/vật chịu tác động hoặc kết quả của hành động làm chủ ngữ.
 
 - Chủ động: `The storm damaged the roof.` — Cơn bão làm hỏng mái nhà.
 - Bị động: `The roof was damaged by the storm.` — Mái nhà bị cơn bão làm hỏng.
@@ -17,6 +17,8 @@ Hai câu nói cùng một sự việc nhưng chọn điểm xuất phát khác n
 ```text
 S + be + past participle (+ by + tác nhân)
 ```
+
+Tác nhân (*agent*) là người hoặc vật thực hiện hành động; trong câu bị động, nó đứng sau `by` nếu được nêu ra.
 
 `Past participle` là quá khứ phân từ: `cleaned`, `built`, `written`, `made`, `taken`. Động từ `be` mang thì và hòa hợp với chủ ngữ:
 
@@ -47,7 +49,7 @@ Kết quả: `The car was repaired by the mechanic` — “Chiếc xe đã đư�
 Ta thường chọn bị động khi:
 
 - không biết ai làm: `My bike was stolen.` — Xe đạp của tôi bị lấy trộm;
-- người làm không quan trọng hoặc đã rõ: `The road is being repaired.` — Con đường đang được sửa;
+- người làm không quan trọng hoặc đã rõ: `The road was repaired last month.` — Con đường đã được sửa tháng trước;
 - muốn tập trung vào đối tượng/kết quả: `The new bridge was opened in May.` — Cây cầu mới được khánh thành tháng Năm;
 - mô tả quy trình: `The beans are dried and then packed.` — Hạt được sấy khô rồi đóng gói.
 
@@ -57,13 +59,13 @@ Không phải câu bị động nào cũng cần `by + tác nhân`. Thực tế,
 
 Động từ cần có một đối tượng chịu tác động:
 
-- `Someone opened the window.` → `The window was opened.`
-- `They invited Lan.` → `Lan was invited.`
+- `Someone opened the window.` → `The window was opened.` — Cửa sổ đã được mở.
+- `They invited Lan.` → `Lan was invited.` — Lan đã được mời.
 
 Các động từ không có tân ngữ như `arrive`, `sleep`, `happen`, `die` không tạo bị động thông thường:
 
-- `The train arrived late.` — không có một vật “bị đến”.
-- Không dùng `Late was arrived by the train`.
+- `The train arrived late.` — Tàu đến muộn. Không có một vật nào “bị đến”.
+- Không dùng `The train was arrived late.` — `arrive` không có tân ngữ nên không có gì để đưa lên làm chủ ngữ bị động.
 
 Hãy tìm tân ngữ của câu chủ động trước khi cố chuyển.
 
@@ -72,7 +74,7 @@ Hãy tìm tân ngữ của câu chủ động trước khi cố chuyển.
 Vì `be` là trợ động từ của bị động, đặt `not` sau `be` và đưa `be` lên trước chủ ngữ khi hỏi:
 
 - `The office isn't used at weekends.` — Văn phòng không được sử dụng cuối tuần.
-- `Was the email sent yesterday?` — Email đã được gửi hôm qua chưa?
+- `Was the email sent yesterday?` — Email có được gửi hôm qua không?
 - `Why were the flights cancelled?` — Vì sao các chuyến bay bị hủy?
 
 Không thêm `do/does/did` vào câu bị động có `be`.

@@ -34,7 +34,7 @@ tell + người + to + V
 
 Không dùng `told that she was tired` khi không có người nhận trong cấu trúc thông thường; dùng `said that...` thay thế.
 
-Một số cụm cố định không cần người ngay sau `tell`: `tell the truth`, `tell a story`, `tell a lie`, `tell the difference`.
+Một số cụm cố định không cần người ngay sau `tell`: `tell the truth` (nói thật), `tell a story` (kể chuyện), `tell a lie` (nói dối), `tell the difference` (phân biệt được).
 
 ## `Ask`: hỏi thông tin hoặc yêu cầu
 
@@ -49,8 +49,8 @@ Không dùng `ask to me`; người nhận đứng trực tiếp sau `ask` khi đ
 
 Khi lời nói được thuật lại từ một mốc quá khứ và người kể chỉ báo cáo điều đã nói, lùi thì là lựa chọn trung tính:
 
-- `“I am busy,” Lan said.` → `Lan said that she was busy.`
-- `“I have finished,” Nam said.` → `Nam said that he had finished.`
+- `“I am busy,” Lan said.` → `Lan said that she was busy.` — Lan nói cô ấy bận.
+- `“I have finished,” Nam said.` → `Nam said that he had finished.` — Nam nói anh ấy đã làm xong.
 
 Lùi thì giữ điểm nhìn nhất quán với `said/told/asked` ở quá khứ.
 
@@ -78,7 +78,9 @@ Khoảng cách thời gian nhỏ và thông tin còn trực tiếp liên quan kh
 
 ## Khi không nên giữ thì nếu nó gây sai dòng thời gian
 
-`Nam said that he lost his key before the meeting` có thể mơ hồ về quan hệ thời gian. Nếu việc mất chìa khóa xảy ra trước lúc Nam nói, `Nam said that he had lost his key` làm thứ tự rõ hơn.
+`Nam said he lost his key` có thể hiểu theo hai cách: lời gốc là `I lose my key` (Nam hay làm mất chìa khóa) hoặc `I lost my key` (Nam đã làm mất chìa khóa). Nếu muốn nói rõ việc mất chìa khóa đã xảy ra trước lúc Nam nói, dùng `Nam said he had lost his key.` — Nam nói anh ấy đã làm mất chìa khóa; câu này chỉ còn nghĩa sau.
+
+Ngược lại, khi câu đã có mốc thời gian rõ, quá khứ đơn thường có thể giữ nguyên: `Nam said he lost his key on Monday.` — Nam nói anh ấy làm mất chìa khóa hôm thứ Hai.
 
 Giữ thì không phải mục tiêu tự thân; hãy chọn dạng giúp người nghe hiểu thời điểm và tình trạng đúng/sai.
 
@@ -86,8 +88,8 @@ Giữ thì không phải mục tiêu tự thân; hãy chọn dạng giúp ngư�
 
 `Would`, `could`, `should`, `might`, `ought to` thường giữ nguyên:
 
-- `“You should rest,” she said.` → `She said that I should rest.`
-- `“It might rain,” he said.` → `He said that it might rain.`
+- `“You should rest,” she said.` → `She said that I should rest.` — Cô ấy nói tôi nên nghỉ ngơi.
+- `“It might rain,” he said.` → `He said that it might rain.` — Anh ấy nói trời có thể mưa.
 
 `Will → would`, `can → could`, `may → might` là những chuyển đổi thường gặp khi lùi điểm nhìn.
 

@@ -5,21 +5,25 @@ legacyLessonId: b1-relative-whose-where-when
 ---
 # whose, where, when mở rộng
 
-Trong mệnh đề quan hệ, `whose` diễn tả sở hữu, `where` nối với nơi chốn và `when` nối với thời gian. Chúng giúp tránh lặp lại danh từ hoặc một cụm giới từ.
+Bài [Đại từ quan hệ làm tân ngữ, lược bỏ đại từ, whose/where](../m17/dai-tu-quan-he-lam-tan-ngu-luoc-bo-dai-tu-whose-where-rel-02.md) đã giới thiệu `whose` cho quan hệ sở hữu và `where` cho nơi chốn. Bài này mở rộng theo bốn hướng: `whose` với tổ chức, đồ vật và vai trò tân ngữ; chọn giữa `where` và `which/that` theo vai trò trong mệnh đề; `when` cho thời gian; và cả ba từ trong mệnh đề không xác định.
 
-## `Whose`: quan hệ sở hữu
+## `Whose`: nhắc lại và mở rộng
+
+Nhắc nhanh: `whose` đứng ngay trước danh từ thuộc về người/vật phía trước, và không thêm `his/her/its` sau nó:
 
 ```text
-danh từ chỉ người/vật + whose + danh từ + động từ ...
+danh từ chỉ người/vật + whose + danh từ + ...
 ```
 
 - `I met a woman whose son is a pilot.` — Tôi gặp một người phụ nữ có con trai là phi công.
 - `The student whose phone rang apologized.` — Học sinh có điện thoại reo đã xin lỗi.
-- `We visited a company whose products are sold worldwide.` — Chúng tôi thăm một công ty có sản phẩm được bán trên toàn thế giới.
 
-`Whose` đứng ngay trước danh từ thuộc về người/vật phía trước: `whose son`, `whose phone`, `whose products`. Không thêm `his/her/its` trong mệnh đề: không dùng `a woman whose her son...`.
+Ở B1, `whose` thường đi với tổ chức và đồ vật, nhất là khi cách nói khác sẽ dài dòng:
 
-`Whose` dùng phổ biến cho người và cũng có thể dùng cho tổ chức hoặc vật, đặc biệt khi cách diễn đạt tự nhiên: `a house whose roof was damaged` — “một ngôi nhà có mái bị hư hại”.
+- `We visited a company whose products sell well all over the world.` — Chúng tôi thăm một công ty có sản phẩm bán chạy khắp thế giới.
+- `They live in a house whose roof leaked last winter.` — Họ sống trong một ngôi nhà có mái bị dột mùa đông năm ngoái.
+
+Cụm `whose + danh từ` cũng có thể làm tân ngữ trong mệnh đề: `a writer whose books I love` — một nhà văn có những cuốn sách tôi rất yêu thích. Ở đây `I` là chủ ngữ, còn `whose books` là tân ngữ của `love`. Dù có chủ ngữ riêng đi sau, `whose` không bao giờ được lược, vì nó mang ý sở hữu.
 
 ## `Where`: nơi mà một sự việc xảy ra
 
@@ -27,17 +31,16 @@ danh từ chỉ người/vật + whose + danh từ + động từ ...
 danh từ chỉ nơi chốn + where + chủ ngữ + động từ
 ```
 
-- `This is the café where we first met.` — Đây là quán cà phê nơi chúng tôi gặp nhau lần đầu.
 - `The village where my father grew up is nearby.` — Ngôi làng nơi cha tôi lớn lên ở gần đây.
 - `They showed us the room where the meeting would take place.` — Họ chỉ cho chúng tôi căn phòng nơi cuộc họp sẽ diễn ra.
 
-`Where` mang ý gần với `in/at which`:
+Như đã học, `where` mang sẵn ý “ở/tại nơi đó”, nên không lặp thêm giới từ nơi chốn. Ở B1, cần nắm thêm rằng `where` gần nghĩa với `in/at which`, nên một nơi chốn có ba cách nối:
 
 - `the house where I live`
 - `the house which I live in`
 - `the house I live in`
 
-Ba cụm đều có thể diễn tả “ngôi nhà tôi sống”. Không dùng `the house where I live in`, vì `where` đã mang ý giới từ nơi chốn nên thêm `in` sẽ bị lặp trong cấu trúc này.
+Ba cụm đều có nghĩa “ngôi nhà tôi sống”. Khi dùng `which` hoặc lược đại từ, giới từ `in` phải có mặt ở cuối; khi dùng `where`, không thêm `in`: không dùng `the house where I live in`.
 
 Không phải cứ danh từ đứng trước là nơi chốn thì dùng `where`. Hãy nhìn vai trò bên trong mệnh đề:
 
@@ -65,12 +68,12 @@ Trong mệnh đề xác định, `when` thường có thể được lược sau
 
 Ba từ đều có thể xuất hiện trong mệnh đề xác định hoặc không xác định:
 
-- `The employee whose desk is by the window is absent.` — cần mệnh đề để biết nhân viên nào.
-- `Mai, whose desk is by the window, is absent.` — Mai đã rõ; phần giữa chỉ thêm thông tin.
-- `We returned to Hoi An, where we had spent our honeymoon.` — Hội An đã rõ; mệnh đề thêm kỷ niệm về nơi đó.
-- `In 2020, when travel was difficult, we stayed at home.` — Năm 2020 đã rõ; mệnh đề thêm bối cảnh.
+- `The employee whose desk is by the window is absent.` — Nhân viên có bàn cạnh cửa sổ vắng mặt; cần mệnh đề để biết nhân viên nào.
+- `Mai, whose desk is by the window, is absent.` — Mai, người có bàn cạnh cửa sổ, vắng mặt; Mai đã rõ, phần giữa chỉ thêm thông tin.
+- `We returned to Hoi An, where we had spent our honeymoon.` — Chúng tôi trở lại Hội An, nơi chúng tôi từng hưởng tuần trăng mật; mệnh đề thêm kỷ niệm về nơi đã rõ.
+- `In 2020, when travel was difficult, we stayed at home.` — Năm 2020, khi việc đi lại khó khăn, chúng tôi ở nhà; mệnh đề thêm bối cảnh cho mốc đã rõ.
 
-Trong mệnh đề không xác định, phải đặt dấu phẩy đúng vị trí.
+Trong mệnh đề không xác định, phải đặt dấu phẩy đúng vị trí, và không lược `when` hay `where` như trong mệnh đề xác định.
 
 ## Cách chọn
 
@@ -81,7 +84,7 @@ Trong mệnh đề không xác định, phải đặt dấu phẩy đúng vị t
 
 ## Ghi nhớ
 
-- `Whose + danh từ` diễn tả sở hữu và không đi cùng `his/her/its` trong cùng vị trí.
+- `Whose + danh từ` diễn tả sở hữu, dùng được cho người, tổ chức và vật; không thêm `his/her/its` sau nó và không lược `whose`.
 - `Where` thay cho ý `in/at + nơi chốn`; không lặp thêm giới từ cùng nghĩa.
 - `When` nối với danh từ thời gian và thường có thể lược trong mệnh đề xác định.
 - Chọn từ theo vai trò bên trong mệnh đề, không chỉ theo loại danh từ đứng trước.

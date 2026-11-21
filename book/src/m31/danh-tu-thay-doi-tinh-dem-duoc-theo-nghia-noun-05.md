@@ -25,6 +25,8 @@ Không thể chọn `a/an` chỉ bằng cách dịch một từ. Phải xác đ�
 
 `A coffee` thường là một suất đồ uống trong nhà hàng; không có nghĩa toàn bộ chất cà phê tự nhiên trở thành đếm được trong mọi câu.
 
+Danh từ chỉ thức ăn, đồ uống còn đếm được khi nói về **các loại** khác nhau: `This shop sells over fifty cheeses.` — Cửa hàng này bán hơn năm mươi loại phô mai. Ở đây `cheeses` nghĩa là các loại phô mai, không phải các miếng phô mai. Tương tự, `French wines` là các loại rượu vang Pháp.
+
 ## Khái niệm chung và một trường hợp cụ thể
 
 | Không đếm được | Đếm được |

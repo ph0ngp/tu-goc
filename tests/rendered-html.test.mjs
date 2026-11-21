@@ -143,8 +143,13 @@ test("keeps Markdown backticks out of prompts, hints, answer options, table cell
   const dropdown = await lessonMarkup("b1-subject-object-questions-deep");
   assert.match(
     dropdown,
-    /<option value="`What` làm chủ ngữ nên động từ quá khứ đứng ngay sau, không thêm `did`\.">“What” làm chủ ngữ nên động từ quá khứ đứng ngay sau, không thêm “did”\.<\/option>/,
+    /<option value="`What` làm chủ ngữ nên động từ quá khứ đứng ngay sau, không mượn trợ động từ của câu hỏi\.">“What” làm chủ ngữ nên động từ quá khứ đứng ngay sau, không mượn trợ động từ của câu hỏi\.<\/option>/,
   );
+
+  // Bài sửa hiện sẵn phần sai (gạch ngang) ngay trước ô chọn phần thay thế, nên câu hỏi “sửa/thay” khớp với giao diện.
+  const repair = await lessonMarkup("possessives");
+  assert.match(repair, /<del><code>we<\/code><\/del>/);
+  assert.match(repair, /aria-label="Chọn phần thay cho “we”"/);
 
   const match = await lessonMarkup("b1-question-tags");
   assert.match(match, /<td><span>xác nhận một câu có <code>never<\/code><\/span><\/td>/);
@@ -158,10 +163,10 @@ test("keeps Markdown backticks out of prompts, hints, answer options, table cell
   assert.match(englishForms, /<td><code>This is the café where we first met\.<\/code><\/td>/);
 
   // Mục phân loại có lời tiếng Việt hiện như văn xuôi; hình thức tiếng Anh trần vẫn là code.
-  const sort = await lessonMarkup("a2-definite-article");
-  assert.match(sort, /<td><span><code>books<\/code> nói chung<\/span><\/td>/);
-  assert.match(sort, /<td><code>the only exit<\/code><\/td>/);
-  assert.match(sort, /aria-label="Phân loại books nói chung"/);
+  const sort = await lessonMarkup("a2-perfect-unfinished-time");
+  assert.match(sort, /<td><span><code>this month<\/code> \(tháng còn tiếp diễn\)<\/span><\/td>/);
+  assert.match(sort, /<td><code>in 2021<\/code><\/td>/);
+  assert.match(sort, /aria-label="Phân loại this month \(tháng còn tiếp diễn\)"/);
 
   // Khi hai câu chỉ khác nhau ở dấu câu, gợi ý vẫn nêu đúng dấu câu đó thay vì một khối code rỗng.
   const punctuation = await lessonMarkup("b1-punctuation-direct-relative-apposition");

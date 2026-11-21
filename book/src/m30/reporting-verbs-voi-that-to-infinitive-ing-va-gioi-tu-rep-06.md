@@ -71,6 +71,19 @@ Các mẫu tự nhiên gồm:
 
 Không dùng `She suggested me to take a taxi`. Muốn nêu người, dùng mệnh đề `that` hoặc cấu trúc khác phù hợp.
 
+## Một động từ, hai mẫu
+
+Nhiều động từ tường thuật nhận hơn một mẫu. Khi đó, mẫu được chọn theo điều người nói muốn truyền đạt:
+
+- `She reminded me to call Lan.` — Cô ấy nhắc tôi gọi cho Lan: một việc tôi cần làm.
+- `She reminded me that the shop closes at six.` — Cô ấy nhắc tôi rằng cửa hàng đóng cửa lúc sáu giờ: một thông tin.
+- `He warned us not to swim there.` — Anh ấy cảnh báo chúng tôi đừng bơi ở đó: việc không nên làm.
+- `He warned us about the strong current.` — Anh ấy cảnh báo chúng tôi về dòng nước xiết: mối nguy.
+- `They agreed to help.` — Họ đồng ý giúp: họ nhận làm một việc.
+- `They agreed that the plan was too expensive.` — Họ cùng cho rằng kế hoạch quá tốn kém: họ đồng tình với một nhận định.
+
+`Admit` có ba cách nói gần nghĩa: `He admitted taking the money`, `He admitted to taking the money` và `He admitted that he had taken the money` — Anh ấy thừa nhận đã lấy tiền. Trong `admit to`, `to` là giới từ nên sau nó vẫn là `V-ing`; không dùng `admitted to take`.
+
 ## Cùng nội dung, hành động lời nói khác nhau
 
 | Câu trực tiếp | Reporting verb | Cấu trúc |
@@ -86,7 +99,7 @@ Chọn động từ theo chức năng thật của lời nói, rồi mới chọ
 
 1. Xác định người nói đang làm gì bằng lời: thừa nhận, đề nghị, cảnh báo hay xin lỗi.
 2. Chọn reporting verb chính xác.
-3. Tra/nhớ mẫu bổ ngữ của động từ đó.
+3. Chọn mẫu bổ ngữ theo nghĩa: việc chủ ngữ nhận làm thường dùng `to V`; thông tin hay nhận định dùng `that`; người nhận lời khuyên, lời nhắc đứng trước `to V`; sau giới từ dùng `V-ing`. Với động từ nhận nhiều mẫu, đối chiếu nghĩa của từng mẫu.
 4. Kiểm tra có cần tân ngữ chỉ người hay giới từ cố định không.
 5. Đặt thời gian trong mệnh đề hoặc dạng hoàn thành khi cần, không lùi thì máy móc.
 

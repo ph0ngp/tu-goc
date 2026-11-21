@@ -15,7 +15,8 @@ two books → hai quyển sách
 ```
 
 Bài này tập trung vào các cách viết số nhiều **có quy tắc** thường gặp. Những
-dạng đặc biệt như `child → children` sẽ được học ở một chương sau.
+dạng đặc biệt như `child → children` (đứa trẻ → những đứa trẻ) sẽ được học ở
+một chương sau.
 
 ## Một đi với số ít, từ hai trở lên đi với số nhiều
 
@@ -121,7 +122,7 @@ So sánh:
 
 ## Không dùng dấu nháy đơn để tạo số nhiều
 
-Dấu nháy đơn (`'`) không dùng để biến một danh từ thông thường thành số nhiều.
+Dấu nháy đơn (*apostrophe*, `'`) không dùng để biến một danh từ thông thường thành số nhiều.
 
 | Đúng | Không dùng cho số nhiều |
 | --- | --- |

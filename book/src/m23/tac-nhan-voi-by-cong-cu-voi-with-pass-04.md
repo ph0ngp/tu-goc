@@ -21,17 +21,17 @@ Tác nhân trả lời câu hỏi “ai/cái gì thực hiện hành động?”
 
 Không cần nêu tác nhân nếu:
 
-- không biết: `My wallet was stolen.`;
-- quá chung chung: `English is spoken here.`;
-- đã rõ từ ngữ cảnh: `The suspect was arrested.`;
-- trọng tâm chỉ là quy trình/kết quả: `The mixture is heated for ten minutes.`
+- không biết: `My wallet was stolen.` — Ví của tôi bị lấy trộm;
+- quá chung chung: `English is spoken here.` — Ở đây có nói tiếng Anh;
+- đã rõ từ ngữ cảnh: `The suspect was arrested.` — Nghi phạm đã bị bắt (ai bắt thì đã rõ: cảnh sát);
+- trọng tâm chỉ là quy trình/kết quả: `The mixture is heated for ten minutes.` — Hỗn hợp được đun nóng mười phút.
 
 `By people`, `by someone` hoặc `by them` thường thừa nếu không phân biệt được ai. Nhưng khi tác nhân bất ngờ, nổi tiếng hoặc tương phản với tác nhân khác, giữ lại rất hữu ích: `The song was written by a twelve-year-old student` — “Bài hát do một học sinh mười hai tuổi sáng tác.”
 
 ## `With + công cụ hoặc vật liệu được dùng`
 
 - `The bread is cut with a sharp knife.` — Bánh mì được cắt bằng dao sắc.
-- `The wall was painted with a brush.` — Tường được sơn bằng chổi.
+- `The wall was painted with a brush.` — Tường được sơn bằng cọ.
 - `The parcel was tied with string.` — Bưu kiện được buộc bằng dây.
 - `The room was decorated with flowers.` — Căn phòng được trang trí bằng hoa.
 
@@ -41,8 +41,8 @@ Không cần nêu tác nhân nếu:
 
 | Câu hỏi | Cụm trả lời | Ví dụ |
 | --- | --- | --- |
-| Ai/cái gì làm? | `by + tác nhân` | `The picture was drawn by Lan.` |
-| Dùng cái gì để làm? | `with + công cụ/vật liệu` | `The picture was drawn with a pencil.` |
+| Ai/cái gì làm? | `by + tác nhân` | `The picture was drawn by Lan.` — Bức tranh do Lan vẽ. |
+| Dùng cái gì để làm? | `with + công cụ/vật liệu` | `The picture was drawn with a pencil.` — Bức tranh được vẽ bằng bút chì. |
 
 Có thể có cả hai:
 

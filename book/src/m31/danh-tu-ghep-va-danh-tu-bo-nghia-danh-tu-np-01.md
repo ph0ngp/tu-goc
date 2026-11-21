@@ -5,7 +5,7 @@ status: published
 ---
 # Danh từ ghép và danh từ bổ nghĩa danh từ
 
-Tiếng Anh thường đặt một danh từ trước một danh từ khác để phân loại danh từ chính: `a coffee cup` là “cốc dùng cho cà phê”, `a company car` là “xe của công ty”. Danh từ cuối thường là **từ trung tâm** (*head noun*), quyết định vật được nói là gì và thường mang số nhiều.
+Tiếng Anh thường đặt một danh từ trước một danh từ khác để phân loại danh từ chính. Danh từ đứng trước gọi là **danh từ bổ nghĩa** (*noun modifier*): `a coffee cup` là “cốc dùng cho cà phê”, `a company car` là “xe của công ty”. Danh từ cuối thường là **từ trung tâm** (*head noun*), quyết định vật được nói là gì và thường mang số nhiều.
 
 ## Từ trung tâm đứng cuối
 
@@ -30,7 +30,9 @@ Muốn hiểu, bắt đầu từ danh từ cuối rồi hỏi danh từ trước
 
 Dù cửa hàng bán nhiều giày, thường dùng `shoe shop`, không dùng `shoes shop`. Số nhiều nằm ở từ trung tâm: `shoe shops`.
 
-Tuy nhiên có các danh từ bổ nghĩa vốn ở dạng số nhiều hoặc theo quy ước: `sports centre`, `clothes shop`, `customs officer`, `sales department`, `savings account`. Không nên biến quy tắc “luôn số ít” thành tuyệt đối.
+Cụm số + danh từ đứng trước danh từ khác cũng làm một bổ nghĩa. Khi đó, cụm được nối bằng gạch nối và danh từ chỉ số đo giữ số ít: `a five-day course`, `a two-week holiday` — một kỳ nghỉ hai tuần. Khi cùng thông tin ấy đứng sau `be`, ta viết tách và dùng số nhiều bình thường: `The course is five days long.` — Khóa học kéo dài năm ngày. So sánh `a five-day course` với `five days long`: chỉ dạng đứng trước danh từ mới có gạch nối và số ít.
+
+Tuy nhiên có các danh từ bổ nghĩa vốn ở dạng số nhiều hoặc theo quy ước: `sports centre` (trung tâm thể thao), `clothes shop` (cửa hàng quần áo), `customs officer` (nhân viên hải quan), `sales department` (phòng kinh doanh), `savings account` (tài khoản tiết kiệm). Không nên biến quy tắc “luôn số ít” thành tuyệt đối.
 
 ## Quan hệ nghĩa không chỉ có một loại
 
@@ -46,7 +48,7 @@ Cùng trật tự nhưng quan hệ được suy ra từ kiến thức và cách 
 
 ## Danh từ ghép và cụm tự do
 
-Một danh từ ghép đã được dùng như đơn vị từ vựng có thể viết:
+Một danh từ ghép (*compound noun*) là cụm đã được dùng như một đơn vị từ vựng. Nó có thể viết:
 
 - liền: `toothpaste`;
 - có gạch nối: `check-in`;
@@ -83,9 +85,9 @@ Nếu quan hệ mơ hồ, người viết nên dùng `of`, gạch nối hợp l�
 
 ## Quy trình tạo và đọc
 
-1. Tìm danh từ trung tâm ở cuối.
+1. Tìm từ trung tâm ở cuối.
 2. Xác định mỗi danh từ trước đang phân loại phần nào.
-3. Giữ modifier ở số ít trừ cụm quy ước cần số nhiều.
+3. Giữ danh từ bổ nghĩa ở số ít trừ cụm quy ước cần số nhiều.
 4. Đặt số nhiều lên từ trung tâm.
 5. Kiểm tra từ điển về chính tả và viết lại nếu chuỗi quá mơ hồ.
 
@@ -94,5 +96,6 @@ Nếu quan hệ mơ hồ, người viết nên dùng `of`, gạch nối hợp l�
 - Danh từ cuối thường là từ trung tâm và nhận số nhiều.
 - Danh từ bổ nghĩa thường ở số ít nhưng có ngoại lệ theo quy ước.
 - Quan hệ giữa hai danh từ có thể là mục đích, vật liệu, thời gian, nội dung hoặc sở hữu.
-- Chính tả của compound noun cần tra theo từng từ.
+- Cụm số + danh từ đứng trước danh từ có gạch nối và giữ số ít; sau `be` thì viết tách.
+- Chính tả của danh từ ghép cần tra theo từng từ.
 - Chuỗi quá dài nên được phân tích từ phải sang trái hoặc viết lại cho rõ.

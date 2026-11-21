@@ -32,14 +32,14 @@ Khi câu trực tiếp không có từ hỏi, thêm `if/whether` mang nghĩa “
 - `“Did they call?”` → `Lan asked whether they had called.` — Lan hỏi liệu họ đã gọi chưa.
 - `“Can Minh drive?”` → `I wondered if Minh could drive.` — Tôi tự hỏi Minh có biết lái xe không.
 
-`Whether` thường trang trọng hơn và phù hợp rõ ràng với `or not`: `She asked whether or not I was ready`.
+`Whether` thường trang trọng hơn và phù hợp rõ ràng với `or not`: `She asked whether or not I was ready` — Cô ấy hỏi tôi đã sẵn sàng hay chưa.
 
 ## Không dùng trật tự câu hỏi bên trong
 
-- đúng: `He asked where I was going.`
+- đúng: `He asked where I was going.` — Anh ấy hỏi tôi đang đi đâu.
 - không dùng: `He asked where was I going.`
 
-- đúng: `She asked if I knew the answer.`
+- đúng: `She asked if I knew the answer.` — Cô ấy hỏi tôi có biết câu trả lời không.
 - không dùng: `She asked if did I know the answer.`
 
 Động từ `asked` đã cho biết hành động hỏi; mệnh đề sau nó hoạt động như nội dung của câu hỏi, không phải một câu hỏi độc lập.
@@ -48,8 +48,8 @@ Khi câu trực tiếp không có từ hỏi, thêm `if/whether` mang nghĩa “
 
 Nếu từ hỏi vốn làm chủ ngữ, trật tự không đổi nhiều:
 
-- `“Who called you?”` → `Lan asked who had called me.`
-- `“What caused the delay?”` → `They wanted to know what had caused the delay.`
+- `“Who called you?”` → `Lan asked who had called me.` — Lan hỏi ai đã gọi cho tôi.
+- `“What caused the delay?”` → `They wanted to know what had caused the delay.` — Họ muốn biết điều gì đã gây ra sự chậm trễ.
 
 Không thêm một chủ ngữ khác sau `who/what` nếu chính từ này thực hiện hành động.
 

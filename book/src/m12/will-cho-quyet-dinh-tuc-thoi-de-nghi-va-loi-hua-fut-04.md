@@ -5,7 +5,7 @@ legacyLessonId: a2-will-decisions
 ---
 # will cho quyết định tức thời, đề nghị và lời hứa
 
-`Will` là một động từ tình thái dùng để nói về tương lai. Bài này tập trung vào ba tình huống giao tiếp: quyết định ngay lúc nói, đề nghị giúp đỡ và lời hứa.
+`Will` là một **động từ khuyết thiếu**, còn gọi là động từ tình thái (*modal verb*), giống `can` đã học ở A1. Ở đây `will` dùng để nói về tương lai. Bài này tập trung vào các tình huống giao tiếp: quyết định ngay lúc nói, đề nghị giúp đỡ, nhờ người khác và lời hứa.
 
 ## Cấu trúc
 
@@ -25,15 +25,18 @@ Người nói nhận thông tin rồi quyết định ngay:
 - `We don't have any milk. I'll buy some.` — Chúng ta hết sữa rồi. Tôi sẽ mua.
 - `This bag is heavy. I'll carry it.` — Chiếc túi này nặng. Tôi sẽ mang nó.
 
-`I'll` là dạng rút gọn của `I will`. Nếu quyết định đã có từ trước, `going to` thường phù hợp hơn: `I'm going to buy a new laptop` nghĩa là “Tôi đã có ý định mua máy tính xách tay mới”.
+`I'll` là dạng viết tắt của `I will`. Nếu quyết định đã có từ trước, `going to` thường phù hợp hơn: `I'm going to buy a new laptop` nghĩa là “Tôi đã có ý định mua máy tính xách tay mới”.
 
-## Đề nghị giúp đỡ
+## Đề nghị giúp đỡ và nhờ người khác
+
+Khi đề nghị **mình** làm giúp, dùng `I'll ...` hoặc câu hỏi `Shall I ...?`:
 
 - `I'll open the window for you.` — Tôi sẽ mở cửa sổ giúp bạn.
 - `Shall I carry that box?` — Để tôi mang chiếc hộp đó nhé?
-- `Will you help me with this bag?` — Bạn giúp tôi với chiếc túi này được không?
 
-Ở A2, `Shall I ...?` thường dùng để đề nghị mình làm gì; `Will you ...?` có thể là lời yêu cầu người khác làm.
+Khi nhờ **người nghe** làm gì, có thể dùng `Will you ...?`. Đây là lời yêu cầu, không phải lời đề nghị giúp:
+
+- `Will you help me with this bag?` — Bạn giúp tôi với chiếc túi này được không?
 
 ## Lời hứa và cam kết
 
@@ -43,9 +46,9 @@ Người nói nhận thông tin rồi quyết định ngay:
 
 Lời hứa không cần từ `promise`, nhưng có thể nói `I promise I'll help` — “Tôi hứa tôi sẽ giúp”.
 
-## Câu hỏi và dạng rút gọn
+## Câu hỏi và dạng viết tắt
 
-| Dạng đầy đủ | Dạng rút gọn |
+| Dạng đầy đủ | Dạng viết tắt |
 | --- | --- |
 | `I will`, `you will`, `she will` | `I'll`, `you'll`, `she'll` |
 | `will not` | `won't` |
@@ -62,14 +65,14 @@ Muốn hiểu `will`, hãy nhìn câu trước và tình huống giao tiếp:
 | Tình huống | Câu với `will` | Công việc của câu |
 | --- | --- | --- |
 | “Điện thoại đang reo.” | `I'll answer it.` | quyết định ngay |
-| “Tôi không mang nổi túi.” | `I'll help you.` | đề nghị giúp |
+| “Tôi không mang nổi túi.” | `I'll help you.` — Để tôi giúp bạn. | đề nghị giúp |
 | “Đừng kể cho ai nhé.” | `I won't tell anyone.` | lời hứa |
 
-Không phải cứ có `tomorrow` là dùng `will`. `I'm going to visit Mai tomorrow` vẫn phù hợp nếu ý định đã có trước. Sự khác biệt nằm ở thời điểm ra quyết định và mục đích của lời nói, không nằm ở riêng từ chỉ thời gian.
+Không phải cứ có `tomorrow` là dùng `will`. `I'm going to visit Mai tomorrow` (Ngày mai tôi định thăm Mai) vẫn phù hợp nếu ý định đã có trước. Sự khác biệt nằm ở thời điểm ra quyết định và mục đích của lời nói, không nằm ở riêng từ chỉ thời gian.
 
 ## Ghi nhớ
 
-- Dùng `will` cho quyết định ngay lúc nói, đề nghị giúp đỡ và lời hứa.
+- Dùng `will` cho quyết định ngay lúc nói, đề nghị giúp đỡ và lời hứa; `Will you ...?` có thể dùng để nhờ người nghe làm gì.
 - Sau `will/won't` là động từ cơ bản, không có `to`.
 - `I'll` là `I will`; `won't` là `will not`.
 - Ý định đã có trước thường dùng `be going to` hơn quyết định tức thời với `will`.

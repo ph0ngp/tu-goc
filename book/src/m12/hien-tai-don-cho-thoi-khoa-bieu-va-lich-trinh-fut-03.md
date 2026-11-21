@@ -35,27 +35,27 @@ Chủ ngữ số ít vẫn dùng động từ thêm `-s/-es`: `The bus arrives`,
 
 ## Lịch trình khác kế hoạch cá nhân
 
-| Ý nghĩa | Cách nói |
-| --- | --- |
-| lịch tàu cố định | `The train leaves at seven.` |
-| kế hoạch đã hẹn của chúng tôi | `We're taking the seven o'clock train.` |
-| ý định | `We're going to travel by train.` |
+| Ý nghĩa | Cách nói | Nghĩa tiếng Việt |
+| --- | --- | --- |
+| lịch tàu cố định | `The train leaves at seven.` | Tàu khởi hành lúc bảy giờ. |
+| kế hoạch đã hẹn của chúng tôi | `We're taking the seven o'clock train.` | Chúng tôi sẽ đi chuyến tàu bảy giờ (đã đặt vé). |
+| ý định | `We're going to travel by train.` | Chúng tôi định đi bằng tàu. |
 
 Cả ba có thể nói về cùng chuyến đi nhưng khác trọng tâm. Hiện tại đơn nhìn vào lịch chính thức; hiện tại tiếp diễn nhìn vào sắp xếp của người tham gia; `going to` nhìn vào ý định.
 
 ## Không phải mọi việc tương lai đều dùng hiện tại đơn
 
-`I buy a new phone tomorrow` không phải cách thông thường để nói một quyết định cá nhân. Ta nói `I'm going to buy a new phone` nếu đó là ý định, hoặc `I'm buying a new phone tomorrow` nếu việc mua đã được sắp xếp cụ thể.
+`I buy a new phone tomorrow` không phải cách thông thường để nói một quyết định cá nhân. Ta nói `I'm going to buy a new phone` (Tôi định mua điện thoại mới) nếu đó là ý định, hoặc `I'm buying a new phone tomorrow` (Ngày mai tôi mua điện thoại mới; việc mua đã được hẹn trước) nếu việc mua đã được sắp xếp cụ thể.
 
 ## Ai kiểm soát lịch trình?
 
-Một dấu hiệu hữu ích là hỏi thời điểm đó có nằm trong một lịch đã công bố, thường không do người nói tự quyết định hay không.
+Hãy tự hỏi: giờ đó có nằm trong một lịch đã công bố không, và người nói có tự quyết định giờ đó không?
 
-- `The exam starts at nine` nói giờ thi do nhà trường ấn định.
-- `I'm studying with Nam at nine` nói lịch hẹn cá nhân của người nói.
-- `I think the exam will be difficult` là dự đoán, không phải lịch trình.
+- `The exam starts at nine.` — Bài thi bắt đầu lúc chín giờ. Giờ thi do nhà trường ấn định.
+- `I'm studying with Nam at nine.` — Chín giờ tôi có hẹn học với Nam. Đây là lịch hẹn cá nhân của người nói.
+- `Look at the time — we're going to be late.` — Nhìn giờ kìa, chúng ta sắp trễ rồi. Đây là dự đoán từ dấu hiệu, không phải lịch trình.
 
-Tuy vậy, đừng biến “chủ ngữ là vật” thành quy tắc tuyệt đối. `Our class starts at nine` là lịch trình dù chủ ngữ có liên quan đến người; `The old bus is leaving now` có thể là hành động đang diễn ra chứ không phải lịch. Ý nghĩa và nguồn của lịch mới là điều quyết định.
+Chủ ngữ là vật hay người không quyết định cách dùng. `Our class starts at nine` (Lớp chúng tôi bắt đầu lúc chín giờ) là lịch trình dù chủ ngữ có liên quan đến người; `The old bus is leaving now` (Chiếc xe buýt cũ đang rời bến) là hành động đang diễn ra chứ không phải lịch. Ý nghĩa và nguồn của lịch mới là điều quyết định.
 
 ## Ghi nhớ
 

@@ -90,15 +90,41 @@ export function isPredictableSortOrder(items: Array<{ bucket: string }>, buckets
  * Thứ tự mảnh dùng khi chính câu hỏi phải in các mảnh ra (bài gõ lại câu), để
  * phần chữ của câu hỏi không để lộ câu đúng như một vòng xoay.
  */
-export function scrambledPieces(answer: string[], seedText: string): string[] {
-  return scrambledTokens(answer, answer, createRandom(seedText));
+export function scrambledPieces(answer: string[], seedText: string, alternatives: string[][] = []): string[] {
+  return scrambledTokens(answer, [answer, ...alternatives], createRandom(seedText));
 }
 
-function scrambledTokens(tokens: string[], answer: string[], random: () => number): string[] {
-  if (answer.length < 3 || !isRotationOf(tokens, answer)) return tokens;
+/** Đoạn dài nhất của `tokens` xuất hiện liền mạch, đúng thứ tự trong `answer`. */
+export function longestInOrderRun(tokens: string[], answer: string[]): number {
+  let longest = 0;
+  for (let start = 0; start < tokens.length; start++) {
+    for (let from = 0; from < answer.length; from++) {
+      let length = 0;
+      while (start + length < tokens.length && from + length < answer.length && tokens[start + length] === answer[from + length]) length++;
+      longest = Math.max(longest, length);
+    }
+  }
+  return longest;
+}
+
+/**
+ * Thứ tự mảnh để lộ câu đúng: xoay vòng, đảo ngược hoàn toàn, hoặc giữ nguyên
+ * một đoạn liền mạch dài gần hết câu (người học chỉ cần đọc ra).
+ */
+export function isRevealingOrder(tokens: string[], answer: string[]): boolean {
+  if (answer.length < 3) return false;
+  if (isRotationOf(tokens, answer)) return true;
+  if (tokens.length === answer.length && tokens.every((token, index) => token === answer[answer.length - 1 - index])) return true;
+  return answer.length >= 5 && longestInOrderRun(tokens, answer) >= Math.ceil(answer.length * 0.7);
+}
+
+/** Các mảnh không được để lộ bất kỳ cách xếp đúng nào. */
+function scrambledTokens(tokens: string[], accepted: string[][], random: () => number): string[] {
+  const revealing = (candidate: string[]) => accepted.some((answer) => isRevealingOrder(candidate, answer));
+  if (!revealing(tokens)) return tokens;
   for (let attempt = 0; attempt < 30; attempt++) {
     const candidate = shuffled(tokens, random);
-    if (!isRotationOf(candidate, answer)) return candidate;
+    if (!revealing(candidate)) return candidate;
   }
   return tokens;
 }
@@ -176,7 +202,7 @@ export function arrangeAnswerPositions(legacyLessonId: string, exercises: Exerci
       };
     }
     if (exercise.kind === "order") {
-      return { ...exercise, tokens: scrambledTokens(exercise.tokens, exercise.answer, random) };
+      return { ...exercise, tokens: scrambledTokens(exercise.tokens, [exercise.answer, ...(exercise.alternatives ?? [])], random) };
     }
     if (exercise.kind === "sort") {
       return { ...exercise, items: scrambledItems(exercise.items, exercise.buckets, random) };
