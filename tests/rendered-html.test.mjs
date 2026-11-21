@@ -7,7 +7,8 @@ import {
   bookLessonForLegacyId,
   bookLessons,
 } from "../app/book-content.generated.ts";
-import { BASE_PATH, HOME_HREF, lessonHref, practiceHref, SITE_URL } from "../lib/site.mjs";
+import { bookReadings, readingLevels } from "../app/book-readings.generated.ts";
+import { BASE_PATH, HOME_HREF, lessonHref, practiceHref, READINGS_HREF, readingHref, readingLevelHref, SITE_URL } from "../lib/site.mjs";
 
 const projectRoot = new URL("../", import.meta.url);
 const siteRoot = fileURLToPath(new URL("../dist/client/", import.meta.url));
@@ -211,6 +212,50 @@ test("pre-renders every lesson and uses static document navigation", async () =>
     await access(path.join(siteRoot, "ngu-phap", lesson.slug, "index.html"));
     await access(path.join(siteRoot, "ngu-phap", lesson.slug, "luyen-tap", "index.html"));
   }
+});
+
+test("publishes graded readings with one sidebar link and one page per level", async () => {
+  const visible = (html) => html.replace(/<[^>]+>/g, "").replace(/<!-- -->/g, "").replace(/&#x27;/g, "'");
+  const home = await (await render()).text();
+  assert.match(home, /<details class="toc-module toc-readings"><summary>Bài văn luyện tập<\/summary>/);
+  for (const level of readingLevels) {
+    assert.ok(home.includes(`<a href="${readingLevelHref(level)}">${level}</a>`), level);
+  }
+
+  const index = await render(READINGS_HREF);
+  assert.equal(index.status, 200);
+  const indexHtml = await index.text();
+  assert.match(indexHtml, /<title>Bài văn luyện tập — Từ Gốc<\/title>/);
+  assert.match(indexHtml, /<h1>Bài văn luyện tập<\/h1>/);
+  assert.match(indexHtml, /<details class="toc-module toc-readings" open="">/);
+
+  for (const level of readingLevels) {
+    const readings = bookReadings.filter((reading) => reading.level === level);
+    assert.ok(indexHtml.includes(`href="${readingLevelHref(level)}"`), level);
+
+    const page = await render(readingLevelHref(level));
+    assert.equal(page.status, 200, level);
+    const html = await page.text();
+    assert.ok(visible(html).includes(`Bài văn luyện tập ${level}`), level);
+    assert.match(html, new RegExp(`<li class="active[^"]*"><a href="${readingLevelHref(level)}">`), level);
+    assert.equal(/<meta name="robots" content="noindex/.test(html), readings.length === 0, `${level}: chỉ trang trống mới noindex`);
+    if (!readings.length) assert.ok(visible(html).includes(`Chưa có bài văn ở trình độ ${level}.`), level);
+
+    for (const reading of readings) {
+      assert.ok(html.includes(`href="${readingHref(level, reading.slug)}"`), reading.slug);
+      assert.ok(visible(html).includes(reading.summary), reading.slug);
+
+      const readingPage = await render(readingHref(level, reading.slug));
+      assert.equal(readingPage.status, 200, reading.slug);
+      const readingHtml = await readingPage.text();
+      assert.match(readingHtml, /<article class="lesson-markdown" lang="en"><h1>/);
+      assert.ok(visible(readingHtml).includes(reading.title), reading.title);
+      assert.ok(visible(readingHtml).includes(`Bài văn luyện tập › ${level}`), reading.slug);
+      assert.ok(visible(readingHtml).includes("Chỉ dùng ngữ pháp"), reading.slug);
+      assert.match(readingHtml, new RegExp(`<li class="active"><a href="${readingLevelHref(level)}">`), reading.slug);
+    }
+  }
+  assert.equal(bookReadings.find((reading) => reading.slug === "phucs-first-night")?.level, "A1");
 });
 
 test("points every internal link and asset at a file in the static export", async () => {

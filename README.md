@@ -4,8 +4,8 @@ Trang web: <https://ph0ngp.github.io/tu-goc/>
 
 Từ Gốc là một cuốn sách ngữ pháp tiếng Anh trực tuyến bằng tiếng Việt. Giao diện
 được xây dựng theo hướng tài liệu tối giản: mục lục cố định, bài học Markdown,
-tìm kiếm toàn văn, lựa chọn giao diện màu và một trang luyện tập riêng cho từng
-bài học.
+tìm kiếm toàn văn, lựa chọn giao diện màu, một trang luyện tập riêng cho từng
+bài học và mục Bài văn luyện tập gồm các bài đọc tiếng Anh xếp theo trình độ.
 
 Toàn bộ bài học và luyện tập được prerender thành HTML tĩnh và xuất bản trên
 GitHub Pages. Điều hướng trong sách mở trực tiếp HTML tĩnh thay vì chờ client
@@ -17,6 +17,8 @@ thiết.
 
 - `book/src/**/*.md`: nguồn duy nhất của toàn bộ lý thuyết.
 - `book/src/SUMMARY.md`: thứ tự chương và bài trong cuốn sách.
+- `book/readings/<cấp-độ>/*.md`: bài văn luyện tập, mỗi thư mục một trình độ;
+  số ở đầu tên tệp quyết định thứ tự trong trình độ.
 - `app/exercises/data/<cấp-độ>/chapter-XX.ts`: câu hỏi, đáp án, gợi ý và giải
   thích của đúng một chương. Số file khớp trực tiếp với số chương trong mục lục,
   nên người biên tập có thể tìm nội dung từ tên chương mà không mở file tổng lớn.
@@ -37,7 +39,7 @@ thiết.
   đều đi qua đây vì website nằm trong thư mục con `/tu-goc/` của GitHub Pages.
 
 Các tệp `app/book-*.generated.ts` và `app/exercise-loaders.generated.ts` được
-tạo tự động từ thư mục `book/src`; không sửa trực tiếp các tệp này.
+tạo tự động từ `book/src` và `book/readings`; không sửa trực tiếp các tệp này.
 
 Mọi quy tắc biên soạn lý thuyết và luyện tập được ghi tập trung trong
 [`AGENTS.md`](AGENTS.md).

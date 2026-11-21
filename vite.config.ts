@@ -6,7 +6,7 @@ import { BASE_PATH } from "./lib/site.mjs";
 // nên không thấy trang. Plugin này bỏ tiền tố khỏi `originalUrl` của các trang;
 // `url` giữ nguyên để module và tệp tĩnh của Vite vẫn đi qua `base`.
 function devPagesUnderBasePath(): Plugin {
-  const pagePrefix = new RegExp(`^${BASE_PATH}(?=/(?:$|\\?|ngu-phap/))`);
+  const pagePrefix = new RegExp(`^${BASE_PATH}(?=/(?:$|\\?|ngu-phap/|bai-van/))`);
   return {
     name: "tu-goc:dev-pages-under-base-path",
     apply: "serve",

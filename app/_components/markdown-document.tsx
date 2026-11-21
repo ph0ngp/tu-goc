@@ -24,12 +24,15 @@ function sourceHref(href: string | undefined, sourcePath: string) {
 export function MarkdownDocument({
   markdown,
   sourcePath,
+  lang,
 }: {
   markdown: string;
   sourcePath: string;
+  /** Ngôn ngữ của nội dung khi khác tiếng Việt, ví dụ `"en"` cho bài văn. */
+  lang?: string;
 }) {
   return (
-    <article className="lesson-markdown">
+    <article className="lesson-markdown" lang={lang}>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{

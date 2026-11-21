@@ -29,9 +29,12 @@ function initialBookTheme(): BookTheme {
 
 export function BookChrome({
   activeLessonSlug,
+  activeHref,
   children,
 }: {
   activeLessonSlug?: string;
+  /** Liên kết đang mở trong mục lục khi trang không phải một bài học. */
+  activeHref?: string;
   children: ReactNode;
 }) {
   const [sidebarState, setSidebarState] = useState<"auto" | "open" | "closed">("auto");
@@ -258,6 +261,7 @@ export function BookChrome({
         >
           <BookTableOfContents
             activeLessonSlug={activeLessonSlug}
+            activeHref={activeHref}
             onNavigate={closeMobileSidebar}
           />
         </aside>
