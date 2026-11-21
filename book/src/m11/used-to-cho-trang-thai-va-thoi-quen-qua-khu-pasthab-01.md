@@ -19,6 +19,8 @@ chủ ngữ + used to + động từ cơ bản
 
 `Used to` không đổi theo chủ ngữ: `I used to`, `she used to`, `they used to`. Động từ sau `to` luôn ở dạng cơ bản.
 
+Trong câu khẳng định, luôn viết `used to` có `-d`. Cấu trúc này chỉ nói về quá khứ: không có dạng hiện tại `I use to ...` hay `she uses to ...`. Muốn nói thói quen hiện tại, dùng hiện tại đơn: `I usually walk to school.` — Tôi thường đi bộ đến trường. Dạng `use to` không có `-d` chỉ xuất hiện sau `did/didn't`, như phần phủ định và câu hỏi dưới đây.
+
 ## Trạng thái và thói quen
 
 | Loại ý | Ví dụ |
@@ -42,7 +44,7 @@ Câu hỏi:  Did + chủ ngữ + use to + động từ cơ bản?
 - `Did you use to live here?` — Trước đây bạn từng sống ở đây phải không?
 - `Yes, I did.` / `No, I didn't.` — Có. / Không.
 
-Trong văn bản thực tế đôi khi có thể thấy `didn't used to`, nhưng `didn't use to` là dạng nên dùng trong bài học này.
+Trong văn bản thực tế, nhiều người viết `didn't used to` hoặc `Did you used to ...?`, và một số từ điển chấp nhận cách viết này. Bài học này dùng `didn't use to`, theo đúng quy tắc chung: sau `did`, động từ trở về dạng cơ bản.
 
 ## So với quá khứ đơn
 
@@ -59,5 +61,6 @@ Trong văn bản thực tế đôi khi có thể thấy `didn't used to`, nhưng
 
 - `used to + động từ cơ bản` nói trạng thái hoặc thói quen quá khứ nay đã khác.
 - Không dùng cho một sự kiện riêng lẻ có thời điểm cụ thể.
+- Không có dạng hiện tại `use to`; thói quen hiện tại dùng hiện tại đơn.
 - Phủ định dùng `didn't use to`; câu hỏi dùng `Did ... use to ...?`.
 - Đừng nhầm `used to do` với `be used to doing`.

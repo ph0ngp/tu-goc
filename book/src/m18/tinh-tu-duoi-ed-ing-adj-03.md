@@ -26,13 +26,15 @@ Không chọn chỉ bằng “người hay vật”. Một người cũng có th
 | `confused` | `confusing` | bối rối / gây bối rối |
 | `frightened` | `frightening` | sợ / gây sợ |
 | `relaxed` | `relaxing` | thư giãn / tạo thư giãn |
+| `worried` | `worrying` | lo lắng / gây lo lắng |
 
 ## Giới từ thường đi sau dạng `-ed`
 
-- `interested in` — quan tâm/hứng thú với: `I'm interested in history.`
-- `excited about` — hào hứng về: `She's excited about the trip.`
-- `bored with/by` — chán với/vì: `They were bored with the game.`
-- `surprised at/by` — bất ngờ trước: `We were surprised by the result.`
+- `interested in` — quan tâm/hứng thú với: `I'm interested in history.` — Tôi quan tâm đến lịch sử.
+- `excited about` — hào hứng về: `She's excited about the trip.` — Cô ấy hào hứng về chuyến đi.
+- `bored with/by` — chán với/vì: `They were bored with the game.` — Họ chán trò chơi đó.
+- `surprised at/by` — bất ngờ trước: `We were surprised by the result.` — Chúng tôi bất ngờ trước kết quả.
+- `worried about` — lo lắng về: `I'm worried about the test.` — Tôi lo lắng về bài kiểm tra.
 
 Học cả cụm vì giới từ không thể luôn đoán từ tiếng Việt.
 

@@ -45,7 +45,7 @@ Với tên riêng và cụm danh từ, ta vẫn áp dụng quy tắc số ít–
 
 ## Câu trả lời ngắn lặp lại đúng dạng của be
 
-Ta không cần lặp lại toàn bộ câu. Câu trả lời ngắn có cấu trúc:
+Ta không cần lặp lại toàn bộ câu. Câu trả lời ngắn (*short answer*) có cấu trúc:
 
 ```text
 Yes, chủ ngữ + be.
@@ -76,7 +76,7 @@ Nếu người khác hỏi `Am I late?`, người trả lời nói về người
 Am I late? — No, you aren't.
 ```
 
-## Không rút gọn câu trả lời khẳng định ở cuối
+## Không viết tắt câu trả lời khẳng định ở cuối
 
 Trong câu trả lời khẳng định ngắn, ta nói:
 
@@ -87,7 +87,7 @@ Yes, they are.
 ```
 
 Không kết thúc câu trả lời theo kiểu `Yes, I'm.`, `Yes, she's.` hoặc `Yes,
-they're.` Dạng phủ định có thể rút gọn: `No, she isn't.` và `No, they aren't.`
+they're.` Dạng phủ định có thể viết tắt: `No, she isn't.` và `No, they aren't.`
 
 ## Tạo câu hỏi và câu trả lời theo bốn bước
 
@@ -113,5 +113,7 @@ Ba dòng lần lượt có nghĩa: “Những con mèo đang đói”; “Nhữn
 - Cụm danh từ số ít dùng `is`; cụm danh từ số nhiều dùng `are`.
 - Câu trả lời ngắn lặp lại dạng `be` của câu hỏi.
 - Tên hoặc cụm danh từ thường được thay bằng đại từ trong câu trả lời.
-- Không rút gọn `am/is/are` ở cuối câu trả lời khẳng định ngắn.
-- Bài tiếp theo sẽ thêm `who`, `what`, `where` và `how old` vào đầu câu hỏi.
+- Không viết tắt `am/is/are` ở cuối câu trả lời khẳng định ngắn.
+
+Bài tiếp theo, [who, what, where, how old với be](who-what-where-how-old-voi-be-be-05.md),
+sẽ thêm những từ để hỏi như `who` (ai) và `where` (ở đâu) vào đầu câu hỏi.

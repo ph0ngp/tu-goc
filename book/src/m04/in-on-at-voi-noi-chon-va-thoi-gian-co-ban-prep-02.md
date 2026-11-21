@@ -9,11 +9,11 @@ legacyLessonId: prepositions-place-time
 
 ## Nơi chốn: không gian, bề mặt và điểm
 
-| Giới từ | Cách nhìn cơ bản | Ví dụ |
-| --- | --- | --- |
-| `in` | trong một không gian/khu vực | `in the room`, `in Hanoi`, `in Vietnam` |
-| `on` | trên một bề mặt | `on the table`, `on the wall`, `on the floor` |
-| `at` | tại một điểm hoặc địa điểm hoạt động | `at the door`, `at school`, `at home` |
+| Giới từ | Cách nhìn cơ bản | Ví dụ | Nghĩa |
+| --- | --- | --- | --- |
+| `in` | trong một không gian/khu vực | `in the room`, `in Hanoi`, `in Vietnam` | trong phòng, ở Hà Nội, ở Việt Nam |
+| `on` | trên một bề mặt | `on the table`, `on the wall`, `on the floor` | trên bàn, trên tường, trên sàn |
+| `at` | tại một điểm hoặc địa điểm hoạt động | `at the door`, `at school`, `at home` | ở cửa, ở trường, ở nhà |
 
 - `Lan is in the kitchen.` — Lan ở trong bếp.
 - `The picture is on the wall.` — Bức tranh ở trên tường.
@@ -23,11 +23,11 @@ legacyLessonId: prepositions-place-time
 
 ## Thời gian: khoảng, ngày và thời điểm
 
-| Giới từ | Dùng với | Ví dụ |
-| --- | --- | --- |
-| `in` | tháng, năm, mùa, buổi trong ngày | `in May`, `in 2026`, `in summer`, `in the morning` |
-| `on` | ngày và ngày tháng cụ thể | `on Monday`, `on 5 August`, `on Monday morning` |
-| `at` | giờ và thời điểm cụ thể | `at seven o'clock`, `at noon`, `at night` |
+| Giới từ | Dùng với | Ví dụ | Nghĩa |
+| --- | --- | --- | --- |
+| `in` | tháng, năm, mùa, buổi trong ngày | `in May`, `in 2026`, `in summer`, `in the morning` | vào tháng Năm, vào năm 2026, vào mùa hè, vào buổi sáng |
+| `on` | ngày và ngày tháng cụ thể | `on Monday`, `on 5 August`, `on Monday morning` | vào thứ Hai, vào ngày 5 tháng Tám, vào sáng thứ Hai |
+| `at` | giờ và thời điểm cụ thể | `at seven o'clock`, `at noon` | lúc bảy giờ, lúc giữa trưa |
 
 ```text
 The class is at nine o'clock. → Lớp học lúc chín giờ.
@@ -35,18 +35,18 @@ The test is on Monday.        → Bài kiểm tra vào thứ Hai.
 My birthday is in July.       → Sinh nhật của tôi vào tháng Bảy.
 ```
 
-Khi ngày đã được nêu rõ, dùng `on`: `on Friday evening`, không dùng `in Friday evening`. Một số cụm cố định cần nhớ: `in the morning`, `in the afternoon`, `in the evening`, nhưng `at night`.
+Khi ngày đã được nêu rõ, dùng `on`: `on Friday evening` (vào tối thứ Sáu), không dùng `in Friday evening`. Một số cụm cố định cần nhớ: `in the morning` (vào buổi sáng), `in the afternoon` (vào buổi chiều), `in the evening` (vào buổi tối), nhưng `at night` (vào ban đêm). Ban đêm không phải một thời điểm cụ thể như bảy giờ; `at night` chỉ đơn giản là một cụm cố định cần học thuộc.
 
 ## Không dùng giới từ trước một số từ thời gian
 
 Không dùng `in/on/at` ngay trước `this`, `last`, `next` hoặc `every` trong các cụm thời gian cơ bản.
 
-| Đúng | Không dùng trong mẫu này |
-| --- | --- |
-| `this morning` | `in this morning` |
-| `next Monday` | `on next Monday` |
-| `last year` | `in last year` |
-| `every day` | `on every day` |
+| Đúng | Nghĩa | Không dùng trong mẫu này |
+| --- | --- | --- |
+| `this morning` | sáng nay | `in this morning` |
+| `next Monday` | thứ Hai tới | `on next Monday` |
+| `last year` | năm ngoái | `in last year` |
+| `every day` | mỗi ngày | `on every day` |
 
 `We are at school every day` nghĩa là “Ngày nào chúng tôi cũng ở trường”. `We are at home this evening` nghĩa là “Tối nay chúng tôi ở nhà”.
 
@@ -54,14 +54,14 @@ Không dùng `in/on/at` ngay trước `this`, `last`, `next` hoặc `every` tron
 
 Ngữ cảnh cho biết giới từ đang nói nơi chốn hay thời gian.
 
-- `The keys are on the table.` — `on` nói vị trí trên mặt bàn.
-- `The lesson is on Tuesday.` — `on` nói ngày diễn ra bài học.
-- `She is at school.` — `at` nói địa điểm.
-- `The film is at eight.` — `at` nói thời điểm bộ phim bắt đầu.
+- `The keys are on the table.` — Chìa khóa ở trên bàn; `on` nói vị trí trên mặt bàn.
+- `The lesson is on Tuesday.` — Buổi học vào thứ Ba; `on` nói ngày diễn ra bài học.
+- `She is at school.` — Cô ấy ở trường; `at` nói địa điểm.
+- `The film is at eight.` — Bộ phim chiếu lúc tám giờ; `at` nói thời điểm bộ phim bắt đầu.
 
 ## Đây là các quy tắc cơ bản, không phải mọi trường hợp
 
-Giới từ có nhiều cụm cố định và khác biệt giữa các biến thể tiếng Anh. Ở A1, hãy dùng chắc các mẫu trong bảng thay vì cố biến chúng thành một quy tắc hình học tuyệt đối. Khi gặp một cụm mới, học cả cụm như `at home` hoặc `on the bus`.
+Giới từ có nhiều cụm cố định và khác biệt giữa các biến thể tiếng Anh. Ở A1, hãy dùng chắc các mẫu trong bảng thay vì cố biến chúng thành một quy tắc hình học tuyệt đối. Khi gặp một cụm mới, học cả cụm như `at home` (ở nhà) hoặc `on the bus` (trên xe buýt).
 
 ## Ghi nhớ
 

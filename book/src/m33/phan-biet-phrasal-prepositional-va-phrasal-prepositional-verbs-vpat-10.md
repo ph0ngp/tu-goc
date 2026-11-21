@@ -11,26 +11,11 @@ Tiếng Anh có nhiều động từ gồm hơn một từ. Tuy nhiên, `look up
 - **động từ có giới từ** (*prepositional verb*): động từ + giới từ;
 - **cụm động từ–giới từ** (*phrasal-prepositional verb*): động từ + tiểu từ + giới từ.
 
-Phân biệt ba nhóm giúp đặt tân ngữ và đại từ đúng vị trí, hiểu khả năng bị động và tránh tách một cụm không được phép tách.
+Phân biệt ba nhóm giúp đặt tân ngữ đúng vị trí, hiểu khả năng bị động và tránh tách một cụm không tách được.
 
 ## Cụm động từ: động từ + tiểu từ
 
-Trong `turn off the light`, `off` là particle. Với nhiều phrasal verb có tân ngữ, danh từ có thể đứng trước hoặc sau particle:
-
-```text
-turn off the light
-turn the light off
-```
-
-Nhưng đại từ tân ngữ phải đứng giữa:
-
-- đúng: `turn it off` — tắt nó đi;
-- không dùng: `turn off it`.
-
-Các ví dụ tách được khác:
-
-- `pick up the parcel` / `pick the parcel up` / `pick it up` — nhặt hoặc lấy bưu kiện;
-- `write down the address` / `write the address down` / `write it down` — ghi lại địa chỉ.
+Vị trí tân ngữ của cụm tách được đã học ở [Cụm động từ tách được, không tách được và vị trí đại từ](../m25/phrasal-verbs-tach-duoc-khong-tach-duoc-va-vi-tri-dai-tu-phrv-01.md): danh từ có thể đứng trước hoặc sau particle (`turn off the light` / `turn the light off` — tắt đèn), còn đại từ phải đứng giữa (`turn it off`, không dùng `turn off it`).
 
 Không phải mọi phrasal verb đều có tân ngữ để tách: trong `The plane took off.` (Máy bay đã cất cánh.), `off` là particle nhưng không có danh từ nào đặt vào giữa được.
 
@@ -40,12 +25,10 @@ Cũng cần cẩn thận với nhãn trong từ điển. Nhiều từ điển g�
 
 Trong prepositional verb, tân ngữ đứng sau giới từ và không chuyển vào giữa:
 
-- `look at the picture` — nhìn bức tranh;
-- `look at it`, không dùng `look it at`;
-- `rely on the data` — dựa vào dữ liệu;
-- `rely on it`, không dùng `rely it on`.
+- `look at the picture` — nhìn bức tranh; `look at it`, không dùng `look it at`;
+- `rely on the data` — dựa vào dữ liệu; `rely on it`, không dùng `rely it on`.
 
-Giới từ giới thiệu bổ ngữ của nó. Khi tạo câu hỏi hoặc mệnh đề quan hệ, giới từ có thể ở cuối hoặc được đưa lên trước trong văn phong trang trọng:
+Khi tạo câu hỏi hoặc mệnh đề quan hệ, giới từ có thể ở cuối hoặc được đưa lên trước trong văn phong trang trọng:
 
 - `What are you looking at?` — Bạn đang nhìn gì?
 - `the evidence on which we relied` — bằng chứng mà chúng tôi dựa vào.
@@ -67,9 +50,28 @@ Tân ngữ đứng sau phần cuối của cụm: `put up with it`, không dùng
 | --- | --- | --- | --- |
 | đặt danh từ giữa | `turn the light off` | không: `look the picture at` | không: `put the noise up with` |
 | vị trí đại từ | `turn it off` | `look at it` | `put up with it` |
-| giới từ đứng trước relative pronoun | không áp dụng cho particle | `the issue about which we spoke` | đôi khi đưa giới từ cuối: `the problem with which we put up` nhưng thường rất nặng |
+| giới từ đứng trước đại từ quan hệ | không áp dụng cho particle | `the issue about which we spoke` | thường không đưa lên: dùng `the problem (that) we put up with`; dạng `with which we put up` gần như không được chấp nhận |
 
-Không có một phép thử duy nhất giải quyết mọi trường hợp. Cần kết hợp vị trí tân ngữ, nghĩa và cách dùng được ghi trong từ điển.
+Không có phép thử duy nhất; cần kết hợp vị trí tân ngữ, nghĩa và ví dụ trong từ điển.
+
+## Chọn vị trí tân ngữ và văn phong
+
+Với cụm tách được, hai vị trí của danh từ đều đúng nhưng không luôn tự nhiên như nhau. Phần dài hoặc mang thông tin mới thường đứng cuối:
+
+- `Can you pick up the parcel that arrived yesterday?` — Bạn lấy giúp gói hàng đến hôm qua được không? Tân ngữ dài nên đứng sau particle; đặt nó vào giữa sẽ đẩy `up` ra rất xa động từ.
+- `Take your coat off.` — Cởi áo khoác ra đi. Tân ngữ ngắn, đã rõ trong tình huống, thường đứng giữa.
+- `Turn off the light, not the fan.` — Tắt đèn, đừng tắt quạt. Khi danh từ là phần được nhấn để đối lập, nó đứng sau particle.
+
+Văn phong cũng ảnh hưởng tới lựa chọn giữa cụm động từ và một động từ đơn gần nghĩa:
+
+| Cụm nhiều từ | Động từ đơn | Nghĩa | Ghi chú |
+| --- | --- | --- | --- |
+| `put up with` | `tolerate` | chịu đựng | `tolerate` hợp văn bản trang trọng |
+| `find out` | `discover` | tìm ra | `discover` trang trọng hơn |
+| `put off` | `postpone` | hoãn | `postpone` hay gặp trong thông báo chính thức |
+| `look into` | `investigate` | xem xét, điều tra | `investigate` hợp báo cáo, tin tức |
+
+Cụm động từ không tự động kém trang trọng: `carry out a study` (tiến hành một nghiên cứu) vẫn rất phổ biến trong văn học thuật. Trong hội thoại và email thường, cụm động từ là lựa chọn trung tính; trong văn bản chính thức, động từ đơn thường được ưu tiên, nhưng dùng nó khi trò chuyện thân mật sẽ nghe cứng.
 
 ## Cùng từ nhỏ nhưng khác công việc
 
@@ -79,21 +81,11 @@ Không có một phép thử duy nhất giải quyết mọi trường hợp. C�
 - `She looked up the chimney.` — Cô ấy nhìn lên ống khói. `Up` biểu thị hướng và `the chimney` thuộc cụm đường đi; không có nghĩa “tra cứu”.
 - `She looks up to her teacher.` — Cô ấy kính trọng giáo viên. `Up to` nằm trong phrasal-prepositional verb `look up to`; nói `looks up to her`, không nói `looks her up to`.
 
-Phải phân tích cả nghĩa trong ngữ cảnh, không gắn nhãn cố định cho riêng từ `up`.
+Phải phân tích nghĩa trong ngữ cảnh, không gắn nhãn cố định cho riêng từ `up`.
 
-## Trọng âm và ngữ điệu hỗ trợ nhưng không đủ
+## Trọng âm và nghĩa chỉ là dấu hiệu phụ
 
-Trong nhiều phrasal verb, particle có thể được nhấn: `TURN it OFF`. Trong prepositional verb, giới từ thường ít được nhấn hơn: `LOOK at it`. Tuy vậy, trọng âm thay đổi theo tiêu điểm câu và giọng địa phương. Đây là dấu hiệu hỗ trợ, không phải quy tắc duy nhất để phân loại trong văn viết.
-
-## Nghĩa trong suốt và nghĩa thành ngữ
-
-Một cụm nhiều từ có thể có nghĩa dễ đoán hoặc khó đoán:
-
-- `sit down` gần với nghĩa của từng phần;
-- `give up` nghĩa là “từ bỏ”, không thể dịch từng chữ;
-- `look into a problem` nghĩa là “điều tra/xem xét vấn đề”.
-
-Mức độ thành ngữ không tự quyết định loại cấu trúc. Cả phrasal và prepositional verbs đều có thể mang nghĩa trong suốt hoặc nghĩa chuyên biệt.
+Particle của phrasal verb thường được nhấn (`TURN it OFF`), còn giới từ của prepositional verb thường không (`LOOK at it`), nhưng trọng âm thay đổi theo tiêu điểm câu và giọng địa phương. Nghĩa cũng vậy: `sit down` (ngồi xuống) dễ đoán, `give up` (từ bỏ) và `look into a problem` (xem xét một vấn đề) khó đoán, nhưng mức độ thành ngữ không quyết định loại cấu trúc.
 
 ## Bị động
 
@@ -108,16 +100,16 @@ Không bỏ particle hoặc giới từ chỉ vì tân ngữ đã lên làm ch�
 ## Cách học và kiểm tra
 
 1. Học cả cụm cùng một câu ví dụ tự nhiên.
-2. Kiểm tra cụm có tân ngữ không.
-3. Nếu có, thử vị trí của danh từ và đại từ bằng nguồn đáng tin cậy.
-4. Ghi rõ cụm tách được hay không tách được.
-5. Với `to`, xác định đó là giới từ hay dấu hiệu của infinitive trước khi chọn `V-ing` hay động từ cơ bản.
+2. Nếu cụm có tân ngữ, thử vị trí của danh từ và đại từ, rồi ghi rõ cụm tách được hay không.
+3. Với `to`, xác định đó là giới từ hay dấu hiệu của infinitive trước khi chọn `V-ing` hay động từ cơ bản.
+4. Chọn vị trí tân ngữ và mức trang trọng theo người đọc.
 
 ## Ghi nhớ
 
 - Phrasal verb gồm động từ + particle; một số cụm có tân ngữ tách được.
 - Với phrasal verb tách được, đại từ tân ngữ đứng giữa động từ và particle.
 - Prepositional verb giữ tân ngữ sau giới từ.
-- Phrasal-prepositional verb có ba phần và tân ngữ đứng sau phần cuối.
-- Nghĩa thành ngữ không phải phép thử duy nhất để phân loại.
+- Phrasal-prepositional verb có ba phần và tân ngữ đứng sau phần cuối; giới từ cuối của nó thường không đưa lên trước đại từ quan hệ.
+- Với cụm tách được, tân ngữ dài, mới hoặc được nhấn thường đứng sau particle; tân ngữ ngắn, đã rõ thường đứng giữa.
+- Cụm động từ và động từ đơn gần nghĩa thường khác nhau về văn phong.
 - Khi bị động hóa, giữ lại toàn bộ particle hoặc giới từ thuộc cụm động từ.

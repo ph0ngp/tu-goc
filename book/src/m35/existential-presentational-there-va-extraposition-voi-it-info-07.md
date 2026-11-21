@@ -14,7 +14,7 @@ Tiếng Anh thường tránh đặt một cụm dài hoặc hoàn toàn mới v�
 
 ## `There` giới thiệu sự tồn tại
 
-Trong `There is a problem`, `there` không có nghĩa nơi chốn “ở đó”. Nó là chủ ngữ hình thức, còn `a problem` là **chủ ngữ theo nghĩa** (*notional subject*) — thành phần mang nội dung về thứ tồn tại.
+Trong `There is a problem` (Có một vấn đề), `there` không có nghĩa nơi chốn “ở đó”. Cách dùng này gọi là **`there` tồn tại** (*existential there*): `there` là chủ ngữ hình thức, còn `a problem` là **chủ ngữ theo nghĩa** (*notional subject*) — thành phần mang nội dung về thứ tồn tại.
 
 ```text
 there + be + noun phrase + place/time/complement
@@ -35,18 +35,18 @@ Trong văn phong cẩn thận, `be` thường hòa hợp với cụm danh từ s
 
 Trong hội thoại, `There's two problems` khá phổ biến vì `there's` hoạt động gần như một khối giới thiệu. Tuy nhiên, trong văn viết trang trọng nên dùng `There are two problems`.
 
-Với chuỗi danh từ, cách hòa hợp có biến thể: `There is a pen and two notebooks on the desk` thường hòa hợp với danh từ gần nhất; `There are a pen and two notebooks...` nhìn cả danh sách như số nhiều nhưng có thể nghe kém tự nhiên. Viết lại `There are two notebooks and a pen...` thường rõ hơn.
+Với chuỗi danh từ, cách hòa hợp có biến thể. `There is a pen and two notebooks on the desk` — Trên bàn có một cây bút và hai quyển vở — thường hòa hợp với danh từ gần nhất; `There are a pen and two notebooks...` nhìn cả danh sách như số nhiều nhưng có thể nghe kém tự nhiên. Viết lại thành `There are two notebooks and a pen on the desk` (cùng nghĩa) thường rõ hơn.
 
 ## `There` giới thiệu đối tượng với động từ khác
 
-Ngoài `be`, một số động từ xuất hiện trong cấu trúc giới thiệu trang trọng:
+Ngoài `be`, một số động từ xuất hiện sau `there` trong văn phong trang trọng. Cách dùng này gọi là **`there` giới thiệu** (*presentational there*):
 
 - `There remains one major obstacle.` — Vẫn còn một trở ngại lớn.
 - `There arose a serious disagreement.` — Đã nảy sinh một bất đồng nghiêm trọng.
 - `There followed a period of rapid growth.` — Sau đó là một giai đoạn tăng trưởng nhanh.
 - `There seems to be no alternative.` — Dường như không có phương án khác.
 
-Không thể đặt mọi động từ sau presentational `there`. Ta không dùng `There ate a child an apple`. Các động từ phù hợp thường diễn tả tồn tại, xuất hiện, còn lại, phát sinh hoặc trình tự trình bày.
+Không thể đặt mọi động từ sau `there` giới thiệu. Ta không dùng `There ate a child an apple` (định nói “Một đứa trẻ ăn một quả táo”). Các động từ phù hợp thường diễn tả tồn tại, xuất hiện, còn lại, phát sinh hoặc trình tự trình bày.
 
 ## Danh từ xác định sau `there`
 
@@ -65,7 +65,7 @@ Một mệnh đề làm chủ ngữ có thể đứng đầu:
 
 Câu đúng nhưng nặng. Tiếng Anh thường dùng `it` làm chủ ngữ hình thức và đưa mệnh đề nội dung về cuối:
 
-`It was obvious that the figures were wrong` — “Rõ ràng là các số liệu sai.”
+`It was obvious that the figures were wrong` — “Rõ ràng là các số liệu sai.” Cách đưa mệnh đề về cuối câu và để `it` giữ chỗ chủ ngữ này gọi là **chuyển vị ra sau** (*extraposition*), thuật ngữ đã được nhắc qua ở bài [Mệnh đề nội dung làm bổ ngữ của động từ và tính từ](../m33/content-clauses-sau-danh-tu-tinh-tu-va-dong-tu-nclause-03.md).
 
 | Mệnh đề được đưa ra sau | Ví dụ |
 | --- | --- |
@@ -75,9 +75,9 @@ Câu đúng nhưng nặng. Tiếng Anh thường dùng `it` làm chủ ngữ hì
 
 `It` không chỉ một vật cụ thể; nội dung thật nằm ở phần cuối.
 
-## Đưa bổ ngữ của tân ngữ ra cuối câu với `it`
+## `It` làm tân ngữ hình thức: đưa mệnh đề tân ngữ ra cuối câu
 
-Một số động từ đặt `it` làm tân ngữ hình thức trước bổ ngữ và mệnh đề dài:
+Với `find` hay `consider`, tân ngữ thật có thể là cả một mệnh đề. Mệnh đề ấy được đưa ra cuối câu, còn `it` giữ vị trí tân ngữ trước tính từ đánh giá:
 
 - `I find it surprising that nobody complained.` — Tôi thấy việc không ai phàn nàn thật đáng ngạc nhiên.
 - `We consider it essential to protect the data.` — Chúng tôi coi việc bảo vệ dữ liệu là thiết yếu.
@@ -88,9 +88,9 @@ Không bỏ `it` trong các mẫu này: `I find surprising that...` không phả
 
 So sánh:
 
-- `I bought a new phone. It is very light.` — `It` thay `a new phone`; đây là đại từ tham chiếu.
-- `It is surprising that the phone is so light.` — `It` giữ chỗ; mệnh đề `that...` mang nội dung.
-- `It is raining.` — `It` là chủ ngữ vô nhân xưng của thời tiết, không có mệnh đề được extrapose.
+- `I bought a new phone. It is very light.` — Tôi mua điện thoại mới. Nó rất nhẹ. `It` thay `a new phone`; đây là đại từ tham chiếu.
+- `It is surprising that the phone is so light.` — Thật ngạc nhiên là chiếc điện thoại nhẹ như vậy. `It` giữ chỗ; mệnh đề `that...` mang nội dung.
+- `It is raining.` — Trời đang mưa. `It` là chủ ngữ vô nhân xưng của thời tiết, không có mệnh đề nào được chuyển vị ra sau.
 
 Ba loại `it` giống hình thức nhưng có chức năng khác.
 
@@ -106,17 +106,17 @@ Ba loại `it` giống hình thức nhưng có chức năng khác.
 
 ## Quy trình lựa chọn
 
-1. Nếu thông tin mới là một thực thể/sự tồn tại, cân nhắc existential `there`.
-2. Nếu thông tin mới là cả mệnh đề đang được đánh giá, cân nhắc extraposition với `it`.
-3. Kiểm tra động từ có cấp phép presentational `there` hoặc extraposed object hay không.
+1. Nếu thông tin mới là một thực thể/sự tồn tại, cân nhắc `there` tồn tại.
+2. Nếu thông tin mới là cả mệnh đề đang được đánh giá, cân nhắc chuyển vị ra sau với `it`.
+3. Kiểm tra động từ có cho phép `there` giới thiệu hoặc tân ngữ hình thức `it` hay không.
 4. Chọn hòa hợp phù hợp với danh từ sau `there`, đặc biệt trong văn viết.
 5. Kiểm tra `it/there` có phải hình thức hay thật sự tham chiếu tới nơi chốn/vật đã nêu.
 
 ## Ghi nhớ
 
-- Existential `there` giới thiệu sự tồn tại hoặc hiện diện; nó không mang nghĩa nơi chốn.
-- Presentational `there` chỉ dùng với một nhóm động từ phù hợp như `remain`, `arise`, `follow`, `seem to be`.
+- `There` tồn tại giới thiệu sự tồn tại hoặc hiện diện; nó không mang nghĩa nơi chốn.
+- `There` giới thiệu chỉ dùng với một nhóm động từ phù hợp như `remain`, `arise`, `follow`, `seem to be`.
 - Trong văn viết cẩn thận, `be` thường hòa hợp với cụm danh từ sau `there`.
-- Phép đưa thành phần ra cuối câu (*extraposition*) dùng `it` để đưa mệnh đề `that`, động từ nguyên mẫu hoặc một số mệnh đề `-ing` dài về cuối.
-- Một số động từ có extraposed object: `find/consider it + adjective + clause`.
+- Chuyển vị ra sau (*extraposition*) dùng `it` để đưa mệnh đề `that`, động từ nguyên mẫu hoặc một số mệnh đề `-ing` dài về cuối.
+- Một số động từ nhận tân ngữ hình thức `it`: `find/consider it + adjective + clause`.
 - Chọn `there` cho sự tồn tại và `it` cho đánh giá mệnh đề; không thay hai từ cơ học.

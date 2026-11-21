@@ -51,13 +51,13 @@ Nhiều câu có thể dùng hơn một dạng với sắc thái gần nhau. Hã
 
 ## Câu hỏi và phủ định theo đúng hệ thống
 
-`Must` là modal nên tự đứng trước chủ ngữ trong câu hỏi, dù câu hỏi với `must` không phải lúc nào cũng là lựa chọn đời thường nhất: `Must we leave now?` — “Chúng ta phải đi ngay sao?”
+`Must` là động từ tình thái nên tự đứng trước chủ ngữ trong câu hỏi, dù câu hỏi với `must` không phải lúc nào cũng là lựa chọn đời thường nhất: `Must we leave now?` — “Chúng ta phải đi ngay sao?”
 
 `Have to` và `need to` hoạt động như động từ thường:
 
 - `Do you have to wear a uniform?` — Bạn có phải mặc đồng phục không?
 - `Does Lan need to book a ticket?` — Lan có cần đặt vé không?
-- `Did they have to wait?` — Họ đã phải chờ à?
+- `Did they have to wait?` — Lúc đó họ có phải chờ không?
 
 Sau `does/did`, dùng `have` và `need`, không dùng `has/had/needs`. Phần phủ định cần đặc biệt cẩn thận vì `mustn't` không cùng nghĩa với `don't have to`; bài tiếp theo tập trung vào khác biệt đó.
 

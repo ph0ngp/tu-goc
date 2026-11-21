@@ -1,4 +1,4 @@
-import { normalizeExactInput } from "./exercise-normalization";
+import { normalizeExactInput } from "./exercise-normalization.ts";
 import type { Exercise } from "./exercise-types";
 
 export type AnswerStatus = "idle" | "incomplete" | "correct" | "incorrect";
@@ -31,7 +31,9 @@ export function evaluateExercise(
   if (exercise.kind === "order") {
     if (selectedIndexes.length !== exercise.answer.length) return "incomplete";
     const selected = selectedIndexes.map((index) => exercise.tokens[index]);
-    return selected.every((value, index) => value === exercise.answer[index]) ? "correct" : "incorrect";
+    return [exercise.answer, ...(exercise.alternatives ?? [])].some((accepted) =>
+      accepted.length === selected.length && selected.every((value, index) => value === accepted[index]),
+    ) ? "correct" : "incorrect";
   }
   if (exercise.kind === "match") {
     if (!exercise.pairs.every((_, index) => values[`match-${index}`])) return "incomplete";

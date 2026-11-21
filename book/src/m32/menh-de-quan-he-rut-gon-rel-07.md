@@ -51,8 +51,11 @@ Rút gọn dễ nhất khi đại từ quan hệ là **chủ ngữ** của mện
 
 Nếu mệnh đề có modal, thời hoàn thành hoặc quan hệ thời gian quan trọng, rút gọn có thể làm mất nghĩa:
 
-- `the people who will attend tomorrow` không phải lúc nào cũng nên đổi thành `the people attending tomorrow`; câu sau có thể được hiểu là kế hoạch đã xác định.
-- `the report that has been completed` → `the completed report` chỉ phù hợp nếu trạng thái hoàn tất là điều cần nhấn.
+- `the people who might attend tomorrow` — những người có thể sẽ tham dự ngày mai. Nếu rút thành `the people attending tomorrow`, ý chưa chắc chắn của `might` biến mất và câu nghe như việc tham dự đã được sắp xếp.
+- Với `will`, rút gọn thường vẫn ổn khi ngữ cảnh đã rõ: `the people attending tomorrow` — những người tham dự ngày mai — vẫn chỉ tương lai nhờ `tomorrow`.
+- `the report that has been completed` → `the completed report` — bản báo cáo đã hoàn thành — chỉ phù hợp nếu trạng thái hoàn tất là điều cần nhấn.
+
+Với một hành động chủ động đã xong ở quá khứ, thường giữ mệnh đề đầy đủ: `The man who stole my bag was arrested.` — Người đàn ông đã lấy trộm túi của tôi đã bị bắt. Nếu viết `the man stealing my bag`, người đọc sẽ hiểu là người đang lấy trộm. Cụm `V-ing` hợp với việc đang diễn ra hoặc đặc điểm kéo dài, không hợp với một việc đơn lẻ đã xong.
 
 ## Mệnh đề hạn định và không hạn định
 

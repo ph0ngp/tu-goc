@@ -9,6 +9,8 @@ Muốn chọn `a/an`, `some` hay không dùng mạo từ, trước hết phải 
 
 ## Bảng lựa chọn cơ bản
 
+Bảng dưới đây dùng thuật ngữ **từ hạn định** (*determiner*): từ đứng trước danh từ để cho biết đang nói đối tượng nào hoặc bao nhiêu, như `a/an`, `the`, `some`, `my`, `this`. Mạo từ `a/an` và `the` là một nhóm nhỏ trong các từ hạn định.
+
 | Loại danh từ | Khi nói một lượng chưa xác định | Ví dụ |
 | --- | --- | --- |
 | đếm được số ít | `a/an` | `a chair`, `an apple` |
@@ -33,7 +35,7 @@ Muốn chọn `a/an`, `some` hay không dùng mạo từ, trước hết phải 
 Ta dùng **trường hợp không có mạo từ** (*zero article*) khi nói chung về danh từ số nhiều hoặc không đếm được:
 
 - `Books can be expensive.` — Sách có thể đắt.
-- `Water is essential.` — Nước là thiết yếu.
+- `Water is essential.` — Nước rất cần thiết (cho sự sống).
 - `Children need sleep.` — Trẻ em cần ngủ.
 
 Ở đây ta không nói một nhóm sách, một lượng nước hay những đứa trẻ cụ thể.
@@ -47,6 +49,22 @@ Một số từ có thể đếm được hoặc không đếm được tùy ngh
 - `paper` — giấy; `a paper` — một tờ/bài báo tùy ngữ cảnh.
 
 Hãy xác định nghĩa đang dùng, không gắn một nhãn cố định cho mọi lần xuất hiện của từ.
+
+## Đếm được trong tiếng Việt nhưng không đếm được trong tiếng Anh
+
+Tiếng Việt nói “một lời khuyên”, “ba món hành lý”, “một tin”. Trong tiếng Anh, các danh từ sau lại **không đếm được**: không đi với `a/an`, không thêm `-s`, và đi với động từ số ít.
+
+| Danh từ | Nghĩa | Muốn đếm |
+| --- | --- | --- |
+| `advice` | lời khuyên | `a piece of advice`, `two pieces of advice` |
+| `news` | tin tức | `a piece of news` |
+| `luggage` | hành lý | `a piece of luggage`, `three pieces of luggage` |
+| `furniture` | đồ đạc, đồ nội thất | `a piece of furniture` |
+| `equipment` | thiết bị | `a piece of equipment` |
+
+Khi nói một lượng chưa xác định, dùng `some` như với `information`: `She gave me some advice.` — Cô ấy cho tôi vài lời khuyên. Khi cần đếm, dùng đơn vị `a piece of` như ở [bài danh từ đếm được và không đếm được](../m04/danh-tu-dem-duoc-va-khong-dem-duoc-noun-04.md). `News` tận cùng bằng `-s` nhưng không phải số nhiều: `The news is good.` — Tin này tốt.
+
+Với `bread`, ngoài `a piece of bread` (một miếng bánh mì) còn có đơn vị `a loaf of bread` — một ổ bánh mì; số nhiều là `two loaves of bread` (hai ổ bánh mì).
 
 ## Câu hỏi và phủ định
 
@@ -68,3 +86,4 @@ Ví dụ, `I need some paper` nói cần một lượng giấy; `Paper comes fro
 - `Some` đi với số nhiều và không đếm được để nói một lượng chưa xác định.
 - Zero article thường dùng khi nói chung về số nhiều hoặc không đếm được.
 - Tính đếm được phụ thuộc vào nghĩa của danh từ trong câu.
+- `Advice`, `news`, `luggage`, `furniture`, `equipment` không đếm được; muốn đếm, dùng `a piece of`.

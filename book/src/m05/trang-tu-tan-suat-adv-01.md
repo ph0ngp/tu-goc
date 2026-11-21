@@ -5,15 +5,15 @@ legacyLessonId: frequency
 ---
 # Trạng từ tần suất
 
-Trạng từ tần suất cho biết một việc xảy ra thường xuyên đến đâu. Chúng thường đi với hiện tại đơn vì thì này nói thói quen và việc lặp lại.
+**Trạng từ** (*adverb*) là từ thường bổ sung thông tin cho động từ, chẳng hạn hành động diễn ra lúc nào, ra sao hay thường xuyên đến mức nào. **Trạng từ tần suất** (*adverb of frequency*) là những từ như `always`, `often`, `never`, cho biết một việc xảy ra thường xuyên đến đâu. Chúng thường đi với hiện tại đơn vì thì này nói thói quen và việc lặp lại.
 
 ## Một thang gần đúng
 
 | Trạng từ | Nghĩa gần đúng |
 | --- | --- |
 | `always` | luôn luôn |
-| `usually` | thường, thường xuyên |
-| `often` | thường |
+| `usually` | thường, thường lệ (hầu hết các lần) |
+| `often` | hay, thường xuyên (khá nhiều lần) |
 | `sometimes` | đôi khi |
 | `rarely/seldom` | hiếm khi |
 | `never` | không bao giờ |
@@ -29,20 +29,20 @@ Subject + frequency adverb + main verb + ...
 ```
 
 - `I usually walk to work.` — Tôi thường đi bộ đi làm.
-- `She often reads at night.` — Cô ấy thường đọc vào ban đêm.
+- `She often reads at night.` — Cô ấy hay đọc vào ban đêm.
 - `They never eat meat.` — Họ không bao giờ ăn thịt.
 
-Trong câu hỏi, trạng từ vẫn đứng trước động từ chính: `Do you often cook?`, nghĩa là “Bạn có thường nấu ăn không?” Trong câu phủ định, nó thường đứng sau `don't/doesn't`: `I don't usually drink coffee`, nghĩa là “Tôi thường không uống cà phê”.
+Trong câu hỏi, trạng từ vẫn đứng trước động từ chính: `Do you often cook?`, nghĩa là “Bạn có hay nấu ăn không?” Trong câu phủ định, nó thường đứng sau `don't/doesn't`: `I don't usually drink coffee`, nghĩa là “Tôi thường không uống cà phê”.
 
 ## Sau `be`
 
 Khi động từ chính là `be`, trạng từ tần suất thường đứng sau `am/is/are`.
 
 - `Lan is always friendly.` — Lan luôn thân thiện.
-- `We are usually at home on Sunday.` — Chủ nhật chúng tôi thường ở nhà.
+- `We are usually at home on Sundays.` — Vào các ngày Chủ nhật, chúng tôi thường ở nhà.
 - `I am never late.` — Tôi không bao giờ muộn.
 
-So sánh `She often works at home` với `She is often at home`: trạng từ đứng trước `works` nhưng sau `is`.
+So sánh `She often works at home` (Cô ấy hay làm việc ở nhà) với `She is often at home` (Cô ấy hay ở nhà): trạng từ đứng trước `works` nhưng sau `is`.
 
 ## `Sometimes` linh hoạt hơn
 
@@ -56,7 +56,7 @@ Cả ba đều có nghĩa “Đôi khi chúng tôi ăn bên ngoài”. Dấu ph�
 
 ## Cụm chỉ số lần
 
-Các cụm như `every day` (mỗi ngày), `once a week` (mỗi tuần một lần), `twice a month` (mỗi tháng hai lần), `three times a year` (mỗi năm ba lần) thường đứng cuối câu.
+Các cụm như `every day` (mỗi ngày), `once a week` (mỗi tuần một lần), `twice a month` (mỗi tháng hai lần), `three times a year` (mỗi năm ba lần) thường đứng cuối câu. Danh từ đứng ngay sau `every` ở dạng số ít: nói `every day`, `every week`, không nói `every days`.
 
 | Câu | Nghĩa |
 | --- | --- |

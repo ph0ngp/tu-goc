@@ -5,7 +5,7 @@ legacyLessonId: b1-phrasal-verbs-separability
 ---
 # Cụm động từ tách được, không tách được và vị trí đại từ
 
-Phrasal verb gồm động từ và một tiểu từ như `up`, `off`, `out`, `away`. Nghĩa của cả cụm có thể khác nghĩa từng phần. Khi có tân ngữ, một số cụm **tách được**, một số **không tách được**; đại từ phải đứng đúng vị trí.
+Cụm động từ (*phrasal verb*) gồm động từ và một tiểu từ (*particle*) như `up`, `off`, `out`, `away`. Nghĩa của cả cụm có thể khác nghĩa từng phần. Khi có tân ngữ, một số cụm **tách được**, một số **không tách được**; đại từ phải đứng đúng vị trí.
 
 ## Cụm tách được
 
@@ -58,7 +58,7 @@ Không dùng `look him after` hoặc `ran her into` trong các nghĩa này.
 
 ## Phrasal verb ba phần
 
-Các cụm có ba phần như `look forward to`, `get on with`, `put up with`, `run out of` thường không tách:
+Các cụm có ba phần như `look forward to` (mong chờ), `get on with` (hòa hợp với ai), `put up with` (chịu đựng), `run out of` (hết) thường không tách:
 
 - `I'm looking forward to the holiday.` — Tôi mong chờ kỳ nghỉ.
 - `We have run out of milk.` — Chúng tôi đã hết sữa.

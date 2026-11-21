@@ -44,7 +44,7 @@ Sau `when`, `before`, `after`, `as soon as` và `by the time`, mệnh đề th�
 
 Tương lai hoàn thành phù hợp khi người nói đếm kết quả đã tích lũy:
 
-- `Next month, Mai will have worked on ten projects.` — Đến tháng sau, Mai sẽ từng làm mười dự án.
+- `Next month, Mai will have worked on ten projects.` — Đến tháng sau, Mai sẽ làm được tổng cộng mười dự án.
 - `By midnight, the team will have answered all the emails.` — Đến nửa đêm, đội sẽ trả lời xong mọi email.
 
 Ở đây, số lượng `ten projects` và kết quả `all the emails` khiến dạng hoàn thành đơn tự nhiên hơn dạng hoàn thành tiếp diễn.

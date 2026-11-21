@@ -22,11 +22,11 @@ Từ câu kể `You like tea`, đưa `do` lên đầu: `Do you like tea?`. Từ 
 
 ## Sau `does`, không có `-s/-es` trên động từ chính
 
-| Câu kể | Câu hỏi |
-| --- | --- |
-| `She reads every day.` | `Does she read every day?` |
-| `He watches TV.` | `Does he watch TV?` |
-| `Mai has a bike.` | `Does Mai have a bike?` |
+| Câu kể | Câu hỏi | Nghĩa của câu hỏi |
+| --- | --- | --- |
+| `She reads every day.` | `Does she read every day?` | Cô ấy có đọc mỗi ngày không? |
+| `He watches TV.` | `Does he watch TV?` | Anh ấy có xem TV không? |
+| `Mai has a bike.` | `Does Mai have a bike?` | Mai có xe đạp không? |
 
 Không nói `Does she reads?` hoặc `Does Mai has?`. Dấu hiệu ngôi thứ ba số ít đã nằm trong `does`.
 
@@ -34,13 +34,13 @@ Không nói `Does she reads?` hoặc `Does Mai has?`. Dấu hiệu ngôi thứ b
 
 Dùng lại `do/does`, không lặp động từ chính.
 
-| Câu hỏi | Trả lời khẳng định | Trả lời phủ định |
-| --- | --- | --- |
-| `Do you work here?` | `Yes, I do.` | `No, I don't.` |
-| `Does he speak English?` | `Yes, he does.` | `No, he doesn't.` |
-| `Do the children walk to school?` | `Yes, they do.` | `No, they don't.` |
+| Câu hỏi | Nghĩa | Trả lời khẳng định | Trả lời phủ định |
+| --- | --- | --- | --- |
+| `Do you work here?` | Bạn có làm việc ở đây không? | `Yes, I do.` | `No, I don't.` |
+| `Does he speak English?` | Anh ấy có nói tiếng Anh không? | `Yes, he does.` | `No, he doesn't.` |
+| `Do the children walk to school?` | Bọn trẻ có đi bộ đến trường không? | `Yes, they do.` | `No, they don't.` |
 
-Đại từ trong câu trả lời thay cho chủ ngữ được hỏi. Với câu hỏi trực tiếp `Do you ...?`, người trả lời dùng `I`: `Yes, I do`.
+Đại từ trong câu trả lời thay cho chủ ngữ được hỏi. Với `Do you ...?`, nếu `you` chỉ một người thì người đó trả lời bằng `I` (`Yes, I do`); nếu `you` chỉ nhiều người thì trả lời bằng `we` (`Yes, we do`).
 
 ## Không dùng `do/does` để hỏi với `be`
 

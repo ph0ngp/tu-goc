@@ -23,11 +23,11 @@ Cả hai đều nghĩa “Lan đưa tôi chiếc chìa khóa”. Câu đầu đ�
 
 Các động từ thường gặp: `give`, `send`, `show`, `lend`, `offer`, `pass`, `teach`, `tell`, `write`.
 
-| Hai tân ngữ | Vật + `to` + người |
-| --- | --- |
-| `She sent me a photo.` | `She sent a photo to me.` |
-| `Please show us the map.` | `Please show the map to us.` |
-| `He lent Lan his bike.` | `He lent his bike to Lan.` |
+| Hai tân ngữ | Vật + `to` + người | Nghĩa |
+| --- | --- | --- |
+| `She sent me a photo.` | `She sent a photo to me.` | Cô ấy gửi cho tôi một bức ảnh. |
+| `Please show us the map.` | `Please show the map to us.` | Hãy cho chúng tôi xem bản đồ. |
+| `He lent Lan his bike.` | `He lent his bike to Lan.` | Anh ấy cho Lan mượn xe đạp. |
 
 `To` hướng vật hoặc thông tin **tới** người nhận.
 
@@ -35,11 +35,11 @@ Các động từ thường gặp: `give`, `send`, `show`, `lend`, `offer`, `pas
 
 Các động từ thường gặp: `buy`, `make`, `cook`, `get`, `find`, `book`, `choose`.
 
-| Hai tân ngữ | Vật + `for` + người |
-| --- | --- |
-| `I bought Lan a ticket.` | `I bought a ticket for Lan.` |
-| `Dad cooked us dinner.` | `Dad cooked dinner for us.` |
-| `Can you book me a room?` | `Can you book a room for me?` |
+| Hai tân ngữ | Vật + `for` + người | Nghĩa |
+| --- | --- | --- |
+| `I bought Lan a ticket.` | `I bought a ticket for Lan.` | Tôi mua cho Lan một vé. |
+| `Dad cooked us dinner.` | `Dad cooked dinner for us.` | Bố nấu bữa tối cho chúng tôi. |
+| `Can you book me a room?` | `Can you book a room for me?` | Bạn đặt giúp tôi một phòng được không? |
 
 `For` cho biết hành động được thực hiện vì lợi ích hoặc thay mặt người đó.
 
@@ -51,7 +51,7 @@ Nếu “vật” là một đại từ như `it/them`, trật tự với giới
 
 `Give me it.` cũng có thể nghe thấy trong văn nói thân mật, nhất là ở Anh, với cùng nghĩa. Câu này không sai, nhưng `Give it to me.` là lựa chọn an toàn và trung tính hơn trong văn phong thông thường.
 
-Khi muốn nhấn mạnh người nhận, trật tự `to/for` cũng hữu ích: `I sent the invitation to Lan, not to Minh.`
+Khi muốn nhấn mạnh người nhận, trật tự `to/for` cũng hữu ích: `I sent the invitation to Lan, not to Minh.` — Tôi gửi lời mời cho Lan, không phải cho Minh.
 
 Một số cụm cố định hoặc động từ chỉ cho phép một mẫu. Vì vậy không nên cho rằng mọi động từ có nghĩa “đưa/nói/làm” đều dùng được hai tân ngữ.
 
@@ -59,9 +59,9 @@ Một số cụm cố định hoặc động từ chỉ cho phép một mẫu. V
 
 `Explain`, `describe`, `suggest`, `mention`, `introduce` thường cần vật/nội dung trước rồi mới đến giới từ:
 
-- `Please explain the rule to me.` — không dùng `explain me the rule`.
-- `She described the place to us.` — không dùng `described us the place`.
-- `He suggested a solution to the team.` — không dùng `suggested the team a solution` trong mẫu này.
+- `Please explain the rule to me.` — Hãy giải thích quy tắc cho tôi; không dùng `explain me the rule`.
+- `She described the place to us.` — Cô ấy mô tả nơi đó cho chúng tôi; không dùng `described us the place`.
+- `He suggested a solution to the team.` — Anh ấy đề xuất một giải pháp với nhóm; không dùng `suggested the team a solution` trong mẫu này.
 - `Let me introduce Lan to you.` — Hãy để tôi giới thiệu Lan với bạn.
 
 Học cả mẫu của từng động từ thay vì dịch trực tiếp từ tiếng Việt.

@@ -8,9 +8,9 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "po1",
       "kind": "match",
-      "prompt": "Tìm dạng đứng trước danh từ.",
-      "hint": "I và my cùng chỉ người nói.",
-      "explanation": "Đại từ chủ ngữ và từ sở hữu có hình thức khác nhau.",
+      "prompt": "Ghép mỗi đại từ chủ ngữ với từ chỉ sở hữu tương ứng.",
+      "hint": "Chọn theo người có liên hệ: người nói, một nam, một nữ hay nhiều người.",
+      "explanation": "Đại từ chủ ngữ và từ chỉ sở hữu có hình thức khác nhau.",
       "pairs": [
         {
           "left": "I",
@@ -77,7 +77,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "pd5",
       "kind": "match",
-      "prompt": "Tìm từ sở hữu đứng trước danh từ.",
+      "prompt": "Ghép ba đại từ chủ ngữ còn lại với từ chỉ sở hữu đứng trước danh từ.",
       "hint": "Chọn theo người hoặc vật sở hữu.",
       "explanation": "you→your, it→its, we→our.",
       "pairs": [
@@ -132,7 +132,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
           "cue": "I → ___ book",
           "options": [
             "my",
-            "me",
+            "our",
             "I"
           ],
           "answer": "my",
@@ -142,7 +142,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
           "cue": "he → ___ bag",
           "options": [
             "his",
-            "him",
+            "her",
             "he"
           ],
           "answer": "his",
@@ -152,7 +152,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
           "cue": "they → ___ house",
           "options": [
             "their",
-            "them",
+            "our",
             "they"
           ],
           "answer": "their",
@@ -164,7 +164,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
       "id": "pd9",
       "kind": "choice",
       "prompt": "___ red. (Nó màu đỏ.)",
-      "hint": "Câu cần dạng rút gọn của it is.",
+      "hint": "Câu này chưa có động từ; hãy thử mở rộng từng phương án.",
       "explanation": "It’s red. có nghĩa là “Nó màu đỏ”; its phải đứng trước một danh từ.",
       "options": [
         "It’s",
@@ -208,35 +208,40 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "po3",
       "kind": "order",
-      "prompt": "Đây là túi của Nam.",
-      "hint": "Nam’s đứng ngay trước bag.",
-      "explanation": "Sở hữu cách tạo cụm Nam’s bag.",
+      "prompt": "Sắp xếp câu “Đây là túi của Nam.”",
+      "hint": "Tiếng Anh đặt người có trước, rồi `’s`, rồi mới đến vật.",
+      "explanation": "Sở hữu cách tạo cụm `Nam’s bag`: người có (`Nam’s`) đứng trước vật (`bag`).",
       "tokens": [
         "bag",
         "This",
         "Nam’s",
-        "is"
+        "is",
+        "."
       ],
       "answer": [
         "This",
         "is",
         "Nam’s",
-        "bag"
+        "bag",
+        "."
       ]
     },
     {
       "id": "po5",
       "kind": "tap",
-      "prompt": "Chạm vào cụm chỉ chiếc túi của Nam.",
-      "hint": "Tìm tên + ’s + vật.",
-      "explanation": "Nam’s bag nghĩa là túi của Nam.",
+      "prompt": "Trong `Nam’s sister is Lan’s friend`, chạm vào tên người có chị/em gái.",
+      "hint": "Trong sở hữu cách, người có liên hệ đứng trước `’s`; người hoặc vật thuộc về họ đứng ngay sau.",
+      "explanation": "`Nam’s sister` là chị/em gái của Nam, vì người có liên hệ đứng trước `’s`. `Lan’s friend` là bạn của Lan. Cả câu nghĩa là “Chị/em gái của Nam là bạn của Lan”.",
       "tokens": [
-        "Nam",
-        "Nam’s bag",
-        "his"
+        "Nam’s",
+        "sister",
+        "is",
+        "Lan’s",
+        "friend",
+        "."
       ],
       "answerIndexes": [
-        1
+        0
       ],
       "selectionMode": "single"
     },
@@ -257,7 +262,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "psx4",
       "kind": "choice",
-      "prompt": "Quyển sách của giáo viên",
+      "prompt": "Cụm nào có nghĩa “quyển sách của giáo viên”?",
       "hint": "Đặt người sở hữu trước, thêm ’s, rồi đến vật.",
       "explanation": "the teacher’s book theo đúng trật tự.",
       "options": [
@@ -270,29 +275,37 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "psx5",
       "kind": "sort",
-      "prompt": "Trong mỗi cụm, xác định phần đứng trước và sau ’s.",
-      "hint": "Phần trước ’s là mốc sở hữu/quan hệ.",
-      "explanation": "Vị trí hai phía của ’s đã được nhận ra.",
+      "prompt": "Phân loại mỗi cụm theo số người hoặc con vật có liên hệ.",
+      "hint": "Nhìn vị trí dấu nháy: đứng trước `s` hay đứng sau một danh từ số nhiều đã có `s`.",
+      "explanation": "Danh từ số ít nhận `’s`; danh từ số nhiều đã có `s` chỉ nhận dấu nháy ở cuối.",
       "buckets": [
-        "Người sở hữu",
-        "Vật hoặc quan hệ"
+        "Một người hoặc con vật",
+        "Nhiều người hoặc con vật"
       ],
       "items": [
         {
-          "text": "Lan trong Lan’s bag",
-          "bucket": "Người sở hữu"
+          "text": "Mai’s bike",
+          "bucket": "Một người hoặc con vật"
         },
         {
-          "text": "bag trong Lan’s bag",
-          "bucket": "Vật hoặc quan hệ"
+          "text": "the baby’s bed",
+          "bucket": "Một người hoặc con vật"
         },
         {
-          "text": "the cat trong the cat’s name",
-          "bucket": "Người sở hữu"
+          "text": "my friend’s house",
+          "bucket": "Một người hoặc con vật"
         },
         {
-          "text": "name trong the cat’s name",
-          "bucket": "Vật hoặc quan hệ"
+          "text": "the girls’ bags",
+          "bucket": "Nhiều người hoặc con vật"
+        },
+        {
+          "text": "my parents’ room",
+          "bucket": "Nhiều người hoặc con vật"
+        },
+        {
+          "text": "the players’ shirts",
+          "bucket": "Nhiều người hoặc con vật"
         }
       ]
     },
@@ -369,7 +382,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
       ["Cách nào hoàn chỉnh câu `This pen is ...`?", ["my", "mine", "I"], "mine", "Sau `is`, cần đại từ sở hữu đứng độc lập: `mine`."],
       ["Cách nào có nghĩa “Đó là túi của cô ấy”?", ["That is her bag.", "That bag is her.", "That is hers bag."], "That is her bag.", "`Her` đứng trước danh từ `bag`."],
       ["Cách nào tránh lặp `your book` trong `My book is new. ... is old.`?", ["Your", "Yours", "You"], "Yours", "`Yours` thay cho cả cụm `your book`."],
-      ["Dạng sở hữu đứng độc lập tương ứng với `our` là gì?", ["ours", "us", "our"], "ours", "Dạng đúng là `ours`, không có dấu nháy đơn."],
+      ["Dạng sở hữu đứng độc lập tương ứng với `our` là gì?", ["ours", "our's", "our"], "ours", "Dạng đúng là `ours`, không có dấu nháy đơn."],
       ["Câu nào dùng đúng đại từ sở hữu mang nghĩa “của họ”?", ["The keys are theirs.", "The keys are ours.", "The keys are his."], "The keys are theirs.", "`Theirs` đứng độc lập và không có dấu nháy đơn."],
       ["Trong `This coat is his`, `his` làm công việc gì?", ["đại từ sở hữu", "từ chỉ sở hữu trước danh từ", "đại từ chủ ngữ"], "đại từ sở hữu", "`His` đứng độc lập sau `is` và thay cho `his coat`."],
       ["Cách nào có nghĩa “Những chiếc ghế này là của chúng tôi”?", ["These chairs are ours.", "These chairs are our.", "These are ours chairs."], "These chairs are ours.", "`Ours` đứng độc lập sau `are`."],
@@ -384,8 +397,8 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
       ["Sắp xếp câu “Những chỗ ngồi kia là của chúng tôi.”", ["Those", "ours", "seats", "are", "."], ["Those", "seats", "are", "ours", "."], "`Ours` đứng độc lập sau `are`."],
     ],
     repairs: [
-      ["Chọn dạng đúng cho vị trí sau `is`.", ["This", "phone", "is", "my", "."], 3, ["my", "mine", "me"], "mine", "Sau `is`, dùng `mine` để nói “của tôi”."],
-      ["Chọn dạng đúng đứng trước `garden`.", ["We", "like", "theirs", "garden", "."], 2, ["their", "theirs", "them"], "their", "Trước danh từ `garden`, dùng `their`; `theirs` chỉ đứng độc lập, không có danh từ theo sau."],
+      ["Chọn dạng đúng cho vị trí sau `is`.", ["This", "phone", "is", "my", "."], 3, ["my", "mine", "I"], "mine", "Sau `is`, dùng `mine` để nói “của tôi”."],
+      ["Chọn dạng đúng đứng trước `garden`.", ["We", "like", "theirs", "garden", "."], 2, ["their", "theirs", "they"], "their", "Trước danh từ `garden`, dùng `their`; `theirs` chỉ đứng độc lập, không có danh từ theo sau."],
       ["Chọn dạng đúng để thay cho `her pencils`.", ["My", "pencils", "are", "here", "and", "her", "are", "there", "."], 5, ["her", "hers", "she"], "hers", "`Hers` thay cho cả cụm `her pencils`."],
     ],
     taps: [
@@ -400,15 +413,15 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     items: [{ text: "our garden", bucket: "Trước danh từ" }, { text: "The garden is ours.", bucket: "Đứng độc lập" }, { text: "his coat", bucket: "Trước danh từ" }, { text: "The coat is his.", bucket: "Đứng độc lập" }, { text: "their seats", bucket: "Trước danh từ" }, { text: "The seats are theirs.", bucket: "Đứng độc lập" }],
     gridPrompts: ["Chọn dạng sở hữu đúng cho từng vị trí.", "Chọn cách tránh lặp danh từ trong từng câu.", "Chọn dạng sở hữu đúng cho từng nghĩa và vị trí."],
     gridRows: [
-      { cue: "This is ___ book.", options: ["my", "mine", "me"], answer: "my", completed: "This is my book." },
+      { cue: "This is ___ book.", options: ["my", "mine", "I"], answer: "my", completed: "This is my book." },
       { cue: "This book is ___.", options: ["my", "mine", "I"], answer: "mine", completed: "This book is mine." },
-      { cue: "Those bags are ___.", options: ["their", "theirs", "them"], answer: "theirs", completed: "Those bags are theirs." },
-      { cue: "Her cup is red. ___ is blue.", options: ["My", "Mine", "Me"], answer: "Mine", completed: "Her cup is red. Mine is blue." },
-      { cue: "Our chairs are here. ___ are there.", options: ["Their", "Theirs", "Them"], answer: "Theirs", completed: "Our chairs are here. Theirs are there." },
+      { cue: "Those bags are ___.", options: ["their", "theirs", "they"], answer: "theirs", completed: "Those bags are theirs." },
+      { cue: "Her cup is red. ___ is blue.", options: ["My", "Mine", "I"], answer: "Mine", completed: "Her cup is red. Mine is blue." },
+      { cue: "Our chairs are here. ___ are there.", options: ["Their", "Theirs", "They"], answer: "Theirs", completed: "Our chairs are here. Theirs are there." },
       { cue: "His room is small. ___ is large.", options: ["Her", "Hers", "She"], answer: "Hers", completed: "His room is small. Hers is large." },
-      { cue: "của tôi — đứng trước danh từ `book`", options: ["my", "mine", "me"], answer: "my", completed: "This is my book." },
-      { cue: "của anh ấy — đứng độc lập", options: ["he", "his", "him"], answer: "his", completed: "The book is his." },
-      { cue: "của chúng tôi — đứng độc lập", options: ["our", "ours", "us"], answer: "ours", completed: "The room is ours." },
+      { cue: "___ bag is black. (của tôi)", options: ["My", "Mine", "I"], answer: "My", completed: "My bag is black." },
+      { cue: "The book is ___. (của anh ấy)", options: ["his", "he", "her"], answer: "his", completed: "The book is his." },
+      { cue: "The room is ___. (của chúng tôi)", options: ["ours", "our", "we"], answer: "ours", completed: "The room is ours." },
     ],
   }),
   "whose-questions": compactPracticeSet({
@@ -417,11 +430,11 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     choices: [
       ["Từ nào hỏi “của ai”?", ["whose", "who's", "who"], "whose", "`Whose` không có dấu nháy đơn và hỏi quyền sở hữu hoặc quan hệ."],
       ["Câu nào hỏi “Đây là bút của ai?”", ["Whose pen is this?", "Who's pen is this?", "Whose is pen this?"], "Whose pen is this?", "`Whose` đứng trước danh từ `pen`; `is` đứng trước `this`."],
-      ["Câu nào đúng khi vật đã rõ và không cần lặp danh từ?", ["Whose is this?", "Whose this is?", "Who is this?"], "Whose is this?", "`Whose` có thể đứng một mình; `Who is this?` hỏi người này là ai."],
-      ["Câu trả lời nào phù hợp với `Whose bag is this?`?", ["It's Lan's.", "It's Lan.", "It's whose."], "It's Lan's.", "`Lan's` đứng độc lập vì danh từ `bag` đã rõ."],
+      ["Câu nào hỏi “Cái này là của ai?” mà không lặp lại danh từ?", ["Whose is this?", "Whose this is?", "Who is this?"], "Whose is this?", "`Whose` đứng một mình được khi vật đã rõ, và câu hỏi với `be` đặt `is` trước `this`; `who` chỉ hỏi người đó là ai."],
+      ["Câu trả lời nào phù hợp với `Whose bag is this?`?", ["It's Lan's.", "It's Lan.", "It's Lans."], "It's Lan's.", "Khi vật đã rõ, sở hữu cách `Lan's` có thể đứng một mình, không cần lặp lại `bag`; `It's Lan` chỉ nói người đó là Lan."],
       ["Dạng nào mở rộng được thành `who is`?", ["who's", "whose", "who"], "who's", "Dấu nháy trong `who's` thay cho chữ bị lược trong `who is`."],
       ["Câu nào hỏi về nhiều quyển sách?", ["Whose books are those?", "Whose books is that?", "Whose book are those?"], "Whose books are those?", "`Books` và `those` là số nhiều nên dùng `are`."],
-      ["Câu nào trả lời bằng đại từ sở hữu đúng?", ["They're ours.", "They're our.", "They're us."], "They're ours.", "`Ours` đứng độc lập sau `are`."],
+      ["Câu nào trả lời bằng đại từ sở hữu đúng?", ["They're ours.", "They're our.", "They're our's."], "They're ours.", "Câu trả lời không lặp lại danh từ, nên cần đại từ sở hữu đứng độc lập `ours`, viết không có dấu nháy đơn."],
       ["`Who's at the door?` có nghĩa gì?", ["Ai đang ở cửa?", "Cửa của ai?", "Đây là cửa của ai?"], "Ai đang ở cửa?", "`Who's` mở rộng thành `Who is`."],
       ["Câu nào hỏi “Điện thoại của ai ở trên bàn?”", ["Whose phone is on the table?", "Who's phone is on the table?", "Whose is phone on the table?"], "Whose phone is on the table?", "`Whose phone` là chủ ngữ; `whose` không có dấu nháy đơn."],
       ["Cách viết nào đúng khi hỏi những chiếc giày này của ai?", ["Whose shoes are these?", "Who's shoes are these?", "Whose shoe is these?"], "Whose shoes are these?", "Dùng `whose + shoes` và `are these`."],
@@ -429,7 +442,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     orders: [
       ["Sắp xếp câu “Chiếc áo khoác này là của ai?”", ["coat", "Whose", "this", "is", "?"], ["Whose", "coat", "is", "this", "?"], "Đặt `whose` trước danh từ rồi đảo `is` trước `this`."],
       ["Sắp xếp câu “Những chiếc chìa khóa kia là của ai?”", ["are", "Whose", "those", "keys", "?"], ["Whose", "keys", "are", "those", "?"], "Danh từ số nhiều dùng `are`."],
-      ["Sắp xếp câu trả lời “Chúng là của cô ấy.”", ["hers", "They", "are", "."], ["They", "are", "hers", "."], "`Hers` đứng độc lập sau `are`."],
+      ["Sắp xếp câu trả lời “Chúng là của cô ấy.”", ["hers", "They", "are", "."], ["They", "are", "hers", "."], "Câu trả lời không lặp lại danh từ, nên đại từ sở hữu `hers` đứng một mình ở cuối câu, sau dạng của `be`."],
       ["Sắp xếp câu “Ai đang ở trong bếp?”", ["the", "Who’s", "kitchen", "in", "?"], ["Who’s", "in", "the", "kitchen", "?"], "`Who's` là `who is`; không phải `whose`."],
     ],
     repairs: [
@@ -453,8 +466,8 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
       { cue: "___ in the garden?", options: ["Whose", "Who's", "Who"], answer: "Who's", completed: "Who's in the garden?" },
       { cue: "___ books are on the desk?", options: ["Whose", "Who's", "Who is"], answer: "Whose", completed: "Whose books are on the desk?" },
       { cue: "Whose hat ___ this?", options: ["am", "is", "are"], answer: "is", completed: "Whose hat is this?" },
-      { cue: "Whose gloves ___ these?", options: ["is", "are", "does"], answer: "are", completed: "Whose gloves are these?" },
-      { cue: "Whose ___ those?", options: ["is", "are", "do"], answer: "are", completed: "Whose are those?" },
+      { cue: "Whose gloves ___ these?", options: ["is", "are", "am"], answer: "are", completed: "Whose gloves are these?" },
+      { cue: "Whose ___ those?", options: ["is", "are", "am"], answer: "are", completed: "Whose are those?" },
       { cue: "Whose phone is this?", options: ["It's mine.", "They're mine.", "It's my."], answer: "It's mine.", completed: "Whose phone is this? — It's mine." },
       { cue: "Whose bags are those?", options: ["They're theirs.", "It's theirs.", "They're their."], answer: "They're theirs.", completed: "Whose bags are those? — They're theirs." },
       { cue: "Whose is this?", options: ["It's Nam's.", "They're Nam's.", "It's Nam."], answer: "It's Nam's.", completed: "Whose is this? — It's Nam's." },
@@ -465,14 +478,14 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     focus: "danh từ số nhiều bất quy tắc thông dụng",
     choices: [
       ["Dạng số nhiều thông dụng của `child` là gì?", ["children", "child", "child's"], "children", "`Child` đổi thành `children`; không thêm `-s` nữa."],
-      ["Trong giao tiếp thông thường, cụm nào có nghĩa “ba người”?", ["three people", "one person", "a group"], "three people", "Trong giao tiếp thông thường, số nhiều của `person` là `people`."],
+      ["Trong giao tiếp thông thường, cụm nào có nghĩa “ba người”?", ["three people", "three person", "three people's"], "three people", "Sau `three` cần dạng số nhiều. Trong giao tiếp thông thường, số nhiều của `person` là `people`; dạng có `'s` là sở hữu cách, không phải số nhiều."],
       ["Dạng số nhiều của `woman` là gì?", ["women", "woman", "woman's"], "women", "`Woman` đổi nguyên âm thành `women`."],
-      ["Cách nào viết đúng “hai bàn chân”?", ["two feet", "one foot", "a foot"], "two feet", "`Foot` có số nhiều là `feet`."],
+      ["Cách nào viết đúng “hai bàn chân”?", ["two feet", "two foot", "a feet"], "two feet", "`Foot` là một bàn chân; nhiều bàn chân là `feet`. Số đếm từ hai trở lên cần dạng số nhiều, còn `a` chỉ đi với một vật."],
       ["Danh từ nào giữ nguyên ở số nhiều thông thường?", ["sheep", "child", "mouse"], "sheep", "`One sheep` và `two sheep` có cùng hình thức danh từ."],
       ["Câu nào đúng khi nói nhiều đứa trẻ đang vui?", ["These children are happy.", "These child are happy.", "This children is happy."], "These children are happy.", "`Children` là số nhiều nên đi với `these` và `are`."],
-      ["Sở hữu cách nào có nghĩa “đồ chơi của trẻ em”?", ["children's toys", "a child's toy", "the children"], "children's toys", "`Children` không kết thúc bằng `s`, nên thêm `'s`."],
+      ["Sở hữu cách nào có nghĩa “đồ chơi của những đứa trẻ”?", ["the children's toys", "the child's toys", "the children toys"], "the children's toys", "Nhiều đứa trẻ là `children`; dạng này không kết thúc bằng `s`, nên sở hữu cách thêm `'s` như danh từ số ít."],
       ["Dạng số nhiều của `tooth` là gì?", ["teeth", "tooth", "tooth's"], "teeth", "`Tooth` đổi thành `teeth`."],
-      ["Trong cách nói thông thường về ba con cá, cụm nào phù hợp?", ["three fish", "a fish", "one fish"], "three fish", "Ở mức A1, `fish` thường giữ nguyên ở số nhiều."],
+      ["Câu nào đúng khi nói nhiều con cá đều màu đỏ?", ["The fish are red.", "The fish is red.", "A fish are red."], "The fish are red.", "`Fish` giữ nguyên ở số nhiều, nên chỉ `be` cho biết số lượng: nhiều con cá dùng `are`; `a` chỉ đi với một con."],
       ["Câu nào dùng `be` đúng với `men`?", ["The men are here.", "The men is here.", "The mans are here."], "The men are here.", "`Men` là danh từ số nhiều nên dùng `are`."],
     ],
     orders: [
@@ -484,7 +497,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     repairs: [
       ["Chọn dạng số nhiều đúng sau `two`.", ["Two", "child", "are", "outside", "."], 1, ["child", "children", "child's"], "children", "Sau `two`, dùng số nhiều `children`."],
       ["Chọn dạng của `be` phù hợp với `people`.", ["The", "people", "is", "ready", "."], 2, ["am", "is", "are"], "are", "`People` là danh từ số nhiều."],
-      ["Chọn sở hữu cách đúng của `women`.", ["The", "women", "bags", "are", "here", "."], 1, ["women's", "women", "woman's"], "women's", "`Women` không kết thúc bằng `s`, nên thêm `'s`."],
+      ["Chọn sở hữu cách đúng cho “tên của mọi người”.", ["The", "people", "names", "are", "on", "the", "board", "."], 1, ["people's", "people", "person's"], "people's", "`People` là số nhiều không kết thúc bằng `s`, nên sở hữu cách thêm `'s`."],
     ],
     taps: [
       ["Trong `One man and two women are here`, chọn tất cả danh từ chỉ người.", ["One", "man", "and", "two", "women", "are", "here", "."], [1, 4], "`Man` là số ít; `women` là số nhiều."],
@@ -504,9 +517,9 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
       { cue: "___ child is happy.", options: ["This", "These", "Those"], answer: "This", completed: "This child is happy." },
       { cue: "___ children are happy.", options: ["This", "These", "That"], answer: "These", completed: "These children are happy." },
       { cue: "Two sheep ___ in the field.", options: ["is", "are"], answer: "are", completed: "Two sheep are in the field." },
-      { cue: "toys of the children", options: ["children's toys", "a child's toy", "the children"], answer: "children's toys", completed: "the children's toys" },
-      { cue: "room for the men", options: ["men's room", "a man's room", "the men"], answer: "men's room", completed: "the men's room" },
-      { cue: "bags of the women", options: ["women's bags", "a woman's bag", "the women"], answer: "women's bags", completed: "the women's bags" },
+      { cue: "giày của những người đàn ông", options: ["the men's shoes", "the man's shoes", "the men shoes"], answer: "the men's shoes", completed: "the men's shoes" },
+      { cue: "đuôi của những con chuột", options: ["the mice's tails", "the mouse's tails", "the mice tails"], answer: "the mice's tails", completed: "the mice's tails" },
+      { cue: "túi của những người phụ nữ", options: ["the women's bags", "the woman's bags", "the women bags"], answer: "the women's bags", completed: "the women's bags" },
     ],
   }),
   "apostrophes": compactPracticeSet({
@@ -515,14 +528,14 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     choices: [
       ["Cách nào có nghĩa “sách của các học sinh”?", ["the students' books", "the student's books", "the students"], "the students' books", "`Students` đã là số nhiều có `s`, nên thêm dấu nháy sau `s`."],
       ["Dạng viết tắt nào mở rộng thành `it is`?", ["it's", "its", "he's"], "it's", "Dấu nháy trong `it's` thay cho chữ bị lược trong `it is`."],
-      ["Cách nào có nghĩa “đuôi của nó”?", ["its tail", "their tail", "his tail"], "its tail", "Từ chỉ sở hữu `its` không có dấu nháy."],
+      ["Cách nào có nghĩa “đuôi của nó”?", ["its tail", "it's tail", "its' tail"], "its tail", "Thử mở rộng `it's` thành `it is`: “it is tail” không có nghĩa, nên ở đây không cần dạng viết tắt. Từ chỉ sở hữu `its` không bao giờ có dấu nháy, kể cả sau chữ `s`."],
       ["Dạng số nhiều đúng của `apple` là gì?", ["apples", "apple's", "apples'"], "apples", "Số nhiều thông thường không dùng dấu nháy đơn."],
-      ["`She's at home` mở rộng thành gì?", ["She is at home", "She has at home", "She owns at home"], "She is at home", "Trong câu này, `'s` là `is`."],
+      ["Câu nào có nghĩa “Túi của bạn ở trên ghế”?", ["Your bag is on the chair.", "You're bag is on the chair.", "You bag is on the chair."], "Your bag is on the chair.", "Trước danh từ `bag` cần từ chỉ sở hữu `your`; nếu mở rộng `You're bag` thành `You are bag`, câu không còn nghĩa."],
       ["Cách nào có nghĩa “phòng của trẻ em”?", ["the children's room", "a child's room", "the children"], "the children's room", "`Children` không có `s` cuối nên thêm `'s`."],
       ["Dạng nào là viết tắt của `are not`?", ["aren't", "isn't", "she's"], "aren't", "Dạng viết tắt chuẩn của `are not` là `aren't`."],
       ["Câu nào có nghĩa “Cô ấy không ở đây”?", ["She isn't here.", "She is here.", "They aren't here."], "She isn't here.", "Dạng viết tắt chuẩn là `isn't`."],
-      ["Từ nào hỏi “của ai”?", ["whose", "who's", "who"], "whose", "`Whose` không có dấu nháy; `who's` là `who is`."],
-      ["Cách nào có nghĩa “xe đạp của cô bé”?", ["the girl's bike", "the boy's bike", "the girl's bag"], "the girl's bike", "Một cô bé dùng danh từ số ít + `'s`."],
+      ["Chọn từ đúng cho chỗ trống trong câu hỏi `___ coat is on the chair?`", ["Whose", "Who's", "Who"], "Whose", "Hỏi “áo khoác của ai” thì cần `whose` trước danh từ `coat`; mở rộng `who's` thành `who is` sẽ thấy câu không còn nghĩa."],
+      ["Cách nào có nghĩa “xe đạp của cô bé”?", ["the girl's bike", "the girls' bike", "the girls bike"], "the girl's bike", "Một cô bé là danh từ số ít, nên thêm `'s`: `girl's`. `Girls'` nói về nhiều cô bé, còn `girls` không có dấu nháy chỉ là dạng số nhiều."],
     ],
     orders: [
       ["Sắp xếp cụm “tên của con chó”.", ["name", "dog’s", "the"], ["the", "dog’s", "name"], "Danh từ số ít `dog` nhận `'s`."],
@@ -532,11 +545,11 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     ],
     repairs: [
       ["Chọn dạng đúng cho nghĩa “của nó”.", ["It’s", "name", "is", "Milo", "."], 0, ["It’s", "Its", "Their"], "Its", "Trước danh từ `name`, dùng từ chỉ sở hữu `its`."],
-      ["Chọn dấu nháy đúng cho sở hữu số nhiều.", ["The", "teachers", "room", "is", "upstairs", "."], 1, ["teacher's", "teachers'", "teachers"], "teachers'", "Nhiều giáo viên: `teachers` đã có `s`, chỉ thêm dấu nháy."],
+      ["Chọn cách viết đúng cho “phòng của các y tá”.", ["The", "nurses", "room", "is", "upstairs", "."], 1, ["nurse's", "nurses'", "nurses"], "nurses'", "Nhiều y tá: `nurses` đã có `s`, nên chỉ thêm dấu nháy sau `s`."],
       ["Chọn dạng số nhiều thông thường đúng.", ["Two", "book’s", "are", "on", "the", "desk", "."], 1, ["books", "book's", "books'"], "books", "Chỉ muốn nói hai quyển sách nên không dùng dấu nháy."],
     ],
     taps: [
-      ["Trong `Lan's here with her sister`, chọn dấu nháy thuộc dạng viết tắt.", ["Lan's", "here", "with", "her", "sister", "."], [0], "`Lan's here` mở rộng thành `Lan is here`; không phải sở hữu."],
+      ["Chọn tất cả từ có dấu nháy là dạng viết tắt trong `My parents' house isn't big. It's new.`", ["My", "parents'", "house", "isn't", "big", ".", "It's", "new", "."], [3, 6], "`Isn't` là `is not` và `It's` là `It is`; dấu nháy trong `parents'` đứng sau `s` của danh từ số nhiều nên chỉ sở hữu: nhà của bố mẹ tôi."],
       ["Trong `Lan's sister's bag is red`, chọn tất cả từ có dấu nháy chỉ quan hệ sở hữu.", ["Lan's", "sister's", "bag", "is", "red", "."], [0, 1], "Cả `Lan's sister` và `sister's bag` đều diễn tả quan hệ."],
       ["Trong `Who's with the children's teacher?`, chọn từ có dấu nháy là dạng viết tắt.", ["Who's", "with", "the", "children's", "teacher", "?"], [0], "`Who's` là `who is`; `children's` là sở hữu."],
     ],
@@ -547,7 +560,7 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
     items: [{ text: "Nam's bag", bucket: "Sở hữu/quan hệ" }, { text: "Nam's here", bucket: "Dạng viết tắt" }, { text: "the girls' room", bucket: "Sở hữu/quan hệ" }, { text: "isn't ready", bucket: "Dạng viết tắt" }, { text: "the cat's tail", bucket: "Sở hữu/quan hệ" }, { text: "they're late", bucket: "Dạng viết tắt" }],
     gridPrompts: ["Chọn dạng có hoặc không có dấu nháy theo nghĩa.", "Chọn sở hữu cách đúng cho từng người hoặc nhóm.", "Chọn số nhiều hoặc sở hữu cách phù hợp với từng cụm."],
     gridRows: [
-      { cue: "___ raining. (Trời đang mưa.)", options: ["It's", "Its", "They're"], answer: "It's", completed: "It's raining." },
+      { cue: "___ my bag. (Đó là túi của tôi.)", options: ["It's", "Its", "They're"], answer: "It's", completed: "It's my bag." },
       { cue: "___ color is blue. (Màu của nó là xanh.)", options: ["It's", "Its", "Their"], answer: "Its", completed: "Its color is blue." },
       { cue: "___ at the door? (Ai ở cửa?)", options: ["Who's", "Whose", "Who"], answer: "Who's", completed: "Who's at the door?" },
       { cue: "one boy", options: ["the boy's bike", "the boys' bike", "the boys bike"], answer: "the boy's bike", completed: "the boy's bike" },
@@ -563,24 +576,37 @@ const a1Chapter04BaseExerciseData: Record<string, Exercise[]> = {
 const a1Chapter04TopUps: Partial<Record<string, Exercise[]>> = {
   possessives: [
     ...binaryChoiceDrills("a1pd", 1, "từ chỉ sở hữu", [
-      ["cụm “tên của tôi”", "my name", "mine name", "`My` đứng trước danh từ `name`."],
+      ["cụm “tên của tôi”", "my name", "I name", "Trước danh từ `name`, tiếng Anh dùng từ chỉ sở hữu `my`, không dùng đại từ chủ ngữ."],
       ["cụm “bố của cô ấy”", "her father", "his father", "Người có quan hệ là cô ấy nên dùng `her`."],
       ["cụm “chị/em gái của anh ấy”", "his sister", "her sister", "Chọn từ theo người có quan hệ là nam giới: `his`."],
-      ["cụm “trường của chúng tôi”", "our school", "ours school", "`Our` đứng trước danh từ; `ours` đứng độc lập."],
-      ["cụm “những chiếc xe của họ”", "their cars", "theirs cars", "`Their` đứng trước danh từ số nhiều `cars`."],
-      ["cụm “đuôi của nó”", "its tail", "it's tail", "`Its` chỉ sở hữu và không có dấu nháy đơn."],
-      ["câu “Nó màu trắng”", "It's white.", "Its white.", "`It's` mở rộng thành `It is`."],
+      ["cụm “trường của chúng tôi”", "our school", "we school", "Trước danh từ `school`, cần từ chỉ sở hữu `our`; đại từ chủ ngữ chỉ đứng ở vị trí chủ ngữ."],
+      ["cụm “những chiếc xe của họ”", "their cars", "they cars", "Từ chỉ sở hữu của `they` là `their`; nó đứng trước danh từ `cars` và không đổi theo số lượng xe."],
+      ["cụm “tên của nó”", "its name", "it's name", "`Its` chỉ sở hữu và không có dấu nháy đơn."],
+      ["câu “Đó là một con mèo nhỏ”", "It's a small cat.", "Its a small cat.", "Câu cần chủ ngữ `it` và động từ `is`; `It's` là dạng viết tắt của `It is`, còn `its` chỉ đứng trước danh từ."],
       ["cụm có tính từ “chiếc túi mới của cô ấy”", "her new bag", "new her bag", "Từ chỉ sở hữu đứng trước tính từ và danh từ."],
-      ["cụm có số lượng “hai con mèo của chúng tôi”", "our two cats", "two ours cats", "`Our` đứng đầu cụm danh từ."],
-      ["một người nghe trong `... book`", "your book", "you book", "`Your` là từ chỉ sở hữu của `you`."],
-      ["nhiều người nghe trong `... books`", "your books", "yours books", "`Your` không đổi khi người nghe hoặc vật được nói tới là số nhiều."],
-      ["câu nói con chó ở trong ổ của nó", "The dog is in its bed.", "The dog is in it's bed.", "Trước danh từ `bed`, dùng `its`."],
+      ["cụm có số lượng “hai con mèo của chúng tôi”", "our two cats", "two our cats", "Từ chỉ sở hữu luôn đứng đầu cụm danh từ, trước cả từ chỉ số lượng."],
+    ]),
+    {
+      id: "a1pd10", kind: "choice", prompt: "Khi nói với một người bạn, cụm nào có nghĩa “quyển sách của bạn”?",
+      options: ["your book", "you book"], answer: "your book",
+      hint: "Trước danh từ `book`, cần từ mang nghĩa “của bạn”, không phải đại từ chủ ngữ.",
+      explanation: "`Your` là từ chỉ sở hữu của `you` và đứng trước danh từ: `your book` là quyển sách của bạn.",
+    },
+    {
+      id: "a1pd11", kind: "choice", prompt: "Khi cô giáo nói với cả lớp, cụm nào có nghĩa “những quyển sách của các em”?",
+      options: ["your books", "our books"], answer: "your books",
+      hint: "Người có những quyển sách là những người đang nghe, không gồm cô giáo.",
+      explanation: "`Your` dùng cho cả một người nghe lẫn nhiều người nghe, nên “của các em” vẫn là `your`; `our` sẽ gồm cả người nói.",
+    },
+    ...binaryChoiceDrills("a1pd", 12, "từ chỉ sở hữu", [
+      ["câu “Kia là quả bóng của nó” khi nói về con chó", "That is its ball.", "That is it's ball.", "Trước danh từ `ball`, dùng từ chỉ sở hữu `its`; dạng có dấu nháy sẽ mở rộng thành `it is ball`, không có nghĩa."],
     ]),
     {
       id: "a1pd13", kind: "repair", prompt: "Chọn từ chỉ sở hữu đúng trước `parents`.",
-      tokens: ["We", "live", "with", "us", "parents", "."], targetIndex: 3,
-      replacements: ["our", "ours", "us"], answer: "our",
-      hint: "Trước danh từ cần từ chỉ sở hữu.", explanation: "`Our parents` nghĩa là bố mẹ của chúng tôi/chúng ta.",
+      tokens: ["We", "live", "with", "we", "parents", "."], targetIndex: 3,
+      replacements: ["our", "we", "they"], answer: "our",
+      hint: "Trước danh từ `parents` cần từ mang nghĩa “của chúng tôi”, không phải đại từ chủ ngữ.",
+      explanation: "`Our parents` nghĩa là bố mẹ của chúng tôi; `we` chỉ làm chủ ngữ, như ở đầu câu.",
     },
     {
       id: "a1pd14", kind: "sort", prompt: "Phân loại cụm theo người hoặc nhóm có liên hệ.",
@@ -600,17 +626,49 @@ const a1Chapter04TopUps: Partial<Record<string, Exercise[]>> = {
       ["“phòng của các học sinh”", "the students' room", "the student's room", "`Students` là số nhiều đã có `-s`, nên chỉ thêm dấu nháy đơn ở cuối."],
       ["ngôi nhà chung của Lan và Nam", "Lan and Nam's house", "Lan's and Nam's house", "Một thứ chung: chỉ tên cuối nhận `'s`."],
       ["hai chiếc túi riêng của Lan và Nam", "Lan's and Nam's bags", "Lan and Nam's bags", "Mỗi người có vật riêng nên cả hai tên nhận `'s`."],
-      ["ý “xe đạp của Nam” bằng một từ chỉ sở hữu", "his bike", "him bike", "Trước danh từ dùng `his`."],
-      ["ý “sách của Lan” bằng một từ chỉ sở hữu", "her book", "hers book", "Trước danh từ dùng `her`, không dùng `hers`."],
+      ["ý “xe đạp của Nam” bằng một từ chỉ sở hữu", "his bike", "he bike", "Trước danh từ `bike` cần từ chỉ sở hữu `his`, không dùng đại từ chủ ngữ."],
+      ["ý “sách của Lan” bằng một từ chỉ sở hữu", "her book", "she book", "Lan là nữ nên dùng `her`; đại từ chủ ngữ không đứng trước danh từ `book`."],
       ["“bài học hôm nay”", "today's lesson", "todays lesson", "Sở hữu cách có thể nói sự liên hệ với thời gian."],
       ["“bìa của quyển sách”", "the book's cover", "the books cover", "Một quyển sách nhận `'s`."],
       ["số nhiều của `book`", "books", "book's", "Dấu nháy không dùng để tạo số nhiều."],
-      ["mối quan hệ trong `Lan's teacher`", "giáo viên của Lan", "giáo viên thuộc sở hữu như một đồ vật", "Sở hữu cách còn nói quan hệ, không chỉ quyền sở hữu."],
     ]),
+    {
+      id: "a1psx15", kind: "choice", prompt: "`Lan's teacher` có nghĩa gì?",
+      options: ["giáo viên của Lan", "Lan là giáo viên", "các giáo viên của Lan"], answer: "giáo viên của Lan",
+      hint: "Người đứng trước `'s` là người có liên hệ; danh từ đứng sau `'s` cho biết đang nói về ai và có mấy người.",
+      explanation: "`Lan's teacher` nói về một giáo viên có quan hệ với Lan, tức giáo viên của Lan. Sở hữu cách nói cả quan hệ giữa người với người, không chỉ quyền sở hữu đồ vật; nhiều giáo viên sẽ là `Lan's teachers`.",
+    },
     ...orderExercises("a1psx", 16, [
       ["Sắp xếp cụm “sách của những học sinh”.", ["books", "students'", "the"], ["the", "students'", "books"], "Số nhiều có `s` chỉ thêm dấu nháy.", "Cụm đúng là `the students' books`."],
       ["Sắp xếp câu “Xe đạp của chị/em gái tôi mới.”", ["bike", "sister’s", "new", "My", "is", "."], ["My", "sister’s", "bike", "is", "new", "."], "Đọc từ người có liên hệ sang vật.", "`My sister's bike` là chủ ngữ của câu."],
     ]),
+  ],
+  apostrophes: [
+    {
+      id: "a1ap26", kind: "choice", prompt: "Trong `She's at home`, `'s` làm công việc gì?",
+      options: ["viết tắt của `is`", "chỉ sở hữu", "tạo số nhiều"], answer: "viết tắt của `is`",
+      hint: "Thử thay `'s` bằng `is` rồi đọc lại cả câu: câu có còn đúng và đủ nghĩa không?",
+      explanation: "Mở rộng thành `She is at home` (Cô ấy ở nhà), câu vẫn đúng, nên `'s` ở đây là dạng viết tắt của `is`. Sau `She's` không có danh từ chỉ thứ thuộc về cô ấy.",
+    },
+    {
+      id: "a1ap27", kind: "choice", prompt: "Trong câu nào, `Nam's` là dạng viết tắt của `Nam is`?",
+      options: ["Nam's at school.", "Nam's bag is new.", "Nam's sister is here."], answer: "Nam's at school.",
+      hint: "Thay `Nam's` bằng `Nam is` trong từng câu; xem từ đứng ngay sau `Nam's` là danh từ hay không.",
+      explanation: "`Nam's at school` là `Nam is at school` (Nam ở trường). Trong hai câu kia, ngay sau `Nam's` là danh từ (`bag`, `sister`), nên `'s` chỉ sở hữu hoặc quan hệ: túi của Nam, chị/em gái của Nam.",
+    },
+    {
+      id: "a1ap28", kind: "tap", prompt: "Trong `Lan's here with her sister's friend`, chọn từ có dấu nháy là dạng viết tắt.",
+      tokens: ["Lan's", "here", "with", "her", "sister's", "friend", "."], answerIndexes: [0], selectionMode: "single",
+      hint: "Thử thay từng từ có dấu nháy bằng dạng có `is`; từ nào đứng ngay trước một danh từ thì đang chỉ sở hữu.",
+      explanation: "`Lan's here` mở rộng thành `Lan is here` (Lan ở đây), nên `Lan's` là dạng viết tắt. `Sister's` đứng ngay trước danh từ `friend`, nên chỉ sở hữu: bạn của chị/em gái cô ấy.",
+    },
+    {
+      id: "a1ap29", kind: "repair", prompt: "Chọn dạng đúng cho nghĩa “Bạn là bạn của tôi”.",
+      tokens: ["Your", "my", "friend", "."], targetIndex: 0,
+      replacements: ["You're", "Your", "You"], answer: "You're",
+      hint: "Câu cần cả chủ ngữ lẫn động từ `be`; thử mở rộng từng phương án.",
+      explanation: "`You're` là `you are`: `You are my friend` nghĩa là “Bạn là bạn của tôi”. `Your` chỉ đứng trước danh từ, còn `You` thiếu động từ `are`.",
+    },
   ],
 };
 
@@ -618,21 +676,21 @@ const a1Chapter04DepthExtensions: Partial<Record<string, Exercise[]>> = {
   possessives: [{
     id: "a1depth-pos-1", kind: "grid", prompt: "Chọn từ chỉ sở hữu theo đúng người hoặc vật có liên hệ trong từng tình huống.",
     hint: "Xác định người hoặc vật có liên hệ trước, rồi chọn dạng đứng trước danh từ.",
-    explanation: "Mỗi từ chỉ sở hữu được chọn theo người hoặc vật có liên hệ, không theo danh từ phía sau.",
+    explanation: "Mỗi từ chỉ sở hữu được chọn theo người hoặc vật có liên hệ, không theo danh từ phía sau: Lan là nữ nên dùng `her`, người nói dùng `my`, con mèo dùng `its` dù `eyes` là số nhiều.",
     rows: [
-      { cue: "Lan has a bike. It is ___ bike.", options: ["her", "his", "their"], answer: "her", completed: "It is her bike." },
-      { cue: "I have a new teacher. ___ teacher is kind.", options: ["My", "Our", "Their"], answer: "My", completed: "My teacher is kind." },
-      { cue: "The dog is in ___ bed.", options: ["its", "it's", "their"], answer: "its", completed: "The dog is in its bed." },
+      { cue: "This is Lan. That is ___ bike.", options: ["her", "his", "their"], answer: "her", completed: "That is her bike." },
+      { cue: "I am a student. ___ teacher is kind. (Giáo viên của tôi rất tốt bụng.)", options: ["My", "Our", "Their"], answer: "My", completed: "My teacher is kind." },
+      { cue: "The cat is black. ___ eyes are green.", options: ["Its", "It's", "Their"], answer: "Its", completed: "Its eyes are green." },
     ],
   }],
   "possessive-s": [{
-    id: "a1depth-ps-1", kind: "grid", prompt: "Chọn sở hữu cách phù hợp với một người hoặc một nhóm có danh từ số nhiều tận cùng bằng `s`.",
-    hint: "Kiểm tra danh từ chỉ người có kết thúc bằng `s` hay không trước khi đặt dấu nháy.",
+    id: "a1depth-ps-1", kind: "grid", prompt: "Chọn sở hữu cách đúng theo số người hoặc con vật có liên hệ.",
+    hint: "Kiểm tra người hoặc con vật có liên hệ là một hay nhiều, và danh từ số nhiều đã kết thúc bằng `s` chưa, trước khi đặt dấu nháy.",
     explanation: "Số ít dùng `'s`, còn danh từ số nhiều đã có `s` chỉ thêm dấu nháy ở cuối.",
     rows: [
-      { cue: "the room of one teacher", options: ["the teacher's room", "the teachers' room", "the teacher"], answer: "the teacher's room", completed: "the teacher's room" },
-      { cue: "the room of several teachers", options: ["the teachers' room", "the teacher's room", "the teachers"], answer: "the teachers' room", completed: "the teachers' room" },
-      { cue: "the toys of the girls", options: ["the girls' toys", "the girl's toy", "the girls"], answer: "the girls' toys", completed: "the girls' toys" },
+      { cue: "đồ chơi của em bé (một em bé)", options: ["the baby's toys", "the babies' toys", "the babies toys"], answer: "the baby's toys", completed: "the baby's toys" },
+      { cue: "đồ chơi của các em bé", options: ["the babies' toys", "the baby's toys", "the babies toys"], answer: "the babies' toys", completed: "the babies' toys" },
+      { cue: "bát ăn của những con chó", options: ["the dogs' bowls", "the dog's bowls", "the dogs bowls"], answer: "the dogs' bowls", completed: "the dogs' bowls" },
     ],
   }],
 };

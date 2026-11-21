@@ -329,16 +329,22 @@ function RepairResponse({
   value: string;
   onChange: (value: string) => void;
 }) {
+  // Phần cần sửa vẫn hiện trong câu (gạch ngang) để câu hỏi “sửa/thay” khớp với giao diện;
+  // ô chọn ngay sau nó nhận phần thay thế.
+  const wrong = exercise.tokens[exercise.targetIndex];
   return (
-    <div className="practice-repair" aria-label="Chọn đáp án đúng cho vị trí còn trống">
+    <div className="practice-repair" aria-label="Câu cần sửa">
       {exercise.tokens.map((token, index) => index === exercise.targetIndex ? (
-        <SelectAnswer
-          key={`${token}-${index}`}
-          label="Chọn đáp án đúng cho vị trí còn trống"
-          value={value}
-          options={exercise.replacements}
-          onChange={onChange}
-        />
+        <span className="practice-repair-target" key={`${token}-${index}`}>
+          <del><code>{token}</code></del>
+          <span aria-hidden="true">→</span>
+          <SelectAnswer
+            label={`Chọn phần thay cho “${wrong}”`}
+            value={value}
+            options={exercise.replacements}
+            onChange={onChange}
+          />
+        </span>
       ) : <code key={`${token}-${index}`}>{token}</code>)}
     </div>
   );

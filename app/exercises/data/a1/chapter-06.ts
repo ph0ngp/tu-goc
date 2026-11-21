@@ -8,12 +8,12 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "av1",
       "kind": "sort",
-      "prompt": "Câu nào dùng be, câu nào dùng động từ hành động?",
-      "hint": "happy và at home cần be.",
-      "explanation": "Câu miêu tả dùng be; hành động dùng động từ thường.",
+      "prompt": "Xếp mỗi câu vào nhóm dùng `be` hoặc nhóm dùng động từ thường.",
+      "hint": "Hỏi phần sau chủ ngữ là một đặc điểm, một nơi chốn hay một việc chủ ngữ làm.",
+      "explanation": "Đặc điểm và nơi chốn cần `be`; việc chủ ngữ làm được diễn tả bằng động từ thường.",
       "buckets": [
         "Câu với be",
-        "Câu hành động"
+        "Câu với động từ thường"
       ],
       "items": [
         {
@@ -22,7 +22,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
         },
         {
           "text": "They read.",
-          "bucket": "Câu hành động"
+          "bucket": "Câu với động từ thường"
         },
         {
           "text": "We are at home.",
@@ -30,28 +30,28 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
         },
         {
           "text": "We play.",
-          "bucket": "Câu hành động"
+          "bucket": "Câu với động từ thường"
         }
       ]
     },
     {
       "id": "av2",
       "kind": "choice",
-      "prompt": "Chúng tôi nấu ăn.",
-      "hint": "Bài này đang nói về hành động như một sự thật đơn giản.",
-      "explanation": "cook tự làm động từ chính nên không cần be đứng trước.",
+      "prompt": "Câu nào nghĩa là “Chúng tôi nấu ăn ở nhà”?",
+      "hint": "Câu tiếng Việt có việc “nấu ăn”; việc ấy cần một động từ thường làm động từ chính.",
+      "explanation": "`Cook` tự làm động từ chính nên không chèn `are`; `We are at home.` chỉ nói chúng tôi ở nhà và làm mất ý nấu ăn.",
       "options": [
-        "We cook.",
-        "We are cook.",
-        "We cooking."
+        "We cook at home.",
+        "We are cook at home.",
+        "We are at home."
       ],
-      "answer": "We cook."
+      "answer": "We cook at home."
     },
     {
       "id": "av3",
       "kind": "match",
-      "prompt": "Mỗi câu dùng một kiểu động từ khác nhau.",
-      "hint": "ready là đặc điểm; play là hành động.",
+      "prompt": "Ghép mỗi loại động từ chính với câu dùng loại đó.",
+      "hint": "`Ready` là một đặc điểm; `play` là việc chủ ngữ làm.",
       "explanation": "Mỗi kiểu câu có đúng một động từ chính.",
       "pairs": [
         {
@@ -59,7 +59,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
           "right": "We are ready."
         },
         {
-          "left": "động từ hành động",
+          "left": "động từ thường",
           "right": "They play."
         }
       ]
@@ -67,9 +67,9 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "av4",
       "kind": "tap",
-      "prompt": "Chạm vào động từ hành động.",
-      "hint": "Từ nào diễn tả việc đọc?",
-      "explanation": "read là động từ hành động.",
+      "prompt": "Chạm vào động từ thường.",
+      "hint": "Tìm từ nói chủ ngữ làm gì.",
+      "explanation": "`Read` là động từ thường và tự làm động từ chính.",
       "tokens": [
         "They",
         "read",
@@ -98,9 +98,9 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "av6",
       "kind": "choice",
-      "prompt": "Câu nào có một động từ hành động chính và không chèn be trước nó?",
-      "hint": "Fly tự diễn tả hành động của chủ ngữ.",
-      "explanation": "Birds fly. dùng fly làm động từ chính và không chèn are trước fly.",
+      "prompt": "Câu nào dùng động từ thường làm động từ chính, không có `be`?",
+      "hint": "Tìm câu nói chủ ngữ làm gì, không nói chủ ngữ thế nào hay ở đâu.",
+      "explanation": "`Birds fly.` dùng `fly` làm động từ chính; hai câu còn lại dùng `are` để nói đặc điểm và nơi chốn.",
       "options": [
         "Birds fly.",
         "Birds are small.",
@@ -112,22 +112,22 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "id": "av7",
       "kind": "context",
       "prompt": "Chọn kiểu câu phù hợp.",
-      "hint": "Happy là đặc điểm của Lan nên câu cần một dạng của be.",
-      "explanation": "Lan is happy. dùng is để nối Lan với đặc điểm happy.",
-      "context": "Bạn muốn nói “Lan vui”, một đặc điểm.",
+      "hint": "`Happy` là một đặc điểm, nên câu cần một dạng của `be`.",
+      "explanation": "`Lan and Nam are happy.` dùng `are` để nối chủ ngữ hai người với đặc điểm `happy`.",
+      "context": "Bạn muốn nói “Lan và Nam vui”, tức là nói một đặc điểm của hai người.",
       "options": [
-        "Lan happy.",
-        "Lan is happy.",
-        "Lan reads."
+        "Lan and Nam happy.",
+        "Lan and Nam are happy.",
+        "Lan and Nam play."
       ],
-      "answer": "Lan is happy."
+      "answer": "Lan and Nam are happy."
     },
     {
       "id": "av8",
       "kind": "choice",
       "prompt": "Câu nào dùng động từ thường?",
-      "hint": "play là hành động.",
-      "explanation": "We play. không cần be.",
+      "hint": "Câu nào không nói chủ ngữ thế nào hay ở đâu?",
+      "explanation": "`We play.` dùng động từ thường `play`, nên không cần `be`.",
       "options": [
         "We are ready.",
         "We play.",
@@ -138,36 +138,36 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "av9",
       "kind": "grid",
-      "prompt": "Đặc điểm và nơi chốn cần be; hành động dùng động từ thường.",
-      "hint": "Hỏi xem câu đang miêu tả hay nói về hành động.",
-      "explanation": "be và động từ hành động đã được dùng đúng chức năng.",
+      "prompt": "Chọn câu tiếng Anh đúng cho mỗi câu tiếng Việt.",
+      "hint": "Với mỗi câu, hỏi phần sau chủ ngữ là đặc điểm, nơi chốn hay một việc chủ ngữ làm.",
+      "explanation": "`Be` nối chủ ngữ với đặc điểm và nơi chốn; động từ thường tự làm động từ chính.",
       "rows": [
         {
           "cue": "Căn phòng yên tĩnh.",
           "options": [
             "The room quiet.",
             "The room is quiet.",
-            "The room reads quietly."
+            "The room are quiet."
           ],
           "answer": "The room is quiet.",
           "completed": "The room is quiet."
         },
         {
-          "cue": "Chúng tôi nấu ăn.",
+          "cue": "Họ làm việc ở bệnh viện.",
           "options": [
-            "We cook.",
-            "We are cook.",
-            "We cooking."
+            "They work at a hospital.",
+            "They are work at a hospital.",
+            "They are at a hospital."
           ],
-          "answer": "We cook.",
-          "completed": "We cook."
+          "answer": "They work at a hospital.",
+          "completed": "They work at a hospital."
         },
         {
           "cue": "Nam ở trường.",
           "options": [
             "Nam at school.",
             "Nam is at school.",
-            "Nam studies at school now."
+            "Nam am at school."
           ],
           "answer": "Nam is at school.",
           "completed": "Nam is at school."
@@ -198,12 +198,14 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "tokens": [
         "every day",
         "work",
-        "I"
+        "I",
+        "."
       ],
       "answer": [
         "I",
         "work",
-        "every day"
+        "every day",
+        "."
       ]
     },
     {
@@ -258,7 +260,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "prompt": "Chọn câu diễn tả thói quen.",
       "hint": "Tìm câu cho biết việc lặp lại.",
       "explanation": "every evening nghĩa là mỗi buổi tối và diễn tả thói quen.",
-      "context": "Việc đọc xảy ra lặp lại vào tất cả các buổi tối.",
+      "context": "Bạn muốn nói rằng tối nào mình cũng đọc sách.",
       "options": [
         "I read every evening.",
         "I read one book.",
@@ -304,7 +306,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "id": "psb8",
       "kind": "choice",
       "prompt": "___ work here.",
-      "hint": "work đã là động từ hành động.",
+      "hint": "`Work` đã là động từ thường làm động từ chính.",
       "explanation": "They work here. không cần are.",
       "options": [
         "They",
@@ -316,7 +318,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "psb9",
       "kind": "grid",
-      "prompt": "I, you, we và they không thêm -s trong câu khẳng định hiện tại đơn.",
+      "prompt": "Chọn dạng động từ đúng cho mỗi câu.",
       "hint": "Chọn động từ cơ bản, không thêm -s và không chèn be.",
       "explanation": "I, we và they đã đi với đúng dạng động từ.",
       "rows": [
@@ -389,14 +391,16 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
         "every day",
         "We",
         "books",
-        "read"
+        "read",
+        "."
       ],
       "answer": [
         "We",
         "read",
         "books",
         "at home",
-        "every day"
+        "every day",
+        "."
       ]
     }
   ],
@@ -404,7 +408,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "t1",
       "kind": "match",
-      "prompt": "Tìm dạng đã đổi đuôi.",
+      "prompt": "Ghép mỗi động từ với dạng dùng sau `he`, `she` hoặc `it`.",
       "hint": "Xem chữ cuối của từng động từ.",
       "explanation": "Mỗi động từ đã được đổi sang dạng ngôi thứ ba số ít.",
       "pairs": [
@@ -421,8 +425,8 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
           "right": "studies"
         },
         {
-          "left": "have",
-          "right": "has"
+          "left": "play",
+          "right": "plays"
         }
       ]
     },
@@ -553,19 +557,19 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "t9",
       "kind": "grid",
-      "prompt": "Chọn -s, -es hoặc -ies theo chữ cuối.",
-      "hint": "Thông thường thêm -s; watch thêm -es; study đổi y thành -ies.",
+      "prompt": "Chọn câu tiếng Anh đúng cho mỗi câu tiếng Việt.",
+      "hint": "Tìm chủ ngữ số ít trong câu tiếng Việt, rồi nhìn chữ cuối của động từ để chọn cách thêm đuôi.",
       "explanation": "Ba kiểu đuôi ngôi thứ ba số ít đã được áp dụng đúng.",
       "rows": [
         {
-          "cue": "Cô ấy đọc mỗi ngày.",
+          "cue": "Cô ấy làm việc mỗi ngày.",
           "options": [
-            "She read every day.",
-            "She reads every day.",
-            "They read every day."
+            "She work every day.",
+            "She works every day.",
+            "They work every day."
           ],
-          "answer": "She reads every day.",
-          "completed": "She reads every day."
+          "answer": "She works every day.",
+          "completed": "She works every day."
         },
         {
           "cue": "Anh ấy xem TV.",
@@ -592,9 +596,9 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "t10",
       "kind": "match",
-      "prompt": "Một số động từ thường gặp đổi theo quy tắc riêng.",
-      "hint": "he/she/it cần dạng ngôi thứ ba số ít.",
-      "explanation": "do→does, go→goes, have→has.",
+      "prompt": "Ghép mỗi động từ với dạng ngôi thứ ba số ít của nó.",
+      "hint": "Hai động từ tận cùng bằng `-o`; động từ còn lại có dạng riêng cần nhớ.",
+      "explanation": "`Do` và `go` theo quy tắc tận cùng bằng `-o` thì thêm `-es`; `have` có dạng riêng `has`.",
       "pairs": [
         {
           "left": "do",
@@ -651,8 +655,8 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "t13",
       "kind": "grid",
-      "prompt": "Chọn -es hoặc -ies theo chữ cuối của động từ.",
-      "hint": "wash và fix thêm -es; carry đổi y thành -ies.",
+      "prompt": "Với mỗi câu tiếng Việt, chọn câu tiếng Anh có động từ viết đúng.",
+      "hint": "Nhìn chữ cuối của `wash`, `fix` và `carry` trước khi chọn đuôi.",
       "explanation": "Ba động từ mới đã được đổi dạng theo đúng quy tắc.",
       "rows": [
         {
@@ -670,7 +674,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
           "options": [
             "He fixes the chair.",
             "He fix the chair.",
-            "He watches the chair."
+            "They fix the chair."
           ],
           "answer": "He fixes the chair.",
           "completed": "He fixes the chair."
@@ -732,25 +736,27 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "id": "neg2",
       "kind": "order",
       "prompt": "Họ không làm việc ở đây.",
-      "hint": "They dùng don’t.",
+      "hint": "Chủ ngữ đứng đầu, rồi đến phần phủ định và động từ chính.",
       "explanation": "Trật tự là chủ ngữ + don’t + động từ cơ bản.",
       "tokens": [
         "here",
         "work",
         "don’t",
-        "They"
+        "They",
+        "."
       ],
       "answer": [
         "They",
         "don’t",
         "work",
-        "here"
+        "here",
+        "."
       ]
     },
     {
       "id": "neg3",
       "kind": "match",
-      "prompt": "Mỗi nhóm chỉ đi với một dạng trợ động từ phủ định.",
+      "prompt": "Ghép mỗi nhóm chủ ngữ với dạng phủ định đi cùng.",
       "hint": "Lan có thể thay bằng she.",
       "explanation": "I/you/we/they dùng don’t; he/she/it và một tên riêng số ít dùng doesn’t.",
       "pairs": [
@@ -771,14 +777,16 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "hint": "Từ nào mang cả does và not?",
       "explanation": "doesn’t là trợ động từ phủ định.",
       "tokens": [
-        "She",
+        "My",
+        "sister",
         "doesn’t",
         "work",
-        "here",
+        "on",
+        "Sundays",
         "."
       ],
       "answerIndexes": [
-        1
+        2
       ],
       "selectionMode": "single"
     },
@@ -786,53 +794,54 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "id": "neg5",
       "kind": "tap",
       "prompt": "Chạm vào động từ chính ở dạng cơ bản.",
-      "hint": "Sau doesn’t phải dùng dạng chưa có -s.",
-      "explanation": "read là dạng cơ bản.",
+      "hint": "Động từ chính đứng ngay sau trợ động từ phủ định.",
+      "explanation": "`Read` là động từ chính, ở dạng cơ bản sau `doesn’t`.",
       "tokens": [
         "He",
         "doesn’t",
-        "reads",
-        "read"
+        "read",
+        "books",
+        "."
       ],
       "answerIndexes": [
-        3
+        2
       ],
       "selectionMode": "single"
     },
     {
       "id": "neg6",
       "kind": "repair",
-      "prompt": "Sửa động từ sau doesn’t.",
-      "hint": "Dấu ngôi thứ ba đã nằm trong does.",
-      "explanation": "She doesn’t like coffee. là câu đúng.",
+      "prompt": "Sửa phần phủ định sau `My brother`.",
+      "hint": "`My brother` chỉ một người; dấu hiệu ngôi thứ ba chỉ cần xuất hiện một lần.",
+      "explanation": "`My brother doesn’t drink coffee.` là câu đúng: `doesn’t` hợp với một người và đã mang dấu hiệu ngôi thứ ba, nên `drink` giữ dạng cơ bản.",
       "tokens": [
-        "She",
-        "doesn’t",
-        "likes",
+        "My",
+        "brother",
+        "doesn’t drinks",
         "coffee",
         "."
       ],
       "targetIndex": 2,
       "replacements": [
-        "like",
-        "likes",
-        "liking"
+        "doesn’t drink",
+        "doesn’t drinks",
+        "don’t drink"
       ],
-      "answer": "like"
+      "answer": "doesn’t drink"
     },
     {
       "id": "neg7",
       "kind": "context",
       "prompt": "Chọn câu phủ định.",
-      "hint": "They dùng don’t.",
-      "explanation": "They don’t + động từ cơ bản.",
-      "context": "Họ không làm việc ở đây.",
+      "hint": "Xác định `they` thuộc nhóm chủ ngữ nào trước khi chọn dạng phủ định.",
+      "explanation": "`They` đi với `don’t`, rồi đến động từ cơ bản `watch`.",
+      "context": "Họ không xem TV.",
       "options": [
-        "They doesn’t work here.",
-        "They don’t work here.",
-        "They not work here."
+        "They doesn’t watch TV.",
+        "They don’t watch TV.",
+        "They not watch TV."
       ],
-      "answer": "They don’t work here."
+      "answer": "They don’t watch TV."
     },
     {
       "id": "neg8",
@@ -850,7 +859,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "neg9",
       "kind": "grid",
-      "prompt": "Sau don’t/doesn’t, động từ chính giữ dạng cơ bản.",
+      "prompt": "Chọn dạng phủ định đúng cho mỗi câu.",
       "hint": "I/they dùng don’t; she dùng doesn’t; động từ sau đó không có -s.",
       "explanation": "Trợ động từ và động từ chính đã chia đúng ở cả ba dòng.",
       "rows": [
@@ -865,14 +874,14 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
           "completed": "I don’t like coffee."
         },
         {
-          "cue": "She ___ here.",
+          "cue": "She ___ fish.",
           "options": [
-            "don’t work",
-            "doesn’t work",
-            "doesn’t works"
+            "don’t eat",
+            "doesn’t eat",
+            "doesn’t eats"
           ],
-          "answer": "doesn’t work",
-          "completed": "She doesn’t work here."
+          "answer": "doesn’t eat",
+          "completed": "She doesn’t eat fish."
         },
         {
           "cue": "They ___ tea.",
@@ -902,22 +911,22 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "neg11",
       "kind": "choice",
-      "prompt": "Cô ấy không làm việc ở đây.",
-      "hint": "work là động từ hành động; sau doesn’t giữ dạng cơ bản.",
-      "explanation": "Câu hành động hiện tại đơn dùng doesn’t + work.",
+      "prompt": "Cô ấy không lái xe.",
+      "hint": "`Drive` là động từ thường, nên phủ định cần trợ động từ; động từ sau đó giữ dạng cơ bản.",
+      "explanation": "Với động từ thường `drive`, phủ định hiện tại đơn dùng `doesn’t + drive`, không dùng `isn’t`.",
       "options": [
-        "She doesn’t work here.",
-        "She isn’t work here.",
-        "She doesn’t works here."
+        "She doesn’t drive.",
+        "She isn’t drive.",
+        "She doesn’t drives."
       ],
-      "answer": "She doesn’t work here."
+      "answer": "She doesn’t drive."
     },
     {
       "id": "neg12",
       "kind": "grid",
-      "prompt": "Xác định động từ chính là be hay động từ hành động.",
-      "hint": "be dùng not; động từ hành động cần don’t/doesn’t.",
-      "explanation": "Ba câu đã chọn đúng cách phủ định.",
+      "prompt": "Chọn câu phủ định đúng cho mỗi câu tiếng Việt.",
+      "hint": "`Be` nhận `not` trực tiếp; động từ thường cần `don’t/doesn’t`.",
+      "explanation": "Câu có `be` thêm `not` sau `be`; câu có động từ thường dùng `don’t/doesn’t` và động từ cơ bản.",
       "rows": [
         {
           "cue": "Họ không ở nhà.",
@@ -1050,13 +1059,14 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "id": "q4",
       "kind": "tap",
       "prompt": "Chạm vào trợ động từ ở đầu câu hỏi.",
-      "hint": "Câu hỏi hiện tại đơn bắt đầu bằng do/does.",
-      "explanation": "Does là trợ động từ.",
+      "hint": "Từ đứng đầu câu hỏi này không mang nghĩa riêng; nó chỉ giúp tạo câu hỏi.",
+      "explanation": "`Does` là trợ động từ đứng đầu câu hỏi hiện tại đơn.",
       "tokens": [
         "Does",
-        "Lan",
-        "like",
-        "tea",
+        "your",
+        "brother",
+        "play",
+        "chess",
         "?"
       ],
       "answerIndexes": [
@@ -1080,23 +1090,25 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "q6",
       "kind": "repair",
-      "prompt": "Sửa động từ sau Does.",
+      "prompt": "Sửa động từ chính sau `does`.",
       "hint": "Does đã mang dấu ngôi thứ ba.",
-      "explanation": "Does Lan like tea? là câu đúng.",
+      "explanation": "`Does the shop open at nine?` là câu đúng: `does` đã mang dấu hiệu ngôi thứ ba, nên `open` giữ dạng cơ bản.",
       "tokens": [
         "Does",
-        "Lan",
-        "likes",
-        "tea",
+        "the",
+        "shop",
+        "opens",
+        "at",
+        "nine",
         "?"
       ],
-      "targetIndex": 2,
+      "targetIndex": 3,
       "replacements": [
-        "like",
-        "likes",
-        "liking"
+        "open",
+        "opens",
+        "is open"
       ],
-      "answer": "like"
+      "answer": "open"
     },
     {
       "id": "q7",
@@ -1129,7 +1141,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "id": "q9",
       "kind": "grid",
       "prompt": "Chọn Do/Does rồi giữ động từ chính ở dạng cơ bản.",
-      "hint": "you/they dùng do; Lan dùng does.",
+      "hint": "Xác định mỗi chủ ngữ thuộc nhóm `I/you/we/they` hay nhóm `he/she/it`.",
       "explanation": "Do/Does đã đứng trước chủ ngữ và động từ vẫn ở dạng cơ bản.",
       "rows": [
         {
@@ -1206,7 +1218,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "q11",
       "kind": "grid",
-      "prompt": "Đổi tên hoặc cụm danh từ thành đại từ phù hợp.",
+      "prompt": "Chọn câu trả lời ngắn đúng cho từng câu hỏi, với đại từ thay cho chủ ngữ.",
       "hint": "Chọn đại từ trước, rồi chọn do/does tương ứng.",
       "explanation": "Ba câu trả lời ngắn đã dùng đúng đại từ và trợ động từ.",
       "rows": [
@@ -1247,15 +1259,15 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     prefix: "a1pw",
     focus: "câu hỏi Wh- với hiện tại đơn",
     choices: [
-      ["Từ hỏi nào dùng cho nơi chốn?", ["where", "when", "why"], "where", "`Where` hỏi “ở đâu”."],
+      ["Từ hỏi nào dùng cho nơi chốn?", ["where", "when", "why"], "where", "`Where` hỏi “ở đâu”, tức là hỏi nơi một người hay vật ở, hoặc nơi một việc xảy ra."],
       ["Câu nào hỏi “Lan làm việc ở đâu?”", ["Where does Lan work?", "Where do Lan works?", "Where is Lan work?"], "Where does Lan work?", "Lan là số ít nên dùng `does`; sau đó là `work`."],
       ["Câu nào hỏi thời gian?", ["When do they study?", "Where do they study?", "Why do they study?"], "When do they study?", "`When` hỏi “khi nào”."],
       ["Câu nào hỏi lý do?", ["Why does he walk?", "How does he walk?", "Who does he walk?"], "Why does he walk?", "`Why` hỏi “tại sao”."],
       ["Câu nào hỏi cách đi làm?", ["How do you go to work?", "What do you go to work?", "When are you go to work?"], "How do you go to work?", "`How` hỏi cách thức; động từ thường dùng `do`."],
-      ["Sau `does`, dạng nào đúng?", ["have", "has", "having"], "have", "Sau `does`, động từ ở dạng cơ bản `have`."],
+      ["Câu nào hỏi “Cô ấy ăn gì vào bữa sáng?”", ["What does she have for breakfast?", "What does she has for breakfast?", "What do she have for breakfast?"], "What does she have for breakfast?", "Chủ ngữ `she` chỉ một người, nên trợ động từ phải hợp với ngôi thứ ba số ít; sau trợ động từ ấy, động từ chính trở về dạng cơ bản."],
       ["Câu nào hỏi “Bạn thăm ai?”", ["Who do you visit?", "Who visits you?", "Whose do you visit?"], "Who do you visit?", "`You` là chủ ngữ; `who` hỏi tân ngữ nên dùng `do`."],
       ["Câu nào hỏi “Ai sống ở đây?”", ["Who lives here?", "Who live here?", "Who do lives here?"], "Who lives here?", "`Who` là chủ ngữ nên không dùng `do/does` trong mẫu cơ bản."],
-      ["Từ hỏi nào dùng để hỏi về người?", ["who", "where", "when"], "who", "`Who` dùng để hỏi “ai”."],
+      ["Từ hỏi nào dùng để hỏi về người?", ["who", "where", "when"], "who", "`Who` dùng để hỏi “ai”, tức là hỏi về một hay nhiều người."],
       ["Câu trả lời nào phù hợp với `Why does she study English?`?", ["Because she needs it.", "At school.", "Every day."], "Because she needs it.", "Câu hỏi `why` cần một lý do."],
     ],
     orders: [
@@ -1266,30 +1278,30 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     ],
     repairs: [
       ["Chọn trợ động từ phù hợp với `your brother`.", ["Where", "do", "your", "brother", "live", "?"], 1, ["do", "does", "is"], "does", "`Your brother` là chủ ngữ số ít."],
-      ["Chọn dạng động từ đúng sau `does`.", ["What", "does", "Lan", "reads", "?"], 3, ["read", "reads", "reading"], "read", "Sau `does`, dùng động từ cơ bản."],
+      ["Chọn dạng động từ đúng sau `does`.", ["What", "does", "Lan", "reads", "?"], 3, ["read", "reads", "is read"], "read", "Sau `does`, dùng động từ cơ bản; không thêm `-s` và không chèn `is`."],
       ["Chọn từ hỏi phù hợp với câu trả lời `By bus`.", ["Where", "do", "you", "go", "to", "school", "?"], 0, ["Where", "How", "When"], "How", "`By bus` trả lời câu hỏi về cách thức."],
     ],
     taps: [
-      ["Trong `Where does your sister work?`, chọn toàn bộ chủ ngữ.", ["Where", "does", "your", "sister", "work", "?"], [2, 3], "`Your sister` là chủ ngữ số ít."],
-      ["Trong `Who calls you every evening?`, chọn từ hỏi đồng thời làm chủ ngữ.", ["Who", "calls", "you", "every", "evening", "?"], [0], "`Who` chính là người thực hiện hành động `calls`."],
-      ["Trong `What do they have?`, chọn từ hỏi.", ["What", "do", "they", "have", "?"], [0], "`What` hỏi về sự vật hoặc thông tin."],
+      ["Chọn toàn bộ chủ ngữ trong câu `Where does your sister work?`", ["Where", "does", "your", "sister", "work", "?"], [2, 3], "`Your sister` là chủ ngữ số ít."],
+      ["Chọn từ hỏi đồng thời làm chủ ngữ trong câu `Who calls you every evening?`", ["Who", "calls", "you", "every", "evening", "?"], [0], "`Who` chính là người thực hiện hành động `calls`."],
+      ["Chọn từ hỏi trong câu `What do they have?`", ["What", "do", "they", "have", "?"], [0], "`What` hỏi về sự vật hoặc thông tin."],
     ],
     matchPrompt: "Ghép mỗi từ hỏi với loại thông tin cần trả lời.",
     pairs: [{ left: "where", right: "nơi chốn" }, { left: "when", right: "thời gian" }, { left: "why", right: "lý do" }, { left: "how", right: "cách thức" }],
     sortPrompt: "Phân loại câu theo việc `who` hỏi chủ ngữ hay tân ngữ.",
     buckets: ["Who là chủ ngữ", "Who là tân ngữ"],
     items: [{ text: "Who works here?", bucket: "Who là chủ ngữ" }, { text: "Who knows the answer?", bucket: "Who là chủ ngữ" }, { text: "Who helps Lan?", bucket: "Who là chủ ngữ" }, { text: "Who do you know?", bucket: "Who là tân ngữ" }, { text: "Who does Lan help?", bucket: "Who là tân ngữ" }, { text: "Who do they visit?", bucket: "Who là tân ngữ" }],
-    gridPrompts: ["Chọn từ hỏi phù hợp với từng câu trả lời.", "Chọn `do` hoặc `does` theo chủ ngữ.", "Chọn dạng động từ đúng trong từng câu hỏi."],
+    gridPrompts: ["Chọn từ hỏi phù hợp với từng câu trả lời.", "Chọn `do` hoặc `does` theo chủ ngữ.", "Chọn câu hỏi đúng cho mỗi câu tiếng Việt."],
     gridRows: [
-      { cue: "___? — In Hue.", options: ["Where", "When", "Why"], answer: "Where", completed: "Where do you live? — In Hue." },
-      { cue: "___? — At seven.", options: ["What time", "Where", "Who"], answer: "What time", completed: "What time do you start? — At seven." },
-      { cue: "___? — Because I'm tired.", options: ["Why", "How", "When"], answer: "Why", completed: "Why do you rest? — Because I'm tired." },
+      { cue: "___ do you live? — In Hue.", options: ["Where", "When", "Why"], answer: "Where", completed: "Where do you live? — In Hue." },
+      { cue: "___ do you start work? — At seven.", options: ["What time", "Where", "Who"], answer: "What time", completed: "What time do you start work? — At seven." },
+      { cue: "___ do you rest? — Because I'm tired.", options: ["Why", "How", "When"], answer: "Why", completed: "Why do you rest? — Because I'm tired." },
       { cue: "Where ___ they work?", options: ["do", "does", "are"], answer: "do", completed: "Where do they work?" },
       { cue: "What ___ she need?", options: ["does", "do", "is"], answer: "does", completed: "What does she need?" },
       { cue: "When ___ your parents travel?", options: ["do", "does", "are"], answer: "do", completed: "When do your parents travel?" },
-      { cue: "Where does he ___?", options: ["live", "lives", "living"], answer: "live", completed: "Where does he live?" },
-      { cue: "What do they ___?", options: ["want", "wants", "wanting"], answer: "want", completed: "What do they want?" },
-      { cue: "Who ___ English here?", options: ["teaches", "teach", "does teach"], answer: "teaches", completed: "Who teaches English here?" },
+      { cue: "Anh ấy sống ở đâu?", options: ["Where does he live?", "Where does he lives?", "Where he lives?"], answer: "Where does he live?", completed: "Where does he live?" },
+      { cue: "Họ muốn gì?", options: ["What do they want?", "What do they wants?", "What they want?"], answer: "What do they want?", completed: "What do they want?" },
+      { cue: "Ai dạy tiếng Anh ở đây?", options: ["Who teaches English here?", "Who teach English here?", "Who do teach English here?"], answer: "Who teaches English here?", completed: "Who teaches English here?" },
     ],
   }),
   "have-have-got": compactPracticeSet({
@@ -1297,30 +1309,30 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     focus: "have/has và have got/has got",
     choices: [
       ["Câu nào đúng với chủ ngữ `she`?", ["She has a bike.", "She have a bike.", "They have a bike."], "She has a bike.", "`She` dùng `has` trong câu khẳng định hiện tại đơn."],
-      ["Câu phủ định hiện tại đơn nào đúng?", ["She doesn't have a bike.", "She doesn't has a bike.", "She hasn't have a bike."], "She doesn't have a bike.", "Sau `doesn't`, dùng `have`."],
-      ["Câu hỏi hiện tại đơn nào đúng?", ["Does Nam have a sister?", "Does Nam has a sister?", "Has Nam a sister do?"], "Does Nam have a sister?", "Dùng `does + chủ ngữ + have`."],
+      ["Câu phủ định hiện tại đơn nào đúng?", ["She doesn't have a bike.", "She doesn't has a bike.", "She hasn't have a bike."], "She doesn't have a bike.", "Sau `doesn't`, động từ chính trở về dạng cơ bản, kể cả khi chủ ngữ là `she`."],
+      ["Câu hỏi hiện tại đơn nào đúng?", ["Does Nam have a sister?", "Does Nam has a sister?", "Do Nam have a sister?"], "Does Nam have a sister?", "Chủ ngữ `Nam` chỉ một người, nên trợ động từ phải hợp với ngôi thứ ba số ít; sau trợ động từ ấy, động từ chính trở về dạng cơ bản."],
       ["Dạng nào tương đương với `I have a car` khi nói sở hữu?", ["I've got a car.", "I'm got a car.", "I got have a car."], "I've got a car.", "`I've` là `I have` trong `have got`."],
       ["Câu hỏi với `have got` nào đúng?", ["Has she got a passport?", "Does she has got a passport?", "Has she get a passport?"], "Has she got a passport?", "Đưa `has` lên trước chủ ngữ; giữ `got`."],
       ["Phủ định với `have got` nào đúng?", ["They haven't got any money.", "They don't have got any money.", "They hasn't got any money."], "They haven't got any money.", "Đặt `not` trong `haven't`; không dùng thêm `do`."],
-      ["`She's got blue eyes` mở rộng thành gì?", ["She has got blue eyes.", "She is got blue eyes.", "She does got blue eyes."], "She has got blue eyes.", "Trong `has got`, `'s` là `has`."],
+      ["`She's got blue eyes` mở rộng thành gì?", ["She has got blue eyes.", "She is got blue eyes.", "She does got blue eyes."], "She has got blue eyes.", "`'s` đứng trước `got` là dạng viết tắt của trợ động từ trong hệ thống `have got`, không phải của `be`."],
       ["Cách nào hỏi về hoạt động ăn sáng?", ["Do you have breakfast at seven?", "Have you got breakfast at seven?", "Are you have breakfast at seven?"], "Do you have breakfast at seven?", "`Have breakfast` là hoạt động, thường dùng hệ thống `do`."],
-      ["Câu trả lời ngắn nào hợp với `Have you got a pen?`?", ["Yes, I have.", "Yes, I do.", "Yes, I got."], "Yes, I have.", "Câu hỏi `Have ... got?` trả lời bằng `have`."],
+      ["Câu trả lời ngắn nào hợp với `Have you got a pen?`?", ["Yes, I have.", "Yes, I got.", "Yes, I am."], "Yes, I have.", "Câu trả lời ngắn dùng lại đúng trợ động từ đứng đầu câu hỏi và không lặp lại `got`."],
       ["Câu trả lời ngắn nào hợp với `Does she have a car?`?", ["No, she doesn't.", "No, she hasn't.", "No, she don't."], "No, she doesn't.", "Câu hỏi dùng `does` thì trả lời ngắn bằng `doesn't`."],
     ],
     orders: [
       ["Sắp xếp câu “Ngôi nhà có ba phòng.”", ["rooms", "house", "three", "The", "has", "."], ["The", "house", "has", "three", "rooms", "."], "Chủ ngữ số ít `the house` dùng `has`."],
       ["Sắp xếp câu hỏi “Họ có con không?” bằng `have got`.", ["children", "they", "Have", "got", "?"], ["Have", "they", "got", "children", "?"], "Đưa `have` lên trước `they`."],
       ["Sắp xếp câu “Anh ấy không có ô tô.” bằng `have got`.", ["car", "He", "a", "hasn’t", "got", "."], ["He", "hasn’t", "got", "a", "car", "."], "`He` dùng `hasn't got`."],
-      ["Sắp xếp câu hỏi “Bạn ăn trưa ở nhà không?”", ["you", "home", "Do", "at", "have", "lunch", "?"], ["Do", "you", "have", "lunch", "at", "home", "?"], "Hoạt động `have lunch` dùng `do`."],
+      ["Sắp xếp câu hỏi “Bạn có ăn trưa ở nhà không?”", ["you", "home", "Do", "at", "have", "lunch", "?"], ["Do", "you", "have", "lunch", "at", "home", "?"], "Hoạt động `have lunch` dùng `do`."],
     ],
     repairs: [
-      ["Chọn dạng đúng sau `doesn't`.", ["Mai", "doesn’t", "has", "a", "phone", "."], 2, ["have", "has", "having"], "have", "Sau `doesn't`, dùng động từ cơ bản `have`."],
-      ["Chọn trợ động từ đúng cho hệ thống `have got`.", ["Does", "Lan", "got", "a", "bike", "?"], 0, ["Does", "Has", "Is"], "Has", "Câu hỏi là `Has Lan got ...?`."],
+      ["Chọn dạng phủ định đúng cho câu “Mai không có điện thoại”.", ["Mai", "doesn’t has", "a", "phone", "."], 1, ["doesn’t have", "doesn’t has", "hasn’t have"], "doesn’t have", "Sau `doesn't`, động từ trở về dạng cơ bản; còn `hasn't` chỉ đi với `got`, không đi với một động từ khác."],
+      ["Chọn trợ động từ đúng cho hệ thống `have got`.", ["Does", "Lan", "got", "a", "bike", "?"], 0, ["Does", "Has", "Is"], "Has", "Câu hỏi với `have got` đưa dạng của `have` hợp với chủ ngữ lên trước chủ ngữ; `Lan` chỉ một người."],
       ["Chọn phần đúng để câu có nghĩa “Chúng tôi có hai vé”.", ["We’re", "got", "two", "tickets", "."], 0, ["We’re", "We’ve", "We has"], "We’ve", "`We've` là `we have`."],
     ],
     taps: [
-      ["Trong `She has a car but she doesn't have a bike`, chọn tất cả dạng của động từ `have`.", ["She", "has", "a", "car", "but", "she", "doesn’t", "have", "a", "bike", "."], [1, 7], "`Has` ở câu khẳng định; `have` theo sau `doesn't`."],
-      ["Trong `Has he got a sister?`, chọn phần được đưa lên đầu để hỏi.", ["Has", "he", "got", "a", "sister", "?"], [0], "Trong hệ thống `have got`, đưa `has` lên đầu."],
+      ["Trong `She has a car but she doesn't have a bike`, chọn tất cả dạng của động từ `have`.", ["She", "has", "a", "car", "but", "she", "doesn’t", "have", "a", "bike", "."], [1, 7], "Động từ chỉ sở hữu xuất hiện hai lần: một lần đã chia theo chủ ngữ số ít trong vế khẳng định, một lần ở dạng cơ bản sau trợ động từ phủ định."],
+      ["Chọn phần được đưa lên đầu để hỏi trong câu `Has he got a sister?`", ["Has", "he", "got", "a", "sister", "?"], [0], "Trong hệ thống `have got`, đưa `has` lên đầu."],
       ["Trong `I've got a headache`, chọn dạng viết tắt của `have`.", ["I’ve", "got", "a", "headache", "."], [0], "`I've` là `I have`."],
     ],
     matchPrompt: "Ghép mỗi câu hỏi với câu trả lời ngắn cùng hệ thống.",
@@ -1330,14 +1342,14 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     items: [{ text: "Does he have a car?", bucket: "do/does + have" }, { text: "They don't have time.", bucket: "do/does + have" }, { text: "Do you have lunch here?", bucket: "do/does + have" }, { text: "Has he got a car?", bucket: "have/has got" }, { text: "They haven't got time.", bucket: "have/has got" }, { text: "I've got two brothers.", bucket: "have/has got" }],
     gridPrompts: ["Chọn `have` hoặc `has` trong câu khẳng định.", "Chọn dạng phủ định đúng theo từng hệ thống.", "Chọn câu hỏi đúng cho từng ý."],
     gridRows: [
-      { cue: "I ___ a question.", options: ["have", "has", "having"], answer: "have", completed: "I have a question." },
-      { cue: "My friend ___ a new job.", options: ["has", "have", "is"], answer: "has", completed: "My friend has a new job." },
-      { cue: "The rooms ___ large windows.", options: ["have", "has", "having"], answer: "have", completed: "The rooms have large windows." },
-      { cue: "She ___ a car. (`do` system)", options: ["doesn't have", "doesn't has", "hasn't have"], answer: "doesn't have", completed: "She doesn't have a car." },
-      { cue: "She ___ a car. (`have got` system)", options: ["hasn't got", "doesn't have got", "haven't got"], answer: "hasn't got", completed: "She hasn't got a car." },
-      { cue: "We ___ any money. (`have got` system)", options: ["haven't got", "hasn't got", "don't have got"], answer: "haven't got", completed: "We haven't got any money." },
-      { cue: "Bạn có hộ chiếu không? (`do`)", options: ["Do you have a passport?", "Have you a passport do?", "Do you has a passport?"], answer: "Do you have a passport?", completed: "Do you have a passport?" },
-      { cue: "Bạn có hộ chiếu không? (`have got`)", options: ["Have you got a passport?", "Do you have got a passport?", "Have you get a passport?"], answer: "Have you got a passport?", completed: "Have you got a passport?" },
+      { cue: "I ___ a question.", options: ["have", "has", "am have"], answer: "have", completed: "I have a question." },
+      { cue: "My friend ___ a new job.", options: ["has", "have", "is have"], answer: "has", completed: "My friend has a new job." },
+      { cue: "The rooms ___ large windows.", options: ["have", "has", "are have"], answer: "have", completed: "The rooms have large windows." },
+      { cue: "She ___ a car. (hệ thống `do/does + have`)", options: ["doesn't have", "doesn't has", "hasn't have"], answer: "doesn't have", completed: "She doesn't have a car." },
+      { cue: "She ___ a car. (hệ thống `have got`)", options: ["hasn't got", "doesn't have got", "haven't got"], answer: "hasn't got", completed: "She hasn't got a car." },
+      { cue: "We ___ any money. (hệ thống `have got`)", options: ["haven't got", "hasn't got", "don't have got"], answer: "haven't got", completed: "We haven't got any money." },
+      { cue: "Bạn có hộ chiếu không? (hệ thống `do/does + have`)", options: ["Do you have a passport?", "Does you have a passport?", "Do you has a passport?"], answer: "Do you have a passport?", completed: "Do you have a passport?" },
+      { cue: "Bạn có hộ chiếu không? (hệ thống `have got`)", options: ["Have you got a passport?", "Do you have got a passport?", "Have you get a passport?"], answer: "Have you got a passport?", completed: "Have you got a passport?" },
       { cue: "Cô ấy có hai con không?", options: ["Does she have two children?", "Does she has two children?", "Do she have two children?"], answer: "Does she have two children?", completed: "Does she have two children?" },
     ],
   }),
@@ -1345,7 +1357,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "f1",
       "kind": "match",
-      "prompt": "Sắp từ trên chiếc thang tần suất.",
+      "prompt": "Ghép mỗi trạng từ với mức độ của nó.",
       "hint": "always cao nhất; never thấp nhất.",
       "explanation": "Mỗi từ biểu thị một mức độ thường xuyên khác nhau.",
       "pairs": [
@@ -1355,7 +1367,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
         },
         {
           "left": "often",
-          "right": "nhiều lần · thường"
+          "right": "khá nhiều lần · hay"
         },
         {
           "left": "sometimes",
@@ -1370,18 +1382,22 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "f2",
       "kind": "order",
-      "prompt": "Tôi thường đọc.",
-      "hint": "Với động từ hành động, often đứng trước động từ.",
-      "explanation": "I + often + read.",
+      "prompt": "Tôi hay đọc sách.",
+      "hint": "Với động từ thường, trạng từ tần suất đứng giữa chủ ngữ và động từ.",
+      "explanation": "`I often read books.`: `often` đứng sau chủ ngữ `I` và trước động từ `read`.",
       "tokens": [
+        "books",
         "read",
         "often",
-        "I"
+        "I",
+        "."
       ],
       "answer": [
         "I",
         "often",
-        "read"
+        "read",
+        "books",
+        "."
       ]
     },
     {
@@ -1402,15 +1418,18 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "kind": "tap",
       "prompt": "Chạm vào trạng từ tần suất.",
       "hint": "Từ nào cho biết việc xảy ra thường xuyên đến đâu?",
-      "explanation": "often là trạng từ tần suất.",
+      "explanation": "`Usually` là trạng từ tần suất: nó cho biết việc đi bộ đi làm xảy ra hầu hết các lần.",
       "tokens": [
-        "I",
-        "often",
-        "read",
+        "My",
+        "father",
+        "usually",
+        "walks",
+        "to",
+        "work",
         "."
       ],
       "answerIndexes": [
-        1
+        2
       ],
       "selectionMode": "single"
     },
@@ -1434,21 +1453,22 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "f6",
       "kind": "repair",
-      "prompt": "Sửa phần giữa để câu nói “Tôi thường đọc”.",
-      "hint": "read là động từ hành động, nên không thêm am; often đứng trước read.",
-      "explanation": "I often read. có đúng động từ và vị trí trạng từ.",
+      "prompt": "Sửa phần sau `My sister` để câu nói “Chị gái tôi hay nấu ăn”.",
+      "hint": "`Cook` là động từ thường, và chủ ngữ `my sister` chỉ một người.",
+      "explanation": "`My sister often cooks.` không chèn `is`, đặt `often` trước động từ và dùng `cooks` cho chủ ngữ số ít.",
       "tokens": [
-        "I",
-        "am often read",
+        "My",
+        "sister",
+        "is often cook",
         "."
       ],
-      "targetIndex": 1,
+      "targetIndex": 2,
       "replacements": [
-        "am often read",
-        "often read",
-        "often reads"
+        "is often cook",
+        "often cooks",
+        "often cook"
       ],
-      "answer": "often read"
+      "answer": "often cooks"
     },
     {
       "id": "f7",
@@ -1480,19 +1500,19 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "f9",
       "kind": "grid",
-      "prompt": "Chọn vị trí thông dụng nhất: trước động từ hành động, sau be.",
-      "hint": "Trong cách nói thông dụng nhất, often/never đứng trước động từ hành động; always đứng sau be.",
+      "prompt": "Chọn câu có trạng từ tần suất ở vị trí thông dụng nhất.",
+      "hint": "Xác định động từ chính của mỗi câu là `be` hay động từ thường, rồi đặt trạng từ theo động từ ấy.",
       "explanation": "Trạng từ tần suất đã nằm ở vị trí thông dụng trong mỗi kiểu câu.",
       "rows": [
         {
-          "cue": "Tôi thường đọc.",
+          "cue": "Họ hay chơi bóng đá.",
           "options": [
-            "I often read.",
-            "I often reads.",
-            "I often reading."
+            "They often play football.",
+            "They play often football.",
+            "They are often play football."
           ],
-          "answer": "I often read.",
-          "completed": "I often read."
+          "answer": "They often play football.",
+          "completed": "They often play football."
         },
         {
           "cue": "Cô ấy luôn tốt bụng.",
@@ -1519,13 +1539,13 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "f10",
       "kind": "match",
-      "prompt": "Ghép từ với nghĩa gần đúng.",
+      "prompt": "Ghép mỗi trạng từ với nghĩa gần đúng của nó.",
       "hint": "Đặt mỗi trạng từ vào đúng mức trên thang từ always đến never.",
       "explanation": "Các trạng từ đã được ghép với mức độ thường xuyên.",
       "pairs": [
         {
           "left": "usually",
-          "right": "thường xuyên / thường là"
+          "right": "hầu hết các lần · thường lệ"
         },
         {
           "left": "sometimes",
@@ -1557,19 +1577,19 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "f12",
       "kind": "grid",
-      "prompt": "Trạng từ một từ đứng giữa câu; cụm once/twice thường đứng cuối.",
-      "hint": "Với be đặt trạng từ sau be; cụm số lần thường ở cuối.",
+      "prompt": "Chọn câu đúng và tự nhiên cho mỗi câu tiếng Việt.",
+      "hint": "Trạng từ một từ đứng trước động từ thường hoặc sau `be`; cụm chỉ số lần thường đứng cuối câu.",
       "explanation": "Ba kiểu tần suất đã được đặt tự nhiên.",
       "rows": [
         {
-          "cue": "Cô ấy thường đọc.",
+          "cue": "Cô ấy thường uống trà.",
           "options": [
-            "She usually reads.",
-            "She reads usually.",
-            "Usually she reads always."
+            "She usually drinks tea.",
+            "She drinks usually tea.",
+            "She is usually drink tea."
           ],
-          "answer": "She usually reads.",
-          "completed": "She usually reads."
+          "answer": "She usually drinks tea.",
+          "completed": "She usually drinks tea."
         },
         {
           "cue": "Họ hiếm khi ở nhà.",
@@ -1609,19 +1629,19 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "f14",
       "kind": "grid",
-      "prompt": "Giữ trạng từ tần suất trước động từ hành động.",
+      "prompt": "Chọn câu hỏi đúng cho mỗi câu tiếng Việt.",
       "hint": "Do/Does + chủ ngữ + trạng từ + động từ cơ bản.",
       "explanation": "Ba trạng từ đã đứng tự nhiên trong câu hỏi.",
       "rows": [
         {
-          "cue": "Bạn có thường đọc không?",
+          "cue": "Bạn có hay đọc sách không?",
           "options": [
-            "Do you often read?",
-            "Do often you read?",
-            "Often do you reads?"
+            "Do you often read books?",
+            "Do often you read books?",
+            "Do you read often books?"
           ],
-          "answer": "Do you often read?",
-          "completed": "Do you often read?"
+          "answer": "Do you often read books?",
+          "completed": "Do you often read books?"
         },
         {
           "cue": "Lan có thường làm việc ở đây không?",
@@ -1634,7 +1654,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
           "completed": "Does Lan usually work here?"
         },
         {
-          "cue": "Họ có đôi khi chơi ở đây không?",
+          "cue": "Thỉnh thoảng họ có chơi ở đây không?",
           "options": [
             "Do they sometimes play here?",
             "Do they sometimes plays here?",
@@ -1648,16 +1668,16 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "f15",
       "kind": "grid",
-      "prompt": "Phân biệt một lần, hai lần và mỗi ngày.",
-      "hint": "once là một lần; twice là hai lần; every day là mỗi ngày.",
-      "explanation": "Ba cụm tần suất đã được phân biệt theo số lần.",
+      "prompt": "Chọn cụm tiếng Anh đúng cho mỗi cụm tiếng Việt.",
+      "hint": "Đếm số lần trong cụm tiếng Việt; cụm chỉ số lần cần đủ từ chỉ số lần, mạo từ và đơn vị thời gian, còn sau `every` là danh từ số ít.",
+      "explanation": "Cụm chỉ số lần gồm từ chỉ số lần, `a` và đơn vị thời gian; danh từ ngay sau `every` ở dạng số ít.",
       "rows": [
         {
           "cue": "một lần một tuần",
           "options": [
             "once a week",
             "twice a week",
-            "every week twice"
+            "once week"
           ],
           "answer": "once a week",
           "completed": "once a week"
@@ -1667,7 +1687,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
           "options": [
             "twice a month",
             "once a month",
-            "two month"
+            "twice month"
           ],
           "answer": "twice a month",
           "completed": "twice a month"
@@ -1676,8 +1696,8 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
           "cue": "mỗi ngày",
           "options": [
             "every day",
-            "once day",
-            "twice day"
+            "every days",
+            "once a day"
           ],
           "answer": "every day",
           "completed": "every day"
@@ -1689,7 +1709,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "o1",
       "kind": "match",
-      "prompt": "Tìm dạng dùng sau động từ.",
+      "prompt": "Ghép mỗi đại từ chủ ngữ với dạng tân ngữ của nó.",
       "hint": "he và him cùng chỉ một người nam.",
       "explanation": "Dạng đại từ thay đổi theo công việc trong câu.",
       "pairs": [
@@ -1720,12 +1740,14 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "tokens": [
         "her",
         "like",
-        "I"
+        "I",
+        "."
       ],
       "answer": [
         "I",
         "like",
-        "her"
+        "her",
+        "."
       ]
     },
     {
@@ -1748,9 +1770,9 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "o8",
       "kind": "choice",
-      "prompt": "They help ___. (Họ giúp chúng tôi.)",
-      "hint": "Dạng tân ngữ của we là us.",
-      "explanation": "They help us. là câu đúng.",
+      "prompt": "Mai visits ___. (Mai thăm chúng tôi.)",
+      "hint": "Sau động từ, người nhận hành động cần dạng tân ngữ.",
+      "explanation": "`Mai visits us.` là câu đúng: sau động từ `visits`, dùng dạng tân ngữ của `we`.",
       "options": [
         "we",
         "us",
@@ -1801,7 +1823,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
       "id": "op8",
       "kind": "grid",
       "prompt": "Chọn dạng đứng sau động từ.",
-      "hint": "I→me, we→us, they→them.",
+      "hint": "Mỗi đại từ đứng sau động từ, nên cần dạng tân ngữ của nó.",
       "explanation": "Mỗi đại từ đã đổi đúng theo vai tân ngữ.",
       "rows": [
         {
@@ -1878,7 +1900,7 @@ const a1Chapter06BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "op10",
       "kind": "sort",
-      "prompt": "Her có thể là tân ngữ hoặc đứng trước danh từ để chỉ sở hữu.",
+      "prompt": "Xếp mỗi `her` vào nhóm tân ngữ hoặc nhóm từ chỉ sở hữu.",
       "hint": "Nhìn xem sau her có một danh từ hay không.",
       "explanation": "Her sau động từ là tân ngữ; her trước danh từ chỉ mối quan hệ sở hữu.",
       "buckets": [
@@ -1912,18 +1934,18 @@ const a1Chapter06TopUps: Partial<Record<string, Exercise[]>> = {
     ...binaryChoiceDrills("a1avx", 1, "be và động từ thường", [
       ["câu nói Lan vui", "Lan is happy.", "Lan happy.", "Tính từ `happy` cần động từ nối `is`."],
       ["câu nói tôi làm việc", "I work.", "I am work.", "`Work` tự làm động từ chính; không chèn `am`."],
-      ["câu nói họ ở nhà", "They are at home.", "They do at home.", "Nơi chốn với `be` dùng `are`."],
+      ["câu nói họ ở nhà", "They are at home.", "They at home.", "Sau chủ ngữ là một nơi chốn, nên câu cần `be`; với `they`, dùng `are`."],
       ["câu nói họ sống ở đây", "They live here.", "They are live here.", "`Live` là động từ chính."],
-      ["câu nói Nam là bác sĩ", "Nam is a doctor.", "Nam does a doctor.", "Tên gọi/nghề nghiệp dùng `be`."],
+      ["câu nói Nam là bác sĩ", "Nam is a doctor.", "Nam a doctor.", "Tên gọi hoặc nghề nghiệp sau chủ ngữ cần `be`; với một người, dùng `is`."],
       ["câu nói họ thích âm nhạc", "They like music.", "They are like music.", "`Like` là động từ thường mang nghĩa thích."],
-      ["phủ định đặc điểm mệt", "She isn't tired.", "She doesn't tired.", "Câu có `be` nhận `not` trực tiếp."],
-      ["câu phủ định nói họ không ở nhà", "They aren't at home.", "They don't be at home.", "Với `be`, đặt `not` sau `are`; không dùng `do`."],
-      ["câu hỏi về nơi chốn", "Is she at school?", "Does she at school?", "Câu với `be` đảo `is`."],
-      ["câu hỏi xem họ đã sẵn sàng chưa", "Are they ready?", "Do they ready?", "Với `be`, đưa `are` lên trước chủ ngữ."],
-      ["câu nói mèo ở trong vườn", "The cat is in the garden.", "The cat does in the garden.", "Cụm nơi chốn đi sau `is`."],
-      ["câu nói chúng tôi đọc sách trong vườn", "We read in the garden.", "We are read in the garden.", "`Read` tự làm động từ chính trong câu này."],
-      ["câu nói cửa hàng mở như một trạng thái", "The shop is open.", "The shop does open.", "`Open` là tính từ sau `is` trong câu này."],
-      ["câu nói chúng tôi mở cửa hàng", "We open the shop.", "We are open the shop.", "`Open` là hành động mở; không chèn `are` trước động từ."],
+      ["câu nói tôi cần một chiếc bút", "I need a pen.", "I am need a pen.", "`Need` là động từ thường chỉ trạng thái và tự làm động từ chính, nên không chèn `am`."],
+      ["câu nói căn phòng sạch sẽ", "The room is clean.", "The room clean.", "Tính từ `clean` nói đặc điểm của căn phòng, nên cần `is` nối nó với chủ ngữ."],
+      ["câu nói bọn trẻ chơi trong công viên", "The children play in the park.", "The children are play in the park.", "`Play` là động từ thường nói việc bọn trẻ làm; không chèn `are` trước nó."],
+      ["câu nói bạn đến muộn", "You are late.", "You late.", "`Late` là tính từ nói tình trạng của chủ ngữ, nên cần `be`; với `you`, dùng `are`."],
+      ["câu nói con mèo ở trong vườn", "The cat is in the garden.", "The cat in the garden.", "Cụm nơi chốn `in the garden` cần `be` nối với chủ ngữ; với một con vật, dùng `is`."],
+      ["câu nói chúng tôi đọc sách trong vườn", "We read books in the garden.", "We are read books in the garden.", "`Read` tự làm động từ chính trong câu này; không chèn `are`."],
+      ["câu nói cửa hàng đang mở cửa", "The shop is open.", "The shop open.", "`Open` ở đây là tính từ nói trạng thái của cửa hàng, nên cần `is`."],
+      ["câu nói sáng nào chúng tôi cũng mở cửa hàng", "We open the shop every morning.", "We are open the shop every morning.", "`Open` ở đây là hành động mở; không chèn `are` trước động từ."],
       ["câu nói họ là công nhân", "They are workers.", "They workers.", "Câu giới thiệu cần dạng phù hợp của `be`."],
       ["câu nói họ học tiếng Anh", "They study English.", "They are study English.", "`Study` tự làm động từ chính trong câu này."],
     ]),
@@ -1947,32 +1969,32 @@ const a1Chapter06TopUps: Partial<Record<string, Exercise[]>> = {
   ],
   "third-person": [
     ...binaryChoiceDrills("a1tpx", 1, "động từ ngôi thứ ba số ít", [
-      ["`read` sau `she`", "She reads.", "She read.", "Chủ ngữ `she` làm động từ thêm `-s`."],
-      ["`work` sau `my father`", "My father works.", "My father work.", "Một người số ít dùng `works`."],
-      ["`watch` sau `he`", "He watches TV.", "He watch TV.", "Động từ kết thúc bằng `ch` thêm `-es`."],
-      ["`wash` sau `Lan`", "Lan washes the car.", "Lan wash the car.", "Đuôi `sh` thêm `-es`."],
-      ["`go` sau `the bus`", "The bus goes downtown.", "The bus go downtown.", "`Go` đổi thành `goes`."],
-      ["`study` sau `she`", "She studies English.", "She study English.", "Phụ âm + `y` đổi thành `-ies`."],
-      ["`play` sau `he`", "He plays football.", "He play football.", "Nguyên âm + `y` chỉ thêm `-s`."],
-      ["`enjoy` sau `Mai`", "Mai enjoys music.", "Mai enjoy music.", "Trước `y` là nguyên âm, nên thêm `-s`."],
-      ["`have` sau `it`", "It has a red cover.", "It have a red cover.", "`Have` có dạng riêng `has`."],
-      ["chủ ngữ hai người", "Lan and Nam work here.", "Lan and Nam works here.", "Hai người nối bằng `and` tạo chủ ngữ số nhiều."],
-      ["động từ `try` sau `she`", "She tries again.", "She try again.", "Động từ tận cùng bằng phụ âm + `y` đổi `y` thành `i` rồi thêm `-es`."],
+      ["câu “Cô ấy ngủ”", "She sleeps.", "She sleep.", "Chủ ngữ `she` làm động từ thêm `-s`."],
+      ["câu “Bố tôi làm việc”", "My father works.", "My father work.", "Một người số ít dùng `works`."],
+      ["câu “Anh ấy xem TV”", "He watches TV.", "He watch TV.", "Động từ kết thúc bằng `ch` thêm `-es`."],
+      ["câu “Lan rửa xe ô tô”", "Lan washes the car.", "Lan wash the car.", "Đuôi `sh` thêm `-es`."],
+      ["câu “Xe buýt đi vào trung tâm thành phố”", "The bus goes downtown.", "The bus go downtown.", "`Go` đổi thành `goes`."],
+      ["câu “Chị gái tôi học vào buổi tối”", "My sister studies in the evening.", "My sister study in the evening.", "Phụ âm + `y` đổi thành `-ies`."],
+      ["câu “Anh ấy chơi bóng đá”", "He plays football.", "He play football.", "Nguyên âm + `y` chỉ thêm `-s`."],
+      ["câu “Mai thích âm nhạc”", "Mai enjoys music.", "Mai enjoy music.", "Trước `y` là nguyên âm, nên thêm `-s`."],
+      ["câu “Nó có bìa màu đỏ”", "It has a red cover.", "It have a red cover.", "`Have` có dạng riêng `has`."],
+      ["câu “Lan và Nam làm việc ở đây”", "Lan and Nam work here.", "Lan and Nam works here.", "Hai người nối bằng `and` tạo chủ ngữ số nhiều."],
+      ["câu “Cô ấy thử lại”", "She tries again.", "She try again.", "Động từ tận cùng bằng phụ âm + `y` đổi `y` thành `i` rồi thêm `-es`."],
     ]),
   ],
   "present-simple-negative": [
     ...binaryChoiceDrills("a1pnx", 1, "phủ định hiện tại đơn", [
-      ["`I` với động từ `like`", "I don't like coffee.", "I doesn't like coffee.", "`I` dùng `don't`."],
-      ["`they` với động từ `live`", "They don't live here.", "They doesn't live here.", "`They` dùng `don't`."],
-      ["`she` với động từ `work`", "She doesn't work here.", "She don't work here.", "`She` dùng `doesn't`."],
-      ["`the cat` với động từ `sleep`", "The cat doesn't sleep here.", "The cat don't sleep here.", "Chủ ngữ số ít dùng `doesn't`."],
-      ["`the children` với động từ `eat`", "The children don't eat meat.", "The children doesn't eat meat.", "`Children` là số nhiều nên dùng `don't`."],
-      ["động từ `study` sau `doesn't`", "Lan doesn't study French.", "Lan doesn't studies French.", "Sau `doesn't`, dùng dạng cơ bản `study`."],
-      ["động từ `have` sau `doesn't`", "He doesn't have a car.", "He doesn't has a car.", "`Has` trở về `have` sau `doesn't`."],
-      ["động từ `go` sau `doesn't`", "She doesn't go by bus.", "She doesn't goes by bus.", "`Goes` trở về `go`."],
-      ["phủ định câu có `be`", "They aren't tired.", "They don't tired.", "`Be` nhận `not` trực tiếp."],
-      ["phủ định thói quen làm việc", "They don't work at home.", "They aren't work at home.", "Động từ thường dùng `don't`."],
-      ["dạng đầy đủ với `they`", "They do not work here.", "They does not work here.", "`They` dùng `do not`; `does not` đi với `he`, `she`, `it` hoặc một người/vật."],
+      ["câu “Tôi không thích cà phê”", "I don't like coffee.", "I doesn't like coffee.", "`I` dùng `don't`."],
+      ["câu “Họ không sống ở đây”", "They don't live here.", "They doesn't live here.", "`They` dùng `don't`."],
+      ["câu “Cô ấy không làm việc ở đây”", "She doesn't work here.", "She don't work here.", "`She` dùng `doesn't`."],
+      ["câu “Con mèo không ngủ ở đây”", "The cat doesn't sleep here.", "The cat don't sleep here.", "Chủ ngữ số ít dùng `doesn't`."],
+      ["câu “Bọn trẻ không ăn thịt”", "The children don't eat meat.", "The children doesn't eat meat.", "`Children` là số nhiều nên dùng `don't`."],
+      ["câu “Lan không học tiếng Pháp”", "Lan doesn't study French.", "Lan doesn't studies French.", "Sau `doesn't`, dùng dạng cơ bản `study`."],
+      ["câu “Anh ấy không có ô tô”", "He doesn't have a car.", "He doesn't has a car.", "`Has` trở về `have` sau `doesn't`."],
+      ["câu “Cô ấy không đi bằng xe buýt”", "She doesn't go by bus.", "She doesn't goes by bus.", "`Goes` trở về `go`."],
+      ["câu “Họ không mệt”", "They aren't tired.", "They don't tired.", "`Be` nhận `not` trực tiếp."],
+      ["câu “Họ không làm việc ở nhà”", "They don't work at home.", "They aren't work at home.", "Động từ thường dùng `don't`."],
+      ["dạng đầy đủ của câu “Họ không làm việc ở đây”", "They do not work here.", "They does not work here.", "`They` dùng `do not`; `does not` đi với `he`, `she`, `it` hoặc một người/vật."],
     ]),
   ],
   "present-simple-questions": [
@@ -1980,31 +2002,48 @@ const a1Chapter06TopUps: Partial<Record<string, Exercise[]>> = {
       ["hỏi `you` có đọc mỗi ngày không", "Do you read every day?", "Does you read every day?", "`You` dùng `do`."],
       ["hỏi `they` có làm việc ở đây không", "Do they work here?", "Does they work here?", "`They` dùng `do`."],
       ["hỏi `he` có sống ở Huế không", "Does he live in Hue?", "Do he lives in Hue?", "`He` dùng `does`; `live` ở dạng cơ bản."],
-      ["hỏi Lan có thích trà không", "Does Lan like tea?", "Does Lan likes tea?", "Sau `does`, dùng `like`."],
+      ["câu hỏi “Mai có thích cà phê không?”", "Does Mai like coffee?", "Does Mai likes coffee?", "Sau `does`, dùng `like`."],
       ["hỏi con mèo có ngủ ở đây không", "Does the cat sleep here?", "Do the cat sleeps here?", "Chủ ngữ số ít dùng `does`."],
       ["hỏi nhiều con mèo có ngủ ở đây không", "Do the cats sleep here?", "Does the cats sleeps here?", "Chủ ngữ số nhiều dùng `do`."],
       ["hỏi cô ấy có xe không", "Does she have a car?", "Does she has a car?", "Sau `does`, `has` trở về `have`."],
-      ["trả lời khẳng định cho `Do you cook?`", "Yes, I do.", "Yes, I cook do.", "Câu trả lời ngắn dùng lại `do`."],
-      ["trả lời phủ định cho `Does he drive?`", "No, he doesn't.", "No, he don't.", "Chủ ngữ `he` dùng `doesn't`."],
-      ["trả lời về `the children`", "Yes, they do.", "Yes, it does.", "Thay chủ ngữ số nhiều bằng `they`."],
+      ["câu trả lời khẳng định cho `Do you cook?`", "Yes, I do.", "Yes, I does.", "Câu trả lời ngắn lặp lại đúng trợ động từ của câu hỏi; với chủ ngữ `I`, trợ động từ ấy không thêm `-es`."],
+      ["lời đáp phủ định ngắn khi được hỏi `Does he drive?`", "No, he doesn't.", "No, he don't.", "Chủ ngữ `he` dùng `doesn't`."],
+      ["câu trả lời khẳng định cho câu hỏi “Do the children walk to school?”", "Yes, they do.", "Yes, they does.", "Thay chủ ngữ số nhiều bằng `they` và lặp lại đúng trợ động từ của câu hỏi."],
       ["câu hỏi với `be`", "Is Lan at home?", "Does Lan be at home?", "`Be` tự đảo, không dùng `does`."],
       ["câu hỏi thói quen đi làm", "Do you go to work by bus?", "Are you go to work by bus?", "Động từ thường hiện tại đơn dùng `do`."],
       ["câu hỏi về lịch cửa hàng", "Does the shop close at six?", "Does the shop closes at six?", "Sau `does`, dùng `close`."],
       ["dấu câu cuối câu hỏi", "Do they know you?", "Do they know you.", "Câu hỏi trực tiếp kết thúc bằng dấu hỏi."],
     ]),
   ],
+  // Hai hệ thống nói sở hữu dễ bị trộn; bổ sung phần `have` chỉ hoạt động và câu khẳng định với `have got`.
+  "have-have-got": [
+    {
+      id: "a1hgx1", kind: "choice", prompt: "Câu nào nói về thói quen tắm buổi sáng?",
+      options: ["I have a shower every morning.", "I've got a shower every morning.", "I has a shower every morning."],
+      answer: "I have a shower every morning.",
+      hint: "Ở đây `have` không nói sở hữu mà nói một hoạt động lặp lại.",
+      explanation: "Khi `have` diễn tả hoạt động như tắm hay ăn sáng, ta dùng `have` theo hệ thống `do/does + have`, không dùng `have got`; với `I`, dùng `have`.",
+    },
+    {
+      id: "a1hgx2", kind: "order", prompt: "Sắp xếp câu “Cô ấy có hai anh trai.” bằng `have got`.",
+      tokens: ["two", "She’s", "brothers", "got", "."],
+      answer: ["She’s", "got", "two", "brothers", "."],
+      hint: "`She's` ở đây là dạng viết tắt của chủ ngữ cùng `has`; `got` đi ngay sau nó.",
+      explanation: "Trong `She’s got two brothers.`, `’s` là `has`, rồi đến `got` và phần được sở hữu.",
+    },
+  ],
   frequency: [
     ...binaryChoiceDrills("a1fqx", 1, "trạng từ tần suất", [
-      ["`often` với động từ `read`", "I often read at night.", "I read often at night.", "Vị trí trung tính là trước động từ thường."],
-      ["`always` với `be`", "She is always kind.", "She always is kind.", "Trạng từ tần suất thường đứng sau `be`."],
-      ["`never` với động từ `eat`", "They never eat meat.", "They don't never eat meat.", "`Never` đã mang nghĩa phủ định."],
+      ["câu “Cô ấy hay xem phim vào ban đêm”", "She often watches films at night.", "She watches often films at night.", "Trạng từ tần suất đứng trước động từ thường; nó không chen giữa động từ và tân ngữ."],
+      ["câu “Họ luôn đúng giờ” nói theo cách thông dụng nhất", "They are always on time.", "They always are on time.", "Trong cách nói thông dụng nhất, trạng từ tần suất đứng sau `be`."],
+      ["câu “Họ không bao giờ ăn thịt”", "They never eat meat.", "They don't never eat meat.", "`Never` đã mang nghĩa phủ định."],
       ["`sometimes` ở đầu câu", "Sometimes we walk to school.", "Sometimes do we walk to school.", "`Sometimes` có thể đứng đầu câu kể."],
-      ["cụm `every day`", "I call her every day.", "I every day call her.", "Cụm tần suất thường đứng cuối."],
-      ["cụm `twice a week`", "We swim twice a week.", "We twice a week swim.", "Cụm chỉ số lần thường đứng cuối."],
-      ["câu hỏi với `often`", "Do you often cook?", "Often do you cook?", "Trong câu hỏi hiện tại đơn, `often` đứng trước động từ chính."],
-      ["phủ định thói quen thông thường", "I don't usually drink tea.", "I usually don't drink tea always.", "`Usually` thường đứng sau `don't` và trước động từ chính."],
-      ["câu hỏi tần suất", "How often does she travel?", "How often she travels?", "Dùng `how often + does + chủ ngữ + động từ cơ bản`."],
-      ["câu trả lời cho `How often...?`", "Three times a month.", "At the station.", "Câu hỏi tần suất cần một mức độ hoặc số lần."],
+      ["câu “Tôi gọi cho cô ấy mỗi ngày”", "I call her every day.", "I every day call her.", "Cụm tần suất thường đứng cuối."],
+      ["câu “Chúng tôi bơi hai lần một tuần”", "We swim twice a week.", "We twice a week swim.", "Cụm chỉ số lần thường đứng cuối."],
+      ["câu hỏi “Bạn có hay nấu ăn không?”", "Do you often cook?", "Often do you cook?", "Trong câu hỏi hiện tại đơn, `often` đứng trước động từ chính."],
+      ["câu “Tôi thường không uống trà”", "I don't usually drink tea.", "I don't drink usually tea.", "`Usually` thường đứng sau `don't` và trước động từ chính."],
+      ["câu hỏi “Cô ấy đi du lịch bao lâu một lần?”", "How often does she travel?", "How often she travels?", "Dùng `how often + does + chủ ngữ + động từ cơ bản`."],
+      ["câu trả lời cho câu hỏi “How often do you visit your grandparents?”", "Three times a month.", "At the station.", "Câu hỏi tần suất cần một mức độ hoặc số lần."],
     ]),
   ],
   "objects-and-links": [
@@ -2014,15 +2053,15 @@ const a1Chapter06TopUps: Partial<Record<string, Exercise[]>> = {
       ["“Chúng tôi thấy cô ấy”", "We see her.", "We see she.", "`Her` làm tân ngữ sau `see`."],
       ["“Cô ấy gọi cho chúng tôi”", "She calls us.", "She calls we.", "`Us` là dạng tân ngữ của `we`."],
       ["“Tôi thích họ”", "I like them.", "I like they.", "`Them` là dạng tân ngữ của `they`."],
-      ["“Tôi thích nó”", "I like it.", "I like its.", "`It` giữ nguyên khi làm tân ngữ."],
+      ["“Tôi cần nó”", "I need it.", "I need its.", "`It` giữ nguyên khi làm tân ngữ."],
       ["“Tôi giúp bạn”", "I help you.", "I help your.", "`You` giữ nguyên khi làm tân ngữ."],
-      ["sau giới từ `with`", "Come with us.", "Come with we.", "Sau giới từ dùng đại từ tân ngữ."],
+      ["“Nam sống cùng chúng tôi”", "Nam lives with us.", "Nam lives with we.", "Sau giới từ `with`, dùng đại từ tân ngữ."],
       ["sau giới từ `for`", "This is for her.", "This is for she.", "`Her` đứng sau giới từ `for`."],
       ["sau giới từ `from`", "I get messages from them.", "I get messages from they.", "Dùng `them` sau `from`."],
-      ["phân biệt `her` làm tân ngữ", "I see her.", "I see hers.", "Sau động từ, `her` chỉ cô ấy; `hers` chỉ sở hữu."],
+      ["“Chúng tôi giúp cô ấy”", "We help her.", "We help hers.", "Sau động từ, `her` chỉ chính người được giúp; `hers` nói thứ thuộc về cô ấy."],
       ["phân biệt `her` chỉ sở hữu", "her book", "hers book", "Trước danh từ dùng `her`."],
-      ["chủ ngữ ghép với người nói", "Lan and I work here.", "Lan and me work here.", "Ở vị trí chủ ngữ chuẩn, dùng `I`."],
-      ["tân ngữ ghép với người nói", "The teacher helps Lan and me.", "The teacher helps Lan and I.", "Sau động từ, dùng `me`."],
+      ["“Lan và tôi làm việc ở đây” trong văn phong chuẩn", "Lan and I work here.", "Lan and me work here.", "Ở vị trí chủ ngữ chuẩn, dùng `I`."],
+      ["“Giáo viên giúp Lan và tôi” trong văn phong chuẩn", "The teacher helps Lan and me.", "The teacher helps Lan and I.", "Sau động từ, dùng `me`."],
       ["thay `the boys` sau động từ", "I know them.", "I know they.", "Cụm số nhiều được thay bằng tân ngữ `them`."],
     ]),
   ],
@@ -2030,17 +2069,17 @@ const a1Chapter06TopUps: Partial<Record<string, Exercise[]>> = {
 
 const a1Chapter06DepthExtensions: Partial<Record<string, Exercise[]>> = {
   "action-vs-be": [{
-    id: "a1depth-av-1", kind: "sort", prompt: "Phân loại câu theo việc động từ chính là `be` hay một động từ mang nghĩa hành động hoặc trạng thái riêng.",
+    id: "a1depth-av-1", kind: "sort", prompt: "Phân loại câu theo động từ chính: `be` hay động từ thường.",
     hint: "Nếu câu nối chủ ngữ với tên gọi, đặc điểm hoặc nơi chốn, hãy tìm `be`; nếu từ khác đã mang nghĩa chính, không chèn `be`.",
-    explanation: "`Be` nối chủ ngữ với tên gọi, đặc điểm hoặc nơi chốn; `cook`, `need` và `live` tự làm động từ chính.",
-    buckets: ["Dùng be", "Dùng động từ khác"],
+    explanation: "`Be` nối chủ ngữ với tên gọi, đặc điểm hoặc nơi chốn; `cook`, `need` và `live` là động từ thường, tự làm động từ chính.",
+    buckets: ["Dùng be", "Dùng động từ thường"],
     items: [
       { text: "My aunt is a nurse.", bucket: "Dùng be" },
       { text: "The soup is hot.", bucket: "Dùng be" },
       { text: "They are in the kitchen.", bucket: "Dùng be" },
-      { text: "My aunt cooks dinner.", bucket: "Dùng động từ khác" },
-      { text: "We need water.", bucket: "Dùng động từ khác" },
-      { text: "They live near here.", bucket: "Dùng động từ khác" },
+      { text: "My parents cook dinner.", bucket: "Dùng động từ thường" },
+      { text: "We need water.", bucket: "Dùng động từ thường" },
+      { text: "They live near here.", bucket: "Dùng động từ thường" },
     ],
   }],
   "present-simple-base": [
@@ -2049,7 +2088,7 @@ const a1Chapter06DepthExtensions: Partial<Record<string, Exercise[]>> = {
       hint: "Xác định cách nhìn về sự việc trước; với `I/you/we/they` hoặc chủ ngữ số nhiều, dùng động từ dạng cơ bản.",
       explanation: "Ba câu dùng hiện tại đơn vì lần lượt nói thói quen, sự thật chung và tình trạng tương đối ổn định.",
       rows: [
-        { cue: "thói quen của chúng tôi vào thứ Bảy", options: ["We visit our grandparents on Saturdays.", "We are visit our grandparents.", "We visits our grandparents."], answer: "We visit our grandparents on Saturdays.", completed: "We visit our grandparents on Saturdays." },
+        { cue: "thói quen của chúng tôi vào thứ Bảy", options: ["We visit our grandparents on Saturdays.", "We are visit our grandparents on Saturdays.", "We visits our grandparents on Saturdays."], answer: "We visit our grandparents on Saturdays.", completed: "We visit our grandparents on Saturdays." },
         { cue: "sự thật chung về chim", options: ["Birds have wings.", "Birds has wings.", "Birds are have wings."], answer: "Birds have wings.", completed: "Birds have wings." },
         { cue: "nơi làm việc ổn định của tôi", options: ["I work in a library.", "I works in a library.", "I am work in a library."], answer: "I work in a library.", completed: "I work in a library." },
       ],

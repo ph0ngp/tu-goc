@@ -259,7 +259,10 @@ Chủ dự án có thể viết thêm yêu cầu ngay dưới dòng này. Nên g
   sách chưa chọn, câu hỏi phải dùng “chọn”, “xác định” hoặc một cách hỏi tương
   ứng với thao tác thực tế.
 - Một câu không được vô tình có hai đáp án đúng. Nếu ngôn ngữ cho phép nhiều
-  biến thể, chấp nhận tất cả biến thể phù hợp hoặc viết lại câu hỏi.
+  biến thể, chấp nhận tất cả biến thể phù hợp hoặc viết lại câu hỏi. Với bài
+  sắp xếp và bài gõ câu, khai báo mọi cách xếp khác cũng đúng (trường
+  `alternatives`, hoặc `parallelVariants` trong hạt B1–C1), chẳng hạn trạng ngữ
+  thời gian đứng đầu hay cuối câu, hoặc chọn câu mẫu có trật tự cố định.
 - Gợi ý chỉ xuất hiện khi người học chủ động mở mục “Cần một gợi ý”. Không tự
   mở gợi ý sau một số lần làm sai và ô báo sai không lặp lại nội dung gợi ý.
 - Gợi ý phải dựa vào đúng quy tắc hoặc dấu hiệu của câu hiện tại. Không dùng

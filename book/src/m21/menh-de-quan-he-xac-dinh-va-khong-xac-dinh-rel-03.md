@@ -36,7 +36,7 @@ Nếu mệnh đề nằm giữa câu, cần một dấu phẩy ở đầu và m�
 So sánh:
 
 - `My cousins who live in Hue are teachers.` — Những người anh/chị/em họ của tôi sống ở Huế là giáo viên. Người nói có thể còn những người họ hàng khác không sống ở Huế.
-- `My cousins, who live in Hue, are teachers.` — Những người anh/chị/em họ của tôi, và họ sống ở Huế, đều là giáo viên. Mệnh đề phụ cho thấy nhóm đã rõ.
+- `My cousins, who live in Hue, are teachers.` — Các anh chị em họ của tôi (họ đều sống ở Huế) đều là giáo viên. Mệnh đề phụ cho thấy nhóm đã rõ.
 
 Vì vậy, dấu phẩy không chỉ để “ngắt hơi”; nó giúp thể hiện mệnh đề có cần để xác định danh từ hay không.
 

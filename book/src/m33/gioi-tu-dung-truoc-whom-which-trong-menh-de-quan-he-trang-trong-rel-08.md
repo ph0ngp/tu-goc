@@ -5,13 +5,13 @@ legacyLessonId: c1-fronted-prepositions
 ---
 # Giới từ đứng trước whom/which trong mệnh đề quan hệ trang trọng
 
-Ở B1, ta đã học cách để giới từ ở cuối mệnh đề quan hệ: `the colleague I spoke to` nghĩa là “người đồng nghiệp mà tôi đã nói chuyện cùng”. Cách này đúng và tự nhiên trong hầu hết văn nói, thư từ và văn viết thông thường.
+Ở B1, ta đã học cách để [giới từ ở cuối mệnh đề quan hệ](../m21/gioi-tu-o-cuoi-menh-de-quan-he-rel-06.md): `the colleague I spoke to` nghĩa là “người đồng nghiệp mà tôi đã nói chuyện cùng”. Cách này đúng và tự nhiên trong hầu hết văn nói, thư từ và văn viết thông thường.
 
 Trong văn phong trang trọng, đặc biệt là báo cáo, hợp đồng và văn bản học thuật, giới từ có thể được đưa lên trước `whom` hoặc `which`:
 
 ```text
 the colleague to whom I spoke — người đồng nghiệp mà tôi đã nói chuyện cùng
-the proposal about which they argued — đề xuất mà họ đã tranh luận về
+the proposal about which they argued — đề xuất mà họ đã tranh luận
 ```
 
 Hai cấu trúc không khác nhau về sự việc được nói tới. Khác biệt chính là cách tổ chức câu và mức độ trang trọng.
@@ -40,8 +40,8 @@ They relied on the evidence.
 
 | Danh từ đứng trước | Dạng trang trọng | Ví dụ |
 | --- | --- | --- |
-| người | `preposition + whom` | `the client for whom we prepared the report` — khách hàng mà chúng tôi chuẩn bị báo cáo cho |
-| vật, sự việc, ý tưởng | `preposition + which` | `the method by which the data was collected` — phương pháp mà dữ liệu được thu thập bằng |
+| người | `preposition + whom` | `the client for whom we prepared the report` — khách hàng mà chúng tôi đã chuẩn bị báo cáo cho họ |
+| vật, sự việc, ý tưởng | `preposition + which` | `the method by which the data was collected` — phương pháp được dùng để thu thập dữ liệu |
 
 Sau giới từ đứng trước, không dùng `who`, `that` hoặc dạng lược bỏ trong văn phạm chuẩn:
 
@@ -61,6 +61,16 @@ Giới từ không được chọn chỉ vì bản dịch tiếng Việt. Nó ph
 | `have confidence in a system` | `the system in which they had confidence` |
 
 Không thể đổi tùy ý `for` thành `to` hay `in`. Nếu chưa chắc, cần tra cả cụm gốc chứ không tra riêng động từ.
+
+## Khi nào giới từ phải ở lại cuối
+
+Giới từ chỉ đưa lên trước được khi nó cùng tân ngữ tạo thành một cụm giới từ, như `to the consultant` hay `on the evidence`. Nếu từ đứng sau động từ là một phần cố định của cụm động từ (*phrasal verb*, đã học ở [Cụm động từ tách được, không tách được và vị trí đại từ](../m25/phrasal-verbs-tach-duoc-khong-tach-duoc-va-vi-tri-dai-tu-phrv-01.md)), hoặc của cụm ba phần như `put up with`, nó gắn với động từ để tạo một nghĩa riêng. Khi đó nó phải ở lại cuối mệnh đề:
+
+- `the children she looks after` — những đứa trẻ cô ấy chăm sóc; không dùng `the children after whom she looks`;
+- `the noise we have to put up with` — tiếng ồn mà chúng tôi phải chịu đựng; không dùng `the noise with which we have to put up`;
+- `the idea she came up with` — ý tưởng cô ấy nghĩ ra; không dùng `the idea with which she came up`.
+
+Dấu hiệu dễ thấy: tách từ ấy khỏi động từ thì nghĩa của cụm bị phá vỡ (`look` là “nhìn”, còn `look after` là “chăm sóc”). Nếu vẫn cần văn phong trang trọng, hãy đổi sang một động từ một từ thay vì ép giới từ lên trước: `the noise we have to tolerate` — tiếng ồn mà chúng tôi phải chịu đựng. Bài [Phân biệt cụm động từ, động từ có giới từ và cụm động từ–giới từ](phan-biet-phrasal-prepositional-va-phrasal-prepositional-verbs-vpat-10.md) sẽ phân tích kỹ các phép thử này.
 
 ## Mệnh đề xác định và không xác định
 
@@ -105,6 +115,7 @@ Không nên biến mọi giới từ cuối câu thành dạng đứng trước.
 - Dạng `preposition + whom/which` là lựa chọn trang trọng tương ứng với giới từ ở cuối mệnh đề quan hệ.
 - Dùng `whom` cho người, `which` cho vật hoặc ý tưởng; không dùng `that` sau giới từ đứng trước.
 - Giữ đúng giới từ của cụm gốc.
+- Giới từ hoặc tiểu từ thuộc cụm động từ như `look after`, `put up with` ở lại cuối mệnh đề.
 - Không lược `whom/which` khi giới từ đã đứng trước.
 - `quantity + of whom/which` dùng trong mệnh đề không xác định để nói một phần của nhóm đã nêu.
 - Chọn dạng đứng trước hay đứng cuối theo văn phong và độ rõ, không coi một dạng đúng còn dạng kia sai.

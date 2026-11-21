@@ -52,7 +52,7 @@ Nếu chủ ngữ là người nghe và hành động nằm trong quyền lựa 
 ## Phủ định và câu hỏi
 
 - `The task shouldn't take long.` — Công việc có lẽ không mất nhiều thời gian.
-- `Should the parcel arrive today?` — Theo dự kiến bưu kiện có đến hôm nay không?
+- `Should the parcel be here today?` — Theo dự kiến hôm nay bưu kiện có tới không?
 - `When should we hear the results?` — Theo dự kiến khi nào chúng ta nhận kết quả?
 
 Câu hỏi `When should we...?` đôi khi cũng hỏi lời khuyên về thời điểm. Ngữ cảnh phân biệt “theo lịch khi nào” với “chúng ta nên làm khi nào”.

@@ -15,7 +15,7 @@ S + would rather/sooner + base verb
 
 - `I'd rather stay home tonight.` — Tối nay tôi thích ở nhà hơn.
 - `We'd sooner wait until tomorrow.` — Chúng tôi thà đợi đến ngày mai hơn.
-- `Would you rather sit inside?` — Bạn thích ngồi trong nhà hơn không?
+- `Would you rather sit inside?` — Bạn có muốn ngồi trong nhà hơn không?
 
 `Would` thường rút gọn thành `'d`. Sau `rather/sooner` không có `to`: dùng `I'd rather go`, không dùng `I'd rather to go`.
 
@@ -63,18 +63,18 @@ Khi muốn người khác đã hành động khác trong quá khứ, dùng quá 
 S1 + would rather + S2 + had + past participle
 ```
 
-- `I'd rather you had told me earlier.` — Tôi muốn giá như bạn đã nói với tôi sớm hơn.
+- `I'd rather you had told me earlier.` — Giá mà bạn nói với tôi sớm hơn thì tốt hơn.
 - `She'd rather they hadn't invited so many people.` — Cô ấy ước họ đã không mời nhiều người như vậy.
 
 Cấu trúc này gần `wish + past perfect` và thường mang tiếc nuối hoặc phê bình.
 
 ## So với `prefer`
 
-| Cấu trúc | Ví dụ |
-| --- | --- |
-| `would rather + V` | `I'd rather stay.` |
-| `would prefer + to-infinitive` | `I'd prefer to stay.` |
-| `prefer + noun/V-ing + to + noun/V-ing` | `I prefer walking to driving.` |
+| Cấu trúc | Ví dụ | Nghĩa |
+| --- | --- | --- |
+| `would rather + V` | `I'd rather stay.` | Tôi muốn ở lại hơn (lần này). |
+| `would prefer + to-infinitive` | `I'd prefer to stay.` | Tôi muốn ở lại hơn. |
+| `prefer + noun/V-ing + to + noun/V-ing` | `I prefer walking to driving.` | Nói chung tôi thích đi bộ hơn lái xe. |
 
 `Would rather` thường là lựa chọn trong tình huống hiện tại; `prefer` có thể nói sở thích chung. Tuy nhiên, `would prefer` cũng nói lựa chọn cụ thể.
 

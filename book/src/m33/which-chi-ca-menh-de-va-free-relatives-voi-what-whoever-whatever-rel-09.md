@@ -47,20 +47,9 @@ whoever arrives first = any person who arrives first
 whatever you decide = anything that you decide
 ```
 
-Trong `What she said was true`, cả cụm `What she said` làm chủ ngữ và nghĩa là “Điều cô ấy nói là đúng.” Không có danh từ nào đứng trước `what`.
+Trong `What the guide told us was wrong`, cả cụm `What the guide told us` làm chủ ngữ và câu nghĩa là “Điều người hướng dẫn nói với chúng tôi là sai.” Không có danh từ nào đứng trước `what`.
 
-## `What` nghĩa là “điều/cái mà”
-
-- `I understand what you mean.` — Tôi hiểu điều bạn muốn nói.
-- `What we need is more time.` — Điều chúng ta cần là thêm thời gian.
-- `This is exactly what I was looking for.` — Đây chính xác là thứ tôi đang tìm.
-
-Không đặt một danh từ trước `what` trong cấu trúc này. Ta nói `the book that I bought` hoặc `what I bought`, không nói `the book what I bought`.
-
-| Có danh từ đứng trước | Không có danh từ đứng trước |
-| --- | --- |
-| `the advice that she gave` — lời khuyên mà cô ấy đưa ra | `what she advised` — điều cô ấy khuyên |
-| `the thing which happened` — điều đã xảy ra | `what happened` — điều đã xảy ra |
+`What` mang nghĩa “điều/cái mà” đã gặp ở [Mệnh đề Wh- làm chủ ngữ hoặc tân ngữ](../m20/menh-de-wh-lam-chu-ngu-hoac-tan-ngu-nclause-01.md) và [Câu chẻ với what và all](../m32/what-cleft-all-cleft-info-02.md), kể cả quy tắc không đặt danh từ trước `what`: nói `the book that I bought` hoặc `what I bought`, không nói `the book what I bought`. Cụm `what` có thể làm tân ngữ (`I understand what you mean` — Tôi hiểu điều bạn muốn nói) hoặc bổ ngữ sau `be` (`This is exactly what I was looking for` — Đây chính xác là thứ tôi đang tìm). Ở bài này, ta đặt `what` vào cùng một hệ thống với `whoever` và `whatever`, rồi tách nó khỏi những cấu trúc trông giống.
 
 ## `Whoever` nghĩa là “bất kỳ ai/người nào”
 
@@ -84,8 +73,15 @@ Trong câu cuối, `the committee` là chủ ngữ của mệnh đề nhỏ; `wh
 
 Free relative giữ trật tự câu kể bên trong:
 
-- đúng: `I don't know what she wants.`;
-- không dùng: `I don't know what does she want.`
+- đúng: `I'll buy what she wants.` — Tôi sẽ mua thứ cô ấy muốn;
+- không dùng: `I'll buy what does she want.`
+
+Cần tách free relative khỏi câu hỏi gián tiếp (*indirect question*), vì cả hai đều có thể mở đầu bằng `what` và đều giữ trật tự câu kể:
+
+- `I wonder what she wants.` — Tôi tự hỏi cô ấy muốn gì. Đây là câu hỏi gián tiếp: `what` hỏi về một thông tin chưa biết.
+- `I'll buy what she wants.` — Tôi sẽ mua thứ cô ấy muốn. Đây là free relative: cả cụm chỉ chính món đồ ấy.
+
+Phép thử: nếu thay `what` bằng `the thing that` mà câu vẫn giữ nghĩa (`I'll buy the thing that she wants`), đó là free relative. Nếu cụm nêu nội dung của một câu hỏi, thường sau `wonder`, `ask`, `be not sure`, thì không thay được (không nói `I wonder the thing that she wants`), và đó là câu hỏi gián tiếp. Với `whoever` cũng vậy: `whoever` luôn mang nghĩa “bất kỳ ai”, còn câu hỏi gián tiếp dùng `who`: `I don't know who called` — Tôi không biết ai đã gọi.
 
 Khi `whoever` làm chủ ngữ, động từ luôn ở số ít, dù trên thực tế có thể có nhiều người: `Whoever wants to join is welcome` — “Bất kỳ ai muốn tham gia đều được chào đón.” Cả `wants` trong mệnh đề nhỏ lẫn `is` của câu lớn đều ở số ít; không viết `Whoever want to join are welcome` dù có hai mươi người muốn tham gia. `Whatever` đứng một mình cũng đi với số ít: `Whatever happens, stay calm`. Chỉ khi `whatever` đứng trước một danh từ số nhiều thì danh từ ấy mới quyết định số nhiều: `Whatever books you need are on the shelf.` — Bất kỳ cuốn sách nào bạn cần cũng đều ở trên giá.
 
@@ -104,3 +100,4 @@ Khi `whoever` làm chủ ngữ, động từ luôn ở số ít, dù trên thự
 - `whoever` chỉ bất kỳ người nào; `whatever` chỉ bất kỳ điều gì hoặc tạo nghĩa nhượng bộ.
 - Free relative có thể làm chủ ngữ, tân ngữ hoặc bổ ngữ của câu lớn.
 - Bên trong free relative dùng trật tự câu kể, không đảo như câu hỏi trực tiếp.
+- Free relative thay được bằng `the thing that`; câu hỏi gián tiếp sau `wonder`, `ask` thì không.

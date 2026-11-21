@@ -19,14 +19,14 @@ to be + past participle
 
 Trong `Lan hopes to be invited`, Lan là chủ thể của `hopes` nhưng là người nhận hành động `invite`.
 
-## Sau modal: bare passive infinitive
+## Sau modal: nguyên mẫu bị động không có to
 
 Sau modal không có `to`:
 
 - `The form must be completed today.` — Biểu mẫu phải được hoàn thành hôm nay.
 - `This issue can be solved.` — Vấn đề này có thể được giải quyết.
 
-Đây là `be + past participle` sau modal. Không dùng `must to be completed`.
+Đây là nguyên mẫu bị động không có `to` (*bare passive infinitive*): `be + past participle` sau modal. Không dùng `must to be completed`.
 
 ## Dạng nguyên mẫu có to hoàn thành bị động: `to have been done`
 
@@ -36,10 +36,13 @@ Khi hành động bị động xảy ra trước động từ chính hoặc đi�
 to have been + past participle
 ```
 
-- `She is believed to have been promoted.` — Người ta tin rằng cô ấy đã được thăng chức.
 - `The painting appears to have been damaged.` — Bức tranh có vẻ đã bị hư hại.
+- `He seems to have been promoted.` — Có vẻ anh ấy đã được thăng chức.
 
-So sánh `She is expected to be promoted` — dự kiến cô ấy sẽ được thăng chức; `She is believed to have been promoted` — việc thăng chức được cho là đã xảy ra.
+`Appear` và `seem` (có vẻ) đi với to-infinitive. Dạng hoàn thành bị động sau chúng cho biết việc bị hay được tác động đã xảy ra trước lúc người nói nhận xét. So sánh hai câu chỉ khác ở dạng nguyên mẫu:
+
+- `She seems to be well liked.` — Có vẻ cô ấy được mọi người quý mến: trạng thái cùng lúc với nhận xét.
+- `She seems to have been well liked.` — Có vẻ trước đây cô ấy đã được mọi người quý mến: điều được nói nằm trước lúc nhận xét.
 
 ## Danh động từ bị động: `being done`
 

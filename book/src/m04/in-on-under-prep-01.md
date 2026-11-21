@@ -5,7 +5,7 @@ legacyLessonId: prepositions-place
 ---
 # in · on · under
 
-`In`, `on` và `under` là các giới từ vị trí. Chúng cho biết một người hoặc vật nằm ở đâu so với một nơi hoặc vật làm mốc.
+**Giới từ** (*preposition*) là từ đứng trước một danh từ hoặc cụm danh từ để nói quan hệ giữa hai người, vật hoặc sự việc. `In`, `on` và `under` là các giới từ chỉ vị trí: chúng cho biết một người hoặc vật nằm ở đâu so với một nơi hoặc vật làm mốc.
 
 ## Ba quan hệ vị trí
 
@@ -13,9 +13,11 @@ legacyLessonId: prepositions-place
 | --- | --- | --- |
 | `in` | ở trong, được một không gian bao quanh | `in the box` — trong hộp |
 | `on` | ở trên và thường chạm vào bề mặt | `on the table` — trên mặt bàn |
-| `under` | thấp hơn, ở phía dưới | `under the chair` — dưới ghế |
+| `under` | ở ngay bên dưới, vật làm mốc ở phía trên | `under the chair` — dưới ghế |
 
 `On` không chỉ có nghĩa “cao hơn”. Một bức tranh gắn trên tường là `on the wall` vì nó tiếp xúc với bề mặt tường. Một chiếc đèn treo phía trên bàn nhưng không chạm bàn không được miêu tả là `on the table`.
+
+Tương tự, `under` không chỉ có nghĩa “thấp hơn”. Vật phải nằm ngay bên dưới vật làm mốc, tức là vật làm mốc ở phía trên nó hoặc che lấy nó. Một quả bóng nằm dưới mặt ghế, giữa bốn chân ghế, là `under the chair`. Một quả bóng nằm trên sàn bên cạnh chiếc ghế cũng thấp hơn mặt ghế, nhưng không phải `under the chair`, vì không có phần nào của ghế ở phía trên nó.
 
 ## Từ cụm vị trí đến câu hoàn chỉnh
 
@@ -63,13 +65,13 @@ Tiếng Việt thường dùng từ “trên” cho nhiều quan hệ khác nhau
 
 1. Vật có nằm **bên trong** một không gian không? Nếu có, chọn `in`.
 2. Vật có nằm **trên và chạm** một bề mặt không? Nếu có, chọn `on`.
-3. Vật có ở **thấp hơn** vật làm mốc không? Nếu có, chọn `under`.
+3. Vật có nằm **ngay bên dưới** vật làm mốc, tức là vật làm mốc ở phía trên nó, không? Nếu có, chọn `under`.
 
 So sánh `The cat is in the box` với `The cat is on the box`: câu thứ nhất đặt con mèo bên trong hộp, còn câu thứ hai đặt nó trên mặt hộp. Chỉ thay một giới từ nhưng hình ảnh đã đổi hoàn toàn.
 
 ## Ghi nhớ
 
-- `in` là ở trong một không gian; `on` là trên và thường tiếp xúc bề mặt; `under` là phía dưới.
+- `in` là ở trong một không gian; `on` là trên và thường tiếp xúc bề mặt; `under` là ở ngay bên dưới vật làm mốc.
 - Dùng `chủ ngữ + be + giới từ + nơi chốn` để nói vật đã biết ở đâu.
 - Dùng `there is/are + danh từ + giới từ + nơi chốn` để giới thiệu có gì ở đâu.
 - `Be` thay đổi theo chủ ngữ; giới từ giữ nguyên.

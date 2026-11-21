@@ -61,12 +61,14 @@ Không dùng `much` trực tiếp trước danh từ số nhiều: không nói `
 
 Hai câu nói cùng một lượng việc. `Much` không làm câu mạnh hơn `a lot of`; nó chỉ khiến câu khẳng định nghe trang trọng hơn.
 
-`Many` vẫn thường gặp trong câu khẳng định, nhất là với `very`, `so`, `too`: `very many people`, `too many cars`. Ở A1, hãy dùng chắc bảng lựa chọn cơ bản dưới đây.
+`Many` vẫn thường gặp trong câu khẳng định, nhất là sau `so`, `too` và `very`: `so many people` (nhiều người đến thế), `too many cars` (quá nhiều xe), `very many people` (rất nhiều người, nghe khá trang trọng). Ở A1, hãy dùng chắc bảng lựa chọn cơ bản dưới đây.
 
 | Kiểu câu | Đếm được số nhiều | Không đếm được |
 | --- | --- | --- |
 | khẳng định thông thường | `a lot of books` | `a lot of water` |
 | câu hỏi/phủ định | `many books` | `much water` |
+
+Bảng này chỉ cho biết lựa chọn thường gặp nhất, không cấm cách còn lại. `A lot of` cũng đúng trong câu hỏi và câu phủ định: `Do you have a lot of friends?` (Bạn có nhiều bạn không?), `I don't have a lot of time.` (Tôi không có nhiều thời gian.)
 
 ## `Too much` và `too many`
 

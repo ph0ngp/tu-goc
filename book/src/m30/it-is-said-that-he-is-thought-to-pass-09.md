@@ -56,13 +56,13 @@ Nếu nội dung cùng thời: `People believe that Lan is honest` → `Lan is b
 
 ## Các reporting verbs và giới hạn
 
-Những động từ thường dùng gồm `say`, `think`, `believe`, `know`, `report`, `expect`, `understand`, `consider`, `allege`.
+Những động từ thường dùng gồm `say` (nói), `think` (nghĩ), `believe` (tin), `know` (biết), `report` (đưa tin), `expect` (dự kiến), `understand` (được biết), `consider` (coi là) và `allege` (cáo buộc).
 
 - `The drug is known to cause side effects.` — Thuốc được biết là gây tác dụng phụ.
 - `Two people are reported to have been injured.` — Có tin hai người đã bị thương.
 - `The company is understood to be considering a sale.` — Được biết công ty đang cân nhắc bán.
 
-Không phải mọi động từ nhận `that-clause` đều tự nhiên trong khung cá nhân. Hãy học theo mẫu sử dụng của từng reporting verb.
+Không phải mọi động từ nhận `that-clause` đều tự nhiên trong khung cá nhân. Chẳng hạn, `It is hoped that the team will win.` — Người ta hy vọng đội sẽ thắng — là câu tự nhiên, nhưng không nói `The team is hoped to win.` Tương tự, `suggest` dùng khung `It is suggested that…`, không dùng khung chủ ngữ cá nhân như `He is suggested to…`. Vì vậy, hãy học theo mẫu sử dụng của từng reporting verb.
 
 ## Vì sao dùng cấu trúc này?
 
@@ -73,7 +73,7 @@ Nó có thể:
 - đặt chủ đề quan trọng lên đầu;
 - tạo khoảng cách với độ chắc chắn của thông tin.
 
-Tuy nhiên, cấu trúc không thay thế việc nêu nguồn khi nguồn cần thiết. `It is said` có thể quá mơ hồ trong văn bản đòi hỏi bằng chứng.
+Tuy nhiên, cấu trúc không thay thế việc nêu nguồn khi nguồn cần thiết. `It is said` có thể quá mơ hồ trong văn bản đòi hỏi bằng chứng. Khi nguồn quan trọng, hãy nêu rõ bằng `according to` (theo…): `According to the audit, the figures are inaccurate.` — Theo kết quả kiểm toán, các số liệu không chính xác.
 
 ## Quy trình lựa chọn
 

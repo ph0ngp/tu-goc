@@ -5,7 +5,7 @@ status: published
 ---
 # Mệnh đề phân từ chỉ thời gian, nguyên nhân và kết quả
 
-Mệnh đề phân từ (*participle clause*) dùng `V-ing`, quá khứ phân từ hoặc **phân từ hoàn thành** (*perfect participle*) có dạng `having + past participle` để nén quan hệ thời gian, nguyên nhân, điều kiện hoặc kết quả. Chủ ngữ được hiểu thường phải là chủ ngữ của mệnh đề chính; nếu không, câu dễ tạo lỗi “phân từ lơ lửng”.
+Mệnh đề phân từ (*participle clause*) dùng `V-ing`, quá khứ phân từ hoặc **phân từ hoàn thành** (*perfect participle*) có dạng `having + past participle` để nén quan hệ thời gian, nguyên nhân, điều kiện hoặc kết quả. Chủ ngữ được hiểu thường phải là chủ ngữ của mệnh đề chính; nếu không, câu dễ mắc lỗi phân từ lơ lửng (*dangling participle*).
 
 ## `V-ing` với quan hệ chủ động
 
@@ -52,17 +52,17 @@ Một cụm sau dấu phẩy có thể nêu kết quả của toàn mệnh đề
 
 Chủ thể logic của `flooding` là cả sự kiện nước tràn, không phải riêng `the river` theo nghĩa chủ ý. Dạng này thường nói kết quả trực tiếp, không dùng để nối hai sự kiện chỉ tình cờ xảy ra sau nhau.
 
-## Lỗi chủ ngữ lơ lửng
+## Lỗi phân từ lơ lửng
 
 - Sai nghĩa: `Walking to work, the rain started.` Câu khiến `the rain` như thể đang đi bộ.
 - Rõ: `Walking to work, I was caught in the rain.` — Khi đi bộ tới chỗ làm, tôi gặp mưa.
 - Hoặc: `While I was walking to work, it started to rain.` — Khi tôi đang đi làm, trời bắt đầu mưa.
 
-Người đọc phải tìm được chủ thể của participle clause mà không đoán.
+Người đọc phải tìm được chủ thể của mệnh đề phân từ mà không phải đoán.
 
 ## Dấu phẩy và vị trí
 
-Participle clause đứng đầu thường được ngăn bằng dấu phẩy. Đứng cuối, dấu phẩy phụ thuộc chức năng:
+Mệnh đề phân từ đứng đầu thường được ngăn bằng dấu phẩy. Đứng cuối, dấu phẩy phụ thuộc chức năng:
 
 - `Students living on campus pay less` là mệnh đề quan hệ rút gọn hạn định, không dấu phẩy.
 - `The storm damaged the bridge, blocking the road` là kết quả bổ sung, có dấu phẩy.

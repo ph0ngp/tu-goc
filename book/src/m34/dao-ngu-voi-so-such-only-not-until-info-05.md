@@ -76,8 +76,8 @@ Mệnh đề sau `until` không đảo: `I reread`, không phải `did I reread`
 
 Đảo ngữ không chỉ đổi vị trí; việc đưa phần giới hạn lên đầu quyết định người đọc xử lý thông tin nào trước.
 
-- `I understood the warning only then` đưa thông tin chính trước rồi mới giới hạn thời điểm.
-- `Only then did I understand the warning` biến “chỉ lúc đó” thành khung giải thích cho toàn câu.
+- `I only understood the warning then.` — Đến lúc đó tôi mới hiểu lời cảnh báo. Câu trung tính đưa thông tin chính trước rồi mới giới hạn thời điểm.
+- `Only then did I understand the warning.` — Chỉ đến lúc đó tôi mới hiểu lời cảnh báo. Câu đảo biến “chỉ lúc đó” thành khung giải thích cho toàn câu.
 
 Hai câu gần nghĩa sự kiện nhưng khác tiêu điểm diễn ngôn.
 

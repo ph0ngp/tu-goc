@@ -70,10 +70,10 @@ Những biểu thức này có tính công thức. Không suy rộng thành vi�
 | Hình thức | Chức năng chính | Ví dụ |
 | --- | --- | --- |
 | quá khứ chỉ thời gian | kể việc đã xảy ra | `I was tired yesterday.` — Hôm qua tôi mệt. |
-| modal past | tạo khoảng cách giả định | `I wish I was/were at home.` — Tôi ước mình đang ở nhà. |
-| irrealis `were` | đánh dấu rõ tình huống phi thực | `If I were at home, I would help.` — Nếu tôi ở nhà, tôi sẽ giúp. |
+| quá khứ giả định (*modal past*) | tạo khoảng cách giả định | `I wish I was/were at home.` — Tôi ước mình đang ở nhà. |
+| `were` phi thực (*irrealis were*) | đánh dấu rõ tình huống phi thực | `If I were at home, I would help.` — Nếu tôi ở nhà, tôi sẽ giúp. |
 
-Hình thức giống quá khứ không có nghĩa thời gian luôn nằm trong quá khứ.
+**Quá khứ giả định** là dạng quá khứ được dùng để tạo khoảng cách với thực tế chứ không để chỉ thời gian, như `was/were` sau `wish`. Vì vậy, hình thức giống quá khứ không có nghĩa thời gian luôn nằm trong quá khứ.
 
 ## Cách lựa chọn
 

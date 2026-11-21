@@ -5,23 +5,23 @@ legacyLessonId: states-and-plans
 ---
 # Động từ trạng thái
 
-Một số động từ không miêu tả hoạt động mà miêu tả trạng thái: biết, tin, thích, muốn, cần, sở hữu hoặc cảm nhận. Khi mang nghĩa trạng thái, chúng thường dùng hiện tại đơn, kể cả khi trạng thái đúng ngay lúc nói.
+Một số động từ không miêu tả hoạt động mà miêu tả trạng thái: biết, tin, thích, muốn, cần, sở hữu hoặc cảm nhận. Những động từ này gọi là động từ trạng thái (*state verbs* hoặc *stative verbs*). Khi mang nghĩa trạng thái, chúng thường dùng hiện tại đơn, kể cả khi trạng thái đúng ngay lúc nói.
 
 ## Các nhóm thông dụng
 
 | Nhóm | Động từ | Ví dụ |
 | --- | --- | --- |
-| suy nghĩ/nhận thức | `know`, `understand`, `believe`, `remember` | `I understand now.` — Bây giờ tôi hiểu. |
-| sở thích/cảm xúc | `like`, `love`, `hate`, `prefer` | `She likes this song.` — Cô ấy thích bài hát này. |
-| mong muốn/nhu cầu | `want`, `need` | `We need help.` — Chúng tôi cần giúp đỡ. |
-| sở hữu/quan hệ | `have`, `own`, `belong` | `This bag belongs to Lan.` — Túi này thuộc về Lan. |
-| giác quan tự nhiên | `see`, `hear`, `smell` | `I hear music.` — Tôi nghe thấy nhạc. |
+| suy nghĩ/nhận thức | `know` (biết), `understand` (hiểu), `believe` (tin), `remember` (nhớ) | `I understand now.` — Bây giờ tôi hiểu. |
+| sở thích/cảm xúc | `like` (thích), `love` (yêu), `hate` (ghét), `prefer` (thích hơn) | `She likes this song.` — Cô ấy thích bài hát này. |
+| mong muốn/nhu cầu | `want` (muốn), `need` (cần) | `We need help.` — Chúng tôi cần giúp đỡ. |
+| sở hữu/quan hệ | `have` (có), `own` (sở hữu), `belong` (thuộc về) | `This bag belongs to Lan.` — Túi này thuộc về Lan. |
+| giác quan tự nhiên | `see` (nhìn thấy), `hear` (nghe thấy), `smell` (ngửi thấy, có mùi) | `I hear music.` — Tôi nghe thấy nhạc. |
 
 Không nói `I am knowing the answer` cho nghĩa “Tôi biết câu trả lời”. Nói `I know the answer`.
 
 ## `Now` không bắt buộc tiếp diễn
 
-`Now I understand` dùng hiện tại đơn vì `understand` là trạng thái. `She wants water now` cũng dùng hiện tại đơn. Từ thời gian không quan trọng bằng nghĩa của động từ.
+`Now I understand` — “Bây giờ tôi hiểu rồi” — dùng hiện tại đơn vì `understand` là trạng thái. `She wants water now` — “Bây giờ cô ấy muốn uống nước” — cũng dùng hiện tại đơn. Từ thời gian không quan trọng bằng nghĩa của động từ.
 
 ## Một động từ có thể có nhiều nghĩa
 

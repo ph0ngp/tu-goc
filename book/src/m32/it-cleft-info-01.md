@@ -46,8 +46,8 @@ Thì của `be` đặt toàn khung theo thời gian; mệnh đề sau dùng thì
 
 Trong văn phong chuẩn, động từ sau `who/that` thường hòa hợp với phần được nhấn:
 
-- `It is I who am responsible` rất trang trọng.
-- `It is me who is responsible` phổ biến trong lời nói.
+- `It is I who am responsible.` — Chính tôi là người chịu trách nhiệm. Cách nói này rất trang trọng.
+- `It is me who is responsible.` — cùng nghĩa; phổ biến trong lời nói.
 
 Với danh từ rõ: `It is the students who are responsible`. Tránh để khung nhấn làm mất dấu chủ ngữ thực của mệnh đề sau.
 
@@ -64,7 +64,7 @@ Câu hỏi cleft thường dùng để yêu cầu xác định/cải chính tr�
 
 It-cleft phù hợp khi:
 
-- sửa thông tin: `It was Tuesday, not Monday, that we met`;
+- sửa thông tin: `It was Tuesday, not Monday, that we met` — Chúng tôi gặp nhau vào thứ Ba chứ không phải thứ Hai;
 - trả lời một tương phản ngầm;
 - nối với thông tin đã biết rồi giới thiệu tiêu điểm;
 - tạo nhấn mạnh trong văn nói hoặc văn viết.

@@ -5,7 +5,7 @@ legacyLessonId: b1-punctuation-direct-relative-apposition
 ---
 # Dấu câu trong lời nói trực tiếp, mệnh đề quan hệ và đồng vị
 
-Ở B1, dấu câu bắt đầu tham gia trực tiếp vào ý nghĩa và cấu trúc câu. Bài này tập trung vào ba trường hợp: lời nói trực tiếp, mệnh đề quan hệ không xác định và đồng vị — một cụm danh từ thêm tên gọi hoặc lời giải thích cho danh từ khác.
+Ở B1, dấu câu bắt đầu tham gia trực tiếp vào ý nghĩa và cấu trúc câu. Bài này tập trung vào ba trường hợp: lời nói trực tiếp (*direct speech*), mệnh đề quan hệ không xác định và đồng vị (*apposition*) — một cụm danh từ thêm tên gọi hoặc lời giải thích cho danh từ khác.
 
 ## Dấu ngoặc kép trong lời nói trực tiếp
 
@@ -18,17 +18,19 @@ Trong văn bản tiếng Anh, dấu ngoặc kép cong `“...”` hoặc thẳng
 
 ## Mệnh đề dẫn đứng trước, sau hoặc chen giữa
 
+Mệnh đề dẫn (*reporting clause*) là phần cho biết ai nói, như `Mai said` hay `Nam asked`. Động từ trong đó, như `said`, `asked`, `replied`, gọi là động từ dẫn (*reporting verb*).
+
 ### Mệnh đề dẫn đứng trước
 
-Dùng dấu phẩy trước lời trích nếu động từ dẫn như `said/asked/replied` giới thiệu trực tiếp lời nói:
+Dùng dấu phẩy trước lời trích nếu động từ dẫn giới thiệu trực tiếp lời nói:
 
-`Mai said, “The bus is late.”`
+`Mai said, “The bus is late.”` — Mai nói: “Xe buýt đến muộn.”
 
 ### Mệnh đề dẫn đứng sau
 
 Nếu lời trích là câu kể, thường dùng dấu phẩy thay cho dấu chấm ở cuối lời trích rồi viết mệnh đề dẫn bằng chữ thường:
 
-`“The bus is late,” Mai said.`
+`“The bus is late,” Mai said.` — “Xe buýt đến muộn,” Mai nói.
 
 Nếu lời trích là câu hỏi hoặc câu cảm thán, giữ `?` hoặc `!`:
 
@@ -39,9 +41,15 @@ Không thêm dấu phẩy sau `?` hoặc `!`.
 
 ### Mệnh đề dẫn chen giữa một câu nói
 
-`“The bus,” Mai said, “is already twenty minutes late.”`
+`“The bus,” Mai said, “is already twenty minutes late.”` — “Xe buýt,” Mai nói, “đã muộn hai mươi phút rồi.”
 
 Hai dấu phẩy tách mệnh đề dẫn. Phần sau bắt đầu bằng chữ thường vì lời nói vẫn là một câu chưa kết thúc.
+
+Nếu phần trước mệnh đề dẫn đã là một câu trọn vẹn và phần sau là một câu mới, đặt dấu chấm sau mệnh đề dẫn và viết hoa chữ đầu của câu sau:
+
+`“I'm tired,” Lan said. “Let's go home.”` — “Mình mệt rồi,” Lan nói. “Mình về nhà thôi.”
+
+Không nối hai câu trọn vẹn bằng dấu phẩy như `“I'm tired,” Lan said, “let's go home.”`, vì như vậy hai câu bị ghép thành một. Mỗi câu nói vẫn nằm trọn trong một cặp ngoặc kép cùng kiểu.
 
 ## Dấu phẩy với mệnh đề quan hệ
 

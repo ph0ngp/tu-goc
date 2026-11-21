@@ -3,9 +3,9 @@ slug: dong-tu-thong-dung-theo-sau-boi-to-infinitive-hoac-ing-vpat-01
 status: published
 legacyLessonId: a2-verb-patterns
 ---
-# Động từ thông dụng theo sau bởi to-infinitive hoặc -ing
+# Động từ thông dụng đi với to-infinitive hoặc -ing
 
-Khi hai động từ đi gần nhau, động từ thứ hai không phải lúc nào cũng có cùng hình thức. Một số động từ thường theo sau bởi `to + động từ cơ bản`; một số khác theo sau bởi dạng `V-ing`.
+Khi hai động từ đi gần nhau, động từ thứ hai không phải lúc nào cũng có cùng hình thức. Sau một số động từ, động từ thứ hai có dạng `to + động từ cơ bản`; sau một số động từ khác, nó có dạng `V-ing`.
 
 ## Động từ + `to-infinitive`
 
@@ -40,6 +40,8 @@ Không nói `enjoy to read` hoặc `decide going` trong các mẫu trên.
 
 Có thể có khác biệt nhỏ về thói quen, lựa chọn hoặc văn phong, nhưng ở A2 cả hai dạng thường chấp nhận được khi nghĩa chung là sở thích.
 
+Giới hạn quan trọng: khi có `would` đứng trước (`would like`, `would love`, `would prefer`), chỉ dùng `to-infinitive`. Bạn đã gặp mẫu này ở bài [would like + noun/to-infinitive](../m07/would-like-noun-to-infinitive-polite-01.md): `I'd like to order` — “Tôi muốn gọi món”; `I'd love to come` — “Tôi rất muốn đến”. So sánh `I like cooking` — “Tôi thích nấu ăn” (sở thích nói chung) với `I'd like to cook tonight` — “Tối nay tôi muốn nấu ăn” (mong muốn cụ thể).
+
 ## Không có một quy tắc nghĩa duy nhất
 
 Không thể đoán toàn bộ chỉ bằng ý “hành động”. Cách an toàn là học **mẫu động từ** (*verb pattern*) cùng từ: `want to do`, `enjoy doing`, `finish doing`.
@@ -71,5 +73,5 @@ So sánh `Lan decided to leave` với `Lan avoided leaving early` — “Lan tr�
 
 - Học động từ cùng mẫu theo sau: `plan to do`, `enjoy doing`.
 - Sau `to` là động từ cơ bản; dạng `-ing` tuân theo quy tắc chính tả đã học.
-- `like/love/hate/prefer` dùng được với cả hai trong nhiều cách nói A2.
+- `like/love/hate/prefer` dùng được với cả hai trong nhiều cách nói A2; khi có `would` đứng trước, chỉ dùng `to-infinitive`.
 - Không có một công thức nghĩa giúp đoán đúng mọi động từ.

@@ -5,7 +5,7 @@ legacyLessonId: b1-wh-noun-clauses
 ---
 # Mệnh đề Wh- làm chủ ngữ hoặc tân ngữ
 
-Một mệnh đề Wh- có thể bắt đầu bằng `what`, `who`, `where`, `when`, `why` hoặc `how` rồi hoạt động như một **cụm danh từ** trong câu. Cả mệnh đề có thể làm chủ ngữ, tân ngữ hoặc bổ ngữ.
+Một mệnh đề Wh- có thể bắt đầu bằng `what`, `who`, `where`, `when`, `why` hoặc `how` rồi hoạt động như một **cụm danh từ** trong câu, nên còn được gọi là mệnh đề danh từ (*noun clause*). Cả mệnh đề có thể làm chủ ngữ, tân ngữ hoặc bổ ngữ.
 
 `What Lan said surprised me` nghĩa là “Điều Lan nói làm tôi ngạc nhiên”. Toàn bộ `What Lan said` làm chủ ngữ của `surprised`.
 
@@ -70,13 +70,15 @@ Mệnh đề Wh- có thể giải thích chủ đề là gì:
 
 `That's why ...` là cách rất thông dụng để nêu kết quả dựa trên lý do vừa được nói đến.
 
+Trong văn nói, bạn có thể gặp `The question is, what should we do?` — “Vấn đề là: chúng ta nên làm gì đây?”. Ở đây, sau dấu phẩy, người nói đặt thẳng một câu hỏi trực tiếp, nên có đảo trợ động từ và dấu hỏi. Khi viết liền thành một mệnh đề bổ ngữ, không có dấu phẩy ngăn cách, như `The question is what we should do.`, dùng trật tự câu kể và dấu chấm.
+
 ## Phân biệt với câu hỏi trực tiếp
 
-| Câu hỏi độc lập | Mệnh đề trong câu lớn |
-| --- | --- |
-| `Where does he work?` | `I know where he works.` |
-| `Why did she leave?` | `Why she left is unclear.` |
-| `What should we do?` | `The question is what we should do.` |
+| Câu hỏi độc lập | Mệnh đề trong câu lớn | Nghĩa của câu lớn |
+| --- | --- | --- |
+| `Where does he work?` | `I know where he works.` | Tôi biết anh ấy làm việc ở đâu. |
+| `Why did she leave?` | `Why she left is unclear.` | Vì sao cô ấy rời đi vẫn chưa rõ. |
+| `What should we do?` | `The question is what we should do.` | Vấn đề là chúng ta nên làm gì. |
 
 Chỉ câu hỏi độc lập mới đảo trợ động từ. Mệnh đề Wh- không tự trở thành câu hỏi chỉ vì bắt đầu bằng từ hỏi.
 

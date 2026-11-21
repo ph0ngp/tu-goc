@@ -21,6 +21,13 @@ Câu hỏi:    Am/Is/Are + chủ ngữ + going to + động từ cơ bản?
 
 `Going to` không đổi; chỉ `be` thay đổi theo chủ ngữ. Sau `to` là động từ cơ bản: `going to buy`, không phải `going to bought`.
 
+Đừng nhầm cấu trúc này với hiện tại tiếp diễn của `go` (đi) đã học. Hãy nhìn từ đứng ngay sau `to`:
+
+- `I'm going to the market.` — Tôi đang đi chợ. Sau `to` là nơi chốn, nên đây là hiện tại tiếp diễn của `go`.
+- `I'm going to buy some fruit.` — Tôi định mua ít trái cây. Sau `to` là động từ cơ bản, nên đây là `be going to`.
+
+Muốn nói ý định đi đến một nơi, có thể dùng cả hai `go`: `I'm going to go to the market.` — Tôi định đi chợ.
+
 ## Ý định đã có trước lúc nói
 
 Ý định là điều người nói đã nghĩ hoặc quyết định trước:
@@ -39,7 +46,7 @@ Người nói nhìn thấy hoặc biết một dấu hiệu ngay bây giờ rồ
 - `Be careful! You're going to drop that glass.` — Cẩn thận! Bạn sắp làm rơi chiếc cốc đó.
 - `The team is playing very well. They're going to win.` — Đội đang chơi rất tốt. Họ sắp thắng.
 
-Dấu hiệu làm dự đoán có cơ sở hiện tại. Đây khác với ý kiến chung kiểu `I think it will rain`, sẽ được học ở bài về `will`.
+Dấu hiệu làm dự đoán có cơ sở hiện tại. Đây khác với ý kiến chung kiểu `I think it will rain` (Tôi nghĩ trời sẽ mưa), sẽ được học ở bài về `will`.
 
 ## Câu hỏi và câu trả lời ngắn
 
@@ -47,11 +54,11 @@ Dấu hiệu làm dự đoán có cơ sở hiện tại. Đây khác với ý ki
 - `Are you going to cook? — No, I'm not.` — Bạn có định nấu ăn không? — Không.
 - `What are you going to do tonight?` — Tối nay bạn định làm gì?
 
-Câu trả lời ngắn dùng `be`, không lặp `going to`: `Yes, I am`, không phải `Yes, I going to`.
+Câu trả lời ngắn thông thường chỉ dùng lại dạng `be` của câu hỏi: `Yes, I am.` — Có; `No, she isn't.` — Không. Không được bỏ `be`: không nói `Yes, I going to`.
 
 ## Hai cách dùng có cùng hình thức nhưng khác căn cứ
 
-Với ý định, căn cứ nằm trong kế hoạch của người nói: `I'm going to save money this year`. Với dự đoán, căn cứ nằm trong dấu hiệu hiện tại: `That glass is near the edge. It's going to fall`.
+Với ý định, căn cứ nằm trong kế hoạch của người nói: `I'm going to save money this year` (Năm nay tôi định tiết kiệm tiền). Với dự đoán, căn cứ nằm trong dấu hiệu hiện tại: `That glass is near the edge. It's going to fall` (Cái cốc đang ở sát mép bàn. Nó sắp rơi).
 
 Hãy hỏi “Điều gì khiến người nói dùng câu này?” Nếu câu trả lời là một quyết định đã có, đó là ý định. Nếu là điều đang nhìn thấy hoặc biết ở hiện tại, đó là dự đoán có bằng chứng.
 
@@ -62,4 +69,4 @@ Hãy hỏi “Điều gì khiến người nói dùng câu này?” Nếu câu t
 - `be going to + động từ cơ bản` nói ý định đã có hoặc dự đoán từ dấu hiệu hiện tại.
 - Chọn `am/is/are` theo chủ ngữ.
 - Phủ định đặt `not` sau `be`; câu hỏi đưa `be` lên trước chủ ngữ.
-- Sau `going to`, động từ giữ dạng cơ bản.
+- Sau `going to`, động từ giữ dạng cơ bản; nếu sau `to` là nơi chốn, đó là hiện tại tiếp diễn của `go`.

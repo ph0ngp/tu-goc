@@ -25,21 +25,26 @@ Hiện tại hoàn thành tổng kết từ đầu khoảng đến bây giờ. P
 
 ## `So far`, `up to now`, `until now`
 
-Ba cụm này đều hướng từ quá khứ đến hiện tại:
+Ba cụm này đều hướng từ quá khứ đến hiện tại. `So far` và `up to now` nói trung tính “tính đến giờ vẫn như vậy”:
 
 - `So far, everything has gone well.` — Cho đến nay, mọi việc đều diễn ra tốt.
 - `We've sold fifty tickets up to now.` — Tính đến giờ chúng tôi đã bán năm mươi vé.
-- `Until now, I haven't had any problems.` — Cho tới giờ tôi chưa gặp vấn đề nào.
 
 `So far` rất thông dụng trong giao tiếp và thường đứng đầu hoặc cuối câu.
+
+`Until now` thì thường ngụ ý tình hình **vừa thay đổi**: điều đúng cho tới giờ nay đã khác.
+
+- `Until now, I haven't had any problems with this phone, but today it broke.` — Cho tới giờ tôi chưa gặp trục trặc gì với chiếc điện thoại này, nhưng hôm nay nó bị hỏng.
+
+Nếu chỉ muốn nói đến giờ tình hình vẫn thế, hãy dùng `so far` hoặc `up to now`.
 
 ## Khi khoảng thời gian đã kết thúc
 
 | Khoảng còn mở | Khoảng đã đóng |
 | --- | --- |
-| `I've spoken to Lan today.` | `I spoke to Lan yesterday.` |
-| `We've had three tests this month.` | `We had three tests last month.` |
-| `She has travelled a lot this year.` | `She travelled a lot in 2024.` |
+| `I've spoken to Lan today.` — Hôm nay tôi đã nói chuyện với Lan. | `I spoke to Lan yesterday.` — Hôm qua tôi đã nói chuyện với Lan. |
+| `We've had three tests this month.` — Tháng này chúng tôi đã có ba bài kiểm tra. | `We had three tests last month.` — Tháng trước chúng tôi có ba bài kiểm tra. |
+| `She has travelled a lot this year.` — Năm nay cô ấy đã đi du lịch nhiều. | `She travelled a lot in 2024.` — Năm 2024 cô ấy đi du lịch nhiều. |
 
 Nếu đã sang ngày mới, `today` của ngày hôm trước trở thành một khoảng đã kết thúc và người nói sẽ dùng quá khứ đơn khi kể lại.
 
@@ -47,30 +52,28 @@ Nếu đã sang ngày mới, `today` của ngày hôm trước trở thành mộ
 
 `This morning` có thể còn mở lúc 10 giờ sáng nhưng đã kết thúc lúc 6 giờ tối. Vì vậy:
 
-- lúc 10 giờ: `I've answered five emails this morning.`
-- lúc 6 giờ tối: `I answered five emails this morning.`
+- lúc 10 giờ: `I've answered five emails this morning.` — Sáng nay, tính đến giờ, tôi đã trả lời năm email.
+- lúc 6 giờ tối: `I answered five emails this morning.` — Sáng nay tôi đã trả lời năm email (buổi sáng đã qua).
 
 Không chỉ từ ngữ mà cả thời điểm nói quyết định khoảng còn mở hay đã đóng.
 
 ## Sự việc có thể hoàn tất, khoảng đếm vẫn còn mở
 
-Trong `I've read three books this month`, ba lần đọc đều đã hoàn thành, nhưng `this month` chưa kết thúc. Hiện tại hoàn thành không có nghĩa từng hành động vẫn đang diễn ra; nó nối **tổng kết đến nay** với một khoảng còn tiếp tục.
+Hiện tại hoàn thành ở đây không có nghĩa từng hành động vẫn đang diễn ra. So sánh:
 
-So sánh:
+- `I've called Lan twice today.` — Hôm nay tôi đã gọi cho Lan hai lần (tính đến lúc nói; hôm nay còn có thể gọi thêm).
+- `I called Lan twice yesterday.` — Hôm qua tôi đã gọi cho Lan hai lần (ngày hôm qua đã đóng, tổng số không thay đổi nữa).
 
-- `I've called Lan twice today` — tính đến lúc nói hôm nay đã gọi hai lần; hôm nay còn có thể gọi thêm.
-- `I called Lan twice yesterday` — tổng số lần thuộc ngày hôm qua đã đóng.
-
-Vì vậy, hãy xét ranh giới của khoảng thời gian đang dùng để đếm, không chỉ xét hành động riêng lẻ đã xong hay chưa.
+Ở cả hai câu, hai cuộc gọi đều đã xong. Điều quyết định là ranh giới của khoảng dùng để đếm, không phải hành động riêng lẻ đã xong hay chưa.
 
 ## Khoảng còn mở không tự buộc mọi câu dùng hiện tại hoàn thành
 
 Một cụm như `this week` có thể chứa hai cách nhìn:
 
-- `I've met Lan three times this week.` — Người nói tổng kết số lần từ đầu tuần đến nay.
-- `I met Lan on Monday this week.` — Người nói kể một lần cụ thể vào thứ Hai; thời điểm ấy đã kết thúc.
+- `I've met Lan three times this week.` — Tuần này tôi đã gặp Lan ba lần. Người nói tổng kết số lần từ đầu tuần đến nay.
+- `I met Lan on Monday this week.` — Tôi gặp Lan vào thứ Hai tuần này. Người nói kể một lần cụ thể vào thứ Hai; thời điểm ấy đã kết thúc.
 
-Vì vậy, `this week` không phải mật khẩu tự động gọi hiện tại hoàn thành. Hãy xem câu đang **tổng kết đến hiện tại** hay đang **kể một sự kiện ở mốc quá khứ cụ thể**.
+Vì vậy, `this week` không tự động đòi hiện tại hoàn thành. Hãy xem câu đang **tổng kết đến hiện tại** hay đang **kể một sự kiện ở mốc quá khứ cụ thể**.
 
 ## Cách xác định ranh giới
 
@@ -79,11 +82,9 @@ Vì vậy, `this week` không phải mật khẩu tự động gọi hiện tạ
 3. Nếu còn mở và câu tổng kết đến nay, dùng hiện tại hoàn thành.
 4. Nếu khoảng đã đóng hoặc câu kể một thời điểm cụ thể đã qua, dùng quá khứ đơn.
 
-Với `this morning`, hãy kiểm tra cả đồng hồ và ý định của người nói. Lúc mười giờ, buổi sáng còn đang diễn ra nên `I've had two meetings this morning` là một tổng kết đến lúc ấy. Buổi tối, cùng hai cuộc họp thuộc một khoảng đã đóng nên `I had two meetings this morning` tự nhiên hơn.
-
 ## Ghi nhớ
 
 - Dùng hiện tại hoàn thành cho việc trong một khoảng vẫn còn tiếp tục ở hiện tại.
-- Các cụm thường gặp: `today`, `this week`, `this year`, `so far`, `up to now`.
+- Các cụm thường gặp: `today`, `this week`, `this year`, `so far`, `up to now`; `until now` thường ngụ ý tình hình vừa thay đổi.
 - Dùng quá khứ đơn với khoảng đã kết thúc như `yesterday`, `last month`, `in 2024`.
 - Cùng một cụm như `this morning` có thể mở hoặc đóng tùy lúc nói.

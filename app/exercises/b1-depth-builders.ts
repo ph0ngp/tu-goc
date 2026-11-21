@@ -1,6 +1,5 @@
 import type { Exercise } from "../exercise-types.ts";
-import { escapeRegExp, gridExplanation, sentenceTokens, sentenceTokenSpans, specificHint } from "./basic-builders.ts";
-import { b1Difference } from "./advanced-builders.ts";
+import { b1Difference, escapeRegExp, gridExplanation, sentenceSlice, sentenceTokens, sentenceTokenSpans, specificHint } from "./basic-builders.ts";
 
 type B1DepthRow = {
   cue: string;
@@ -13,15 +12,11 @@ type B1DepthOrder = [
   prompt: string,
   sentence: string,
   explanation: string,
+  /** Những cách xếp khác cũng đúng. */
+  alternatives?: string[],
 ];
 
 const rowOrdinals = ["nhất", "hai", "ba", "tư", "năm", "sáu"];
-
-/** Đoạn câu gồm các mảnh từ `from` tới trước `to`, cắt từ câu gốc để không có khoảng trắng trước dấu câu. */
-function sentenceSlice(sentence: string, from: number, to: number): string {
-  const spans = sentenceTokenSpans(sentence);
-  return sentence.slice(spans[from].start, spans[to - 1].end);
-}
 
 /**
  * Câu gốc với dấu “…” thay cho các mảnh từ `from` tới trước `to`. Khi chỗ trống
@@ -94,7 +89,7 @@ export function b1DepthPack(
       hint: depthGridHint(focusedRows.map(({ row, frame }) => ({ answer: row.answer, frame }))),
       explanation: gridExplanation(gridRows),
     },
-    ...orders.map(([prompt, sentence, explanation], index) => {
+    ...orders.map(([prompt, sentence, explanation, alternatives], index) => {
       const answer = sentenceTokens(sentence);
       const shift = 2 + (index % Math.max(1, answer.length - 2));
       return {
@@ -103,7 +98,8 @@ export function b1DepthPack(
         prompt,
         tokens: [...answer.slice(shift), ...answer.slice(0, shift)],
         answer,
-        hint: specificHint("order", prompt, explanation, [sentence]),
+        ...(alternatives?.length ? { alternatives: alternatives.map(sentenceTokens) } : {}),
+        hint: specificHint("order", prompt, explanation, [sentence, ...(alternatives ?? [])]),
         explanation: `${explanation} Câu hoàn chỉnh là \`${sentence}\`.`,
       };
     }),

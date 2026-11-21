@@ -9,7 +9,7 @@ legacyLessonId: would-like
 
 ## `Would like + danh từ`
 
-Dùng khi muốn một người, vật hoặc một lượng nào đó.
+Dùng khi muốn một người, vật hoặc một lượng nào đó. Phần đứng sau `would like` là một danh từ (*noun*) hoặc cụm danh từ.
 
 ```text
 Subject + would like + noun
@@ -23,7 +23,7 @@ Subject + would like + noun
 
 ## `Would like + to + động từ`
 
-Dùng khi muốn thực hiện một hành động.
+Dùng khi muốn thực hiện một hành động. Cụm gồm `to` và động từ cơ bản, như `to go` hay `to sit`, được gọi là **động từ nguyên mẫu có `to`** (*to-infinitive*).
 
 ```text
 Subject + would like + to + base verb
@@ -48,7 +48,7 @@ Không dùng `do/does`: không nói `Do you would like...?`
 
 ## Cách trả lời lời mời
 
-- `Yes, please.` — Vâng, làm ơn. (nhận đồ ăn, thức uống)
+- `Yes, please.` — Vâng, cho tôi xin. (nhận đồ ăn, thức uống)
 - `Yes, I'd love to.` — Vâng, tôi rất muốn. (nhận lời làm việc gì)
 - `No, thank you.` — Không, cảm ơn.
 - `I'd like to, but I'm busy.` — Tôi muốn lắm, nhưng tôi bận.
@@ -57,10 +57,13 @@ Trả lời `Yes, I would` có thể đúng trong một số ngữ cảnh, nhưn
 
 ## Phủ định
 
-`Would not like` hoặc `wouldn't like` nói người nào đó không muốn điều gì; cách này có thể nghe khá trực tiếp. Trong tình huống lịch sự, lời từ chối ngắn kèm cảm ơn thường mềm hơn.
+`Would not like` hoặc `wouldn't like` nói người nào đó không muốn điều gì; cách này có thể nghe khá trực tiếp.
 
 - `I wouldn't like to live there.` — Tôi không muốn sống ở đó.
-- `No, thank you. I wouldn't like any more.` — Không, cảm ơn. Tôi không muốn thêm nữa.
+
+Khi từ chối một lời mời đồ ăn hay thức uống, người bản ngữ thường không dùng `wouldn't like`. Lời từ chối ngắn kèm cảm ơn tự nhiên và mềm hơn:
+
+- `No, thank you. I'm fine.` — Không, cảm ơn. Tôi đủ rồi.
 
 ## Phân biệt với `like`
 
@@ -77,6 +80,6 @@ Trả lời `Yes, I would` có thể đúng trong một số ngữ cảnh, nhưn
 
 - `would like + danh từ` nói muốn một thứ.
 - `would like + to + động từ cơ bản` nói muốn làm một việc.
-- `Would` giữ nguyên với mọi chủ ngữ và có thể rút gọn thành `'d`.
+- `Would` giữ nguyên với mọi chủ ngữ và có dạng viết tắt `'d`.
 - Hỏi bằng `Would + chủ ngữ + like ...?`, không dùng `do/does`.
 - Phân biệt sở thích nói chung với `like` và mong muốn cụ thể với `would like`.

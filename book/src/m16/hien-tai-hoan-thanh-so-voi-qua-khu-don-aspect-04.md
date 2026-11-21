@@ -18,7 +18,7 @@ hiện tại hoàn thành:
                          mối nối còn được quan tâm
 ```
 
-“Mối nối” có thể là trải nghiệm đến nay, kết quả đang có, khoảng còn mở hoặc trạng thái vẫn tiếp tục. Dòng kẻ chỉ biểu thị cách nhìn, không nói rằng hành động luôn kéo dài.
+Dòng kẻ chỉ biểu thị cách nhìn, không nói rằng hành động luôn kéo dài.
 
 ## Mốc quá khứ đã kết thúc
 
@@ -26,7 +26,7 @@ Dùng quá khứ đơn với `yesterday`, `last week`, `ago`, `in 2020`, `when I
 
 - `I saw that film last week.` — Tôi đã xem phim đó tuần trước.
 - `Lan moved here in 2022.` — Lan chuyển đến đây năm 2022.
-- `Did you call Nam yesterday?` — Hôm qua bạn đã gọi Nam chưa?
+- `Did you call Nam yesterday?` — Hôm qua bạn có gọi Nam không?
 
 Không dùng hiện tại hoàn thành cùng các mốc ấy trong mẫu cơ bản.
 
@@ -45,10 +45,12 @@ Dùng hiện tại hoàn thành khi:
 | --- | --- | --- |
 | Khoảng thời gian | đã kết thúc | còn mở hoặc không nêu một mốc đã đóng |
 | Trọng tâm | một sự kiện/lần cụ thể trong quá khứ | trải nghiệm, kết quả bây giờ hoặc tổng kết đến nay |
-| Cụm thường gặp | `yesterday`, `last week`, `ago`, `in 2020` | `ever`, `never`, `just`, `yet`, `so far`, `since`, `for` |
-| Câu mẫu | `I saw the film last week.` | `I've seen the film twice.` |
+| Cụm thường gặp | `yesterday`, `last week`, `ago`, `in 2020` | `ever`, `never`, `just`, `yet`, `so far`, `since` |
+| Câu mẫu | `I saw that film last week.` | `I've seen that film twice.` — Tôi đã xem phim đó hai lần. |
 
 Các cụm trong bảng là dấu hiệu hữu ích, không phải luật thay thế ý nghĩa. Chẳng hạn, câu không có từ chỉ thời gian vẫn có thể dùng quá khứ đơn nếu ngữ cảnh đã xác định một sự kiện đã kết thúc: `Did you enjoy the film?` — “Bạn có thích bộ phim đó không?”
+
+`For` không có trong bảng vì nó đi được với cả hai thì; bảng đối chiếu ở phần sau đặt `I've lived here for five years` cạnh `I lived there for five years`.
 
 ## Từ khái quát đến chi tiết
 
@@ -66,16 +68,16 @@ Sau câu hỏi trải nghiệm, cuộc trò chuyện đã chọn ra một chuy�
 
 | Hiện tại hoàn thành | Quá khứ đơn | Khác biệt |
 | --- | --- | --- |
-| `I've lost my key.` | `I lost my key, but I found it.` | câu đầu nêu vấn đề hiện tại; câu sau kể câu chuyện đã khép lại |
-| `I've lived here for five years.` | `I lived there for five years.` | câu đầu thường là vẫn sống ở đây; câu sau thường là không còn sống ở đó |
-| `We've had three meetings this week.` | `We had three meetings last week.` | tuần này còn mở; tuần trước đã đóng |
-| `Have you read this book?` | `Did you read this book at school?` | câu đầu hỏi kinh nghiệm/kết quả đến nay; câu sau hỏi một hoàn cảnh quá khứ xác định |
+| `I've lost my key.` — Tôi bị mất chìa khóa. | `I lost my key, but I found it.` — Tôi làm mất chìa khóa nhưng đã tìm thấy rồi. | câu đầu nêu vấn đề hiện tại; câu sau kể câu chuyện đã khép lại |
+| `I've lived here for five years.` — Tôi sống ở đây được năm năm. | `I lived there for five years.` — Tôi đã sống ở đó năm năm. | câu đầu thường là vẫn sống ở đây; câu sau thường là không còn sống ở đó |
+| `We've had three meetings this week.` — Tuần này chúng tôi đã họp ba lần. | `We had three meetings last week.` — Tuần trước chúng tôi họp ba lần. | tuần này còn mở; tuần trước đã đóng |
+| `Have you read this book?` — Bạn đã đọc cuốn sách này chưa? | `Did you read this book at school?` — Hồi đi học bạn có đọc cuốn sách này không? | câu đầu hỏi kinh nghiệm/kết quả đến nay; câu sau hỏi một hoàn cảnh quá khứ xác định |
 
-`I've seen Lan today` tổng kết trong ngày còn mở. `I saw Lan at nine this morning` kể một mốc đã qua. Riêng chữ `today` không tự buộc câu dùng hiện tại hoàn thành.
+`I've seen Lan today` — Hôm nay tôi đã gặp Lan — tổng kết trong ngày còn mở. `I saw Lan at nine this morning` — Tôi gặp Lan lúc chín giờ sáng nay — kể một mốc đã qua. Riêng chữ `today` không tự buộc câu dùng hiện tại hoàn thành.
 
 ## Một số khác biệt biến thể
 
-Trong Anh–Mỹ, quá khứ đơn thường xuất hiện với `just`, `already`, `yet`: `Did you eat yet?`. Anh–Anh thường ưu tiên `Have you eaten yet?`. Cả hai là cách dùng thật; lộ trình này dùng hiện tại hoàn thành làm mẫu quốc tế cơ bản.
+Trong Anh–Mỹ, quá khứ đơn thường xuất hiện với `just`, `already`, `yet`: `Did you eat yet?` — Bạn ăn chưa? Anh–Anh thường ưu tiên `Have you eaten yet?` với cùng nghĩa. Cả hai là cách dùng thật; lộ trình này dùng hiện tại hoàn thành làm mẫu quốc tế cơ bản.
 
 ## Quy trình chọn
 
@@ -85,7 +87,7 @@ Trong Anh–Mỹ, quá khứ đơn thường xuất hiện với `just`, `alread
 4. Nếu không có từ chỉ thời gian, đừng tự động chọn hiện tại hoàn thành: ý nghĩa và ngữ cảnh vẫn quyết định.
 5. Khi chuyển từ trải nghiệm chung sang chi tiết của một lần cụ thể, chuyển sang quá khứ đơn.
 
-Thấy cốc vỡ trên sàn, ta có thể hỏi `Who has broken this cup?` vì kết quả trước mắt quan trọng. Khi kể lần cụ thể, ta nói `Nam broke it at breakfast`. Sự việc không đổi; góc nhìn đã đổi.
+Thấy cốc vỡ trên sàn, ta có thể hỏi `Who has broken this cup?` — Ai làm vỡ cái cốc này thế? — vì kết quả trước mắt quan trọng. Khi kể lần cụ thể, ta nói `Nam broke it at breakfast` — Nam làm vỡ nó lúc ăn sáng. Sự việc không đổi; góc nhìn đã đổi.
 
 ## Ghi nhớ
 

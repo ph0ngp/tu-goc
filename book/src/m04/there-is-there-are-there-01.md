@@ -15,7 +15,7 @@ legacyLessonId: there-and-place
 | danh từ không đếm được | `There is + danh từ không đếm được` | `There is water.` — Có nước. |
 | nhiều người/vật | `There are + danh từ số nhiều` | `There are two books.` — Có hai quyển sách. |
 
-`There's` là dạng viết tắt thông dụng của `there is`: `There's a cat outside`, nghĩa là “Có một con mèo ở bên ngoài”. Trong văn viết chuẩn ở mức này, dùng `there are` trước danh từ số nhiều.
+`There's` là dạng viết tắt thông dụng của `there is`: `There's a cat outside`, nghĩa là “Có một con mèo ở bên ngoài”. Trong lời nói thân mật, người bản ngữ đôi khi nói `There's two cats outside.` (Có hai con mèo ở bên ngoài.); khi viết, hãy dùng `There are two cats outside.` — tức là `there are` trước danh từ số nhiều.
 
 ## Thêm nơi chốn
 
@@ -33,13 +33,18 @@ Hãy chọn `is/are` theo cụm danh từ được giới thiệu, không theo d
 
 ## Phủ định
 
-Đặt `not` sau `is` hoặc `are`.
+Có hai cách phủ định. Cách thứ nhất là đặt `not` sau `is` hoặc `are`:
 
 - `There isn't a bus today.` — Hôm nay không có xe buýt.
-- `There are no bathrooms.` — Không có phòng tắm nào.
-- `There is no milk.` — Không có sữa.
+- `There aren't two bathrooms. There is one.` — Không có hai phòng tắm. Chỉ có một phòng thôi.
 
-`Isn't` là `is not`; `aren't` là `are not`. Với danh từ số nhiều, có thể dùng `there are no + danh từ số nhiều`, như `There are no buses`, nghĩa là “Không có xe buýt nào”. Bài tiếp theo sẽ giới thiệu thêm cách dùng `any` trong câu phủ định và câu hỏi.
+`Isn't` là `is not`; `aren't` là `are not`. Cách thứ hai là giữ `is/are` ở dạng khẳng định và đặt `no` ngay trước danh từ. `No` đã mang nghĩa “không có”, nên câu không cần thêm `not`:
+
+- `There is no milk.` — Không có sữa.
+- `There are no bathrooms.` — Không có phòng tắm nào.
+- `There are no buses.` — Không có xe buýt nào.
+
+Với `no`, dạng `be` vẫn theo danh từ phía sau: `no milk` đi với `is`, `no buses` đi với `are`. Bài tiếp theo sẽ giới thiệu thêm cách dùng `any` trong câu phủ định và câu hỏi.
 
 ## Câu hỏi và câu trả lời ngắn
 
@@ -56,9 +61,8 @@ Câu trả lời ngắn giữ `there`; không trả lời `Yes, it is` cho câu 
 
 `There is a book on the desk` giới thiệu một quyển sách chưa được nhắc đến. `The book is on the desk` nói vị trí của một quyển sách đã xác định.
 
-> **Có gì ở trên bàn?** — `There is a book on the desk.`
->
-> **Quyển sách ở đâu?** — `The book is on the desk.`
+- Hỏi “Có gì ở trên bàn?”, ta trả lời `There is a book on the desk.` — Có một quyển sách trên bàn.
+- Hỏi “Quyển sách ở đâu?”, ta trả lời `The book is on the desk.` — Quyển sách ở trên bàn.
 
 Hai câu có thể cùng dịch gần giống nhau, nhưng trọng tâm khác nhau: cấu trúc `there` báo sự hiện diện; câu bắt đầu bằng `the book` nói thêm về vật đã biết.
 
@@ -67,5 +71,5 @@ Hai câu có thể cùng dịch gần giống nhau, nhưng trọng tâm khác nh
 - Dùng `there is` cho một danh từ đếm được hoặc một lượng không đếm được.
 - Dùng `there are` cho danh từ số nhiều.
 - Đặt nơi chốn sau phần được giới thiệu: `There are two cats in the garden.`
-- Phủ định bằng `there isn't/aren't`; hỏi bằng `Is/Are there ...?`.
+- Phủ định bằng `there isn't/aren't`, hoặc bằng `there is/are no + danh từ`; hỏi bằng `Is/Are there ...?`.
 - Câu trả lời ngắn là `Yes, there is/are` hoặc `No, there isn't/aren't`.

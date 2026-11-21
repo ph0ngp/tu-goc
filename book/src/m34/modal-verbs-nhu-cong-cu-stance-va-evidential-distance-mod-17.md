@@ -7,15 +7,19 @@ legacyLessonId: c1-modal-stance
 
 Động từ tình thái (*modal verb*) không chỉ biểu thị “khả năng” hay “nghĩa vụ”. Chúng còn cho biết người nói đứng ở đâu trước thông tin: chắc đến mức nào, dựa vào bằng chứng gì, có muốn nhận trách nhiệm cho nhận định hay tạo khoảng cách với nó. Cách thể hiện thái độ đó được gọi là **lập trường** (*stance*); khoảng cách người nói tạo ra đối với nguồn bằng chứng được gọi là **khoảng cách bằng chứng** (*evidential distance*).
 
-`The policy will reduce costs`, `The policy should reduce costs` và `The policy may reduce costs` cùng nói về một kết quả, nhưng mức cam kết và cách người viết định vị thông tin khác nhau.
+Ba câu sau cùng nói về một kết quả, nhưng mức cam kết khác nhau:
+
+- `The policy will reduce costs.` — Chính sách sẽ giảm chi phí. Người viết khẳng định.
+- `The policy should reduce costs.` — Chính sách dự kiến sẽ giảm chi phí. Đây là kỳ vọng có cơ sở, vẫn chừa khả năng khác.
+- `The policy may reduce costs.` — Chính sách có thể giảm chi phí. Đây chỉ là một khả năng.
 
 ## Ba miền nghĩa lớn của động từ tình thái
 
 | Miền nghĩa | Câu hỏi | Ví dụ |
 | --- | --- | --- |
-| dynamic | chủ thể có khả năng/xu hướng gì? | `She can swim.` — Cô ấy biết bơi. |
-| deontic | điều gì được phép, bắt buộc, nên làm? | `You must submit the form.` — Bạn phải nộp biểu mẫu. |
-| epistemic | người nói đánh giá sự thật chắc đến đâu? | `She must be at work.` — Chắc hẳn cô ấy đang ở chỗ làm. |
+| tình thái năng lực (*dynamic*) | chủ thể có khả năng/xu hướng gì? | `She can swim.` — Cô ấy biết bơi. |
+| tình thái nghĩa vụ – cho phép (*deontic*) | điều gì được phép, bắt buộc, nên làm? | `You must submit the form.` — Bạn phải nộp biểu mẫu. |
+| tình thái nhận thức (*epistemic*) | người nói đánh giá sự thật chắc đến đâu? | `She must be at work.` — Chắc hẳn cô ấy đang ở chỗ làm. |
 
 Cùng một modal có thể thuộc miền khác tùy ngữ cảnh. `Must` trong câu cuối là suy luận, không phải mệnh lệnh bắt cô ấy ở chỗ làm.
 
@@ -107,8 +111,8 @@ Việc nêu nguồn giúp người đọc hiểu modal dựa trên quan sát, b�
 
 ## Ghi nhớ
 
-- Modal verbs thể hiện stance: mức cam kết, nguồn bằng chứng và quan hệ quyền lực.
-- Phân biệt nghĩa dynamic, deontic và epistemic theo ngữ cảnh.
+- Động từ tình thái thể hiện lập trường: mức cam kết, nguồn bằng chứng và quan hệ quyền lực.
+- Phân biệt tình thái năng lực, tình thái nghĩa vụ – cho phép và tình thái nhận thức theo ngữ cảnh.
 - Không gắn modal với phần trăm xác suất cố định.
 - `Will/would` có thể diễn tả suy luận hoặc đặc tính, không chỉ tương lai.
 - `Should` thường diễn tả kỳ vọng có cơ sở.

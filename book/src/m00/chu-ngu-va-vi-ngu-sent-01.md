@@ -18,9 +18,8 @@ Chủ ngữ  +  Vị ngữ
 Ví dụ:
 
 ```text
-[Lan] [reads]
- chủ   vị ngữ
- ngữ
+[Lan]     [reads]
+chủ ngữ   vị ngữ
 
 Lan đọc.
 ```
@@ -29,7 +28,8 @@ Lan đọc.
 
 ## 1. Chủ ngữ cho biết mệnh đề đang nói về ai hoặc điều gì
 
-Trong câu kể cơ bản, chủ ngữ thường đứng trước vị ngữ.
+Trong câu kể (*statement*) cơ bản, tức câu dùng để kể hoặc cho biết một thông
+tin, chủ ngữ thường đứng trước vị ngữ.
 
 | Câu | Chủ ngữ | Câu đang nói về ai hoặc điều gì? |
 | --- | --- | --- |
@@ -57,7 +57,7 @@ Vị ngữ luôn chứa một động từ. Vị ngữ có thể chỉ gồm m�
 | `The baby sleeps.` — Em bé ngủ. | `sleeps` | em bé làm gì |
 | `Lan reads books.` — Lan đọc sách. | `reads books` | Lan làm gì và đọc gì |
 
-Trong `Lan reads books`, toàn bộ `reads books` là vị ngữ. `Reads` là động từ nằm bên trong vị ngữ. Phần `books` sẽ được giải thích ở bài [Tân ngữ đầu tiên](tan-ngu-dau-tien-sent-03.md).
+Trong `Lan reads books`, toàn bộ `reads books` là vị ngữ. Từ `reads` là động từ nằm bên trong vị ngữ. Phần `books` sẽ được giải thích ở bài [Tân ngữ đầu tiên](tan-ngu-dau-tien-sent-03.md).
 
 > **Vị ngữ không có nghĩa là “động từ”.** Động từ là phần bắt buộc nằm trong vị ngữ; vị ngữ có thể dài hơn động từ.
 

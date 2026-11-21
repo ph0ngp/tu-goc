@@ -58,9 +58,9 @@ Chủ ngữ của hành động mục đích có thể khác chủ ngữ chính:
 
 ## Chọn modal theo thời gian và ý nghĩa
 
-- `can` thường nói khả năng hoặc kết quả mong muốn ở hiện tại/tương lai: `I am writing clearly so that you can read it.`
-- `could` thường phù hợp khi mệnh đề chính ở quá khứ: `I wrote clearly so that you could read it.`
-- `will/would` có thể nhấn vào điều sẽ xảy ra hoặc sự sẵn lòng: `She repeated the address so that I wouldn't forget it.`
+- `can` thường nói khả năng hoặc kết quả mong muốn ở hiện tại/tương lai: `I am writing clearly so that you can read it.` — Tôi đang viết rõ ràng để bạn đọc được.
+- `could` thường phù hợp khi mệnh đề chính ở quá khứ: `I wrote clearly so that you could read it.` — Tôi đã viết rõ ràng để bạn đọc được.
+- `will/would` có thể nhấn vào điều sẽ xảy ra hoặc sự sẵn lòng: `She repeated the address so that I wouldn't forget it.` — Cô ấy nhắc lại địa chỉ để tôi không quên.
 
 Không phải lúc nào cũng có một lựa chọn duy nhất; modal thể hiện góc nghĩa của mục đích. Ở B1, ưu tiên các cặp thời gian tự nhiên `can` với hiện tại/tương lai và `could/would` với quá khứ.
 
@@ -68,7 +68,7 @@ Không phải lúc nào cũng có một lựa chọn duy nhất; modal thể hi�
 
 `In order that` cũng mở một mệnh đề đầy đủ và mang sắc thái trang trọng:
 
-`The data is stored securely in order that only authorized staff can access it` nghĩa là “Dữ liệu được lưu an toàn để chỉ nhân viên được cấp quyền mới có thể truy cập”.
+`We keep the data in a safe place in order that only staff can see it` nghĩa là “Chúng tôi giữ dữ liệu ở nơi an toàn để chỉ nhân viên mới xem được”.
 
 Trong giao tiếp thông thường, `so that` phổ biến hơn.
 

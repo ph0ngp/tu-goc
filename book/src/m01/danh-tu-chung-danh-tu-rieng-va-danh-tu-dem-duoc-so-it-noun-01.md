@@ -7,7 +7,8 @@ legacyLessonId: noun-types
 
 Ở Chương 1, ta đã biết **danh từ** (*noun*) là từ dùng để gọi tên người, con
 vật, đồ vật hoặc nơi chốn. Bây giờ ta phân biệt ba điều cần thiết để tạo những
-cụm danh từ đầu tiên:
+**cụm danh từ** (*noun phrase*) đầu tiên, tức những cụm từ có một danh từ làm
+phần chính, như cụm mang nghĩa “một quyển sách” hay “con mèo này”:
 
 - tên gọi chung hay tên riêng;
 - có thể đếm từng người hoặc vật hay không;
@@ -80,9 +81,9 @@ Vì vậy, `book`, `cat` và `teacher` là các danh từ đếm được trong 
 
 | Dạng số ít | Nghĩa tiếng Việt |
 | --- | --- |
-| `book` | một quyển sách khi đặt trong cụm phù hợp |
-| `cat` | một con mèo khi đặt trong cụm phù hợp |
-| `teacher` | một giáo viên khi đặt trong cụm phù hợp |
+| `book` | quyển sách |
+| `cat` | con mèo |
+| `teacher` | giáo viên |
 
 Các từ `book`, `cat` và `teacher` trong bảng đang ở dạng số ít. Tuy nhiên, khi
 muốn tạo một cụm có nghĩa như “một quyển sách” hoặc “con mèo này”, tiếng Anh

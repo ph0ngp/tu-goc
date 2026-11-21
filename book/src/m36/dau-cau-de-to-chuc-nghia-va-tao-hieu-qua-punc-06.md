@@ -5,7 +5,7 @@ legacyLessonId: c1-punctuation-discourse
 ---
 # Dấu câu để tổ chức nghĩa và tạo hiệu quả
 
-Dấu câu không chỉ ghi chỗ “ngừng thở”. Nó cho người đọc biết các phần của văn bản liên hệ ra sao, thông tin nào là chính, phần nào là chen thêm và nhịp lập luận mạnh đến mức nào.
+Dấu câu không chỉ ghi chỗ “ngừng thở”. Nó cho biết các phần liên hệ ra sao, thông tin nào là chính, phần nào là chen thêm và nhịp lập luận mạnh đến đâu.
 
 So sánh:
 
@@ -13,9 +13,15 @@ So sánh:
 - `The plan failed; we changed direction.` — Hai mệnh đề độc lập liên hệ gần.
 - `The plan failed, so we changed direction.` — Từ nối nêu rõ quan hệ kết quả.
 
-Ba cách đều có thể đúng nhưng tổ chức nghĩa khác nhau.
+Ba câu cùng kể “Kế hoạch thất bại, (nên) chúng tôi đổi hướng”, đều đúng, nhưng tổ chức nghĩa khác nhau.
 
-## Dấu chấm, dấu chấm phẩy và từ nối
+## Nền tảng đã học
+
+Quy tắc hình thức của các dấu này đã được học ở [Dấu hai chấm, dấu chấm phẩy và gạch ngang dài trong câu phức](../m32/colon-semicolon-va-dash-trong-cau-phuc-punc-05.md): dấu chấm phẩy nối hai mệnh đề độc lập hoặc tách các mục đã chứa dấu phẩy trong danh sách; phần trước dấu hai chấm phải là một ý hoàn chỉnh; cặp gạch ngang dài phải đóng phần chen khi câu chính còn tiếp tục; không nối hai mệnh đề độc lập chỉ bằng dấu phẩy, vì đó là **lỗi nối hai mệnh đề bằng dấu phẩy** (*comma splice*). Vai trò của dấu phẩy trong mệnh đề quan hệ không xác định đã học ở [Dấu phẩy và ý nghĩa trong mệnh đề không xác định](../m21/dau-phay-va-y-nghia-trong-menh-de-khong-xac-dinh-rel-04.md).
+
+Ở C1, thường có vài lựa chọn đều đúng; câu hỏi là dấu nào tổ chức nghĩa đúng ý người viết.
+
+## Ba mức liên kết giữa hai mệnh đề
 
 | Dấu/cấu trúc | Quan hệ được trình bày |
 | --- | --- |
@@ -23,29 +29,22 @@ Ba cách đều có thể đúng nhưng tổ chức nghĩa khác nhau.
 | dấu chấm phẩy | hai mệnh đề độc lập liên hệ chặt nhưng không có liên từ |
 | dấu phẩy + liên từ | quan hệ được nêu bằng `and/but/so...` |
 
-Không nối hai mệnh đề độc lập chỉ bằng dấu phẩy: `The plan failed, we changed direction` mắc **lỗi nối hai mệnh đề bằng dấu phẩy** (*comma splice*) trong văn viết chuẩn. Có thể sửa bằng dấu chấm, dấu chấm phẩy hoặc liên từ.
+Dấu chấm phẩy không tự nêu quan hệ nguyên nhân, tương phản hay trình tự; người đọc phải suy ra từ nội dung. Vì vậy, `Sales rose; profits fell.` — Doanh số tăng; lợi nhuận giảm — để người đọc tự thấy sự tương phản, còn `Sales rose, but profits fell.` nói thẳng ra. Nếu quan hệ có thể bị hiểu sai, từ nối an toàn hơn.
 
-Dấu chấm phẩy không tự nêu quan hệ nguyên nhân, tương phản hay trình tự; người đọc suy ra từ nội dung. Nếu quan hệ có thể mơ hồ, từ nối rõ hơn.
+## Dấu hai chấm tạo kỳ vọng, gạch ngang dài tạo bất ngờ
 
-## Dấu hai chấm: phần sau giải thích, xác định hoặc triển khai
+Dấu hai chấm hứa với người đọc rằng phần sau sẽ giải thích hoặc cụ thể hóa phần trước:
 
-- `We faced one problem: the data were incomplete.` — Chúng tôi gặp một vấn đề: dữ liệu không đầy đủ.
 - `The conclusion was clear: further testing was necessary.` — Kết luận rõ ràng: cần kiểm tra thêm.
-- `Bring the following items: a passport, two photographs and the completed form.` — Hãy mang các mục sau: hộ chiếu, hai ảnh và biểu mẫu đã điền.
 
-Phần trước dấu hai chấm thường phải hoàn chỉnh về cú pháp. Không đặt dấu hai chấm giữa động từ và bổ ngữ: không dùng `The problem was: incomplete data` trong cấu trúc trung tính.
+Dấu gạch ngang dài thì tạo một cú ngắt mạnh, chuyển chú ý sang phần sau như một điểm nhấn hoặc một bước rẽ:
 
-Dấu hai chấm tạo kỳ vọng rằng phần sau làm rõ phần trước; nó không chỉ là dấu trước mọi danh sách.
+- `There was one possible solution—delay the launch.` — Chỉ có một giải pháp khả thi: hoãn ra mắt.
+- `She opened the envelope—and gasped.` — Cô ấy mở phong bì, rồi sững sờ.
 
-## Dấu gạch ngang dài: ngắt mạnh và thay đổi hướng chú ý
+Dùng gạch ngang dài quá nhiều sẽ khiến mọi phần đều có vẻ khẩn cấp.
 
-- `There was one possible solution—delay the launch.` — Chỉ có một giải pháp khả thi — hoãn ra mắt.
-- `The final decision—after weeks of debate—was unanimous.` — Quyết định cuối cùng — sau nhiều tuần tranh luận — là nhất trí.
-- `She opened the envelope—and gasped.` — Cô ấy mở phong bì — rồi sững sờ.
-
-Dấu gạch ngang dài nổi bật hơn dấu phẩy hoặc dấu ngoặc đơn. Dùng quá nhiều khiến mọi phần đều có vẻ khẩn cấp. Cặp dấu gạch ngang phải đóng phần chen nếu câu chính tiếp tục sau đó.
-
-## Dấu ngoặc đơn, dấu phẩy và dấu gạch ngang cho phần chen
+## Ba mức nổi bật cho phần chen
 
 | Dấu | Mức tích hợp/nhấn thường gặp |
 | --- | --- |
@@ -53,28 +52,22 @@ Dấu gạch ngang dài nổi bật hơn dấu phẩy hoặc dấu ngoặc đơn
 | dấu ngoặc đơn | thông tin phụ, giọng nhỏ hơn |
 | dấu gạch ngang dài | phần chen nổi bật hoặc chuyển hướng mạnh |
 
-`The revised policy, which takes effect in June, applies to all staff.`
+Ba câu sau cùng nghĩa “Chính sách sửa đổi, có hiệu lực từ tháng Sáu, áp dụng cho toàn bộ nhân viên”:
 
-`The revised policy (which takes effect in June) applies to all staff.`
+- `The revised policy, which takes effect in June, applies to all staff.` — thông tin về tháng Sáu được nêu bình thường;
+- `The revised policy (which takes effect in June) applies to all staff.` — tháng Sáu được hạ xuống như một ghi chú bên lề;
+- `The revised policy—which takes effect in June—applies to all staff.` — tháng Sáu được đẩy lên thành điểm cần chú ý.
 
-`The revised policy—which takes effect in June—applies to all staff.`
+Chọn dấu là chọn điều người đọc sẽ chú ý.
 
-Nội dung mệnh đề giống nhau nhưng mức độ nổi bật khác. Dấu câu là một lựa chọn diễn ngôn, không chỉ bài kiểm tra đúng/sai.
+## Dấu phẩy và phạm vi đối tượng
 
-## Dấu phẩy và phạm vi của mệnh đề quan hệ
+Trong văn bản quy định, cặp dấu phẩy quanh mệnh đề quan hệ có thể đổi ai phải làm gì:
 
-- `Employees who work remotely must register` giới hạn: chỉ những nhân viên làm từ xa phải đăng ký.
-- `Employees, who work remotely, must register` trình bày toàn bộ nhân viên như người làm từ xa và thêm thông tin chen.
+- `Students who live off campus must register their address.` — Những sinh viên sống ngoài ký túc xá phải đăng ký địa chỉ.
+- `Students, who live off campus, must register their address.` — Sinh viên, vốn đều sống ngoài ký túc xá, phải đăng ký địa chỉ.
 
-Hai dấu phẩy có thể thay đổi tập đối tượng. Nếu người viết không thật sự muốn nói mọi nhân viên đều làm từ xa, câu thứ hai sai nghĩa dù dấu được đặt cân đối.
-
-## Danh sách phức và dấu chấm phẩy
-
-Khi mỗi mục đã chứa dấu phẩy, dấu chấm phẩy giúp nhìn ranh giới:
-
-`The offices are in Hanoi, Vietnam; Seoul, South Korea; and Lima, Peru.`
-
-Không nhất thiết dùng dấu chấm phẩy cho danh sách đơn giản. Chọn dấu đủ mạnh để loại mơ hồ, không mạnh hơn cần thiết.
+Câu thứ hai biến nghĩa vụ thành nghĩa vụ của mọi sinh viên, nên sai nghĩa nếu không phải sinh viên nào cũng sống ngoài ký túc xá.
 
 ## Dấu phẩy đầu câu và phạm vi trạng ngữ
 
@@ -96,11 +89,11 @@ Trong câu dài, mơ hồ thường tinh tế hơn:
 - cuộc trao đổi vào thứ Hai: `On Monday, the manager discussed the report with the assistant who had prepared it.`
 - báo cáo được soạn vào thứ Hai: `The assistant prepared the report on Monday, and the manager later discussed it with her.`
 
-Không phải mơ hồ nào cũng sửa được bằng dấu câu; đôi khi phải chuyển vị trí một thành phần hoặc tách mệnh đề.
+Không phải mơ hồ nào cũng sửa được bằng dấu câu; đôi khi phải chuyển vị trí hoặc tách mệnh đề.
 
 ## Nhịp và hiệu quả tu từ
 
-Câu ngắn liên tiếp tạo nhịp dứt khoát: `The evidence was clear. The risk was real. We acted.` Một câu ghép dài cho thấy quá trình liên tục. Dấu gạch ngang tạo bất ngờ; dấu hai chấm tạo kỳ vọng; dấu chấm phẩy cân hai ý.
+Câu ngắn liên tiếp tạo nhịp dứt khoát: `The evidence was clear. The risk was real. We acted.` — Bằng chứng đã rõ. Rủi ro là có thật. Chúng tôi hành động. Một câu ghép dài lại cho thấy quá trình liên tục.
 
 Hiệu quả chỉ có ý nghĩa khi cấu trúc vẫn rõ. Không phá ranh giới mệnh đề chỉ để tạo “phong cách”.
 
@@ -108,22 +101,21 @@ Hiệu quả chỉ có ý nghĩa khi cấu trúc vẫn rõ. Không phá ranh gi�
 
 Dấu phẩy Oxford (*Oxford comma*) trong `A, B, and C` được một số quy chuẩn biên tập (*style guide*) yêu cầu, một số nơi không. Dấu ngoặc kép và vị trí dấu chấm/phẩy khác giữa Anh–Anh và Anh–Mỹ. Không phải mọi khác biệt là lỗi.
 
-Trong một dự án, hãy theo quy chuẩn biên tập đã chọn và giữ nhất quán. Khi không có quy định, ưu tiên cách loại mơ hồ và dễ đọc cho đối tượng mục tiêu.
+Hãy theo quy chuẩn biên tập đã chọn và giữ nhất quán; khi không có quy định, ưu tiên cách loại mơ hồ và dễ đọc.
 
 ## Quy trình biên tập dấu câu
 
-1. Xác định ranh giới mệnh đề và cấu trúc cú pháp trước.
-2. Xác định quan hệ: tách, nối, giải thích, chen hay liệt kê.
-3. Chọn dấu thể hiện đúng mức độ liên kết.
-4. Kiểm tra dấu phẩy có thay đổi phạm vi mệnh đề quan hệ hay không.
-5. Đọc theo hai cách để tìm mơ hồ; viết lại nếu dấu câu không đủ giải quyết.
-6. Kiểm tra quy ước Anh–Anh/Anh–Mỹ và sự nhất quán của tài liệu.
+1. Xác định ranh giới mệnh đề, rồi quan hệ: tách, nối, giải thích, chen hay liệt kê.
+2. Chọn dấu thể hiện đúng mức độ liên kết và mức nổi bật.
+3. Kiểm tra dấu phẩy có thay đổi phạm vi mệnh đề quan hệ hay không.
+4. Đọc theo hai cách để tìm mơ hồ; viết lại nếu dấu câu không đủ giải quyết.
+5. Kiểm tra quy ước Anh–Anh/Anh–Mỹ và sự nhất quán của tài liệu.
 
 ## Ghi nhớ
 
 - Dấu câu tổ chức quan hệ nghĩa, không chỉ đánh dấu chỗ ngừng.
-- Dấu chấm, dấu chấm phẩy và liên từ tạo mức liên kết khác nhau giữa mệnh đề.
-- Dấu hai chấm cần phần trước hoàn chỉnh và báo phần sau giải thích hoặc triển khai.
+- Dấu chấm, dấu chấm phẩy và liên từ tạo mức liên kết khác nhau; dấu chấm phẩy để người đọc tự suy ra quan hệ.
+- Dấu hai chấm tạo kỳ vọng phần sau giải thích; dấu gạch ngang dài tạo điểm nhấn hoặc bước rẽ.
 - Dấu phẩy, dấu ngoặc đơn và dấu gạch ngang dài làm phần chen nổi bật ở các mức khác nhau.
 - Dấu phẩy trong mệnh đề quan hệ có thể thay đổi tập đối tượng được nói tới.
 - Không phải mơ hồ nào cũng sửa bằng dấu câu; đôi khi phải viết lại.

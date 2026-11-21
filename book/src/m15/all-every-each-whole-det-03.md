@@ -45,7 +45,9 @@ Ngoài mẫu có số này, `every` đi với danh từ số ít: `every day`, k
 - `The tickets cost ten dollars each.` — Mỗi vé giá mười đô la.
 - `Each of the rooms has a window.` — Mỗi phòng đều có một cửa sổ.
 
-Sau `each of` dùng `the/these/my + danh từ số nhiều`, nhưng động từ thường ở số ít: `Each of the children is ready`.
+Sau `each of` dùng `the/these/my + danh từ số nhiều`, nhưng động từ thường ở số ít: `Each of the children is ready` — Đứa trẻ nào cũng đã sẵn sàng.
+
+`Each of` cũng đứng trước đại từ `us`, `you`, `them`: `Each of them has a key.` — Mỗi người trong số họ đều có một chìa khóa. `Every` thì không đi thẳng với `of`: không nói `every of them`; nếu cần, nói `every one of them` (từng người một trong số họ).
 
 ## `Whole`: toàn bộ một vật hoặc khoảng thời gian
 
@@ -56,7 +58,7 @@ the/my/a + whole + danh từ đếm được số ít
 - `I read the whole book.` — Tôi đã đọc toàn bộ quyển sách.
 - `We stayed there for a whole week.` — Chúng tôi ở đó suốt cả một tuần.
 
-So sánh `all day` và `the whole day`: cả hai đều có thể nghĩa “cả ngày”. `Whole` không thường đi trực tiếp với danh từ không đếm được: dùng `all the water`, không dùng `the whole water`.
+So sánh `all day` và `the whole day`: cả hai đều có thể nghĩa “cả ngày”. `Day` là danh từ số ít, nên `all day` là một ngoại lệ của mẫu `all + số nhiều`: với từ chỉ khoảng thời gian như `day`, `morning`, `week`, `night`, `all` có thể đứng trước danh từ số ít không có `the`: `all day` — cả ngày, `all morning` — cả buổi sáng, `all night` — suốt đêm. `Whole` không thường đi trực tiếp với danh từ không đếm được: dùng `all the water`, không dùng `the whole water`.
 
 ## Cùng nói toàn bộ nhưng khác góc nhìn
 
@@ -82,7 +84,7 @@ Sau đó kiểm tra động từ: `every book is`, `each book is`, `each of the 
 
 ## Ghi nhớ
 
-- `all` đi với số nhiều hoặc không đếm được; `every` đi với danh từ số ít.
-- `each` nhấn mạnh từng thành viên và có mẫu `each of + số nhiều`.
+- `all` đi với số nhiều hoặc không đếm được (trừ cụm thời gian như `all day`, `all morning`); `every` đi với danh từ số ít.
+- `each` nhấn mạnh từng thành viên và có mẫu `each of + số nhiều` hoặc `each of + us/you/them`; không nói `every of`.
 - `whole` nói toàn bộ một vật đếm được số ít hoặc khoảng thời gian.
 - Chú ý hòa hợp: `Every student has`, `Each of them is`, `All students have`.

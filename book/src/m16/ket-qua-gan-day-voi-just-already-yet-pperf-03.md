@@ -23,7 +23,7 @@ Sự việc rất gần hiện tại; kết quả đang có ý nghĩa ngay bây 
 - `We've already eaten.` — Chúng tôi ăn rồi.
 - `Has the film already started?` — Bộ phim đã bắt đầu rồi à?
 
-Nó thường đứng giữa `have/has` và quá khứ phân từ, nhưng có thể đứng cuối để nhấn mạnh trong văn nói.
+Nó thường đứng giữa `have/has` và quá khứ phân từ. Trong văn nói, `already` cũng có thể đứng cuối câu để nhấn mạnh, nhất là khi người nói ngạc nhiên vì việc xong sớm hơn dự kiến: `Have you finished already?` — Bạn xong rồi à?
 
 ## `Yet`: chưa/đã ... chưa
 

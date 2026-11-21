@@ -7,7 +7,7 @@ legacyLessonId: a2-perfect-experience
 
 Hiện tại hoàn thành có thể hỏi hoặc nói về trải nghiệm trong cuộc đời **tính đến bây giờ**, khi thời điểm chính xác không quan trọng hoặc không được nêu.
 
-## `Ever`: đã từng bao giờ
+## `Ever`: đã bao giờ … chưa
 
 `Ever` thường đứng giữa `have/has` và quá khứ phân từ trong câu hỏi:
 
@@ -22,7 +22,7 @@ trước đây ================================= bây giờ
           có bất kỳ lần nào không?
 ```
 
-Khoảng hỏi chưa đóng vì cuộc đời và khả năng có thêm trải nghiệm vẫn tiếp tục sau lúc nói. Người hỏi chưa quan tâm lần đó xảy ra vào ngày, tháng hay năm nào.
+Khoảng được hỏi chưa khép lại, vì cuộc đời vẫn tiếp diễn và người nghe vẫn có thể có thêm trải nghiệm. Người hỏi chưa quan tâm lần đó xảy ra vào ngày, tháng hay năm nào.
 
 ## `Never`: chưa bao giờ
 
@@ -31,7 +31,7 @@ Khoảng hỏi chưa đóng vì cuộc đời và khả năng có thêm trải n
 - `I've never flown in a helicopter.` — Tôi chưa bao giờ bay bằng trực thăng.
 - `He has never tried Indian food.` — Anh ấy chưa bao giờ thử món Ấn Độ.
 
-Không thêm `not`: nói `I have never been`, không nói `I haven't never been` trong tiếng Anh chuẩn cơ bản.
+Không thêm `not`: nói `I have never been to Japan` — Tôi chưa bao giờ đến Nhật Bản, không nói `I haven't never been to Japan` trong tiếng Anh chuẩn.
 
 ## Câu trả lời và câu hỏi tiếp theo
 
@@ -63,23 +63,23 @@ Câu đầu mở toàn bộ kinh nghiệm đến hiện tại. Sau khi người 
 
 | Không nêu thời điểm cụ thể | Có thời điểm cụ thể |
 | --- | --- |
-| `Have you ever seen snow?` | `Did you see snow last winter?` |
-| `I've visited Da Lat twice.` | `I visited Da Lat in 2024.` |
+| `Have you ever seen snow?` — Bạn đã bao giờ thấy tuyết chưa? | `Did you see snow last winter?` — Mùa đông năm ngoái bạn có thấy tuyết không? |
+| `I've visited Da Lat twice.` — Tôi đã đến Đà Lạt hai lần. | `I visited Da Lat in 2024.` — Tôi đến Đà Lạt năm 2024. |
 
 ## “Chưa từng” chỉ đúng tính đến hiện tại
 
-`I've never tried skiing` nghĩa là từ trước đến bây giờ tôi chưa có trải nghiệm trượt tuyết. Câu không khẳng định tương lai tôi cũng sẽ không thử. Tương tự, `Have you ever worked in a restaurant?` hỏi bất kỳ thời điểm nào trong cuộc đời đến lúc nói.
+`I've never tried skiing` nghĩa là từ trước đến bây giờ tôi chưa có trải nghiệm trượt tuyết. Câu không khẳng định tương lai tôi cũng sẽ không thử. Tương tự, `Have you ever worked in a restaurant?` — Bạn đã bao giờ làm việc ở nhà hàng chưa? — hỏi bất kỳ thời điểm nào trong cuộc đời đến lúc nói.
 
-Các cụm `once`, `twice`, `three times` có thể đếm số trải nghiệm mà không đóng khoảng thời gian: `I've seen that film three times`. Nếu thêm mốc đã đóng, dùng quá khứ đơn: `I saw it three times last month`.
+Các cụm `once` (một lần), `twice` (hai lần), `three times` (ba lần) có thể đếm số trải nghiệm mà không đóng khoảng thời gian: `I've seen that film three times` — Tôi đã xem phim đó ba lần. Nếu thêm mốc đã đóng, dùng quá khứ đơn: `I saw it three times last month` — Tháng trước tôi xem nó ba lần.
 
-Đừng trả lời câu hỏi trải nghiệm bằng một mốc đơn lẻ ngay từ đầu. Cách hội thoại rõ ràng là `Yes, I have`, rồi mới kể `I went there in 2024` bằng quá khứ đơn.
+Khi trả lời câu hỏi trải nghiệm, có thể đáp ngắn `Yes, I have.` rồi mới kể chi tiết, như đoạn hội thoại ở trên. Cũng có thể đi thẳng vào chi tiết: `Have you ever been to Hue? — Yes, I went there in 2024.` — Bạn đã từng đến Huế chưa? — Rồi, tôi đến đó năm 2024. Dù chọn cách nào, phần có mốc thời gian đã kết thúc luôn dùng quá khứ đơn.
 
 ## Chọn theo điều đang được hỏi
 
 | Người nói muốn biết | Mẫu phù hợp |
 | --- | --- |
 | có trải nghiệm ấy vào bất kỳ lúc nào đến nay không | `Have you ever ...?` |
-| chưa có trải nghiệm ấy tính đến nay | `have/has never + past participle` |
+| chưa có trải nghiệm ấy tính đến nay | `have/has never` + quá khứ phân từ |
 | trải nghiệm đã xảy ra bao nhiêu lần đến nay | `have/has ... once/twice/three times` |
 | một lần cụ thể xảy ra khi nào, ở đâu, với ai | câu hỏi quá khứ đơn với `did` |
 

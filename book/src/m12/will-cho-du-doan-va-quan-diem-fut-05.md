@@ -26,6 +26,10 @@ Ta dùng `will` khi đưa ra một dự đoán, niềm tin hoặc quan điểm v
 
 `Probably` thường đứng sau `will` nhưng trước động từ chính: `will probably arrive`. Với phủ định, `probably won't arrive` tự nhiên hơn `won't probably arrive`.
 
+`Maybe` và `perhaps` (có lẽ, có thể) thì thường đứng đầu câu, trước cả chủ ngữ: `Maybe it will rain.`, `Perhaps we'll see her tomorrow.` — Có lẽ ngày mai chúng ta sẽ gặp cô ấy.
+
+Khi nêu một ý kiến phủ định, tiếng Anh thường phủ định `think` chứ không phủ định `will`: `I don't think it will rain.` — Tôi không nghĩ trời sẽ mưa. Câu `I think it won't rain.` (Tôi nghĩ trời sẽ không mưa) vẫn đúng ngữ pháp, nhưng ít tự nhiên hơn trong lời nói hằng ngày.
+
 ## So với dự đoán bằng `going to`
 
 - `I think it will rain tomorrow.` — Tôi nghĩ ngày mai trời sẽ mưa; đây là ý kiến/dự đoán.

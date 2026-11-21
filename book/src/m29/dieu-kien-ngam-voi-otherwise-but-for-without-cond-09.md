@@ -5,7 +5,7 @@ status: published
 ---
 # Điều kiện ngầm với otherwise, but for, without
 
-Không phải câu điều kiện nào cũng có mệnh đề bắt đầu bằng `if`. `Otherwise`, `but for` và `without` có thể chứa hoặc gợi ra điều kiện, còn mệnh đề kết quả dùng hình thức giống điều kiện loại 2, loại 3 hoặc hỗn hợp. Người đọc phải khôi phục quan hệ “nếu không/nếu không có”.
+Không phải câu điều kiện nào cũng có mệnh đề bắt đầu bằng `if`. `Otherwise`, `but for` và `without` có thể chứa hoặc gợi ra điều kiện, còn mệnh đề kết quả dùng hình thức giống điều kiện loại 1, loại 2, loại 3 hoặc hỗn hợp. Người đọc phải khôi phục quan hệ “nếu không/nếu không có”.
 
 ## `Otherwise`: nếu không thì
 
@@ -33,10 +33,12 @@ But for + noun phrase, result clause
 
 `But for` trang trọng hơn và thường nhấn một yếu tố đã làm kết quả khác đi. Nó gần `if it were not for` ở hiện tại và `if it had not been for` ở quá khứ.
 
-| Dạng ngầm | Dạng đầy đủ gần nghĩa |
-| --- | --- |
-| `But for the rain, we'd go out.` | `If it weren't for the rain, we'd go out.` |
-| `But for the rain, we'd have gone out.` | `If it hadn't been for the rain, we'd have gone out.` |
+| Dạng ngầm | Dạng đầy đủ gần nghĩa | Nghĩa |
+| --- | --- | --- |
+| `But for the rain, we'd go out.` | `If it weren't for the rain, we'd go out.` | Nếu không vì mưa, chúng tôi sẽ ra ngoài. |
+| `But for the rain, we'd have gone out.` | `If it hadn't been for the rain, we'd have gone out.` | Nếu khi ấy không vì mưa, chúng tôi đã ra ngoài. |
+
+Dạng đầy đủ có cấu tạo cố định. `If it weren't for + danh từ` nghĩa là “nếu không có/không vì…” ở hiện tại; `If it hadn't been for + danh từ` nghĩa là “nếu khi ấy không có/không vì…” ở quá khứ. `It` ở đây là chủ ngữ hình thức, không chỉ vật nào; `were` là dạng giả định của `be` (trong lời nói cũng gặp `If it wasn't for`); vế này luôn ở dạng phủ định. Cơn mưa là có thật; điều được giả định là **không có** cơn mưa.
 
 ## `Without + noun/V-ing`: nếu không có/không làm
 
@@ -50,10 +52,10 @@ But for + noun phrase, result clause
 
 Từ/cụm từ điều kiện ngầm không tự quyết định loại câu. Thời gian và mức phản thực quyết định:
 
-- `Hurry, otherwise you'll be late.` — hậu quả tương lai có thật.
-- `Without a map, we would get lost.` — kết quả giả định hiện tại/tương lai.
-- `Without the map, we would have got lost.` — kết quả quá khứ đã không xảy ra.
-- `But for that decision, she would live abroad now.` — điều kiện quá khứ dẫn tới kết quả hiện tại.
+- `Hurry, otherwise you'll be late.` — Nhanh lên, nếu không bạn sẽ muộn: hậu quả tương lai có thật.
+- `Without a map, we would get lost.` — Nếu không có bản đồ, chúng ta sẽ bị lạc: kết quả giả định hiện tại/tương lai.
+- `Without the map, we would have got lost.` — Nếu khi ấy không có tấm bản đồ, chúng tôi đã bị lạc: kết quả quá khứ đã không xảy ra.
+- `But for that decision, she would live abroad now.` — Nếu không có quyết định ấy, giờ cô ấy đã sống ở nước ngoài: điều kiện quá khứ dẫn tới kết quả hiện tại.
 
 Đây là cùng hệ thống thời gian với câu điều kiện đã học, chỉ thiếu từ `if` bề mặt.
 

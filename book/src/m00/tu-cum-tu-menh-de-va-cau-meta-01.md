@@ -40,7 +40,7 @@ Bạn chưa cần phân tích ngữ pháp thật sâu. Mục tiêu của bài ch
 
 Mỗi dòng trong bảng là một từ. Một từ có thể gọi tên một vật, nói một hành động hoặc cho biết một đặc điểm. Bài sau sẽ giải thích cụ thể những công việc này.
 
-Trong câu viết, dấu chấm không phải là một từ:
+Trong câu viết, dấu chấm (*full stop*) không phải là một từ:
 
 ```text
 The | cat | sleeps | .
@@ -106,8 +106,8 @@ Hai phần cốt lõi này sẽ được gọi tên và giải thích kỹ trong
 
 Trong văn viết, một câu thường:
 
-- bắt đầu bằng chữ hoa;
-- kết thúc bằng một dấu câu;
+- bắt đầu bằng chữ hoa (*capital letter*);
+- kết thúc bằng một dấu câu (*punctuation mark*);
 - cho người đọc một ý có thể đứng độc lập.
 
 Ví dụ:

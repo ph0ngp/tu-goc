@@ -18,6 +18,8 @@ Câu mới nghĩa là “Tôi biết một người phụ nữ nói được b�
 
 ## Chọn `who`, `which` hay `that`
 
+`Who`, `which` và `that` trong bài này gọi là **đại từ quan hệ** (*relative pronoun*): mỗi từ vừa thay cho danh từ đứng trước, vừa mở đầu mệnh đề quan hệ. Chọn từ nào phụ thuộc vào danh từ được nói đến là người hay vật.
+
 | Danh từ được nói đến | Đại từ quan hệ | Ví dụ |
 | --- | --- | --- |
 | người | `who` hoặc `that` | `The man who lives next door is a doctor.` — Người đàn ông sống bên cạnh là bác sĩ. |
@@ -33,7 +35,7 @@ Trong bài này, `who/which/that` thực hiện hành động trong mệnh đề
 - `a bus that goes to the airport` — một chiếc xe buýt đi đến sân bay;
 - `a key which opens this door` — một chiếc chìa khóa mở cửa này.
 
-Không thêm một chủ ngữ nữa: nói `the woman who lives here`, không nói `the woman who she lives here`.
+Không thêm một chủ ngữ nữa: nói `the woman who lives here` — “người phụ nữ sống ở đây”, không nói `the woman who she lives here`.
 
 Không được lược đại từ khi nó làm chủ ngữ: `the bus goes to the airport` có thể là câu hoàn chỉnh, nhưng trong cụm `the bus that goes ...`, cần giữ `that`.
 
@@ -54,7 +56,7 @@ Mệnh đề không xác định có dấu phẩy và ý nghĩa khác sẽ đư�
 
 ## Mệnh đề quan hệ làm cho danh từ đủ rõ
 
-So sánh `Give me the key` với `Give me the key that opens the back door`. Nếu có nhiều chìa khóa, mệnh đề `that opens the back door` giúp người nghe nhận ra đúng chiếc cần đưa. Thông tin đó không phải một câu chuyện tách rời; nó là một phần của cụm danh từ.
+So sánh `Give me the key` — “Đưa tôi chiếc chìa khóa” — với `Give me the key that opens the back door` — “Đưa tôi chiếc chìa khóa mở cửa sau”. Nếu có nhiều chìa khóa, mệnh đề `that opens the back door` giúp người nghe nhận ra đúng chiếc cần đưa. Thông tin đó không phải một câu chuyện tách rời; nó là một phần của cụm danh từ.
 
 Khi ghép hai câu, bỏ đại từ lặp lại:
 
@@ -63,7 +65,7 @@ The bus goes to the airport. It stops here.
 → The bus that goes to the airport stops here.
 ```
 
-`That` đã thay cho `the bus/it` bên trong mệnh đề quan hệ, nên không viết `the bus that it goes`. Sau khi ghép, hãy kiểm tra câu còn đúng một chủ ngữ cho mỗi động từ hay không.
+Hai câu đầu nghĩa là “Chiếc xe buýt đi đến sân bay. Nó dừng ở đây”; câu ghép nghĩa là “Chiếc xe buýt đi đến sân bay dừng ở đây”. `That` đã thay cho `the bus/it` bên trong mệnh đề quan hệ, nên không viết `the bus that it goes`. Sau khi ghép, hãy kiểm tra câu còn đúng một chủ ngữ cho mỗi động từ hay không.
 
 ## Ghi nhớ
 

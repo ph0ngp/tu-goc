@@ -5,8 +5,9 @@ legacyLessonId: be-forms
 ---
 # Ba dạng của be
 
-Trong tiếng Anh, `be` là một động từ rất quan trọng. Ở hiện tại, ta không đặt
-nguyên dạng `be` vào câu. Ta phải đổi nó thành một trong ba dạng:
+Trong tiếng Anh, `be` là một động từ rất quan trọng. Khi `be` đứng ngay sau chủ
+ngữ trong câu nói về hiện tại, ta không dùng dạng cơ bản (*base form*) `be` mà
+đổi nó thành một trong ba dạng:
 
 ```text
 am · is · are
@@ -91,8 +92,8 @@ chủ ngữ chỉ một hay nhiều rồi thay thử bằng `he`, `she`, `it` ho
 | Chủ ngữ | Có thể thay bằng | Dạng be | Ví dụ |
 | --- | --- | --- | --- |
 | `Lan` | `she` | `is` | `Lan is here.` — Lan ở đây. |
-| `the book` | `it` | `is` | `The book is new.` — Quyển sách này còn mới. |
-| `the cats` | `they` | `are` | `The cats are small.` — Những con mèo này nhỏ. |
+| `the book` | `it` | `is` | `The book is new.` — Quyển sách ấy còn mới. |
+| `the cats` | `they` | `are` | `The cats are small.` — Những con mèo ấy nhỏ. |
 | `Lan and Nam` | `they` | `are` | `Lan and Nam are here.` — Lan và Nam ở đây. |
 
 Hai tên hoặc hai cụm được nối bằng `and`, nghĩa là “và”, thường tạo thành chủ
@@ -110,7 +111,8 @@ cái kia mới”.
 
 ## Câu khẳng định giữ trật tự chủ ngữ rồi đến be
 
-Trong câu khẳng định, dạng của `be` đứng ngay sau chủ ngữ:
+Trong câu khẳng định (*affirmative sentence*), tức câu nói một điều là đúng,
+dạng của `be` đứng ngay sau chủ ngữ:
 
 ```text
 chủ ngữ + am/is/are + thông tin phía sau
@@ -119,12 +121,13 @@ chủ ngữ + am/is/are + thông tin phía sau
 Phần thông tin phía sau có thể cho biết tên gọi, đặc điểm hoặc nơi chốn. Bài
 tiếp theo sẽ giải thích riêng từng loại.
 
-## Dạng rút gọn giữ nguyên nghĩa
+## Dạng viết tắt giữ nguyên nghĩa
 
-Trong lời nói và văn viết thân mật, chủ ngữ và `be` thường được nối lại. Dấu
-nháy đơn cho biết một vài chữ đã được lược đi.
+Trong lời nói và văn viết thân mật, chủ ngữ và `be` thường được nối lại thành
+**dạng viết tắt** (*contraction*). Dấu nháy đơn cho biết một vài chữ đã được
+lược đi.
 
-| Dạng đầy đủ | Dạng rút gọn |
+| Dạng đầy đủ | Dạng viết tắt |
 | --- | --- |
 | `I am` | `I'm` |
 | `you are` | `you're` |
@@ -154,4 +157,4 @@ thể thay bằng `they`, vì vậy ta dùng `are`.
 - `You`, `we`, `they` và chủ ngữ số nhiều đi với `are`.
 - `This/that` đi với `is`; `these/those` đi với `are`.
 - Trong câu khẳng định, `be` đứng sau chủ ngữ.
-- Dạng rút gọn như `I'm`, `she's` và `they're` không đổi nghĩa của câu.
+- Dạng viết tắt như `I'm`, `she's` và `they're` không đổi nghĩa của câu.

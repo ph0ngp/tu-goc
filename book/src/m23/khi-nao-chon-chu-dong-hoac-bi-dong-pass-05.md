@@ -61,7 +61,7 @@ Tác nhân mới, bất ngờ hoặc nổi bật nên được giữ. Nếu tác
 
 ## Tránh đoạn văn toàn bị động không cần thiết
 
-`The form should be completed. It must then be signed. It will be checked...` có thể phù hợp trong hướng dẫn quy trình. Nhưng trong một email trực tiếp, `Please complete and sign the form. We will check it...` có thể rõ, ngắn và thân thiện hơn.
+`The form should be completed. It must then be signed. It will be checked...` — “Biểu mẫu cần được điền. Sau đó phải được ký. Biểu mẫu sẽ được kiểm tra…” — có thể phù hợp trong hướng dẫn quy trình. Nhưng trong một email trực tiếp, `Please complete and sign the form. We will check it...` — “Vui lòng điền và ký biểu mẫu. Chúng tôi sẽ kiểm tra…” — có thể rõ, ngắn và thân thiện hơn.
 
 Không có quy tắc “văn viết phải dùng bị động”. Văn viết tốt phối hợp hai dạng để giữ chủ đề rõ và nêu tác nhân khi cần.
 

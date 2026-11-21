@@ -22,66 +22,63 @@ The student has recently moved from Hue. — Học sinh ấy mới chuyển từ
 
 Đây là xu hướng, không phải công thức tuyệt đối. Người viết còn cân nhắc độ dài, tiêu điểm, liên kết và nhịp câu.
 
-## Đưa tân ngữ lên đầu
+## Khi nào đưa lên đầu kéo theo đảo ngữ?
 
-Đưa tân ngữ lên đầu câu thường tạo tương phản hoặc tiếp tục một chủ đề đã có:
+Bài [do nhấn mạnh và đưa bổ ngữ lên đầu](../m32/do-nhan-manh-va-dua-bo-ngu-len-dau-info-03.md) đã giới thiệu ba kiểu đưa lên đầu và nói rằng “đôi khi” có đảo. Ở C1, cần biết chính xác khi nào đảo là bắt buộc, khi nào không được đảo:
 
-- `The first proposal we accepted; the second we rejected.` — Đề xuất thứ nhất chúng tôi chấp nhận; đề xuất thứ hai chúng tôi bác bỏ.
-- `That explanation, I simply cannot believe.` — Lời giải thích đó thì tôi thật sự không thể tin.
+| Thành phần đưa lên đầu | Phần còn lại | Ví dụ |
+| --- | --- | --- |
+| tân ngữ; bổ ngữ trong mẫu nhượng bộ | không đảo | `That explanation, I cannot believe.` |
+| bổ ngữ của `be`: tính từ so sánh, phân từ | đảo `be` với chủ ngữ dài | `Most troubling was the lack of evidence.` |
+| cụm nơi chốn/hướng + nội động từ chỉ vị trí, chuyển động | đảo động từ chính với chủ ngữ danh từ | `Into the room walked the director.` |
 
-Phần còn lại thường giữ trật tự chủ ngữ–động từ: `I cannot believe`, không đảo thành `cannot I believe`.
+Lý do chung nằm ở trật tự cũ–mới: phép đảo giúp đẩy một chủ ngữ mới, thường dài, về cuối câu. Chủ đề hóa tân ngữ không cần điều đó, vì chủ ngữ (`I`, `we`) thường đã là thông tin cũ.
 
-Trong hội thoại trung tính, câu `I support this proposal` thường tự nhiên hơn. Việc đưa thành phần lên đầu chỉ có ích khi `this proposal` thật sự cần làm khung hoặc điểm tương phản.
+## Tân ngữ và bổ ngữ nhượng bộ: không đảo
 
-## Đưa bổ ngữ lên đầu
+Khi đưa tân ngữ lên đầu, phần còn lại giữ nguyên trật tự chủ ngữ–động từ và không thêm `do`:
 
-Bổ ngữ của `be` hoặc động từ nối có thể được đưa lên đầu, đôi khi kèm đảo:
+- `The first offer we accepted; the second we rejected.` — Lời đề nghị thứ nhất chúng tôi chấp nhận; lời thứ hai chúng tôi bác bỏ.
+- không dùng: `The first offer did we accept.`
 
-- `Most troubling was the lack of evidence.` — Đáng lo nhất là việc thiếu bằng chứng.
-- `Even more surprising was her refusal to comment.` — Còn đáng ngạc nhiên hơn là việc cô ấy từ chối bình luận.
+Mẫu nhượng bộ trang trọng cũng không đảo. Tính từ hoặc danh từ làm bổ ngữ đứng đầu, rồi đến `though` hoặc `as`, rồi chủ ngữ và động từ:
+
+- `Difficult though the final chapter was, I enjoyed it.` — Dù chương cuối khó, tôi vẫn thích nó.
 - `A brilliant teacher she may be, but she is not a good manager.` — Cô ấy có thể là một giáo viên xuất sắc, nhưng không phải nhà quản lý giỏi.
 
-Câu cuối là mẫu nhượng bộ: bổ ngữ được đưa lên đầu, nhưng chủ ngữ vẫn đứng trước động từ tình thái `may`. Không phải mọi trường hợp đưa bổ ngữ lên đầu đều dùng cùng một kiểu đảo.
+Không viết `Difficult though was the final chapter`. Mẫu này mang sắc thái văn chương; câu trung tính dùng `Although…`.
 
-## Đưa cụm nơi chốn hoặc hướng lên đầu
+## Bổ ngữ của `be`: đảo khi chủ ngữ dài và mới
 
-Đưa cụm nơi chốn lên đầu thường dùng trong miêu tả và có thể kéo động từ lên trước chủ ngữ danh từ:
+Khi bổ ngữ của `be` là tính từ so sánh hoặc phân từ được đưa lên đầu, `be` phải đứng trước chủ ngữ:
+
+- `Most troubling was the lack of evidence.` — Đáng lo nhất là việc thiếu bằng chứng. Không dùng `Most troubling the lack of evidence was`.
+- `Hidden behind the trees was a small cottage.` — Khuất sau hàng cây là một ngôi nhà nhỏ.
+- `Standing beside the gate was an elderly man.` — Đứng cạnh cổng là một ông lão.
+
+Hai câu cuối đưa cụm phân từ (`-ed` hoặc `-ing`) lên đầu để dựng cảnh, rồi để người hoặc vật mới xuất hiện ở cuối câu. Nếu chủ ngữ chỉ là đại từ, dùng câu thường: `It was hidden behind the trees` — Nó nằm khuất sau hàng cây.
+
+## Cụm nơi chốn và hướng: đảo động từ chính
 
 - `On the wall hung a large portrait.` — Trên tường treo một bức chân dung lớn.
 - `Into the room walked the director.` — Vị giám đốc bước vào phòng.
 
-Với chủ ngữ đại từ, trật tự chủ ngữ–động từ thường được giữ:
-
-- `Into the room she walked`, không ưu tiên `Into the room walked she` trong tiếng Anh hiện đại.
-
-Dạng đảo này trình bày cảnh trước rồi giới thiệu nhân vật/vật mới, phù hợp nguyên tắc thông tin cũ–mới.
+Kiểu đảo này chỉ dùng được khi đủ ba điều kiện. Thứ nhất, động từ là nội động từ chỉ vị trí, chuyển động hoặc xuất hiện như `be`, `stand`, `lie`, `hang`, `come`, `walk`. Thứ hai, chủ ngữ là cụm danh từ: với đại từ, giữ `Into the room she walked` (Cô ấy bước vào phòng). Thứ ba, động từ chính tự đứng trước chủ ngữ, không mượn `do`: không dùng `Into the room did the director walk`.
 
 ## Chủ đề hóa khác tách chủ đề sang trái
 
-`This book, I really enjoyed` là chủ đề hóa: `this book` chính là tân ngữ đã được chuyển khỏi vị trí sau `enjoyed`; không có đại từ lặp lại.
+`This book, I really enjoyed` (Cuốn sách này thì tôi rất thích) là chủ đề hóa: `this book` chính là tân ngữ đã được chuyển khỏi vị trí sau `enjoyed`; không có đại từ lặp lại.
 
-`This book, I really enjoyed it` là **cấu trúc tách sang trái** (*left dislocation*) trong văn nói: `this book` đứng ngoài cấu trúc chính và `it` giữ vị trí tân ngữ bên trong. Dạng thứ hai sẽ được học ở bài ngữ pháp hội thoại; nó phổ biến trong hội thoại nhưng thường không phù hợp văn viết trang trọng.
+`This book, I really enjoyed it` (cùng nghĩa) là **cấu trúc tách sang trái** (*left dislocation*) trong văn nói: `this book` đứng ngoài cấu trúc chính và `it` giữ vị trí tân ngữ bên trong. Dạng thứ hai sẽ được học ở bài ngữ pháp hội thoại; nó phổ biến trong hội thoại nhưng thường không phù hợp văn viết trang trọng.
 
 ## Không phải thành phần nào cũng đưa lên đầu được
 
 Một thành phần được đưa lên đầu phải còn có quan hệ rõ với phần trống hoặc vai trò trong câu:
 
-- rõ: `That kind of behaviour, I will not tolerate.` — `that kind of behaviour` là tân ngữ của `tolerate`.
-- khó hiểu: `That kind of behaviour, the meeting ended early.` — Không có vị trí hay quan hệ rõ giữa chủ đề và mệnh đề sau.
+- rõ: `That kind of behaviour, I will not tolerate.` — Kiểu hành vi đó thì tôi sẽ không dung thứ. `That kind of behaviour` là tân ngữ của `tolerate`.
+- khó hiểu: `That kind of behaviour, the meeting ended early.` — câu ghép một chủ đề với mệnh đề “cuộc họp kết thúc sớm” mà không có vị trí hay quan hệ rõ giữa hai phần.
 
 Nếu cần một quan hệ rộng hơn như “về vấn đề đó”, hãy dùng dấu hiệu rõ: `As for that kind of behaviour, we will discuss it tomorrow` — “Còn về kiểu hành vi đó, chúng ta sẽ bàn ngày mai.”
-
-## Cấu trúc có đánh dấu và tiêu điểm
-
-So sánh:
-
-| Câu | Cách tổ chức |
-| --- | --- |
-| `I found the final chapter difficult.` | câu trung tính, thông tin mới ở cuối |
-| `The final chapter I found difficult.` | đối lập chương cuối với phần khác |
-| `Difficult though the final chapter was, I enjoyed it.` | đưa tính từ lên để tạo nhượng bộ trang trọng |
-
-Việc đưa thành phần lên đầu thay đổi cách người đọc phân bổ chú ý. Nó không nhất thiết thay đổi sự thật được mô tả.
 
 ## Liên kết nhiều câu
 
@@ -97,14 +94,14 @@ Việc đưa thành phần lên đầu thay đổi cách người đọc phân b
 2. Viết câu trung tính trước.
 3. Chỉ đưa một thành phần lên đầu nếu cần duy trì chủ đề, tạo tương phản hoặc dựng cảnh.
 4. Kiểm tra phần được đưa lên đầu vẫn có vai trò rõ trong cấu trúc.
-5. Kiểm tra kiểu đưa thành phần lên đầu đó có kéo theo đảo hay không; chủ đề hóa tân ngữ thường không đảo.
+5. Kiểm tra kiểu đưa thành phần lên đầu đó có kéo theo đảo hay không (bảng ở trên).
 6. Đọc cả đoạn, không đánh giá câu tách khỏi ngữ cảnh.
 
 ## Ghi nhớ
 
 - Trật tự thông tin cũ–mới thường đưa thông tin đã biết lên sớm và thông tin mới về cuối.
-- Đưa thành phần lên đầu câu có thể dùng để làm chủ đề, tạo tương phản hoặc dựng cảnh.
-- Đưa tân ngữ lên đầu thường giữ trật tự chủ ngữ–động từ trong phần còn lại.
-- Cụm nơi chốn đầu câu có thể kéo động từ trước chủ ngữ danh từ, nhưng thường không làm vậy với đại từ.
-- Đưa chủ đề lên đầu (*topicalisation*) không lặp đại từ; cấu trúc tách sang trái trong văn nói thường có đại từ nối lại.
+- Đưa tân ngữ lên đầu và mẫu nhượng bộ `Adj + though + chủ ngữ + động từ` không đảo.
+- Bổ ngữ so sánh hoặc phân từ của `be` đứng đầu thì `be` đứng trước chủ ngữ dài, mới.
+- Cụm nơi chốn/hướng đứng đầu kéo nội động từ chỉ vị trí hoặc chuyển động lên trước chủ ngữ danh từ, không dùng `do` và không đảo với đại từ.
+- Chủ đề hóa (*topicalisation*) không lặp đại từ; cấu trúc tách sang trái trong văn nói thường có đại từ nối lại.
 - Chỉ dùng cấu trúc có đánh dấu khi nó phục vụ mạch thông tin của cả đoạn.

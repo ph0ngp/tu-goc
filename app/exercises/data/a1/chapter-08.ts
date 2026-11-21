@@ -14,7 +14,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       "options": [
         "swim",
         "swims",
-        "swimming"
+        "to swim"
       ],
       "answer": "swim"
     },
@@ -97,9 +97,9 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "ca7",
       "kind": "sort",
-      "prompt": "Dựa vào can và can’t.",
+      "prompt": "Phân loại câu theo nghĩa: có khả năng hay không có khả năng.",
       "hint": "can là có thể; can’t là không thể.",
-      "explanation": "Bốn câu đã được phân loại theo nghĩa.",
+      "explanation": "`Can` cho biết có khả năng; `can’t` cho biết không có khả năng.",
       "buckets": [
         "Có khả năng",
         "Không có khả năng"
@@ -126,9 +126,9 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "ca8",
       "kind": "grid",
-      "prompt": "Kiểm tra khẳng định, phủ định và câu hỏi.",
+      "prompt": "Chọn câu đúng cho từng ý: khẳng định, phủ định và câu hỏi.",
       "hint": "Sau can/can’t luôn dùng động từ cơ bản.",
-      "explanation": "Ba dạng câu đều giữ đúng cấu trúc can.",
+      "explanation": "Câu khẳng định, phủ định và câu hỏi đều giữ `can` hoặc `can’t` cùng động từ cơ bản; câu hỏi đưa `can` lên trước chủ ngữ.",
       "rows": [
         {
           "cue": "Anh ấy biết bơi.",
@@ -145,7 +145,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
           "options": [
             "They can’t help.",
             "They don’t can help.",
-            "They can’t helping."
+            "They can’t to help."
           ],
           "answer": "They can’t help.",
           "completed": "They can’t help."
@@ -170,14 +170,14 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       "explanation": "Ba tình huống ôn lại hiện tại đơn và thêm cấu trúc chỉ khả năng với `can`.",
       "rows": [
         {
-          "cue": "Lan thường đọc.",
+          "cue": "Lan hay đọc sách.",
           "options": [
-            "Lan often reads.",
-            "Lan often read.",
-            "Lan is often read."
+            "Lan often reads books.",
+            "Lan often read books.",
+            "Lan is often read books."
           ],
-          "answer": "Lan often reads.",
-          "completed": "Lan often reads."
+          "answer": "Lan often reads books.",
+          "completed": "Lan often reads books."
         },
         {
           "cue": "Hỏi Lan có thích sách không.",
@@ -205,7 +205,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       "id": "ca10",
       "kind": "choice",
       "prompt": "Câu nào có cùng nghĩa với câu `She can’t drive`?",
-      "hint": "can’t là dạng rút gọn của cannot.",
+      "hint": "Tìm câu dùng dạng đầy đủ của `can’t` và vẫn giữ động từ cơ bản.",
       "explanation": "She cannot drive. và She can’t drive. có cùng nghĩa.",
       "options": [
         "She cannot drive.",
@@ -217,7 +217,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "ca11",
       "kind": "grid",
-      "prompt": "Can không đổi theo chủ ngữ và không đi với to trong mẫu này.",
+      "prompt": "Chọn câu đúng với `can` cho từng chủ ngữ.",
       "hint": "Sau can luôn dùng động từ cơ bản.",
       "explanation": "Ba chủ ngữ khác nhau đều dùng cùng một dạng can + động từ.",
       "rows": [
@@ -236,7 +236,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
           "options": [
             "She can read.",
             "She cans read.",
-            "She can reading."
+            "She can reads."
           ],
           "answer": "She can read.",
           "completed": "She can read."
@@ -256,9 +256,9 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     {
       "id": "ca12",
       "kind": "grid",
-      "prompt": "Phân biệt động từ cơ bản và dạng he/she/it.",
-      "hint": "I dùng dạng cơ bản; Lan và the cat dùng dạng ngôi thứ ba số ít.",
-      "explanation": "Ba câu đã dùng đúng dạng động từ trong câu khẳng định.",
+      "prompt": "Chọn câu đúng cho mỗi câu tiếng Việt, chú ý dạng động từ khi có và không có `can`.",
+      "hint": "Khi không có `can`, động từ đổi theo chủ ngữ; khi có `can`, động từ sau `can` luôn ở dạng cơ bản.",
+      "explanation": "Câu không có `can` chia động từ theo chủ ngữ; câu có `can` giữ nguyên `can` và động từ cơ bản sau nó.",
       "rows": [
         {
           "cue": "Tôi làm việc mỗi ngày.",
@@ -281,23 +281,23 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
           "completed": "Lan studies English."
         },
         {
-          "cue": "Con mèo có một chiếc giường.",
+          "cue": "Lan biết nói tiếng Anh.",
           "options": [
-            "The cat has a bed.",
-            "The cat have a bed.",
-            "The cat is a bed."
+            "Lan can speak English.",
+            "Lan can speaks English.",
+            "Lan cans speak English."
           ],
-          "answer": "The cat has a bed.",
-          "completed": "The cat has a bed."
+          "answer": "Lan can speak English.",
+          "completed": "Lan can speak English."
         }
       ]
     },
     {
       "id": "ca13",
       "kind": "grid",
-      "prompt": "Chọn đúng do/does và vị trí trạng từ.",
-      "hint": "Phủ định và câu hỏi dùng trợ động từ; trạng từ đứng trước động từ hành động.",
-      "explanation": "Ba hệ thống quan trọng đã được kết hợp đúng.",
+      "prompt": "Chọn câu phủ định hoặc câu hỏi đúng cho mỗi câu tiếng Việt.",
+      "hint": "Câu có động từ thường cần trợ động từ của hiện tại đơn; câu có `can` tự đưa `can` lên trước chủ ngữ.",
+      "explanation": "Động từ thường cần `doesn’t` hoặc `do` để tạo phủ định và câu hỏi; `can` tự tạo câu hỏi mà không cần thêm trợ động từ nào khác.",
       "rows": [
         {
           "cue": "Cô ấy không thích trà.",
@@ -320,33 +320,33 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
           "completed": "Do they work here?"
         },
         {
-          "cue": "Lan thường đọc.",
+          "cue": "Họ có biết bơi không?",
           "options": [
-            "Lan often reads.",
-            "Lan reads often always.",
-            "Lan is often read."
+            "Can they swim?",
+            "Do they can swim?",
+            "Are they swim?"
           ],
-          "answer": "Lan often reads.",
-          "completed": "Lan often reads."
+          "answer": "Can they swim?",
+          "completed": "Can they swim?"
         }
       ]
     },
     {
       "id": "ca14",
       "kind": "grid",
-      "prompt": "Kết hợp đại từ tân ngữ với `can`.",
+      "prompt": "Chọn câu đúng cho mỗi câu tiếng Việt có `can` và đại từ tân ngữ.",
       "hint": "Đại từ sau động từ dùng dạng tân ngữ; sau `can` là động từ cơ bản.",
-      "explanation": "Ba tình huống kết hợp đúng `can` với `me/us/it` và động từ cơ bản.",
+      "explanation": "Đại từ tân ngữ `her`, `us`, `it` đứng sau động từ; sau `can`, động từ giữ dạng cơ bản.",
       "rows": [
         {
-          "cue": "Tôi giúp cô ấy.",
+          "cue": "Tôi có thể giúp cô ấy.",
           "options": [
-            "I help her.",
-            "I help she.",
-            "Me help her."
+            "I can help her.",
+            "I can help she.",
+            "Me can help her."
           ],
-          "answer": "I help her.",
-          "completed": "I help her."
+          "answer": "I can help her.",
+          "completed": "I can help her."
         },
         {
           "cue": "Cô ấy có thể giúp chúng tôi.",
@@ -378,12 +378,12 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       ["Câu nào dùng để xin phép mở cửa sổ?", ["Can I open the window?", "Can you open the window?", "I can open the window."], "Can I open the window?", "`Can I ...?` hỏi người nói có được phép làm hay không."],
       ["Câu nào là lời nhờ người nghe đóng cửa?", ["Can you close the door?", "Can I close the door?", "You can close the door."], "Can you close the door?", "`Can you ...?` thường dùng để yêu cầu người nghe làm việc."],
       ["Câu nào là lời đề nghị giúp mang túi?", ["Can I carry your bag?", "Can you carry my bag?", "I can't carry your bag."], "Can I carry your bag?", "Người nói đề nghị tự mình giúp người nghe."],
-      ["Cách nào lịch sự hơn cho cùng lời yêu cầu?", ["Can you wait, please?", "You wait.", "Wait now!"], "Can you wait, please?", "Câu hỏi với `can` và `please` làm yêu cầu mềm hơn."],
+      ["Bạn muốn nhờ người nghe chờ một chút. Câu nào lịch sự nhất?", ["Can you wait, please?", "You wait.", "Wait now!"], "Can you wait, please?", "Câu hỏi với `can` và `please` làm yêu cầu mềm hơn."],
       ["Câu trả lời nào tự nhiên khi đồng ý giúp?", ["Sure.", "Yes, I do.", "Yes, I am."], "Sure.", "Lời yêu cầu với `can` thường được đáp bằng `Sure/Of course`."],
       ["Câu trả lời nào lịch sự khi từ chối lời mời lấy nước?", ["No, thank you.", "No, I don't.", "No water."], "No, thank you.", "`No, thank you` là lời từ chối lịch sự."],
       ["Câu nào có thể là câu hỏi khả năng chứ không phải yêu cầu?", ["Can you swim?", "Can you pass me the salt?", "Can you open the door for me?"], "Can you swim?", "`Swim` thường được hỏi như một kỹ năng; ngữ cảnh vẫn quyết định."],
       ["Câu nào đề nghị lấy ghế cho người nghe?", ["Can I get you a chair?", "Can you get me a chair?", "Can I have your chair?"], "Can I get you a chair?", "`Can I get you ...?` là mẫu đề nghị mang/lấy vật."],
-      ["Sau `can`, dạng nào đúng?", ["help", "to help", "helps"], "help", "Sau `can` luôn là động từ cơ bản không có `to`."],
+      ["Câu `Can I open the door for you?` có mục đích gì?", ["đề nghị giúp người nghe", "xin phép cho bản thân", "nhờ người nghe giúp"], "đề nghị giúp người nghe", "Người nói (`I`) là người sẽ mở cửa, và việc ấy làm vì người nghe (`for you`), nên câu là lời đề nghị giúp người nghe."],
       ["Câu nào xin phép cho cả nhóm ngồi đây?", ["Can we sit here?", "Can us sit here?", "Do we can sit here?"], "Can we sit here?", "Dùng `Can we + động từ cơ bản?`."],
     ],
     orders: [
@@ -393,14 +393,14 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       ["Sắp xếp lời xin phép “Chúng tôi vào được không?”", ["come", "we", "Can", "in", "?"], ["Can", "we", "come", "in", "?"], "Dùng động từ cụm `come in` sau `Can we`."],
     ],
     repairs: [
-      ["Chọn đại từ phù hợp cho lời xin phép của người nói.", ["Can", "you", "borrow", "this", "book", "?"], 1, ["I", "you", "me"], "I", "`Can I borrow...?` là lời xin phép."],
+      ["Chọn đại từ phù hợp cho lời xin phép của người nói.", ["Can", "you", "borrow", "this", "book", "?"], 1, ["I", "you", "me"], "I", "Người nói xin phép cho chính mình mượn sách, nên đại từ phải chỉ người nói: `Can I borrow this book?`"],
       ["Chọn đại từ phù hợp khi nhờ người nghe.", ["Can", "I", "help", "me", "?"], 1, ["I", "you", "we"], "you", "`Can you help me?` nhờ người nghe giúp."],
       ["Chọn cụm động từ đúng sau `can`.", ["Can", "she", "to carry", "the", "box", "?"], 2, ["carry", "to carry", "carries"], "carry", "Sau `can`, dùng trực tiếp động từ cơ bản `carry`."],
     ],
     taps: [
-      ["Trong `Can I get you some tea?`, chọn người được đề nghị nhận trà.", ["Can", "I", "get", "you", "some", "tea", "?"], [3], "`You` là người nhận lời đề nghị."],
-      ["Trong `Can you please open the window?`, chọn từ làm yêu cầu lịch sự hơn.", ["Can", "you", "please", "open", "the", "window", "?"], [2], "`Please` làm lời yêu cầu mềm hơn."],
-      ["Trong `Can we help you?`, chọn nhóm sẽ thực hiện hành động giúp.", ["Can", "we", "help", "you", "?"], [1], "`We` là chủ ngữ và là nhóm đề nghị giúp."],
+      ["Chọn người được đề nghị nhận trà trong câu `Can I get you some tea?`", ["Can", "I", "get", "you", "some", "tea", "?"], [3], "Người được mời nhận trà là người nghe, và đại từ chỉ người nghe đứng ngay sau `get`: `you`."],
+      ["Chọn từ làm lời yêu cầu lịch sự hơn trong câu `Can you please open the window?`", ["Can", "you", "please", "open", "the", "window", "?"], [2], "Từ làm lời yêu cầu mềm hơn có thể đứng ngay trước động từ chính, như trong câu này: `please`."],
+      ["Chọn nhóm sẽ thực hiện hành động giúp trong câu `Can we help you?`", ["Can", "we", "help", "you", "?"], [1], "`We` là chủ ngữ và là nhóm đề nghị giúp."],
     ],
     matchPrompt: "Ghép mỗi câu với mục đích giao tiếp chính.",
     pairs: [{ left: "Can I use your pen?", right: "xin phép" }, { left: "Can you help me?", right: "yêu cầu" }, { left: "Can I carry that?", right: "đề nghị giúp" }, { left: "Can you swim?", right: "hỏi khả năng" }],
@@ -424,15 +424,15 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     prefix: "a1qh",
     focus: "việc chọn be, do/does hoặc can trong câu hỏi",
     choices: [
-      ["Câu nào hỏi về nơi ở bằng `be`?", ["Is Lan at home?", "Does Lan at home?", "Can Lan at home?"], "Is Lan at home?", "Câu nói nơi chốn với `be` nên đảo `is`."],
+      ["Câu nào hỏi đúng xem Lan có đang ở nhà không?", ["Is Lan at home?", "Does Lan at home?", "Can Lan at home?"], "Is Lan at home?", "Lan ở nhà là thông tin về nơi chốn, được nói bằng `be`, nên câu hỏi đưa dạng của `be` hợp với `Lan` lên trước chủ ngữ."],
       ["Câu nào hỏi về thói quen làm việc?", ["Does Lan work here?", "Is Lan work here?", "Can Lan works here?"], "Does Lan work here?", "Động từ thường `work` ở hiện tại đơn dùng `does`."],
       ["Câu nào hỏi khả năng?", ["Can Lan swim?", "Does Lan can swim?", "Is Lan swim?"], "Can Lan swim?", "`Can` tự đứng trước chủ ngữ; sau nó là động từ cơ bản."],
-      ["Câu trả lời nào hợp với `Are they ready?`?", ["Yes, they are.", "Yes, they do.", "Yes, they can."], "Yes, they are.", "Câu hỏi dùng `are` nên câu trả lời ngắn giữ `are`."],
+      ["Câu trả lời nào hợp với `Are they ready?`?", ["Yes, they are.", "Yes, they do.", "Yes, they can."], "Yes, they are.", "Câu trả lời ngắn lặp lại đúng dạng `be` đứng đầu câu hỏi."],
       ["Câu trả lời nào hợp với `Do they live here?`?", ["No, they don't.", "No, they aren't.", "No, they can't."], "No, they don't.", "Câu hỏi dùng `do` nên trả lời bằng `don't`."],
-      ["Câu trả lời nào hợp với `Can she drive?`?", ["Yes, she can.", "Yes, she does.", "Yes, she is."], "Yes, she can.", "Câu hỏi dùng `can` nên trả lời bằng `can`."],
+      ["Câu trả lời nào hợp với `Can she drive?`?", ["Yes, she can.", "Yes, she does.", "Yes, she is."], "Yes, she can.", "Câu trả lời ngắn lặp lại đúng từ chỉ khả năng đứng đầu câu hỏi."],
       ["Câu nào hỏi đúng về giờ mở cửa thường lệ?", ["Does the shop open at nine?", "Is the shop opens at nine?", "Can the shop opens at nine?"], "Does the shop open at nine?", "`Open` là động từ hành động theo lịch nên dùng `does`."],
       ["Câu nào hỏi trạng thái cửa hàng hiện tại?", ["Is the shop open?", "Does the shop open?", "Can the shop open?"], "Is the shop open?", "`Open` là tính từ sau `be` trong câu này."],
-      ["Sau `does`, dạng động từ nào đúng?", ["have", "has", "having"], "have", "Sau `does`, động từ chính ở dạng cơ bản."],
+      ["Câu nào hỏi đúng “Anh ấy có xe đạp không?”", ["Does he have a bike?", "Does he has a bike?", "Is he have a bike?"], "Does he have a bike?", "Động từ chính nói sở hữu là một động từ thường, nên câu hỏi cần trợ động từ hợp với `he` chứ không dùng `be`; sau trợ động từ ấy, động từ chính trở về dạng cơ bản."],
       ["Sau `can`, dạng động từ nào đúng?", ["help", "helps", "to help"], "help", "Sau `can`, dùng động từ cơ bản không có `to`."],
     ],
     orders: [
@@ -447,9 +447,9 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       ["Chọn từ phù hợp cho câu hỏi xin phép.", ["Do", "I", "use", "your", "phone", "?"], 0, ["Can", "Do", "Am"], "Can", "`Can I use...?` là lời xin phép."],
     ],
     taps: [
-      ["Trong `Where does your sister work?`, chọn trợ động từ tạo câu hỏi.", ["Where", "does", "your", "sister", "work", "?"], [1], "`Does` tạo câu hỏi hiện tại đơn với chủ ngữ số ít."],
-      ["Trong `Why are the children tired?`, chọn dạng của `be` được đảo.", ["Why", "are", "the", "children", "tired", "?"], [1], "`Are` đứng trước chủ ngữ số nhiều."],
-      ["Trong `What can we do?`, chọn động từ khuyết thiếu.", ["What", "can", "we", "do", "?"], [1], "`Can` đứng trước chủ ngữ và động từ cơ bản `do`."],
+      ["Chọn trợ động từ tạo câu hỏi trong câu `Where does your sister work?`", ["Where", "does", "your", "sister", "work", "?"], [1], "`Does` tạo câu hỏi hiện tại đơn với chủ ngữ số ít."],
+      ["Chọn dạng của `be` được đưa lên trước chủ ngữ trong câu `Why are the children tired?`", ["Why", "are", "the", "children", "tired", "?"], [1], "`Are` đứng trước chủ ngữ số nhiều."],
+      ["Chọn động từ tình thái trong câu `What can we do?`", ["What", "can", "we", "do", "?"], [1], "`Can` đứng trước chủ ngữ và động từ cơ bản `do`."],
     ],
     matchPrompt: "Ghép mỗi câu hỏi với hệ thống ngữ pháp của nó.",
     pairs: [{ left: "Is she happy?", right: "be — đặc điểm" }, { left: "Does she work?", right: "do/does — động từ thường" }, { left: "Can she swim?", right: "can — khả năng" }, { left: "Where are they?", right: "be — nơi chốn" }],
@@ -464,9 +464,9 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       { cue: "Is she ready?", options: ["Yes, she is.", "Yes, she does.", "Yes, she can."], answer: "Yes, she is.", completed: "Is she ready? — Yes, she is." },
       { cue: "Does she work?", options: ["No, she doesn't.", "No, she isn't.", "No, she can't."], answer: "No, she doesn't.", completed: "Does she work? — No, she doesn't." },
       { cue: "Can she drive?", options: ["No, she can't.", "No, she doesn't.", "No, she isn't."], answer: "No, she can't.", completed: "Can she drive? — No, she can't." },
-      { cue: "Does he ___ a car?", options: ["have", "has", "having"], answer: "have", completed: "Does he have a car?" },
+      { cue: "Does he ___ a car?", options: ["have", "has", "have got"], answer: "have", completed: "Does he have a car?" },
       { cue: "Can she ___ us?", options: ["help", "helps", "to help"], answer: "help", completed: "Can she help us?" },
-      { cue: "Does the shop ___ at eight?", options: ["open", "opens", "opening"], answer: "open", completed: "Does the shop open at eight?" },
+      { cue: "Does the shop ___ at eight?", options: ["open", "opens", "is open"], answer: "open", completed: "Does the shop open at eight?" },
     ],
   }),
   "instructions-and-can": [
@@ -511,7 +511,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       "options": [
         "Please open the window.",
         "Please opens the window.",
-        "Opening the window please."
+        "Please to open the window."
       ],
       "answer": "Please open the window."
     },
@@ -593,17 +593,17 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
           "options": [
             "Don’t open the door.",
             "Open not the door.",
-            "Please don't opening the door."
+            "Doesn’t open the door."
           ],
           "answer": "Don’t open the door.",
           "completed": "Don’t open the door."
         },
         {
-          "cue": "Lịch sự yêu cầu đọc đoạn này",
+          "cue": "Yêu cầu lịch sự: đọc đoạn này",
           "options": [
             "Please read this passage.",
             "Please reads this passage.",
-            "Please reading this passage."
+            "Read please this passage."
           ],
           "answer": "Please read this passage.",
           "completed": "Please read this passage."
@@ -622,7 +622,7 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       ["Lời đáp nào từ chối trực tiếp lời rủ?", ["No, let's not.", "No, we don't.", "No, we aren't."], "No, let's not.", "Giữ lại mẫu `let's not`."],
       ["Câu nào chỉ yêu cầu người nghe mở cửa?", ["Open the door.", "Let's open the door.", "Let's not open the door."], "Open the door.", "Mệnh lệnh hướng tới người nghe; `let's` bao gồm người nói."],
       ["Câu nào là lời rủ cùng ăn trưa?", ["Let's have lunch.", "Let's to have lunch.", "Have lunch you."], "Let's have lunch.", "Dùng `let's + have` ở dạng cơ bản."],
-      ["Dạng nào có dấu nháy và nghĩa “chúng ta hãy”?", ["let's", "lets", "lets'"], "let's", "`Let's` là dạng viết tắt của `let us`."],
+      ["Dạng nào mang nghĩa “chúng ta hãy”?", ["let's", "lets", "let"], "let's", "`Let's` là dạng viết tắt của `let us` và dùng để rủ cùng làm; `lets` là dạng hiện tại đơn của động từ `let` với ngôi thứ ba số ít."],
       ["`She lets me go` dùng `lets` theo nghĩa gì?", ["cho phép", "chúng ta hãy", "không làm"], "cho phép", "`Lets` không dấu nháy là dạng động từ của `let`."],
       ["Câu nào rủ cả nhóm bắt đầu ngay?", ["Let's start now.", "Start now.", "Can you start now?"], "Let's start now.", "`Let's` cho biết người nói cũng tham gia việc bắt đầu."],
     ],
@@ -633,9 +633,9 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       ["Sắp xếp lời rủ “Chúng ta bắt đầu ngay nhé.”", ["now", "Let’s", "start", "."], ["Let’s", "start", "now", "."], "Dùng `let's + động từ cơ bản`; `now` đứng cuối câu."],
     ],
     repairs: [
-      ["Chọn cụm động từ đúng sau `let's`.", ["Let’s", "to go", "now", "."], 1, ["go", "to go", "going"], "go", "Sau `let's`, dùng trực tiếp động từ cơ bản `go`."],
+      ["Chọn cụm động từ đúng sau `let's`.", ["Let’s", "to go", "now", "."], 1, ["go", "to go", "goes"], "go", "Sau `let's`, dùng trực tiếp động từ cơ bản `go`."],
       ["Chọn từ phủ định đúng sau `let's`.", ["Let’s", "no", "tell", "Lan", "."], 1, ["not", "no", "doesn't"], "not", "Mẫu chuẩn là `Let's not tell Lan`."],
-      ["Chọn dạng có dấu nháy cho lời rủ.", ["Lets", "have", "a", "break", "."], 0, ["Let's", "Lets", "Lets'"], "Let's", "Lời rủ dùng dạng viết tắt `let's`."],
+      ["Chọn dạng đúng cho lời rủ cả nhóm nghỉ giải lao.", ["Lets", "have", "a", "break", "."], 0, ["Let's", "Lets", "Let"], "Let's", "Lời rủ dùng dạng viết tắt của `let us`, có dấu nháy; `lets` không có dấu nháy là một dạng của động từ `let`."],
     ],
     taps: [
       ["Trong `Let's take the bus`, chọn phần cho biết người nói rủ cả nhóm cùng làm.", ["Let’s", "take", "the", "bus", "."], [0], "`Let's` mang ý “người nói và người nghe cùng...”."],
@@ -665,13 +665,13 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     focus: "would like + danh từ hoặc to-infinitive",
     choices: [
       ["Câu nào nói muốn một ít trà?", ["I'd like some tea.", "I like to some tea.", "I would some tea."], "I'd like some tea.", "Dùng `would like + danh từ`."],
-      ["Câu nào nói muốn đi về nhà?", ["I'd like to go home.", "I'd like go home.", "I would like going home."], "I'd like to go home.", "Muốn làm việc gì: `would like + to + động từ`."],
+      ["Câu nào nói muốn đi về nhà?", ["I'd like to go home.", "I'd like go home.", "I'd like to home."], "I'd like to go home.", "Muốn làm việc gì: `would like + to + động từ`."],
       ["Câu hỏi lời mời nào đúng?", ["Would you like some coffee?", "Do you would like coffee?", "Would you likes coffee?"], "Would you like some coffee?", "Đưa `would` lên trước chủ ngữ; `like` giữ nguyên."],
       ["Câu nào mời người nghe đi cùng?", ["Would you like to come with us?", "Would you like come with us?", "Do you like to come now?"], "Would you like to come with us?", "Lời mời hành động dùng `to come`."],
-      ["`She'd like a window seat` mở rộng `'d` thành gì?", ["would", "did", "had"], "would", "Trong cấu trúc này, `'d` là `would`."],
+      ["`She'd like a window seat` mở rộng `'d` thành gì?", ["would", "did", "had"], "would", "`'d` đứng trước `like` để nói mong muốn một cách lịch sự, nên nó là dạng viết tắt của từ mở đầu câu mời `Would you like ...?`"],
       ["Lời đáp nào tự nhiên khi nhận một lời mời làm gì?", ["Yes, I'd love to.", "Yes, I do like.", "Yes, I would coffee."], "Yes, I'd love to.", "`I'd love to` là lời nhận lời nhiệt tình."],
       ["Lời đáp nào lịch sự khi không muốn đồ uống?", ["No, thank you.", "No, I don't like.", "No, I wouldn't tea."], "No, thank you.", "`No, thank you` từ chối lời mời lịch sự."],
-      ["Câu nào nói sở thích nói chung?", ["I like coffee.", "I'd like some coffee.", "I would coffee."], "I like coffee.", "Hiện tại đơn `like` nói sở thích; `would like` nói mong muốn cụ thể."],
+      ["Câu nào nói sở thích nói chung?", ["I like coffee.", "I'd like some coffee.", "I would coffee."], "I like coffee.", "Hiện tại đơn nói sở thích chung, còn cách nói có `would` nói mong muốn trong một lúc cụ thể."],
       ["Câu nào nói mong muốn ở thời điểm này?", ["I'd like some coffee.", "I like coffee every day.", "Coffee likes me."], "I'd like some coffee.", "`Would like` thường nói điều muốn trong tình huống hiện tại."],
       ["Dạng phủ định nào đúng?", ["I wouldn't like to live there.", "I don't would like to live there.", "I wouldn't like live there."], "I wouldn't like to live there.", "Phủ định `wouldn't like`; hành động vẫn cần `to`."],
     ],
@@ -682,13 +682,13 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
       ["Sắp xếp câu “Tôi muốn một cốc nước.”", ["water", "like", "glass", "I’d", "a", "of", "."], ["I’d", "like", "a", "glass", "of", "water", "."], "Danh từ lượng đứng sau `would like`."],
     ],
     repairs: [
-      ["Chọn từ cần có trước động từ `leave`.", ["They’d", "like", "leave", "now", "."], 2, ["to leave", "leave", "leaving"], "to leave", "Sau `would like`, hành động dùng `to-infinitive`."],
-      ["Chọn dạng động từ đúng sau `would`.", ["Would", "she", "likes", "some", "tea", "?"], 2, ["like", "likes", "to liking"], "like", "`Would` đi với dạng cơ bản `like`."],
+      ["Chọn dạng động từ đúng sau `would like`.", ["They’d", "like", "leave", "now", "."], 2, ["to leave", "leave", "leaves"], "to leave", "Sau `would like`, hành động dùng `to` + động từ cơ bản."],
+      ["Chọn dạng đúng của `like` sau `would`.", ["Would", "she", "likes", "some", "tea", "?"], 2, ["like", "likes", "to like"], "like", "Sau `would`, động từ luôn ở dạng cơ bản, dù chủ ngữ là `she`."],
       ["Chọn dạng phủ định của `would`.", ["I", "don’t would", "like", "to", "work", "at", "night", "."], 1, ["wouldn't", "don't would", "doesn't would"], "wouldn't", "Dùng trực tiếp `wouldn't like`; không thêm `don't` trước `would`."],
     ],
     taps: [
       ["Trong `I'd like a sandwich and I'd like to sit down`, chọn hai dạng viết tắt của `would`.", ["I’d", "like", "a", "sandwich", "and", "I’d", "like", "to", "sit", "down", "."], [0, 5], "Cả hai `I'd` đều là `I would`."],
-      ["Trong `Would you like to join us?`, chọn toàn bộ cụm động từ nói điều người nghe muốn làm.", ["Would", "you", "like", "to", "join", "us", "?"], [2, 3, 4], "`Like to join` mang nghĩa muốn tham gia."],
+      ["Chọn toàn bộ phần nói việc người nghe được mời làm trong câu `Would you like to join us?`", ["Would", "you", "like", "to", "join", "us", "?"], [3, 4, 5], "Việc người nghe được mời làm là toàn bộ phần đứng sau `like`: `to join us`."],
       ["Trong `I like tea, but I'd like coffee now`, chọn phần nói mong muốn cụ thể.", ["I", "like", "tea", ",", "but", "I’d", "like", "coffee", "now", "."], [5, 6, 7, 8], "`I'd like coffee now` nói mong muốn ở hiện tại."],
     ],
     matchPrompt: "Ghép mỗi cấu trúc với ý nghĩa phù hợp.",
@@ -699,10 +699,10 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
     gridPrompts: ["Chọn phần theo sau `would like` cho từng ý.", "Chọn câu hỏi lịch sự đúng.", "Chọn câu đáp tự nhiên cho từng lời mời."],
     gridRows: [
       { cue: "muốn một chiếc bánh", options: ["a cake", "to cake", "cake to"], answer: "a cake", completed: "I'd like a cake." },
-      { cue: "muốn ăn một chiếc bánh", options: ["to eat a cake", "eat a cake", "eating a cake"], answer: "to eat a cake", completed: "I'd like to eat a cake." },
-      { cue: "muốn nghỉ", options: ["to rest", "rest", "resting"], answer: "to rest", completed: "I'd like to rest." },
+      { cue: "muốn ăn một chiếc bánh", options: ["to eat a cake", "eat a cake", "eats a cake"], answer: "to eat a cake", completed: "I'd like to eat a cake." },
+      { cue: "muốn nghỉ", options: ["to rest", "rest", "rests"], answer: "to rest", completed: "I'd like to rest." },
       { cue: "mời dùng trà", options: ["Would you like some tea?", "Do you would like tea?", "Would you likes tea?"], answer: "Would you like some tea?", completed: "Would you like some tea?" },
-      { cue: "mời đi cùng", options: ["Would you like to come?", "Would you like come?", "Do you like coming now?"], answer: "Would you like to come?", completed: "Would you like to come?" },
+      { cue: "mời đi cùng", options: ["Would you like to come?", "Would you like come?", "Do you would like to come?"], answer: "Would you like to come?", completed: "Would you like to come?" },
       { cue: "hỏi cô ấy muốn gì", options: ["What would she like?", "What does she would like?", "What would she likes?"], answer: "What would she like?", completed: "What would she like?" },
       { cue: "Would you like some cake?", options: ["Yes, please.", "Yes, I do.", "Yes, I am."], answer: "Yes, please.", completed: "Would you like some cake? — Yes, please." },
       { cue: "Would you like to come?", options: ["Yes, I'd love to.", "Yes, I love.", "Yes, I come."], answer: "Yes, I'd love to.", completed: "Would you like to come? — Yes, I'd love to." },
@@ -714,15 +714,15 @@ const a1Chapter08BaseExerciseData: Record<string, Exercise[]> = {
 const a1Chapter08TopUps: Partial<Record<string, Exercise[]>> = {
   "ability-can": [
     ...binaryChoiceDrills("a1cax", 1, "can/can't chỉ khả năng", [
-      ["khả năng bơi của tôi", "I can swim.", "I can to swim.", "Sau `can`, dùng động từ cơ bản không có `to`."],
-      ["khả năng đọc của cô ấy", "She can read.", "She can reads.", "Sau `can`, không thêm `-s`."],
-      ["không biết lái xe", "He can't drive.", "He doesn't can drive.", "Phủ định của `can` là `can't/cannot`."],
+      ["câu “Tôi biết bơi”", "I can swim.", "I can to swim.", "Sau `can`, dùng động từ cơ bản không có `to`."],
+      ["câu “Cô ấy biết đọc”", "She can read.", "She can reads.", "Sau `can`, không thêm `-s`."],
+      ["câu “Anh ấy không biết lái xe”", "He can't drive.", "He doesn't can drive.", "Phủ định của `can` là `can't/cannot`."],
       ["dạng đầy đủ của `can't`", "cannot", "can", "Dạng đầy đủ thông dụng là một từ `cannot`."],
-      ["hỏi khả năng nói tiếng Anh", "Can you speak English?", "Do you can speak English?", "Đưa `can` lên trước chủ ngữ; không dùng `do`."],
-      ["trả lời khẳng định về khả năng", "Yes, I can.", "Yes, I do can.", "Câu trả lời ngắn giữ `can`."],
-      ["trả lời phủ định về Lan", "No, she can't.", "No, she doesn't can.", "Thay Lan bằng `she` và dùng `can't`."],
-      ["hỏi việc có thể làm", "What can you do?", "What do you can do?", "Từ hỏi đứng trước `can`."],
-      ["hỏi người có thể giúp", "Who can help me?", "Who does can help me?", "`Who` là chủ ngữ và đứng trước `can`."],
+      ["câu hỏi “Bạn có nói được tiếng Anh không?”", "Can you speak English?", "Do you can speak English?", "Đưa `can` lên trước chủ ngữ; không dùng `do`."],
+      ["câu trả lời khẳng định cho câu hỏi “Can you swim?”", "Yes, I can.", "Yes, I do can.", "Câu trả lời ngắn giữ `can`."],
+      ["câu trả lời phủ định cho câu hỏi “Can Lan cook?”", "No, she can't.", "No, she doesn't can.", "Thay `Lan` bằng `she` và dùng lại `can't`; không thêm `doesn't`."],
+      ["câu hỏi “Bạn có thể làm gì?”", "What can you do?", "What do you can do?", "Từ hỏi đứng trước `can`."],
+      ["câu hỏi “Ai có thể giúp tôi?”", "Who can help me?", "Who does can help me?", "`Who` là chủ ngữ và đứng trước `can`."],
     ]),
     {
       id: "a1cax10", kind: "match", prompt: "Ghép mỗi khả năng với câu diễn đạt đúng.",
@@ -740,18 +740,18 @@ const a1Chapter08TopUps: Partial<Record<string, Exercise[]>> = {
     ...binaryChoiceDrills("a1imx", 1, "câu mệnh lệnh", [
       ["lời hướng dẫn mở sách", "Open your book.", "You opens your book.", "Mệnh lệnh bắt đầu bằng động từ cơ bản."],
       ["lời hướng dẫn ngồi xuống", "Sit down.", "To sit down.", "Không đặt `to` trước động từ mệnh lệnh."],
-      ["lời yêu cầu lịch sự chờ", "Please wait.", "Please waits.", "Sau `please`, động từ vẫn ở dạng cơ bản."],
-      ["lời yêu cầu lịch sự ở cuối", "Come in, please.", "Come please in.", "`Please` có thể đứng cuối sau dấu phẩy."],
-      ["mệnh lệnh phủ định chạy", "Don't run.", "Doesn't run.", "Mệnh lệnh phủ định dùng `don't`."],
-      ["mệnh lệnh phủ định với `be`", "Don't be late.", "Don't are late.", "Sau `don't`, dùng dạng cơ bản `be`."],
-      ["cảnh báo cẩn thận", "Be careful!", "Are careful!", "Mệnh lệnh dùng `be` ở dạng cơ bản."],
+      ["lời nhờ người nghe chờ một cách lịch sự", "Please wait.", "Please waits.", "Sau `please`, động từ vẫn ở dạng cơ bản."],
+      ["lời mời vào nhà có `please` ở cuối câu", "Come in, please.", "Come please in.", "`Please` có thể đứng cuối sau dấu phẩy."],
+      ["lời bảo người nghe đừng chạy", "Don't run.", "Doesn't run.", "Mệnh lệnh phủ định dùng `don't`."],
+      ["lời nhắc người nghe đừng đến muộn", "Don't be late.", "Don't are late.", "Sau `don't`, dùng dạng cơ bản `be`."],
+      ["lời nhắc người nghe cẩn thận", "Be careful!", "Are careful!", "Mệnh lệnh dùng `be` ở dạng cơ bản."],
       ["chỉ dẫn rẽ trái", "Turn left.", "Turns left.", "Động từ đầu câu không thêm `-s`."],
-      ["hướng dẫn thêm nước", "Add water.", "Adding water.", "Mỗi bước hướng dẫn bắt đầu bằng động từ cơ bản."],
-      ["cấm chạm vào vật", "Don't touch it.", "Not touch it.", "Dùng `don't + động từ cơ bản`."],
+      ["bước hướng dẫn thêm nước", "Add water.", "Adds water.", "Mỗi bước hướng dẫn bắt đầu bằng động từ cơ bản."],
+      ["lời cấm chạm vào một đồ vật", "Don't touch it.", "Not touch it.", "Dùng `don't + động từ cơ bản`."],
       ["một mệnh lệnh, không phải câu kể về thói quen", "Close the door.", "You close the door every day.", "Mệnh lệnh bắt đầu ngay bằng động từ cơ bản vì chủ ngữ `you` được hiểu ngầm; câu kể về thói quen thì nêu rõ chủ ngữ."],
       ["dấu câu cho cảnh báo mạnh", "Look out!", "Look out?", "Dấu chấm than phù hợp với cảnh báo mạnh."],
-      ["mệnh lệnh nhiều bước đầu tiên", "Wash the rice.", "Washes the rice.", "Động từ hướng dẫn ở dạng cơ bản."],
-      ["mệnh lệnh nhiều bước phủ định", "Don't open the lid.", "Doesn't open the lid.", "Câu mệnh lệnh phủ định không dùng `doesn't`."],
+      ["bước đầu tiên khi nấu cơm", "Wash the rice.", "Washes the rice.", "Động từ hướng dẫn ở dạng cơ bản."],
+      ["bước dặn không mở nắp nồi", "Don't open the lid.", "Doesn't open the lid.", "Câu mệnh lệnh phủ định không dùng `doesn't`."],
     ]),
     {
       id: "a1imx15", kind: "match", prompt: "Ghép mỗi mệnh lệnh với mục đích chính.",
@@ -767,8 +767,57 @@ const a1Chapter08TopUps: Partial<Record<string, Exercise[]>> = {
     {
       id: "a1imx17", kind: "repair", prompt: "Chọn dạng động từ đúng trong mệnh lệnh.",
       tokens: ["Please", "opens", "the", "window", "."], targetIndex: 1,
-      replacements: ["open", "opens", "opening"], answer: "open",
+      replacements: ["open", "opens", "to open"], answer: "open",
       hint: "Sau `please`, dùng động từ cơ bản.", explanation: "Câu đúng là `Please open the window.`",
+    },
+  ],
+  // Bài chọn `be`, `do/does` hay `can` có ba nhánh dễ nhầm, nhất là khi có từ hỏi đứng trước.
+  "question-helpers": [
+    {
+      id: "a1qhx1", kind: "choice", prompt: "Câu nào hỏi đúng “Bạn có phải là học sinh không?”",
+      options: ["Are you a student?", "Do you a student?", "Can you a student?"],
+      answer: "Are you a student?",
+      hint: "Viết câu kể trước: người nghe là ai? Câu kể ấy dùng động từ nào?",
+      explanation: "Câu kể là `You are a student`, nên câu hỏi đưa `are` lên trước chủ ngữ; không thêm `do` hay `can`.",
+    },
+    {
+      id: "a1qhx2", kind: "choice", prompt: "Câu nào hỏi đúng “Bạn có thể nấu món gì?”",
+      options: ["What can you cook?", "What do you can cook?", "What can you cooks?"],
+      answer: "What can you cook?",
+      hint: "Từ hỏi đứng đầu; sau đó là từ chỉ khả năng, chủ ngữ và động từ.",
+      explanation: "Từ hỏi đứng trước `can`; `can` không cần `do`, và động từ sau nó giữ dạng cơ bản.",
+    },
+    {
+      id: "a1qhx3", kind: "repair", prompt: "Sửa từ đứng sau `Where` trong câu hỏi về nơi làm việc.",
+      tokens: ["Where", "is", "your", "father", "work", "?"], targetIndex: 1,
+      replacements: ["does", "is", "can"], answer: "does",
+      hint: "Câu kể tương ứng là `Your father works there`: động từ chính là một động từ thường.",
+      explanation: "`Work` là động từ thường ở hiện tại đơn, nên câu hỏi cần `does`: `Where does your father work?`",
+    },
+  ],
+  // Bài would like còn hai chỗ dễ nhầm chưa được luyện đủ: like/would like khi gọi món và mời, và câu hỏi có từ hỏi.
+  "would-like": [
+    {
+      id: "a1wlx1", kind: "context", prompt: "Chọn câu phù hợp để gọi đồ uống.",
+      context: "Bạn đang ở quán và muốn gọi một cốc nước cam.",
+      options: ["I'd like an orange juice, please.", "I like an orange juice, please.", "I'd like to an orange juice, please."],
+      answer: "I'd like an orange juice, please.",
+      hint: "Bạn đang nói điều mình muốn ngay lúc này, và thứ bạn muốn là một vật.",
+      explanation: "`Would like` nói mong muốn lúc gọi món; sau nó là danh từ nên không cần `to`. `I like ...` chỉ nói sở thích chung.",
+    },
+    {
+      id: "a1wlx2", kind: "order", prompt: "Sắp xếp câu hỏi “Bạn muốn uống gì?”",
+      tokens: ["you", "What", "drink", "like", "would", "to", "?"],
+      answer: ["What", "would", "you", "like", "to", "drink", "?"],
+      hint: "Từ hỏi đứng đầu, rồi đến phần đưa lên trước chủ ngữ; hành động đi sau `like`.",
+      explanation: "`What` đứng đầu, `would` đứng trước chủ ngữ `you`, và hành động dùng `to drink`.",
+    },
+    {
+      id: "a1wlx3", kind: "repair", prompt: "Sửa từ mở đầu để câu thành lời mời dùng trà.",
+      tokens: ["Do", "you", "like", "some", "tea", "?"], targetIndex: 0,
+      replacements: ["Would", "Do", "Are"], answer: "Would",
+      hint: "Lời mời hỏi mong muốn lúc này, không hỏi sở thích chung.",
+      explanation: "Khi mời đồ uống, dùng `Would you like some tea?`; `Do you like tea?` chỉ hỏi người nghe có thích trà nói chung không.",
     },
   ],
 };
@@ -780,7 +829,7 @@ const a1Chapter08DepthExtensions: Partial<Record<string, Exercise[]>> = {
     explanation: "Ba câu lần lượt là hướng dẫn, yêu cầu lịch sự và mệnh lệnh phủ định.",
     rows: [
       { cue: "hướng dẫn bật đèn", options: ["Turn on the light.", "Turns on the light.", "To turn on the light."], answer: "Turn on the light.", completed: "Turn on the light." },
-      { cue: "lịch sự yêu cầu nói chậm", options: ["Please speak slowly.", "Please speaks slowly.", "Speaking slowly."], answer: "Please speak slowly.", completed: "Please speak slowly." },
+      { cue: "Yêu cầu lịch sự: nói chậm", options: ["Please speak slowly.", "Please speaks slowly.", "Don't speak slowly."], answer: "Please speak slowly.", completed: "Please speak slowly." },
       { cue: "cấm dùng chiếc ghế này", options: ["Don't use this chair.", "Doesn't use this chair.", "Not use this chair."], answer: "Don't use this chair.", completed: "Don't use this chair." },
     ],
   }],

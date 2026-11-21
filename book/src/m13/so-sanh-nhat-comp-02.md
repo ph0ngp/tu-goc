@@ -5,7 +5,7 @@ legacyLessonId: a2-superlatives
 ---
 # So sánh nhất
 
-So sánh nhất (*superlative*) dùng khi một người hoặc vật có mức độ cao nhất hoặc thấp nhất trong một nhóm. Ta thường gặp nó khi so sánh từ ba thành viên trở lên, nhưng ngữ cảnh thực tế cũng có thể dùng so sánh nhất để chọn thành viên nổi bật trong một nhóm nhỏ đã xác định.
+So sánh nhất (*superlative*) dùng khi một người hoặc vật có mức độ cao nhất hoặc thấp nhất trong một nhóm từ ba thành viên trở lên. Trong văn nói thân mật, đôi khi người ta dùng so sánh nhất cho hai thứ (`the best of the two` — cái tốt hơn trong hai cái), nhưng ở bài này hãy dùng so sánh hơn khi chỉ có hai bên.
 
 ## Tính từ ngắn và dài
 
@@ -18,7 +18,7 @@ So sánh nhất (*superlative*) dùng khi một người hoặc vật có mức 
 - `This is the most expensive hotel in town.` — Đây là khách sạn đắt nhất thị trấn.
 - `Sunday was the hottest day of the week.` — Chủ nhật là ngày nóng nhất tuần.
 
-Quy tắc chính tả giống so sánh hơn: `nice → nicest`, `big → biggest`, `happy → happiest`.
+Cách chọn giữa `-est` và `most` dựa vào số âm tiết, và quy tắc chính tả cũng giống [so sánh hơn](so-sanh-hon-dang-ngan-dai-va-bat-quy-tac-comp-01.md): `nice → nicest`, `big → biggest`, `happy → happiest`, nhưng `careful → the most careful`.
 
 ## Dạng bất quy tắc
 
@@ -32,9 +32,15 @@ Quy tắc chính tả giống so sánh hơn: `nice → nicest`, `big → biggest
 
 ## `In` và `of`
 
-Dùng `in` trước nơi hoặc nhóm được nhìn như một phạm vi: `the tallest building in the city`, `the youngest person in my family`.
+Dùng `in` trước nơi hoặc nhóm được nhìn như một phạm vi:
 
-Dùng `of` trước một tập hợp hoặc khoảng thời gian: `the best of the three`, `the coldest day of the year`.
+- `the tallest building in the city` — tòa nhà cao nhất thành phố;
+- `the youngest person in my family` — người nhỏ tuổi nhất nhà tôi.
+
+Dùng `of` trước một tập hợp hoặc khoảng thời gian:
+
+- `the best of the three` — cái tốt nhất trong ba cái;
+- `the coldest day of the year` — ngày lạnh nhất trong năm.
 
 ## Vì sao thường có `the`
 

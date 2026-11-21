@@ -20,8 +20,8 @@ Trật tự là `so + auxiliary + subject`, giống đảo ngữ. Chọn trợ �
 
 Có thể đặt chủ ngữ trước:
 
-- `Lan is tired.` — `I am too.`
-- `I like jazz.` — `Minh does too.`
+- `Lan is tired.` — `I am too.` — Lan mệt. Tôi cũng vậy.
+- `I like jazz.` — `Minh does too.` — Tôi thích nhạc jazz. Minh cũng vậy.
 
 `So am I` và `I am too` cùng thể hiện đồng tình khẳng định. Không dùng `So I am` cho nghĩa “tôi cũng vậy” thông thường; trật tự đó có thể mang nghĩa xác nhận “đúng là tôi như vậy”.
 
@@ -36,8 +36,8 @@ Có thể đặt chủ ngữ trước:
 
 ## Cách với `either`
 
-- `I don't eat meat.` — `Nam doesn't either.`
-- `She hasn't finished.` — `I haven't either.`
+- `I don't eat meat.` — `Nam doesn't either.` — Tôi không ăn thịt. Nam cũng không.
+- `She hasn't finished.` — `I haven't either.` — Cô ấy chưa xong. Tôi cũng chưa.
 
 `Either` đứng cuối một câu phủ định. Không dùng `I don't too` để nói “tôi cũng không”.
 
@@ -51,9 +51,9 @@ Có thể đặt chủ ngữ trước:
 | hiện tại hoàn thành | `have/has` |
 | modal | lặp `can/will/should...` |
 
-- `I've seen the film.` — `So has Lan.`
-- `We'll be there.` — `So will they.`
-- `You should rest.` — `So should I.`
+- `I've seen the film.` — `So has Lan.` — Tôi đã xem phim đó. Lan cũng vậy.
+- `We'll be there.` — `So will they.` — Chúng tôi sẽ có mặt. Họ cũng vậy.
+- `You should rest.` — `So should I.` — Bạn nên nghỉ ngơi. Tôi cũng nên vậy.
 
 Trợ động từ phải hòa hợp với chủ ngữ mới: `So does Minh`, không phải `So do Minh`.
 
@@ -75,7 +75,7 @@ Trợ động từ có thể thay toàn bộ cụm động từ trong các câu 
 - `Will the weather improve?` — `I hope so.` — Tôi hy vọng là có.
 - `Is the shop open?` — `I don't think so.` — Tôi nghĩ là không.
 
-Một số đáp phủ định dùng `not`: `I hope not`, `I'm afraid not`, `probably not`. Cần học theo cụm; không phải động từ nào cũng dùng `so/not` giống nhau.
+Một số đáp phủ định dùng `not`: `I hope not` (mong là không), `I'm afraid not` (tiếc là không), `probably not` (có lẽ không). Cần học theo cụm; không phải động từ nào cũng dùng `so/not` giống nhau.
 
 ## Không dùng khi thông tin thực ra khác nhau
 

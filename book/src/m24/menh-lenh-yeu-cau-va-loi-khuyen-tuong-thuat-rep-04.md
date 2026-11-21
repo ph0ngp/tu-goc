@@ -67,14 +67,18 @@ Không phải mọi câu có `please` đều bắt buộc thành `asked`, và kh
 
 ## Đại từ và nơi chốn
 
-`“Bring me this box,” Mai said to Nam.`
+`“Bring me this box,” Mai said to Nam.` — “Mang cho chị cái hộp này,” Mai nói với Nam.
 
-Nếu kể ở nơi khác: `Mai asked Nam to take her that box` hoặc `Mai told Nam to bring her the box`, tùy điểm nhìn chuyển động. Cần đổi `me → her`, `this → that/the` và chọn `bring/take` theo vị trí người kể.
+Khi kể lại ở nơi khác, giữ nguyên động từ dẫn và chỉ đổi những từ phụ thuộc người nói gốc và vị trí: `me → her`, `this → that`:
+
+`Mai asked Nam to bring her that box.` — Mai nhờ Nam mang cái hộp đó cho cô ấy.
+
+Cách đổi này giống hệt ở câu kể tường thuật: đại từ chỉ đúng người, còn `this` thành `that` vì người kể không còn đứng cạnh cái hộp.
 
 ## Phân biệt hai cách dùng của `ask`
 
-- Hỏi thông tin: `She asked me where I lived.`
-- Yêu cầu hành động: `She asked me to wait.`
+- Hỏi thông tin: `She asked me where I lived.` — Cô ấy hỏi tôi sống ở đâu.
+- Yêu cầu hành động: `She asked me to wait.` — Cô ấy nhờ tôi đợi.
 
 Sau `ask + người`, nếu theo sau là từ hỏi/`if/whether`, đó là nội dung câu hỏi; nếu theo sau là `to + V`, đó là yêu cầu.
 

@@ -40,7 +40,7 @@ Không dùng dạng chủ ngữ ở vị trí này: nói `Lan helps me`, không 
 Đại từ tân ngữ cũng đứng sau giới từ như `to`, `for`, `with`, `at`, `from`.
 
 - `This gift is for her.` — Món quà này dành cho cô ấy.
-- `Come with us.` — Hãy đi cùng chúng tôi.
+- `Nam lives with us.` — Nam sống cùng chúng tôi.
 - `He sits next to me.` — Anh ấy ngồi cạnh tôi.
 - `I get a message from them.` — Tôi nhận được tin nhắn từ họ.
 

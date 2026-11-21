@@ -34,7 +34,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       "kind": "sort",
       "prompt": "Chọn đơn vị lớn nhất đang được trình bày trong mỗi ví dụ.",
       "hint": "Câu viết hoàn chỉnh bắt đầu bằng chữ hoa và có dấu cuối; mệnh đề đã nói về một đối tượng và cho biết điều gì đó về đối tượng ấy.",
-      "explanation": "Bốn ví dụ thể hiện lần lượt từ, cụm từ, mệnh đề và câu.",
+      "explanation": "Mỗi ví dụ được gọi theo đơn vị lớn nhất mà nó thể hiện.",
       "buckets": [
         "Từ",
         "Cụm từ",
@@ -141,7 +141,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     },
     ...choiceExercises("lu", 7, [
       ["Dấu chấm trong `The cat sleeps.` là gì?", ["một từ", "một dấu câu", "một cụm từ"], "một dấu câu", "Dấu chấm giúp kết thúc câu nhưng không phải là một từ.", "Dấu chấm là dấu câu; ba từ là The, cat và sleeps."],
-      ["`teacher`, nghĩa là “giáo viên”, là đơn vị nào?", ["từ", "cụm từ", "câu"], "từ", "Ví dụ chỉ có một mảnh riêng.", "`Teacher` là một từ riêng lẻ gọi tên nghề nghiệp; nó chưa tạo thành cụm từ hay câu."],
+      ["`teacher`, nghĩa là “giáo viên”, là đơn vị nào?", ["từ", "cụm từ", "câu"], "từ", "Ví dụ chỉ có một mảnh riêng.", "Mảnh `teacher` chỉ là một từ riêng lẻ gọi tên nghề nghiệp; nó chưa tạo thành cụm từ hay câu."],
       ["`a new book`, nghĩa là “một quyển sách mới”, là đơn vị nào?", ["từ", "cụm từ", "câu"], "cụm từ", "Nhiều từ đang cùng gọi một vật.", "a new book là một cụm từ."],
       ["`Lan reads`, nghĩa là “Lan đọc”, là đơn vị nào trong bài này?", ["cụm từ", "mệnh đề", "câu viết hoàn chỉnh"], "mệnh đề", "Nhóm từ đã có phần nêu Lan và phần nói Lan đọc, nhưng chưa có dấu cuối.", "Lan reads là một mệnh đề chưa được trình bày thành câu viết hoàn chỉnh."],
       ["`Birds fly.` nghĩa là “Chim bay” và là đơn vị nào?", ["cụm từ", "mệnh đề chưa thành câu", "câu"], "câu", "Ví dụ bắt đầu bằng chữ hoa, có dấu cuối và truyền đạt một thông điệp.", "Birds fly. là một câu."],
@@ -152,7 +152,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       ["Nhận xét nào đúng về quan hệ giữa từ, cụm từ và mệnh đề?", ["Cụm từ có thể nằm trong một mệnh đề", "Mọi từ đều là một câu", "Mọi cụm từ đều truyền đạt thông điệp hoàn chỉnh"], "Cụm từ có thể nằm trong một mệnh đề", "the cat là một cụm từ nằm trong the cat sleeps.", "Một cụm từ có thể là một phần của mệnh đề lớn hơn."],
     ]),
     ...contextExercises("lu", 17, [
-      ["Bạn chỉ nhìn thấy mảnh `happy`, nghĩa là “vui”.", "Mảnh này là từ, cụm từ hay câu?", ["từ", "cụm từ", "câu"], "từ", "Chỉ có một mảnh riêng.", "`Happy` chỉ là một từ riêng lẻ; nó chưa kết hợp với từ khác để tạo cụm từ hay câu."],
+      ["Bạn chỉ nhìn thấy mảnh `happy`, nghĩa là “vui”.", "Mảnh này là từ, cụm từ hay câu?", ["từ", "cụm từ", "câu"], "từ", "Chỉ có một mảnh riêng.", "Mảnh `happy` chỉ là một từ riêng lẻ; nó chưa kết hợp với từ khác để tạo cụm từ hay câu."],
       ["Bạn nhìn thấy `a kind teacher`, nghĩa là “một giáo viên tốt bụng”, nhưng chưa có thông tin người ấy làm gì.", "Nhóm này là từ, cụm từ hay câu?", ["từ", "cụm từ", "câu"], "cụm từ", "Nhóm từ cùng gọi một người.", "a kind teacher là một cụm từ."],
       ["Bạn muốn viết trọn vẹn thông điệp “Chúng tôi đọc”.", "Cách viết nào là một câu?", ["we", "we read", "We read."], "We read.", "Câu viết cần chữ hoa và dấu kết thúc.", "We read. là câu hoàn chỉnh."],
     ]),
@@ -166,7 +166,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     ]),
     ...tapExercises("lu", 24, [
       ["Trong câu `Birds fly.`, nghĩa là “Chim bay”, chọn tất cả các từ và không chọn dấu câu.", ["Birds", "fly", "."], [0, 1], "Dấu chấm không phải là một từ.", "Birds và fly là hai từ."],
-      ["Trong `Lan reads a new book`, chọn toàn bộ cụm từ có nghĩa là “một quyển sách mới”.", ["Lan", "reads", "a", "new", "book"], [2, 3, 4], "Cụm gọi quyển sách bắt đầu bằng a và kết thúc bằng book.", "a new book là cả cụm từ được yêu cầu."],
+      ["Trong `Lan reads a new book`, chọn toàn bộ cụm từ có nghĩa là “một quyển sách mới”.", ["Lan", "reads", "a", "new", "book"], [2, 3, 4], "Một cụm gọi tên vật có thể gồm từ đứng trước, từ miêu tả và tên vật; đừng bỏ sót từ nào.", "a new book là cả cụm từ được yêu cầu."],
     ])
   ],
   "word-jobs": [
@@ -344,9 +344,9 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     ]),
     ...tapExercises("wj", 22, [
       ["Chọn danh từ trong cụm `red book`.", ["red", "book"], [1], "Từ cần chọn gọi tên đồ vật.", "book là danh từ; red là tính từ."],
-      ["Chọn tính từ trong cụm `kind teacher`.", ["kind", "teacher"], [0], "Từ cần chọn miêu tả tính cách.", "`Kind` là tính từ vì nó miêu tả đặc điểm của người giáo viên."],
+      ["Chọn tính từ trong cụm `kind teacher`.", ["kind", "teacher"], [0], "Từ cần chọn miêu tả tính cách.", "Trong cụm này, `kind` là tính từ vì nó miêu tả đặc điểm của người giáo viên."],
       ["Chọn động từ trong `Birds fly.`", ["Birds", "fly", "."], [1], "Tìm từ cho biết những con chim làm gì.", "fly là động từ nghĩa là bay."],
-      ["Chọn đại từ trong `We help Nam.`", ["We", "help", "Nam", "."], [0], "Từ này thay cho một nhóm có người nói.", "We là đại từ chủ ngữ."],
+      ["Chọn đại từ trong `We help Nam.`", ["We", "help", "Nam", "."], [0], "Từ này thay cho một nhóm có người nói.", "We là đại từ, thay cho một nhóm có người nói."],
     ])
   ],
   "subject-predicate": [
@@ -492,8 +492,8 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       ["Động từ nằm trong vị ngữ `help Nam` là từ nào?", ["help", "Nam", "help Nam"], "help", "Động từ cho biết hành động giúp.", "help là động từ; help Nam là toàn bộ vị ngữ."],
       ["Nhận xét nào đúng về vị ngữ?", ["Vị ngữ luôn chứa một động từ", "Vị ngữ luôn chỉ có một từ", "Vị ngữ luôn đứng trước chủ ngữ"], "Vị ngữ luôn chứa một động từ", "Vị ngữ có thể dài hơn động từ.", "Trong các mệnh đề đang học, vị ngữ luôn có động từ và có thể có thêm từ khác."],
       ["Phần nào chưa đủ làm câu kể cơ bản vì thiếu chủ ngữ?", ["Reads books.", "Lan reads books.", "They read."], "Reads books.", "Tìm ví dụ không cho biết ai đọc.", "Reads books. thiếu chủ ngữ trong mẫu câu kể đang học."],
-      ["Đại từ có thể làm chủ ngữ trong câu nào?", ["We read.", "Reads books.", "The book"], "We read.", "We là đại từ đứng trước vị ngữ read.", "We là chủ ngữ của câu We read."],
-      ["Cụm từ có thể làm chủ ngữ trong câu nào?", ["The cat sleeps.", "Sleeps.", "help Nam"], "The cat sleeps.", "The cat là cả một cụm từ gọi con mèo.", "The cat là cụm từ làm chủ ngữ."],
+      ["Câu nào có chủ ngữ là một đại từ?", ["We read.", "Lan reads.", "The baby sleeps."], "We read.", "Nhìn phần đứng trước động từ của mỗi câu: đó là một tên riêng, một cụm từ hay một từ thay cho tên?", "`We` là đại từ làm chủ ngữ; `Lan` là tên riêng, còn `the baby` là cụm từ."],
+      ["Câu nào có chủ ngữ là một cụm từ?", ["The small cat sleeps.", "They read.", "Birds fly."], "The small cat sleeps.", "Đếm xem phần đứng trước động từ có mấy từ cùng làm một khối.", "`The small cat` gồm ba từ cùng gọi một con mèo nên là cụm từ làm chủ ngữ; `They` là đại từ, còn `Birds` là một danh từ."],
       ["Trong `Lan helps Nam.`, vì sao `helps` không phải toàn bộ vị ngữ?", ["Vì vị ngữ còn gồm Nam", "Vì helps là chủ ngữ", "Vì câu không có động từ"], "Vì vị ngữ còn gồm Nam", "Vị ngữ nói cả việc giúp và người được giúp.", "helps là động từ; helps Nam mới là toàn bộ vị ngữ."],
     ]),
     ...contextExercises("subp", 17, [
@@ -544,7 +544,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       "id": "pro2",
       "kind": "sort",
       "prompt": "Đặt đại từ vào nhóm phù hợp.",
-      "hint": "I chỉ riêng người nói; you chỉ người nghe; we là nhóm có người nói; they là nhóm khác.",
+      "hint": "Hỏi lần lượt: người nói có nằm trong nhóm không? Đó là người nghe hay người, vật khác? Là một hay nhiều?",
       "explanation": "Bảy đại từ đã được đặt vào các nhóm không chồng lấn.",
       "buckets": [
         "Chỉ riêng người nói",
@@ -691,8 +691,8 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       ["Đại từ nào có thể thay cho “Mai và tôi”?", ["Mai and I", "→", "they"], 2, ["I", "we", "they"], "we", "Nhóm này có người nói.", "Mai and I được thay bằng we."],
     ]),
     ...orderExercises("pro", 22, [
-      ["Sắp xếp lại câu đã có sẵn từ: “Anh ấy ngủ”.", ["sleeps", "He", "."], ["He", "sleeps", "."], "Đại từ chủ ngữ đứng đầu câu.", "He là đại từ chủ ngữ trong He sleeps."],
-      ["Sắp xếp lại câu đã có sẵn từ: “Chúng tôi đọc”.", [".", "read", "We"], ["We", "read", "."], "Đặt đại từ chủ ngữ trước động từ.", "We là đại từ chủ ngữ trong We read."],
+      ["Sắp xếp các mảnh thành câu “Anh ấy ngủ”.", ["sleeps", "He", "."], ["He", "sleeps", "."], "Đại từ chủ ngữ đứng đầu câu.", "He là đại từ chủ ngữ trong He sleeps."],
+      ["Sắp xếp các mảnh thành câu “Chúng tôi đọc”.", [".", "read", "We"], ["We", "read", "."], "Đặt đại từ chủ ngữ trước động từ.", "We là đại từ chủ ngữ trong We read."],
     ]),
     ...tapExercises("pro", 24, [
       ["Chọn đại từ thay cho “Nam và Mai” khi bạn đang nói về họ.", ["you", "we", "they"], [2], "Người nói không nằm trong nhóm này.", "Nam và Mai được thay bằng they."],
@@ -763,7 +763,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       "id": "fr3",
       "kind": "choice",
       "prompt": "Câu nào dùng phần cuối để miêu tả chủ ngữ?",
-      "hint": "kind miêu tả Nam và đứng sau is.",
+      "hint": "Phần cuối cần tìm đứng sau động từ và cho biết chủ ngữ như thế nào, chứ không phải người hay vật mà hành động hướng tới.",
       "explanation": "Nam is kind. nghĩa là “Nam tốt bụng” và có khung SVC.",
       "options": [
         "The baby sleeps.",
@@ -776,17 +776,19 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       "id": "fr4",
       "kind": "order",
       "prompt": "Sắp xếp các mảnh thành câu có nghĩa “Chúng tôi giúp Lan”.",
-      "hint": "Chủ ngữ trước, động từ ở giữa, tân ngữ ở sau.",
-      "explanation": "We help Lan. có đúng thứ tự SVO.",
+      "hint": "Chủ ngữ trước, động từ ở giữa, tân ngữ ở sau; câu kể kết thúc bằng dấu chấm.",
+      "explanation": "We help Lan. có đúng thứ tự SVO và kết thúc bằng dấu chấm.",
       "tokens": [
+        "help",
+        ".",
         "Lan",
-        "We",
-        "help"
+        "We"
       ],
       "answer": [
         "We",
         "help",
-        "Lan"
+        "Lan",
+        "."
       ]
     },
     {
@@ -844,7 +846,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     },
     ...choiceExercises("fr", 7, [
       ["`The dog runs.`, nghĩa là “Con chó chạy”, dùng khung nào?", ["SV", "SVC", "SVO"], "SV", "Sau động từ runs không cần thêm thành phần nào trong ý này.", "The dog là S và runs là V, nên câu dùng khung SV."],
-      ["`The book is new.`, nghĩa là “Quyển sách này còn mới”, dùng khung nào?", ["SV", "SVC", "SVO"], "SVC", "new miêu tả chính quyển sách.", "The book is new. dùng khung SVC."],
+      ["`The book is new.`, nghĩa là “Quyển sách ấy còn mới”, dùng khung nào?", ["SV", "SVC", "SVO"], "SVC", "new miêu tả chính quyển sách.", "The book is new. dùng khung SVC."],
       ["`They like music.`, nghĩa là “Họ thích âm nhạc”, dùng khung nào?", ["SV", "SVC", "SVO"], "SVO", "music là thứ được thích.", "They like music. dùng khung SVO."],
       ["Trong các chữ SV, SVC và SVO, `S` là gì?", ["chủ ngữ", "động từ", "tân ngữ"], "chủ ngữ", "S là chữ đầu của subject.", "`S` viết tắt cho chủ ngữ (*subject*), tức phần chỉ người hoặc vật được câu nói tới."],
       ["Trong các chữ SV, SVC và SVO, `V` là gì?", ["chủ ngữ", "động từ", "bổ ngữ"], "động từ", "V là chữ đầu của verb.", "`V` viết tắt cho động từ (*verb*), phần cho biết hành động hoặc trạng thái trong câu."],
@@ -856,8 +858,8 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     ]),
     ...contextExercises("fr", 17, [
       ["Trong câu `Nam helps a teacher.`, Nam và người giáo viên là hai người khác nhau.", "`a teacher` làm công việc gì?", ["chủ ngữ", "bổ ngữ", "tân ngữ"], "tân ngữ", "Đây là người nhận hành động giúp.", "a teacher là tân ngữ, nên câu dùng khung SVO."],
-      ["Trong câu `They sleep.`, động từ sleep đã tạo được ý cơ bản.", "`They sleep.` dùng khung SV, SVC hay SVO?", ["SV", "SVC", "SVO"], "SV", "Không có bổ ngữ hoặc tân ngữ phía sau.", "They sleep. dùng khung SV."],
-      ["Trong câu `Mai is kind.`, phần `kind` miêu tả Mai.", "`Mai is kind.` dùng khung SV, SVC hay SVO?", ["SV", "SVC", "SVO"], "SVC", "Phần cuối cho biết Mai như thế nào.", "Mai is kind. dùng khung SVC."],
+      ["Bạn đang phân tích câu `They sleep.`", "Câu này dùng khung SV, SVC hay SVO?", ["SV", "SVC", "SVO"], "SV", "Xem sau động từ còn phần nào không; nếu có, phần ấy làm công việc gì?", "Sau `sleep` không có bổ ngữ hay tân ngữ, nên `They sleep.` dùng khung SV."],
+      ["Bạn đang phân tích câu `Mai is kind.`", "Câu này thuộc khung nào trong ba khung SV, SVC và SVO?", ["SV", "SVC", "SVO"], "SVC", "Hỏi phần cuối nói Mai làm gì với ai, hay nói Mai như thế nào.", "Từ `kind` miêu tả chính Mai, nên `Mai is kind.` dùng khung SVC."],
     ]),
     ...repairExercises("fr", 20, [
       ["`The cat is small.` thuộc khung câu nào?", ["The cat is small.", "=", "SVO"], 2, ["SV", "SVC", "SVO"], "SVC", "small miêu tả chính con mèo.", "Câu dùng khung SVC: `The cat` là chủ ngữ, `is` là động từ và `small` là bổ ngữ miêu tả chủ ngữ."],
@@ -868,8 +870,59 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       ["Sắp xếp thành câu khung SVC “Nam tốt bụng”.", ["kind", ".", "is", "Nam"], ["Nam", "is", "kind", "."], "Đặt chủ ngữ, động từ rồi bổ ngữ.", "Nam is kind. có khung SVC."],
     ]),
     ...tapExercises("fr", 24, [
-      ["Chọn bổ ngữ trong câu.", ["The book", "is", "new", "."], [2], "Phần này miêu tả quyển sách.", "`New` là bổ ngữ vì nó miêu tả trạng thái của chủ ngữ `The book` sau `is`."],
+      ["Chọn bổ ngữ trong câu.", ["The book", "is", "new", "."], [2], "Phần này miêu tả quyển sách.", "Từ `new` là bổ ngữ vì nó miêu tả trạng thái của chủ ngữ `The book` sau `is`."],
       ["Chọn tân ngữ trong câu.", ["We", "help", "Mai", "."], [2], "Đây là người được giúp.", "`Mai` là tân ngữ vì đây là người nhận hành động `help`."],
+    ]),
+    {
+      "id": "fr26",
+      "kind": "grid",
+      "prompt": "Chọn bổ ngữ hoặc tân ngữ cho phần đứng sau mũi tên trong từng câu.",
+      "hint": "Hỏi: phần cuối và chủ ngữ là cùng một người, hay là hai người khác nhau?",
+      "explanation": "Cùng một phần cuối có thể là bổ ngữ hoặc tân ngữ: khi nó gọi tên chính chủ ngữ thì là bổ ngữ (SVC); khi hành động đi từ chủ ngữ sang người ấy thì là tân ngữ (SVO).",
+      "rows": [
+        {
+          "cue": "Mai is a doctor. → a doctor",
+          "options": [
+            "bổ ngữ",
+            "tân ngữ"
+          ],
+          "answer": "bổ ngữ",
+          "completed": "Mai is a doctor."
+        },
+        {
+          "cue": "Mai helps a doctor. → a doctor",
+          "options": [
+            "bổ ngữ",
+            "tân ngữ"
+          ],
+          "answer": "tân ngữ",
+          "completed": "Mai helps a doctor."
+        },
+        {
+          "cue": "The boy helps Nam. → Nam",
+          "options": [
+            "bổ ngữ",
+            "tân ngữ"
+          ],
+          "answer": "tân ngữ",
+          "completed": "The boy helps Nam."
+        },
+        {
+          "cue": "The boy is Nam. → Nam",
+          "options": [
+            "bổ ngữ",
+            "tân ngữ"
+          ],
+          "answer": "bổ ngữ",
+          "completed": "The boy is Nam."
+        }
+      ]
+    },
+    ...choiceExercises("fr", 27, [
+      ["Câu nào cho biết Mai và người y tá là hai người khác nhau?", ["Mai helps a nurse.", "Mai is a nurse.", "Mai is happy."], "Mai helps a nurse.", "Nếu phần cuối gọi tên hoặc miêu tả chính Mai, Mai và phần cuối nói về cùng một người.", "Trong `Mai helps a nurse.`, `a nurse` là người được giúp, khác Mai, nên là tân ngữ (SVO); trong `Mai is a nurse.`, `a nurse` gọi tên chính Mai."],
+    ]),
+    ...orderExercises("fr", 28, [
+      ["Sắp xếp các mảnh thành câu khung SVO “Chúng tôi giúp một giáo viên mới”.", ["teacher", "We", "a", ".", "new", "help"], ["We", "help", "a", "new", "teacher", "."], "Đặt chủ ngữ và động từ trước; cả cụm chỉ người được giúp đứng sau động từ.", "`We help a new teacher.` dùng khung SVO; cả cụm `a new teacher` là tân ngữ."],
     ])
   ],
   "objects-basic": [
@@ -956,11 +1009,10 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     },
     {
       "id": "obj5",
-      "kind": "context",
+      "kind": "choice",
       "prompt": "Câu nào đã đủ ý cơ bản và không có tân ngữ?",
-      "hint": "fly trong ý này không cần trả lời “bay ai/cái gì”.",
-      "explanation": "Birds fly. không có tân ngữ.",
-      "context": "Hãy chú ý xem động từ có hướng đến một người hoặc vật khác hay không.",
+      "hint": "Với mỗi câu, thử hỏi sau động từ “… ai?” hoặc “… cái gì?”; câu cần chọn không có phần nào trả lời câu hỏi ấy.",
+      "explanation": "Câu `Birds fly.` không có tân ngữ vì không thể hỏi “bay ai?” hay “bay cái gì?”; `books` và `Nam` là tân ngữ của hai câu kia.",
       "options": [
         "Birds fly.",
         "They read books.",
@@ -971,7 +1023,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "obj6",
       "kind": "grid",
-      "prompt": "Chọn tân ngữ, bổ ngữ hoặc không có phần nào.",
+      "prompt": "Chọn tân ngữ, bổ ngữ hoặc không có cho phần đứng sau mũi tên trong mỗi hàng.",
       "hint": "Xem phần cuối là đối tượng mà động từ liên quan tới, thông tin về chủ ngữ hay không xuất hiện.",
       "explanation": "Ba câu cho thấy tân ngữ, bổ ngữ và câu không có tân ngữ.",
       "rows": [
@@ -996,7 +1048,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
           "completed": "The book is new."
         },
         {
-          "cue": "Trong Cats sleep., sau sleep có thành phần nào?",
+          "cue": "Cats sleep. → sau sleep",
           "options": [
             "tân ngữ",
             "bổ ngữ",
@@ -1016,16 +1068,16 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       ["Câu nào chỉ nói một hành động mà không hướng đến người hay vật nào?", ["Birds fly.", "We like tea.", "I open the door."], "Birds fly.", "Không thể hỏi “bay ai/cái gì” trong ý này.", "Birds fly. không có tân ngữ."],
       ["Toàn bộ tân ngữ trong `I read a new book.` là gì?", ["book", "new book", "a new book"], "a new book", "Chọn cả cụm trả lời câu hỏi “đọc cái gì?”.", "a new book là toàn bộ tân ngữ."],
       ["Toàn bộ tân ngữ trong `They find the red ball.` là gì?", ["ball", "red ball", "the red ball"], "the red ball", "Chọn cả cụm gọi quả bóng đỏ.", "the red ball là toàn bộ tân ngữ."],
-      ["Trong `Nam is kind.`, `kind` là gì?", ["tân ngữ", "bổ ngữ", "chủ ngữ"], "bổ ngữ", "kind miêu tả chính Nam, không phải đối tượng của hành động.", "`Kind` là bổ ngữ vì nó miêu tả trực tiếp chủ ngữ Nam sau động từ `is`."],
+      ["Trong `Nam is kind.`, `kind` là gì?", ["tân ngữ", "bổ ngữ", "chủ ngữ"], "bổ ngữ", "kind miêu tả chính Nam, không phải đối tượng của hành động.", "Từ `kind` là bổ ngữ vì nó miêu tả trực tiếp chủ ngữ Nam sau động từ `is`."],
       ["Trong `We help a teacher.`, `a teacher` là gì?", ["tân ngữ", "bổ ngữ", "động từ"], "tân ngữ", "a teacher là người được giúp.", "a teacher là tân ngữ của help."],
     ]),
     ...contextExercises("obj", 17, [
-      ["Trong `Lan opens the door.`, bạn đang tìm phần trả lời câu hỏi “Lan mở cái gì?”.", "Cụm nào trả lời đầy đủ câu hỏi “Lan mở cái gì?”?", ["Lan", "opens", "the door"], "the door", "Tìm vật được mở.", "the door là toàn bộ tân ngữ."],
-      ["Trong `They help Nam.`, bạn đang tìm phần trả lời câu hỏi “Họ giúp ai?”.", "Từ nào trả lời câu hỏi “Họ giúp ai?”?", ["They", "help", "Nam"], "Nam", "Tìm người được giúp.", "`Nam` là tân ngữ vì đây là người nhận hành động `help`."],
+      ["Bạn đang phân tích câu `Lan opens the door.`", "Cụm nào cho biết đầy đủ Lan mở cái gì?", ["Lan", "opens", "the door"], "the door", "Tìm vật được mở.", "the door là toàn bộ tân ngữ."],
+      ["Bạn đang phân tích câu `They help Nam.`", "Từ nào cho biết họ giúp ai?", ["They", "help", "Nam"], "Nam", "Tìm người được giúp.", "`Nam` là tân ngữ vì đây là người nhận hành động `help`."],
       ["Bạn cần tìm câu mà hành động không hướng đến một người hoặc vật khác.", "Câu nào đáp ứng yêu cầu này?", ["The baby sleeps.", "They read books.", "We help Lan."], "The baby sleeps.", "sleeps đã tạo được ý cơ bản trong câu này.", "The baby sleeps. không có tân ngữ."],
     ]),
     ...repairExercises("obj", 20, [
-      ["Trong `They like music.`, `music` làm thành phần nào?", ["music", "=", "bổ ngữ"], 2, ["chủ ngữ", "bổ ngữ", "tân ngữ"], "tân ngữ", "music là thứ được thích.", "`Music` là tân ngữ vì đây là điều mà chủ ngữ `They` thích."],
+      ["Trong `They like music.`, `music` làm thành phần nào?", ["music", "=", "bổ ngữ"], 2, ["chủ ngữ", "bổ ngữ", "tân ngữ"], "tân ngữ", "music là thứ được thích.", "Từ `music` là tân ngữ vì đây là điều mà chủ ngữ `They` thích."],
       ["Trong `The cat is small.`, `small` làm thành phần nào?", ["small", "=", "tân ngữ"], 2, ["chủ ngữ", "bổ ngữ", "tân ngữ"], "bổ ngữ", "small miêu tả chính con mèo.", "small là bổ ngữ, không phải tân ngữ."],
     ]),
     ...orderExercises("obj", 22, [
@@ -1041,9 +1093,9 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "pun1",
       "kind": "match",
-      "prompt": "Ghép mỗi dấu cuối câu với công việc tương ứng.",
-      "hint": "Câu cung cấp thông tin dùng dấu chấm; câu hỏi dùng dấu hỏi.",
-      "explanation": "Dấu chấm kết thúc câu kể; dấu hỏi kết thúc câu hỏi.",
+      "prompt": "Ghép mỗi dấu hiệu với công việc của nó.",
+      "hint": "Hỏi từng dấu hiệu nằm ở đâu trong câu: cuối câu, đầu câu hay giữa câu.",
+      "explanation": "Dấu cuối câu cho biết loại câu; chữ hoa ở đầu câu báo một câu mới, còn chữ hoa ở giữa câu báo một tên riêng.",
       "pairs": [
         {
           "left": ".",
@@ -1052,6 +1104,14 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
         {
           "left": "?",
           "right": "kết thúc câu hỏi trực tiếp"
+        },
+        {
+          "left": "chữ hoa ở từ đầu tiên của câu",
+          "right": "báo một câu mới bắt đầu"
+        },
+        {
+          "left": "chữ hoa của Hanoi ở giữa câu",
+          "right": "báo đây là tên riêng"
         }
       ]
     },
@@ -1087,9 +1147,9 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     {
       "id": "pun4",
       "kind": "repair",
-      "prompt": "Chọn cách viết đúng của tên riêng Mai trong câu.",
-      "hint": "Mai là tên riêng.",
-      "explanation": "We help Mai. viết hoa đúng tên riêng.",
+      "prompt": "Chọn cách viết đúng cho tên riêng trong câu.",
+      "hint": "Tên riêng đứng giữa câu vẫn viết hoa, nhưng chỉ viết hoa chữ cái đầu.",
+      "explanation": "Câu đúng là `We help Mai.`: tên riêng viết hoa chữ cái đầu, các chữ còn lại viết thường.",
       "tokens": [
         "We",
         "help",
@@ -1260,11 +1320,11 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
     },
     ...choiceExercises("pun", 9, [
       ["Cách viết nào bắt đầu câu đúng?", ["we read books.", "We read books.", "WE read books."], "We read books.", "Chữ đầu tiên của câu cần viết hoa.", "We read books. bắt đầu bằng chữ hoa đúng chuẩn."],
-      ["Cách viết nào đúng tên riêng Nam?", ["nam", "Nam", "NAM"], "Nam", "Tên riêng bắt đầu bằng chữ hoa, các chữ còn lại không cần viết hoa toàn bộ.", "Nam là cách viết đúng tên riêng này."],
-      ["Cách viết nào đúng đại từ nghĩa là “tôi”?", ["i", "I", "Í"], "I", "Đại từ này luôn được viết hoa.", "I luôn được viết hoa."],
+      ["Câu nào viết đúng tên riêng ở giữa câu?", ["Lan helps nam.", "Lan helps Nam.", "Lan helps NAM."], "Lan helps Nam.", "Trong câu viết thông thường, tên riêng chỉ viết hoa chữ cái đầu, dù đứng ở đâu.", "`Lan helps Nam.` viết hoa chữ cái đầu của tên riêng `Nam`; viết thường cả tên hay viết hoa toàn bộ đều không theo cách viết trong câu bình thường."],
+      ["Câu nào viết hoa đúng ở mọi chỗ cần viết hoa?", ["Mai and i read books.", "Mai and I read books.", "mai and I read books."], "Mai and I read books.", "Kiểm tra từ đầu câu, rồi kiểm tra đại từ chỉ người nói dù nó đứng giữa câu.", "`Mai` vừa đứng đầu câu vừa là tên riêng, còn đại từ `I` luôn viết hoa: `Mai and I read books.`"],
       ["Dấu nào kết thúc câu kể `They read books`?", [".", "?", ","], ".", "Câu này cung cấp thông tin.", "Dấu chấm kết thúc câu kể: They read books."],
       ["Dấu nào kết thúc câu hỏi trực tiếp `Are you ready`?", [".", "?", ","], "?", "Câu này yêu cầu người nghe trả lời.", "Dấu hỏi kết thúc câu hỏi trực tiếp: Are you ready?"],
-      ["Cách đặt dấu chấm nào đúng?", ["We help Lan.", "We help Lan .", "We help Lan  ."], "We help Lan.", "Dấu chấm đứng sát từ cuối cùng.", "We help Lan. không có khoảng trắng trước dấu chấm."],
+      ["Cách đặt dấu chấm nào đúng?", ["We help Lan.", "We help Lan .", "We help Lan"], "We help Lan.", "Dấu chấm đứng sát từ cuối cùng.", "`We help Lan.` có dấu chấm đứng sát từ cuối cùng; câu kể không thể thiếu dấu chấm hoặc để khoảng trắng trước nó."],
       ["Cách kết thúc câu hỏi nào đúng?", ["Where is Nam?", "Where is Nam?.", "Where is Nam.?"], "Where is Nam?", "Dấu hỏi đã tự kết thúc câu.", "Không viết thêm dấu chấm sau dấu hỏi."],
       ["Cách viết hai câu liên tiếp nào đúng?", ["The baby sleeps.Birds fly.", "The baby sleeps. Birds fly.", "The baby sleeps. birds fly."], "The baby sleeps. Birds fly.", "Sau dấu chấm có một khoảng trắng và câu mới bắt đầu bằng chữ hoa.", "The baby sleeps. Birds fly. có khoảng trắng và chữ hoa đúng."],
       ["Cách viết tên nước nào đúng?", ["vietnam", "Vietnam", "VIETNAM"], "Vietnam", "Tên nước bắt đầu bằng chữ hoa.", "Vietnam là cách viết đúng trong tiếng Anh."],
@@ -1283,7 +1343,7 @@ export const preA1Chapter01ExerciseData: Record<string, Exercise[]> = {
       ["Sắp xếp và đặt dấu cuối cho câu kể “Chúng tôi giúp Nam”.", [".", "Nam", "We", "help"], ["We", "help", "Nam", "."], "Giữ trật tự câu kể đã học và đặt dấu chấm ở cuối.", "We help Nam. là câu kể được viết đúng."],
     ]),
     ...tapExercises("pun", 25, [
-      ["Chọn các từ phải bắt đầu bằng chữ hoa trong câu đã cho.", ["Mai", "and", "I", "read", "."], [0, 2], "Tên riêng và đại từ I đều viết hoa.", "Mai là tên riêng và I luôn được viết hoa."],
+      ["Chọn tất cả các từ phải viết hoa trong câu sau.", ["lan", "and", "i", "help", "nam", "."], [0, 2, 4], "Kiểm tra từ đầu câu, các tên riêng và đại từ chỉ người nói.", "`lan` đứng đầu câu và là tên riêng, `i` là đại từ luôn viết hoa, `nam` là tên riêng; câu đúng là `Lan and I help Nam.`"],
     ])
   ],
 };

@@ -43,13 +43,15 @@ Giống `be going to` ở hiện tại, cấu trúc này có thể nêu kế ho�
 
 ## Kế hoạch có thực hiện hay không?
 
-Cả `would` lẫn `was/were going to` không tự bảo đảm kết quả đã xảy ra. Câu sau hoặc kiến thức thực tế mới xác nhận:
+`Was/were going to` và `would` trong lời tường thuật (`She said she would help`) không tự bảo đảm kết quả đã xảy ra. Câu sau hoặc kiến thức thực tế mới xác nhận:
 
 - `I was going to leave early, but the meeting continued.` — Tôi đã định về sớm nhưng cuộc họp tiếp tục. Ý định không thực hiện.
 - `I was going to leave early, and I did.` — Tôi đã định về sớm và đúng là đã về.
 - `She said she would help, but she didn't.` — Cô ấy nói sẽ giúp nhưng đã không giúp.
 
 Không nên dịch `was going to` thành “đã” rồi mặc định việc hoàn tất.
+
+Riêng `would` của người kể chuyện thì khác. Trong `That meeting would change his life`, người kể đã biết chuyện về sau và cho người đọc biết trước rằng cuộc gặp **đã thật sự** thay đổi cuộc đời anh ấy.
 
 ## `Would` hay `was/were going to`?
 
@@ -96,5 +98,5 @@ Hình thức giống nhau nhưng quan hệ thời gian và ngữ cảnh khác nh
 - Tương lai trong quá khứ phụ thuộc vào điểm nhìn, không phải thời gian tuyệt đối.
 - `Would + V` thường lùi từ `will + V` hoặc báo trước kết quả về sau.
 - `Was/were going to + V` nhấn kế hoạch, ý định hoặc dấu hiệu lúc đó.
-- Cả hai dạng không tự khẳng định sự việc đã xảy ra.
+- `Was/were going to` và `would` trong lời tường thuật không tự khẳng định sự việc đã xảy ra; `would` của người kể chuyện thì báo trước điều đã thật sự xảy ra.
 - Dùng ngữ cảnh để phân biệt `would` tương lai với `would` thói quen hoặc giả định.

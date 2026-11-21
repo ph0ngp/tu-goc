@@ -22,7 +22,7 @@ Dạng này tương ứng với `if + past perfect`, thường dùng cho điều
 - `Had the data been checked, the error might have been found.` — Nếu dữ liệu được kiểm tra, lỗi có thể đã được phát hiện.
 - `Had she not intervened, the dispute would have continued.` — Nếu cô ấy không can thiệp, tranh chấp đã tiếp tục.
 
-Trong đảo ngữ điều kiện, `not` đứng sau chủ ngữ và không viết tắt: `Had she not...`. Không dùng dạng rút gọn `Hadn't she...` để mở một mệnh đề điều kiện; chuỗi này chỉ đọc được như câu hỏi phủ định (“Chẳng phải cô ấy đã... sao?”), không còn nghĩa “nếu”. Cách đặt `not` này cũng dùng cho `were` và `should`, như `Were it not for...` ở mục dưới.
+Trong đảo ngữ điều kiện, `not` đứng sau chủ ngữ và không viết tắt: `Had she not...`. Không dùng dạng viết tắt `Hadn't she...` để mở một mệnh đề điều kiện; chuỗi này chỉ đọc được như câu hỏi phủ định (“Chẳng phải cô ấy đã... sao?”), không còn nghĩa “nếu”. Cách đặt `not` này cũng dùng cho `were` và `should`, như `Were it not for...` ở mục dưới.
 
 ## `Were + subject ...`
 
@@ -49,6 +49,12 @@ Với quá khứ, dùng `Had it not been for`:
 - `Had it not been for the rain, the event would have succeeded.` — Nếu không vì mưa, sự kiện đã thành công.
 
 Đây là dạng trang trọng tương ứng với `If it were not for...` và `If it had not been for...`.
+
+`Were it not that` đi với cả một mệnh đề thay vì cụm danh từ. Dạng này rất trang trọng, chủ yếu gặp trong văn viết:
+
+- `Were it not that the data are incomplete, we could publish now.` — Nếu không phải vì dữ liệu chưa đầy đủ, chúng tôi có thể công bố ngay bây giờ.
+
+Trong văn phong thông thường, câu này thường được viết lại thành `If the data were complete, we could publish now.`
 
 ## `Should + subject + base verb`
 
@@ -79,7 +85,7 @@ Ta không bỏ `if` rồi đảo một động từ thường:
 - đúng: `If you know the answer, tell me.`;
 - không dùng: `Know you the answer, tell me.`
 
-Ba cổng chính là `had`, `were`, `should`. Với điều kiện loại 1 thông thường, giữ `if` thường tự nhiên hơn: `If the train is late, call me`.
+Chỉ ba từ có thể đứng đầu mệnh đề điều kiện đảo ngữ: `had`, `were`, `should`. Với điều kiện loại 1 thông thường, giữ `if` thường tự nhiên hơn: `If the train is late, call me`.
 
 ## Dấu câu và vị trí
 

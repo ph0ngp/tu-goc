@@ -5,7 +5,7 @@ legacyLessonId: adjectives-position
 ---
 # Tính từ trước danh từ, sau động từ nối và thứ tự tính từ cơ bản
 
-Tính từ miêu tả người, vật hoặc sự việc: `small` (nhỏ), `happy` (vui), `red` (đỏ). Trong tiếng Anh, tính từ thường đứng trước danh từ hoặc sau một động từ nối như `be`.
+Tính từ miêu tả người, vật hoặc sự việc: `small` (nhỏ), `happy` (vui), `red` (đỏ). Trong tiếng Anh, tính từ thường đứng trước danh từ hoặc sau một động từ nối (*linking verb*) như `be`.
 
 ## Trước danh từ
 
@@ -22,10 +22,19 @@ Tính từ không đổi theo số lượng hoặc giới tính: `a small cat`, 
 
 ## Sau động từ nối
 
-Động từ nối kết nối chủ ngữ với một đặc điểm. `Be` là động từ nối phổ biến nhất.
+Động từ nối không chỉ một hành động. Nó nối chủ ngữ với một đặc điểm của chủ ngữ. `Be` là động từ nối phổ biến nhất.
 
-- `The house is small.` — Ngôi nhà nhỏ.
-- `The children are happy.` — Những đứa trẻ vui.
+- `The house is small.` — Ngôi nhà nhỏ. (một câu nói về ngôi nhà)
+- `The children are happy.` — Bọn trẻ đang vui.
+
+Trong tiếng Việt, “ngôi nhà nhỏ” có thể chỉ gọi tên một ngôi nhà, cũng có thể là một câu nói rằng ngôi nhà thì nhỏ. Tiếng Anh tách rõ hai trường hợp này:
+
+| Tiếng Anh | Đây là gì? | Nghĩa |
+| --- | --- | --- |
+| `a small house` | một cụm danh từ, chưa phải câu | một ngôi nhà nhỏ |
+| `The house is small.` | một câu: chủ ngữ + động từ nối + tính từ | Ngôi nhà nhỏ. |
+
+Muốn nói một vật có đặc điểm gì, cần động từ nối đứng giữa chủ ngữ và tính từ. Chỉ đặt tính từ trước danh từ thì ta mới có một cụm để gọi tên vật, chưa có một câu.
 
 Một số động từ nối A1 khác gồm `look` (trông có vẻ), `feel` (cảm thấy), `sound` (nghe có vẻ), `smell` (có mùi), `taste` (có vị).
 
@@ -34,7 +43,7 @@ Một số động từ nối A1 khác gồm `look` (trông có vẻ), `feel` (c
 | `You look tired.` | Bạn trông mệt. |
 | `This music sounds nice.` | Bản nhạc này nghe hay. |
 | `The soup smells good.` | Món súp có mùi thơm. |
-| `The water feels cold.` | Nước có cảm giác lạnh. |
+| `The water feels cold.` | Nước sờ vào thấy lạnh. |
 
 Sau động từ nối, dùng tính từ để miêu tả chủ ngữ. `She looks happy` nghĩa là cô ấy trông vui; không dùng `happily` trong nghĩa này.
 

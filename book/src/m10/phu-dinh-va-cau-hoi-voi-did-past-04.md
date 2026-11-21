@@ -27,8 +27,8 @@ Sau `didn't`, dùng `work`, `go`, `have`; không dùng `worked`, `went`, `had`. 
 Did + chủ ngữ + động từ cơ bản + phần còn lại?
 ```
 
-- `Did you watch the film?` — Bạn đã xem bộ phim đó chưa?
-- `Did Mai buy the tickets?` — Mai đã mua vé chưa?
+- `Did you watch the film last night?` — Tối qua bạn có xem bộ phim đó không?
+- `Did Mai buy the tickets yesterday?` — Hôm qua Mai có mua vé không?
 - `Did they come early?` — Họ có đến sớm không?
 
 Câu trả lời ngắn dùng lại `did`: `Yes, I did` nghĩa là “Có”; `No, I didn't` nghĩa là “Không”. Không trả lời `Yes, I watched` khi chỉ cần một câu trả lời ngắn.

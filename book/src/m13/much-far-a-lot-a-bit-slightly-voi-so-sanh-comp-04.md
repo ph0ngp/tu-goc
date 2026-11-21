@@ -25,19 +25,21 @@ Trước một dạng so sánh hơn, ta có thể thêm từ chỉ **mức chên
 - `The second question is slightly easier.` — Câu hỏi thứ hai dễ hơn một chút.
 - `Can you speak a bit more slowly?` — Bạn có thể nói chậm hơn một chút không?
 
+Ở câu cuối, `more slowly` là so sánh hơn của trạng từ `slowly` (chậm), như đã học ở [bài so sánh hơn](so-sanh-hon-dang-ngan-dai-va-bat-quy-tac-comp-01.md); từ chỉ mức chênh vẫn đứng ngay trước nó.
+
 ## Vị trí
 
 Các từ này đứng ngay trước dạng so sánh:
 
 ```text
-much/far/a lot/a bit/slightly + comparative
+much/far/a lot/a bit/slightly + dạng so sánh hơn
 ```
 
 | Đúng | Không dùng trong mẫu này |
 | --- | --- |
-| `much better` | `very better` |
-| `far more useful` | `very more useful` |
-| `a bit cheaper` | `a bit cheap` nếu muốn nói “rẻ hơn một chút” |
+| `much better` — tốt hơn nhiều | `very better` |
+| `far more useful` — hữu ích hơn rất nhiều | `very more useful` |
+| `a bit cheaper` — rẻ hơn một chút | `a bit cheap` nếu muốn nói “rẻ hơn một chút” |
 
 `Very` bổ nghĩa tính từ dạng thường: `very useful` — “rất hữu ích”. Nó không đứng trực tiếp trước so sánh hơn; dùng `much more useful`.
 
@@ -58,7 +60,7 @@ So sánh `very cold` với `much colder`:
 - `It is very cold today` chỉ nói hôm nay rất lạnh.
 - `It is much colder today than yesterday` nói mức chênh lệch giữa hôm nay và hôm qua lớn.
 
-Vì vậy, `much`, `far`, `a lot`, `a bit` và `slightly` trong bài này không trực tiếp cho biết một vật “rất” hay “hơi” thế nào. Chúng cho biết **khoảng cách giữa hai bên so sánh**. Một nơi có thể `a bit warmer` hơn nơi khác nhưng cả hai nơi vẫn đều rất lạnh.
+Vì vậy, `much`, `far`, `a lot`, `a bit` và `slightly` trong bài này không trực tiếp cho biết một vật “rất” hay “hơi” thế nào. Chúng cho biết **khoảng cách giữa hai bên so sánh**. Một nơi có thể ấm hơn nơi khác một chút (`a bit warmer`) nhưng cả hai nơi vẫn rất lạnh.
 
 Khi không cần nhấn mức chênh, chỉ dùng dạng so sánh: `This bag is cheaper than that one`. Chỉ thêm từ bổ nghĩa khi thông tin “hơn nhiều” hay “hơn một chút” thật sự quan trọng.
 
@@ -69,8 +71,8 @@ Trước hết, tạo đúng dạng so sánh: `faster`, `more useful`, `less cro
 | Ý muốn nói | Cách diễn đạt | Ví dụ |
 | --- | --- | --- |
 | chỉ nói A nhanh hơn B | so sánh hơn không có từ bổ nghĩa | `A is faster than B.` — A nhanh hơn B. |
-| nhanh hơn nhiều | `much/far/a lot + comparative` | `A is much faster than B.` — A nhanh hơn B nhiều. |
-| nhanh hơn một chút | `a bit/slightly + comparative` | `A is slightly faster than B.` — A nhanh hơn B một chút. |
+| nhanh hơn nhiều | `much/far/a lot` + dạng so sánh hơn | `A is much faster than B.` — A nhanh hơn B nhiều. |
+| nhanh hơn một chút | `a bit/slightly` + dạng so sánh hơn | `A is slightly faster than B.` — A nhanh hơn B một chút. |
 
 Một lỗi dễ gặp là đánh dấu so sánh hai lần, tức dùng cả `more` lẫn đuôi `-er`: không nói `much more faster` vì `faster` đã là dạng so sánh; chỉ nói `much faster`. Với tính từ dài, `much more comfortable` lại đúng: `more comfortable` tạo so sánh, còn `much` cho biết mức chênh lớn. Hãy tìm phần tạo so sánh trước rồi mới thêm đúng một từ chỉ mức chênh ở phía trước.
 

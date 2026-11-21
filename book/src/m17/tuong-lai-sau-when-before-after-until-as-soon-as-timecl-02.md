@@ -57,7 +57,7 @@ Mệnh đề thời gian có thể đứng đầu hoặc cuối:
 
 Ý thời gian cơ bản không đổi. Khi mệnh đề thời gian đứng đầu, dùng dấu phẩy để tách nó khỏi mệnh đề chính; khi đứng cuối, thường không cần dấu phẩy.
 
-`Before` và `after` đổi quan hệ thứ tự, nên phải xác định hành động nào xảy ra trước: `I'll wash my hands before I eat` khác `I'll wash the dishes after I eat`. `As soon as` nhấn hành động thứ hai xảy ra ngay sau hành động thứ nhất, còn `until` nhấn một trạng thái tiếp tục đến một mốc.
+`Before` và `after` đổi quan hệ thứ tự, nên phải xác định hành động nào xảy ra trước: `I'll wash my hands before I eat` — “Tôi sẽ rửa tay trước khi ăn” — khác `I'll wash my hands after I eat` — “Tôi sẽ rửa tay sau khi ăn”. Hai câu chỉ khác từ nối, nhưng thứ tự của hai việc đảo ngược. `As soon as` nhấn hành động thứ hai xảy ra ngay sau hành động thứ nhất, còn `until` nhấn một trạng thái tiếp tục đến một mốc.
 
 ## Chọn từ nối bằng dòng thời gian
 

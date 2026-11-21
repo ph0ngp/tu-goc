@@ -45,20 +45,20 @@ Câu trả lời có thể dùng `should`: `You should put it by the door` — �
 
 `Should` cũng nói điều ta tin là hợp lý sẽ xảy ra:
 
-- `The bus should arrive soon.` — Xe buýt chắc là sẽ sớm đến/đáng lẽ sắp đến.
+- `The bus should arrive soon.` — Xe buýt chắc sắp đến rồi (theo lịch thì sắp đến).
 - `This key should work.` — Chiếc chìa khóa này có lẽ dùng được.
 
 Đây không phải lời khuyên; ngữ cảnh cho biết nghĩa là kỳ vọng.
 
 ## Một lời khuyên tốt cần gắn với vấn đề
 
-Ngữ pháp đúng chưa đủ; lời khuyên phải trả lời hợp lý cho tình huống. Nếu ai đó nói `I can't sleep`, câu `You should drink more coffee` đúng cấu trúc nhưng không phải lời khuyên hợp lý trong tình huống thông thường. `You shouldn't drink coffee late` phù hợp hơn.
+Ngữ pháp đúng chưa đủ; lời khuyên phải trả lời hợp lý cho tình huống. Nếu ai đó nói `I can't sleep` (Tôi không ngủ được), câu `You should drink more coffee` (Bạn nên uống thêm cà phê) đúng cấu trúc nhưng không phải lời khuyên hợp lý trong tình huống thông thường. `You shouldn't drink coffee late` (Bạn không nên uống cà phê muộn) phù hợp hơn.
 
 | Vấn đề | Lời khuyên |
 | --- | --- |
-| `I have a headache.` | `You should rest.` |
-| `I'm always late.` | `You should leave home earlier.` |
-| `My phone gets very hot.` | `You shouldn't use it while it is charging.` |
+| `I have a headache.` — Tôi bị đau đầu. | `You should rest.` — Bạn nên nghỉ ngơi. |
+| `I'm always late.` — Tôi lúc nào cũng muộn. | `You should leave home earlier.` — Bạn nên ra khỏi nhà sớm hơn. |
+| `My phone gets very hot.` — Điện thoại của tôi bị nóng lên rất nhiều. | `You shouldn't use it while it is charging.` — Bạn không nên dùng nó trong lúc đang sạc. |
 
 `Shouldn't` khuyên tránh một hành động; nó không phải lệnh cấm. Nếu quy tắc chính thức cấm hành động, `mustn't` thường rõ hơn.
 

@@ -75,10 +75,10 @@ Việc chọn `how much` hay `how many` phụ thuộc vào thứ ta muốn đế
 
 | Điều muốn biết | Câu hỏi | Câu trả lời có thể có |
 | --- | --- | --- |
-| tổng lượng nước | `How much water do we need?` | `Two litres.` |
-| số chai nước | `How many bottles of water do we need?` | `Four bottles.` |
-| tổng lượng bánh mì | `How much bread is there?` | `About half a kilo.` |
-| số lát bánh mì | `How many slices of bread are there?` | `Six slices.` |
+| tổng lượng nước | `How much water do we need?` | `Two litres.` — Hai lít. |
+| số chai nước | `How many bottles of water do we need?` | `Four bottles.` — Bốn chai. |
+| tổng lượng bánh mì | `How much bread is there?` | `About half a kilo.` — Khoảng nửa ki-lô-gam. |
+| số lát bánh mì | `How many slices of bread are there?` | `Six slices.` — Sáu lát. |
 
 Trong `bottles of water`, từ được đếm là `bottles`, nên nó nhận số nhiều và đi sau `how many`. `Water` chỉ cho biết chai chứa gì và vẫn giữ dạng không đếm được.
 
@@ -87,5 +87,5 @@ Trong `bottles of water`, từ được đếm là `bottles`, nên nó nhận s�
 - Dùng `how many + danh từ số nhiều` để hỏi số lượng đếm được.
 - Dùng `how much + danh từ không đếm được` để hỏi lượng.
 - `How much is/are ...?` có thể hỏi giá.
-- Muốn đếm chất, dùng `số + đơn vị + of + danh từ`: `two glasses of water`.
+- Muốn đếm chất, dùng `số + đơn vị + of + danh từ`: `two bottles of water`.
 - Khi hỏi số đơn vị, dùng `how many`, vì từ chỉ đơn vị là danh từ đếm được.

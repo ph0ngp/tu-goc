@@ -36,7 +36,7 @@ Câu hỏi:    Was/Were + chủ ngữ + phần còn lại?
 | `She was late.` — Cô ấy đã đến muộn. | `She wasn't late.` — Cô ấy không đến muộn. | `Was she late?` — Cô ấy có đến muộn không? |
 | `They were ready.` — Họ đã sẵn sàng. | `They weren't ready.` — Họ chưa sẵn sàng. | `Were they ready?` — Họ đã sẵn sàng chưa? |
 
-`Wasn't` là dạng rút gọn của `was not`; `weren't` là dạng rút gọn của `were not`. Câu trả lời ngắn dùng `Yes, ... was/were` hoặc `No, ... wasn't/weren't`: `Were you tired? — Yes, I was.` nghĩa là “Bạn có mệt không? — Có.”
+`Wasn't` là dạng viết tắt của `was not`; `weren't` là dạng viết tắt của `were not`. Câu trả lời ngắn dùng `Yes, ... was/were` hoặc `No, ... wasn't/weren't`: `Were you tired? — Yes, I was.` nghĩa là “Bạn có mệt không? — Có.”
 
 ## `There was` và `there were`
 

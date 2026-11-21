@@ -13,6 +13,8 @@ Lan is not at home.
 Lan không ở nhà.
 ```
 
+Câu nói một điều không đúng như vậy gọi là **câu phủ định** (*negative sentence*).
+
 ## Đặt not ngay sau am, is hoặc are
 
 `Not` nghĩa là “không”. Cấu trúc phủ định là:
@@ -41,11 +43,11 @@ vẫn luôn đứng ngay sau `be`.
 | nơi chốn | `We are not at home.` | Chúng tôi không ở nhà. |
 | nguồn gốc | `She is not from Hanoi.` | Cô ấy không đến từ Hà Nội. |
 
-## is not và are not có dạng rút gọn
+## is not và are not có dạng viết tắt
 
-`Is not` thường rút gọn thành `isn't`; `are not` thường rút gọn thành `aren't`.
+`Is not` thường được viết tắt thành `isn't`; `are not` thường được viết tắt thành `aren't`.
 
-| Dạng đầy đủ | Dạng rút gọn | Ví dụ |
+| Dạng đầy đủ | Dạng viết tắt | Ví dụ |
 | --- | --- | --- |
 | `is not` | `isn't` | `He isn't tired.` — Anh ấy không mệt. |
 | `are not` | `aren't` | `They aren't here.` — Họ không ở đây. |
@@ -59,7 +61,7 @@ Ta cũng có thể nối chủ ngữ với `be` rồi giữ `not` riêng:
 
 Hai cách trong mỗi hàng có cùng nghĩa.
 
-## I am not thường rút thành I'm not
+## I am not thường viết tắt thành I'm not
 
 Với `I am not`, dạng thông dụng là `I'm not`.
 
@@ -96,8 +98,8 @@ không mới”. Với `the books`, ta chọn `are`, rồi tạo `The books are 
 ## Ghi nhớ
 
 - Đặt `not` ngay sau `am`, `is` hoặc `are`.
-- `Is not` có thể rút thành `isn't`; `are not` có thể rút thành `aren't`.
-- `I am not` thường rút thành `I'm not`; không dùng `amn't` trong tiếng Anh
+- `Is not` có thể viết tắt thành `isn't`; `are not` có thể viết tắt thành `aren't`.
+- `I am not` thường viết tắt thành `I'm not`; không dùng `amn't` trong tiếng Anh
   chuẩn thông dụng.
 - `She isn't...` và `She's not...` có cùng nghĩa; `They aren't...` và `They're
   not...` cũng vậy.

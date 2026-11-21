@@ -21,7 +21,7 @@ Một danh từ đếm được số ít thường không đứng một mình. T
 
 ## Danh từ không đếm được
 
-Danh từ không đếm được chỉ chất, vật liệu hoặc ý niệm thường không được chia thành từng đơn vị khi nói chung. Các ví dụ A1 quen thuộc gồm `water` (nước), `milk` (sữa), `rice` (gạo/cơm), `bread` (bánh mì), `sugar` (đường), `money` (tiền) và `information` (thông tin).
+**Danh từ không đếm được** (*uncountable noun*) chỉ chất, vật liệu hoặc ý niệm thường không được chia thành từng đơn vị khi nói chung. Các ví dụ A1 quen thuộc gồm `water` (nước), `milk` (sữa), `rice` (gạo/cơm), `bread` (bánh mì), `sugar` (đường), `money` (tiền) và `information` (thông tin).
 
 Các danh từ này thường:
 
@@ -47,7 +47,7 @@ Ta vẫn có thể đếm lượng của một danh từ không đếm được 
 | `two bottles of milk` | hai chai sữa |
 | `a bowl of rice` | một bát cơm |
 | `three pieces of bread` | ba miếng bánh mì |
-| `a piece of information` | một mẩu/một thông tin |
+| `a piece of information` | một mẩu thông tin (một thông tin) |
 
 Danh từ nhận số nhiều là từ chỉ đơn vị: `glass` → `glasses`, `bottle` → `bottles`, `piece` → `pieces`. Từ `water`, `milk`, `bread` và `information` vẫn giữ nguyên.
 

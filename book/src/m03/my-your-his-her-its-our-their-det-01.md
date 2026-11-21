@@ -5,7 +5,7 @@ legacyLessonId: possessives
 ---
 # my · your · his · her · its · our · their
 
-Khi muốn nói “quyển sách của tôi”, “chị của cô ấy” hoặc “ngôi nhà của họ”, tiếng Anh thường đặt một từ chỉ sở hữu **trước danh từ**. Bảy từ cơ bản là `my`, `your`, `his`, `her`, `its`, `our` và `their`.
+Khi muốn nói “quyển sách của tôi”, “chị của cô ấy” hoặc “ngôi nhà của họ”, tiếng Anh thường đặt một **từ chỉ sở hữu** (*possessive determiner*, nhiều sách gọi là *possessive adjective*) **trước danh từ**. Bảy từ cơ bản là `my`, `your`, `his`, `her`, `its`, `our` và `their`.
 
 ## Chọn theo người hoặc vật có liên hệ
 
@@ -46,7 +46,7 @@ So sánh:
 
 ## `its` không có dấu nháy đơn
 
-`Its` nghĩa là “của nó” và đứng trước danh từ: `The cat is in its box.` nghĩa là “Con mèo ở trong chiếc hộp của nó”. `It's` có dấu nháy đơn là dạng viết tắt của `it is`: `It's in the box.` nghĩa là “Nó ở trong hộp”.
+`Its` nghĩa là “của nó” và đứng trước danh từ: `The cat is in its box.` nghĩa là “Con mèo ở trong chiếc hộp của nó”. `It's` có dấu nháy đơn là dạng viết tắt của `it is`, giống `I'm` hay `she's` đã gặp ở bài [Ba dạng của be](../m02/ba-dang-cua-be-be-01.md): `It's in the box.` nghĩa là “Nó ở trong hộp”.
 
 | Dạng | Công việc | Ví dụ |
 | --- | --- | --- |

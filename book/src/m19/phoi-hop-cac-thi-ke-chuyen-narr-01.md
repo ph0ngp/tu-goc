@@ -59,6 +59,14 @@ While + S + was/were + V-ing, S + V-ed
 
 `When` không bắt buộc luôn đi với quá khứ đơn và `while` không bắt buộc luôn đi với tiếp diễn. Việc chọn thì phụ thuộc ý nghĩa: một sự kiện ngắn, hoàn tất thường dùng quá khứ đơn; hoạt động nền đang kéo dài thường dùng tiếp diễn.
 
+Hãy giữ nguyên mệnh đề `when` và chỉ đổi thì ở mệnh đề còn lại:
+
+- `When we got home, Dad cooked dinner.` — Chúng tôi về đến nhà rồi bố mới nấu bữa tối.
+- `When we got home, Dad was cooking dinner.` — Lúc chúng tôi về đến nhà, bố đang nấu bữa tối.
+- `When we got home, Dad had cooked dinner.` — Chúng tôi về đến nhà thì bố đã nấu xong bữa tối.
+
+Quá khứ đơn đặt hai việc nối tiếp nhau: chúng tôi về trước, bố nấu sau. Quá khứ tiếp diễn cho thấy việc nấu đang diễn ra đúng lúc chúng tôi về. Quá khứ hoàn thành cho thấy việc nấu đã xong trước lúc chúng tôi về. Vì vậy, thì của mệnh đề chính cho người nghe biết thứ tự thật của hai việc.
+
 ## Một đoạn chuyện hoàn chỉnh
 
 > `It was getting dark when Minh reached the station. He had left home late, so he had missed the earlier train. A few passengers were waiting on the platform. Minh bought a ticket and sat down.`

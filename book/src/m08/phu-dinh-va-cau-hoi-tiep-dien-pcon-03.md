@@ -45,7 +45,7 @@ Không nói `Do you are listening?` hoặc `Does Lan studying?`.
 | `Is he working?` | `Yes, he is.` | `No, he isn't.` |
 | `Are they coming?` | `Yes, they are.` | `No, they aren't.` |
 
-Không rút gọn câu trả lời khẳng định thành `Yes, he's`; nói `Yes, he is`.
+Không viết tắt câu trả lời khẳng định thành `Yes, he's`; nói `Yes, he is`.
 
 ## Câu hỏi có từ hỏi
 

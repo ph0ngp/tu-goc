@@ -17,7 +17,7 @@ S + must/may/might/could/can't + have + past participle
 - `She may have taken the wrong bus.` — Có thể cô ấy đã đi nhầm xe buýt.
 - `They can't have seen the sign.` — Họ không thể nào đã nhìn thấy biển báo.
 
-Modal không thêm `-s`; `have` không đổi thành `has` hay `had`. Sau `have` phải là quá khứ phân từ: `gone`, `seen`, `left`, không phải `went`, `saw`, `leaves`.
+Modal không thêm `-s`; `have` không đổi thành `has` hay `had`. Sau `have` phải là quá khứ phân từ: `gone`, `seen`, `taken`, không phải quá khứ đơn `went`, `saw`, `took`.
 
 ## `Must have`: kết luận rất mạnh
 
@@ -28,7 +28,7 @@ Modal không thêm `-s`; `have` không đổi thành `has` hay `had`. Sau `have`
 
 Đây vẫn là **suy luận**, không phải thông tin được xác nhận trực tiếp. Nếu người nói biết chắc vì tận mắt chứng kiến, quá khứ đơn thường đủ: `I saw them leave` — “Tôi đã thấy họ rời đi.”
 
-Để suy luận mạnh rằng một việc **không** xảy ra, lựa chọn chung cho mọi biến thể là `can't/couldn't have` ở mục dưới. Trong tiếng Anh–Mỹ, `must not have + past participle` cũng là cách nói chuẩn và rất thường gặp: `He must not have heard me.` — Chắc hẳn anh ấy đã không nghe thấy tôi. Dạng này thường được viết đầy đủ là `must not`; dạng rút gọn `mustn't have` ít gặp hơn, vì `mustn't` dễ bị hiểu là lời cấm. Trong tiếng Anh–Anh, ý này thường được nói bằng `can't have`.
+Để suy luận mạnh rằng một việc **không** xảy ra, lựa chọn chung cho mọi biến thể là `can't/couldn't have` ở mục dưới. Trong tiếng Anh–Mỹ, `must not have + past participle` cũng là cách nói chuẩn và rất thường gặp: `He must not have heard me.` — Chắc hẳn anh ấy đã không nghe thấy tôi. Dạng này thường được viết đầy đủ là `must not`; dạng viết tắt `mustn't have` ít gặp hơn, vì `mustn't` dễ bị hiểu là lời cấm. Trong tiếng Anh–Anh, ý này thường được nói bằng `can't have`.
 
 ## `May/might/could have`: khả năng chưa chắc
 
@@ -80,5 +80,5 @@ Trong câu đầu, `not` nằm trong khả năng chưa chắc. Trong câu sau, `
 - Modal perfect có dạng `modal + have + past participle`.
 - `Must have` suy luận mạnh; `may/might/could have` nêu khả năng; `can't/couldn't have` loại trừ mạnh.
 - `May not have` khác `can't have` về mức chắc chắn.
-- Suy luận phủ định về quá khứ: `can't/couldn't have` dùng được ở mọi biến thể; `must not have` cũng chuẩn trong tiếng Anh–Mỹ, còn dạng rút gọn `mustn't have` ít gặp.
+- Suy luận phủ định về quá khứ: `can't/couldn't have` dùng được ở mọi biến thể; `must not have` cũng chuẩn trong tiếng Anh–Mỹ, còn dạng viết tắt `mustn't have` ít gặp.
 - Luôn phân biệt điều biết chắc với điều người nói suy ra từ bằng chứng.

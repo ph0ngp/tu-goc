@@ -9,25 +9,16 @@ legacyLessonId: c1-auxiliary-ellipsis
 
 Lược bỏ chỉ tốt khi phần bị lược có một cách hiểu rõ. Nếu người đọc phải đoán giữa nhiều hành động, cần giữ lại nhiều hơn.
 
-## Lược bỏ sau trợ động từ
+## Nhắc lại nền tảng từ B1
 
-Các trợ động từ có thể giữ lại và thay cho cả phần vị ngữ còn lại:
+Cơ chế cơ bản đã học ở [so/neither/nor, trợ động từ thay thế và câu đáp rút gọn](../m26/so-neither-nor-tro-dong-tu-thay-the-va-cau-dap-rut-gon-coh-01.md): trợ động từ hoặc động từ tình thái đứng lại thay cho phần vị ngữ (`Lan is working, and Nam is too`); nếu câu gốc không có trợ động từ thì dùng `do/does/did` (`Lan works from home, and Nam does too`); câu đáp ngắn giữ đúng trợ động từ của câu hỏi (`Have you finished? — Yes, I have`). Bài này đi tiếp vào những trường hợp phức tạp hơn: mệnh đề mới khác thì hoặc khác thể, chuỗi nhiều trợ động từ, `to`, cực tính và sự mơ hồ.
 
-- `Lan is working, and Nam is too.` — Lan đang làm việc và Nam cũng vậy.
-- `I have finished, but they haven't.` — Tôi đã xong nhưng họ chưa xong.
-- `She was invited, but I wasn't.` — Cô ấy được mời còn tôi thì không.
-- `We should apologise, and they should too.` — Chúng ta nên xin lỗi và họ cũng nên.
+## Trợ động từ còn lại thuộc về mệnh đề mới
 
-Trợ động từ còn lại phải mang đúng thì, ngôi, số và cực tính khẳng định/phủ định của mệnh đề mới.
+Phần bị lược được khôi phục từ câu trước, nhưng trợ động từ đứng lại phải hợp với chủ ngữ, thì và thể của mệnh đề mới, không chép máy móc từ câu trước:
 
-## Khi câu gốc không có trợ động từ
-
-Dùng `do/does/did` để thay vị ngữ ở hiện tại đơn hoặc quá khứ đơn:
-
-- `Lan works from home, and Nam does too.` — Lan làm việc tại nhà và Nam cũng vậy.
-- `I enjoyed the film, but my friends didn't.` — Tôi thích bộ phim nhưng bạn tôi thì không.
-
-Không lặp động từ chính sau `does/did` nếu đã lược bỏ: `Nam does too`, không dùng `Nam does works too`.
+- `I haven't read the report yet, but I will.` — Tôi chưa đọc báo cáo nhưng tôi sẽ đọc. Câu trước dùng `haven't`, nhưng việc đọc sẽ xảy ra trong tương lai, nên dùng `will`.
+- `The first draft was rejected, and the second one was too.` — Bản nháp đầu bị từ chối, và bản thứ hai cũng vậy. Câu bị động mang trợ động từ `be`, nên giữ `was`; không dùng `did`, vì `did` chỉ thay cho động từ thường ở thể chủ động.
 
 ## Giữ đúng phần của chuỗi trợ động từ
 
@@ -42,14 +33,6 @@ Phần còn lại phụ thuộc điểm tương phản:
 - `Lan has been working late, and Nam has too.` — giữ `has`, lược `been working late` khi cách hiểu rõ.
 
 Không có quy tắc “luôn giữ đúng một từ”. Giữ đủ trợ động từ để biểu thị thì, thể, tình thái và bị động mà mệnh đề mới cần.
-
-## Lược bỏ trong câu đáp
-
-- `Have you finished? — Yes, I have.` — Bạn làm xong chưa? — Rồi.
-- `Can the problem be solved? — I think it can.` — Vấn đề có giải quyết được không? — Tôi nghĩ là được.
-- `Who broke the window? — Lan did.` — Ai làm vỡ cửa sổ? — Lan.
-
-Câu đáp không cần lặp phần đã nằm trong câu hỏi. Tuy nhiên, câu trả lời phải dùng đúng trợ động từ: không đáp `Yes, I do` cho `Have you finished?`.
 
 ## Lược bỏ sau `to`
 
@@ -81,12 +64,12 @@ Trợ động từ còn lại mang phần khẳng định/phủ định mới. `
 
 ## Tránh mơ hồ: phần nào đã được lược?
 
-`Lan told Mai that she should leave, and Nam did too` có thể mơ hồ: Nam cũng “nói với Mai” hay Nam cũng “rời đi”? `Did` thường hướng về cụm động từ chính `told Mai...`, nhưng cấu trúc nhiều mệnh đề khiến người đọc có thể vấp.
+`Lan said Mai left early, and Nam did too` có thể hiểu hai cách, vì `did` có thể thay cho `said Mai left early` hoặc chỉ cho `left early`: Nam cũng nói rằng Mai về sớm, hay chính Nam cũng về sớm? Khi câu có nhiều tầng mệnh đề cùng một thì, người đọc không biết trợ động từ còn lại thuộc về tầng nào.
 
-Viết rõ:
+Viết rõ theo từng cách hiểu:
 
-- `Lan told Mai to leave, and Nam gave Mai the same advice.` — Lan bảo Mai rời đi, và Nam cũng khuyên Mai như vậy.
-- `Lan said Mai should leave, and Nam left too.` — Lan nói Mai nên rời đi, và Nam cũng đã rời đi.
+- `Lan said Mai left early, and Nam said so too.` — Lan nói Mai về sớm, và Nam cũng nói vậy.
+- `Lan said Mai left early, and Nam also left early.` — Lan nói Mai về sớm, và Nam cũng về sớm.
 
 Không lược bỏ chỉ vì có thể; tính khôi phục rõ quan trọng hơn độ ngắn.
 
@@ -107,8 +90,8 @@ Hai câu gần nghĩa, nhưng `do so` thường trang trọng hơn và có thể
 
 ## Ghi nhớ
 
-- Trợ động từ hoặc động từ tình thái có thể đứng lại khi phần vị ngữ đã rõ được lược.
-- Dùng `do/does/did` khi câu gốc ở hiện tại/quá khứ đơn không có trợ động từ.
+- Trợ động từ hoặc động từ tình thái có thể đứng lại khi phần vị ngữ đã rõ được lược; nếu câu gốc không có trợ động từ, dùng `do/does/did`.
+- Trợ động từ còn lại hợp với thì và thể của mệnh đề mới: `but I will`, `and the second one was too`.
 - Với chuỗi trợ động từ, giữ đủ phần để biểu thị thì, thể, tình thái và bị động cần thiết.
 - `To` có thể đứng một mình sau các từ cho phép động từ nguyên mẫu; đôi khi cần giữ `to be/to have been`.
 - Trợ động từ còn lại phải mang đúng hòa hợp và cực tính.

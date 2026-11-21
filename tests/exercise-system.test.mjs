@@ -4,9 +4,10 @@ import { exerciseDataByLegacyId } from "../app/exercise-data.ts";
 import {
   isAlignedMatchOrder,
   isPredictableSortOrder,
-  isRotationOf,
+  isRevealingOrder,
   matchOptionOrder,
 } from "../app/exercises/answer-order.ts";
+import { evaluateExercise } from "../app/exercise-evaluator.ts";
 import { sentenceTokens } from "../app/exercises/basic-builders.ts";
 import { allLessonTopicHints, lessonTopicHint } from "../app/exercises/quality.ts";
 
@@ -59,6 +60,10 @@ test("keeps every exercise answer valid and checkable", () => {
         break;
       case "order":
         assert.ok(sameMultiset(exercise.tokens, exercise.answer), exercise.id);
+        for (const alternative of exercise.alternatives ?? []) {
+          assert.ok(sameMultiset(exercise.tokens, alternative), `${exercise.id}: cách xếp khác phải dùng đúng các mảnh`);
+          assert.notDeepEqual(alternative, exercise.answer, `${exercise.id}: cách xếp khác trùng đáp án chính`);
+        }
         break;
       case "match":
         assert.ok(exercise.pairs.length > 0, exercise.id);
@@ -118,7 +123,9 @@ test("never lets the position of an option give away the answer", () => {
           slots.push([slot.options.findIndex((option) => slot.acceptedAnswers.includes(option)), slot.options.length]);
         }
       } else if (exercise.kind === "order" && exercise.answer.length >= 3) {
-        assert.ok(!isRotationOf(exercise.tokens, exercise.answer), `${exercise.id}: các mảnh đang xoay vòng từ câu đúng`);
+        for (const accepted of [exercise.answer, ...(exercise.alternatives ?? [])]) {
+          assert.ok(!isRevealingOrder(exercise.tokens, accepted), `${exercise.id}: thứ tự các mảnh để lộ một câu đúng`);
+        }
       } else if (exercise.kind === "sort" && exercise.items.length >= 3 && new Set(exercise.items.map((item) => item.bucket)).size > 1) {
         assert.ok(!isPredictableSortOrder(exercise.items, exercise.buckets), `${exercise.id}: thứ tự mục để lộ nhóm`);
       } else if (exercise.kind === "match") {
@@ -132,7 +139,7 @@ test("never lets the position of an option give away the answer", () => {
       if (!printed || printed.length < 3) continue;
       const answer = exercise.kind === "order" ? exercise.answer
         : exercise.kind === "exact-input" ? sentenceTokens(exercise.acceptedAnswers[0]) : null;
-      if (answer) assert.ok(!isRotationOf(printed, answer), `${exercise.id}: câu hỏi in các mảnh theo thứ tự của câu đúng`);
+      if (answer) assert.ok(!isRevealingOrder(printed, answer), `${exercise.id}: câu hỏi in các mảnh theo thứ tự của câu đúng`);
     }
     for (const exercise of exercises) {
       assert.doesNotMatch(exercise.hint, /“[^”]+” trong phương án còn lại/, `${exercise.id}: gợi ý chỉ ra phương án sai`);
@@ -162,6 +169,44 @@ test("never lets the position of an option give away the answer", () => {
         actual <= expected + 3,
         `${lessonId}: đáp án nằm ở vị trí ${position + 1} trong ${actual}/${choiceSlots.length} lựa chọn, kỳ vọng khoảng ${expected.toFixed(1)}`,
       );
+    }
+  }
+});
+
+test("accepts every listed correct arrangement and shows the part to repair", () => {
+  const indexesFor = (tokens, arrangement) => {
+    const used = new Set();
+    return arrangement.map((token) => {
+      const index = tokens.findIndex((candidate, position) => candidate === token && !used.has(position));
+      used.add(index);
+      return index;
+    });
+  };
+  for (const exercise of allExercises) {
+    if (exercise.kind === "order") {
+      for (const accepted of [exercise.answer, ...(exercise.alternatives ?? [])]) {
+        assert.equal(evaluateExercise(exercise, "", indexesFor(exercise.tokens, accepted), {}, ""), "correct", `${exercise.id}: ${accepted.join(" ")}`);
+      }
+    }
+    if (exercise.kind === "repair") {
+      // Giao diện hiện phần cần sửa (gạch ngang) cạnh ô chọn, nên phần ấy phải là một phương án sai thật.
+      assert.ok(exercise.tokens[exercise.targetIndex].trim(), `${exercise.id}: phần cần sửa đang trống`);
+    }
+  }
+});
+
+test("never asks for the same typed sentence twice and keeps punctuation unspaced in generated options", () => {
+  for (const [lessonId, exercises] of entries) {
+    const typed = exercises.filter((exercise) => exercise.kind === "exact-input").map((exercise) => exercise.acceptedAnswers[0]);
+    assert.equal(new Set(typed).size, typed.length, `${lessonId}: hai bài gõ câu hỏi cùng một câu`);
+    if (!/^(?:b1|b2|c1)-/.test(lessonId)) continue;
+    for (const exercise of exercises) {
+      const options = exercise.kind === "grid" ? exercise.rows.flatMap((row) => row.options)
+        : exercise.kind === "repair" ? exercise.replacements
+          : exercise.kind === "choice" ? exercise.options : [];
+      for (const option of options) {
+        assert.doesNotMatch(option, /[\p{L}\p{N}] [,.;:?!](?:\s|$)|\( /u, `${exercise.id}: dấu câu bị tách bằng khoảng trắng — ${option}`);
+      }
     }
   }
 });
@@ -635,7 +680,7 @@ test("gives every Chapter 3 lesson comprehensive and unambiguous be practice", (
   const areContractionTap = exerciseDataByLegacyId["be-forms"].find(
     (exercise) => exercise.id === "b20",
   );
-  assert.equal(areContractionTap?.prompt, "Chọn tất cả dạng được rút gọn từ cụm có `are`.");
+  assert.equal(areContractionTap?.prompt, "Chọn tất cả dạng được viết tắt từ cụm có `are`.");
 
   const subjectDescriptionMatch = exerciseDataByLegacyId["be-forms"].find(
     (exercise) => exercise.id === "b26",
@@ -1178,7 +1223,7 @@ test("gives all 25 C1 lessons deep, varied, and editorially clean practice", () 
   const allC1Source = c1LessonIds.map(sourceFor).join("\n");
   assert.doesNotMatch(allC1Source, /as topicalisation|where the first .*there.*names that place|No came students|as though he be a child|All of the three reports|I know that it is|The committee is divided in its opinion/i);
   assert.match(sourceFor("c1-nominalisation"), /giữ đúng tác nhân và đối tượng khi chuyển mệnh đề bị động sang nominalisation/i);
-  assert.match(sourceFor("c1-punctuation-discourse"), /toàn bộ các quản lý được mời đều đã hoàn thành khóa học/i);
+  assert.match(sourceFor("c1-punctuation-discourse"), /ai trong số họ cũng đã hoàn thành khóa học/i);
 });
 
 test("contains no tracking, rewards, audio, or hidden theory model", () => {

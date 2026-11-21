@@ -17,7 +17,9 @@ S + be + likely/unlikely + to + V
 - `The road is unlikely to reopen today.` — Con đường khó có khả năng mở lại hôm nay.
 - `Are prices likely to rise?` — Giá có khả năng tăng không?
 
-`Likely` là tính từ trong cấu trúc này, nên cần `be`. Không dùng `Lan likely arrives` trong mẫu cơ bản.
+`Likely` là tính từ trong cấu trúc này, nên cần `be`. Trong mẫu cơ bản của bài, không viết `Lan likely arrives`; hãy dùng `Lan is likely to arrive`.
+
+Trong tiếng Anh–Mỹ, `likely` còn được dùng như trạng từ, gần nghĩa `probably`: `Lan will likely arrive early.` — Có lẽ Lan sẽ đến sớm. Bài này luyện mẫu `be likely to`, dùng được trong mọi biến thể tiếng Anh.
 
 Có thể dùng cấu trúc với `it`:
 

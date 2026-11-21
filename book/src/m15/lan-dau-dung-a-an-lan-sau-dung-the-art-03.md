@@ -20,16 +20,16 @@ nhắc lại đối tượng: the + danh từ
 
 ## Một câu chuyện ngắn
 
-| Câu | Vì sao dùng mạo từ đó |
-| --- | --- |
-| `Lan bought a book.` | lần đầu giới thiệu một quyển sách |
-| `The book was about space.` | chính quyển sách vừa nhắc |
-| `It had an interesting picture.` | lần đầu giới thiệu một bức tranh |
-| `The picture showed the Moon.` | nhắc lại bức tranh; Mặt Trăng là đối tượng duy nhất trong ngữ cảnh chung |
+| Câu | Nghĩa | Vì sao dùng mạo từ đó |
+| --- | --- | --- |
+| `Lan bought a book.` | Lan mua một quyển sách. | lần đầu giới thiệu một quyển sách |
+| `The book was about space.` | Quyển sách đó viết về vũ trụ. | chính quyển sách vừa nhắc |
+| `It had an interesting picture.` | Trong sách có một bức tranh thú vị. | lần đầu giới thiệu một bức tranh |
+| `The picture showed the Moon.` | Bức tranh vẽ Mặt Trăng. | nhắc lại bức tranh; Mặt Trăng là đối tượng duy nhất trong ngữ cảnh chung |
 
 ## Không phải cứ câu thứ hai là dùng `the`
 
-`The` chỉ dùng khi người nghe xác định được đối tượng. `I saw a dog. A cat was sitting nearby` giới thiệu một con mèo mới nên vẫn dùng `a cat`, dù đây là câu thứ hai.
+`The` chỉ dùng khi người nghe xác định được đối tượng. `I saw a dog. A cat was sitting nearby` (Tôi thấy một con chó. Một con mèo đang ngồi gần đó) giới thiệu một con mèo mới nên vẫn dùng `a cat`, dù đây là câu thứ hai.
 
 Ngược lại, có thể dùng `the` ngay lần đầu nếu tình huống đã làm đối tượng rõ: `Please close the door` — “Vui lòng đóng cửa”; những người trong phòng biết đó là cửa nào.
 
@@ -48,9 +48,11 @@ Việc nhắc trước chỉ là một cách khiến đối tượng trở nên 
 
 Một đoạn có thể giới thiệu nhiều đối tượng khác nhau. Hãy theo dõi riêng từng chuỗi:
 
-> `A woman entered the café with a child. The woman ordered a drink. The child sat by the window.`
+1. `A woman entered the café with a child.` — Một người phụ nữ bước vào quán cà phê cùng một đứa trẻ.
+2. `The woman ordered a drink.` — Người phụ nữ gọi đồ uống.
+3. `The child sat by the window.` — Đứa trẻ ngồi cạnh cửa sổ.
 
-`A woman` và `a child` đều được giới thiệu lần đầu trong câu đầu. Sau đó `the woman` và `the child` nhắc lại từng người tương ứng. Không phải danh từ nào xuất hiện sau cũng dùng `the`; nếu thêm `A waiter came to the table`, người phục vụ là đối tượng mới nên vẫn dùng `a`.
+`A woman` và `a child` đều được giới thiệu lần đầu trong câu đầu. Sau đó `the woman` và `the child` nhắc lại từng người tương ứng. Không phải danh từ nào xuất hiện sau cũng dùng `the`; nếu thêm `A waiter came to the table` (Một người phục vụ đi đến bàn), người phục vụ là đối tượng mới nên vẫn dùng `a`.
 
 Khi viết, hãy tự hỏi người đọc có thể nối danh từ này với một đối tượng đã xuất hiện hoặc đã rõ trong tình huống hay không. Nếu có, `the` thường phù hợp; nếu chưa, cần cách giới thiệu chưa xác định.
 

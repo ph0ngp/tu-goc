@@ -15,6 +15,13 @@ legacyLessonId: a2-been-gone
 
 `Been to` thường dùng cho trải nghiệm hoặc một chuyến đi đã hoàn tất.
 
+Các từ `there` (đó), `here` (đây), `home` (nhà) và `abroad` (nước ngoài) đã tự chỉ nơi chốn nên **không có `to` đứng trước**. Vì vậy, ví dụ `Have you ever been abroad?` ở trên không có `to`. Tương tự:
+
+- `I've been there twice.` — Tôi đã đến đó hai lần.
+- `She's gone home.` — Cô ấy về nhà rồi.
+
+Không nói `been to there` hay `been to abroad`.
+
 ## `Have gone to`: đã đi và chưa trở về
 
 - `Lan has gone to Singapore.` — Lan đã đi Singapore và hiện vẫn ở đó hoặc đang trên đường.
@@ -50,22 +57,22 @@ Khi hỏi trải nghiệm, `been to` là lựa chọn điển hình ở mọi bi
 
 ## Hình thức
 
-Luôn có `have/has`: `She has gone`, `They have been`. Không dùng `She is gone to the bank` để tạo hiện tại hoàn thành. `She's gone` trong ngữ cảnh này là dạng rút gọn của `She has gone`.
+Luôn có `have/has`: `She has gone`, `They have been`. Không dùng `She is gone to the bank` để tạo hiện tại hoàn thành. `She's gone` trong ngữ cảnh này là dạng viết tắt của `She has gone`.
 
 ## Suy ra từ tình huống hiện tại
 
 Người nói thường chọn `been` hay `gone` để giải thích người đó đang ở đâu bây giờ:
 
-- `Is Lan here? — No, she's gone to the library.` Người nói hiểu Lan chưa trở về.
-- `Does Lan know that library? — Yes, she's been there many times.` Người nói nói về trải nghiệm đã hoàn tất.
+- `Is Lan here? — No, she's gone to the library.` — Lan có ở đây không? — Không, cô ấy đi thư viện rồi. Câu trả lời cho biết Lan chưa trở về.
+- `Does Lan know that library? — Yes, she's been there many times.` — Lan có biết thư viện đó không? — Có, cô ấy đã đến đó nhiều lần. Câu trả lời nói về trải nghiệm đã hoàn tất.
 
 Không phải mọi câu có `been` đều mang nghĩa “đi và về”. Trong `Lan has been ill for two days`, `been` chỉ là quá khứ phân từ của `be`: Lan đã bị ốm hai ngày. Nghĩa chuyến đi xuất hiện trong cụm `have been to + nơi chốn`, nên cần đọc cả cụm thay vì dịch riêng một từ.
 
 ## Ba câu hỏi để chọn đúng cụm
 
-1. Đang nói một trải nghiệm đến thăm nơi nào đó và người ấy đã rời nơi đó chưa? Dùng `have been to`.
-2. Đang giải thích người ấy đã đi đâu và hiện chưa trở lại chưa? Dùng `have gone to`.
-3. Đang nói người ấy ở một nơi trong bao lâu, có thể vẫn còn ở đó không? Dùng `have been in/at`.
+1. Người ấy đã đến thăm nơi đó và đã rời đi? Dùng `have been to`.
+2. Người ấy đã đi và hiện chưa trở lại? Dùng `have gone to`.
+3. Người ấy đang ở một nơi trong một khoảng thời gian và có thể vẫn còn ở đó? Dùng `have been in/at`.
 
 | Tình huống hiện tại | Câu |
 | --- | --- |
@@ -83,11 +90,12 @@ Không phải mọi câu có `been` đều mang nghĩa “đi và về”. Trong
 >
 > **B:** `Yes, he's been there several times.` — Có, anh ấy đã đến đó vài lần rồi.
 
-Cùng một người và một nơi nhưng câu đầu giải thích sự vắng mặt hiện tại, còn câu sau nói trải nghiệm đã hoàn tất. Khi Nam trở về, người nói có thể nói `Nam has been to the supermarket`; tuy nhiên, trong giao tiếp tự nhiên, họ thường chỉ kể cụ thể `Nam went to the supermarket` nếu đang nói về chuyến đi vừa xác định đó.
+Cùng một người và một nơi nhưng câu đầu giải thích sự vắng mặt hiện tại, còn câu sau nói trải nghiệm đã hoàn tất. Khi Nam trở về, người nói có thể nói `Nam has been to the supermarket` — Nam đi siêu thị về rồi; tuy nhiên, trong giao tiếp tự nhiên, họ thường chỉ kể cụ thể `Nam went to the supermarket` — Nam đã đi siêu thị — nếu đang nói về chuyến đi vừa xác định đó.
 
 ## Ghi nhớ
 
 - `have been to` thường nghĩa là đã đến và đã trở về.
 - `have gone to` thường nghĩa là đã đi và chưa trở về.
+- Trước `there`, `here`, `home`, `abroad` không dùng `to`: `been there`, `been abroad`, `gone home`.
 - `have been in/at` có thể nói khoảng thời gian đang ở một nơi.
 - Chọn theo vị trí hiện tại và cách người nói nhìn chuyến đi.

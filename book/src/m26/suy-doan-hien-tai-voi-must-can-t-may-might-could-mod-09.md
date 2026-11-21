@@ -36,7 +36,7 @@ Sau modal dùng động từ dạng cơ bản: `must be`, `could know`, không d
 
 Trong suy đoán phủ định mạnh, `can't` là lựa chọn chung cho mọi biến thể tiếng Anh. Trong tiếng Anh–Mỹ, `must not` cũng là cách chuẩn để suy luận rằng điều gì không đúng: `He must not be home; his car is gone.` — Chắc anh ấy không có nhà; xe của anh ấy không còn ở đây. Sắc thái hơi khác nhau: `can't` loại trừ hẳn khả năng (“không thể”), còn `must not` là kết luận rút ra từ dấu hiệu (“chắc là không”).
 
-Tuy vậy, thông thường không dùng `mustn't` cho suy luận: dạng rút gọn này gần như luôn mang nghĩa “không được phép”, như `You mustn't park here` — “Bạn không được đỗ xe ở đây.” Muốn suy luận phủ định bằng `must`, viết đầy đủ `must not`.
+Tuy vậy, thông thường không dùng `mustn't` cho suy luận: dạng viết tắt này gần như luôn mang nghĩa “không được phép”, như `You mustn't park here` — “Bạn không được đỗ xe ở đây.” Muốn suy luận phủ định bằng `must`, viết đầy đủ `must not`.
 
 ## `May`, `might`, `could`: khả năng có thể đúng
 
@@ -58,6 +58,8 @@ So sánh:
 - `She might not be the manager.` — Có thể cô ấy không phải quản lý.
 - `She can't be the manager; the manager is Mr Long.` — Cô ấy không thể là quản lý vì quản lý là ông Long.
 
+Chú ý: `could` đứng cạnh `may/might` trong câu khẳng định, nhưng dạng phủ định `couldn't` lại mạnh như `can't`: `She couldn't be the manager.` — Cô ấy không thể là quản lý. Muốn nói “có thể không”, dùng `may not/might not`, không dùng `couldn't`.
+
 ## Suy đoán về hành động đang diễn ra
 
 Dùng `modal + be + V-ing`:
@@ -70,12 +72,14 @@ Hình thức tiếp diễn cho biết suy đoán hướng tới quá trình đan
 
 ## Khác với khả năng và nghĩa vụ đã học
 
-- `Lan can swim.` — `can` nói khả năng làm được, không phải suy đoán.
-- `Lan could be at the pool.` — `could` nói khả năng địa điểm.
+- `Lan can swim.` — Lan biết bơi: `can` nói năng lực làm được, không phải suy đoán.
+- `Lan could be at the pool.` — Có thể Lan đang ở hồ bơi: `could` là một suy đoán, không nói năng lực.
 - `You must leave now.` — `must` nói nghĩa vụ.
 - `You must be in a hurry.` — `must` nói suy luận “hẳn bạn đang vội”.
 
 Ngữ cảnh và loại động từ phía sau giúp nhận ra nghĩa.
+
+`Can` không dùng để đoán về một trường hợp cụ thể đang xảy ra: nói `That noise could be the wind.`, không nói `That noise can be the wind`. `Can be` chỉ nói điều đôi khi xảy ra nói chung: `Hanoi can be very cold in winter.` — Hà Nội có lúc rất lạnh vào mùa đông.
 
 ## Ghi nhớ
 

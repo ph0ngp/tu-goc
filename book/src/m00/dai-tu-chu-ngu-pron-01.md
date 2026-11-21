@@ -70,8 +70,8 @@ Với con vật, `it` là lựa chọn trung tính khi ta không cần nói đ�
 ## 3. `we` có người nói; `they` chỉ một nhóm khác
 
 `We` và `they` đều có thể chỉ một nhóm. `We` chỉ nhóm có người nói. `They` chỉ
-một nhóm khác đang được nói tới, không phải người nói và cũng không phải những
-người đang được nói trực tiếp với bằng `you`.
+một nhóm khác đang được nói tới: nhóm ấy không gồm người nói và cũng không gồm
+người đang nghe (người được gọi là `you`).
 
 | Nhóm được nói tới | Đại từ | Vì sao? |
 | --- | --- | --- |

@@ -42,7 +42,7 @@ Cách này không dùng tự do với mọi danh từ. `The dog needs exercise` 
 - `Pianos are expensive.` — Đàn piano nói chung đắt.
 - `The piano became popular in the eighteenth century.` — Đàn piano như một loại nhạc cụ trở nên phổ biến.
 
-`The` trong `play the piano` là quy ước với nhạc cụ, không có nghĩa một cây đàn đã xác định. Khi nói hoạt động thể thao, thường không có mạo từ: `play football`.
+`The` trong `play the piano` là quy ước với nhạc cụ, không có nghĩa một cây đàn đã xác định. Trong tiếng Anh Mỹ cũng thường gặp `play piano` không có `the`, nhất là khi nói chơi trong ban nhạc hay nói về một kỹ năng: `She plays piano in a band.` — Cô ấy chơi piano trong một ban nhạc. Khi nói hoạt động thể thao, thường không có mạo từ: `play football`.
 
 ## Nhóm người bằng tính từ
 

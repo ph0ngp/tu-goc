@@ -11,7 +11,7 @@ legacyLessonId: a2-when-while-as
 
 `When` nghĩa là “khi”. Nó thường giới thiệu một thời điểm hoặc một sự kiện:
 
-- `I was cooking when the phone rang.` — Tôi đang nấu ăn thì điện thoại reo.
+- `I was reading when the doorbell rang.` — Tôi đang đọc sách thì chuông cửa reo.
 - `When the bus arrived, we got on.` — Khi xe buýt đến, chúng tôi lên xe.
 - `I smiled when I saw Lan.` — Tôi mỉm cười khi nhìn thấy Lan.
 
@@ -31,35 +31,32 @@ Mệnh đề `when` có thể đứng đầu hoặc cuối. Khi đứng đầu, 
 Trong câu thời gian, `as` có thể mang nghĩa “khi/trong lúc”, gần với `while`:
 
 - `As I was leaving, Lan arrived.` — Khi tôi đang rời đi thì Lan đến.
+- `As I was walking to school, I met Nam.` — Trong lúc đi bộ đến trường, tôi gặp Nam.
 - `The sky grew darker as we walked home.` — Bầu trời tối dần trong lúc chúng tôi đi bộ về nhà.
 
 `As` đặc biệt tự nhiên khi hai thay đổi diễn ra cùng nhau. Tuy nhiên, `as` còn có thể mang nghĩa “vì” hoặc “như”; ở bài này chỉ xét nghĩa thời gian.
 
 Nếu `as` có thể khiến câu khó hiểu, `when` hoặc `while` thường là lựa chọn rõ hơn. Chẳng hạn, `As Lan was tired, she went home` thường được hiểu là “Vì Lan mệt nên cô ấy về nhà”, không phải “Trong lúc Lan mệt”. Khi muốn nói một việc xảy ra trong lúc Lan đang học, `While Lan was studying, ...` rõ nghĩa thời gian hơn.
 
-## Không chọn thì chỉ bằng từ nối
-
-| Quan hệ ý nghĩa | Ví dụ |
-| --- | --- |
-| sự kiện xảy ra trong hoạt động nền | `She was sleeping when I arrived.` |
-| hai hoạt động đang diễn ra song song | `While she was cooking, I was cleaning.` |
-| hai sự việc nối tiếp | `When she finished, she went home.` |
-
-`When` có thể đi với quá khứ đơn hoặc tiếp diễn; `while/as` cũng không tự buộc mọi động từ phải ở tiếp diễn. Hãy xác định sự việc là một bước trọn vẹn hay hoạt động đang diễn ra.
-
 ## Cùng sự việc, khác điểm nhìn
 
-So sánh hai câu chỉ thay từ nối và cách nhìn hoạt động:
+Bài [Quá khứ đơn so với quá khứ tiếp diễn](qua-khu-don-so-voi-qua-khu-tiep-dien-aspect-03.md) đã cho thấy từ nối không tự chọn thì. Ở đây, hãy xem từ nối và thì cùng làm việc thế nào. Hai câu dưới đây giữ nguyên vế đầu và cùng nói về việc Lan lau bàn; chỉ từ nối và cách nhìn việc lau bàn thay đổi:
 
-- `I was cooking when the phone rang.` — Tôi đang nấu ăn thì điện thoại reo. Câu này đặt cuộc điện thoại như một sự kiện xảy ra tại một điểm trong lúc việc nấu ăn đang tiếp diễn.
-- `While I was cooking, Lan was setting the table.` — Trong khi tôi đang nấu ăn, Lan đang dọn bàn. Câu này đặt hai hoạt động kéo dài song song.
+- `I was cooking when Lan cleaned the table.` — Tôi đang nấu ăn thì Lan lau bàn. Việc lau bàn được kể như một sự việc trọn vẹn xảy ra trong lúc tôi đang nấu.
+- `I was cooking while Lan was cleaning the table.` — Tôi đang nấu ăn trong khi Lan đang lau bàn. Việc lau bàn được nhìn như một hoạt động kéo dài song song với việc nấu.
 
-`When` không có nghĩa là vế sau luôn ngắn, và `while` không có nghĩa là mọi sự việc ngoài đời phải kéo dài rất lâu. Điều quan trọng là **cách người kể nhìn sự việc trong câu**: như một điểm/sự kiện, hay như một hoạt động đang mở.
+`When` không có nghĩa là vế sau luôn ngắn, và `while` không có nghĩa là mọi sự việc ngoài đời phải kéo dài rất lâu. Điều quan trọng là **cách người kể nhìn sự việc trong câu**: như một điểm/sự kiện, hay như một hoạt động đang mở. Ba quan hệ thường gặp:
+
+| Quan hệ ý nghĩa | Ví dụ | Nghĩa |
+| --- | --- | --- |
+| sự kiện xảy ra trong hoạt động nền | `She was sleeping when I arrived.` | Cô ấy đang ngủ thì tôi đến. |
+| hai hoạt động đang diễn ra song song | `While she was cooking, I was cleaning.` | Trong khi cô ấy đang nấu ăn, tôi đang dọn dẹp. |
+| hai sự việc nối tiếp | `When she finished, she went home.` | Khi làm xong, cô ấy về nhà. |
 
 Với `as`, hai diễn biến có thể thay đổi cùng nhau:
 
-- `As the sun rose, the streets became busier.` — Khi mặt trời lên dần, đường phố trở nên đông đúc hơn.
-- `The music became quieter as the film ended.` — Nhạc nhỏ dần khi bộ phim đi đến đoạn kết.
+- `As the night went on, the guests left one by one.` — Đêm càng về khuya, khách lần lượt ra về.
+- `As the months passed, my English improved.` — Ngày tháng trôi qua, tiếng Anh của tôi tiến bộ dần.
 
 Ở đây, hai phía đều phát triển theo thời gian; đó là sắc thái mà `as` diễn tả tự nhiên hơn một mốc đơn lẻ.
 

@@ -48,12 +48,12 @@ Từ hỏi có thể đi cùng danh từ hoặc từ khác để tạo một c�
 
 ## `Who` hỏi tân ngữ và `who` hỏi chủ ngữ
 
-Trong `Who do you help?`, `you` là chủ ngữ và `who` hỏi người nhận hành động; cần `do`. Nhưng nếu chính `who` là người thực hiện hành động, không dùng `do/does` trong mẫu cơ bản:
+Trong `Who do you help?` (Bạn giúp ai?), `you` là chủ ngữ và `who` hỏi người nhận hành động; cần `do`. Nhưng nếu chính `who` là người thực hiện hành động, không dùng `do/does` trong mẫu cơ bản:
 
 - `Who helps you?` — Ai giúp bạn?
 - `Who lives here?` — Ai sống ở đây?
 
-Động từ sau `who` hỏi chủ ngữ mang dạng ngôi thứ ba số ít (`helps`, `lives`), vì tiếng Anh coi `who` là một chủ ngữ số ít, giống `he` hoặc `she`. Điều này vẫn đúng khi câu trả lời có thể là nhiều người: `Who lives here?` vẫn dùng `lives`, dù người sống ở đó có thể là cả một gia đình. Ở A1, hãy phân biệt bằng câu hỏi: **đã có một chủ ngữ khác sau `do/does` chưa?**
+Động từ sau `who` hỏi chủ ngữ mang dạng ngôi thứ ba số ít (`helps`, `lives`), vì tiếng Anh coi `who` là một chủ ngữ số ít, giống `he` hoặc `she`. Điều này vẫn đúng khi câu trả lời có thể là nhiều người: `Who lives here?` vẫn dùng `lives`, dù người sống ở đó có thể là cả một gia đình. Ở A1, hãy tự hỏi: **ngoài `who`, câu còn có chủ ngữ nào khác không?** Có, như `you` trong `Who do you help?`, thì cần `do/does`. Không có thì `who` chính là chủ ngữ, và động từ thêm `-s/-es` như sau `he` hoặc `she`.
 
 ## Câu hỏi với `be` vẫn theo hệ thống riêng
 
@@ -68,7 +68,7 @@ Một câu trả lời có thể ngắn nhưng cần đưa thông tin được h
 
 | Câu hỏi | Câu trả lời phù hợp |
 | --- | --- |
-| `Where do you live?` | `In Hanoi.` hoặc `I live in Hanoi.` |
+| `Where do you live?` | `In Hanoi.` — Ở Hà Nội. Hoặc `I live in Hanoi.` — Tôi sống ở Hà Nội. |
 | `Why does she study English?` | `Because she needs it for work.` — Vì cô ấy cần tiếng Anh cho công việc. |
 | `How do they go to school?` | `By bus.` — Bằng xe buýt. |
 

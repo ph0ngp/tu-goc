@@ -29,17 +29,20 @@ Không dùng `one/ones` thay trực tiếp danh từ không đếm được tron
 
 - `I prefer fresh coffee to instant coffee`, không dùng `instant one` để thay `coffee` không đếm được.
 
-Sau từ chỉ sở hữu, thường dùng đại từ sở hữu thay vì `one`: `My phone is newer than yours`, tự nhiên hơn `your one` trong phần lớn văn phong chuẩn. Tuy vậy, `your one` có thể xuất hiện trong một số biến thể hoặc khi `one` mang nghĩa số đếm; cần phân biệt.
+Khi chỉ cần nói “cái của ai”, thường dùng đại từ sở hữu thay vì `one`: `My phone is newer than yours` — Điện thoại của tôi mới hơn của bạn — tự nhiên hơn `your one` trong phần lớn văn phong chuẩn, dù `your one` vẫn gặp trong văn nói ở một số vùng.
+
+Khi có tính từ, lại dùng từ sở hữu + tính từ + `one`: `Your phone is newer than my old one.` — Điện thoại của bạn mới hơn cái cũ của tôi. Không dùng `mine old one`, vì đại từ sở hữu `mine` đã thay cả cụm danh từ nên không đứng trước tính từ.
 
 `One` cũng có thể là đại từ chung chỉ người: `One should be careful` — “Người ta nên cẩn thận.” Đây là cấu trúc trang trọng khác với substitute `one` thay một danh từ cụ thể.
 
 ## `So` thay một mệnh đề khẳng định
 
-Sau một số động từ diễn tả suy nghĩ, kỳ vọng hoặc lời nói, `so` thay cho cả nội dung đã nhắc:
+Các câu đáp như `I think so`, `I hope not` đã gặp ở [so/neither/nor, trợ động từ thay thế và câu đáp rút gọn](../m26/so-neither-nor-tro-dong-tu-thay-the-va-cau-dap-rut-gon-coh-01.md). Ở C1, điều cần nắm là điều kiện cho phép: sau một số động từ diễn tả suy nghĩ, kỳ vọng, lời nói hoặc vẻ bề ngoài, `so` thay cho cả nội dung đã nhắc:
 
 - `Will prices fall? — I think so.` — Giá sẽ giảm chứ? — Tôi nghĩ là có.
 - `Is Lan coming? — I hope so.` — Lan sẽ đến chứ? — Tôi hy vọng là có.
 - `They say the road is open, and I suppose so.` — Họ nói đường đã mở, và tôi cho là vậy.
+- `Is the meeting cancelled? — It seems so.` — Cuộc họp bị hủy à? — Có vẻ là vậy. `It appears so` cũng dùng được, trang trọng hơn.
 
 `So` không tự thay được sau mọi động từ. `I know so` không phải câu đáp thông thường cho “Tôi biết là vậy”; ta nói `I know` hoặc `I know it is` tùy ngữ cảnh.
 
@@ -51,7 +54,7 @@ Sau một số động từ diễn tả suy nghĩ, kỳ vọng hoặc lời nói
 Mẫu phủ định thay đổi theo động từ:
 
 - `I think not` trang trọng và dứt khoát; trong hội thoại thường nói `I don't think so`.
-- `I hope not` tự nhiên; `I don't hope so` không mang cùng nghĩa trung tính.
+- `I hope not` là dạng dùng được; không nói `I don't hope so`.
 - `I suppose not` và `I don't suppose so` đều có thể dùng với khác biệt nhỏ về nhịp và tiêu điểm.
 
 Không thể tạo một quy tắc “khẳng định dùng so, phủ định đổi so thành not” cho mọi động từ.

@@ -5,7 +5,7 @@ legacyLessonId: action-vs-be
 ---
 # be hay hành động?
 
-Trước khi học hiện tại đơn, cần phân biệt hai kiểu câu: câu dùng động từ `be` và câu dùng một động từ mang nghĩa riêng như `work` (làm việc), `read` (đọc) hoặc `like` (thích). Hai kiểu này tạo phủ định và câu hỏi theo những cách khác nhau.
+Trước khi học hiện tại đơn (*present simple*), cần phân biệt hai kiểu câu: câu dùng động từ `be` và câu dùng một **động từ thường** (*ordinary verb*), tức động từ tự mang nghĩa riêng như `work` (làm việc), `read` (đọc) hoặc `like` (thích). Hai kiểu này tạo phủ định và câu hỏi theo những cách khác nhau.
 
 ## Khi nào dùng `be`?
 
@@ -19,9 +19,9 @@ Dùng `am/is/are` khi phần sau cho biết chủ ngữ **là ai/cái gì, như 
 
 Trong `Lan is happy`, tiếng Việt không cần từ “là”, nhưng tiếng Anh vẫn cần `is`. Không được bỏ `be`: `Lan happy` không phải câu chuẩn.
 
-## Khi nào dùng động từ mang nghĩa riêng?
+## Khi nào dùng động từ thường?
 
-Các từ như `work`, `live`, `read`, `need` và `have` tự làm động từ chính. Chúng nói chủ ngữ làm gì, sống ở đâu, cần gì hoặc có gì.
+Các từ như `work`, `live` (sống), `read`, `need` (cần) và `have` (có) tự làm động từ chính. Chúng nói chủ ngữ làm gì, sống ở đâu, cần gì hoặc có gì.
 
 ```text
 They work at home. → Họ làm việc ở nhà.
@@ -37,10 +37,10 @@ So sánh hai mẫu:
 
 ```text
 Subject + be + noun/adjective/place
-Subject + action/state verb + ...
+Subject + ordinary verb + ...
 ```
 
-`We are students` dùng `are` làm động từ chính. `We study English` dùng `study` làm động từ chính. Không ghép thành `We are study`.
+`We are students` (Chúng tôi là học sinh) dùng `are` làm động từ chính. `We study English` (Chúng tôi học tiếng Anh) dùng `study` làm động từ chính. Không ghép thành `We are study`.
 
 ## Cùng một chủ ngữ, hai loại thông tin
 
@@ -49,11 +49,11 @@ Subject + action/state verb + ...
 - `They are in the garden.` — Họ ở trong vườn.
 - `They sleep in the garden.` — Họ ngủ trong vườn.
 
-Không chọn cấu trúc chỉ bằng cách dịch từng chữ. Hãy tìm phần muốn nói về chủ ngữ: một tên gọi/đặc điểm/nơi chốn hay một hoạt động/trạng thái có động từ riêng.
+Không chọn cấu trúc chỉ bằng cách dịch từng chữ. Hãy tìm phần muốn nói về chủ ngữ: một tên gọi/đặc điểm/nơi chốn hay một hoạt động/trạng thái được diễn tả bằng động từ thường.
 
 ## Bài này chỉ chọn loại động từ
 
-Ở các bài tiếp theo, ta sẽ học cách động từ thường thay đổi theo chủ ngữ, rồi mới học phủ định và câu hỏi. Lúc này, chỉ cần làm chắc một quyết định: câu cần `be` hay đã có một động từ mang nghĩa riêng.
+Ở các bài tiếp theo, ta sẽ học cách động từ thường thay đổi theo chủ ngữ, rồi mới học phủ định và câu hỏi. Lúc này, chỉ cần làm chắc một quyết định: câu cần `be` hay đã có một động từ thường.
 
 ## Cách tự kiểm tra một câu
 
@@ -68,6 +68,6 @@ Ví dụ, `Mai and Nam are doctors` (Mai và Nam là bác sĩ) gọi tên nghề
 ## Ghi nhớ
 
 - Dùng `be` trước danh từ, tính từ hoặc cụm nơi chốn khi nói chủ ngữ là ai, thế nào hoặc ở đâu.
-- Dùng động từ mang nghĩa riêng khi nói chủ ngữ làm gì, có gì, cần gì hoặc thích gì.
+- Dùng động từ thường khi nói chủ ngữ làm gì, có gì, cần gì hoặc thích gì.
 - Không đặt `be` trước một động từ hiện tại đơn: `They work`, không phải `They are work`.
 - Cách chia, phủ định và hỏi với động từ thường sẽ được học lần lượt ở các bài sau.

@@ -30,7 +30,7 @@ Khi một trạng thái bắt đầu trước đây và vẫn đúng bây giờ,
 
 | Câu hỏi | Trả lời bằng mốc | Trả lời bằng độ dài |
 | --- | --- | --- |
-| `How long have you lived here?` — Bạn sống ở đây bao lâu rồi? | `Since 2020.` | `For five years.` |
+| `How long have you lived here?` — Bạn sống ở đây bao lâu rồi? | `Since 2021.` — Từ năm 2021. | `For five years.` — Được năm năm. |
 
 ## Cấu trúc với trạng thái còn tiếp tục
 
@@ -38,7 +38,7 @@ Khi một trạng thái bắt đầu trước đây và vẫn đúng bây giờ,
 - `She has been ill since Tuesday.` — Cô ấy bị ốm từ thứ Ba đến nay.
 - `How long has the shop been open?` — Cửa hàng đã mở được bao lâu?
 
-Với động từ trạng thái như `know`, `have`, `be`, hiện tại hoàn thành đơn là cách nói tự nhiên.
+Với động từ chỉ trạng thái như `know` (biết, quen), `have` (có), `be` (là, ở), hiện tại hoàn thành là cách nói tự nhiên.
 
 ## So với quá khứ đơn
 
@@ -49,7 +49,7 @@ Thì cho biết khoảng có nối đến hiện tại hay không.
 
 ## `For` có thể được lược
 
-Trong văn nói, `for` đôi khi được bỏ trước khoảng thời gian: `I've lived here ten years`. Ở bài học này, giữ `for` giúp cấu trúc rõ hơn.
+Trong văn nói, `for` đôi khi được bỏ trước khoảng thời gian: `I've lived here ten years` — Tôi sống ở đây mười năm rồi. Ở bài học này, giữ `for` giúp cấu trúc rõ hơn.
 
 ## Tính mốc và độ dài từ cùng một dòng thời gian
 
@@ -61,9 +61,9 @@ Giả sử Lan bắt đầu sống ở Hà Nội năm 2021 và bây giờ là n�
  mốc          độ dài
 ```
 
-Ta có thể nói `Lan has lived in Hanoi since 2021` hoặc `Lan has lived in Hanoi for five years`. Hai câu nói cùng tình huống nhưng chọn hai loại thông tin khác nhau.
+Ta có thể nói `Lan has lived in Hanoi since 2021` — Lan sống ở Hà Nội từ năm 2021, hoặc `Lan has lived in Hanoi for five years` — Lan sống ở Hà Nội được năm năm. Hai câu nói cùng tình huống nhưng chọn hai loại thông tin khác nhau.
 
-`Since` cũng có thể đi với một mệnh đề quá khứ chỉ điểm bắt đầu: `I've known Lan since we started school`. Phần sau `since` kể sự kiện bắt đầu bằng quá khứ đơn; phần chính dùng hiện tại hoàn thành vì trạng thái quen biết tiếp tục đến nay.
+`Since` cũng có thể đi với một mệnh đề quá khứ chỉ điểm bắt đầu: `I've known Lan since we started school` — Tôi quen Lan từ khi chúng tôi bắt đầu đi học. Phần sau `since` kể sự kiện bắt đầu bằng quá khứ đơn; phần chính dùng hiện tại hoàn thành vì trạng thái quen biết tiếp tục đến nay.
 
 ## Một câu hỏi, hai kiểu trả lời
 

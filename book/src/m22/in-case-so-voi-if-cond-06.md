@@ -7,6 +7,8 @@ legacyLessonId: b1-in-case-vs-if
 
 `If` nêu điều kiện quyết định hành động có xảy ra hay không. `In case` nêu một khả năng khiến ta **chuẩn bị hoặc phòng ngừa từ trước**. Hai cấu trúc vì vậy không thay nhau máy móc.
 
+Cách phân biệt này là chuẩn trong sách học và trong tiếng Anh–Anh. Trong tiếng Anh–Mỹ, `in case` đôi khi cũng được dùng gần như `if`: `In case you need help, call me.` — Nếu cần giúp thì gọi tôi nhé. Bài này và phần luyện tập theo cách phân biệt chuẩn: `in case` nghĩa là “phòng khi”.
+
 ## `If`: hành động phụ thuộc điều kiện
 
 `I'll take an umbrella if it rains` nghĩa là “Tôi sẽ lấy ô nếu trời mưa”. Việc lấy ô chỉ xảy ra khi điều kiện mưa xảy ra.
@@ -25,7 +27,7 @@ Mệnh đề `if` cho biết lúc nào hành động chính cần được thự
 - `I wrote down the address in case I forgot it.` — Tôi ghi địa chỉ lại phòng khi quên.
 - `Let's leave early in case there is traffic.` — Hãy đi sớm phòng khi tắc đường.
 
-Mệnh đề `in case` giải thích khả năng mà hành động chuẩn bị muốn bảo vệ ta khỏi.
+Mệnh đề `in case` nêu khả năng mà ta đang đề phòng.
 
 ## Một cặp câu cho thấy khác biệt
 
