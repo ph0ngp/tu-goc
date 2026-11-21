@@ -255,6 +255,14 @@
   text-decoration: none;
 }
 
+.toc-introduction:has(+ .toc-readings) {
+  margin-bottom: 2px;
+}
+
+.toc-readings {
+  margin-bottom: 19px;
+}
+
 .toc-section + .toc-section {
   margin-top: 22px;
 }

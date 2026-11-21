@@ -204,3 +204,45 @@
 .lesson-practice-cta a:hover {
   filter: brightness(1.08);
 }
+
+.reading-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 0 38px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid var(--book-line);
+  color: var(--book-muted);
+  font-size: 14px;
+}
+
+.reading-context a {
+  color: var(--book-ink);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.reading-context a:hover {
+  color: var(--book-accent);
+}
+
+.lesson-markdown .reading-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.lesson-markdown .reading-list li + li {
+  margin-top: 18px;
+}
+
+.lesson-markdown .reading-list a {
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.lesson-markdown .reading-list p {
+  margin: 2px 0 0;
+  color: var(--book-muted);
+}

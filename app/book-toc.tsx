@@ -1,5 +1,5 @@
-import { HOME_HREF, lessonHref } from "../lib/site.mjs";
-import { bookSummary } from "./book-summary.generated";
+import { HOME_HREF, lessonHref, READINGS_HREF } from "../lib/site.mjs";
+import { bookSummary, readingLevelLinks } from "./book-summary.generated";
 
 function sidebarChapterTitle(title: string) {
   return title.replace(/^Chương\s+(\d+)\.\s*/, "$1. ");
@@ -7,12 +7,14 @@ function sidebarChapterTitle(title: string) {
 
 export function BookTableOfContents({
   activeLessonSlug,
+  activeHref: activePageHref,
   onNavigate,
 }: {
   activeLessonSlug?: string;
+  activeHref?: string;
   onNavigate?: () => void;
 }) {
-  const activeHref = activeLessonSlug ? lessonHref(activeLessonSlug) : HOME_HREF;
+  const activeHref = activePageHref ?? (activeLessonSlug ? lessonHref(activeLessonSlug) : HOME_HREF);
 
   return (
     <nav className="book-toc" aria-label="Mục lục toàn bộ sách">
@@ -23,6 +25,24 @@ export function BookTableOfContents({
       >
         {bookSummary.introduction.title}
       </a>
+      <details className="toc-module toc-readings" open={activeHref.startsWith(READINGS_HREF) || undefined}>
+        <summary>Bài văn luyện tập</summary>
+        <ol>
+          {readingLevelLinks.map((link) => (
+            <li
+              className={[
+                link.href === activeHref ? "active" : "",
+                link.count === 0 ? "planned" : "",
+              ].filter(Boolean).join(" ") || undefined}
+              key={link.level}
+            >
+              <a href={link.href} onClick={onNavigate}>
+                {link.level}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </details>
 
       {bookSummary.sections.map((section) => (
         <section className="toc-section" key={section.title}>

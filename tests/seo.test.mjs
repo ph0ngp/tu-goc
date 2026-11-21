@@ -2,18 +2,25 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import { bookLessons } from "../app/book-content.generated.ts";
-import { absoluteUrl, HOME_HREF, lessonHref, practiceHref, SITE_URL } from "../lib/site.mjs";
+import { bookReadings, readingLevels } from "../app/book-readings.generated.ts";
+import { absoluteUrl, HOME_HREF, lessonHref, practiceHref, READINGS_HREF, readingHref, readingLevelHref, SITE_URL } from "../lib/site.mjs";
 
 test("publishes the book at its GitHub Pages address", () => {
   assert.equal(SITE_URL, "https://ph0ngp.github.io/tu-goc");
 });
 
-test("lists every lesson and practice page in the sitemap", async () => {
+test("lists every lesson, practice page and reading in the sitemap", async () => {
   const sitemap = await readFile(new URL("../dist/client/sitemap.xml", import.meta.url), "utf8");
   const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, url]) => url);
   const expected = [
     HOME_HREF,
     ...bookLessons.flatMap((lesson) => [lessonHref(lesson.slug), practiceHref(lesson.slug)]),
+    READINGS_HREF,
+    // Trang trình độ chưa có bài văn không được lập chỉ mục nên không có trong sitemap.
+    ...readingLevels.flatMap((level) => {
+      const readings = bookReadings.filter((reading) => reading.level === level);
+      return readings.length ? [readingLevelHref(level), ...readings.map((reading) => readingHref(level, reading.slug))] : [];
+    }),
   ].map(absoluteUrl);
 
   assert.match(sitemap, /^<\?xml version="1\.0" encoding="UTF-8"\?>/);

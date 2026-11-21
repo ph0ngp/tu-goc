@@ -77,6 +77,8 @@ Chủ dự án có thể viết thêm yêu cầu ngay dưới dòng này. Nên g
 ## 2. Nguồn dữ liệu và kiến trúc nội dung
 
 - Toàn bộ lý thuyết chỉ được viết trong `book/src/**/*.md`.
+- Bài văn luyện tập chỉ được viết trong `book/readings/<cấp-độ>/*.md` (xem
+  mục 10); không đưa bài văn vào `SUMMARY.md`, TypeScript hay dữ liệu bài tập.
 - `book/src/SUMMARY.md` là nguồn quyết định thứ tự chương và bài học.
 - Không viết hoặc sao chép lý thuyết vào TypeScript, JSON, JSX hay dữ liệu bài
   tập.
@@ -310,7 +312,37 @@ Chủ dự án có thể viết thêm yêu cầu ngay dưới dòng này. Nên g
 - Không tạo nội dung ẩn, bản sao SEO hoặc bản riêng cho LLM khác với nội dung
   người học thực sự đọc.
 
-## 10. Checklist trước khi hoàn thành một bài
+## 10. Bài văn luyện tập
+
+- Mục “Bài văn luyện tập” gồm các bài văn tiếng Anh để luyện đọc, xếp theo
+  trình độ. Trong mục lục bên trái, mục này mở ra thành một liên kết cho mỗi
+  trình độ của sách (Pre-A1 đến C1). Trang `/bai-van/` giới thiệu chung và
+  liệt kê các trình độ; trang `/bai-van/<cấp-độ>/` liệt kê tên và lời giới
+  thiệu của mọi bài trong trình độ đó; mỗi bài nằm ở
+  `/bai-van/<cấp-độ>/<slug>/`.
+- Theo yêu cầu của chủ dự án, mọi trình độ đều có liên kết và trang riêng kể cả
+  khi chưa có bài. Trang trống phải nói rõ là chưa có bài, chỉ tới các trình độ
+  đã có bài, được đánh dấu `noindex` và không có trong sitemap; liên kết của nó
+  trong mục lục hiện màu nhạt như bài chưa xuất bản.
+- Mỗi bài là một tệp `book/readings/<cấp-độ>/NN-<tên>.md`, trong đó
+  `<cấp-độ>` là tên trình độ trong `SUMMARY.md` viết thường (`pre-a1`, `a1`,
+  `a2`, `b1`, `b2`, `c1`). Số `NN` ở đầu tên tệp quyết định thứ tự trong trình
+  độ; địa chỉ trang lấy từ thư mục trình độ và `slug`.
+- Frontmatter bắt buộc có `slug` (chữ thường không dấu, nối bằng gạch ngang) và
+  `summary`, một câu giới thiệu bằng tiếng Việt hiện trên trang mục lục và trong
+  mô tả trang. Nội dung mở đầu bằng đúng một tiêu đề cấp 1.
+- Bài ở trình độ nào chỉ được dùng ngữ pháp từ đầu sách đến hết trình độ đó.
+  Chẳng hạn bài A1 không dùng thì quá khứ, `will`, `be going to`, so sánh, câu
+  điều kiện hay động từ tình thái ngoài `can` và `would like`. Test có một lưới
+  an toàn cho các dấu hiệu dễ thấy ở Pre-A1 và A1, nhưng người viết vẫn phải
+  tự rà cả bài theo mục lục.
+- Bài văn viết bằng tiếng Anh và không kèm bản dịch; quy tắc chú nghĩa tiếng
+  Việt ở mục 4 chỉ áp dụng cho lý thuyết. Từ vựng phải hợp trình độ, câu tự
+  nhiên và bài có cốt truyện hoặc mạch ý rõ ràng; không viết bài chỉ để liệt kê
+  cấu trúc.
+- Bài văn không chứa câu hỏi hoặc hoạt động tương tác.
+
+## 11. Checklist trước khi hoàn thành một bài
 
 ### Lý thuyết
 

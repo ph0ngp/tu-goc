@@ -2,13 +2,15 @@ import { readdir, readFile, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { compactSearchText, normalizeSearchText } from "../lib/search-normalization.mjs";
-import { absoluteUrl, HOME_HREF, lessonHref, practiceHref } from "../lib/site.mjs";
+import { absoluteUrl, HOME_HREF, lessonHref, practiceHref, READINGS_HREF, readingHref, readingLevelHref } from "../lib/site.mjs";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourceRoot = path.join(projectRoot, "book", "src");
+const readingsRoot = path.join(projectRoot, "book", "readings");
 const outputPath = path.join(projectRoot, "app", "book-content.generated.ts");
 const summaryOutputPath = path.join(projectRoot, "app", "book-summary.generated.ts");
 const searchOutputPath = path.join(projectRoot, "app", "book-search-index.generated.ts");
+const readingsOutputPath = path.join(projectRoot, "app", "book-readings.generated.ts");
 const exerciseLoaderOutputPath = path.join(projectRoot, "app", "exercise-loaders.generated.ts");
 const sitemapOutputPath = path.join(projectRoot, "public", "sitemap.xml");
 
@@ -25,7 +27,7 @@ async function markdownFiles(directory) {
   return nested.flat();
 }
 
-function parseChapter(source, relativePath) {
+function parseFrontmatter(source) {
   let markdown = source;
   const metadata = {};
   if (markdown.startsWith("---\n")) {
@@ -40,6 +42,11 @@ function parseChapter(source, relativePath) {
       markdown = markdown.slice(end + 5).trim();
     }
   }
+  return { metadata, markdown };
+}
+
+function parseChapter(source, relativePath) {
+  const { metadata, markdown } = parseFrontmatter(source);
   const title = markdown.match(/^#\s+(.+)$/m)?.[1]?.trim() ?? relativePath;
   return {
     sourcePath: relativePath.replaceAll(path.sep, "/"),
@@ -156,10 +163,6 @@ if (!introduction || introduction.sourcePath !== "index.md") {
   throw new Error("SUMMARY.md phải có liên kết Giới thiệu tới index.md");
 }
 
-const summaryOutput = `/* This file is generated from book/src/SUMMARY.md. Do not edit directly. */\n` +
-  `export type BookSummary = { introduction: { title: string; href: string; sourcePath: string }; sections: Array<{ title: string; modules: Array<{ title: string; lessons: Array<{ title: string; href: string; sourcePath: string; status: string }> }> }> };\n\n` +
-  `export const bookSummary: BookSummary = ${JSON.stringify({ introduction, sections }, null, 2)};\n`;
-await writeFile(summaryOutputPath, summaryOutput, "utf8");
 
 function plainMarkdown(value) {
   return value
@@ -287,9 +290,78 @@ const exerciseLoaderOutput = `/* Tệp được tạo từ book/src/SUMMARY.md. 
 
 await writeFile(exerciseLoaderOutputPath, exerciseLoaderOutput, "utf8");
 
+// Bài văn luyện tập: book/readings/<cấp-độ>/*.md, sắp theo tên tệp trong từng
+// cấp độ. Cấp độ lấy từ tên thư mục và phải là một phần của SUMMARY.md.
+const readingLevels = sections.map((section) => section.title);
+const levelByDirectory = new Map(readingLevels.map((level) => [level.toLowerCase(), level]));
+const readingFiles = await markdownFiles(readingsRoot).catch((error) => {
+  if (error.code === "ENOENT") return [];
+  throw error;
+});
+const bookReadings = (await Promise.all(
+  readingFiles.map(async (filePath) => {
+    const sourcePath = path.relative(readingsRoot, filePath).split(path.sep).join("/");
+    const [directory, ...rest] = sourcePath.split("/");
+    const level = levelByDirectory.get(directory);
+    if (!level || rest.length !== 1) {
+      throw new Error(`Bài văn phải nằm trong book/readings/<cấp-độ>/ (${[...levelByDirectory.keys()].join(", ")}): ${sourcePath}`);
+    }
+    const { metadata, markdown } = parseFrontmatter(await readFile(filePath, "utf8"));
+    const headings = markdown.match(/^#\s+.+$/gm) ?? [];
+    if (!markdown.startsWith("# ") || headings.length !== 1) {
+      throw new Error(`Bài văn phải mở đầu bằng đúng một tiêu đề cấp 1: ${sourcePath}`);
+    }
+    if (!metadata.slug || !metadata.summary) {
+      throw new Error(`Bài văn thiếu slug hoặc summary trong frontmatter: ${sourcePath}`);
+    }
+    return {
+      sourcePath: `readings/${sourcePath}`,
+      slug: metadata.slug,
+      level,
+      title: headings[0].replace(/^#\s+/, "").trim(),
+      summary: metadata.summary,
+      markdown,
+    };
+  }),
+)).sort((left, right) =>
+  readingLevels.indexOf(left.level) - readingLevels.indexOf(right.level) ||
+  left.sourcePath.localeCompare(right.sourcePath, "en"));
+
+assertUnique(bookReadings, "slug", "Slug bài văn");
+
+// Mục lục cần biết trình độ nào đã có bài văn, nhưng không cần nội dung bài,
+// nên chỉ phần tóm tắt này đi cùng mục lục xuống trình duyệt.
+const readingLevelLinks = readingLevels.map((level) => ({
+  level,
+  href: readingLevelHref(level),
+  count: bookReadings.filter((reading) => reading.level === level).length,
+}));
+
+const summaryOutput = `/* This file is generated from book/src/SUMMARY.md and book/readings. Do not edit directly. */\n` +
+  `export type BookSummary = { introduction: { title: string; href: string; sourcePath: string }; sections: Array<{ title: string; modules: Array<{ title: string; lessons: Array<{ title: string; href: string; sourcePath: string; status: string }> }> }> };\n` +
+  `export type ReadingLevelLink = { level: string; href: string; count: number };\n\n` +
+  `export const bookSummary: BookSummary = ${JSON.stringify({ introduction, sections }, null, 2)};\n\n` +
+  `export const readingLevelLinks: ReadingLevelLink[] = ${JSON.stringify(readingLevelLinks, null, 2)};\n`;
+await writeFile(summaryOutputPath, summaryOutput, "utf8");
+
+await writeFile(
+  readingsOutputPath,
+  `/* Tệp được tạo từ book/readings. Không sửa trực tiếp. */\n` +
+    `export type BookReading = { sourcePath: string; slug: string; level: string; title: string; summary: string; markdown: string };\n\n` +
+    `export const readingLevels: string[] = ${JSON.stringify(readingLevels)};\n\n` +
+    `export const bookReadings: BookReading[] = ${JSON.stringify(bookReadings, null, 2)};\n\n` +
+    `export const bookReadingBySlug = (slug: string) => bookReadings.find((reading) => reading.slug === slug);\n`,
+  "utf8",
+);
+
 const sitemapUrls = [
   HOME_HREF,
   ...bookLessons.flatMap((lesson) => [lessonHref(lesson.slug), practiceHref(lesson.slug)]),
+  ...(bookReadings.length ? [READINGS_HREF] : []),
+  ...readingLevelLinks.filter((link) => link.count > 0).flatMap((link) => [
+    link.href,
+    ...bookReadings.filter((reading) => reading.level === link.level).map((reading) => readingHref(reading.level, reading.slug)),
+  ]),
 ];
 await writeFile(
   sitemapOutputPath,
@@ -315,7 +387,20 @@ const searchIndex = chapters
       text: compactSearchText(`${chapter.title} ${context.context} ${plain}`),
       excerpt: plain.replace(chapter.title, "").trim().slice(0, 180),
     };
-  });
+  })
+  .concat(bookReadings.map((reading) => {
+    const plain = plainMarkdown(reading.markdown);
+    return {
+      id: `bai-van/${reading.slug}`,
+      href: readingHref(reading.level, reading.slug),
+      title: reading.title,
+      context: "Bài văn luyện tập",
+      level: reading.level,
+      normalizedTitle: normalizeSearchText(reading.title),
+      text: compactSearchText(`${reading.title} Bài văn luyện tập ${reading.summary} ${plain}`),
+      excerpt: reading.summary.slice(0, 180),
+    };
+  }));
 
 const appEntries = await readdir(path.join(projectRoot, "app"));
 await Promise.all(
